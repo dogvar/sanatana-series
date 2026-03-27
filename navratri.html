@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Chaitra Navratri 2026 — Nine Sacred Nights"/>
+<meta property="og:description" content="Nine Navdurga forms · Birth of Goddess Durga · 18 Shakti Peeths · Day-by-day guide. Sanatana Series."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/navratri.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <title>Chaitra Navratri 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -603,9 +609,54 @@ body {
 .d7 { --acc:#4A0060; --bg:#FDF5FF; --bgd:#4A0060; }
 .d8 { --acc:#880035; --bg:#FFF0F6; --bgd:#880035; }
 .d9 { --acc:#4A1070; --bg:#FAF5FF; --bgd:#4A1070; }
+
+/* ── Sticky top nav ── */
+.top-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13,4,0,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(184,134,11,0.2);
+  padding: 0 16px;
+  display: flex; align-items: center; gap: 0;
+  height: 48px;
+}
+.top-nav a.back {
+  display: flex; align-items: center; gap: 6px;
+  text-decoration: none;
+  color: rgba(212,160,23,0.7);
+  font-size: 13px; font-weight: 500;
+  padding: 0 12px 0 0;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  height: 100%;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.top-nav a.back:hover { color: rgba(212,160,23,1); }
+.top-nav a.back svg { width:16px; height:16px; flex-shrink:0; }
+.top-nav .nav-title {
+  flex: 1;
+  text-align: center;
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 16px;
+  color: rgba(212,160,23,0.45);
+  pointer-events: none;
+}
+.top-nav .nav-om { font-size: 18px; }
 </style>
 </head>
 <body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Sanatana Series
+  </a>
+  <span class="nav-title nav-om">ॐ</span>
+</nav>
+
 
 <!-- ══ HERO ══ -->
 <div class="hero">

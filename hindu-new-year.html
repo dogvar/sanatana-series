@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Hindu New Year 2083 — Vikram Samvat"/>
+<meta property="og:description" content="Vikram Samvat 2083 · Significance, regional celebrations, 12 sacred months, Panchang and Hindu birthday calculator. Created by Varun Dogar."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/hindu-new-year.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<title>Hindu New Year — Vikram Samvat 2083</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #FF6B00;
+    --gold: #D4A017;
+    --deep-gold: #B8860B;
+    --crimson: #8B0000;
+    --cream: #FFF8EE;
+    --deep: #1A0A00;
+    --vermillion: #E34234;
+    --lotus: #FF9BB0;
+    --sky: #4A90D9;
+    --leaf: #2E7D32;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--deep);
+    color: var(--cream);
+    font-family: 'EB Garamond', serif;
+    overflow-x: hidden;
+  }
+
+  /* ── PARTICLES ── */
+  #particles {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
+    overflow: hidden;
+  }
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatUp linear infinite;
+    opacity: 0;
+  }
+  @keyframes floatUp {
+    0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 0.6; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 48px; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(26,10,0,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212,160,23,0.3);
+    padding: 0 2rem;
+    display: flex; align-items: center; gap: 0; height: 56px;
+    overflow-x: auto;
+  }
+  nav a {
+    color: rgba(255,248,238,0.65);
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    height: 56px;
+    display: flex; align-items: center;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  nav a:hover, nav a.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    background: radial-gradient(ellipse at 50% 60%, rgba(212,160,23,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(139,0,0,0.2) 0%, transparent 50%),
+                var(--deep);
+  }
+  .om-symbol {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 40px rgba(212,160,23,0.6));
+    animation: pulse 3s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { filter: drop-shadow(0 0 40px rgba(212,160,23,0.6)); }
+    50%      { filter: drop-shadow(0 0 80px rgba(212,160,23,0.9)); }
+  }
+  .hero-badge {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 1rem;
+  }
+  .hero-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #FFD700, #FF6B00, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+  .hero-subtitle {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: rgba(255,248,238,0.6);
+    margin-bottom: 2rem;
+  }
+  .hero-date {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(212,160,23,0.2), rgba(255,107,0,0.1));
+    border: 1px solid rgba(212,160,23,0.4);
+    border-radius: 100px;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--gold);
+    margin-bottom: 3rem;
+  }
+  .scroll-hint {
+    color: rgba(255,248,238,0.3);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ── SECTION WRAPPER ── */
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  .section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(212,160,23,0.4), transparent);
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--gold), #FFE08A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  .lead {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: rgba(255,248,238,0.8);
+    max-width: 780px;
+  }
+
+  /* ── SIGNIFICANCE CARDS ── */
+  .sig-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .sig-card {
+    background: linear-gradient(135deg, rgba(212,160,23,0.07), rgba(139,0,0,0.05));
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+  .sig-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212,160,23,0.5);
+    box-shadow: 0 8px 32px rgba(212,160,23,0.12);
+  }
+  .sig-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  .sig-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.95rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .sig-card p {
+    font-size: 0.93rem;
+    line-height: 1.7;
+    color: rgba(255,248,238,0.7);
+  }
+
+  /* ── REGIONAL CELEBRATIONS ── */
+  .region-tabs {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .region-tab {
+    background: rgba(212,160,23,0.08);
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: 100px;
+    padding: 0.4rem 1.1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: rgba(255,248,238,0.7);
+    font-family: 'EB Garamond', serif;
+  }
+  .region-tab.active, .region-tab:hover {
+    background: rgba(212,160,23,0.2);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .region-content { display: none; animation: fadeIn 0.4s; }
+  .region-content.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .region-card {
+    background: linear-gradient(135deg, rgba(255,107,0,0.08), rgba(139,0,0,0.06));
+    border: 1px solid rgba(255,107,0,0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .region-emblem {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .region-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    color: var(--saffron);
+    margin-bottom: 0.3rem;
+  }
+  .region-card .region-name {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,248,238,0.45);
+    margin-bottom: 0.75rem;
+  }
+  .region-card p { font-size: 0.95rem; line-height: 1.75; color: rgba(255,248,238,0.75); }
+
+  /* ── MONTHS WHEEL ── */
+  .months-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .month-card {
+    background: linear-gradient(160deg, rgba(255,248,238,0.04), rgba(255,248,238,0.01));
+    border: 1px solid rgba(212,160,23,0.15);
+    border-radius: 12px;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .month-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--accent-color, rgba(212,160,23,0.1));
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .month-card:hover::before { opacity: 1; }
+  .month-card:hover { transform: translateY(-3px); border-color: rgba(212,160,23,0.4); }
+  .month-num {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: rgba(255,248,238,0.3);
+    margin-bottom: 0.3rem;
+  }
+  .month-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1rem;
+    color: var(--gold);
+    margin-bottom: 0.1rem;
+  }
+  .month-devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255,248,238,0.4);
+    margin-bottom: 0.5rem;
+  }
+  .month-period {
+    font-size: 0.75rem;
+    color: var(--saffron);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  .month-desc {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgba(255,248,238,0.6);
+  }
+  .month-season {
+    display: inline-block;
+    background: rgba(212,160,23,0.12);
+    border-radius: 100px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    color: var(--gold);
+    margin-top: 0.5rem;
+  }
+
+  /* ── BIRTHDAY CALCULATOR ── */
+  .calc-wrapper {
+    background: linear-gradient(135deg, rgba(212,160,23,0.07), rgba(26,10,0,0.5));
+    border: 1px solid rgba(212,160,23,0.25);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+  }
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  @media (max-width: 640px) { .calc-grid { grid-template-columns: 1fr; } }
+  .calc-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,248,238,0.5);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .calc-input {
+    width: 100%;
+    background: rgba(255,248,238,0.05);
+    border: 1px solid rgba(212,160,23,0.3);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    color: var(--cream);
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    transition: border-color 0.2s;
+  }
+  .calc-input:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(212,160,23,0.08);
+  }
+  .calc-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--saffron), #FF8C00);
+    border: none; border-radius: 10px;
+    padding: 0.85rem 1rem;
+    color: white;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0 4px 20px rgba(255,107,0,0.3);
+  }
+  .calc-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,107,0,0.4); }
+  .calc-btn:active { transform: translateY(0); }
+  .result-box {
+    background: rgba(26,10,0,0.6);
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: 14px;
+    padding: 1.5rem;
+    min-height: 280px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .result-placeholder {
+    text-align: center;
+    color: rgba(255,248,238,0.25);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .result-placeholder .big-om {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.75rem;
+    opacity: 0.3;
+  }
+  .result-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(212,160,23,0.1);
+    font-size: 0.9rem;
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-key { color: rgba(255,248,238,0.5); font-size: 0.78rem; letter-spacing: 0.05em; }
+  .result-value { color: var(--gold); font-size: 1rem; text-align: right; }
+  .result-big {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+  }
+  .result-big .tithi {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.3rem;
+    color: var(--saffron);
+  }
+  .result-big .samvat {
+    font-size: 0.8rem;
+    color: rgba(255,248,238,0.4);
+    margin-top: 0.25rem;
+  }
+  .result-note {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: rgba(255,248,238,0.35);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ── HOW-TO STEPS ── */
+  .steps {
+    counter-reset: step;
+    margin-top: 2rem;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    align-items: start;
+  }
+  .step-num {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--saffron), #FF8C00);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1rem;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 4px 16px rgba(255,107,0,0.35);
+  }
+  .step-body h4 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.9rem;
+    color: var(--gold);
+    margin-bottom: 0.35rem;
+    font-weight: 400;
+  }
+  .step-body p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(255,248,238,0.7);
+  }
+
+  /* ── PANCHANG INFO ── */
+  .panchang-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 800px) { .panchang-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 480px) { .panchang-grid { grid-template-columns: repeat(2, 1fr); } }
+  .panch-card {
+    background: linear-gradient(160deg, rgba(74,144,217,0.08), rgba(26,10,0,0.4));
+    border: 1px solid rgba(74,144,217,0.2);
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .panch-card:hover { border-color: rgba(74,144,217,0.5); transform: translateY(-3px); }
+  .panch-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .panch-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.7rem;
+    color: var(--sky);
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+  }
+  .panch-devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1rem;
+    color: rgba(255,248,238,0.5);
+    margin-bottom: 0.25rem;
+  }
+  .panch-desc { font-size: 0.75rem; color: rgba(255,248,238,0.5); line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid rgba(212,160,23,0.15);
+    color: rgba(255,248,238,0.3);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+  footer .footer-om {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(212,160,23,0.4);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  /* ── MISC UTILS ── */
+  .highlight { color: var(--saffron); }
+  .gold { color: var(--gold); }
+  .mt1 { margin-top: 1rem; }
+  .mt2 { margin-top: 2rem; }
+  .mb1 { margin-bottom: 1rem; }
+
+  /* Mandala decoration */
+  .mandala-bg {
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      rgba(212,160,23,0.03) 0deg,
+      rgba(255,107,0,0.02) 30deg,
+      rgba(212,160,23,0.03) 60deg,
+      rgba(255,107,0,0.02) 90deg,
+      rgba(212,160,23,0.03) 120deg,
+      rgba(255,107,0,0.02) 150deg,
+      rgba(212,160,23,0.03) 180deg,
+      rgba(255,107,0,0.02) 210deg,
+      rgba(212,160,23,0.03) 240deg,
+      rgba(255,107,0,0.02) 270deg,
+      rgba(212,160,23,0.03) 300deg,
+      rgba(255,107,0,0.02) 330deg,
+      rgba(212,160,23,0.03) 360deg
+    );
+    animation: rotateMandala 60s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  @keyframes rotateMandala { to { transform: rotate(360deg); } }
+
+  /* ── Sticky top nav ── */
+  .top-nav {
+    position: sticky; top: 0; z-index: 200;
+    background: rgba(26,10,0,0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+    padding: 0 16px;
+    display: flex; align-items: center;
+    height: 48px;
+  }
+  .top-nav a.back {
+    display: flex; align-items: center; gap: 6px;
+    text-decoration: none;
+    color: rgba(212,160,23,0.7);
+    font-size: 13px; font-weight: 500;
+    padding: 0 12px 0 0;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    height: 100%;
+    transition: color 0.15s;
+    white-space: nowrap;
+  }
+  .top-nav a.back:hover { color: rgba(212,160,23,1); }
+  .top-nav a.back svg { width:16px; height:16px; flex-shrink:0; }
+  .top-nav .nav-om {
+    flex: 1; text-align: center;
+    font-size: 18px; color: rgba(212,160,23,0.4);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Sanatana Series
+  </a>
+  <span class="nav-title nav-om">ॐ</span>
+</nav>
+
+
+<!-- Floating particles -->
+<div id="particles"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#hero" class="active">Home</a>
+  <a href="#significance">Significance</a>
+  <a href="#regions">Regional</a>
+  <a href="#months">12 Months</a>
+  <a href="#panchang">Panchang</a>
+  <a href="#calculator">Birth Calculator</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<div id="hero">
+  <div class="mandala-bg" style="top:-100px;left:50%;transform:translateX(-50%)"></div>
+  <div class="om-symbol">ॐ</div>
+  <p class="hero-badge">Vikram Samvat 2083 • Nav Varsh</p>
+  <h1 class="hero-title">Hindu New Year</h1>
+  <p class="hero-subtitle">नव वर्ष की शुभकामनाएं</p>
+  <div class="hero-date">🪔 Chaitra Shukla Pratipada — 19 March 2026 — Today!</div>
+  <p class="scroll-hint">↓ Explore the sacred calendar ↓</p>
+</div>
+
+<!-- ══ SIGNIFICANCE ══ -->
+<div class="section-divider"></div>
+<section id="significance">
+  <p class="section-label">Why It Matters</p>
+  <h2 class="section-title">The Sacred Significance</h2>
+  <p class="lead">
+    The Hindu New Year — <span class="highlight">Chaitra Shukla Pratipada</span> — is not a social convention but a cosmic event. 
+    It marks the alignment of lunar, solar and planetary cycles, rooted in Vedic astronomy refined over 5,000 years.
+    Unlike any other calendar, the Hindu Panchang tracks five simultaneous dimensions of time.
+  </p>
+
+  <div class="sig-grid">
+    <div class="sig-card">
+      <span class="sig-icon">🌌</span>
+      <h3>Creation of the Universe</h3>
+      <p>Mythologically, Lord Brahma began creating the universe on this very day — Chaitra Shukla Pratipada — making it the most primordial of all beginnings in Hindu cosmology.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">👑</span>
+      <h3>Victory of Vikramaditya</h3>
+      <p>The Vikram Samvat era began around 57 BCE when the legendary Emperor Vikramaditya of Ujjain defeated the Shaka invaders, establishing a calendar of cultural triumph.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">🌸</span>
+      <h3>Vasant — Spring Renewal</h3>
+      <p>The new year begins as spring arrives, symbolising the renewal of life. Nature herself celebrates: flowers bloom, crops grow, and the world is reborn in colour and fragrance.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">🌞</span>
+      <h3>Solar-Lunar Harmony</h3>
+      <p>The Vikram Samvat is a lunisolar calendar — it tracks both moon phases (for religious dates) and solar movement (for seasons), keeping festivals aligned with nature perpetually.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">🏹</span>
+      <h3>Ram Rajyabhishek</h3>
+      <p>Traditional belief holds that Lord Rama's coronation after his return from Lanka also took place during Chaitra, adding royal and dharmic significance to this month's new year.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">📖</span>
+      <h3>Agricultural Cycle</h3>
+      <p>The new year marks the end of one harvest and the beginning of another sowing cycle. Farmers, merchants, and communities all recalibrate their year around this anchor date.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">🔁</span>
+      <h3>Adhik Maas in 2083</h3>
+      <p>This year (Vikram Samvat 2083) features a rare <span class="gold">13th lunar month</span> — Adhik Jyeshtha — occurring 17 May to 15 June 2026. Lord Vishnu accepted it as Purushottam Maas, making it highly spiritually meritorious.</p>
+    </div>
+    <div class="sig-card">
+      <span class="sig-icon">♃</span>
+      <h3>Roudra Samvatsara</h3>
+      <p>The year 2083 is named <span class="gold">Roudra Samvatsara</span>. Jupiter is the year's king (wisdom, dharma, prosperity) while Mars serves as minister (courage, valour), promising a year of righteousness and determination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REGIONAL CELEBRATIONS ══ -->
+<div class="section-divider"></div>
+<section id="regions">
+  <p class="section-label">One Spirit, Many Names</p>
+  <h2 class="section-title">Regional Celebrations</h2>
+  <p class="lead">The same cosmic event is celebrated across India under different names — each region adding its own poetry, colour and ritual to the universal moment of renewal.</p>
+
+  <div class="region-tabs mt2">
+    <button class="region-tab active" onclick="showRegion('maharashtra')">Maharashtra</button>
+    <button class="region-tab" onclick="showRegion('andhra')">Andhra / Telangana</button>
+    <button class="region-tab" onclick="showRegion('karnataka')">Karnataka</button>
+    <button class="region-tab" onclick="showRegion('gujarat')">Gujarat</button>
+    <button class="region-tab" onclick="showRegion('punjab')">Punjab</button>
+    <button class="region-tab" onclick="showRegion('north')">North India</button>
+    <button class="region-tab" onclick="showRegion('kashmir')">Kashmir</button>
+    <button class="region-tab" onclick="showRegion('nepal')">Nepal</button>
+  </div>
+
+  <div id="r-maharashtra" class="region-content active">
+    <div class="region-card">
+      <div class="region-emblem">🚩</div>
+      <div>
+        <h3>Gudi Padwa</h3>
+        <p class="region-name">Maharashtra • Chaitra 1</p>
+        <p>A decorated Gudi (bamboo staff with a bright cloth, neem leaves, sugar crystals and a pot) is hoisted outside homes to symbolise victory and prosperity. Families prepare traditional <em>Puran Poli</em> and draw rangoli. The Gudi is believed to ward off evil and invite Brahma's blessings into the home.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-andhra" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">🌿</div>
+      <div>
+        <h3>Ugadi</h3>
+        <p class="region-name">Andhra Pradesh & Telangana • Chaitra 1</p>
+        <p>Ugadi means "beginning of an era" (Yuga + Adi). The unique ritual is eating <em>Ugadi Pachadi</em> — a chutney with six tastes (sweet, sour, bitter, spicy, astringent, salty) representing all the flavours life will bring in the coming year. The Panchanga Sravanam (almanac reading) is performed at temples.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-karnataka" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">🌾</div>
+      <div>
+        <h3>Yugadi</h3>
+        <p class="region-name">Karnataka • Chaitra 1</p>
+        <p>Virtually identical to Ugadi in spirit, Karnataka's Yugadi is celebrated with temple visits, homes adorned with mango leaves (torana), and the preparation of the same symbolic six-taste pachadi. Communities gather for the Panchanga Shravana where the year's predictions are read aloud by priests.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-gujarat" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">💡</div>
+      <div>
+        <h3>Bestu Varas / Vikram Samvat New Year</h3>
+        <p class="region-name">Gujarat • Kartik 1 (day after Diwali)</p>
+        <p>Uniquely, Gujarat celebrates its new year (Vikram Samvat) on the day after Diwali in October/November, not in Chaitra. It's called Bestu Varas. Merchants open new accounting books in a ritual called <em>Chopda Pujan</em>. The greeting "Saal Mubarak" rings through communities worldwide. The day is a public holiday in Gujarat.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-punjab" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">🌻</div>
+      <div>
+        <h3>Vaisakhi / Baisakhi</h3>
+        <p class="region-name">Punjab & North India • Vaishakha 1 (13-14 April)</p>
+        <p>Vaisakhi marks the Solar New Year in Punjab, celebrating the wheat harvest. It also commemorates the founding of the Khalsa Panth by Guru Gobind Singh in 1699. Grand processions, bhangra dancing, and community langar (free communal meals) mark the celebrations. It's among the most energetic new year festivals in the subcontinent.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-north" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">🪔</div>
+      <div>
+        <h3>Hindu Nav Varsh / Nav Samvat</h3>
+        <p class="region-name">North & Central India • Chaitra 1</p>
+        <p>Observed across UP, Rajasthan, MP, Bihar and Delhi as Hindu Nav Varsh with temple visits, Panchang readings, and the beginning of Chaitra Navratri — nine sacred nights devoted to Goddess Durga. Many families begin the day with an early bath and prayers, setting intentions for the year ahead.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-kashmir" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">❄️</div>
+      <div>
+        <h3>Navreh</h3>
+        <p class="region-name">Kashmir • Chaitra 1 (Kashmiri Pandits)</p>
+        <p>Navreh is the Kashmiri Pandit new year, observed on Chaitra Shukla Pratipada. A thaal (plate) containing rice, walnuts, salt, coins, a pen, curd, flowers and a Panchanga is prepared the previous night and viewed first thing in the morning — the items symbolise abundance, wisdom and good fortune for the year ahead.</p>
+      </div>
+    </div>
+  </div>
+  <div id="r-nepal" class="region-content">
+    <div class="region-card">
+      <div class="region-emblem">🏔️</div>
+      <div>
+        <h3>Nepali New Year (Nava Barsha)</h3>
+        <p class="region-name">Nepal • Baisakh 1 (mid-April)</p>
+        <p>Nepal uses the Bikram Sambat as its official national civil calendar. The new year begins with Baisakh 1 (around 13-15 April), which is a national public holiday. The Bisket Jatra carnival in Bhaktapur is famous for its chariot procession. Nepal's year count is 57 ahead of the Gregorian calendar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 12 MONTHS ══ -->
+<div class="section-divider"></div>
+<section id="months">
+  <p class="section-label">The Cosmic Calendar</p>
+  <h2 class="section-title">The 12 Sacred Months</h2>
+  <p class="lead">Each Hindu month is named after the <span class="highlight">nakshatra (constellation)</span> in which the full moon rises during that month — encoding ancient astronomical observations into everyday timekeeping. Each month carries its own season, deity, and spiritual character.</p>
+
+  <div class="months-container mt2" id="monthsGrid"></div>
+</section>
+
+<!-- ══ PANCHANG ══ -->
+<div class="section-divider"></div>
+<section id="panchang">
+  <p class="section-label">Five Limbs of Time</p>
+  <h2 class="section-title">The Panchang — पञ्चाङ्ग</h2>
+  <p class="lead">
+    The Hindu calendar is not a single number but a <span class="highlight">five-dimensional system</span> called the Panchang (from <em>pancha</em> = five, <em>anga</em> = limb). 
+    Every date is defined by five simultaneous values — which is why Hindu dates shift relative to the Gregorian calendar each year.
+  </p>
+
+  <div class="panchang-grid">
+    <div class="panch-card">
+      <div class="panch-icon">🌙</div>
+      <p class="panch-title">Tithi</p>
+      <p class="panch-devanagari">तिथि</p>
+      <p class="panch-desc">Lunar day (1–30). 15 tithis in the bright fortnight (Shukla Paksha) and 15 in the dark (Krishna Paksha). The most fundamental unit of Hindu time.</p>
+    </div>
+    <div class="panch-card">
+      <div class="panch-icon">📅</div>
+      <p class="panch-title">Vara</p>
+      <p class="panch-devanagari">वार</p>
+      <p class="panch-desc">Day of the week. Each day is ruled by a planet: Sunday (Sun), Monday (Moon), Tuesday (Mars), Wednesday (Mercury), Thursday (Jupiter), Friday (Venus), Saturday (Saturn).</p>
+    </div>
+    <div class="panch-card">
+      <div class="panch-icon">⭐</div>
+      <p class="panch-title">Nakshatra</p>
+      <p class="panch-devanagari">नक्षत्र</p>
+      <p class="panch-desc">Lunar mansion. The Moon passes through 27 nakshatras over a month. The nakshatra at birth profoundly shapes one's astrological chart (Janma Nakshatra).</p>
+    </div>
+    <div class="panch-card">
+      <div class="panch-icon">♐</div>
+      <p class="panch-title">Yoga</p>
+      <p class="panch-devanagari">योग</p>
+      <p class="panch-desc">Auspiciousness index. Calculated from the combined longitude of the Sun and Moon. There are 27 yogas, ranging from highly auspicious (Siddhi) to inauspicious (Vyatipata).</p>
+    </div>
+    <div class="panch-card">
+      <div class="panch-icon">⏱️</div>
+      <p class="panch-title">Karana</p>
+      <p class="panch-devanagari">करण</p>
+      <p class="panch-desc">Half a tithi (approx. 6 hours). There are 11 karanas (4 fixed + 7 repeating). Used in muhurta calculations to find the best moment within a day for any activity.</p>
+    </div>
+  </div>
+
+  <div class="mt2">
+    <h3 style="font-family:'Cinzel Decorative',serif;color:var(--gold);font-size:1.1rem;margin-bottom:1rem;font-weight:400;">Paksha — The Two Fortnights</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:600px;">
+      <div class="panch-card" style="border-color:rgba(255,248,238,0.2)">
+        <div class="panch-icon">🌕</div>
+        <p class="panch-title" style="color:var(--cream)">Shukla Paksha</p>
+        <p class="panch-devanagari">शुक्ल पक्ष</p>
+        <p class="panch-desc">Bright (waxing) fortnight. New moon → Full moon. Considered auspicious for new beginnings, marriages, travel, and major events.</p>
+      </div>
+      <div class="panch-card" style="border-color:rgba(74,144,217,0.2)">
+        <div class="panch-icon">🌑</div>
+        <p class="panch-title" style="color:var(--sky)">Krishna Paksha</p>
+        <p class="panch-devanagari">कृष्ण पक्ष</p>
+        <p class="panch-desc">Dark (waning) fortnight. Full moon → New moon. Often reserved for ancestor rituals (Pitru Paksha) and introspective practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BIRTHDAY CALCULATOR ══ -->
+<div class="section-divider"></div>
+<section id="calculator">
+  <p class="section-label">Discover Your Hindu Date</p>
+  <h2 class="section-title">Hindu Birthday Calculator</h2>
+  <p class="lead">
+    Your Gregorian birth date corresponds to a specific <span class="highlight">Tithi, Month, Paksha, and Samvat year</span> in the Hindu calendar. 
+    Below, you can look up your approximate Hindu birth date — or anyone else's.
+  </p>
+
+  <div class="steps mt2">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h4>The Year (Samvat)</h4>
+        <p>Add <strong>57</strong> to your Gregorian birth year for dates in <strong>April–December</strong>, or add <strong>56</strong> for January–March (before Hindu New Year). Example: Born 15 Aug 1990 → Samvat 1990 + 57 = <span class="gold">2047</span>.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h4>Find the Hindu Month</h4>
+        <p>The lunar month begins roughly 15 days before mid-month. Chaitra ≈ mid-March to mid-April; Vaishakha ≈ mid-April to mid-May, and so on. The calculator below approximates your month from your Gregorian date.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h4>Paksha & Tithi</h4>
+        <p>The month splits into two fortnights (Paksha) of 15 lunar days (tithis) each. The exact tithi requires knowing the Moon's longitude on your birth date — use the calculator for an approximation, or consult a printed Panchang for precision.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h4>For Precision — Use a Panchang</h4>
+        <p>A printed or online Panchang (such as Drik Panchang at <em>drikpanchang.com</em>) gives the exact Tithi, Nakshatra, and Yoga for any birth date and time. The calculator here provides a reliable approximation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="calc-wrapper mt2">
+    <div class="calc-grid">
+      <div>
+        <label class="calc-label">Your Date of Birth (Gregorian)</label>
+        <input type="date" class="calc-input" id="dobInput" min="1900-01-01" max="2100-12-31">
+        <label class="calc-label">Your Birth Time (optional, for accuracy)</label>
+        <input type="time" class="calc-input" id="timeInput">
+        <button class="calc-btn" onclick="calculateHinduDate()">✦ Calculate Hindu Date ✦</button>
+        <p style="font-size:0.75rem;color:rgba(255,248,238,0.3);margin-top:0.75rem;line-height:1.5;">
+          This calculator provides an approximate conversion. For the precise Tithi at your exact birth moment, please verify with a Panchang.
+        </p>
+      </div>
+      <div>
+        <div class="result-box" id="resultBox">
+          <div class="result-placeholder">
+            <span class="big-om">ॐ</span>
+            Enter your date of birth and click Calculate
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<div class="section-divider"></div>
+<footer>
+  <span class="footer-om">ॐ</span>
+  <p>Hindu Nav Varsh 2083 • Chaitra Shukla Pratipada • 19 March 2026</p>
+  <p style="margin-top:0.5rem;opacity:0.5">सर्वे भवन्तु सुखिनः — May all beings be happy</p>
+</footer>
+
+<script>
+// ── PARTICLES ──
+(function() {
+  const container = document.getElementById('particles');
+  const colors = ['#FFD700','#FF6B00','#E34234','#FF9BB0','#D4A017'];
+  for (let i = 0; i < 35; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = 2 + Math.random() * 5;
+    p.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      background:${colors[Math.floor(Math.random()*colors.length)]};
+      animation-duration:${8+Math.random()*14}s;
+      animation-delay:${Math.random()*10}s;
+    `;
+    container.appendChild(p);
+  }
+})();
+
+// ── NAV ACTIVE ──
+window.addEventListener('scroll', () => {
+  const sections = ['hero','significance','regions','months','panchang','calculator'];
+  const links = document.querySelectorAll('nav a');
+  let current = 'hero';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  links.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#'+current);
+  });
+});
+
+// ── REGION TABS ──
+function showRegion(id) {
+  document.querySelectorAll('.region-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.region-tab').forEach(el => el.classList.remove('active'));
+  document.getElementById('r-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ── MONTHS DATA ──
+const months = [
+  { name:'Chaitra', dev:'चैत्र', period:'Mid-Mar → Mid-Apr', season:'🌸 Vasanta (Spring)', zodiac:'Aries ♈', color:'rgba(255,107,0,0.12)',
+    festivals:'Gudi Padwa, Ugadi, Chaitra Navratri, Ram Navami, Hanuman Jayanti',
+    desc:'First month of the Hindu year. Marks the new year, spring arrival, and Navratri. Lord Brahma is believed to have created the universe on Chaitra 1.' },
+  { name:'Vaishakha', dev:'वैशाख', period:'Mid-Apr → Mid-May', season:'🌼 Vasanta (Spring)', zodiac:'Taurus ♉', color:'rgba(212,160,23,0.1)',
+    festivals:'Akshaya Tritiya, Buddha Purnima / Vesak, Bengali New Year (Poila Baisakh)',
+    desc:'The harvest month, considered deeply auspicious. Akshaya Tritiya is ideal for new investments. Named after the Vishakha nakshatra.' },
+  { name:'Jyeshtha', dev:'ज्येष्ठ', period:'Mid-May → Mid-Jun', season:'☀️ Grishma (Summer)', zodiac:'Gemini ♊', color:'rgba(255,200,0,0.1)',
+    festivals:'Ganga Dussehra, Vat Purnima, Nirjala Ekadashi, Shani Jayanti',
+    desc:'Jyeshtha means "eldest / greatest." The longest days; scorching heat. Reverence for water and the River Ganga is central this month.' },
+  { name:'Ashadha', dev:'आषाढ़', period:'Mid-Jun → Mid-Jul', season:'🌧️ Varsha (Monsoon)', zodiac:'Cancer ♋', color:'rgba(46,125,50,0.1)',
+    festivals:'Rath Yatra (Jagannath), Guru Purnima, Shayani Ekadashi, Dakshinayana',
+    desc:'The monsoon arrives. Rath Yatra of Lord Jagannath is the most iconic festival. Guru Purnima honours teachers. Lord Vishnu enters cosmic sleep (Yoganidra).' },
+  { name:'Shravana', dev:'श्रावण', period:'Mid-Jul → Mid-Aug', season:'🌧️ Varsha (Monsoon)', zodiac:'Leo ♌', color:'rgba(74,144,217,0.1)',
+    festivals:'Raksha Bandhan, Nag Panchami, Shravana Mondays (Shiva worship)',
+    desc:'The holiest month for Lord Shiva. Devotees fast every Monday. Raksha Bandhan celebrates the bond between siblings. Lush green monsoon transforms the land.' },
+  { name:'Bhadrapada', dev:'भाद्रपद', period:'Mid-Aug → Mid-Sep', season:'🌦️ Varsha (Monsoon)', zodiac:'Virgo ♍', color:'rgba(255,107,0,0.08)',
+    festivals:'Ganesh Chaturthi, Krishna Janmashtami, Onam (Kerala)',
+    desc:'The month of grand celebrations — Ganesh Chaturthi brings days of community festivity, while Janmashtami marks the midnight birth of Lord Krishna.' },
+  { name:'Ashwin', dev:'आश्विन', period:'Mid-Sep → Mid-Oct', season:'🍂 Sharad (Autumn)', zodiac:'Libra ♎', color:'rgba(227,66,52,0.1)',
+    festivals:'Navratri / Durga Puja, Dussehra / Vijayadashami, Pitru Paksha',
+    desc:'Season of harvests and great festivals. Navratri (nine nights of Durga) culminates in Dussehra — the triumph of good over evil. Pitru Paksha honours ancestors.' },
+  { name:'Kartika', dev:'कार्तिक', period:'Mid-Oct → Mid-Nov', season:'🍂 Sharad (Autumn)', zodiac:'Scorpio ♏', color:'rgba(255,200,0,0.12)',
+    festivals:'Diwali, Dhanteras, Chhath Puja, Kartik Purnima, Gujarat New Year',
+    desc:'The most festive month. Diwali — the festival of lights — fills the world with lamps, fireworks and joy. Gujarat celebrates its new year (Bestu Varas) here.' },
+  { name:'Margashirsha', dev:'मार्गशीर्ष', period:'Mid-Nov → Mid-Dec', season:'❄️ Hemanta (Pre-Winter)', zodiac:'Sagittarius ♐', color:'rgba(74,144,217,0.08)',
+    festivals:'Gita Jayanti (Bhagavad Gita revealed), Vivah Panchami (Ram-Sita wedding)',
+    desc:'In the Bhagavad Gita, Lord Krishna says "Among months, I am Margashirsha." The Gita was revealed during this month on Mokshada Ekadashi.' },
+  { name:'Pausha', dev:'पौष', period:'Mid-Dec → Mid-Jan', season:'❄️ Shishira (Winter)', zodiac:'Capricorn ♑', color:'rgba(150,150,255,0.08)',
+    festivals:'Makar Sankranti / Pongal / Lohri / Uttarayan, Pausha Purnima',
+    desc:'The Sun enters Capricorn (Makar) marking Makar Sankranti — the great winter harvest festival celebrated as Pongal in Tamil Nadu, Lohri in Punjab, and Uttarayan in Gujarat.' },
+  { name:'Magha', dev:'माघ', period:'Mid-Jan → Mid-Feb', season:'❄️ Shishira (Winter)', zodiac:'Aquarius ♒', color:'rgba(255,154,176,0.08)',
+    festivals:'Vasant Panchami (Saraswati Puja), Maha Shivaratri, Kumbh Mela',
+    desc:'Sacred baths in holy rivers during Magha are considered highly purifying. Vasant Panchami marks the onset of spring. Major Kumbh Mela gatherings occur during Magha.' },
+  { name:'Phalguna', dev:'फाल्गुन', period:'Mid-Feb → Mid-Mar', season:'🌸 Vasanta (Spring)', zodiac:'Pisces ♓', color:'rgba(255,107,0,0.1)',
+    festivals:'Holi (Festival of Colours), Holika Dahan, Mahashivratri (sometimes)',
+    desc:'The final month of the year — a joyful farewell celebrated with Holi, the festival of colours. The burning of Holika marks the triumph of devotion over arrogance.' },
+];
+
+const monthsGrid = document.getElementById('monthsGrid');
+months.forEach((m, i) => {
+  const card = document.createElement('div');
+  card.className = 'month-card';
+  card.style.setProperty('--accent-color', m.color);
+  card.innerHTML = `
+    <p class="month-num">Month ${i+1} of 12</p>
+    <p class="month-name">${m.name}</p>
+    <p class="month-devanagari">${m.dev}</p>
+    <p class="month-period">${m.period}</p>
+    <p class="month-desc">${m.desc}</p>
+    <p class="month-desc" style="margin-top:0.5rem;color:rgba(255,248,238,0.45);font-size:0.75rem;"><strong style="color:rgba(212,160,23,0.8)">Festivals:</strong> ${m.festivals}</p>
+    <span class="month-season">${m.season} · ${m.zodiac}</span>
+  `;
+  monthsGrid.appendChild(card);
+});
+
+// ── HINDU DATE CALCULATOR ──
+const LUNAR_MONTH_DAYS = 29.53059;
+const TITHI_NAMES = [
+  'Pratipada','Dwitiya','Tritiya','Chaturthi','Panchami',
+  'Shashthi','Saptami','Ashtami','Navami','Dashami',
+  'Ekadashi','Dwadashi','Trayodashi','Chaturdashi','Purnima/Amavasya'
+];
+
+function getApproxMoonAge(date) {
+  // Known new moon reference: Jan 6, 2000 (approx)
+  const knownNewMoon = new Date(2000, 0, 6, 18, 14);
+  const msPerDay = 86400000;
+  const diff = (date - knownNewMoon) / msPerDay;
+  const cycles = diff / LUNAR_MONTH_DAYS;
+  const moonAge = (cycles % 1) * LUNAR_MONTH_DAYS;
+  return moonAge < 0 ? moonAge + LUNAR_MONTH_DAYS : moonAge;
+}
+
+function getHinduMonth(date) {
+  const month = date.getMonth(); // 0=Jan
+  const day = date.getDate();
+
+  // Approximate mapping based on solar month overlaps
+  const solarDay = month * 30 + day; // crude day-of-year approx
+  // Chaitra starts ~Mar 15 (day ~74), each month ~30 days
+  let hinduMonthIndex = Math.floor((solarDay - 74 + 365) % 365 / 30.44);
+  hinduMonthIndex = ((hinduMonthIndex % 12) + 12) % 12;
+  return hinduMonthIndex;
+}
+
+function calculateHinduDate() {
+  const dobInput = document.getElementById('dobInput').value;
+  if (!dobInput) { alert('Please enter a date of birth.'); return; }
+
+  const dob = new Date(dobInput + 'T12:00:00');
+  const year = dob.getFullYear();
+  const month = dob.getMonth();
+  const day = dob.getDate();
+
+  // Samvat year
+  let samvat;
+  if (month < 2 || (month === 2 && day < 15)) {
+    samvat = year + 56; // Before Hindu New Year (approx mid-March)
+  } else {
+    samvat = year + 57;
+  }
+
+  // Moon age → tithi
+  const moonAge = getApproxMoonAge(dob);
+  let tithi = Math.floor(moonAge / (LUNAR_MONTH_DAYS / 30)) + 1;
+  let paksha, tithiName;
+  if (tithi <= 15) {
+    paksha = 'Shukla Paksha (🌕 Waxing)';
+    tithiName = TITHI_NAMES[tithi - 1];
+    if (tithi === 15) tithiName = 'Purnima (Full Moon)';
+  } else {
+    paksha = 'Krishna Paksha (🌑 Waning)';
+    tithiName = TITHI_NAMES[(tithi - 16) % 15];
+    if (tithi === 30) tithiName = 'Amavasya (New Moon)';
+  }
+  tithiName = tithiName || TITHI_NAMES[0];
+
+  // Hindu month
+  const hMonthIdx = getHinduMonth(dob);
+  const hMonth = months[hMonthIdx];
+
+  // Vara (weekday)
+  const varas = ['Ravivar (Sun ☀️)','Somvar (Mon 🌙)','Mangalvar (Tue ♂️)','Budhvar (Wed ☿)','Guruvar (Thu ♃)','Shukravar (Fri ♀)','Shanivar (Sat ♄)'];
+  const vara = varas[dob.getDay()];
+
+  // Approximate Nakshatra (27 nakshatras over 27.32 days)
+  const nakshatras = ['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Ashlesha','Magha','Purva Phalguni','Uttara Phalguni','Hasta','Chitra','Swati','Vishakha','Anuradha','Jyeshtha','Mula','Purva Ashadha','Uttara Ashadha','Shravana','Dhanishta','Shatabhisha','Purva Bhadrapada','Uttara Bhadrapada','Revati'];
+  const nakshatraIdx = Math.floor(moonAge / (27.32 / 27)) % 27;
+  const nakshatra = nakshatras[nakshatraIdx] || 'Ashwini';
+
+  const resultBox = document.getElementById('resultBox');
+  resultBox.innerHTML = `
+    <div class="result-big">
+      <p class="tithi">${tithiName}</p>
+      <p class="samvat">Vikram Samvat ${samvat} · ${hMonth.name} · ${paksha}</p>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Samvat Year</span>
+      <span class="result-value">${samvat} VS</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Hindu Month</span>
+      <span class="result-value">${hMonth.name} (${hMonth.dev})</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Paksha</span>
+      <span class="result-value">${paksha}</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Tithi</span>
+      <span class="result-value">${tithiName}</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Vara (Weekday)</span>
+      <span class="result-value">${vara}</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Approx. Nakshatra</span>
+      <span class="result-value">${nakshatra}</span>
+    </div>
+    <p class="result-note">
+      ⚠️ This is an approximation. For precise Tithi, Yoga and Karana at your exact birth time, consult drikpanchang.com with your time and place of birth.
+    </p>
+  `;
+}
+</script>
+<div style="text-align:center;padding:20px 24px 36px;border-top:1px solid rgba(212,160,23,0.15);margin-top:20px">
+  <p style="font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">Part of the</p>
+  <a href="index.html" style="font-family:'EB Garamond',serif;font-size:18px;color:rgba(212,160,23,0.6);text-decoration:none;font-weight:600">Sanatana Series</a>
+  <p style="font-size:12px;color:rgba(255,255,255,0.2);margin-top:8px">Created by <span style="color:rgba(212,160,23,0.5);font-weight:600">Varun Dogar</span></p>
+  <p style="font-size:11px;color:rgba(255,255,255,0.15);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
+</div>
+</body>
+</html>
