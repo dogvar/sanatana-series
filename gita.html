@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhagavad Gita — Sanatana Series</title>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Bhagavad Gita — The Song of God"/>
+<meta property="og:description" content="18 chapters, 20 transformative shlokas with Sanskrit, transliteration and meaning. The Gita made accessible for every generation. Sanatana Series."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/gita.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold:#B8860B; --goldt:#D4A017; --saff:#C94800;
+  --blue:#003366; --blue2:#004A99;
+  --dark:#040A1A; --dark2:#080F24;
+  --parch:#F5F8FF; --ink:#0A1030; --ink2:#1A2850; --muted:#4A6090;
+  --border:rgba(0,64,153,0.18); --r:12px;
+  --white:#FFFFFF;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',sans-serif; background:var(--parch); color:var(--ink); line-height:1.6; font-size:15px; max-width:640px; margin:0 auto; }
+
+/* Top nav */
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(4,10,26,0.95);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,64,153,0.3);
+  padding:0 16px; display:flex; align-items:center; height:48px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(212,160,23,0.75); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; transition:color 0.15s; white-space:nowrap; }
+.top-nav a.back:hover { color:rgba(212,160,23,1); }
+.top-nav a.back svg { width:16px; height:16px; }
+.top-nav .nav-om { flex:1; text-align:center; font-family:'Noto Serif Devanagari',serif;
+  font-size:18px; color:rgba(212,160,23,0.4); pointer-events:none; }
+
+/* Hero */
+.hero { background:var(--dark); padding:40px 20px 32px; text-align:center; position:relative; overflow:hidden; }
+.hero::before { content:""; position:absolute; inset:0;
+  background:radial-gradient(ellipse at 30% 50%, rgba(0,64,153,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(212,160,23,0.08) 0%, transparent 50%); }
+.eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:rgba(212,160,23,0.5); margin-bottom:8px; position:relative; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(32px,8vw,50px); color:var(--goldt);
+  line-height:1.1; margin-bottom:6px; position:relative; }
+.hero-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px; color:rgba(212,160,23,0.5); margin-bottom:8px; position:relative; }
+.hero-sub { font-family:'Lora',serif; font-style:italic; font-size:14px; color:rgba(255,255,255,0.45); margin-bottom:16px; position:relative; }
+.hero-stats { display:flex; justify-content:center; gap:24px; position:relative; }
+.h-stat { text-align:center; }
+.h-stat-num { font-family:'Yatra One',cursive; font-size:24px; color:var(--goldt); }
+.h-stat-label { font-size:11px; color:rgba(255,255,255,0.4); }
+
+/* Intro */
+.intro-b { background:white; border-left:4px solid var(--blue); border-radius:0 var(--r) var(--r) 0;
+  padding:14px 14px 14px 16px; margin:16px; }
+.intro-lead { font-family:'Lora',serif; font-weight:700; font-size:14px; color:var(--blue); margin-bottom:7px; }
+.intro-b p { font-size:13.5px; color:var(--ink2); line-height:1.62; }
+
+/* Chapter overview */
+.chapters-wrap { padding:0 16px; }
+.chapters-grid { display:grid; gap:8px; }
+.ch-item { background:white; border-radius:10px; padding:13px 14px;
+  display:flex; gap:12px; box-shadow:0 1px 4px rgba(0,0,0,0.06);
+  border-left:3px solid; }
+.ch-num { font-family:'Lora',serif; font-weight:700; font-size:15px; flex-shrink:0;
+  width:24px; text-align:center; margin-top:1px; }
+.ch-content h3 { font-family:'Lora',serif; font-weight:700; font-size:14px; margin-bottom:3px; }
+.ch-content .ch-name-deva { font-family:'Noto Serif Devanagari',serif; font-size:12px; color:var(--muted); margin-bottom:4px; }
+.ch-content p { font-size:12.5px; color:var(--ink2); line-height:1.55; }
+.ch-verses { font-size:10px; color:var(--muted); margin-top:3px; font-weight:600; letter-spacing:0.5px; }
+
+/* Section header */
+.sec-hdr { background:var(--dark); color:white; padding:16px 20px 12px; border-top:3px solid var(--blue); }
+.sec-hdr h2 { font-family:'Yatra One',cursive; font-size:clamp(18px,5vw,26px); color:var(--goldt); margin-bottom:3px; }
+.sec-hdr p { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(212,160,23,0.5); }
+
+/* Shloka card */
+.shloka-card { background:white; border-radius:var(--r); margin:0 16px 14px;
+  overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07); }
+.sh-header { padding:13px 14px 10px; display:flex; align-items:flex-start; gap:10px; border-bottom:1px solid #eef2ff; }
+.sh-ref { display:inline-block; font-size:11px; font-weight:700; padding:3px 10px;
+  border-radius:100px; color:white; flex-shrink:0; margin-top:2px; }
+.sh-header-text h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; line-height:1.3; }
+.sh-header-text .sh-context { font-size:12px; color:var(--muted); margin-top:2px; }
+.sh-body { padding:14px; }
+.sh-deva { font-family:'Noto Serif Devanagari',serif; font-size:16px; color:var(--blue2);
+  line-height:2.0; margin-bottom:8px; }
+.sh-roman { font-family:'Lora',serif; font-style:italic; font-size:13px; color:var(--muted);
+  line-height:1.7; margin-bottom:10px; }
+.sh-divider { height:1px; background:#eef2ff; margin-bottom:10px; }
+.sh-meaning { font-size:13.5px; color:var(--ink2); line-height:1.65; margin-bottom:8px; }
+.sh-insight { background:#F0F4FF; border-left:3px solid var(--blue); border-radius:0 8px 8px 0;
+  padding:10px 12px; font-size:13px; color:var(--ink2); line-height:1.6; }
+.sh-insight strong { color:var(--blue); }
+
+/* Theme section */
+.theme-card { background:white; border-radius:var(--r); margin:8px 16px;
+  padding:15px 15px; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-top:3px solid; }
+.theme-title { font-family:'Lora',serif; font-weight:700; font-size:15px; margin-bottom:7px; }
+.theme-card p { font-size:13.5px; color:var(--ink2); line-height:1.62; }
+
+/* Footer */
+.footer { background:var(--dark); padding:32px 24px; text-align:center; margin-top:8px; }
+.footer-series { font-family:'Lora',serif; font-size:16px; color:rgba(212,160,23,0.55); font-weight:600; margin-bottom:4px; }
+.footer-sub { font-size:11px; color:rgba(255,255,255,0.2); letter-spacing:1px; text-transform:uppercase; margin-bottom:14px; }
+.attr-name { font-family:'Lora',serif; font-size:15px; color:rgba(212,160,23,0.5); font-weight:600; }
+.attr-claude { font-size:11px; color:rgba(255,255,255,0.18); margin-top:4px; font-style:italic; }
+
+/* Section label */
+.sec-label { font-size:10px; letter-spacing:3px; text-transform:uppercase;
+  color:rgba(0,0,0,0.28); padding:20px 16px 8px; }
+
+/* ── Audio Player ── */
+.audio-bar {
+  position: sticky;
+  top: 48px;
+  z-index: 99;
+  background: rgba(13,4,0,0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(184,134,11,0.25);
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  transition: opacity 0.3s;
+}
+.audio-bar.hidden { display: none; }
+
+.ab-play {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--goldt, #D4A017);
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.15s, background 0.15s;
+}
+.ab-play:hover { transform: scale(1.08); }
+.ab-play svg { width: 16px; height: 16px; }
+
+.ab-info {
+  flex: 1; min-width: 0;
+}
+.ab-section {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(212,160,23,0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+.ab-progress-wrap {
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.ab-progress {
+  height: 100%;
+  background: var(--goldt, #D4A017);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s linear;
+  pointer-events: none;
+}
+
+.ab-skip {
+  background: none; border: none;
+  color: rgba(212,160,23,0.55);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex; align-items: center;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+.ab-skip:hover { color: rgba(212,160,23,1); }
+.ab-skip svg { width: 18px; height: 18px; }
+
+.ab-speed {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(212,160,23,0.7);
+  border-radius: 6px;
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+.ab-speed:hover { background: rgba(255,255,255,0.1); color: rgba(212,160,23,1); }
+
+/* Reading highlight */
+.audio-reading {
+  background: rgba(212,160,23,0.08) !important;
+  border-left: 3px solid rgba(212,160,23,0.6) !important;
+  border-radius: 0 6px 6px 0;
+  padding-left: 12px !important;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* ════ CONTRAST FIXES — WCAG AA compliance ════ */
+
+/* A: Section header subtitle — dark bg needs bright text */
+.sec-hdr p, .sec-hdr.gold p, .sec-hdr.blue p, .sec-hdr.green p {
+  color: rgba(255, 220, 120, 0.90) !important;
+  letter-spacing: 1.5px;
+}
+
+/* B: Hero subtitle — dark bg */
+.hero-sub { color: rgba(255,255,255,0.70) !important; }
+.series-sub { color: rgba(255,255,255,0.60) !important; }
+
+/* C: Roman transliterations — italic on white/cream bg */
+.v-roman    { color: #4A3010 !important; font-size: 13.5px !important; }
+.sh-roman   { color: #2A3A60 !important; font-size: 13.5px !important; }
+.shloka-roman { color: rgba(255,255,255,0.75) !important; }  /* on dark bg */
+.mantra-roman { color: #4A3010 !important; font-size: 13px !important; }
+.phil-roman { color: rgba(255,255,255,0.68) !important; } /* on dark bg */
+
+/* D: Small label text — needs stronger contrast */
+.ch-festival  { font-size: 11px !important; font-weight: 600 !important; opacity: 1 !important; }
+.ch-name-deva { color: #3A4A6A !important; font-size: 12.5px !important; }
+.day-meta     { color: #4A3010 !important; font-size: 12px !important; }
+.day-lbl      { color: rgba(255,255,255,0.80) !important; font-size: 10px !important; }
+.aarti-about  { color: #2A1800 !important; font-size: 13.5px !important; }
+.deity        { color: #4A3010 !important; }
+.peeth-meta   { color: #4A3010 !important; font-size: 12px !important; }
+.wp-label     { font-size: 11.5px !important; font-weight: 700 !important; }
+.cal-date     { color: rgba(255,255,255,0.70) !important; font-weight: 600 !important; }
+.cal-name     { color: rgba(255,255,255,0.90) !important; }
+.ch-verses    { color: #4A5070 !important; font-size: 11px !important; font-weight: 600 !important; }
+.sh-context   { color: #3A4A6A !important; font-size: 12.5px !important; }
+.timing-note  { color: #4A3010 !important; font-size: 12.5px !important; }
+.timing-label { color: #4A3010 !important; font-size: 11.5px !important; letter-spacing: 0.5px !important; }
+.mantra-title { font-size: 14.5px !important; }
+.ch-desc      { color: rgba(255,255,255,0.58) !important; font-size: 12.5px !important; }
+
+/* E: Audio bar */
+.ab-section { color: rgba(255,220,120,0.95) !important; font-size: 12px !important; }
+
+/* F: General body text — ensure minimum readable size */
+.card p, .card-body p { font-size: 13.5px !important; line-height: 1.65 !important; }
+.story-body { font-size: 14px !important; color: #1C0E00 !important; }
+.aspect-body { font-size: 14px !important; color: #1C0E00 !important; }
+.justice-body { font-size: 14px !important; color: #1C0E00 !important; }
+.battle-body  { font-size: 14px !important; color: #1C0E00 !important; }
+.celeb-body   { font-size: 14px !important; color: #1C0E00 !important; }
+.ritual p     { font-size: 14px !important; color: #1C0E00 !important; }
+.wp-content p { font-size: 13.5px !important; color: #1C0E00 !important; }
+.teaching-body { font-size: 14px !important; color: #1C0E00 !important; }
+.rajya-card p  { font-size: 14px !important; color: #1C0E00 !important; }
+.country-body  { font-size: 14px !important; color: #1C0E00 !important; }
+.theme-card p  { font-size: 14px !important; color: #1C0E00 !important; }
+.invoker blockquote { font-size: 13.5px !important; color: #1C0E00 !important; }
+.sh-meaning   { font-size: 14px !important; color: #1C0E00 !important; }
+.sh-insight   { font-size: 13.5px !important; color: #1C0E00 !important; }
+.v-meaning    { font-size: 13.5px !important; color: #1C0E00 !important; }
+
+/* G: Navdurga specific */
+.navdurga-epithet { color: #4A3010 !important; font-size: 13px !important; }
+.navdurga-desc    { font-size: 14px !important; color: #1C0E00 !important; }
+.attr-item        { font-size: 13px !important; color: #1C0E00 !important; }
+.attr-item strong { font-size: 11.5px !important; color: #4A3010 !important; }
+.mantra-line      { font-size: 13.5px !important; color: #1C0E00 !important; }
+
+/* H: Shloka boxes — ensure white text readable on dark */
+.shloka-box .shloka-meaning { color: rgba(255,220,120,0.90) !important; font-size: 13px !important; }
+.shloka-box .shloka-source  { color: rgba(255,255,255,0.60) !important; }
+
+/* I: Timeline */
+.tl-date { color: #C94800 !important; font-size: 11.5px !important; font-weight: 700 !important; }
+.tl-text { color: #1C0E00 !important; font-size: 11.5px !important; }
+
+/* J: Intro block lead */
+.intro-b p { font-size: 14px !important; color: #1C0E00 !important; }
+.what-box p { font-size: 14px !important; color: #1C0E00 !important; }
+
+/* K: Closing / dark footer sections */
+.closing .victory { color: rgba(255,255,255,0.72) !important; }
+.jai-deva { color: var(--gold, #B8860B) !important; }
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sanatana Series
+  </a>
+  <span class="nav-om">ॐ</span>
+</nav>
+
+<!-- Audio Player Bar -->
+<div class="audio-bar" id="audioBar">
+  <button class="ab-play" id="abPlay" onclick="audioToggle()" aria-label="Play">
+    <svg id="abPlayIcon" viewBox="0 0 16 16" fill="white">
+      <polygon points="4,2 14,8 4,14"/>
+    </svg>
+  </button>
+  <div class="ab-info">
+    <div class="ab-section" id="abSection">Tap ▶ to listen</div>
+    <div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
+      <div class="ab-progress" id="abProgress"></div>
+    </div>
+  </div>
+  <button class="ab-skip" onclick="audioNext()" title="Next section" aria-label="Next section">
+    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <polygon points="3,3 12,9 3,15" fill="currentColor" stroke="none"/>
+      <line x1="14" y1="3" x2="14" y2="15"/>
+    </svg>
+  </button>
+  <button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+</div>
+
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">The Song of God · Kurukshetra · Treta–Dwapara Yuga</p>
+  <h1>Bhagavad Gita</h1>
+  <p class="hero-deva">श्रीमद्भगवद्गीता</p>
+  <p class="hero-sub">700 verses · 18 chapters · Lord Krishna to Arjuna · The complete guide to living</p>
+  <div class="hero-stats">
+    <div class="h-stat"><div class="h-stat-num">700</div><div class="h-stat-label">Verses (shlokas)</div></div>
+    <div class="h-stat"><div class="h-stat-num">18</div><div class="h-stat-label">Chapters (adhyayas)</div></div>
+    <div class="h-stat"><div class="h-stat-num">3</div><div class="h-stat-label">Core yogas</div></div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="intro-b">
+  <p class="intro-lead">The Bhagavad Gita is not a religious text. It is a manual for living.</p>
+  <p>On the battlefield of Kurukshetra, the warrior Arjuna collapses. He is supposed to fight — but the enemies arrayed against him are his own cousins, teachers and elders. He cannot do it. In that moment of paralysis, Lord Krishna speaks for 18 chapters. What follows is the most comprehensive philosophical conversation in human history — covering duty, action, devotion, knowledge, the nature of the self, death, rebirth, and the ultimate truth. Not one of these chapters has become obsolete. Every crisis a human being faces is addressed somewhere in the Gita.</p>
+</div>
+
+<!-- THE SETTING -->
+<p class="sec-label">The Setting</p>
+<div style="background:white;border-radius:var(--r);margin:0 16px 12px;padding:15px;box-shadow:0 2px 6px rgba(0,0,0,0.06)">
+  <p style="font-size:13.5px;color:var(--ink2);line-height:1.65">The Pandavas and Kauravas — two branches of the Kuru royal family — have been at war for the kingdom of Hastinapur. The Pandavas (Arjuna's side) are righteous; the Kauravas (Duryodhana's side) have cheated, lied and stolen. Just before the battle begins, Arjuna asks Krishna (his charioteer and closest friend) to drive him to the centre so he can see who he is about to fight. He sees his grandfather Bhishma, his teacher Drona, his cousins and uncles. He drops his bow. He asks Krishna: <em>"How can I kill those I love? What is the point of victory if it means their death?"</em><br><br>This is not a weak question. It is the deepest human question: what do you do when duty conflicts with love? Krishna's answer — delivered as Arjuna's charioteer between two armies — is the Bhagavad Gita.</p>
+</div>
+
+<!-- THE 18 CHAPTERS -->
+<div class="sec-hdr">
+  <h2>The 18 Chapters</h2>
+  <p>18 Adhyayas · Each a complete philosophical teaching</p>
+</div>
+<div class="chapters-wrap" style="padding-top:14px">
+  <div class="chapters-grid">
+
+    <div class="ch-item" style="border-color:#7B0015">
+      <div class="ch-num" style="color:#7B0015">1</div>
+      <div class="ch-content">
+        <h3 style="color:#7B0015">Arjuna Vishada Yoga</h3>
+        <div class="ch-name-deva">अर्जुन विषाद योग — The Yoga of Arjuna's Grief</div>
+        <p>Arjuna sees his family on the opposing side and collapses in grief and moral confusion. He refuses to fight. This chapter sets up the central human crisis the Gita answers.</p>
+        <div class="ch-verses">47 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:var(--blue)">
+      <div class="ch-num" style="color:var(--blue)">2</div>
+      <div class="ch-content">
+        <h3 style="color:var(--blue)">Sankhya Yoga</h3>
+        <div class="ch-name-deva">सांख्य योग — The Yoga of Knowledge</div>
+        <p>Krishna's first great teaching: the soul is eternal and cannot be killed. Introduces Karma Yoga — action without attachment to results. Contains the famous 2.47 verse on desireless action. Considered the essence of the entire Gita.</p>
+        <div class="ch-verses">72 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#1B5E20">
+      <div class="ch-num" style="color:#1B5E20">3</div>
+      <div class="ch-content">
+        <h3 style="color:#1B5E20">Karma Yoga</h3>
+        <div class="ch-name-deva">कर्म योग — The Yoga of Action</div>
+        <p>No one can avoid action — even inaction is a form of action. Krishna teaches that performing one's duty without ego or desire for reward is the path to liberation. Every person has a dharma — a right action in their circumstances.</p>
+        <div class="ch-verses">43 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#8B4500">
+      <div class="ch-num" style="color:#8B4500">4</div>
+      <div class="ch-content">
+        <h3 style="color:#8B4500">Jnana Karma Sanyasa Yoga</h3>
+        <div class="ch-name-deva">ज्ञान कर्म संन्यास योग — Knowledge, Action and Renunciation</div>
+        <p>Krishna reveals that He has taught this wisdom in many ages before. Contains the famous verse 4.7: "Whenever there is a decline in righteousness... I manifest myself." The avatar doctrine explained.</p>
+        <div class="ch-verses">42 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#4A0060">
+      <div class="ch-num" style="color:#4A0060">5</div>
+      <div class="ch-content">
+        <h3 style="color:#4A0060">Karma Sanyasa Yoga</h3>
+        <div class="ch-name-deva">कर्म संन्यास योग — Renunciation of Action</div>
+        <p>Both renunciation of action and action performed with devotion lead to liberation. The truly renounced person acts in the world without being bound by it — neither craving nor aversion controls them.</p>
+        <div class="ch-verses">29 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:var(--blue)">
+      <div class="ch-num" style="color:var(--blue)">6</div>
+      <div class="ch-content">
+        <h3 style="color:var(--blue)">Atma Sanyama Yoga</h3>
+        <div class="ch-name-deva">आत्म संयम योग — The Yoga of Self-Mastery</div>
+        <p>Deep teaching on meditation — how to still the mind, what to do when it wanders, why the yogi is superior to all other practitioners. Contains the famous teaching on the controlled mind as friend; uncontrolled mind as enemy.</p>
+        <div class="ch-verses">47 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#1B5E20">
+      <div class="ch-num" style="color:#1B5E20">7</div>
+      <div class="ch-content">
+        <h3 style="color:#1B5E20">Jnana Vijnana Yoga</h3>
+        <div class="ch-name-deva">ज्ञान विज्ञान योग — Knowledge and Wisdom</div>
+        <p>Krishna describes his two natures: lower (the manifest world) and higher (pure consciousness). He is in everything; everything is in Him. Only rare souls truly know this. Contains Krishna's famous self-description as the essence of everything.</p>
+        <div class="ch-verses">30 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#8B4500">
+      <div class="ch-num" style="color:#8B4500">8</div>
+      <div class="ch-content">
+        <h3 style="color:#8B4500">Akshara Brahma Yoga</h3>
+        <div class="ch-name-deva">अक्षर ब्रह्म योग — The Imperishable Brahman</div>
+        <p>What happens at the moment of death? What one thinks of at the moment of death determines one's next life. Those who remember God at death attain God. The doctrine of rebirth and liberation explained clearly.</p>
+        <div class="ch-verses">28 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:var(--blue)">
+      <div class="ch-num" style="color:var(--blue)">9</div>
+      <div class="ch-content">
+        <h3 style="color:var(--blue)">Raja Vidya Raja Guhya Yoga</h3>
+        <div class="ch-name-deva">राजविद्या राजगुह्य योग — The Royal Knowledge, Royal Secret</div>
+        <p>The most secret and sacred teaching. "I am equal to all — I show no favour and no disfavour." Even the most sinful person, if they turn to God with undivided devotion, cross over all evil. The teaching of unconditional divine love.</p>
+        <div class="ch-verses">34 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#7B0015">
+      <div class="ch-num" style="color:#7B0015">10</div>
+      <div class="ch-content">
+        <h3 style="color:#7B0015">Vibhuti Yoga</h3>
+        <div class="ch-name-deva">विभूति योग — The Divine Glories</div>
+        <p>Krishna describes his divine manifestations: "I am the Ganga among rivers, the lion among animals, the Himalayas among mountains, OM among words, Rama among warriors." The universe as a catalogue of divine excellence.</p>
+        <div class="ch-verses">42 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#8B4500">
+      <div class="ch-num" style="color:#8B4500">11</div>
+      <div class="ch-content">
+        <h3 style="color:#8B4500">Vishwarupa Darshana Yoga</h3>
+        <div class="ch-name-deva">विश्वरूप दर्शन योग — Vision of the Universal Form</div>
+        <p>Arjuna asks to see Krishna's true cosmic form. Krishna grants him divine sight. Arjuna sees the entire universe — all of time and space, birth and death, creation and destruction — contained in one radiant, terrifying, beautiful form. Oppenheimer quoted this chapter after the first nuclear test.</p>
+        <div class="ch-verses">55 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#C94800">
+      <div class="ch-num" style="color:#C94800">12</div>
+      <div class="ch-content">
+        <h3 style="color:#C94800">Bhakti Yoga</h3>
+        <div class="ch-name-deva">भक्ति योग — The Yoga of Devotion</div>
+        <p>The shortest and perhaps most beloved chapter. Devotion to the personal God (saguna) is declared easier than devotion to the formless (nirguna). Contains the beautiful description of the ideal devotee — no hatred, friendly and compassionate to all.</p>
+        <div class="ch-verses">20 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:var(--blue)">
+      <div class="ch-num" style="color:var(--blue)">13</div>
+      <div class="ch-content">
+        <h3 style="color:var(--blue)">Kshetra Kshetrajna Vibhaga Yoga</h3>
+        <div class="ch-name-deva">क्षेत्र क्षेत्रज्ञ विभाग योग — The Field and the Knower</div>
+        <p>The body is the "field" (kshetra); the soul is the "knower of the field" (kshetrajna). Understanding the difference between the physical self and the observing consciousness is the foundation of all wisdom.</p>
+        <div class="ch-verses">35 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#1B5E20">
+      <div class="ch-num" style="color:#1B5E20">14</div>
+      <div class="ch-content">
+        <h3 style="color:#1B5E20">Gunatraya Vibhaga Yoga</h3>
+        <div class="ch-name-deva">गुणत्रय विभाग योग — The Three Qualities of Nature</div>
+        <p>All of nature operates through three gunas: Tamas (inertia/darkness), Rajas (passion/activity), Sattva (clarity/goodness). Understanding which guna dominates your actions and how to transcend all three to reach liberation.</p>
+        <div class="ch-verses">27 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#4A0060">
+      <div class="ch-num" style="color:#4A0060">15</div>
+      <div class="ch-content">
+        <h3 style="color:#4A0060">Purushottama Yoga</h3>
+        <div class="ch-name-deva">पुरुषोत्तम योग — The Supreme Person</div>
+        <p>The universe is described as an eternal ashvattha (sacred fig tree) whose roots are above and branches below. Contains the beautiful verse: "I am the taste of water, the light of the sun and moon, the sacred syllable OM in all the Vedas."</p>
+        <div class="ch-verses">20 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#7B0015">
+      <div class="ch-num" style="color:#7B0015">16</div>
+      <div class="ch-content">
+        <h3 style="color:#7B0015">Daivasura Sampad Vibhaga Yoga</h3>
+        <div class="ch-name-deva">दैवासुर सम्पद विभाग योग — Divine and Demonic Qualities</div>
+        <p>A clear inventory of divine qualities (fearlessness, purity, compassion, gentleness, honesty) versus demonic qualities (arrogance, pride, anger, cruelty). Examining which qualities live in oneself is the practical work of this chapter.</p>
+        <div class="ch-verses">24 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:#8B4500">
+      <div class="ch-num" style="color:#8B4500">17</div>
+      <div class="ch-content">
+        <h3 style="color:#8B4500">Shraddhatraya Vibhaga Yoga</h3>
+        <div class="ch-name-deva">श्रद्धात्रय विभाग योग — The Threefold Faith</div>
+        <p>Faith itself is classified as sattvic, rajasic or tamasic. What we eat, how we worship, what we sacrifice and how we give — all are coloured by our dominant guna. The food we eat shapes our consciousness.</p>
+        <div class="ch-verses">28 verses</div>
+      </div>
+    </div>
+
+    <div class="ch-item" style="border-color:var(--blue)">
+      <div class="ch-num" style="color:var(--blue)">18</div>
+      <div class="ch-content">
+        <h3 style="color:var(--blue)">Moksha Sanyasa Yoga</h3>
+        <div class="ch-name-deva">मोक्ष संन्यास योग — Liberation through Renunciation</div>
+        <p>The magnificent conclusion. All the yogas are synthesised. Krishna's final instruction: "Abandon all dharmas and surrender to Me alone — I will free you from all sins." Contains verse 18.66, considered by many the most important verse in the entire Gita. Arjuna says his confusion is gone — he will act.</p>
+        <div class="ch-verses">78 verses</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 20 KEY SHLOKAS -->
+<div class="sec-hdr" style="margin-top:16px">
+  <h2>20 Transformative Shlokas</h2>
+  <p>The verses that changed the world · Sanskrit · Roman · Meaning · Why it matters</p>
+</div>
+<div style="height:12px"></div>
+
+<!-- 2.47 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:var(--blue)">2.47</span>
+    <div class="sh-header-text">
+      <h3 style="color:var(--blue)">The Foundation of Karma Yoga</h3>
+      <div class="sh-context">The most quoted verse in the Gita · On action without attachment</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</div>
+    <div class="sh-roman">Karmanye Vadhikaraste Ma Phaleshu Kadachana<br>Ma Karma Phala Hetur Bhur Ma Te Sango Stv Akarmani</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">You have the right to perform your prescribed duty, but you have no claim to the fruits of your actions. Never consider yourself the cause of the results of your activities, nor be attached to inaction.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> This single verse is the antidote to anxiety, burnout and the paralysis of perfectionism. Do the work. Do it well. Don't attach your identity to the outcome. The fruit of your action is not yours to control — only the quality of your effort is. This is not passivity. It is the highest form of engagement.</div>
+  </div>
+</div>
+
+<!-- 2.20 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#7B0015">2.20</span>
+    <div class="sh-header-text">
+      <h3 style="color:#7B0015">The Immortal Soul</h3>
+      <div class="sh-context">On the eternal nature of the Atman · The antidote to fear of death</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">न जायते म्रियते वा कदाचिन्<br>नायं भूत्वा भविता वा न भूयः।<br>अजो नित्यः शाश्वतोऽयं पुराणो<br>न हन्यते हन्यमाने शरीरे॥</div>
+    <div class="sh-roman">Na Jayate Mriyate Va Kadachin<br>Nayam Bhutva Bhavita Va Na Bhuyah<br>Ajo Nityah Shashvato Yam Purano<br>Na Hanyate Hanyamane Sharire</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">The soul is never born nor does it ever die. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing and primeval. It is not slain when the body is slain.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> Every human fear ultimately traces back to the fear of death. This verse removes the foundation of that fear: what you essentially are cannot die. The body is a garment. You — the witness, the awareness — are permanent.</div>
+  </div>
+</div>
+
+<!-- 2.22 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#1B5E20">2.22</span>
+    <div class="sh-header-text">
+      <h3 style="color:#1B5E20">The Old Clothes Analogy</h3>
+      <div class="sh-context">The most approachable verse on reincarnation</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">वासांसि जीर्णानि यथा विहाय<br>नवानि गृह्णाति नरोऽपराणि।<br>तथा शरीराणि विहाय जीर्णा-<br>न्यन्यानि संयाति नवानि देही॥</div>
+    <div class="sh-roman">Vasansi Jirnani Yatha Vihaya<br>Navani Grhnati Naro Aparani<br>Tatha Sharirani Vihaya Jirnani<br>Anyani Samyati Navani Dehi</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">Just as a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> Of all the verses explaining rebirth, this is the most accessible. Death is not an ending — it is changing clothes. The soul continues, wearing a new body suited to its next stage of learning.</div>
+  </div>
+</div>
+
+<!-- 4.7 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#C94800">4.7</span>
+    <div class="sh-header-text">
+      <h3 style="color:#C94800">The Avatar Verse</h3>
+      <div class="sh-context">Why God takes human form · The doctrine of divine incarnation</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।<br>अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥</div>
+    <div class="sh-roman">Yada Yada Hi Dharmasya Glanirbhavati Bharata<br>Abhyutthanam Adharmasya Tadatmanam Srijamyaham</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">Whenever there is a decline in righteousness, O Arjuna, and whenever there is a predominance of unrighteousness — at that time I manifest Myself.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> This verse explains why Ram, Krishna, Buddha, and all the avatars appeared. Whenever the world loses its moral centre — not once, but in every age — the divine manifests in human form to restore it. The avatar is not a supernatural event; it is a cosmic promise.</div>
+  </div>
+</div>
+
+<!-- 4.8 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#C94800">4.8</span>
+    <div class="sh-header-text">
+      <h3 style="color:#C94800">The Purpose of the Avatar</h3>
+      <div class="sh-context">Continuation of 4.7 · Why the divine takes form</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">परित्राणाय साधूनां विनाशाय च दुष्कृताम्।<br>धर्मसंस्थापनार्थाय सम्भवामि युगे युगे॥</div>
+    <div class="sh-roman">Paritranaya Sadhunam Vinashaya Cha Dushkritam<br>Dharma Samsthapanarthaya Sambhavami Yuge Yuge</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">To deliver the righteous, to annihilate the wicked, and to re-establish the principles of righteousness, I appear age after age.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> Three purposes, perfectly stated. The avatar does not appear for one religion, one nation, one group. It appears for dharma itself — which belongs to everyone. "Yuge yuge" — age after age — means this is an eternal pattern, not a one-time event.</div>
+  </div>
+</div>
+
+<!-- 6.5 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#4A0060">6.5</span>
+    <div class="sh-header-text">
+      <h3 style="color:#4A0060">You Are Your Own Best Friend or Enemy</h3>
+      <div class="sh-context">On self-mastery · The mind as ally or adversary</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।<br>आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥</div>
+    <div class="sh-roman">Uddhareda Tmanatmanam Natmanam Avasadayet<br>Atmaiva Hyatmano Bandhur Atmaiva Ripur Atmanah</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">Elevate yourself through the power of your mind, and do not degrade yourself — for the mind can be the friend of the self or its enemy. The mind is the best friend of those who have control over it, and the worst enemy of those who are controlled by it.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> Modern psychology took 2,000 years to arrive at what this verse states directly: your relationship with your own mind determines everything. You are not your thoughts — you are their witness. From that witness position, you can change them.</div>
+  </div>
+</div>
+
+<!-- 9.22 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#1B5E20">9.22</span>
+    <div class="sh-header-text">
+      <h3 style="color:#1B5E20">The Divine Promise of Provision</h3>
+      <div class="sh-context">On complete surrender and what it brings</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।<br>तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥</div>
+    <div class="sh-roman">Ananyash Chintayanto Mam Ye Janah Paryupasate<br>Tesham Nityabhiyuktanam Yoga-Kshemam Vahamyaham</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">But those who worship Me with devotion, meditating on My transcendental form — to them I carry what they lack and preserve what they have.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> This is God's unconditional promise to the devotee. Not just liberation in the afterlife — but practical provision in this life. "Yoga" here means attaining what you don't yet have; "kshema" means preserving what you have. The divine becomes your manager.</div>
+  </div>
+</div>
+
+<!-- 11.33 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#8B4500">11.33</span>
+    <div class="sh-header-text">
+      <h3 style="color:#8B4500">The Most Fearsome Verse</h3>
+      <div class="sh-context">From the Universal Form chapter · Quoted by Oppenheimer at the Trinity nuclear test</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">तस्मात्त्वमुत्तिष्ठ यशो लभस्व<br>जित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।<br>मयैवैते निहताः पूर्वमेव<br>निमित्तमात्रं भव सव्यसाचिन्॥</div>
+    <div class="sh-roman">Tasmat Tvam Uttishtha Yasho Labhasva<br>Jitva Shatrun Bhunksva Rajyam Samriddham<br>Mayaivaite Nihatah Purvameva<br>Nimitta Matram Bhava Savyasachin</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">Therefore arise and attain glory. Conquer your enemies and enjoy a flourishing kingdom. They have already been slain by Me. You are merely an instrument, O Arjuna.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> Robert Oppenheimer, watching the first nuclear explosion in 1945, quoted a related verse: "Now I am become Death, the destroyer of worlds." The Gita does not flinch from power or destruction — but it frames them as instruments of a larger cosmic will, not of individual ego.</div>
+  </div>
+</div>
+
+<!-- 12.13-14 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:#C94800">12.13–14</span>
+    <div class="sh-header-text">
+      <h3 style="color:#C94800">The Ideal Devotee</h3>
+      <div class="sh-context">From the Bhakti Yoga chapter · The most beautiful portrait of a spiritual person</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।<br>निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥<br>सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः।<br>मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः॥</div>
+    <div class="sh-roman">Advesha Sarva Bhutanam Maitrah Karuna Eva Cha<br>Nirmamo Nirahankarah Sama Duhkha Sukhah Ksami<br>Santushta Satatam Yogi Yatatma Drdha Nishchayah<br>Mayy Arpita Mano Buddhir Yo Mad Bhakta Sa Me Priyah</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">One who bears no hatred toward any being, who is friendly and compassionate, free from possessiveness and ego, equal in pleasure and pain, forgiving — always content, self-controlled, firm in conviction, with mind and intellect dedicated to Me — such a devotee is dear to Me.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> This is the Gita's most complete portrait of what a spiritually mature person actually looks like in practice. Not someone who sits in a cave — but someone who lives in the world, interacts with all kinds of people, and maintains inner equanimity through all of it.</div>
+  </div>
+</div>
+
+<!-- 18.66 -->
+<div class="shloka-card">
+  <div class="sh-header">
+    <span class="sh-ref" style="background:var(--blue)">18.66</span>
+    <div class="sh-header-text">
+      <h3 style="color:var(--blue)">The Charama Shloka — The Final Teaching</h3>
+      <div class="sh-context">The last and most important teaching · Complete surrender</div>
+    </div>
+  </div>
+  <div class="sh-body">
+    <div class="sh-deva">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।<br>अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः॥</div>
+    <div class="sh-roman">Sarva Dharman Parityajya Mam Ekam Sharanam Vraja<br>Aham Tvam Sarva Papebhyo Mokshayishyami Ma Shuchah</div>
+    <div class="sh-divider"></div>
+    <div class="sh-meaning">Abandon all varieties of dharma and simply surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.</div>
+    <div class="sh-insight"><strong>Why it matters:</strong> After 700 verses of philosophical teaching — after covering all the yogas, all the paths, all the approaches to liberation — Krishna distils everything to this. Let go. Surrender. I will handle everything. The three words "Ma Shuchah" — Do not fear — are perhaps the most compassionate words God has ever spoken to humanity.</div>
+  </div>
+</div>
+
+<!-- THE THREE CORE YOGAS -->
+<div class="sec-hdr" style="margin-top:8px">
+  <h2>The Three Core Yogas</h2>
+  <p>Three paths to liberation · All valid · Each suited to different temperaments</p>
+</div>
+<div style="height:8px"></div>
+
+<div class="theme-card" style="border-color:var(--blue)">
+  <div class="theme-title" style="color:var(--blue)">Jnana Yoga — The Path of Knowledge</div>
+  <p>For the intellectually inclined. Liberation through understanding the nature of reality — that the individual self (Atman) is identical to the universal consciousness (Brahman). Requires intense discrimination between the eternal and the temporary, the real and the illusory. The path of the philosopher and the scientist of consciousness.</p>
+</div>
+
+<div class="theme-card" style="border-color:#C94800">
+  <div class="theme-title" style="color:#C94800">Karma Yoga — The Path of Action</div>
+  <p>For the active temperament. Liberation through acting in the world without ego or attachment to results. Every action becomes worship when done with the right intention. The office worker, the parent, the soldier, the farmer — all can follow Karma Yoga without changing their circumstances. The path of engaged righteousness.</p>
+</div>
+
+<div class="theme-card" style="border-color:#1B5E20">
+  <div class="theme-title" style="color:#1B5E20">Bhakti Yoga — The Path of Devotion</div>
+  <p>For the devotional heart. Liberation through love of God — through prayer, singing, service, and complete surrender. Krishna declares this the easiest and most direct path. No philosophical understanding required — only pure love and trust. The path of the devotee, the singer, the one who weeps in prayer.</p>
+</div>
+
+<p class="sec-label">How to Read the Gita</p>
+<div style="background:white;border-radius:var(--r);margin:0 16px 20px;padding:15px;box-shadow:0 2px 6px rgba(0,0,0,0.06)">
+  <p style="font-size:13.5px;color:var(--ink2);line-height:1.65;margin-bottom:10px">The Bhagavad Gita can be read in a few hours or studied for a lifetime — both are valid. Here are three approaches:</p>
+  <ul style="list-style:none;display:grid;gap:10px;padding:0">
+    <li style="font-size:13.5px;color:var(--ink2);padding-left:18px;position:relative;line-height:1.6">
+      <span style="position:absolute;left:0;color:var(--blue);font-size:16px;line-height:1.2">•</span>
+      <strong style="color:var(--ink)">First reading:</strong> Read Chapter 2 and Chapter 12 only. These two contain the complete essence — the immortal soul and the ideal devotee.
+    </li>
+    <li style="font-size:13.5px;color:var(--ink2);padding-left:18px;position:relative;line-height:1.6">
+      <span style="position:absolute;left:0;color:var(--blue);font-size:16px;line-height:1.2">•</span>
+      <strong style="color:var(--ink)">One chapter a day:</strong> 18 days through the entire Gita. The traditional approach during auspicious periods or during a problem you are working through.
+    </li>
+    <li style="font-size:13.5px;color:var(--ink2);padding-left:18px;position:relative;line-height:1.6">
+      <span style="position:absolute;left:0;color:var(--blue);font-size:16px;line-height:1.2">•</span>
+      <strong style="color:var(--ink)">For students and young adults:</strong> Start with the 20 shlokas above. Learn one by heart. Carry it with you. The Gita was never meant to be a text you finish — it is one you return to at every stage of life.
+    </li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-series">Sanatana Series</div>
+  <div class="footer-sub">Hinduism for the World · 2026</div>
+  <p class="attr-name">Varun Dogar</p>
+  <p class="attr-claude">With assistance from Claude · Anthropic</p>
+</div>
+
+
+<script>
+// ── Sanatana Series Audio Player ──
+// Skips all Devanagari, reads Roman + English content
+
+const SKIP_CLASSES = [
+  'shloka-deva','jai-deva','mantra-deva','v-deva',
+  'hero-deva','sh-deva','ch-name-deva','series-deva',
+  'phil-deva','shloka-deva','om','nav-om','top-nav',
+  'audio-bar','footer','attr-claude','attr-name',
+  'footer-series','footer-sub','eyebrow','hero-tags',
+  'hero-tag','hero-stats','h-stat-label','aarti-nav',
+  'listen-row','listen-btn','ch-verses','sec-label',
+  'cal-header','cal-tag','cal-date','soon-tag','ch-tag'
+];
+
+const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH','LINE',
+                   'CIRCLE','POLYGON','RECT','ELLIPSE','META'];
+
+let segments = [];
+let curIdx = 0;
+let utterance = null;
+let speaking = false;
+let speeds = [0.8, 1.0, 1.4, 1.8];
+let speedIdx = 1;
+let lastHighlighted = null;
+
+function shouldSkipEl(el) {
+  if (!el || el.nodeType !== 1) return false;
+  if (SKIP_TAGS.includes(el.tagName)) return true;
+  const cls = (el.className || '').toString();
+  if (SKIP_CLASSES.some(c => cls.includes(c))) return true;
+  // Skip empty or icon-only elements
+  const text = el.textContent.trim();
+  if (text.length < 3) return true;
+  return false;
+}
+
+function extractText(el) {
+  // Clone and remove all Devanagari elements
+  const clone = el.cloneNode(true);
+  // Remove deva children
+  clone.querySelectorAll(
+    '.shloka-deva,.jai-deva,.mantra-deva,.v-deva,.hero-deva,' +
+    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om'
+  ).forEach(d => d.remove());
+  // Remove buttons, links, nav
+  clone.querySelectorAll('button,nav,.audio-bar,.listen-row,svg,.top-nav').forEach(d => d.remove());
+  return clone.textContent.replace(/\s+/g, ' ').trim();
+}
+
+function buildSegments() {
+  segments = [];
+  // Walk all meaningful elements
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_ELEMENT,
+    {
+      acceptNode(node) {
+        if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const readable = ['H1','H2','H3','P','LI','BLOCKQUOTE'];
+  let node;
+  while ((node = walker.nextNode())) {
+    if (!readable.includes(node.tagName)) continue;
+    // Skip if ancestor is a skip class
+    let skip = false;
+    let p = node.parentElement;
+    while (p && p !== document.body) {
+      if (shouldSkipEl(p)) { skip = true; break; }
+      p = p.parentElement;
+    }
+    if (skip) continue;
+
+    const text = extractText(node);
+    if (text.length < 5) continue;
+
+    // Get section label from nearest h2/h3
+    let label = '';
+    if (node.tagName === 'H2' || node.tagName === 'H3') {
+      label = text.substring(0, 50);
+    } else {
+      // Find previous heading
+      let prev = node.previousElementSibling;
+      let searchEl = node.parentElement;
+      while (searchEl && !label) {
+        const hs = searchEl.querySelectorAll('h2,h3');
+        if (hs.length) label = hs[hs.length-1].textContent.trim().substring(0,50);
+        searchEl = searchEl.parentElement;
+      }
+    }
+
+    segments.push({ el: node, text, label: label || 'Introduction' });
+  }
+  return segments.length;
+}
+
+function audioToggle() {
+  if (!segments.length) {
+    const n = buildSegments();
+    if (!n) { alert('No readable content found.'); return; }
+  }
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    updatePlayBtn(false);
+    clearHighlight();
+  } else {
+    playFrom(curIdx);
+  }
+}
+
+function playFrom(idx) {
+  window.speechSynthesis.cancel();
+  if (idx >= segments.length) {
+    speaking = false;
+    curIdx = 0;
+    updatePlayBtn(false);
+    clearHighlight();
+    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to restart';
+    document.getElementById('abProgress').style.width = '100%';
+    return;
+  }
+  curIdx = idx;
+  const seg = segments[idx];
+
+  // Update UI
+  document.getElementById('abSection').textContent = seg.label;
+  document.getElementById('abProgress').style.width =
+    ((idx / segments.length) * 100) + '%';
+
+  // Highlight
+  clearHighlight();
+  seg.el.classList.add('audio-reading');
+  lastHighlighted = seg.el;
+  // Scroll into view if needed
+  seg.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  // Speak
+  utterance = new SpeechSynthesisUtterance(seg.text);
+  utterance.rate = speeds[speedIdx];
+  utterance.pitch = 1.0;
+
+  // Pick best voice
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v =>
+    v.lang.startsWith('en-IN') ||
+    v.name.includes('Rishi') ||
+    v.name.includes('Indian') ||
+    v.name.includes('Samantha')
+  ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
+  if (preferred) utterance.voice = preferred;
+
+  utterance.onend = () => {
+    if (speaking) playFrom(curIdx + 1);
+  };
+  utterance.onerror = (e) => {
+    if (e.error !== 'interrupted') playFrom(curIdx + 1);
+  };
+
+  window.speechSynthesis.speak(utterance);
+  speaking = true;
+  updatePlayBtn(true);
+}
+
+function audioNext() {
+  window.speechSynthesis.cancel();
+  if (!segments.length) buildSegments();
+  clearHighlight();
+  playFrom(Math.min(curIdx + 1, segments.length - 1));
+}
+
+function audioCycleSpeed() {
+  speedIdx = (speedIdx + 1) % speeds.length;
+  const labels = ['0.8x','1x','1.4x','1.8x'];
+  document.getElementById('abSpeed').textContent = labels[speedIdx];
+  if (utterance && speaking) {
+    const idx = curIdx;
+    window.speechSynthesis.cancel();
+    playFrom(idx);
+  }
+}
+
+function audioSeekClick(e, wrap) {
+  if (!segments.length) return;
+  const pct = e.offsetX / wrap.offsetWidth;
+  const idx = Math.floor(pct * segments.length);
+  window.speechSynthesis.cancel();
+  playFrom(Math.max(0, Math.min(idx, segments.length - 1)));
+}
+
+function updatePlayBtn(isPlaying) {
+  document.getElementById('abPlayIcon').innerHTML = isPlaying
+    ? '<rect x="3" y="2" width="4" height="12" fill="white"/><rect x="9" y="2" width="4" height="12" fill="white"/>'
+    : '<polygon points="4,2 14,8 4,14" fill="white"/>';
+}
+
+function clearHighlight() {
+  if (lastHighlighted) {
+    lastHighlighted.classList.remove('audio-reading');
+    lastHighlighted = null;
+  }
+}
+
+// Voices load async on some browsers
+window.speechSynthesis.onvoiceschanged = () => {};
+
+// Pause when tab is hidden, resume when visible
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden && speaking) {
+    window.speechSynthesis.pause();
+  } else if (!document.hidden && speaking) {
+    window.speechSynthesis.resume();
+  }
+});
+</script>
+
+</body>
+</html>

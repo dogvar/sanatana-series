@@ -643,6 +643,183 @@ body {
   pointer-events: none;
 }
 .top-nav .nav-om { font-size: 18px; }
+
+/* ── Audio Player ── */
+.audio-bar {
+  position: sticky;
+  top: 48px;
+  z-index: 99;
+  background: rgba(13,4,0,0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(184,134,11,0.25);
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  transition: opacity 0.3s;
+}
+.audio-bar.hidden { display: none; }
+
+.ab-play {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--goldt, #D4A017);
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.15s, background 0.15s;
+}
+.ab-play:hover { transform: scale(1.08); }
+.ab-play svg { width: 16px; height: 16px; }
+
+.ab-info {
+  flex: 1; min-width: 0;
+}
+.ab-section {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(212,160,23,0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+.ab-progress-wrap {
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.ab-progress {
+  height: 100%;
+  background: var(--goldt, #D4A017);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s linear;
+  pointer-events: none;
+}
+
+.ab-skip {
+  background: none; border: none;
+  color: rgba(212,160,23,0.55);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex; align-items: center;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+.ab-skip:hover { color: rgba(212,160,23,1); }
+.ab-skip svg { width: 18px; height: 18px; }
+
+.ab-speed {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(212,160,23,0.7);
+  border-radius: 6px;
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+.ab-speed:hover { background: rgba(255,255,255,0.1); color: rgba(212,160,23,1); }
+
+/* Reading highlight */
+.audio-reading {
+  background: rgba(212,160,23,0.08) !important;
+  border-left: 3px solid rgba(212,160,23,0.6) !important;
+  border-radius: 0 6px 6px 0;
+  padding-left: 12px !important;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* ════ CONTRAST FIXES — WCAG AA compliance ════ */
+
+/* A: Section header subtitle — dark bg needs bright text */
+.sec-hdr p, .sec-hdr.gold p, .sec-hdr.blue p, .sec-hdr.green p {
+  color: rgba(255, 220, 120, 0.90) !important;
+  letter-spacing: 1.5px;
+}
+
+/* B: Hero subtitle — dark bg */
+.hero-sub { color: rgba(255,255,255,0.70) !important; }
+.series-sub { color: rgba(255,255,255,0.60) !important; }
+
+/* C: Roman transliterations — italic on white/cream bg */
+.v-roman    { color: #4A3010 !important; font-size: 13.5px !important; }
+.sh-roman   { color: #2A3A60 !important; font-size: 13.5px !important; }
+.shloka-roman { color: rgba(255,255,255,0.75) !important; }  /* on dark bg */
+.mantra-roman { color: #4A3010 !important; font-size: 13px !important; }
+.phil-roman { color: rgba(255,255,255,0.68) !important; } /* on dark bg */
+
+/* D: Small label text — needs stronger contrast */
+.ch-festival  { font-size: 11px !important; font-weight: 600 !important; opacity: 1 !important; }
+.ch-name-deva { color: #3A4A6A !important; font-size: 12.5px !important; }
+.day-meta     { color: #4A3010 !important; font-size: 12px !important; }
+.day-lbl      { color: rgba(255,255,255,0.80) !important; font-size: 10px !important; }
+.aarti-about  { color: #2A1800 !important; font-size: 13.5px !important; }
+.deity        { color: #4A3010 !important; }
+.peeth-meta   { color: #4A3010 !important; font-size: 12px !important; }
+.wp-label     { font-size: 11.5px !important; font-weight: 700 !important; }
+.cal-date     { color: rgba(255,255,255,0.70) !important; font-weight: 600 !important; }
+.cal-name     { color: rgba(255,255,255,0.90) !important; }
+.ch-verses    { color: #4A5070 !important; font-size: 11px !important; font-weight: 600 !important; }
+.sh-context   { color: #3A4A6A !important; font-size: 12.5px !important; }
+.timing-note  { color: #4A3010 !important; font-size: 12.5px !important; }
+.timing-label { color: #4A3010 !important; font-size: 11.5px !important; letter-spacing: 0.5px !important; }
+.mantra-title { font-size: 14.5px !important; }
+.ch-desc      { color: rgba(255,255,255,0.58) !important; font-size: 12.5px !important; }
+
+/* E: Audio bar */
+.ab-section { color: rgba(255,220,120,0.95) !important; font-size: 12px !important; }
+
+/* F: General body text — ensure minimum readable size */
+.card p, .card-body p { font-size: 13.5px !important; line-height: 1.65 !important; }
+.story-body { font-size: 14px !important; color: #1C0E00 !important; }
+.aspect-body { font-size: 14px !important; color: #1C0E00 !important; }
+.justice-body { font-size: 14px !important; color: #1C0E00 !important; }
+.battle-body  { font-size: 14px !important; color: #1C0E00 !important; }
+.celeb-body   { font-size: 14px !important; color: #1C0E00 !important; }
+.ritual p     { font-size: 14px !important; color: #1C0E00 !important; }
+.wp-content p { font-size: 13.5px !important; color: #1C0E00 !important; }
+.teaching-body { font-size: 14px !important; color: #1C0E00 !important; }
+.rajya-card p  { font-size: 14px !important; color: #1C0E00 !important; }
+.country-body  { font-size: 14px !important; color: #1C0E00 !important; }
+.theme-card p  { font-size: 14px !important; color: #1C0E00 !important; }
+.invoker blockquote { font-size: 13.5px !important; color: #1C0E00 !important; }
+.sh-meaning   { font-size: 14px !important; color: #1C0E00 !important; }
+.sh-insight   { font-size: 13.5px !important; color: #1C0E00 !important; }
+.v-meaning    { font-size: 13.5px !important; color: #1C0E00 !important; }
+
+/* G: Navdurga specific */
+.navdurga-epithet { color: #4A3010 !important; font-size: 13px !important; }
+.navdurga-desc    { font-size: 14px !important; color: #1C0E00 !important; }
+.attr-item        { font-size: 13px !important; color: #1C0E00 !important; }
+.attr-item strong { font-size: 11.5px !important; color: #4A3010 !important; }
+.mantra-line      { font-size: 13.5px !important; color: #1C0E00 !important; }
+
+/* H: Shloka boxes — ensure white text readable on dark */
+.shloka-box .shloka-meaning { color: rgba(255,220,120,0.90) !important; font-size: 13px !important; }
+.shloka-box .shloka-source  { color: rgba(255,255,255,0.60) !important; }
+
+/* I: Timeline */
+.tl-date { color: #C94800 !important; font-size: 11.5px !important; font-weight: 700 !important; }
+.tl-text { color: #1C0E00 !important; font-size: 11.5px !important; }
+
+/* J: Intro block lead */
+.intro-b p { font-size: 14px !important; color: #1C0E00 !important; }
+.what-box p { font-size: 14px !important; color: #1C0E00 !important; }
+
+/* K: Closing / dark footer sections */
+.closing .victory { color: rgba(255,255,255,0.72) !important; }
+.jai-deva { color: var(--gold, #B8860B) !important; }
+
 </style>
 </head>
 <body>
@@ -656,6 +833,29 @@ body {
   </a>
   <span class="nav-title nav-om">ॐ</span>
 </nav>
+
+<!-- Audio Player Bar -->
+<div class="audio-bar" id="audioBar">
+  <button class="ab-play" id="abPlay" onclick="audioToggle()" aria-label="Play">
+    <svg id="abPlayIcon" viewBox="0 0 16 16" fill="white">
+      <polygon points="4,2 14,8 4,14"/>
+    </svg>
+  </button>
+  <div class="ab-info">
+    <div class="ab-section" id="abSection">Tap ▶ to listen</div>
+    <div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
+      <div class="ab-progress" id="abProgress"></div>
+    </div>
+  </div>
+  <button class="ab-skip" onclick="audioNext()" title="Next section" aria-label="Next section">
+    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <polygon points="3,3 12,9 3,15" fill="currentColor" stroke="none"/>
+      <line x1="14" y1="3" x2="14" y2="15"/>
+    </svg>
+  </button>
+  <button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+</div>
+
 
 
 <!-- ══ HERO ══ -->
@@ -1365,6 +1565,227 @@ body {
     <p style="font-size:11px;color:rgba(255,255,255,0.28);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
   </div>
 </div>
+
+
+<script>
+// ── Sanatana Series Audio Player ──
+// Skips all Devanagari, reads Roman + English content
+
+const SKIP_CLASSES = [
+  'shloka-deva','jai-deva','mantra-deva','v-deva',
+  'hero-deva','sh-deva','ch-name-deva','series-deva',
+  'phil-deva','shloka-deva','om','nav-om','top-nav',
+  'audio-bar','footer','attr-claude','attr-name',
+  'footer-series','footer-sub','eyebrow','hero-tags',
+  'hero-tag','hero-stats','h-stat-label','aarti-nav',
+  'listen-row','listen-btn','ch-verses','sec-label',
+  'cal-header','cal-tag','cal-date','soon-tag','ch-tag'
+];
+
+const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH','LINE',
+                   'CIRCLE','POLYGON','RECT','ELLIPSE','META'];
+
+let segments = [];
+let curIdx = 0;
+let utterance = null;
+let speaking = false;
+let speeds = [0.8, 1.0, 1.4, 1.8];
+let speedIdx = 1;
+let lastHighlighted = null;
+
+function shouldSkipEl(el) {
+  if (!el || el.nodeType !== 1) return false;
+  if (SKIP_TAGS.includes(el.tagName)) return true;
+  const cls = (el.className || '').toString();
+  if (SKIP_CLASSES.some(c => cls.includes(c))) return true;
+  // Skip empty or icon-only elements
+  const text = el.textContent.trim();
+  if (text.length < 3) return true;
+  return false;
+}
+
+function extractText(el) {
+  // Clone and remove all Devanagari elements
+  const clone = el.cloneNode(true);
+  // Remove deva children
+  clone.querySelectorAll(
+    '.shloka-deva,.jai-deva,.mantra-deva,.v-deva,.hero-deva,' +
+    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om'
+  ).forEach(d => d.remove());
+  // Remove buttons, links, nav
+  clone.querySelectorAll('button,nav,.audio-bar,.listen-row,svg,.top-nav').forEach(d => d.remove());
+  return clone.textContent.replace(/\s+/g, ' ').trim();
+}
+
+function buildSegments() {
+  segments = [];
+  // Walk all meaningful elements
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_ELEMENT,
+    {
+      acceptNode(node) {
+        if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const readable = ['H1','H2','H3','P','LI','BLOCKQUOTE'];
+  let node;
+  while ((node = walker.nextNode())) {
+    if (!readable.includes(node.tagName)) continue;
+    // Skip if ancestor is a skip class
+    let skip = false;
+    let p = node.parentElement;
+    while (p && p !== document.body) {
+      if (shouldSkipEl(p)) { skip = true; break; }
+      p = p.parentElement;
+    }
+    if (skip) continue;
+
+    const text = extractText(node);
+    if (text.length < 5) continue;
+
+    // Get section label from nearest h2/h3
+    let label = '';
+    if (node.tagName === 'H2' || node.tagName === 'H3') {
+      label = text.substring(0, 50);
+    } else {
+      // Find previous heading
+      let prev = node.previousElementSibling;
+      let searchEl = node.parentElement;
+      while (searchEl && !label) {
+        const hs = searchEl.querySelectorAll('h2,h3');
+        if (hs.length) label = hs[hs.length-1].textContent.trim().substring(0,50);
+        searchEl = searchEl.parentElement;
+      }
+    }
+
+    segments.push({ el: node, text, label: label || 'Introduction' });
+  }
+  return segments.length;
+}
+
+function audioToggle() {
+  if (!segments.length) {
+    const n = buildSegments();
+    if (!n) { alert('No readable content found.'); return; }
+  }
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    updatePlayBtn(false);
+    clearHighlight();
+  } else {
+    playFrom(curIdx);
+  }
+}
+
+function playFrom(idx) {
+  window.speechSynthesis.cancel();
+  if (idx >= segments.length) {
+    speaking = false;
+    curIdx = 0;
+    updatePlayBtn(false);
+    clearHighlight();
+    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to restart';
+    document.getElementById('abProgress').style.width = '100%';
+    return;
+  }
+  curIdx = idx;
+  const seg = segments[idx];
+
+  // Update UI
+  document.getElementById('abSection').textContent = seg.label;
+  document.getElementById('abProgress').style.width =
+    ((idx / segments.length) * 100) + '%';
+
+  // Highlight
+  clearHighlight();
+  seg.el.classList.add('audio-reading');
+  lastHighlighted = seg.el;
+  // Scroll into view if needed
+  seg.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  // Speak
+  utterance = new SpeechSynthesisUtterance(seg.text);
+  utterance.rate = speeds[speedIdx];
+  utterance.pitch = 1.0;
+
+  // Pick best voice
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v =>
+    v.lang.startsWith('en-IN') ||
+    v.name.includes('Rishi') ||
+    v.name.includes('Indian') ||
+    v.name.includes('Samantha')
+  ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
+  if (preferred) utterance.voice = preferred;
+
+  utterance.onend = () => {
+    if (speaking) playFrom(curIdx + 1);
+  };
+  utterance.onerror = (e) => {
+    if (e.error !== 'interrupted') playFrom(curIdx + 1);
+  };
+
+  window.speechSynthesis.speak(utterance);
+  speaking = true;
+  updatePlayBtn(true);
+}
+
+function audioNext() {
+  window.speechSynthesis.cancel();
+  if (!segments.length) buildSegments();
+  clearHighlight();
+  playFrom(Math.min(curIdx + 1, segments.length - 1));
+}
+
+function audioCycleSpeed() {
+  speedIdx = (speedIdx + 1) % speeds.length;
+  const labels = ['0.8x','1x','1.4x','1.8x'];
+  document.getElementById('abSpeed').textContent = labels[speedIdx];
+  if (utterance && speaking) {
+    const idx = curIdx;
+    window.speechSynthesis.cancel();
+    playFrom(idx);
+  }
+}
+
+function audioSeekClick(e, wrap) {
+  if (!segments.length) return;
+  const pct = e.offsetX / wrap.offsetWidth;
+  const idx = Math.floor(pct * segments.length);
+  window.speechSynthesis.cancel();
+  playFrom(Math.max(0, Math.min(idx, segments.length - 1)));
+}
+
+function updatePlayBtn(isPlaying) {
+  document.getElementById('abPlayIcon').innerHTML = isPlaying
+    ? '<rect x="3" y="2" width="4" height="12" fill="white"/><rect x="9" y="2" width="4" height="12" fill="white"/>'
+    : '<polygon points="4,2 14,8 4,14" fill="white"/>';
+}
+
+function clearHighlight() {
+  if (lastHighlighted) {
+    lastHighlighted.classList.remove('audio-reading');
+    lastHighlighted = null;
+  }
+}
+
+// Voices load async on some browsers
+window.speechSynthesis.onvoiceschanged = () => {};
+
+// Pause when tab is hidden, resume when visible
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden && speaking) {
+    window.speechSynthesis.pause();
+  } else if (!document.hidden && speaking) {
+    window.speechSynthesis.resume();
+  }
+});
+</script>
 
 </body>
 </html>
