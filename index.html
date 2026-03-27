@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏹 Happy Ram Navami 2026 — Jai Shri Ram</title>
+
+<!-- Open Graph — WhatsApp / iMessage preview -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="🏹 Happy Ram Navami 2026 — Jai Shri Ram!"/>
+<meta property="og:description" content="Celebrating the birth of Lord Rama · Thursday 26 March 2026 · Ram Janm at 12:27 PM IST · With love from Varun Dogar"/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/ram-navami-og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="🏹 Happy Ram Navami 2026 — Jai Shri Ram!"/>
+<meta name="twitter:description" content="Celebrating the birth of Lord Rama · 26 March 2026 · With love from Varun Dogar"/>
+<meta name="twitter:image" content="https://dogvar.github.io/sanatana-series/ram-navami-og.png"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0F0400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* Animated gold particles background */
+.bg-pattern {
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(184,134,11,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201,72,0,0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(184,134,11,0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Floating diyas */
+.diya { position: fixed; font-size: 18px; animation: floatUp linear infinite; opacity: 0; pointer-events: none; }
+@keyframes floatUp {
+  0%   { transform: translateY(100vh) rotate(-10deg); opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.4; }
+  100% { transform: translateY(-20px) rotate(10deg); opacity: 0; }
+}
+
+.card {
+  position: relative;
+  max-width: 420px;
+  width: calc(100% - 32px);
+  margin: 24px auto;
+  background: linear-gradient(160deg, #1A0800 0%, #0F0400 60%, #1A0400 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(184,134,11,0.25), 0 0 120px rgba(201,72,0,0.10);
+}
+
+/* Gold border shimmer */
+.card::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 24px;
+  padding: 1.5px;
+  background: linear-gradient(135deg, #D4A017, #C94800, #B8860B, #D4A017);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.card-inner { padding: 32px 28px 28px; text-align: center; position: relative; }
+
+/* Top ornament */
+.ornament {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: rgba(212,160,23,0.6);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* OM circle */
+.om-wrap {
+  margin: 0 auto 20px;
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: #0F0400;
+  border: 2.5px solid #D4A017;
+  box-shadow: 0 0 30px rgba(212,160,23,0.35), inset 0 0 20px rgba(212,160,23,0.08);
+  display: flex; align-items: center; justify-content: center;
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(212,160,23,0.35), inset 0 0 20px rgba(212,160,23,0.08); }
+  50%       { box-shadow: 0 0 50px rgba(212,160,23,0.55), inset 0 0 30px rgba(212,160,23,0.15); }
+}
+.om-text {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 40px; line-height: 1;
+  color: #D4A017;
+}
+
+/* Greeting text */
+.wish-small {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(212,160,23,0.65);
+  margin-bottom: 8px;
+}
+.wish-main {
+  font-family: 'Yatra One', cursive;
+  font-size: clamp(30px, 9vw, 42px);
+  color: #D4A017;
+  line-height: 1.15;
+  text-shadow: 0 0 40px rgba(212,160,23,0.3);
+  margin-bottom: 6px;
+}
+.wish-deva {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 26px;
+  color: #C94800;
+  margin-bottom: 6px;
+}
+.wish-sub {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 24px;
+}
+
+/* Divider */
+.divider {
+  display: flex; align-items: center; gap: 12px;
+  margin: 0 0 20px;
+}
+.divider-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,160,23,0.4)); }
+.divider-line.r { background: linear-gradient(270deg, transparent, rgba(212,160,23,0.4)); }
+.divider-sym { font-size: 14px; color: #D4A017; }
+
+/* Date info */
+.date-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.date-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,160,23,0.2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.date-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(212,160,23,0.5); margin-bottom: 4px; }
+.date-value { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); }
+
+/* Shloka */
+.shloka-wrap {
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(212,160,23,0.12);
+}
+.shloka-d {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 15px;
+  color: #D4A017;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+.shloka-r {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+
+/* CTA buttons */
+.btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #C94800, #E85D00);
+  color: white;
+  box-shadow: 0 4px 20px rgba(201,72,0,0.35);
+}
+.btn-primary:active { transform: scale(0.97); }
+.btn-secondary {
+  background: transparent;
+  border: 1.5px solid rgba(212,160,23,0.4);
+  color: rgba(212,160,23,0.8);
+}
+.btn-secondary:active { transform: scale(0.97); }
+
+/* From / attribution */
+.from-line {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-top: 4px;
+}
+.from-name {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: rgba(212,160,23,0.6);
+  font-weight: 600;
+}
+.created-by {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+  margin-top: 6px;
+}
+
+/* Guide cards at bottom */
+.guides {
+  max-width: 420px;
+  width: calc(100% - 32px);
+  margin: 0 auto 32px;
+  display: grid;
+  gap: 12px;
+}
+.guide-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,160,23,0.18);
+  border-radius: 16px;
+  padding: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.2s;
+}
+.guide-card:active { transform: scale(0.98); background: rgba(255,255,255,0.07); }
+.guide-icon { font-size: 28px; flex-shrink: 0; }
+.guide-title { font-family: 'Lora', serif; font-size: 15px; font-weight: 700; color: #D4A017; margin-bottom: 3px; }
+.guide-desc { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.4; }
+.guide-arrow { margin-left: auto; font-size: 16px; color: rgba(212,160,23,0.4); flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<!-- Background -->
+<div class="bg-pattern"></div>
+
+<!-- Floating diyas (injected by JS) -->
+
+<!-- Main greeting card -->
+<div class="card">
+  <div class="card-inner">
+
+    <p class="ornament">✦ Sanatana Series 2026 ✦</p>
+
+    <div class="om-wrap">
+      <span class="om-text">ॐ</span>
+    </div>
+
+    <p class="wish-small">Wishing you &amp; your family</p>
+    <h1 class="wish-main">Happy Ram Navami!</h1>
+    <p class="wish-deva">जय श्री राम 🏹</p>
+    <p class="wish-sub">Victory to Dharma — Victory to the Righteous</p>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <span class="divider-sym">✦</span>
+      <div class="divider-line r"></div>
+    </div>
+
+    <div class="date-grid">
+      <div class="date-item">
+        <div class="date-label">Date</div>
+        <div class="date-value">Thursday 26 March 2026</div>
+      </div>
+      <div class="date-item">
+        <div class="date-label">Ram Janm Muhurat</div>
+        <div class="date-value">11:13 AM – 1:41 PM IST</div>
+      </div>
+      <div class="date-item">
+        <div class="date-label">Exact Birth Moment</div>
+        <div class="date-value">12:27 PM IST</div>
+      </div>
+      <div class="date-item">
+        <div class="date-label">Ayodhya Ram Mandir</div>
+        <div class="date-value">Surya Tilak at noon 🌞</div>
+      </div>
+    </div>
+
+    <div class="shloka-wrap">
+      <div class="shloka-d">रामो विग्रहवान् धर्मः</div>
+      <div class="shloka-d">साधुः सत्य-पराक्रमः</div>
+      <div class="shloka-r">"Rama is Dharma in human form — virtuous, with courage rooted in truth."<br>— Valmiki Ramayana</div>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="ram-navami.html">
+        🏹 Read: Ram Navami Guide 2026
+      </a>
+      <a class="btn btn-secondary" href="navratri.html">
+        🌸 Read: Chaitra Navratri 2026 Guide
+      </a>
+    </div>
+
+    <p class="from-line">With love &amp; jai shri ram from</p>
+    <p class="from-name">Varun Dogar</p>
+    <p class="created-by">Created with Claude · Anthropic · Sanatana Series</p>
+
+  </div>
+</div>
+
+<!-- Guide links -->
+<div class="guides">
+  <a class="guide-card" href="ram-navami.html">
+    <div class="guide-icon">🏹</div>
+    <div>
+      <div class="guide-title">Ram Navami 2026 Guide</div>
+      <div class="guide-desc">Birth story · Puja Vidhi · Ram Mandir · Sacred Shlokas · Modern lessons</div>
+    </div>
+    <div class="guide-arrow">›</div>
+  </a>
+  <a class="guide-card" href="ramayana-journey.html">
+    <div class="guide-icon">📜</div>
+    <div>
+      <div class="guide-title">The Ramayana: Complete Journey</div>
+      <div class="guide-desc">7 Kandas · Lanka War · Social Justice · Ram Rajya · Global Legacy · 50+ countries</div>
+    </div>
+    <div class="guide-arrow">›</div>
+  </a>
+  <a class="guide-card" href="navratri.html">
+    <div class="guide-icon">🌸</div>
+    <div>
+      <div class="guide-title">Chaitra Navratri 2026</div>
+      <div class="guide-desc">9 Navdurga forms · Shakti Peeths · Rituals · Day-by-day timeline</div>
+    </div>
+    <div class="guide-arrow">›</div>
+  </a>
+</div>
+
+<script>
+// Animate floating diyas
+const emojis = ['🪔','🪔','🪔','✨','🏹','🪔'];
+for (let i = 0; i < 12; i++) {
+  const d = document.createElement('div');
+  d.className = 'diya';
+  d.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+  d.style.left = Math.random() * 100 + 'vw';
+  d.style.animationDuration = (8 + Math.random() * 10) + 's';
+  d.style.animationDelay = (Math.random() * 10) + 's';
+  d.style.fontSize = (14 + Math.random() * 10) + 'px';
+  document.body.appendChild(d);
+}
+</script>
+
+</body>
+</html>
