@@ -193,6 +193,27 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
 .footer-sub   { color: rgba(255,255,255,0.30) !important; }
 .sec-div span { color: rgba(212,160,23,0.55) !important; }
 
+
+/* ── Google Translate Widget ── */
+#google_translate_element { display:inline-flex; align-items:center; }
+#google_translate_element .goog-te-gadget { font-family:'DM Sans',sans-serif !important; font-size:0 !important; }
+#google_translate_element .goog-te-gadget-simple {
+  background:rgba(255,255,255,0.07) !important;
+  border:1px solid rgba(212,160,23,0.35) !important;
+  border-radius:6px !important;
+  padding:4px 8px !important;
+  cursor:pointer;
+}
+#google_translate_element .goog-te-gadget-simple a {
+  color:rgba(212,160,23,0.85) !important;
+  font-size:12px !important;
+  font-weight:600 !important;
+  text-decoration:none !important;
+}
+#google_translate_element .goog-te-gadget-simple a span { color:rgba(212,160,23,0.85) !important; font-size:12px !important; }
+.goog-te-banner-frame { display:none !important; }
+body { top:0 !important; }
+.skiptranslate { display:none !important; }
 </style>
 </head>
 <body>
@@ -208,6 +229,7 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
     <p class="series-deva">सनातन — हिन्दुइज्म फॉर द वर्ल्ड</p>
     <p class="series-sub">Guides to Hindu festivals, epics and philosophy — for every generation, wherever you are in the world.</p>
     <p class="by">Curated by <span>Varun Dogar</span></p>
+  <div id="google_translate_element" style="margin-top:10px"></div>
   </header>
 
   <!-- LIVE CALENDAR STRIP -->
@@ -236,12 +258,12 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
           <div class="cal-name">Hindu New Year — VS 2083</div>
           <span class="cal-tag tag-week">This week</span>
         </a>
-        <div class="cal-event">
-          <div class="cal-dot" style="background:#4A0060"></div>
-          <div class="cal-date">12 Apr</div>
+        <a class="cal-event live" href="hanuman-jayanti.html">
+          <div class="cal-dot" style="background:#C94800"></div>
+          <div class="cal-date">2 Apr</div>
           <div class="cal-name">Hanuman Jayanti</div>
-          <span class="cal-tag tag-upcoming">Coming soon</span>
-        </div>
+          <span class="cal-tag tag-today">This week</span>
+        </a>
         <div class="cal-event">
           <div class="cal-dot" style="background:#CC6600"></div>
           <div class="cal-date">22 Aug</div>
@@ -332,6 +354,23 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
           <div class="ch-title">Vikram Samvat 2083</div>
           <div class="ch-desc">Sacred significance · Regional celebrations · 12 Hindu months · Panchang · Birthday calculator</div>
           <div class="ch-meta"><span class="ch-tag" style="background:#8B6000">This week</span></div>
+        </div>
+        <div class="ch-arrow">›</div>
+      </div>
+    </a>
+
+    <!-- Hanuman Jayanti -->
+    <a class="ch" href="hanuman-jayanti.html">
+      <div class="ch-bar" style="background:#C94800"></div>
+      <div class="ch-inner">
+        <div class="ch-icon" style="background:rgba(201,72,0,0.15)">
+          <svg viewBox="0 0 26 26" fill="none"><ellipse cx="13" cy="8" rx="5" ry="3.5" fill="rgba(201,72,0,0.35)" stroke="#C94800" stroke-width="1.8"/><line x1="13" y1="11.5" x2="13" y2="23" stroke="#C94800" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="13" cy="8" rx="2.8" ry="2" fill="rgba(201,72,0,0.6)"/></svg>
+        </div>
+        <div class="ch-body">
+          <div class="ch-festival" style="color:#C94800">Hanuman Jayanti · 2 April 2026</div>
+          <div class="ch-title">Hanuman Jayanti 2026</div>
+          <div class="ch-desc">Birth story · Hanuman Chalisa all 40 verses · Major temples · Tuesday &amp; Saturday worship</div>
+          <div class="ch-meta"><span class="ch-tag" style="background:#C94800">This week</span><span class="ch-audio">🆕 New</span></div>
         </div>
         <div class="ch-arrow">›</div>
       </div>
@@ -429,21 +468,7 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
   </div>
   <div class="chapters">
 
-    <a class="ch soon" href="#">
-      <div class="ch-bar" style="background:#4A0060"></div>
-      <div class="ch-inner">
-        <div class="ch-icon" style="background:rgba(74,0,96,0.12)">
-          <svg viewBox="0 0 26 26" fill="none"><ellipse cx="13" cy="8" rx="5.5" ry="4" fill="rgba(153,102,204,0.4)" stroke="#9966CC" stroke-width="1.8"/><line x1="13" y1="12" x2="13" y2="24" stroke="#9966CC" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="13" cy="8" rx="3" ry="2.2" fill="rgba(153,102,204,0.5)"/></svg>
-        </div>
-        <div class="ch-body">
-          <div class="ch-festival" style="color:#9966CC">Hanuman Jayanti · 12 April 2026</div>
-          <div class="ch-title">Hanuman Jayanti Guide</div>
-          <div class="ch-desc">The greatest devotee · Hanuman Chalisa 40 verses · Strength, devotion and selfless service</div>
-          <div class="ch-meta"><span class="soon-tag">Coming April 2026</span></div>
-        </div>
-        <div class="ch-arrow">›</div>
-      </div>
-    </a>
+
 
     <a class="ch soon" href="#">
       <div class="ch-bar" style="background:#004080"></div>
@@ -532,6 +557,19 @@ footer { text-align:center; padding:20px 24px 44px; border-top:1px solid var(--b
 <div class="om-float" style="left:57%; font-size:14px; opacity:0; animation-duration:14s; animation-delay:1s;">ॐ</div>
 <div class="om-float" style="left:73%; font-size:20px; opacity:0; animation-duration:13s; animation-delay:9s;">ॐ</div>
 <div class="om-float" style="left:88%; font-size:17px; opacity:0; animation-duration:15s; animation-delay:5s;">ॐ</div>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'hi,gu,ta,te,ml,pa,bn,mr,kn,ur,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
