@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hindu Calendar 2026 — Sanatana Series</title>
+<meta property="og:title" content="Hindu Calendar 2026 — Festivals, Ekadashi, Purnima & Amavasya"/>
+<meta property="og:description" content="Complete month-by-month Hindu calendar for 2026 — all festivals, Ekadashi fasts, Purnima, Amavasya, Pradosh and auspicious dates. Sanatana Series."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold:#B8860B; --goldt:#D4A017; --saff:#C94800;
+  --dark:#0D0400; --dark2:#180900;
+  --cream:#FFFBF4; --ink:#1C0E00; --ink2:#3D2000; --muted:#7A5030;
+  --border:rgba(184,134,11,0.2); --r:12px;
+
+  /* Category colours */
+  --c-major:   #C94800;  /* Major festivals */
+  --c-purnima: #B8860B;  /* Full moon */
+  --c-amavasya:#4A4A4A;  /* New moon */
+  --c-ekadashi:#006D6D;  /* Ekadashi fasts */
+  --c-pradosh: #4A0060;  /* Pradosh vrat */
+  --c-sankranti:#2E7D32; /* Sankranti */
+  --c-dharmic: #006D6D;  /* Jain / Buddhist / Sikh */
+  --c-vrat:    #7A5030;  /* General vrat/fast */
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink);
+  line-height:1.5; font-size:14px; max-width:640px; margin:0 auto; }
+
+/* Nav */
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(13,4,0,0.95);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(184,134,11,0.2);
+  padding:0 16px; display:flex; align-items:center; height:48px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(212,160,23,0.75); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; white-space:nowrap; }
+.top-nav a.back svg { width:16px; height:16px; }
+.top-nav .nav-title { flex:1; text-align:center; font-size:13px; font-weight:600;
+  color:rgba(212,160,23,0.7); }
+
+/* Hero */
+.hero { background:var(--dark); padding:32px 20px 24px; text-align:center; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(28px,7vw,42px); color:var(--goldt); margin-bottom:4px; }
+.hero-deva { font-family:'Noto Serif Devanagari',serif; font-size:18px; color:rgba(212,160,23,0.5); margin-bottom:8px; }
+.hero-sub { font-size:13px; color:rgba(255,255,255,0.55); font-style:italic; font-family:'Lora',serif; margin-bottom:16px; }
+
+/* Legend */
+.legend { display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px;
+  background:rgba(0,0,0,0.04); border-bottom:1px solid var(--border); }
+.leg-item { display:flex; align-items:center; gap:5px; font-size:11px; color:var(--muted); }
+.leg-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+
+/* Note bar */
+.note-bar { background:rgba(184,134,11,0.08); border-left:3px solid var(--gold);
+  padding:10px 14px; margin:10px 16px; font-size:12px; color:var(--ink2); line-height:1.55; }
+
+/* Month section */
+.month-section { margin:0 0 4px; }
+.month-hdr { background:var(--dark); padding:14px 16px 10px;
+  display:flex; align-items:baseline; gap:10px; cursor:pointer;
+  border-top:2px solid; user-select:none; }
+.month-hdr h2 { font-family:'Yatra One',cursive; font-size:clamp(20px,5vw,26px); color:var(--goldt); flex:1; }
+.month-hdr .month-hindu { font-family:'Noto Serif Devanagari',serif; font-size:13px; color:rgba(212,160,23,0.45); }
+.month-hdr .month-count { font-size:11px; color:rgba(255,255,255,0.3); }
+.month-hdr .chevron { font-size:14px; color:rgba(212,160,23,0.4); transition:transform 0.2s; }
+.month-hdr.open .chevron { transform:rotate(180deg); }
+
+/* Month body */
+.month-body { display:none; padding:0 0 4px; }
+.month-body.open { display:block; }
+
+/* Day row */
+.day-row { display:flex; gap:0; border-bottom:1px solid rgba(184,134,11,0.1);
+  padding:8px 16px; align-items:flex-start; }
+.day-row:last-child { border-bottom:none; }
+.day-row.today { background:rgba(201,72,0,0.06); }
+.day-row.today .day-num { color:var(--saff); font-weight:700; }
+
+.day-left { flex-shrink:0; width:42px; }
+.day-num { font-size:18px; font-weight:700; color:var(--ink); line-height:1; }
+.day-name { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; }
+
+.day-events { flex:1; display:flex; flex-direction:column; gap:4px; padding-top:1px; }
+.event { display:flex; align-items:flex-start; gap:6px; }
+.event-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; margin-top:4px; }
+.event-text { font-size:13px; color:var(--ink2); line-height:1.45; flex:1; }
+.event-text .event-tag { font-size:10px; font-weight:600; letter-spacing:0.3px;
+  padding:1px 6px; border-radius:100px; color:white; margin-left:5px;
+  display:inline-block; vertical-align:middle; }
+.event-note { font-size:11px; color:var(--muted); font-style:italic; }
+
+/* Month footer — major festivals summary */
+.month-highlights { background:rgba(0,0,0,0.03); padding:10px 16px;
+  border-top:1px solid var(--border); }
+.mh-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+.mh-pills { display:flex; flex-wrap:wrap; gap:5px; }
+.mh-pill { font-size:11px; background:white; border:1px solid var(--border);
+  border-radius:100px; padding:2px 10px; color:var(--ink2); }
+
+/* Special: Adhik Maas banner */
+.adhik-banner { background:var(--dark2); border:1px solid rgba(184,134,11,0.3);
+  border-radius:var(--r); margin:8px 16px; padding:12px 14px; }
+.adhik-title { font-family:'Lora',serif; font-weight:700; font-size:14px; color:var(--goldt); margin-bottom:4px; }
+.adhik-body { font-size:12.5px; color:rgba(255,255,255,0.65); line-height:1.55; }
+
+/* Today jump button */
+.today-btn { display:block; text-align:center; background:var(--saff); color:white;
+  text-decoration:none; font-size:13px; font-weight:600; padding:10px;
+  margin:12px 16px; border-radius:var(--r); }
+
+/* Footer */
+.cal-footer { background:var(--dark); padding:28px 20px; text-align:center; margin-top:8px; }
+.cal-footer p { font-size:12px; color:rgba(255,255,255,0.35); line-height:1.7; }
+.cal-footer a { color:rgba(212,160,23,0.6); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sanatana Series
+  </a>
+  <span class="nav-title">Hindu Calendar 2026</span>
+</nav>
+
+<div class="hero">
+  <h1>Hindu Calendar 2026</h1>
+  <p class="hero-deva">विक्रम संवत् 2082–2083</p>
+  <p class="hero-sub">All festivals · Ekadashi · Purnima · Amavasya · Pradosh · Sankranti</p>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-major)"></div>Major festival</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-purnima)"></div>Purnima (Full moon)</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-amavasya)"></div>Amavasya (New moon)</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-ekadashi)"></div>Ekadashi fast</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-pradosh)"></div>Pradosh / Shivaratri</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-sankranti)"></div>Sankranti</div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--c-dharmic)"></div>Jain / Buddhist / Sikh</div>
+</div>
+
+<div class="note-bar">
+  All dates based on <strong>India Standard Time (IST)</strong>. Ekadashi, Purnima and Amavasya tithis may begin the previous evening — check your local Panchang for exact start times. <strong>2026 has an Adhik Maas</strong> (extra month) from 17 May to 15 June, shifting some festivals later than usual.
+</div>
+
+<a class="today-btn" id="todayBtn" href="#month-apr">Jump to current month ▾</a>
+
+<!-- ══════════════════════════════════════
+     APRIL 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-apr">
+  <div class="month-hdr open" style="border-color:#C94800" onclick="toggleMonth(this)">
+    <h2>April 2026</h2>
+    <span class="month-hindu">Chaitra / Vaishakha</span>
+    <span class="month-count">12 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body open">
+
+    <div class="day-row today">
+      <div class="day-left"><div class="day-num">1</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Chaitra Purnima</strong> — Full moon begins 7:06 AM <span class="event-note">Sacred bathing, charity, Bhagavat reading</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row today">
+      <div class="day-left"><div class="day-num">2</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🏔️ <strong>Hanuman Jayanti</strong><span class="event-tag" style="background:var(--c-major)">Guide live</span> <span class="event-note">Chaitra Purnima · Sunrise celebrations</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">5</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Sankashti Chaturthi</strong> <span class="event-note">Ganesha fast · broken after moonrise</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">13</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Varuthini Ekadashi</strong> <span class="event-note">Removes sins, frees from obstacles · Lord Vishnu</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">14</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-sankranti)"></div><div class="event-text">🌞 <strong>Mesha Sankranti</strong> — Solar New Year <span class="event-note">Sun enters Aries · Baisakhi (Punjab) · Vishu (Kerala) · Puthandu (Tamil Nadu)</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">15</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Pradosh Vrat</strong> (Krishna) <span class="event-note">Lord Shiva · Evening twilight worship</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Masik Shivaratri</strong> <span class="event-note">Monthly Shivratri — night vigil for Shiva</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">17</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Vaishakha Amavasya</strong> <span class="event-note">Pitru tarpan · ancestor remembrance · charity at rivers</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">19</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">✨ <strong>Akshaya Tritiya</strong> <span class="event-note">Most auspicious day for new beginnings, gold purchase, charity · muhurat: 10:49 AM–12:20 PM</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">27</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Mohini Ekadashi</strong> <span class="event-note">Lord Vishnu's Mohini form · liberation from sins</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">28</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Pradosh Vrat</strong> (Shukla) <span class="event-note">Lord Shiva · Trayodashi tithi</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">29</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Narasimha Jayanti</strong> <span class="event-note">4th avatar of Vishnu · the man-lion incarnation</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">April highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🏔️ Hanuman Jayanti 2</span>
+        <span class="mh-pill">✨ Akshaya Tritiya 19</span>
+        <span class="mh-pill">🌞 Baisakhi/Vishu 14</span>
+        <span class="mh-pill">🌕 Purnima 1–2</span>
+        <span class="mh-pill">🌑 Amavasya 17</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MAY 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-may">
+  <div class="month-hdr" style="border-color:#2E7D32" onclick="toggleMonth(this)">
+    <h2>May 2026</h2>
+    <span class="month-hindu">Vaishakha / Jyeshtha</span>
+    <span class="month-count">8 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">1</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Vaishakha Purnima</strong></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-dharmic)"></div><div class="event-text">☸️ <strong>Buddha Purnima</strong> <span class="event-note">Birth, Enlightenment and Mahaparinirvana of the Buddha · Vaishakha Purnima</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">5</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Sankashti Chaturthi</strong> <span class="event-note">Ganesha fast</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">13</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Apara Ekadashi</strong> <span class="event-note">Removes great sins · Lord Trivikrama</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">15</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Pradosh Vrat + Masik Shivaratri</strong></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-sankranti)"></div><div class="event-text"><strong>Vrishabha Sankranti</strong> <span class="event-note">Sun enters Taurus</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">16</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Jyeshtha Amavasya</strong> <span class="event-note">Shani Amavasya · especially auspicious for Shani puja</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">17</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">📅 <strong>Adhik Maas begins</strong> — Extra month of Vishnu <span class="event-note">No weddings or Griha Pravesh · spiritual practices multiplied in merit</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">27</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Padmini Ekadashi</strong> (Adhik Maas) <span class="event-note">Rare Ekadashi of the extra month · very auspicious</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">May highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">☸️ Buddha Purnima 1</span>
+        <span class="mh-pill">📅 Adhik Maas from 17</span>
+        <span class="mh-pill">🌑 Amavasya 16</span>
+        <span class="mh-pill">🌕 Purnima 1</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     JUNE 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-jun">
+  <div class="month-hdr" style="border-color:#4A4A4A" onclick="toggleMonth(this)">
+    <h2>June 2026</h2>
+    <span class="month-hindu">Jyeshtha (Adhik) / Ashadha</span>
+    <span class="month-count">8 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="adhik-banner">
+      <div class="adhik-title">Adhik Maas continues through 15 June</div>
+      <div class="adhik-body">This extra month is entirely dedicated to Lord Vishnu. Spiritual merit from any religious act — Ekadashi, charity, puja, pilgrimage — is multiplied. No auspicious events like weddings or Griha Pravesh are held.</div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">11</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Param Ekadashi</strong> (Adhik Maas) <span class="event-note">Rarest and most meritorious Ekadashi of the extra month</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">14</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Adhik Jyeshtha Amavasya</strong> <span class="event-note">Pitru tarpan during Adhik Maas — rare and very auspicious</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">15</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">📅 <strong>Adhik Maas ends</strong> · <strong>Gemini Sankranti</strong> <span class="event-note">Sun enters Gemini · auspicious events resume</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">25</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text">💧 <strong>Nirjala Ekadashi</strong> <span class="event-note">The most powerful Ekadashi — waterless fast all day gives merit of all 24 Ekadashis combined</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">27</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Pradosh Vrat</strong> (Shukla)</div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">29</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Jyeshtha Purnima</strong> <span class="event-note">Ganga Dussehra context · Vat Purnima (married women's fast for husbands)</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">June highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">💧 Nirjala Ekadashi 25</span>
+        <span class="mh-pill">📅 Adhik Maas ends 15</span>
+        <span class="mh-pill">🌑 Amavasya 14</span>
+        <span class="mh-pill">🌕 Purnima 29</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     JULY 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-jul">
+  <div class="month-hdr" style="border-color:#006D6D" onclick="toggleMonth(this)">
+    <h2>July 2026</h2>
+    <span class="month-hindu">Ashadha / Shravana</span>
+    <span class="month-count">8 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">9</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Yogini Ekadashi</strong> <span class="event-note">Removes all sins · wealth and liberation</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">10</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Ashadha Purnima</strong></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🙏 <strong>Guru Purnima</strong> <span class="event-note">Reverence to the Guru · most auspicious for initiation and spiritual learning</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">14</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Ashadha Amavasya</strong></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">16</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🚩 <strong>Jagannath Rath Yatra</strong> <span class="event-note">Puri, Odisha · massive procession · Lord Jagannath leaves temple to meet devotees</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">25</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Devshayani Ekadashi</strong> <span class="event-note">Lord Vishnu enters sleep (Yoga Nidra) for 4 months · Chaturmas begins · no weddings</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">26</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-sankranti)"></div><div class="event-text"><strong>Shravana (Sawan) month begins</strong> <span class="event-note">Most sacred month for Lord Shiva · every Monday is special</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">July highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🙏 Guru Purnima 10</span>
+        <span class="mh-pill">🚩 Rath Yatra 16</span>
+        <span class="mh-pill">📅 Chaturmas from 25</span>
+        <span class="mh-pill">🕉️ Sawan begins 26</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     AUGUST 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-aug">
+  <div class="month-hdr" style="border-color:#C94800" onclick="toggleMonth(this)">
+    <h2>August 2026</h2>
+    <span class="month-hindu">Shravana / Bhadrapada</span>
+    <span class="month-count">11 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">9</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Kamika Ekadashi</strong> <span class="event-note">Lord Vishnu · merit equal to donating a cow</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Shravana Purnima</strong> — Full moon of Sawan</div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">12</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Shravana Amavasya</strong> <span class="event-note">⚠️ Total Solar Eclipse alignment — check local timings</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">15</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🇮🇳 <strong>India Independence Day</strong> <span class="event-note">79th anniversary</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Hariyali Teej</strong> <span class="event-note">Parvati–Shiva reunion · women's festival · green attire</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">17</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🐍 <strong>Nag Panchami</strong> <span class="event-note">Worship of serpent deities · milk offerings · Shiva connection</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-sankranti)"></div><div class="event-text"><strong>Leo Sankranti</strong> — Sun enters Leo</div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">23</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Putrada Ekadashi</strong> <span class="event-note">Blesses with children · family prosperity</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">26</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🌸 <strong>Onam</strong> <span class="event-note">Kerala harvest festival · King Mahabali's return · 10-day celebration peak</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">28</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🪢 <strong>Raksha Bandhan</strong> <span class="event-note">Shravana Purnima · sisters tie rakhi · brother–sister bond ⚠️ Partial Lunar Eclipse alignment</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Shravana Purnima</strong> / Gayatri Jayanti</div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">August highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🪢 Raksha Bandhan 28</span>
+        <span class="mh-pill">🌸 Onam 26</span>
+        <span class="mh-pill">🐍 Nag Panchami 17</span>
+        <span class="mh-pill">🌑 Amavasya 12</span>
+        <span class="mh-pill">🌕 Purnima 9 & 28</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SEPTEMBER 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-sep">
+  <div class="month-hdr" style="border-color:#CC6600" onclick="toggleMonth(this)">
+    <h2>September 2026</h2>
+    <span class="month-hindu">Bhadrapada</span>
+    <span class="month-count">10 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">4</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🦚 <strong>Krishna Janmashtami</strong> <span class="event-note">Midnight birth of Lord Krishna · Dahi Handi · fasting until midnight</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">7</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Aja Ekadashi</strong> <span class="event-note">Removes all sins including brahmana hatya</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">9</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Hartalika Teej</strong> <span class="event-note">Parvati's fast for Shiva · waterless fast for married women</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">11</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Bhadrapada Amavasya</strong> <span class="event-note">Pitru tarpan</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">14</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🐘 <strong>Ganesh Chaturthi</strong> <span class="event-note">Birth of Lord Ganesha · 10-day celebration begins · no moon viewing tonight</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">22</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Parivartini Ekadashi</strong> <span class="event-note">Lord Vishnu turns over in his sleep · very auspicious</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">23</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text"><strong>Ganesh Visarjan</strong> <span class="event-note">10th day · immersion of Ganesha idol · Anant Chaturdashi</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">24</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Pitru Paksha begins</strong> <span class="event-note">16-day period for ancestor rituals · tarpan, shraddha · ends 10 Oct</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">September highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🦚 Janmashtami 4</span>
+        <span class="mh-pill">🐘 Ganesh Chaturthi 14</span>
+        <span class="mh-pill">🙏 Pitru Paksha from 24</span>
+        <span class="mh-pill">🌑 Amavasya 11</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     OCTOBER 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-oct">
+  <div class="month-hdr" style="border-color:#880035" onclick="toggleMonth(this)">
+    <h2>October 2026</h2>
+    <span class="month-hindu">Ashwina</span>
+    <span class="month-count">12 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">7</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Ashwina Purnima</strong></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">10</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Sarva Pitru Amavasya</strong> <span class="event-note">Most important day of Pitru Paksha · all ancestors · Mahalaya · Pitru Paksha ends</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">11</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🌸 <strong>Sharad Navratri begins</strong> — Ghatasthapana <span class="event-note">Nine nights of Goddess Durga · most celebrated Navratri</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">17</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🏺 <strong>Durga Maha Ashtami</strong> <span class="event-note">Most powerful day of Navratri · Sandhi Puja · Kanya Puja</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Navami</strong> <span class="event-note">Durga Navami · end of fasting</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">19</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">⚔️ <strong>Vijayadashami / Dussehra</strong> <span class="event-note">Rama's victory over Ravana · Burning of Ravana effigy · Shastra Puja</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">20</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Papankusha Ekadashi</strong> <span class="event-note">Destroys all sins · Lord Padmanabha</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">24</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-vrat)"></div><div class="event-text"><strong>Karwa Chauth</strong> <span class="event-note">Married women fast from sunrise to moonrise for husbands' long life</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">October highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🌸 Sharad Navratri 11–19</span>
+        <span class="mh-pill">⚔️ Dussehra 19</span>
+        <span class="mh-pill">🙏 Mahalaya 10</span>
+        <span class="mh-pill">💑 Karwa Chauth 24</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     NOVEMBER 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-nov">
+  <div class="month-hdr" style="border-color:#B8860B" onclick="toggleMonth(this)">
+    <h2>November 2026</h2>
+    <span class="month-hindu">Kartika</span>
+    <span class="month-count">12 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">5</div><div class="day-name">Thu</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Rama Ekadashi</strong> <span class="event-note">Destroys all sins · Lord Hrishikesha</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">6</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">⚖️ <strong>Dhanteras</strong> <span class="event-note">Dhanvantari Jayanti · purchase gold, silver, vessels · Deepotsav begins</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Pradosh Vrat</strong> (Krishna)</div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">7</div><div class="day-name">Sat</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-pradosh)"></div><div class="event-text"><strong>Masik Shivaratri + Narak Chaturdashi</strong> <span class="event-note">Choti Diwali · oil bath before sunrise</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">8</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">🪔 <strong>Diwali — Lakshmi Puja</strong> <span class="event-note">Festival of lights · Lakshmi and Ganesha puja · fireworks · sweets</span></div></div>
+        <div class="event"><div class="event-dot" style="background:var(--c-dharmic)"></div><div class="event-text">🪷 <strong>Mahavira Nirvana</strong> <span class="event-note">Jain New Year · the night Mahavira attained liberation</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">9</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Kartika Amavasya</strong> — Diwali Amavasya</div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">10</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text"><strong>Govardhan Puja</strong> <span class="event-note">Krishna lifted Govardhan · Annakoot · mountain of food offered</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">11</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text"><strong>Bhai Dooj</strong> <span class="event-note">Brothers and sisters · sister applies tika to brother</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">15</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">☀️ <strong>Chhath Puja</strong> <span class="event-note">Worship of Sun God · offerings at river at sunset and sunrise · Bihar, UP, Jharkhand</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">20</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Devutthana Ekadashi</strong> <span class="event-note">Lord Vishnu wakes from Yoga Nidra · Chaturmas ends · wedding season opens</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">24</div><div class="day-name">Tue</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Kartika Purnima</strong> — Dev Deepawali <span class="event-note">Gods celebrate Diwali on earth · millions of lamps at Ganga ghats · Pushkar fair</span></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">November highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">🪔 Diwali 8</span>
+        <span class="mh-pill">⚖️ Dhanteras 6</span>
+        <span class="mh-pill">☀️ Chhath Puja 15</span>
+        <span class="mh-pill">🌕 Kartika Purnima 24</span>
+        <span class="mh-pill">🌑 Amavasya 9</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     DECEMBER 2026
+══════════════════════════════════════ -->
+<div class="month-section" id="month-dec">
+  <div class="month-hdr" style="border-color:#4A0060" onclick="toggleMonth(this)">
+    <h2>December 2026</h2>
+    <span class="month-hindu">Margashirsha / Pausha</span>
+    <span class="month-count">7 dates</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="month-body">
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">4</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Utpanna Ekadashi</strong> <span class="event-note">Birth of Ekadashi Devi from Vishnu · the original Ekadashi</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">9</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-amavasya)"></div><div class="event-text">🌑 <strong>Margashirsha Amavasya</strong></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">14</div><div class="day-name">Mon</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-major)"></div><div class="event-text">💒 <strong>Vivah Panchami</strong> <span class="event-note">Divine marriage of Rama and Sita · celebrated especially in Ayodhya and Janakpur</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">20</div><div class="day-name">Sun</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-ekadashi)"></div><div class="event-text"><strong>Mokshada Ekadashi / Gita Jayanti</strong> <span class="event-note">Birth of the Bhagavad Gita · most important Ekadashi of Margashirsha · grants moksha</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">23</div><div class="day-name">Wed</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-purnima)"></div><div class="event-text">🌕 <strong>Margashirsha Purnima</strong> <span class="event-note">Dattatreya Jayanti · Annapoorna Jayanti</span></div></div>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <div class="day-left"><div class="day-num">25</div><div class="day-name">Fri</div></div>
+      <div class="day-events">
+        <div class="event"><div class="event-dot" style="background:var(--c-sankranti)"></div><div class="event-text">🎄 <strong>Christmas + Dhanishtha Panchami</strong></div></div>
+      </div>
+    </div>
+
+    <div class="month-highlights">
+      <div class="mh-label">December highlights</div>
+      <div class="mh-pills">
+        <span class="mh-pill">📖 Gita Jayanti 20</span>
+        <span class="mh-pill">💒 Vivah Panchami 14</span>
+        <span class="mh-pill">🌕 Purnima 23</span>
+        <span class="mh-pill">🌑 Amavasya 9</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="cal-footer">
+  <p>
+    Dates based on Drik Panchang (IST · New Delhi). Tithi timings may vary by location.<br>
+    For exact local times consult <a href="https://www.drikpanchang.com" target="_blank">drikpanchang.com</a><br><br>
+    Part of the <strong style="color:rgba(212,160,23,0.6)">Sanatana Series</strong> · <a href="index.html">All Guides</a><br>
+    Created by Varun Dogar · With assistance from Claude · Anthropic
+  </p>
+</div>
+
+<script>
+// ── Toggle month open/close ──
+function toggleMonth(hdr) {
+  hdr.classList.toggle('open');
+  hdr.nextElementSibling.classList.toggle('open');
+}
+
+// ── Highlight today's row ──
+(function() {
+  var today = new Date();
+  var m = today.getMonth(); // 0-indexed
+  var d = today.getDate();
+
+  // Map month index to section id
+  var monthIds = ['month-jan','month-feb','month-mar','month-apr',
+                  'month-may','month-jun','month-jul','month-aug',
+                  'month-sep','month-oct','month-nov','month-dec'];
+  var currentId = monthIds[m];
+
+  // Auto-open current month, close others
+  document.querySelectorAll('.month-hdr').forEach(function(hdr) {
+    var section = hdr.closest('.month-section');
+    var isCurrentMonth = section && section.id === currentId;
+    hdr.classList.toggle('open', isCurrentMonth);
+    hdr.nextElementSibling.classList.toggle('open', isCurrentMonth);
+  });
+
+  // Jump button
+  var btn = document.getElementById('todayBtn');
+  if (btn && document.getElementById(currentId)) {
+    btn.href = '#' + currentId;
+    btn.textContent = 'Jump to ' + today.toLocaleString('default',{month:'long'}) + ' ▾';
+  }
+
+  // Mark today's rows
+  var dayRows = document.querySelectorAll('.day-row');
+  dayRows.forEach(function(row) {
+    var num = row.querySelector('.day-num');
+    if (num && parseInt(num.textContent) === d) {
+      var section = row.closest('.month-section');
+      if (section && section.id === currentId) {
+        row.classList.add('today');
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>
