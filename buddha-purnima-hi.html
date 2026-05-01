@@ -238,6 +238,29 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
   font-weight:600; margin-top:3px; }
 .attr-claude { font-size:11px; color:rgba(255,255,255,0.50); margin-top:4px;
   font-style:italic; font-family:'DM Sans',sans-serif; }
+
+.festival-image{margin:16px;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,0.10);border:1px solid var(--border);background:var(--white)}
+.festival-image img{width:100%;height:auto;display:block}
+.festival-image figcaption{padding:10px 12px;background:#fffaf0;color:var(--muted);font-size:12px;line-height:1.65}
+.hero-visual{margin:18px auto 0;max-width:520px;border-radius:18px;overflow:hidden;border:1px solid rgba(212,160,23,0.25);box-shadow:0 14px 36px rgba(0,0,0,0.28);position:relative}
+.hero-visual img{width:100%;height:auto;display:block}
+.inline-visual{margin:12px 16px 16px;border-radius:var(--r);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.08);border:1px solid var(--border);background:var(--white)}
+.inline-visual img{width:100%;height:auto;display:block}
+.inline-visual figcaption{padding:10px 12px;font-size:12px;color:var(--muted);background:#fffaf0;line-height:1.65}
+.place-photo{margin:0 14px 14px;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#fff8ee;box-shadow:0 6px 18px rgba(0,0,0,0.07)}
+.place-photo img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.place-photo figcaption{padding:9px 11px;font-size:12px;line-height:1.65;color:var(--muted)}
+.story{position:relative;border:1px solid rgba(184,134,11,0.12);box-shadow:0 10px 24px rgba(42,24,0,0.07)}
+.story::before{content:'';position:absolute;left:18px;top:56px;bottom:18px;width:2px;background:linear-gradient(to bottom, rgba(212,160,23,0.65), rgba(212,160,23,0.08));}
+.story-hdr{position:relative;background:linear-gradient(180deg,#fffdf5 0%,#fff7e6 100%)}
+.story-body{padding:0 14px 16px 56px}
+.story-visual{margin:0 14px 14px 56px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#fff9ef;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.story-visual img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.story-visual figcaption{padding:10px 12px;font-size:12px;line-height:1.65;color:var(--muted)}
+.story-badge{box-shadow:0 0 0 4px #fff7e6, 0 8px 16px rgba(139,96,0,0.18)}
+@media (min-width:700px){body{max-width:760px}.hero{padding:52px 28px 36px}}
+@media (max-width:560px){.story-body,.story-visual{margin-left:14px;padding-left:0}.story::before{display:none}}
+
 </style>
 </head>
 <body>
@@ -269,6 +292,9 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
     <span class="hero-tag">धर्म</span>
     <span class="hero-tag">वेसाक</span>
   </div>
+  <div class="hero-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/644d2e31-51f1-4b12-830e-41d9a9d638ac.png" alt="बुद्ध पूर्णिमा की रंगीन पारंपरिक छवि जिसमें ध्यानमग्न गौतम बुद्ध, कमल और पूर्णिमा का चंद्रमा दिखाया गया है" width="1200" height="1200" loading="eager" decoding="async">
+  </div>
   <div class="hero-facts">
     <div class="hf"><div class="hf-label">जन्म</div><div class="hf-value">563 ईसा पूर्व · लुम्बिनी, नेपाल</div></div>
     <div class="hf"><div class="hf-label">जन्म नाम</div><div class="hf-value">सिद्धार्थ गौतम</div></div>
@@ -287,6 +313,11 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
   <p class="intro-lead">मानव इतिहास में शायद कोई और नहीं जिनका जन्म, सर्वोच्च ज्ञान की प्राप्ति और देहत्याग — तीनों एक ही चन्द्र तिथि पर हुए हों।</p>
   <p>बुद्ध पूर्णिमा — जिसे वेसाक, बुद्ध जयंती या वैशाख पूर्णिमा भी कहते हैं — वैशाख महीने की पूर्णिमा को पड़ती है। यही वह तिथि है जब राजकुमार सिद्धार्थ का जन्म हुआ, बोधगया में पीपल के वृक्ष के नीचे उन्हें सम्पूर्ण ज्ञान (बोधि) मिली, और 80 वर्ष की आयु में कुशीनगर में उन्होंने महापरिनिर्वाण प्राप्त किया। इस एक दिन में तीन महान् घटनाएँ — यही इस पर्व को बौद्ध पंचांग का सबसे पवित्र दिन बनाती हैं। दुनिया भर में 50 करोड़ से अधिक बौद्ध इस दिन को मनाते हैं।</p>
 </div>
+
+<figure class="inline-visual">
+  <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7ceb90e1-034f-4ad5-9ba0-822b6e23c3ef.png" alt="बोधि वृक्ष, ध्यानमग्न बुद्ध और पूर्णिमा के चंद्रमा के साथ बुद्ध पूर्णिमा की पारंपरिक रंगीन कलाकृति" width="1200" height="1200" loading="lazy" decoding="async">
+  <figcaption>बुद्ध पूर्णिमा ध्यान, करुणा, बोधि वृक्ष और वैशाख पूर्णिमा की पवित्र चांदनी से जुड़ी हुई मानी जाती है।</figcaption>
+</figure>
 
 <div class="stats-row">
   <div class="stat-pill">
@@ -347,6 +378,10 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
     <h3 style="color:var(--amber)">राजकीय जन्म — लुम्बिनी, 563 ईसा पूर्व</h3>
   </div>
   <div class="story-body">सिद्धार्थ गौतम का जन्म लुम्बिनी (वर्तमान नेपाल) में शाक्य वंश के राजा शुद्धोदन और माता मायादेवी के यहाँ हुआ। जन्म के समय एक महान् ऋषि असित ने भविष्यवाणी की — यह बालक या तो महान् चक्रवर्ती सम्राट बनेगा, या फिर ऐसा साधु जो संसार को दुःख से मुक्ति का मार्ग दिखाएगा। राजा शुद्धोदन ने बेटे को सांसारिक कष्टों से दूर रखने की हरसंभव कोशिश की — तीन महल, वर्षभर उत्सव, 16 वर्ष की आयु में यशोधरा से विवाह, और राहुल नाम के पुत्र का जन्म। 29 वर्ष तक सिद्धार्थ ने महल की चारदीवारी के बाहर की दुनिया नहीं देखी।</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/651c0454-c19c-4fd5-9fee-afc9fc3f632d.png" alt="रानी माया और सिद्धार्थ के जन्म का पारंपरिक चित्रण" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>गौतम बुद्ध के जीवन का प्रारंभ लुम्बिनी की पवित्रता, राजसी शांति और दिव्य संकेतों के साथ स्मरण किया जाता है।</figcaption>
+  </figure>
 </div>
 
 <div class="story">
@@ -355,6 +390,10 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
     <h3 style="color:var(--amber)">चार दृश्य — वह पल जिसने सब बदल दिया</h3>
   </div>
   <div class="story-body">29 वर्ष की आयु में सिद्धार्थ ने अपने सारथी छन्न के साथ नगर भ्रमण किया। वहाँ उन्होंने चार ऐसे दृश्य देखे जो उनके जीवन की दिशा बदल देंगे। पहला — एक वृद्ध व्यक्ति, काँपता, झुका हुआ। छन्न ने बताया: यही सबकी नियति है — बुढ़ापा सबको आता है। दूसरा — एक रोगी व्यक्ति, तड़पता हुआ। तीसरा — एक शव, जनाज़े में ले जाया जा रहा था। छन्न: मृत्यु से कोई नहीं बच सकता। ये तीनों दृश्य सिद्धार्थ के मन को झकझोर गए। चौथा दृश्य आशा लेकर आया — एक संन्यासी, जो इन सब से परे, पूरी तरह शांत और स्थिर था। उसी रात सिद्धार्थ ने अपनी सोई हुई पत्नी और शिशु पुत्र को अंतिम बार देखा, और चुपचाप महल छोड़ दिया — अपने सत्य की खोज में।</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/51b20bab-57e5-4a30-baea-618181a9bda8.png" alt="रथ पर सिद्धार्थ द्वारा चार दृश्यों को देखे जाने का पारंपरिक चित्रण" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>चार दर्शनों ने सिद्धार्थ के जीवन की दिशा बदल दी और उन्हें सत्य की खोज की ओर अग्रसर किया।</figcaption>
+  </figure>
 </div>
 
 <div class="story">
@@ -363,6 +402,10 @@ body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif; background:var(
     <h3 style="color:var(--amber)">छह वर्ष की साधना — और मध्यम मार्ग की खोज</h3>
   </div>
   <div class="story-body">सिद्धार्थ ने पहले आलार कालाम और उद्दक रामपुत्त — उस समय के दो महान् ध्यान गुरुओं — के पास विद्या सीखी। दोनों की साधनाएँ सीखीं, पर मन तृप्त नहीं हुआ। फिर पाँच साथियों के साथ उन्होंने कठोर तपस्या आरम्भ की — महीनों तक एक-एक दाना खाकर, धूप-वर्षा-ठंड सहकर। शरीर इतना क्षीण हो गया कि पसलियाँ गिनी जा सकती थीं — फिर भी ज्ञान नहीं मिला। तब एक दिन सुजाता नाम की युवती ने खीर का कटोरा भेंट किया। सिद्धार्थ ने ग्रहण किया। साथी नाराज होकर चले गए। लेकिन उसी क्षण सिद्धार्थ को एक गहरी बात समझ आई — न अति भोग, न अति तपस्या — सत्य मध्यम मार्ग में है। यही बुद्ध की सबसे मौलिक देन है — मध्यम मार्ग।</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/635b8864-058c-478b-826d-645d2cb08b0d.png" alt="बोधि वृक्ष के नीचे ध्यानमग्न सिद्धार्थ के ज्ञान प्राप्ति का पारंपरिक चित्रण" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>बोधि वृक्ष के नीचे सिद्धार्थ की साधना पूर्ण हुई और वहीं से मध्यम मार्ग तथा बोध का प्रकाश प्रकट हुआ।</figcaption>
+  </figure>
 </div>
 
 <div class="story">
