@@ -1,18 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Chaitra Navratri 2026 — Nine Sacred Nights"/>
-<meta property="og:description" content="Nine Navdurga forms · Birth of Goddess Durga · 18 Shakti Peeths · Day-by-day guide. Sanatana Series."/>
-<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
-<meta property="og:url" content="https://dogvar.github.io/sanatana-series/navratri.html"/>
-<meta name="twitter:card" content="summary_large_image"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="website" property="og:type"/>
+<meta content="Chaitra Navratri 2026 — Nine Sacred Nights" property="og:title"/>
+<meta content="Nine Navdurga forms · Birth of Goddess Durga · 18 Shakti Peeths · Day-by-day guide. Sanatana Series." property="og:description">
+<meta content="https://dogvar.github.io/sanatana-series/sanatana-og.png" property="og:image">
+<meta content="https://dogvar.github.io/sanatana-series/navratri.html" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <title>Chaitra Navratri 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Noto+Serif+Devanagari:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 /* ── Design tokens ── */
 :root {
@@ -820,822 +821,907 @@ body {
 .closing .victory { color: rgba(255,255,255,0.72) !important; }
 .jai-deva { color: var(--gold, #B8860B) !important; }
 
-</style>
-</head>
-<body>
 
+/* ── Voice selector ── */
+.ab-voice {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(212,160,23,0.80);
+  border-radius: 6px;
+  padding: 3px 4px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 38px;
+  font-family: 'DM Sans', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.ab-voice:focus { outline: none; }
+.ab-voice option {
+  background: #0D0400;
+  color: white;
+  font-size: 13px;
+  padding: 4px;
+}
+
+
+
+
+/* When Hindi mode active */
+
+
+
+
+/* ── Google Translate Widget ── */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+}
+#google_translate_element .goog-te-gadget {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0 !important; /* hide "Powered by" text */
+}
+#google_translate_element .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(212,160,23,0.35) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  cursor: pointer;
+}
+#google_translate_element .goog-te-gadget-simple a {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#google_translate_element .goog-te-gadget-simple a span {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: none; /* hide language name, show only arrow */
+}
+/* Override Google's iframe banner */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
+
+.lang-toggle { display:flex; gap:4px; align-items:center; margin-left:8px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+.lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
+</style>
+</meta></meta></head>
+<body>
 <nav class="top-nav">
-  <a class="back" href="index.html">
-    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+<a class="back" href="index.html">
+<svg fill="none" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
     Sanatana Series
   </a>
-  <span class="nav-title nav-om">ॐ</span>
-</nav>
+<span class="nav-title nav-om">ॐ</span>
 
+  <div id="google_translate_element" style="margin-left:auto"></div>
+  <div class="lang-toggle" style="margin-left:auto">
+    <a class="lang-btn active" href="navratri.html">EN</a>
+    <a class="lang-btn" href="navratri-hi.html">हिं</a>
+  </div>
+</nav>
 <!-- Audio Player Bar -->
 <div class="audio-bar" id="audioBar">
-  <button class="ab-play" id="abPlay" onclick="audioToggle()" aria-label="Play">
-    <svg id="abPlayIcon" viewBox="0 0 16 16" fill="white">
-      <polygon points="4,2 14,8 4,14"/>
-    </svg>
-  </button>
-  <div class="ab-info">
-    <div class="ab-section" id="abSection">Tap ▶ to listen</div>
-    <div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
-      <div class="ab-progress" id="abProgress"></div>
-    </div>
-  </div>
-  <button class="ab-skip" onclick="audioNext()" title="Next section" aria-label="Next section">
-    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-      <polygon points="3,3 12,9 3,15" fill="currentColor" stroke="none"/>
-      <line x1="14" y1="3" x2="14" y2="15"/>
-    </svg>
-  </button>
-  <button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<button aria-label="Play" class="ab-play" id="abPlay" onclick="audioToggle()">
+<svg fill="white" id="abPlayIcon" viewbox="0 0 16 16">
+<polygon points="4,2 14,8 4,14"></polygon>
+</svg>
+</button>
+<div class="ab-info">
+<div class="ab-section" id="abSection">Tap ▶ to listen</div>
+<button class="lang-btn" id="langHI" onclick="setLang('hi')">हिंदी</button>
 </div>
-
-
-
+<div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
+<div class="ab-progress" id="abProgress"></div>
+</div>
+</div>
+<button aria-label="Next section" class="ab-skip" onclick="audioNext()" title="Next section">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 18 18">
+<polygon fill="currentColor" points="3,3 12,9 3,15" stroke="none"></polygon>
+<line x1="14" x2="14" y1="3" y2="15"></line>
+</svg>
+</button>
+<button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<select class="ab-voice" id="abVoice" onchange="audioSetVoice(this.value)" title="Choose voice">
+<option value="">🎙</option>
+</select>
+</div>
 <!-- ══ HERO ══ -->
 <div class="hero">
-  <p class="hero-eyebrow">✦ Chaitra Navratri 2026 · Vikram Samvat 2083 ✦</p>
-  <h1 class="hero-title">Chaitra Navratri</h1>
-  <p class="hero-sub">Nine Sacred Nights of the Divine Mother</p>
-  <div class="om-circle"><span class="om-text">ॐ</span></div>
-  <div class="date-pill">19 March — 27 March 2026 · Ashtami: 26 Mar · Ram Navami: 27 Mar</div>
-  <div class="hero-tags">
-    <span class="hero-tag">Shakti</span>
-    <span class="hero-tag">Navdurga</span>
-    <span class="hero-tag">Shakti Peeths</span>
-    <span class="hero-tag">Vedic Tradition</span>
-  </div>
+<p class="hero-eyebrow">✦ Chaitra Navratri 2026 · Vikram Samvat 2083 ✦</p>
+<h1 class="hero-title">Chaitra Navratri</h1>
+<p class="hero-sub">
+Nine Sacred Nights of the Divine Mother
+</p>
+<div class="om-circle"><span class="om-text">ॐ</span></div>
+<div class="date-pill">19 March — 27 March 2026 · Ashtami: 26 Mar · Ram Navami: 27 Mar</div>
+<div class="hero-tags">
+<span class="hero-tag">Shakti</span>
+<span class="hero-tag">Navdurga</span>
+<span class="hero-tag">Shakti Peeths</span>
+<span class="hero-tag">Vedic Tradition</span>
 </div>
-
+</div>
 <!-- ══ 9 FORMS ══ -->
 <p class="nine-grid-title">The Nine Divine Forms</p>
 <div class="nine-grid">
-  <div class="nine-card d1" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">1</div>
-    <div class="name" style="color:var(--acc)">Shailputri</div>
-    <div class="epithet">Mountain Daughter</div>
-  </div>
-  <div class="nine-card d2" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">2</div>
-    <div class="name" style="color:var(--acc)">Brahmacharini</div>
-    <div class="epithet">The Ascetic</div>
-  </div>
-  <div class="nine-card d3" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">3</div>
-    <div class="name" style="color:var(--acc)">Chandraghanta</div>
-    <div class="epithet">Moon-Bell Warrior</div>
-  </div>
-  <div class="nine-card d4" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">4</div>
-    <div class="name" style="color:var(--acc)">Kushmanda</div>
-    <div class="epithet">Universe Creator</div>
-  </div>
-  <div class="nine-card d5" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">5</div>
-    <div class="name" style="color:var(--acc)">Skandamata</div>
-    <div class="epithet">Cosmic Mother</div>
-  </div>
-  <div class="nine-card d6" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">6</div>
-    <div class="name" style="color:var(--acc)">Katyayani</div>
-    <div class="epithet">Divine Warrior</div>
-  </div>
-  <div class="nine-card d7" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">7</div>
-    <div class="name" style="color:var(--acc)">Kalaratri</div>
-    <div class="epithet">Dark Destroyer</div>
-  </div>
-  <div class="nine-card d8" style="background:var(--bg);border-color:var(--acc);border:2px solid var(--saff)">
-    <div class="num" style="background:var(--acc)">8</div>
-    <div class="name" style="color:var(--acc)">Mahagauri</div>
-    <div class="epithet">Radiant Pure One</div>
-    <div class="today-badge" style="color:var(--saff)">★ TODAY ★</div>
-  </div>
-  <div class="nine-card d9" style="background:var(--bg);border-color:var(--acc)">
-    <div class="num" style="background:var(--acc)">9</div>
-    <div class="name" style="color:var(--acc)">Siddhidatri</div>
-    <div class="epithet">Giver of Powers</div>
-  </div>
+<div class="nine-card d1" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">1</div>
+<div class="name" style="color:var(--acc)">Shailputri</div>
+<div class="epithet">Mountain Daughter</div>
 </div>
-
+<div class="nine-card d2" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">2</div>
+<div class="name" style="color:var(--acc)">Brahmacharini</div>
+<div class="epithet">The Ascetic</div>
+</div>
+<div class="nine-card d3" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">3</div>
+<div class="name" style="color:var(--acc)">Chandraghanta</div>
+<div class="epithet">Moon-Bell Warrior</div>
+</div>
+<div class="nine-card d4" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">4</div>
+<div class="name" style="color:var(--acc)">Kushmanda</div>
+<div class="epithet">Universe Creator</div>
+</div>
+<div class="nine-card d5" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">5</div>
+<div class="name" style="color:var(--acc)">Skandamata</div>
+<div class="epithet">Cosmic Mother</div>
+</div>
+<div class="nine-card d6" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">6</div>
+<div class="name" style="color:var(--acc)">Katyayani</div>
+<div class="epithet">Divine Warrior</div>
+</div>
+<div class="nine-card d7" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">7</div>
+<div class="name" style="color:var(--acc)">Kalaratri</div>
+<div class="epithet">Dark Destroyer</div>
+</div>
+<div class="nine-card d8" style="background:var(--bg);border-color:var(--acc);border:2px solid var(--saff)">
+<div class="num" style="background:var(--acc)">8</div>
+<div class="name" style="color:var(--acc)">Mahagauri</div>
+<div class="epithet">Radiant Pure One</div>
+<div class="today-badge" style="color:var(--saff)">★ TODAY ★</div>
+</div>
+<div class="nine-card d9" style="background:var(--bg);border-color:var(--acc)">
+<div class="num" style="background:var(--acc)">9</div>
+<div class="name" style="color:var(--acc)">Siddhidatri</div>
+<div class="epithet">Giver of Powers</div>
+</div>
+</div>
 <!-- ══ WHAT IS NAVRATRI ══ -->
 <div class="section-hdr">
-  <h2>What is Chaitra Navratri?</h2>
-  <p>Nine Nights of Divine Feminine Power</p>
+<h2>
+What is Chaitra Navratri?
+</h2>
+<p>Nine Nights of Divine Feminine Power</p>
 </div>
 <div class="content-padded">
-  <div class="intro-block">
-    <p class="lead">Navratri = Nav (Nine) + Ratri (Nights) — the most sacred festival of Maa Durga.</p>
-    <p>Chaitra Navratri is celebrated in the Hindu month of Chaitra (March–April), marking the arrival of spring and the beginning of the Hindu New Year. For nine consecutive days and nights, devotees across India fast, pray, and worship the nine divine forms of Goddess Durga — the Navdurga. It celebrates the cosmic feminine energy (Shakti) that creates, sustains and liberates the universe.</p>
-  </div>
-  <div class="card-grid cols-2">
-    <div class="card">
-      <div class="card-accent-bar" style="background:var(--saff)"></div>
-      <div class="card-body">
-        <div class="card-icon">⚔️</div>
-        <div class="card-title" style="color:var(--saff)">Victory over Evil</div>
-        <p>The demon Mahishasura conquered heaven. The Trinity merged their energies to create Goddess Durga. She fought him for nine nights and slew him on the tenth day (Vijayadashami).</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-accent-bar" style="background:var(--green)"></div>
-      <div class="card-body">
-        <div class="card-icon">🌸</div>
-        <div class="card-title" style="color:var(--green)">Spring Purification</div>
-        <p>Navratri falls at Ritu Sandhi — the sacred seasonal junction. Fasting and prayer align body and mind. Nature herself is reborn; the devotee cleanses and starts afresh.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-accent-bar" style="background:var(--purple)"></div>
-      <div class="card-body">
-        <div class="card-icon">✨</div>
-        <div class="card-title" style="color:var(--purple)">Awakening Shakti Within</div>
-        <p>Each of the nine forms represents a quality within us — stability, discipline, courage, creativity, compassion, wisdom, fearlessness, purity and liberation. Nine rungs of the inner ladder.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-accent-bar" style="background:var(--blue)"></div>
-      <div class="card-body">
-        <div class="card-icon">🙏</div>
-        <div class="card-title" style="color:var(--blue)">Honouring the Divine Feminine</div>
-        <p>Hinduism places the feminine principle — Shakti — at the very centre of cosmic creation. Without Shakti, even Shiva is Shava (inert). Navratri is the festival of feminine energy as the foundation of all existence.</p>
-      </div>
-    </div>
-  </div>
+<div class="intro-block">
+<p class="lead">
+Navratri = Nav (Nine) + Ratri (Nights) — the most sacred festival of Maa Durga.
+</p>
+<p>Chaitra Navratri is celebrated in the Hindu month of Chaitra (March–April), marking the arrival of spring and the beginning of the Hindu New Year. For nine consecutive days and nights, devotees across India fast, pray, and worship the nine divine forms of Goddess Durga — the Navdurga. It celebrates the cosmic feminine energy (Shakti) that creates, sustains and liberates the universe.</span></p>
 </div>
-
-<!-- ══ BIRTH OF GODDESS DURGA ══ -->
-<div class="section-hdr">
-  <h2>The Birth of Goddess Durga</h2>
-  <p>How the Divine Feminine arose to defeat the invincible demon</p>
+<div class="card-grid cols-2">
+<div class="card">
+<div class="card-accent-bar" style="background:var(--saff)"></div>
+<div class="card-body">
+<div class="card-icon">⚔️</div>
+<div class="card-title" style="color:var(--saff)">Victory over Evil</div>
+<p>The demon Mahishasura conquered heaven. The Trinity merged their energies to create Goddess Durga. She fought him for nine nights and slew him on the tenth day (Vijayadashami).</p>
 </div>
-<div class="content-padded">
-  <div class="story-block">
-    <div class="story-header" style="background:#FFF5F0">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--saff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;flex-shrink:0">1</div>
-      <h3 style="color:var(--saff)">The Boon</h3>
-    </div>
-    <div class="story-body">The buffalo demon Mahishasura performed fierce penance for Lord Brahma and received an extraordinary boon: he could not be killed by any man or god. With this shield of invincibility, he raised a vast army and launched a war against the heavens. The devas fought valiantly — but were utterly defeated. Heaven fell. The gods were cast out into the world, wandering and helpless.</div>
-  </div>
-  <div class="story-block">
-    <div class="story-header" style="background:#F0FFF0">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;flex-shrink:0">2</div>
-      <h3 style="color:var(--green)">The Cosmic Response</h3>
-    </div>
-    <div class="story-body">In despair, all the gods went to Lord Brahma, then Vishnu and Shiva. The three together blazed with fury. From their combined divine anger, a blinding radiance emerged. Every god contributed his most powerful weapon — Vishnu gave his Sudarshana Chakra, Shiva gave his Trishula, Indra gave his Vajra, Varuna gave his conch, Agni gave his power of fire, Vayu gave his divine bow. From this collective cosmic energy, the magnificent Goddess Durga was born — riding a lion, luminous and indestructible.</div>
-  </div>
-  <div class="story-block">
-    <div class="story-header" style="background:#FFF5F5">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;flex-shrink:0">3</div>
-      <h3 style="color:var(--red)">The Nine-Night Battle</h3>
-    </div>
-    <div class="story-body">Durga confronted Mahishasura and his armies on the battlefield. For nine days and nights they fought a cosmic war of unimaginable scale. The demon kept changing his form — buffalo, elephant, tiger, man — but the Goddess met every transformation with perfect counter-force. Her eight arms wielded eight weapons simultaneously; her lion fought beside her with equal ferocity.</div>
-  </div>
-  <div class="story-block">
-    <div class="story-header" style="background:#FFF8E8">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;flex-shrink:0">4</div>
-      <h3 style="color:var(--gold)">Vijayadashami — The Day of Victory</h3>
-    </div>
-    <div class="story-body">On the tenth day, Goddess Durga seized Mahishasura as he was changing form, pinned him under her foot, and drove her trident through him. The heavens rang with victory. The gods reclaimed their home. That tenth day is Vijayadashami — the Day of Victory — celebrated as Dussehra. The story teaches that every inner demon — ego, greed, anger — can be conquered through Shakti.</div>
-  </div>
-
-  <div style="background:white;border-radius:var(--r);margin:12px 0;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
-    <h3 style="font-family:'Lora',serif;font-weight:700;font-size:15px;margin-bottom:12px;color:var(--gold)">⚔️ Weapons Given to Goddess Durga</h3>
-    <ul class="weapons-list">
-      <li><div class="weapon-dot" style="background:#4A90D9"></div><span class="weapon-god">Vishnu</span>Sudarshana Chakra (divine discus)</li>
-      <li><div class="weapon-dot" style="background:#7B68EE"></div><span class="weapon-god">Shiva</span>Trishula (trident)</li>
-      <li><div class="weapon-dot" style="background:#FFD700"></div><span class="weapon-god">Indra</span>Vajra (thunderbolt)</li>
-      <li><div class="weapon-dot" style="background:#20B2AA"></div><span class="weapon-god">Varuna</span>Conch shell</li>
-      <li><div class="weapon-dot" style="background:#FF6347"></div><span class="weapon-god">Agni</span>Fiery power</li>
-      <li><div class="weapon-dot" style="background:#32CD32"></div><span class="weapon-god">Vayu</span>Divine bow</li>
-      <li><div class="weapon-dot" style="background:#FFB347"></div><span class="weapon-god">Brahma</span>Sacred water pot</li>
-      <li><div class="weapon-dot" style="background:#8B4513"></div><span class="weapon-god">Himalayas</span>Her lion vehicle</li>
-    </ul>
-  </div>
-
-  <div class="shloka-box">
-    <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,220,120,0.6);margin-bottom:12px">The Deeper Meaning</p>
-    <p style="font-size:14px;color:rgba(255,255,255,0.8);line-height:1.7">Mahishasura represents the ego — the belief that we are invincible and superior. Durga is the inner Shakti that, when awakened, destroys this illusion.</p>
-  </div>
 </div>
-
+<div class="card">
+<div class="card-accent-bar" style="background:var(--green)"></div>
+<div class="card-body">
+<div class="card-icon">🌸</div>
+<div class="card-title" style="color:var(--green)">Spring Purification</div>
+<p>Navratri falls at Ritu Sandhi — the sacred seasonal junction. Fasting and prayer align body and mind. Nature herself is reborn; the devotee cleanses and starts afresh.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-accent-bar" style="background:var(--purple)"></div>
+<div class="card-body">
+<div class="card-icon">✨</div>
+<div class="card-title" style="color:var(--purple)">Awakening Shakti Within</div>
+<p>Each of the nine forms represents a quality within us — stability, discipline, courage, creativity, compassion, wisdom, fearlessness, purity and liberation. Nine rungs of the inner ladder.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-accent-bar" style="background:var(--blue)"></div>
+<div class="card-body">
+<div class="card-icon">🙏</div>
+<div class="card-title" style="color:var(--blue)">Honouring the Divine Feminine</div>
+<p>Hinduism places the feminine principle — Shakti — at the very centre of cosmic creation. Without Shakti, even Shiva is Shava (inert). Navratri is the festival of feminine energy as the foundation of all existence.Sudarshana Chakra (divine discus)</li>
+<li><div class="weapon-dot" style="background:#7B68EE"></div><span class="weapon-god">Shiva</span>Trishula (trident)</li>
+<li><div class="weapon-dot" style="background:#FFD700"></div><span class="weapon-god">Indra</span>Vajra (thunderbolt)</li>
+<li><div class="weapon-dot" style="background:#20B2AA"></div><span class="weapon-god">Varuna</span>Conch shell</li>
+<li><div class="weapon-dot" style="background:#FF6347"></div><span class="weapon-god">Agni</span>Fiery power</li>
+<li><div class="weapon-dot" style="background:#32CD32"></div><span class="weapon-god">Vayu</span>Divine bow</li>
+<li><div class="weapon-dot" style="background:#FFB347"></div><span class="weapon-god">Brahma</span>Sacred water pot</li>
+<li><div class="weapon-dot" style="background:#8B4513"></div><span class="weapon-god">Himalayas</span>Her lion vehicle</li>
+</ul>
+</div>
+<div class="shloka-box">
+<p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,220,120,0.6);margin-bottom:12px">The Deeper Meaning</p>
+<p style="font-size:14px;color:rgba(255,255,255,0.8);line-height:1.7">Mahishasura represents the ego — the belief that we are invincible and superior. Durga is the inner Shakti that, when awakened, destroys this illusion.</p>
+</div>
+</div>
 <!-- ══ STORY OF SATI ══ -->
 <div class="section-hdr">
-  <h2>The Story of Sati</h2>
-  <p>Love, Sacrifice &amp; the Birth of the Shakti Peeths</p>
+<h2>The Story of Sati</h2>
+<p>Love, Sacrifice &amp; the Birth of the Shakti Peeths</p>
 </div>
 <div class="acts-grid">
-  <div class="act-card">
-    <div class="act-header" style="background:#FFF8F0">
-      <div class="act-num" style="background:var(--saff)">1</div>
-      <h3 style="color:var(--saff)">Love Against All Odds</h3>
-    </div>
-    <div class="act-body">Sati, daughter of the powerful King Daksha, fell deeply in love with Lord Shiva — the great ascetic of the Himalayas. Daksha considered Shiva too wild and unconventional for a king's daughter. Despite fierce opposition, Sati defied her father and married Shiva. Their love was complete and cosmic.</div>
-  </div>
-  <div class="act-card">
-    <div class="act-header" style="background:#FFF5F5">
-      <div class="act-num" style="background:var(--red)">2</div>
-      <h3 style="color:var(--red)">The Deliberate Insult</h3>
-    </div>
-    <div class="act-body">Daksha organised a grand yajna — the most prestigious spiritual event of the age. He invited every god and sage in creation — but deliberately excluded Sati and Shiva to humiliate them. Against Shiva's warning, Sati attended alone, unable to stay away from her father's home.</div>
-  </div>
-  <div class="act-card">
-    <div class="act-header" style="background:#F0FFF0">
-      <div class="act-num" style="background:var(--green)">3</div>
-      <h3 style="color:var(--green)">The Supreme Sacrifice</h3>
-    </div>
-    <div class="act-body">At the yajna, Daksha publicly and viciously insulted Lord Shiva in front of all assembled gods. Unable to bear the dishonour to her husband, finding no way to defend Shiva's honour, Sati immolated herself in the sacred fire — the ultimate act of protest and devotion. In that moment, the primordial Shakti withdrew from the manifest world.</div>
-  </div>
-  <div class="act-card">
-    <div class="act-header" style="background:#F5F0FF">
-      <div class="act-num" style="background:var(--purple)">4</div>
-      <h3 style="color:var(--purple)">Shiva's Grief and the Cosmic Tandava</h3>
-    </div>
-    <div class="act-body">The news shattered Lord Shiva completely. In uncontrollable grief, he retrieved Sati's body and began his devastating Tandava — the cosmic dance of destruction. All three worlds trembled. Mountains cracked, oceans churned, stars fell. All creation teetered on the edge of annihilation.</div>
-  </div>
-  <div class="act-card">
-    <div class="act-header" style="background:#F0F4FF">
-      <div class="act-num" style="background:var(--blue)">5</div>
-      <h3 style="color:var(--blue)">Vishnu's Intervention</h3>
-    </div>
-    <div class="act-body">To save the universe, Lord Vishnu released his Sudarshana Chakra — his divine discus — and severed Sati's body into 51 pieces as Shiva carried it. Each piece fell to a different location on earth. Where each piece landed, the land became sacred — charged with divine feminine energy. These 51 locations are the Shakti Peeths — the most sacred pilgrimage sites in all of Hinduism.</div>
-  </div>
-  <div class="act-card">
-    <div class="act-header" style="background:#FFF8E8">
-      <div class="act-num" style="background:var(--gold)">6</div>
-      <h3 style="color:var(--gold)">Rebirth and Reunion</h3>
-    </div>
-    <div class="act-body">Sati reincarnated as Parvati, daughter of the Himalayas. She performed intense penance to win Shiva back, eventually succeeded, and the two were reunited in eternal love. The 51 Shakti Peeths remain as a permanent testament — making the entire subcontinent a sacred body of the Goddess.</div>
-  </div>
+<div class="act-card">
+<div class="act-header" style="background:#FFF8F0">
+<div class="act-num" style="background:var(--saff)">1</div>
+<h3 style="color:var(--saff)">Love Against All Odds</h3>
 </div>
-
+<div class="act-body">Sati, daughter of the powerful King Daksha, fell deeply in love with Lord Shiva — the great ascetic of the Himalayas. Daksha considered Shiva too wild and unconventional for a king's daughter. Despite fierce opposition, Sati defied her father and married Shiva. Their love was complete and cosmic.</div>
+</div>
+<div class="act-card">
+<div class="act-header" style="background:#FFF5F5">
+<div class="act-num" style="background:var(--red)">2</div>
+<h3 style="color:var(--red)">The Deliberate Insult</h3>
+</div>
+<div class="act-body">Daksha organised a grand yajna — the most prestigious spiritual event of the age. He invited every god and sage in creation — but deliberately excluded Sati and Shiva to humiliate them. Against Shiva's warning, Sati attended alone, unable to stay away from her father's home.</div>
+</div>
+<div class="act-card">
+<div class="act-header" style="background:#F0FFF0">
+<div class="act-num" style="background:var(--green)">3</div>
+<h3 style="color:var(--green)">The Supreme Sacrifice</h3>
+</div>
+<div class="act-body">At the yajna, Daksha publicly and viciously insulted Lord Shiva in front of all assembled gods. Unable to bear the dishonour to her husband, finding no way to defend Shiva's honour, Sati immolated herself in the sacred fire — the ultimate act of protest and devotion. In that moment, the primordial Shakti withdrew from the manifest world.</div>
+</div>
+<div class="act-card">
+<div class="act-header" style="background:#F5F0FF">
+<div class="act-num" style="background:var(--purple)">4</div>
+<h3 style="color:var(--purple)">Shiva's Grief and the Cosmic Tandava</h3>
+</div>
+<div class="act-body">The news shattered Lord Shiva completely. In uncontrollable grief, he retrieved Sati's body and began his devastating Tandava — the cosmic dance of destruction. All three worlds trembled. Mountains cracked, oceans churned, stars fell. All creation teetered on the edge of annihilation.</div>
+</div>
+<div class="act-card">
+<div class="act-header" style="background:#F0F4FF">
+<div class="act-num" style="background:var(--blue)">5</div>
+<h3 style="color:var(--blue)">Vishnu's Intervention</h3>
+</div>
+<div class="act-body">To save the universe, Lord Vishnu released his Sudarshana Chakra — his divine discus — and severed Sati's body into 51 pieces as Shiva carried it. Each piece fell to a different location on earth. Where each piece landed, the land became sacred — charged with divine feminine energy. These 51 locations are the Shakti Peeths — the most sacred pilgrimage sites in all of Hinduism.</div>
+</div>
+<div class="act-card">
+<div class="act-header" style="background:#FFF8E8">
+<div class="act-num" style="background:var(--gold)">6</div>
+<h3 style="color:var(--gold)">Rebirth and Reunion</h3>
+</div>
+<div class="act-body">Sati reincarnated as Parvati, daughter of the Himalayas. She performed intense penance to win Shiva back, eventually succeeded, and the two were reunited in eternal love. The 51 Shakti Peeths remain as a permanent testament — making the entire subcontinent a sacred body of the Goddess.</div>
+</div>
+</div>
 <!-- ══ DAY BY DAY TIMELINE ══ -->
 <div class="section-hdr">
-  <h2>Chaitra Navratri 2026 — Day by Day</h2>
-  <p>19 March to 27 March 2026 · Nine Days, Nine Forms</p>
+<h2>
+Chaitra Navratri 2026 — Day by Day
+</h2>
+<p>19 March to 27 March 2026 · Nine Days, Nine Forms</p>
 </div>
 <div class="timeline">
-
-  <div class="day-card">
-    <div class="day-badge" style="background:var(--d1,#9A6500)"><div class="day-num">1</div><div class="day-label">Thu 19 Mar</div></div>
-    <div class="day-content">
-      <h3>Shailputri Puja + Ghatasthapana</h3>
-      <div class="day-meta">🎨 Colour: Yellow</div>
-      <p>The festival opens with Kalash Sthapana (installing the sacred pot with barley seeds). Maa Shailputri is invoked. This day also marks the Hindu New Year, Gudi Padwa and Ugadi.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#1B5E20"><div class="day-num">2</div><div class="day-label">Fri 20 Mar</div></div>
-    <div class="day-content">
-      <h3>Brahmacharini Puja</h3>
-      <div class="day-meta">🎨 Colour: Green</div>
-      <p>Maa Brahmacharini the ascetic goddess is worshipped. Devotees observe strict fasts and recite the Durga Saptashati. Green symbolises growth, discipline and spiritual learning.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:var(--red)"><div class="day-num">3</div><div class="day-label">Sat 21 Mar</div></div>
-    <div class="day-content">
-      <h3>Chandraghanta Puja</h3>
-      <div class="day-meta">🎨 Colour: Red</div>
-      <p>Maa Chandraghanta bears a half-moon bell on her forehead. She blesses devotees with courage, peace and protection. Red represents passion and fearlessness in the face of evil.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#BF3A00"><div class="day-num">4</div><div class="day-label">Sun 22 Mar</div></div>
-    <div class="day-content">
-      <h3>Kushmanda Puja</h3>
-      <div class="day-meta">🎨 Colour: Orange</div>
-      <p>Maa Kushmanda the creator of the universe is celebrated. Her divine smile brought light into the darkness of the cosmos. Orange represents creative energy and cosmic abundance.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#01579B"><div class="day-num">5</div><div class="day-label">Mon 23 Mar</div></div>
-    <div class="day-content">
-      <h3>Skandamata Puja</h3>
-      <div class="day-meta">🎨 Colour: White</div>
-      <p>Maa Skandamata, mother of Lord Kartikeya, is invoked. She is the compassionate protective mother seated on a lotus. White symbolises purity, grace and maternal love.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#0D2A6A"><div class="day-num">6</div><div class="day-label">Tue 24 Mar</div></div>
-    <div class="day-content">
-      <h3>Katyayani Puja</h3>
-      <div class="day-meta">🎨 Colour: Blue</div>
-      <p>Maa Katyayani, who manifested specifically to destroy Mahishasura, is worshipped. One of the most powerful and fierce forms of Durga riding a lion with blazing sword.</p>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#4A0060"><div class="day-num">7</div><div class="day-label">Wed 25 Mar</div></div>
-    <div class="day-content">
-      <h3>Kalaratri Puja — Maha Saptami</h3>
-      <div class="day-meta">🎨 Colour: Grey</div>
-      <p>Maa Kalaratri the fiercest form — darker than the deepest night — destroys ignorance and evil. Major temples begin grand evening programmes. Grey represents neutralising negativity.</p>
-    </div>
-  </div>
-
-  <div class="day-card today-highlight">
-    <div class="day-badge" style="background:#880035"><div class="day-num">8</div><div class="day-label">Thu 26 Mar</div></div>
-    <div class="day-content">
-      <h3>ASHTAMI — Mahagauri + Sandhi Puja</h3>
-      <div class="day-meta">🎨 Colour: Purple/White</div>
-      <p>TODAY — Most auspicious day. Maa Mahagauri the most radiant pure form is worshipped. Sandhi Puja at the junction of Ashtami and Navami. Kanya Puja: nine young girls are honoured as living manifestations of the nine Durgas.</p>
-      <span class="today-tag">★ Today — Ashtami ★</span>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-badge" style="background:#4A1070"><div class="day-num">9</div><div class="day-label">Fri 27 Mar</div></div>
-    <div class="day-content">
-      <h3>NAVAMI — Siddhidatri + Ram Navami</h3>
-      <div class="day-meta">🎨 Colour: Pink</div>
-      <p>The festival concludes with Maa Siddhidatri giver of all supernatural powers. This day also celebrates Ram Navami — the birth of Lord Rama — uniquely linking Shakti with Dharma. Havan, Kanya Puja, immersion of the Kalash.</p>
-    </div>
-  </div>
-
+<div class="day-card">
+<div class="day-badge" style="background:var(--d1,#9A6500)"><div class="day-num">1</div><div class="day-label">Thu 19 Mar</div></div>
+<div class="day-content">
+<h3>Shailputri Puja + Ghatasthapana</h3>
+<div class="day-meta">🎨 Colour: Yellow</div>
+<p>The festival opens with Kalash Sthapana (installing the sacred pot with barley seeds). Maa Shailputri is invoked. This day also marks the Hindu New Year, Gudi Padwa and Ugadi.</p>
 </div>
-
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#1B5E20"><div class="day-num">2</div><div class="day-label">Fri 20 Mar</div></div>
+<div class="day-content">
+<h3>Brahmacharini Puja</h3>
+<div class="day-meta">🎨 Colour: Green</div>
+<p>Maa Brahmacharini the ascetic goddess is worshipped. Devotees observe strict fasts and recite the Durga Saptashati. Green symbolises growth, discipline and spiritual learning.</p>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:var(--red)"><div class="day-num">3</div><div class="day-label">Sat 21 Mar</div></div>
+<div class="day-content">
+<h3>Chandraghanta Puja</h3>
+<div class="day-meta">🎨 Colour: Red</div>
+<p>Maa Chandraghanta bears a half-moon bell on her forehead. She blesses devotees with courage, peace and protection. Red represents passion and fearlessness in the face of evil.</p>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#BF3A00"><div class="day-num">4</div><div class="day-label">Sun 22 Mar</div></div>
+<div class="day-content">
+<h3>Kushmanda Puja</h3>
+<div class="day-meta">🎨 Colour: Orange</div>
+<p>Maa Kushmanda the creator of the universe is celebrated. Her divine smile brought light into the darkness of the cosmos. Orange represents creative energy and cosmic abundance.</p>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#01579B"><div class="day-num">5</div><div class="day-label">Mon 23 Mar</div></div>
+<div class="day-content">
+<h3>Skandamata Puja</h3>
+<div class="day-meta">🎨 Colour: White</div>
+<p>Maa Skandamata, mother of Lord Kartikeya, is invoked. She is the compassionate protective mother seated on a lotus. White symbolises purity, grace and maternal love.</p>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#0D2A6A"><div class="day-num">6</div><div class="day-label">Tue 24 Mar</div></div>
+<div class="day-content">
+<h3>Katyayani Puja</h3>
+<div class="day-meta">🎨 Colour: Blue</div>
+<p>Maa Katyayani, who manifested specifically to destroy Mahishasura, is worshipped. One of the most powerful and fierce forms of Durga riding a lion with blazing sword.</p>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#4A0060"><div class="day-num">7</div><div class="day-label">Wed 25 Mar</div></div>
+<div class="day-content">
+<h3>Kalaratri Puja — Maha Saptami</h3>
+<div class="day-meta">🎨 Colour: Grey</div>
+<p>Maa Kalaratri the fiercest form — darker than the deepest night — destroys ignorance and evil. Major temples begin grand evening programmes. Grey represents neutralising negativity.</p>
+</div>
+</div>
+<div class="day-card today-highlight">
+<div class="day-badge" style="background:#880035"><div class="day-num">8</div><div class="day-label">Thu 26 Mar</div></div>
+<div class="day-content">
+<h3>ASHTAMI — Mahagauri + Sandhi Puja</h3>
+<div class="day-meta">🎨 Colour: Purple/White</div>
+<p>TODAY — Most auspicious day. Maa Mahagauri the most radiant pure form is worshipped. Sandhi Puja at the junction of Ashtami and Navami. Kanya Puja: nine young girls are honoured as living manifestations of the nine Durgas.</p>
+<span class="today-tag">★ Today — Ashtami ★</span>
+</div>
+</div>
+<div class="day-card">
+<div class="day-badge" style="background:#4A1070"><div class="day-num">9</div><div class="day-label">Fri 27 Mar</div></div>
+<div class="day-content">
+<h3>NAVAMI — Siddhidatri + Ram Navami</h3>
+<div class="day-meta">🎨 Colour: Pink</div>
+<p>The festival concludes with Maa Siddhidatri giver of all supernatural powers. This day also celebrates Ram Navami — the birth of Lord Rama — uniquely linking Shakti with Dharma. Havan, Kanya Puja, immersion of the Kalash.</p>
+</div>
+</div>
+</div>
 <!-- ══ NINE NAVDURGA FORMS ══ -->
 <div class="section-hdr">
-  <h2>The Nine Navdurga</h2>
-  <p>Nine Steps to Liberation — Nine Aspects of Shakti</p>
+<h2>
+The Nine Navdurga
+</h2>
+<p>Nine Steps to Liberation — Nine Aspects of Shakti</p>
 </div>
-
 <!-- Day 1 -->
 <div class="navdurga-card d1">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">1</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Shailputri</div>
-      <div class="navdurga-epithet">Daughter of the Mountain</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 1 · Yellow</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Stability, groundedness, pure foundation — the first step of all spiritual awakening.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Shailputryai Namah</em></div>
-  <div class="navdurga-desc">Shailputri means Daughter (putri) of Shaila (the mountain / Himalayas). She is the primordial form of Shakti — the foundation of all energy. Her trident represents the three dimensions of time: past, present and future. Her lotus represents purity and unwavering spiritual devotion. She is also known as Sati, Parvati and Hemavati in different phases of her divine story. She corresponds to the Muladhara (Root) Chakra — the very foundation of the spiritual journey.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Bull (Nandi)</div>
-    <div class="attr-item"><strong>Weapons</strong>Trident + Lotus</div>
-    <div class="attr-item"><strong>Chakra</strong>Muladhara (Root)</div>
-    <div class="attr-item"><strong>Previous Life</strong>Sati — wife of Shiva</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">1</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Shailputri</div>
+<div class="navdurga-epithet">Daughter of the Mountain</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 1 · Yellow</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Stability, groundedness, pure foundation — the first step of all spiritual awakening.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Shailputryai Namah</em></div>
+<div class="navdurga-desc">Shailputri means Daughter (putri) of Shaila (the mountain / Himalayas). She is the primordial form of Shakti — the foundation of all energy. Her trident represents the three dimensions of time: past, present and future. Her lotus represents purity and unwavering spiritual devotion. She is also known as Sati, Parvati and Hemavati in different phases of her divine story. She corresponds to the Muladhara (Root) Chakra — the very foundation of the spiritual journey.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Bull (Nandi)</div>
+<div class="attr-item"><strong>Weapons</strong>Trident + Lotus</div>
+<div class="attr-item"><strong>Chakra</strong>Muladhara (Root)</div>
+<div class="attr-item"><strong>Previous Life</strong>Sati — wife of Shiva</div>
+</div>
+</div>
 <!-- Day 2 -->
 <div class="navdurga-card d2">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">2</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Brahmacharini</div>
-      <div class="navdurga-epithet">The Ascetic Devotee</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 2 · Green</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Discipline, devotion, patience, austerity — the transformative power of committed spiritual practice.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Brahmacharinyai Namah</em></div>
-  <div class="navdurga-desc">Brahmacharini represents intense austerity and single-pointed devotion. In her life as Parvati, she undertook severe penance to win Lord Shiva as her husband. She walked barefoot through forests, endured extreme cold and heat, ate only leaves, and eventually survived on nothing but water and air, meditating for thousands of years. Her white robes represent purity and simplicity. Her rosary represents continuous prayer. She teaches that true transformation requires Abhyasa — repeated, sustained, committed effort.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>On foot (barefoot)</div>
-    <div class="attr-item"><strong>Weapons</strong>Rosary + Water Pot</div>
-    <div class="attr-item"><strong>Chakra</strong>Svadhishthana</div>
-    <div class="attr-item"><strong>Lesson</strong>Longing alone is not enough; practice is essential</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">2</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Brahmacharini</div>
+<div class="navdurga-epithet">The Ascetic Devotee</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 2 · Green</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Discipline, devotion, patience, austerity — the transformative power of committed spiritual practice.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Brahmacharinyai Namah</em></div>
+<div class="navdurga-desc">Brahmacharini represents intense austerity and single-pointed devotion. In her life as Parvati, she undertook severe penance to win Lord Shiva as her husband. She walked barefoot through forests, endured extreme cold and heat, ate only leaves, and eventually survived on nothing but water and air, meditating for thousands of years. Her white robes represent purity and simplicity. Her rosary represents continuous prayer. She teaches that true transformation requires Abhyasa — repeated, sustained, committed effort.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>On foot (barefoot)</div>
+<div class="attr-item"><strong>Weapons</strong>Rosary + Water Pot</div>
+<div class="attr-item"><strong>Chakra</strong>Svadhishthana</div>
+<div class="attr-item"><strong>Lesson</strong>Longing alone is not enough; practice is essential</div>
+</div>
+</div>
 <!-- Day 3 -->
 <div class="navdurga-card d3">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">3</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Chandraghanta</div>
-      <div class="navdurga-epithet">The Warrior with Moon Bell</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 3 · Red</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Courage, grace under pressure, protection from evil forces, peace of mind, freedom from fear.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Chandraghantayai Namah</em></div>
-  <div class="navdurga-desc">Chandraghanta wears a half-moon (Chandra) shaped like a bell (Ghanta) on her forehead — after her marriage to Lord Shiva. She shines with a golden complexion and is always ready for battle against evil. Ten arms each carry a weapon. Three eyes — the third eye of wisdom always open. The sound of her moon-bell repels all demons and negative energies. She is the quintessential warrior goddess: courageous, compassionate and ever-vigilant.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Tiger or Lion</div>
-    <div class="attr-item"><strong>Arms</strong>Ten, each with a weapon</div>
-    <div class="attr-item"><strong>Chakra</strong>Manipura (Solar Plexus)</div>
-    <div class="attr-item"><strong>Special Power</strong>Bell destroys evil in its range</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">3</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Chandraghanta</div>
+<div class="navdurga-epithet">The Warrior with Moon Bell</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 3 · Red</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Courage, grace under pressure, protection from evil forces, peace of mind, freedom from fear.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Chandraghantayai Namah</em></div>
+<div class="navdurga-desc">Chandraghanta wears a half-moon (Chandra) shaped like a bell (Ghanta) on her forehead — after her marriage to Lord Shiva. She shines with a golden complexion and is always ready for battle against evil. Ten arms each carry a weapon. Three eyes — the third eye of wisdom always open. The sound of her moon-bell repels all demons and negative energies. She is the quintessential warrior goddess: courageous, compassionate and ever-vigilant.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Tiger or Lion</div>
+<div class="attr-item"><strong>Arms</strong>Ten, each with a weapon</div>
+<div class="attr-item"><strong>Chakra</strong>Manipura (Solar Plexus)</div>
+<div class="attr-item"><strong>Special Power</strong>Bell destroys evil in its range</div>
+</div>
+</div>
 <!-- Day 4 -->
 <div class="navdurga-card d4">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">4</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Kushmanda</div>
-      <div class="navdurga-epithet">The Universe Creator</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 4 · Orange</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Creative energy, cosmic abundance, health, vitality, and the power to bring light into darkness.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Kushmandayai Namah</em></div>
-  <div class="navdurga-desc">Kushmanda is the creator of the entire universe. Her name means "cosmic egg" (Ku = little, Ushma = warmth/energy, Anda = egg). When the universe was darkness and void, Maa Kushmanda created it with a simple smile — bringing light into existence. She resides in the Sun itself, directing solar energy. Eight arms hold various weapons and a pot of nectar. Her smile creates, her laughter destroys — and she is the source of all creative energy in the cosmos.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Lion</div>
-    <div class="attr-item"><strong>Resides in</strong>The Sun</div>
-    <div class="attr-item"><strong>Chakra</strong>Anahata (Heart)</div>
-    <div class="attr-item"><strong>Power</strong>Created universe with her smile</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">4</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Kushmanda</div>
+<div class="navdurga-epithet">The Universe Creator</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 4 · Orange</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Creative energy, cosmic abundance, health, vitality, and the power to bring light into darkness.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Kushmandayai Namah</em></div>
+<div class="navdurga-desc">Kushmanda is the creator of the entire universe. Her name means "cosmic egg" (Ku = little, Ushma = warmth/energy, Anda = egg). When the universe was darkness and void, Maa Kushmanda created it with a simple smile — bringing light into existence. She resides in the Sun itself, directing solar energy. Eight arms hold various weapons and a pot of nectar. Her smile creates, her laughter destroys — and she is the source of all creative energy in the cosmos.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Lion</div>
+<div class="attr-item"><strong>Resides in</strong>The Sun</div>
+<div class="attr-item"><strong>Chakra</strong>Anahata (Heart)</div>
+<div class="attr-item"><strong>Power</strong>Created universe with her smile</div>
+</div>
+</div>
 <!-- Day 5 -->
 <div class="navdurga-card d5">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">5</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Skandamata</div>
-      <div class="navdurga-epithet">Mother of Skanda (Kartikeya)</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 5 · White</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Wisdom, salvation, compassion, power and the fierce love of a mother protecting her child.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Skandamatayai Namah</em></div>
-  <div class="navdurga-desc">Skandamata is the mother of Lord Skanda (Kartikeya / Murugan), who became commander-in-chief of the gods' army in the great war against the demons. She holds the infant Skanda in her lap and sits on a lotus throne. By worshipping Skandamata, one also receives the blessings of Skanda. She teaches that motherhood is the highest form of shakti — the love that creates warriors and protects the universe simultaneously.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Lion</div>
-    <div class="attr-item"><strong>Holds</strong>Infant Kartikeya</div>
-    <div class="attr-item"><strong>Chakra</strong>Vishuddha (Throat)</div>
-    <div class="attr-item"><strong>Gift</strong>Wisdom and salvation together</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">5</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Skandamata</div>
+<div class="navdurga-epithet">Mother of Skanda (Kartikeya)</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 5 · White</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Wisdom, salvation, compassion, power and the fierce love of a mother protecting her child.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Skandamatayai Namah</em></div>
+<div class="navdurga-desc">Skandamata is the mother of Lord Skanda (Kartikeya / Murugan), who became commander-in-chief of the gods' army in the great war against the demons. She holds the infant Skanda in her lap and sits on a lotus throne. By worshipping Skandamata, one also receives the blessings of Skanda. She teaches that motherhood is the highest form of shakti — the love that creates warriors and protects the universe simultaneously.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Lion</div>
+<div class="attr-item"><strong>Holds</strong>Infant Kartikeya</div>
+<div class="attr-item"><strong>Chakra</strong>Vishuddha (Throat)</div>
+<div class="attr-item"><strong>Gift</strong>Wisdom and salvation together</div>
+</div>
+</div>
 <!-- Day 6 -->
 <div class="navdurga-card d6">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">6</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Katyayani</div>
-      <div class="navdurga-epithet">The Divine Warrior</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 6 · Blue</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Fearlessness, righteous anger, liberation from enemies, and the courage to fight injustice.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Katyayanyai Namah</em></div>
-  <div class="navdurga-desc">Katyayani manifested specifically to destroy Mahishasura — born from the combined fury of all the gods. She appeared in the ashram of the sage Katyayana and is named after him. She is the fiercest, most warrior-like of all the Navdurga. Riding a lion with a blazing sword, she represents dharmic wrath — the righteous anger that arises when evil becomes intolerable. She is worshipped by young women seeking the right partner and by all seeking freedom from oppression.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Lion</div>
-    <div class="attr-item"><strong>Born from</strong>Combined fury of all gods</div>
-    <div class="attr-item"><strong>Chakra</strong>Ajna (Third Eye)</div>
-    <div class="attr-item"><strong>Purpose</strong>Born solely to kill Mahishasura</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">6</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Katyayani</div>
+<div class="navdurga-epithet">The Divine Warrior</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 6 · Blue</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Fearlessness, righteous anger, liberation from enemies, and the courage to fight injustice.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Katyayanyai Namah</em></div>
+<div class="navdurga-desc">Katyayani manifested specifically to destroy Mahishasura — born from the combined fury of all the gods. She appeared in the ashram of the sage Katyayana and is named after him. She is the fiercest, most warrior-like of all the Navdurga. Riding a lion with a blazing sword, she represents dharmic wrath — the righteous anger that arises when evil becomes intolerable. She is worshipped by young women seeking the right partner and by all seeking freedom from oppression.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Lion</div>
+<div class="attr-item"><strong>Born from</strong>Combined fury of all gods</div>
+<div class="attr-item"><strong>Chakra</strong>Ajna (Third Eye)</div>
+<div class="attr-item"><strong>Purpose</strong>Born solely to kill Mahishasura</div>
+</div>
+</div>
 <!-- Day 7 -->
 <div class="navdurga-card d7">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">7</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Kalaratri</div>
-      <div class="navdurga-epithet">The Dark Destroyer</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 7 · Grey</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Protection from dark forces, fearlessness, and the destruction of ignorance, evil and negativity.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Kalaratryai Namah</em></div>
-  <div class="navdurga-desc">Kalaratri is the most ferocious form — darker than the darkest night, hair flying loose, fire emanating from her breath. She appears terrifying, but her name literally means "auspicious one of the night" — because she destroys all fears by destroying what causes them. She is the destroyer of demons Shumbha and Nishumbha. Despite her fierce appearance, she grants the boon of fearlessness. She is worshipped especially on Maha Saptami, the seventh night.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Complexion</strong>Dark as night</div>
-    <div class="attr-item"><strong>Vehicle</strong>Donkey</div>
-    <div class="attr-item"><strong>Chakra</strong>Sahasrara (Crown)</div>
-    <div class="attr-item"><strong>Paradox</strong>Terrifying form, auspicious blessing</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">7</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Kalaratri</div>
+<div class="navdurga-epithet">The Dark Destroyer</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 7 · Grey</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Protection from dark forces, fearlessness, and the destruction of ignorance, evil and negativity.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Kalaratryai Namah</em></div>
+<div class="navdurga-desc">Kalaratri is the most ferocious form — darker than the darkest night, hair flying loose, fire emanating from her breath. She appears terrifying, but her name literally means "auspicious one of the night" — because she destroys all fears by destroying what causes them. She is the destroyer of demons Shumbha and Nishumbha. Despite her fierce appearance, she grants the boon of fearlessness. She is worshipped especially on Maha Saptami, the seventh night.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Complexion</strong>Dark as night</div>
+<div class="attr-item"><strong>Vehicle</strong>Donkey</div>
+<div class="attr-item"><strong>Chakra</strong>Sahasrara (Crown)</div>
+<div class="attr-item"><strong>Paradox</strong>Terrifying form, auspicious blessing</div>
+</div>
+</div>
 <!-- Day 8 — TODAY -->
 <div class="navdurga-card d8" style="border:2px solid var(--saff)">
-  <div style="background:var(--saff);color:white;text-align:center;padding:8px;font-weight:700;font-size:13px;letter-spacing:1px">★ TODAY IS ASHTAMI — Maa Mahagauri Puja · Kanya Puja · Sandhi Puja ★</div>
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">8</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Mahagauri</div>
-      <div class="navdurga-epithet">The Most Radiant and Pure</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 8 · Purple/White</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Purity, grace, serenity, inner radiance — the burning away of all sins, mistakes and imperfections.</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Mahagauryai Namah</em></div>
-  <div class="navdurga-desc">Mahagauri is the most beautiful and radiant of all nine forms. Maha means great; Gauri means fair/radiant/luminous. The legend: Goddess Parvati performed such severe penance to win Shiva that her body became dark from years of exposure to the elements. When Shiva finally accepted her, he purified her with the sacred waters of the Ganga. She emerged radiant white — as pure as a pearl, as bright as the full moon. She is the Goddess of purification: all the mistakes, sins and impurities of her devotees are burned to ashes in her compassionate light. She is the dawn after darkness. Kanya Puja — honouring nine young girls as her living manifestations — is performed today.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>White Bull</div>
-    <div class="attr-item"><strong>Arms</strong>Four — Trident + Tambourine</div>
-    <div class="attr-item"><strong>Chakra</strong>All Chakras Purified</div>
-    <div class="attr-item"><strong>Gift</strong>Burns all past karma and mistakes</div>
-  </div>
+<div style="background:var(--saff);color:white;text-align:center;padding:8px;font-weight:700;font-size:13px;letter-spacing:1px">★ TODAY IS ASHTAMI — Maa Mahagauri Puja · Kanya Puja · Sandhi Puja ★</div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">8</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Mahagauri</div>
+<div class="navdurga-epithet">The Most Radiant and Pure</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 8 · Purple/White</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Purity, grace, serenity, inner radiance — the burning away of all sins, mistakes and imperfections.</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Mahagauryai Namah</em></div>
+<div class="navdurga-desc">Mahagauri is the most beautiful and radiant of all nine forms. Maha means great; Gauri means fair/radiant/luminous. The legend: Goddess Parvati performed such severe penance to win Shiva that her body became dark from years of exposure to the elements. When Shiva finally accepted her, he purified her with the sacred waters of the Ganga. She emerged radiant white — as pure as a pearl, as bright as the full moon. She is the Goddess of purification: all the mistakes, sins and impurities of her devotees are burned to ashes in her compassionate light. She is the dawn after darkness. Kanya Puja — honouring nine young girls as her living manifestations — is performed today.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>White Bull</div>
+<div class="attr-item"><strong>Arms</strong>Four — Trident + Tambourine</div>
+<div class="attr-item"><strong>Chakra</strong>All Chakras Purified</div>
+<div class="attr-item"><strong>Gift</strong>Burns all past karma and mistakes</div>
+</div>
+</div>
 <!-- Day 9 -->
 <div class="navdurga-card d9">
-  <div class="navdurga-header">
-    <div class="navdurga-day-badge" style="background:var(--acc)">9</div>
-    <div>
-      <div class="navdurga-name" style="color:var(--acc)">Maa Siddhidatri</div>
-      <div class="navdurga-epithet">The Giver of All Supernatural Powers</div>
-      <span class="navdurga-colour-pill" style="background:var(--acc)">Day 9 · Pink</span>
-    </div>
-  </div>
-  <div class="blessing-box" style="background:var(--acc)">
-    <div class="label">She blesses with:</div>
-    <p>Perfection, supernatural powers, transcendence, supreme wisdom and final liberation (Moksha).</p>
-  </div>
-  <div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Siddhidatryai Namah</em></div>
-  <div class="navdurga-desc">Siddhidatri is the final and most complete form — the culmination of all nine divine energies. Siddhi means supernatural power or perfection; Datri means giver. She grants the eight great Siddhis: Anima (becoming microscopic), Mahima (becoming vast), Garima (becoming heavy), Laghima (becoming weightless), Prapti (attaining any object), Prakamya (irresistible will), Ishitva (power over all), Vashitva (control over all forces). Lord Shiva himself worshipped her to receive these powers. Ram Navami (same day in 2026) links the supreme manifestation of Shakti with the supreme manifestation of Dharma.</div>
-  <div class="attributes-grid">
-    <div class="attr-item"><strong>Vehicle</strong>Lotus or Lion</div>
-    <div class="attr-item"><strong>Weapons</strong>Gada, Chakra, Lotus, Shankha</div>
-    <div class="attr-item"><strong>Chakra</strong>Sahasrara — Completion</div>
-    <div class="attr-item"><strong>Siddhis</strong>All 8 supernatural powers</div>
-  </div>
+<div class="navdurga-header">
+<div class="navdurga-day-badge" style="background:var(--acc)">9</div>
+<div>
+<div class="navdurga-name" style="color:var(--acc)">Maa Siddhidatri</div>
+<div class="navdurga-epithet">The Giver of All Supernatural Powers</div>
+<span class="navdurga-colour-pill" style="background:var(--acc)">Day 9 · Pink</span>
 </div>
-
+</div>
+<div class="blessing-box" style="background:var(--acc)">
+<div class="label">She blesses with:</div>
+<p>Perfection, supernatural powers, transcendence, supreme wisdom and final liberation (Moksha).</p>
+</div>
+<div class="mantra-line" style="color:var(--acc)"><em>Mantra: Om Devi Siddhidatryai Namah</em></div>
+<div class="navdurga-desc">Siddhidatri is the final and most complete form — the culmination of all nine divine energies. Siddhi means supernatural power or perfection; Datri means giver. She grants the eight great Siddhis: Anima (becoming microscopic), Mahima (becoming vast), Garima (becoming heavy), Laghima (becoming weightless), Prapti (attaining any object), Prakamya (irresistible will), Ishitva (power over all), Vashitva (control over all forces). Lord Shiva himself worshipped her to receive these powers. Ram Navami (same day in 2026) links the supreme manifestation of Shakti with the supreme manifestation of Dharma.</div>
+<div class="attributes-grid">
+<div class="attr-item"><strong>Vehicle</strong>Lotus or Lion</div>
+<div class="attr-item"><strong>Weapons</strong>Gada, Chakra, Lotus, Shankha</div>
+<div class="attr-item"><strong>Chakra</strong>Sahasrara — Completion</div>
+<div class="attr-item"><strong>Siddhis</strong>All 8 supernatural powers</div>
+</div>
+</div>
 <!-- ══ SHAKTI PEETHS ══ -->
 <div class="section-hdr">
-  <h2>The 18 Maha Shakti Peeths</h2>
-  <p>Most sacred of the 51 — where Sati's body parts fell to earth</p>
+<h2>
+The 18 Maha Shakti Peeths
+</h2>
+<p>Most sacred of the 51 — where Sati's body parts fell to earth</p>
 </div>
 <div style="margin:16px;background:var(--dark);border-radius:var(--r);padding:16px">
-  <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.65">After Sati's sacrifice, Lord Vishnu's Sudarshana Chakra severed her body into 51 pieces. Each piece that fell became a Shakti Peeth — a sacred seat of divine feminine energy. The 18 Maha Peeths are the most powerful. Each has a presiding Shakti and a guardian Bhairava (form of Shiva).</p>
+<p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.65">After Sati's sacrifice, Lord Vishnu's Sudarshana Chakra severed her body into 51 pieces. Each piece that fell became a Shakti Peeth — a sacred seat of divine feminine energy. The 18 Maha Peeths are the most powerful. Each has a presiding Shakti and a guardian Bhairava (form of Shiva).</p>
 </div>
 <div class="peeths-list">
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#880E4F">1</div><div class="peeth-body"><div class="peeth-name">Kamakhya</div><div class="peeth-meta">Nilachal Hill, Assam · Yoni (Womb) · Kamakhya Devi</div><div class="peeth-desc">Most powerful of all Shakti Peeths. No idol — a natural rock cleft is worshipped. The annual Ambubachi Mela draws hundreds of thousands of pilgrims.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#BF360C">2</div><div class="peeth-body"><div class="peeth-name">Jwala Ji</div><div class="peeth-meta">Kangra, Himachal Pradesh · Tongue · Jwalamukhi</div><div class="peeth-desc">Eternal blue flames rise naturally from the earth with no fuel source. The Mughals tried to extinguish them and failed. The Goddess manifests as living fire.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#7A4800">3</div><div class="peeth-body"><div class="peeth-name">Vaishno Devi</div><div class="peeth-meta">Katra, Jammu & Kashmir · Right Arm · Vaishnavi / Trikuta</div><div class="peeth-desc">One of the most visited shrines in the world. Set at 5,200 ft in the Trikuta hills. Over 8 million pilgrims annually. Three natural rock formations worship Mahakali, Mahalakshmi and Mahasaraswati.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#4A0060">4</div><div class="peeth-body"><div class="peeth-name">Kalighat</div><div class="peeth-meta">Kolkata, West Bengal · Right Toes · Kali</div><div class="peeth-desc">Kolkata (Calcutta) is named after this temple. One of the oldest and most celebrated Kali temples in India. Central to Bengali Hindu culture for over 1,000 years.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#0D47A1">5</div><div class="peeth-body"><div class="peeth-name">Naina Devi</div><div class="peeth-meta">Bilaspur, Himachal Pradesh · Eyes · Naina Devi</div><div class="peeth-desc">The eyes of Sati fell here atop a beautiful hill. Especially revered by Punjabi and Himachali communities. Hundreds of thousands visit during Navratri.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#004D40">6</div><div class="peeth-body"><div class="peeth-name">Tara Tarini</div><div class="peeth-meta">Ganjam, Odisha · Breasts · Tara Tarini</div><div class="peeth-desc">One of the four Adi Shakti Peeths. The twin hills of Tara and Tarini overlook the Rushikulya River. The Goddess is worshipped as twin sisters.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#BF360C">7</div><div class="peeth-body"><div class="peeth-name">Srisailam</div><div class="peeth-meta">Kurnool, Andhra Pradesh · Neck · Bhramaramba</div><div class="peeth-desc">One of the 18 Maha Shakti Peeths AND one of the 12 Jyotirlingas — doubly sacred. Located on the banks of the Krishna River.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#1B5E20">8</div><div class="peeth-body"><div class="peeth-name">Biraja / Jajpur</div><div class="peeth-meta">Jajpur, Odisha · Navel · Biraja</div><div class="peeth-desc">The navel of Sati fell at Viraja Kshetra. The presiding deity Maa Biraja is depicted killing Mahishasura. Significant in both Shakta and Vaishnava traditions.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#01579B">9</div><div class="peeth-body"><div class="peeth-name">Vimala</div><div class="peeth-meta">Puri, Odisha · Feet · Vimala</div><div class="peeth-desc">Located within the sacred Jagannath Temple — one of the four Dhams. Lord Jagannath himself serves as the Bhairava here.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#BF6000">10</div><div class="peeth-body"><div class="peeth-name">Vishalakshi / Manikarnika</div><div class="peeth-meta">Varanasi, Uttar Pradesh · Earrings · Vishalakshi</div><div class="peeth-desc">In the most sacred city of Hinduism. The earrings of Sati fell at Manikarnika Ghat. Vishalakshi means wide-eyed and all-seeing divine wisdom.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#880E4F">11</div><div class="peeth-body"><div class="peeth-name">Mahalakshmi</div><div class="peeth-meta">Kolhapur, Maharashtra · Eyes · Mahalakshmi</div><div class="peeth-desc">One of the holiest Shakti Peeths in Maharashtra. Important centre of Marathi pilgrimage for over 1,200 years. Dedicated to the Goddess of wealth and prosperity.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#C84B00">12</div><div class="peeth-body"><div class="peeth-name">Ambaji</div><div class="peeth-meta">Banaskantha, Gujarat · Heart · Ambaji / Amba Mata</div><div class="peeth-desc">The heart of Sati fell here. One of the most visited temples in Gujarat. Especially revered by the Gujarati Hindu community worldwide.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#4A1580">13</div><div class="peeth-body"><div class="peeth-name">Chamundeshwari</div><div class="peeth-meta">Mysuru, Karnataka · Hair · Chamundeshwari</div><div class="peeth-desc">Atop Chamundi Hills overlooking Mysore. Royal deity of the Wadiyar dynasty. The spectacular Mysore Dasara festival is centred here.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#00695C">14</div><div class="peeth-body"><div class="peeth-name">Kanya Kumari</div><div class="peeth-meta">Kanyakumari, Tamil Nadu · Spine · Shravani / Kumari</div><div class="peeth-desc">At the very tip of India where three oceans meet. The virgin form of Devi is worshipped awaiting her ideal devotee. A place of extraordinary spiritual resonance.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#4E342E">15</div><div class="peeth-body"><div class="peeth-name">Hinglaj Mata</div><div class="peeth-meta">Hingol, Balochistan, Pakistan · Top of Head · Hinglaj</div><div class="peeth-desc">Despite being in Pakistan, hundreds of thousands of Hindu pilgrims journey annually during the Hinglaj Yatra in April.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#1B5E20">16</div><div class="peeth-body"><div class="peeth-name">Mangala Gauri</div><div class="peeth-meta">Gaya, Bihar · Breasts · Mangala Gauri</div><div class="peeth-desc">One of the five most important shrines in Bihar. Located in Gaya — the city sacred for Pitru rites. The Goddess is worshipped as the auspicious divine mother.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#7B0015">17</div><div class="peeth-body"><div class="peeth-name">Kamakhya (Adi)</div><div class="peeth-meta">Nilachal Hill, Assam · Yoni (Primary) · Kameshvari</div><div class="peeth-desc">The most Tantric of all Shakti Peeths. The annual Ambubachi Mela when the Goddess menstruates is celebrated by lakhs of pilgrims. Centre of Shakta Tantrism.</div></div></div>
-
-  <div class="peeth-card"><div class="peeth-num" style="background:#0D47A1">18</div><div class="peeth-body"><div class="peeth-name">Nalhati</div><div class="peeth-meta">Birbhum, West Bengal · Throat · Kalika</div><div class="peeth-desc">The throat of Sati fell at Nalhati in West Bengal. She is worshipped as Kalika — an important pilgrimage for Bengali Hindus especially during Navratri.</div></div></div>
-
+<div class="peeth-card"><div class="peeth-num" style="background:#880E4F">1</div><div class="peeth-body"><div class="peeth-name">Kamakhya</div><div class="peeth-meta">Nilachal Hill, Assam · Yoni (Womb) · Kamakhya Devi</div><div class="peeth-desc">Most powerful of all Shakti Peeths. No idol — a natural rock cleft is worshipped. The annual Ambubachi Mela draws hundreds of thousands of pilgrims.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#BF360C">2</div><div class="peeth-body"><div class="peeth-name">Jwala Ji</div><div class="peeth-meta">Kangra, Himachal Pradesh · Tongue · Jwalamukhi</div><div class="peeth-desc">Eternal blue flames rise naturally from the earth with no fuel source. The Mughals tried to extinguish them and failed. The Goddess manifests as living fire.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#7A4800">3</div><div class="peeth-body"><div class="peeth-name">Vaishno Devi</div><div class="peeth-meta">Katra, Jammu &amp; Kashmir · Right Arm · Vaishnavi / Trikuta</div><div class="peeth-desc">One of the most visited shrines in the world. Set at 5,200 ft in the Trikuta hills. Over 8 million pilgrims annually. Three natural rock formations worship Mahakali, Mahalakshmi and Mahasaraswati.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#4A0060">4</div><div class="peeth-body"><div class="peeth-name">Kalighat</div><div class="peeth-meta">Kolkata, West Bengal · Right Toes · Kali</div><div class="peeth-desc">Kolkata (Calcutta) is named after this temple. One of the oldest and most celebrated Kali temples in India. Central to Bengali Hindu culture for over 1,000 years.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#0D47A1">5</div><div class="peeth-body"><div class="peeth-name">Naina Devi</div><div class="peeth-meta">Bilaspur, Himachal Pradesh · Eyes · Naina Devi</div><div class="peeth-desc">The eyes of Sati fell here atop a beautiful hill. Especially revered by Punjabi and Himachali communities. Hundreds of thousands visit during Navratri.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#004D40">6</div><div class="peeth-body"><div class="peeth-name">Tara Tarini</div><div class="peeth-meta">Ganjam, Odisha · Breasts · Tara Tarini</div><div class="peeth-desc">One of the four Adi Shakti Peeths. The twin hills of Tara and Tarini overlook the Rushikulya River. The Goddess is worshipped as twin sisters.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#BF360C">7</div><div class="peeth-body"><div class="peeth-name">Srisailam</div><div class="peeth-meta">Kurnool, Andhra Pradesh · Neck · Bhramaramba</div><div class="peeth-desc">One of the 18 Maha Shakti Peeths AND one of the 12 Jyotirlingas — doubly sacred. Located on the banks of the Krishna River.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#1B5E20">8</div><div class="peeth-body"><div class="peeth-name">Biraja / Jajpur</div><div class="peeth-meta">Jajpur, Odisha · Navel · Biraja</div><div class="peeth-desc">The navel of Sati fell at Viraja Kshetra. The presiding deity Maa Biraja is depicted killing Mahishasura. Significant in both Shakta and Vaishnava traditions.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#01579B">9</div><div class="peeth-body"><div class="peeth-name">Vimala</div><div class="peeth-meta">Puri, Odisha · Feet · Vimala</div><div class="peeth-desc">Located within the sacred Jagannath Temple — one of the four Dhams. Lord Jagannath himself serves as the Bhairava here.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#BF6000">10</div><div class="peeth-body"><div class="peeth-name">Vishalakshi / Manikarnika</div><div class="peeth-meta">Varanasi, Uttar Pradesh · Earrings · Vishalakshi</div><div class="peeth-desc">In the most sacred city of Hinduism. The earrings of Sati fell at Manikarnika Ghat. Vishalakshi means wide-eyed and all-seeing divine wisdom.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#880E4F">11</div><div class="peeth-body"><div class="peeth-name">Mahalakshmi</div><div class="peeth-meta">Kolhapur, Maharashtra · Eyes · Mahalakshmi</div><div class="peeth-desc">One of the holiest Shakti Peeths in Maharashtra. Important centre of Marathi pilgrimage for over 1,200 years. Dedicated to the Goddess of wealth and prosperity.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#C84B00">12</div><div class="peeth-body"><div class="peeth-name">Ambaji</div><div class="peeth-meta">Banaskantha, Gujarat · Heart · Ambaji / Amba Mata</div><div class="peeth-desc">The heart of Sati fell here. One of the most visited temples in Gujarat. Especially revered by the Gujarati Hindu community worldwide.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#4A1580">13</div><div class="peeth-body"><div class="peeth-name">Chamundeshwari</div><div class="peeth-meta">Mysuru, Karnataka · Hair · Chamundeshwari</div><div class="peeth-desc">Atop Chamundi Hills overlooking Mysore. Royal deity of the Wadiyar dynasty. The spectacular Mysore Dasara festival is centred here.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#00695C">14</div><div class="peeth-body"><div class="peeth-name">Kanya Kumari</div><div class="peeth-meta">Kanyakumari, Tamil Nadu · Spine · Shravani / Kumari</div><div class="peeth-desc">At the very tip of India where three oceans meet. The virgin form of Devi is worshipped awaiting her ideal devotee. A place of extraordinary spiritual resonance.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#4E342E">15</div><div class="peeth-body"><div class="peeth-name">Hinglaj Mata</div><div class="peeth-meta">Hingol, Balochistan, Pakistan · Top of Head · Hinglaj</div><div class="peeth-desc">Despite being in Pakistan, hundreds of thousands of Hindu pilgrims journey annually during the Hinglaj Yatra in April.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#1B5E20">16</div><div class="peeth-body"><div class="peeth-name">Mangala Gauri</div><div class="peeth-meta">Gaya, Bihar · Breasts · Mangala Gauri</div><div class="peeth-desc">One of the five most important shrines in Bihar. Located in Gaya — the city sacred for Pitru rites. The Goddess is worshipped as the auspicious divine mother.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#7B0015">17</div><div class="peeth-body"><div class="peeth-name">Kamakhya (Adi)</div><div class="peeth-meta">Nilachal Hill, Assam · Yoni (Primary) · Kameshvari</div><div class="peeth-desc">The most Tantric of all Shakti Peeths. The annual Ambubachi Mela when the Goddess menstruates is celebrated by lakhs of pilgrims. Centre of Shakta Tantrism.</div></div></div>
+<div class="peeth-card"><div class="peeth-num" style="background:#0D47A1">18</div><div class="peeth-body"><div class="peeth-name">Nalhati</div><div class="peeth-meta">Birbhum, West Bengal · Throat · Kalika</div><div class="peeth-desc">The throat of Sati fell at Nalhati in West Bengal. She is worshipped as Kalika — an important pilgrimage for Bengali Hindus especially during Navratri.</div></div></div>
 </div>
-
 <!-- ══ RITUALS ══ -->
 <div class="section-hdr">
-  <h2>Navratri Rituals</h2>
-  <p>Every practice carries a profound spiritual purpose</p>
+<h2>
+Navratri Rituals
+</h2>
+<p>Every practice carries a profound spiritual purpose</p>
 </div>
-
 <div class="ritual-card" style="border-color:var(--saff)">
-  <div class="ritual-icon">🏺</div>
-  <div><div class="ritual-title" style="color:var(--saff)">Ghatasthapana — Kalash Installation</div><p>A clay pot (Kalash) filled with holy water, topped with mango leaves, placed on soil with barley seeds. This is the formal invitation for the Goddess to enter your home. The barley shoots growing over nine days represent prosperity and new life. The Kalash is the cosmic womb — source of all life.</p></div>
+<div class="ritual-icon">🏺</div>
+<div><div class="ritual-title" style="color:var(--saff)">Ghatasthapana — Kalash Installation</div><p>A clay pot (Kalash) filled with holy water, topped with mango leaves, placed on soil with barley seeds. This is the formal invitation for the Goddess to enter your home. The barley shoots growing over nine days represent prosperity and new life. The Kalash is the cosmic womb — source of all life.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--red)">
-  <div class="ritual-icon">🌿</div>
-  <div><div class="ritual-title" style="color:var(--red)">Fasting — Navratri Vrat</div><p>Devotees fast throughout Navratri. Some fast completely. Others eat only milk, vegetables and light sattvic foods: sabudana khichdi, kuttu (buckwheat) roti, fruit chaat. Fasting aligns the body with the cosmic shift, clears the mind, and opens the heart to receive Shakti's blessings.</p></div>
+<div class="ritual-icon">🌿</div>
+<div><div class="ritual-title" style="color:var(--red)">Fasting — Navratri Vrat</div><p>Devotees fast throughout Navratri. Some fast completely. Others eat only milk, vegetables and light sattvic foods: sabudana khichdi, kuttu (buckwheat) roti, fruit chaat. Fasting aligns the body with the cosmic shift, clears the mind, and opens the heart to receive Shakti's blessings.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--blue)">
-  <div class="ritual-icon">🪔</div>
-  <div><div class="ritual-title" style="color:var(--blue)">Akhand Jyoti — Eternal Flame</div><p>An oil lamp is lit on Day 1 and kept burning continuously for all nine nights — never extinguished. The eternal flame represents the unbroken presence of the divine. Keeping it burning requires dedicated attention — teaching vigilance, care and devotion.</p></div>
+<div class="ritual-icon">🪔</div>
+<div><div class="ritual-title" style="color:var(--blue)">Akhand Jyoti — Eternal Flame</div><p>An oil lamp is lit on Day 1 and kept burning continuously for all nine nights — never extinguished. The eternal flame represents the unbroken presence of the divine. Keeping it burning requires dedicated attention — teaching vigilance, care and devotion.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--green)">
-  <div class="ritual-icon">📿</div>
-  <div><div class="ritual-title" style="color:var(--green)">Durga Saptashati — The Sacred Text</div><p>The Durga Saptashati (700 verses) is the primary scripture of Navratri. Reading or listening to all 700 verses over nine days — or even a portion daily — is considered highly meritorious. It tells the complete story of the Goddess's victory over evil in three parts.</p></div>
+<div class="ritual-icon">📿</div>
+<div><div class="ritual-title" style="color:var(--green)">Durga Saptashati — The Sacred Text</div><p>The Durga Saptashati (700 verses) is the primary scripture of Navratri. Reading or listening to all 700 verses over nine days — or even a portion daily — is considered highly meritorious. It tells the complete story of the Goddess's victory over evil in three parts.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--gold)">
-  <div class="ritual-icon">💃</div>
-  <div><div class="ritual-title" style="color:var(--gold)">Garba & Dandiya — Sacred Dance</div><p>In Gujarat and across India, Garba (circular dance around the Goddess) and Dandiya Raas (dance with sticks) are performed every night. These are not mere folk dances — they are meditation in motion, orbiting the Divine Mother, celebrating her cosmic energy.</p></div>
+<div class="ritual-icon">💃</div>
+<div><div class="ritual-title" style="color:var(--gold)">Garba &amp; Dandiya — Sacred Dance</div><p>In Gujarat and across India, Garba (circular dance around the Goddess) and Dandiya Raas (dance with sticks) are performed every night. These are not mere folk dances — they are meditation in motion, orbiting the Divine Mother, celebrating her cosmic energy.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--purple)">
-  <div class="ritual-icon">👧</div>
-  <div><div class="ritual-title" style="color:var(--purple)">Kanya Puja — Honouring Young Girls</div><p>On Ashtami or Navami, nine young girls (kanya) are worshipped as living manifestations of the nine Navdurga. They are bathed, adorned, their feet washed and touched in reverence, offered food (puri, chana, halwa) and gifts. One of the most beautiful rituals in all of Hinduism.</p></div>
+<div class="ritual-icon">👧</div>
+<div><div class="ritual-title" style="color:var(--purple)">Kanya Puja — Honouring Young Girls</div><p>On Ashtami or Navami, nine young girls (kanya) are worshipped as living manifestations of the nine Navdurga. They are bathed, adorned, their feet washed and touched in reverence, offered food (puri, chana, halwa) and gifts. One of the most beautiful rituals in all of Hinduism.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--saff)">
-  <div class="ritual-icon">🔥</div>
-  <div><div class="ritual-title" style="color:var(--saff)">Jagran — Night Vigil</div><p>Entire nights are spent singing devotional songs (bhajans) in honour of the Goddess. Thousands gather at temples for community jagrans. The night-long vigil represents solidarity with Durga's nine-night battle against Mahishasura. Music, chanting and stories of the Goddess fill the sacred hours.</p></div>
+<div class="ritual-icon">🔥</div>
+<div><div class="ritual-title" style="color:var(--saff)">Jagran — Night Vigil</div><p>Entire nights are spent singing devotional songs (bhajans) in honour of the Goddess. Thousands gather at temples for community jagrans. The night-long vigil represents solidarity with Durga's nine-night battle against Mahishasura. Music, chanting and stories of the Goddess fill the sacred hours.</p></div>
 </div>
-
 <div class="ritual-card" style="border-color:var(--blue)">
-  <div class="ritual-icon">🌊</div>
-  <div><div class="ritual-title" style="color:var(--blue)">Visarjan — Immersion</div><p>On Navami, the Kalash is immersed in flowing water — returning the divine presence to the cosmic ocean until the next Navratri. The barley shoots grown in the pot are taken home and kept as a blessing. Visarjan teaches impermanence: the divine visits, blesses, and returns — and we let go with gratitude.</p></div>
+<div class="ritual-icon">🌊</div>
+<div><div class="ritual-title" style="color:var(--blue)">Visarjan — Immersion</div><p>On Navami, the Kalash is immersed in flowing water — returning the divine presence to the cosmic ocean until the next Navratri. The barley shoots grown in the pot are taken home and kept as a blessing. Visarjan teaches impermanence: the divine visits, blesses, and returns — and we let go with gratitude.</p></div>
 </div>
-
 <!-- ══ MODERN GENERATION ══ -->
 <div class="section-hdr">
-  <h2>Navratri for the Modern Generation</h2>
-  <p>Timeless — these nine days speak directly to 21st century life</p>
+<h2>Navratri for the Modern Generation</h2>
+<p>Timeless — these nine days speak directly to 21st century life</p>
 </div>
 <div style="margin:16px 16px 0;background:white;border-radius:var(--r);padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
-  <p style="font-family:'Lora',serif;font-style:italic;font-size:14px;color:var(--ink2);line-height:1.7">Navratri is not a ritual frozen in the past. Its nine forms of the Goddess map directly onto the challenges and aspirations of every young person today — whether you live in Delhi or Rotterdam. You do not need a temple or a priest. You need nine days of intention.</p>
+<p style="font-family:'Lora',serif;font-style:italic;font-size:14px;color:var(--ink2);line-height:1.7">Navratri is not a ritual frozen in the past. Its nine forms of the Goddess map directly onto the challenges and aspirations of every young person today — whether you live in Delhi or Rotterdam. You do not need a temple or a priest. You need nine days of intention.</p>
 </div>
-
 <div class="modern-card">
-  <div class="modern-card-header" style="background:#FFF5F0">
-    <div style="width:32px;height:32px;border-radius:50%;background:var(--saff);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🏠</div>
-    <h3 style="color:var(--saff)">Connect Without Leaving Home</h3>
-  </div>
-  <ul>
-    <li><strong>Morning 5 minutes:</strong> Light one diya each morning. Set one intention for the day. No ritual knowledge required — just presence and gratitude.</li>
-    <li><strong>Learn one story per day:</strong> Read about one Navdurga each day. Share it with family on WhatsApp. The stories are accessible, dramatic and deeply meaningful.</li>
-    <li><strong>Music is Navratri:</strong> Listen to Navratri bhajans or devotional playlists while commuting or working. The sound vibrations are the practice. Spotify has many excellent playlists.</li>
-    <li><strong>Journal the nine qualities:</strong> Each Navdurga embodies a quality: stability, discipline, courage, creativity, compassion, wisdom, fearlessness, purity, liberation. Write one quality each day. Ask: where does this quality appear in my life? Where is it missing?</li>
-  </ul>
+<div class="modern-card-header" style="background:#FFF5F0">
+<div style="width:32px;height:32px;border-radius:50%;background:var(--saff);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🏠</div>
+<h3 style="color:var(--saff)">Connect Without Leaving Home</h3>
 </div>
-
+<ul>
+<li><strong>Morning 5 minutes:</strong> Light one diya each morning. Set one intention for the day. No ritual knowledge required — just presence and gratitude.</li>
+<li><strong>Learn one story per day:</strong> Read about one Navdurga each day. Share it with family on WhatsApp. The stories are accessible, dramatic and deeply meaningful.</li>
+<li><strong>Music is Navratri:</strong> Listen to Navratri bhajans or devotional playlists while commuting or working. The sound vibrations are the practice. Spotify has many excellent playlists.</li>
+<li><strong>Journal the nine qualities:</strong> Each Navdurga embodies a quality: stability, discipline, courage, creativity, compassion, wisdom, fearlessness, purity, liberation. Write one quality each day. Ask: where does this quality appear in my life? Where is it missing?</li>
+</ul>
+</div>
 <div class="modern-card">
-  <div class="modern-card-header" style="background:#F0F4FF">
-    <div style="width:32px;height:32px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🌍</div>
-    <h3 style="color:var(--blue)">For Families in the Diaspora</h3>
-  </div>
-  <ul>
-    <li><strong>Cook one traditional dish per day:</strong> Sabudana khichdi, fruit chaat, kuttu paratha. Cooking sattvic food is itself a devotional act — it connects the body to the practice.</li>
-    <li><strong>Video call family in India:</strong> Share your small puja setup on video. Ask grandparents to explain what Navratri meant to them. This intergenerational exchange is irreplaceable.</li>
-    <li><strong>Explain to non-Hindu friends:</strong> Navratri is a great moment to share your tradition. The concept of nine divine feminine principles is universally understandable.</li>
-    <li><strong>Kanya Puja alternative:</strong> If you cannot find nine young girls, support a girl's education charity or donate to women's causes during these nine days.</li>
-  </ul>
+<div class="modern-card-header" style="background:#F0F4FF">
+<div style="width:32px;height:32px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🌍</div>
+<h3 style="color:var(--blue)">For Families in the Diaspora</h3>
 </div>
-
+<ul>
+<li><strong>Cook one traditional dish per day:</strong> Sabudana khichdi, fruit chaat, kuttu paratha. Cooking sattvic food is itself a devotional act — it connects the body to the practice.</li>
+<li><strong>Video call family in India:</strong> Share your small puja setup on video. Ask grandparents to explain what Navratri meant to them. This intergenerational exchange is irreplaceable.</li>
+<li><strong>Explain to non-Hindu friends:</strong> Navratri is a great moment to share your tradition. The concept of nine divine feminine principles is universally understandable.</li>
+<li><strong>Kanya Puja alternative:</strong> If you cannot find nine young girls, support a girl's education charity or donate to women's causes during these nine days.</li>
+</ul>
+</div>
 <div class="modern-card">
-  <div class="modern-card-header" style="background:#F5FFF5">
-    <div style="width:32px;height:32px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🎓</div>
-    <h3 style="color:var(--green)">For Young Adults &amp; Students</h3>
-  </div>
-  <ul>
-    <li><strong>Map Navdurga to your life:</strong> You may be in the Brahmacharini phase — the student. This Navratri, commit to one discipline: a study habit, a fitness routine, a creative project. Brahmacharini shows that transformation requires repeated, sustained effort.</li>
-    <li><strong>Fast one day — try it:</strong> Even a single day of fruit-only eating changes your relationship with food and sharpens mental clarity. Many students find exam preparation clearer after fasting.</li>
-    <li><strong>Music producers: this is yours:</strong> Navratri music spans 5,000 years from Vedic chanting to electronic Garba. Sample traditional bhajans, create something new. The tradition has always absorbed and transformed.</li>
-  </ul>
+<div class="modern-card-header" style="background:#F5FFF5">
+<div style="width:32px;height:32px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0">🎓</div>
+<h3 style="color:var(--green)">For Young Adults &amp; Students</h3>
 </div>
-
+<ul>
+<li><strong>Map Navdurga to your life:</strong> You may be in the Brahmacharini phase — the student. This Navratri, commit to one discipline: a study habit, a fitness routine, a creative project. Brahmacharini shows that transformation requires repeated, sustained effort.</li>
+<li><strong>Fast one day — try it:</strong> Even a single day of fruit-only eating changes your relationship with food and sharpens mental clarity. Many students find exam preparation clearer after fasting.</li>
+<li><strong>Music producers: this is yours:</strong> Navratri music spans 5,000 years from Vedic chanting to electronic Garba. Sample traditional bhajans, create something new. The tradition has always absorbed and transformed.</li>
+</ul>
+</div>
 <!-- ══ CLOSING ══ -->
-<div class="closing">
-  <div class="om-circle" style="width:90px;height:90px;margin:0 auto 20px"><span class="om-text">ॐ</span></div>
-  <div class="jai">Jai Mata Di!</div>
-  <div class="jai-deva">जय माता दी</div>
-  <div class="victory">Victory to the Divine Mother!</div>
-  <div class="closing-divider"></div>
-  <div class="shloka-box" style="margin:0;background:transparent">
-    <div class="shloka-deva">या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता</div>
-    <div class="shloka-deva">नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः</div>
-    <div class="shloka-roman" style="margin-top:12px">Ya Devi Sarva Bhuteshu Shakti Rupena Samsthita</div>
-    <div class="shloka-roman">Namastasyai Namastasyai Namastasyai Namo Namah</div>
-    <div class="shloka-meaning">"O Goddess dwelling in all beings as Shakti — Salutations to you, again and again."</div>
-  </div>
-  <div class="closing-divider"></div>
-  <div class="contents">
-    <h4>This guide covers:</h4>
-    <ul>
-      <li>What is Navratri &amp; why we celebrate</li>
-      <li>The legend of Mahishasura — birth of Goddess Durga</li>
-      <li>The story of Sati — how 51 Shakti Peeths were born</li>
-      <li>Complete Day-by-Day timeline (19–27 March 2026)</li>
-      <li>All 9 Navdurga forms — detailed descriptions &amp; mantras</li>
-      <li>The 18 Maha Shakti Peeths — locations &amp; stories</li>
-      <li>Navratri rituals and their deeper spiritual meaning</li>
-      <li>How the modern generation can celebrate &amp; learn</li>
-    </ul>
-  </div>
-  <p class="footer-note">Part of the Sanatana Series — Hinduism for the World<br>Chaitra Navratri 2026 · Ashtami: 26 March · Ram Navami: 27 March</p>
-  <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);text-align:center">
-    <p style="font-size:12px;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif">Created by</p>
-    <p style="font-size:16px;color:rgba(255,220,120,0.65);font-family:'Lora',serif;font-weight:600;margin-top:2px">Varun Dogar</p>
-    <p style="font-size:11px;color:rgba(255,255,255,0.28);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
-  </div>
+
+<!-- Subscribe bar -->
+<div style="background:linear-gradient(135deg,#0D0400 0%,#1F0800 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.5);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.5);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide"
+    target="_blank" rel="noopener"
+    style="display:inline-block;background:#C94800;color:white;
+      text-decoration:none;font-family:'DM Sans',sans-serif;
+      font-size:14px;font-weight:600;padding:12px 28px;
+      border-radius:100px;transition:background 0.2s"
+    onmouseover="this.style.background='#E85D00'"
+    onmouseout="this.style.background='#C94800'">
+    🔔 Subscribe — Free
+  </a>
 </div>
 
-
+<div class="closing">
+<div class="om-circle" style="width:90px;height:90px;margin:0 auto 20px"><span class="om-text">ॐ</span></div>
+<div class="jai">
+Jai Mata Di!
+</div>
+<div class="jai-deva">जय माता दी</div>
+<div class="victory">
+Victory to the Divine Mother!
+</div>
+<div class="closing-divider"></div>
+<div class="shloka-box" style="margin:0;background:transparent">
+<div class="shloka-deva">या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता</div>
+<div class="shloka-deva">नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः</div>
+<div class="shloka-roman" style="margin-top:12px">Ya Devi Sarva Bhuteshu Shakti Rupena Samsthita</div>
+<div class="shloka-roman">Namastasyai Namastasyai Namastasyai Namo Namah</div>
+<div class="shloka-meaning">"O Goddess dwelling in all beings as Shakti — Salutations to you, again and again."</div>
+</div>
+<div class="closing-divider"></div>
+<div class="contents">
+<h4>This guide covers:</h4>
+<ul>
+<li>What is Navratri &amp; why we celebrate</li>
+<li>The legend of Mahishasura — birth of Goddess Durga</li>
+<li>The story of Sati — how 51 Shakti Peeths were born</li>
+<li>Complete Day-by-Day timeline (19–27 March 2026)</li>
+<li>All 9 Navdurga forms — detailed descriptions &amp; mantras</li>
+<li>The 18 Maha Shakti Peeths — locations &amp; stories</li>
+<li>Navratri rituals and their deeper spiritual meaning</li>
+<li>How the modern generation can celebrate &amp; learn</li>
+</ul>
+</div>
+<p class="footer-note">Part of the Sanatana Series — Hinduism for the World<br/>Chaitra Navratri 2026 · Ashtami: 26 March · Ram Navami: 27 March</p>
+<div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);text-align:center">
+<p style="font-size:12px;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif">Created by</p>
+<p style="font-size:16px;color:rgba(255,220,120,0.65);font-family:'Lora',serif;font-weight:600;margin-top:2px">Varun Dogar</p>
+<p style="font-size:11px;color:rgba(255,255,255,0.28);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
+</div>
+</div>
 <script>
-// ── Sanatana Series Audio Player ──
-// Skips all Devanagari, reads Roman + English content
+// ════ Sanatana Series Audio + Bilingual Player ════
 
 const SKIP_CLASSES = [
   'shloka-deva','jai-deva','mantra-deva','v-deva',
   'hero-deva','sh-deva','ch-name-deva','series-deva',
-  'phil-deva','shloka-deva','om','nav-om','top-nav',
-  'audio-bar','footer','attr-claude','attr-name',
-  'footer-series','footer-sub','eyebrow','hero-tags',
-  'hero-tag','hero-stats','h-stat-label','aarti-nav',
-  'listen-row','listen-btn','ch-verses','sec-label',
-  'cal-header','cal-tag','cal-date','soon-tag','ch-tag'
+  'phil-deva','om','nav-om','top-nav','audio-bar','lang-bar',
+  'footer','attr-claude','attr-name','footer-series','footer-sub',
+  'eyebrow','hero-tags','hero-tag','hero-stats','h-stat-label',
+  'aarti-nav','listen-row','listen-btn','ch-verses','sec-label',
+  'cal-header','cal-tag','cal-date','soon-tag','ch-tag','hi-content'
 ];
+const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH',
+  'LINE','CIRCLE','POLYGON','RECT','ELLIPSE','META','SELECT','OPTION'];
 
-const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH','LINE',
-                   'CIRCLE','POLYGON','RECT','ELLIPSE','META'];
-
-let segments = [];
-let curIdx = 0;
-let utterance = null;
-let speaking = false;
-let speeds = [0.8, 1.0, 1.4, 1.8];
-let speedIdx = 1;
+let segments = [], curIdx = 0, utterance = null, speaking = false;
+let speeds = [0.8,1.0,1.4,1.8], speedIdx = 1;
 let lastHighlighted = null;
+let selectedVoice = null;
+// ── Voice loader ──
+function loadVoices() {
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return;
+  const sel = document.getElementById('abVoice');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">🎙</option>';
 
+  // Filter to English + Hindi voices only, prioritise Indian
+  const priority = ['Rishi','Lekha','Aditi','Google हिन्दी',
+    'Hindi','Indian','Heera','Veena'];
+  const en = voices.filter(v => v.lang.startsWith('en'));
+  const hi = voices.filter(v => v.lang.startsWith('hi'));
+
+  // Sort: Indian voices first
+  const sortFn = (a,b) => {
+    const aP = priority.some(p => a.name.includes(p)) ? 0 : 1;
+    const bP = priority.some(p => b.name.includes(p)) ? 0 : 1;
+    return aP - bP;
+  };
+  en.sort(sortFn); hi.sort(sortFn);
+
+  if (en.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'English';
+    en.slice(0,8).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+  if (hi.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'हिंदी';
+    hi.slice(0,6).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+
+  // Auto-select best voice for current language
+  autoSelectVoice();
+}
+
+function autoSelectVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  const sel = document.getElementById('abVoice');
+  const priority = ['Rishi','Heera','Veena','en-IN','Indian'];
+
+  let best = voices.find(v => priority.some(p =>
+    v.name.includes(p) || v.lang.includes(p)
+  ));
+  if (!best) best = voices.find(v =>
+    v.lang.startsWith(currentLang === 'hi' ? 'hi' : 'en')
+  );
+  if (!best) best = voices.find(v => v.lang.startsWith('en'));
+
+  if (best) {
+    selectedVoice = best;
+    if (sel) sel.value = best.name;
+  }
+}
+
+function audioSetVoice(name) {
+  const voices = window.speechSynthesis.getVoices();
+  selectedVoice = voices.find(v => v.name === name) || null;
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
+}
+
+window.speechSynthesis.onvoiceschanged = loadVoices;
+setTimeout(loadVoices, 500);
+
+// ── Segment builder ──
 function shouldSkipEl(el) {
   if (!el || el.nodeType !== 1) return false;
   if (SKIP_TAGS.includes(el.tagName)) return true;
-  const cls = (el.className || '').toString();
+  const cls = (el.className||'').toString();
   if (SKIP_CLASSES.some(c => cls.includes(c))) return true;
-  // Skip empty or icon-only elements
-  const text = el.textContent.trim();
-  if (text.length < 3) return true;
+  if (el.textContent.trim().length < 3) return true;
+  // Skip hidden elements
+  if (el.style.display === 'none') return true;
   return false;
 }
 
 function extractText(el) {
-  // Clone and remove all Devanagari elements
   const clone = el.cloneNode(true);
-  // Remove deva children
   clone.querySelectorAll(
     '.shloka-deva,.jai-deva,.mantra-deva,.v-deva,.hero-deva,' +
-    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om'
+    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om,' +
+    'button,nav,.audio-bar,.lang-bar,.listen-row,svg,.top-nav,.hi-content'
   ).forEach(d => d.remove());
-  // Remove buttons, links, nav
-  clone.querySelectorAll('button,nav,.audio-bar,.listen-row,svg,.top-nav').forEach(d => d.remove());
-  return clone.textContent.replace(/\s+/g, ' ').trim();
+  return clone.textContent.replace(/\s+/g,' ').trim();
 }
 
 function buildSegments() {
   segments = [];
-  // Walk all meaningful elements
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_ELEMENT,
-    {
-      acceptNode(node) {
-        if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, {
+    acceptNode(node) {
+      if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
     }
-  );
-
+  });
   const readable = ['H1','H2','H3','P','LI','BLOCKQUOTE'];
   let node;
   while ((node = walker.nextNode())) {
     if (!readable.includes(node.tagName)) continue;
-    // Skip if ancestor is a skip class
     let skip = false;
     let p = node.parentElement;
     while (p && p !== document.body) {
@@ -1643,114 +1729,75 @@ function buildSegments() {
       p = p.parentElement;
     }
     if (skip) continue;
-
     const text = extractText(node);
     if (text.length < 5) continue;
-
-    // Get section label from nearest h2/h3
     let label = '';
-    if (node.tagName === 'H2' || node.tagName === 'H3') {
-      label = text.substring(0, 50);
+    if (node.tagName==='H2'||node.tagName==='H3') {
+      label = text.substring(0,50);
     } else {
-      // Find previous heading
-      let prev = node.previousElementSibling;
-      let searchEl = node.parentElement;
-      while (searchEl && !label) {
-        const hs = searchEl.querySelectorAll('h2,h3');
+      let s = node.parentElement;
+      while (s && !label) {
+        const hs = s.querySelectorAll('h2,h3');
         if (hs.length) label = hs[hs.length-1].textContent.trim().substring(0,50);
-        searchEl = searchEl.parentElement;
+        s = s.parentElement;
       }
     }
-
-    segments.push({ el: node, text, label: label || 'Introduction' });
+    segments.push({ el:node, text, label: label||'Introduction' });
   }
   return segments.length;
 }
 
+// ── Playback ──
 function audioToggle() {
-  if (!segments.length) {
-    const n = buildSegments();
-    if (!n) { alert('No readable content found.'); return; }
-  }
+  if (!segments.length) { const n = buildSegments(); if (!n) return; }
   if (speaking) {
     window.speechSynthesis.cancel();
-    speaking = false;
-    updatePlayBtn(false);
-    clearHighlight();
-  } else {
-    playFrom(curIdx);
-  }
+    speaking = false; updatePlayBtn(false); clearHighlight();
+  } else { playFrom(curIdx); }
 }
 
 function playFrom(idx) {
   window.speechSynthesis.cancel();
   if (idx >= segments.length) {
-    speaking = false;
-    curIdx = 0;
-    updatePlayBtn(false);
-    clearHighlight();
-    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to restart';
+    speaking = false; curIdx = 0; updatePlayBtn(false); clearHighlight();
+    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to replay';
     document.getElementById('abProgress').style.width = '100%';
     return;
   }
   curIdx = idx;
   const seg = segments[idx];
-
-  // Update UI
   document.getElementById('abSection').textContent = seg.label;
   document.getElementById('abProgress').style.width =
-    ((idx / segments.length) * 100) + '%';
-
-  // Highlight
+    ((idx/segments.length)*100)+'%';
   clearHighlight();
   seg.el.classList.add('audio-reading');
   lastHighlighted = seg.el;
-  // Scroll into view if needed
-  seg.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  seg.el.scrollIntoView({ behavior:'smooth', block:'center' });
 
-  // Speak
   utterance = new SpeechSynthesisUtterance(seg.text);
   utterance.rate = speeds[speedIdx];
   utterance.pitch = 1.0;
+  utterance.lang = 'en-IN';
+  if (selectedVoice) utterance.voice = selectedVoice;
 
-  // Pick best voice
-  const voices = window.speechSynthesis.getVoices();
-  const preferred = voices.find(v =>
-    v.lang.startsWith('en-IN') ||
-    v.name.includes('Rishi') ||
-    v.name.includes('Indian') ||
-    v.name.includes('Samantha')
-  ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
-  if (preferred) utterance.voice = preferred;
-
-  utterance.onend = () => {
-    if (speaking) playFrom(curIdx + 1);
-  };
-  utterance.onerror = (e) => {
-    if (e.error !== 'interrupted') playFrom(curIdx + 1);
-  };
-
+  utterance.onend = () => { if (speaking) playFrom(curIdx+1); };
+  utterance.onerror = (e) => { if (e.error!=='interrupted') playFrom(curIdx+1); };
   window.speechSynthesis.speak(utterance);
-  speaking = true;
-  updatePlayBtn(true);
+  speaking = true; updatePlayBtn(true);
 }
 
 function audioNext() {
   window.speechSynthesis.cancel();
   if (!segments.length) buildSegments();
   clearHighlight();
-  playFrom(Math.min(curIdx + 1, segments.length - 1));
+  playFrom(Math.min(curIdx+1, segments.length-1));
 }
 
 function audioCycleSpeed() {
-  speedIdx = (speedIdx + 1) % speeds.length;
+  speedIdx = (speedIdx+1) % speeds.length;
   const labels = ['0.8x','1x','1.4x','1.8x'];
   document.getElementById('abSpeed').textContent = labels[speedIdx];
-  if (utterance && speaking) {
-    const idx = curIdx;
-    window.speechSynthesis.cancel();
-    playFrom(idx);
-  }
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
 }
 
 function audioSeekClick(e, wrap) {
@@ -1758,7 +1805,7 @@ function audioSeekClick(e, wrap) {
   const pct = e.offsetX / wrap.offsetWidth;
   const idx = Math.floor(pct * segments.length);
   window.speechSynthesis.cancel();
-  playFrom(Math.max(0, Math.min(idx, segments.length - 1)));
+  playFrom(Math.max(0, Math.min(idx, segments.length-1)));
 }
 
 function updatePlayBtn(isPlaying) {
@@ -1766,25 +1813,41 @@ function updatePlayBtn(isPlaying) {
     ? '<rect x="3" y="2" width="4" height="12" fill="white"/><rect x="9" y="2" width="4" height="12" fill="white"/>'
     : '<polygon points="4,2 14,8 4,14" fill="white"/>';
 }
-
 function clearHighlight() {
-  if (lastHighlighted) {
-    lastHighlighted.classList.remove('audio-reading');
-    lastHighlighted = null;
-  }
+  if (lastHighlighted) { lastHighlighted.classList.remove('audio-reading'); lastHighlighted = null; }
 }
 
-// Voices load async on some browsers
-window.speechSynthesis.onvoiceschanged = () => {};
+  segments = [];
+  curIdx = 0;
+  document.getElementById('abSection').textContent = 'Tap ▶ to listen';
+  document.getElementById('abProgress').style.width = '0%';
 
-// Pause when tab is hidden, resume when visible
+  // Switch voice to match language
+  autoSelectVoice();
+  const sel = document.getElementById('abVoice');
+  if (sel && selectedVoice) sel.value = selectedVoice.name;
+}
+
+// Tab visibility
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && speaking) {
-    window.speechSynthesis.pause();
-  } else if (!document.hidden && speaking) {
-    window.speechSynthesis.resume();
-  }
+  if (document.hidden && speaking) window.speechSynthesis.pause();
+  else if (!document.hidden && speaking) window.speechSynthesis.resume();
 });
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'hi,gu,ta,te,ml,pa,bn,mr,kn,ur,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 
 </body>

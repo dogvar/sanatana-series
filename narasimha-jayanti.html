@@ -193,6 +193,15 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .attr-name { font-family:'Lora',serif; font-size:16px; color:rgba(220,100,70,0.65);
   font-weight:600; margin-top:3px; }
 .attr-claude { font-size:11px; color:rgba(255,255,255,0.18); margin-top:4px; font-style:italic; }
+
+/* Lang toggle */
+.lang-toggle { display:flex; gap:4px; align-items:center; margin-left:8px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; transition:all 0.15s; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+.lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
 </style>
 </head>
 <body>
@@ -203,6 +212,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     Sanatana Series
   </a>
   <span class="nav-om">ॐ</span>
+  <div class="lang-toggle">
+    <a class="lang-btn active" href="narasimha-jayanti.html">EN</a>
+    <a class="lang-btn" href="narasimha-jayanti-hi.html" style="border-color:rgba(0,0,0,0.15);color:rgba(0,0,0,0.45);">हिं</a>
+  </div>
 </nav>
 
 <!-- HERO -->

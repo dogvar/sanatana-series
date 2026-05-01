@@ -615,6 +615,44 @@
     font-size: 18px; color: rgba(212,160,23,0.4);
     pointer-events: none;
   }
+
+/* ── Google Translate Widget ── */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+}
+#google_translate_element .goog-te-gadget {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0 !important; /* hide "Powered by" text */
+}
+#google_translate_element .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(212,160,23,0.35) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  cursor: pointer;
+}
+#google_translate_element .goog-te-gadget-simple a {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#google_translate_element .goog-te-gadget-simple a span {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: none; /* hide language name, show only arrow */
+}
+/* Override Google's iframe banner */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
 </style>
 </head>
 <body>
@@ -627,6 +665,8 @@
     Sanatana Series
   </a>
   <span class="nav-title nav-om">ॐ</span>
+
+  <div id="google_translate_element" style="margin-left:auto"></div>
 </nav>
 
 
@@ -1170,5 +1210,46 @@ function calculateHinduDate() {
   <p style="font-size:12px;color:rgba(255,255,255,0.2);margin-top:8px">Created by <span style="color:rgba(212,160,23,0.5);font-weight:600">Varun Dogar</span></p>
   <p style="font-size:11px;color:rgba(255,255,255,0.15);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
 </div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'hi,gu,ta,te,ml,pa,bn,mr,kn,ur,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+
+<!-- Subscribe bar -->
+<div style="background:linear-gradient(135deg,#0D0400 0%,#1F0800 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.5);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.5);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide"
+    target="_blank" rel="noopener"
+    style="display:inline-block;background:#C94800;color:white;
+      text-decoration:none;font-family:'DM Sans',sans-serif;
+      font-size:14px;font-weight:600;padding:12px 28px;
+      border-radius:100px;transition:background 0.2s"
+    onmouseover="this.style.background='#E85D00'"
+    onmouseout="this.style.background='#C94800'">
+    🔔 Subscribe — Free
+  </a>
+</div>
+
 </body>
 </html>

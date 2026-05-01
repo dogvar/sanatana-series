@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>बौद्ध धर्म का प्रसार — भारत से एशिया तक · सनातन सीरीज़</title>
+<meta property="og:description" content="अशोक · रेशम मार्ग · श्रीलंका · चीन · जापान · तिब्बत · 2,500 वर्षों की यात्रा। पालि भाषा। सनातन सीरीज़।"/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal:#005F5F; --teal2:#007A7A; --teal3:#50D8BE;
+  --gold:#B8860B; --goldt:#D4A017;
+  --dark:#000A08; --dark2:#001210; --dark3:#001A14;
+  --cream:#F5FFFD; --white:#FFFFFF;
+  --ink:#001210; --ink2:#002820; --muted:#3A6055; --r:12px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif;
+  background:var(--cream); color:var(--ink); line-height:1.75;
+  font-size:15px; max-width:640px; margin:0 auto; }
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(0,10,8,0.96);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(0,95,95,0.35);
+  padding:0 16px; display:flex; align-items:center; height:48px; gap:8px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(0,200,180,0.85); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; white-space:nowrap; font-family:'DM Sans',sans-serif; }
+.top-nav a.back svg { width:16px; height:16px; }
+.nav-center { flex:1; text-align:center; font-size:11px; color:rgba(0,180,160,0.45); }
+.lang-toggle { display:flex; gap:4px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(0,95,95,0.3);
+  color:rgba(0,180,160,0.60); font-family:'DM Sans',sans-serif; }
+.lang-btn.active { background:rgba(0,95,95,0.2); border-color:var(--teal2);
+  color:var(--teal3); pointer-events:none; }
+/* Hero */
+.hero { background:var(--dark); padding:44px 20px 32px; text-align:center; position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 65% 50% at 50% 35%, rgba(0,95,95,0.18) 0%, transparent 65%); }
+.eyebrow { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(80,216,190,0.70); margin-bottom:10px; position:relative; font-family:'DM Sans',sans-serif; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(28px,7.5vw,44px);
+  color:var(--teal2); line-height:1.1; text-shadow:0 2px 40px rgba(0,95,95,0.4);
+  margin-bottom:8px; position:relative; }
+.hero-sub { font-size:16px; color:rgba(255,255,255,0.92); margin-bottom:16px; position:relative; line-height:1.65; }
+.date-pill { display:inline-block; background:rgba(0,95,95,0.2);
+  border:1px solid rgba(0,150,130,0.5); color:#80FFE8; font-size:13px;
+  font-weight:600; padding:8px 20px; border-radius:100px; font-family:'DM Sans',sans-serif; }
+.hero-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-top:14px; position:relative; }
+.hero-tag { font-size:11px; color:rgba(255,255,255,0.88); }
+.hero-tag::after { content:' •'; margin-left:5px; }
+.hero-tag:last-child::after { content:''; }
+/* Part 1 link */
+.part1-link { background:var(--dark2); border:1px solid rgba(0,95,95,0.3);
+  border-radius:var(--r); margin:12px 16px; padding:16px; display:flex;
+  align-items:center; gap:12px; text-decoration:none; }
+.p1-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--teal2); margin-bottom:3px; }
+.p1-sub { font-size:12px; color:rgba(255,255,255,0.65); font-family:'DM Sans',sans-serif; }
+/* Section headers */
+.sec-hdr { background:var(--dark); padding:16px 20px 12px; border-top:3px solid var(--teal); }
+.sec-hdr h2 { font-family:'Noto Serif Devanagari',serif; font-size:clamp(18px,5vw,26px);
+  color:var(--teal2); line-height:1.3; margin-bottom:3px; }
+.sec-hdr p { font-size:11px; color:rgba(0,180,160,0.85); font-family:'DM Sans',sans-serif; }
+.intro-b { background:var(--white); border-left:4px solid var(--teal);
+  border-radius:0 var(--r) var(--r) 0; padding:14px 14px 14px 16px; margin:14px 16px; }
+.intro-lead { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--teal); margin-bottom:8px; }
+.intro-b p { font-size:14px; color:var(--ink2); line-height:1.75; }
+/* Timeline */
+.timeline { padding:16px 16px 0; }
+.tl-item { display:flex; gap:0; margin-bottom:8px; align-items:flex-start; }
+.tl-left { flex-shrink:0; width:70px; display:flex; flex-direction:column; align-items:center; }
+.tl-lotus { width:52px; min-height:52px; background:var(--dark2);
+  border:1px solid rgba(80,216,190,0.25); border-radius:50%;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:1px; padding:5px; z-index:2; position:relative; }
+.tl-item.major .tl-lotus { border-color:rgba(80,216,190,0.55); background:rgba(0,122,106,0.2); }
+.tl-item.gold .tl-lotus { border-color:rgba(184,134,11,0.5); background:rgba(184,134,11,0.1); }
+.lotus-emoji { font-size:16px; line-height:1; }
+.lotus-yr { font-family:'DM Sans',sans-serif; font-size:8.5px; font-weight:600;
+  color:rgba(80,216,190,0.80); text-align:center; line-height:1.25; }
+.tl-item.gold .lotus-yr { color:var(--goldt); }
+.tl-stem { width:1px; flex:1; min-height:10px;
+  background:linear-gradient(180deg,rgba(80,216,190,0.25),rgba(80,216,190,0.03)); }
+.tl-item:last-child .tl-stem { display:none; }
+.tl-conn { width:12px; height:1px; background:rgba(80,216,190,0.18);
+  flex-shrink:0; margin-top:26px; }
+.tl-card { flex:1; border-radius:var(--r); overflow:hidden; margin-bottom:6px;
+  border:1px solid rgba(80,216,190,0.12); background:var(--white); align-self:flex-start; }
+.tl-item.major .tl-card { border-color:rgba(80,216,190,0.22); }
+.tl-item.gold .tl-card { border-color:rgba(184,134,11,0.2); }
+.card-hdr { padding:11px 13px 9px; display:flex; align-items:flex-start; gap:8px; }
+.card-tag { font-size:9px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;
+  padding:2px 8px; border-radius:100px; color:white; flex-shrink:0;
+  margin-top:2px; white-space:nowrap; font-family:'DM Sans',sans-serif; }
+.card-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:14px; color:var(--ink); line-height:1.3; }
+.card-body { padding:0 13px 12px; font-size:13.5px; color:var(--ink2); line-height:1.7; }
+/* School cards */
+.school-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); }
+.school-hdr { padding:13px 14px 9px; border-bottom:1px solid #D0EEEE; }
+.school-hdr h3 { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--ink); margin-bottom:3px; }
+.school-pali { font-size:11px; color:var(--muted); font-style:italic; font-family:'DM Sans',sans-serif; }
+.school-geo { font-size:11px; color:var(--teal); font-weight:600; font-family:'DM Sans',sans-serif; }
+.school-body { padding:12px 14px; font-size:14px; color:var(--ink2); line-height:1.75; }
+/* Dark note */
+.dark-note { background:var(--dark2); border-radius:var(--r); margin:0 16px 10px;
+  padding:16px; border:1px solid rgba(0,95,95,0.3); }
+.dark-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--teal2); margin-bottom:8px; }
+.dark-note p { font-size:13.5px; color:rgba(255,255,255,0.90); line-height:1.75; }
+/* Modern card */
+.modern-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  padding:15px; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-top:3px solid var(--teal); }
+.modern-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--teal); margin-bottom:8px; }
+.modern-card p { font-size:14px; color:var(--ink2); line-height:1.75; }
+/* Pali words */
+.pali-card { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.07); }
+.pali-hdr { padding:12px 14px 8px; display:flex; align-items:center; gap:12px; border-bottom:1px solid #D0EEEE; }
+.pali-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:var(--teal2); flex-shrink:0; width:48px; }
+.pali-word { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--ink); margin-bottom:2px; }
+.pali-type { font-size:11px; color:var(--muted); font-family:'DM Sans',sans-serif; }
+.pali-body { padding:10px 14px 12px; font-size:13.5px; color:var(--ink2); line-height:1.7; }
+/* Stat row */
+.stat-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; padding:16px; }
+.stat { background:var(--white); border-radius:10px; padding:12px 10px;
+  text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.07); border-top:3px solid var(--teal); }
+.stat-n { font-family:'Yatra One',cursive; font-size:20px; color:var(--teal);
+  line-height:1; margin-bottom:4px; }
+.stat-l { font-size:10px; color:var(--muted); line-height:1.35;
+  font-family:'Noto Serif Devanagari',serif; }
+/* Closing */
+.closing { background:var(--dark); padding:40px 24px; text-align:center; }
+.jai { font-family:'Yatra One',cursive; font-size:30px; color:var(--teal2); margin-bottom:6px; }
+.victory { color:rgba(255,255,255,0.88); font-size:14px; margin-bottom:20px; line-height:1.65; }
+.divider { width:60px; height:1px; background:var(--teal); margin:16px auto; }
+.footer-note { font-size:11px; color:rgba(255,255,255,0.60); margin-top:16px;
+  letter-spacing:1px; font-family:'DM Sans',sans-serif; }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    सनातन सीरीज़
+  </a>
+  <span class="nav-center">☸ बौद्ध धर्म · एशिया में प्रसार · भाग 2</span>
+  <div class="lang-toggle">
+    <a class="lang-btn" href="buddhism-spread.html">EN</a>
+    <a class="lang-btn active" href="buddhism-spread-hi.html">हिं</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">✦ बुद्ध पूर्णिमा 2026 · भाग 2 · सनातन सीरीज़ ✦</p>
+  <h1>बौद्ध धर्म का प्रसार</h1>
+  <p class="hero-sub">भारत से सम्पूर्ण एशिया तक — 2,500 वर्षों की यात्रा</p>
+  <div style="font-size:40px;margin:10px 0;position:relative">🗺️</div>
+  <div class="date-pill">483 ईसा पूर्व → आज · 50 करोड़ बौद्ध · 47 देश</div>
+  <div class="hero-tags">
+    <span class="hero-tag">अशोक</span>
+    <span class="hero-tag">रेशम मार्ग</span>
+    <span class="hero-tag">नालन्दा</span>
+    <span class="hero-tag">थेरवाद</span>
+    <span class="hero-tag">महायान</span>
+    <span class="hero-tag">वज्रयान</span>
+  </div>
+</div>
+
+<!-- Part 1 Link -->
+<a class="part1-link" href="buddha-purnima-hi.html">
+  <div style="font-size:28px;flex-shrink:0">☸️</div>
+  <div>
+    <div class="p1-title">← भाग 1: गौतम बुद्ध — जागृत पुरुष</div>
+    <div class="p1-sub">सिद्धार्थ का जीवन · चार आर्य सत्य · अष्टांगिक मार्ग · चार पवित्र धाम</div>
+  </div>
+  <div style="margin-left:auto;font-size:18px;color:rgba(0,180,160,0.4)">›</div>
+</a>
+
+<!-- OVERVIEW -->
+<div class="sec-hdr">
+  <h2>इतिहास का सबसे शान्तिपूर्ण विस्तार</h2>
+  <p>कोई सेना नहीं · कोई जबरदस्ती नहीं · केवल भिक्षु और व्यापारी</p>
+</div>
+
+<div class="intro-b">
+  <p class="intro-lead">बौद्ध धर्म एकमात्र ऐसा विश्व-धर्म है जो बिना किसी युद्ध, बिना किसी जबरदस्ती के पूरे एशिया में फैला।</p>
+  <p>बिहार के एक छोटे भिक्षु-समुदाय से आरम्भ होकर बौद्ध धर्म 1,000 वर्षों में सम्पूर्ण एशिया महाद्वीप में फैल गया। श्रीलंका, अफगानिस्तान, मध्य एशिया, चीन, कोरिया, जापान, तिब्बत, मंगोलिया, दक्षिण-पूर्व एशिया — हर जगह। यह प्रसार पैदल चलते भिक्षुओं, व्यापार मार्गों पर चलते व्यापारियों और उन राजाओं के माध्यम से हुआ जिन्होंने इसे स्वेच्छा से अपनाया। कभी तलवार नहीं उठी।</p>
+</div>
+
+<div class="stat-row">
+  <div class="stat"><div class="stat-n">47</div><div class="stat-l">देश जहाँ बौद्ध धर्म उल्लेखनीय रूप से है</div></div>
+  <div class="stat"><div class="stat-n">50 करोड़</div><div class="stat-l">बौद्ध विश्वभर में 2026 में</div></div>
+  <div class="stat"><div class="stat-n">3</div><div class="stat-l">प्रमुख शाखाएँ — थेरवाद, महायान, वज्रयान</div></div>
+</div>
+
+<!-- TIMELINE -->
+<div class="sec-hdr">
+  <h2>समयरेखा — 483 ईसा पूर्व से आज तक</h2>
+  <p>2,500 वर्षों की बौद्ध धर्म की एशिया-यात्रा</p>
+</div>
+
+<div class="timeline">
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">483 ईपू</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:var(--teal)">आरम्भ</span>
+        <span class="card-title">महापरिनिर्वाण — धर्म की यात्रा शुरू</span></div>
+      <div class="card-body">कुशीनगर में बुद्ध का महापरिनिर्वाण। महाकस्सप के नेतृत्व में प्रथम बौद्ध संगीति राजगृह में। संघ हज़ारों में। धर्म मुख से मुख — पूर्वोत्तर भारत में फैलता है।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">268 ईपू</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:var(--teal)">निर्णायक मोड़</span>
+        <span class="card-title">सम्राट अशोक — सब कुछ बदल गया</span></div>
+      <div class="card-body">कलिंग युद्ध के भीषण नरसंहार से विचलित होकर मौर्य सम्राट अशोक ने बौद्ध धर्म अपनाया। शिलालेखों पर बौद्ध नीतियाँ उत्कीर्ण कीं। तृतीय संगीति पाटलिपुत्र में। सभी दिशाओं में धर्म-दूत भेजे। पुत्री संघमित्रा मूल बोधि वृक्ष की शाखा श्रीलंका ले गईं। अशोक चक्र — धर्म चक्र — आज भारत के राष्ट्रीय ध्वज पर है।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">250 ईपू</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:#006600">श्रीलंका</span>
+        <span class="card-title">महिन्द का मिशन — श्रीलंका बौद्ध हुआ</span></div>
+      <div class="card-body">अशोक के पुत्र महिन्द ने राजा देवानांपिय तिस्स को बौद्ध बनाया। अनुराधापुर में बोधि वृक्ष की शाखा लगाई — वह आज भी जीवित है, पृथ्वी का सबसे पुराना प्रलेखित जीवित पेड़। 1ली शताब्दी ईपू में श्रीलंका में पाली त्रिपिटक लिपिबद्ध किया गया — थेरवाद का आधार।</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">100 ईपू–100 ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card">
+      <div class="card-hdr"><span class="card-tag" style="background:#5C3A00">गन्धार</span>
+        <span class="card-title">गन्धार — बुद्ध की पहली मूर्ति यहाँ बनी</span></div>
+      <div class="card-body">भारतीय, यूनानी और फारसी संस्कृतियों के संगम पर — गन्धार (वर्तमान पाकिस्तान/अफगानिस्तान) में — पहली बार बुद्ध की मानवीय मूर्ति बनी। यूनानी मूर्तिशिल्प की शैली, भारतीय आत्मा। यह ग्रीको-बौद्ध कला परम्परा रेशम मार्ग से चीन पहुँची और पूरे एशिया की बौद्ध कला को आकार दिया।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">1ली सदी ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:#8B0000">चीन</span>
+        <span class="card-title">रेशम मार्ग से चीन में बौद्ध धर्म</span></div>
+      <div class="card-body">महायान बौद्ध धर्म रेशम मार्ग के व्यापारियों और भिक्षुओं के साथ हान चीन पहुँचा। लगभग 65 ई॰ में सम्राट मिंग के दरबार में। ताओवाद और कन्फ्यूशियस विचार के साथ मिलकर — चान (ज़ेन), शुद्ध भूमि बौद्ध धर्म का जन्म। तांग वंश (618–907 ई॰) में चीनी बौद्ध धर्म चरम पर।</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">200–500 ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card">
+      <div class="card-hdr"><span class="card-tag" style="background:#2A6600">दक्षिण-पूर्व एशिया</span>
+        <span class="card-title">थेरवाद — म्यानमार, थाईलैण्ड, कम्बोडिया</span></div>
+      <div class="card-body">समुद्री व्यापार मार्गों से भारत और श्रीलंका से दक्षिण-पूर्व एशिया में। पाली ग्रन्थ स्थानीय भाषाओं में अनूदित। बौद्ध मठ — शिक्षा, शासन और संस्कृति का केन्द्र बने।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">552 ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:#CC0000">जापान</span>
+        <span class="card-title">जापान में बौद्ध धर्म — एक सांस्कृतिक क्रान्ति</span></div>
+      <div class="card-body">कोरिया से जापान पहुँचा। राजकुमार शोतोकु ने होर्युजी मन्दिर बनवाया — आज भी खड़ा, विश्व की सबसे प्राचीन लकड़ी की संरचना। शिन्तो धर्म के साथ मिलकर — ज़ेन, शुद्ध भूमि, शिंगोन, तेन्दाई। जापानी सौन्दर्यशास्त्र — चाय समारोह, बोन्साई, ज़ेन उद्यान — सब बौद्ध दर्शन की देन।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">7वीं सदी</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:#660066">तिब्बत</span>
+        <span class="card-title">वज्रयान — बौद्ध धर्म तिब्बत पहुँचा</span></div>
+      <div class="card-body">सम्राट सोंग्तसेन गम्पो ने भारत और नेपाल से बौद्ध गुरुओं को बुलाया। तिब्बती लिपि — बौद्ध ग्रन्थों के अनुवाद के लिए बनाई गई। 8वीं सदी में गुरु पद्मसम्भव (गुरु रिन्पोचे) ने तांत्रिक बौद्ध धर्म लाया — बोन परम्परा के साथ मिलकर वज्रयान बना। तिब्बत उस बौद्ध दर्शन का संरक्षक बना जो भारत में नष्ट हो गया था।</div>
+    </div>
+  </div>
+
+  <div class="tl-item gold">
+    <div class="tl-left">
+      <div class="tl-lotus" style="border-color:rgba(184,134,11,0.5)"><span class="lotus-emoji">🪷</span><span class="lotus-yr" style="color:var(--goldt)">399–629 ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card gold" style="border-color:rgba(184,134,11,0.2)">
+      <div class="card-hdr"><span class="card-tag" style="background:var(--gold)">तीर्थयात्री</span>
+        <span class="card-title">फाशियान और ह्वेनसांग — महान् यात्राएँ</span></div>
+      <div class="card-body">दो चीनी भिक्षु जो ग्रन्थ लेने भारत आए — उनकी यात्रा-वृत्तान्त इतिहास की अमूल्य निधि हैं। फाशियान (399–414 ई॰) ने 15 वर्ष यात्रा की। ह्वेनसांग (629–645 ई॰) नालन्दा में पढ़ा — उनकी यात्रा "जर्नी टू द वेस्ट" उपन्यास का आधार है। उनके संस्कृत-से-चीनी अनुवाद सैकड़ों खण्डों में हैं।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus"><span class="lotus-emoji">🪷</span><span class="lotus-yr">1000–1200 ई</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major">
+      <div class="card-hdr"><span class="card-tag" style="background:#5A3000">अवसान</span>
+        <span class="card-title">भारत में पतन — बाकी जगह पूर्ण उत्कर्ष</span></div>
+      <div class="card-body">12वीं सदी तक भारत में बौद्ध धर्म लगभग समाप्त। नालन्दा 1193 ई॰ में जला दी गई। पर इस समय तक बौद्ध धर्म चीन, जापान, कोरिया, तिब्बत और दक्षिण-पूर्व एशिया में पूरी तरह स्थापित था। भारत से गया — पर संसार में रहा।</div>
+    </div>
+  </div>
+
+  <div class="tl-item gold">
+    <div class="tl-left">
+      <div class="tl-lotus" style="border-color:rgba(184,134,11,0.5)"><span class="lotus-emoji">🪷</span><span class="lotus-yr" style="color:var(--goldt)">1956</span></div>
+      <div class="tl-stem"></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card gold" style="border-color:rgba(184,134,11,0.2)">
+      <div class="card-hdr"><span class="card-tag" style="background:var(--gold)">पुनर्जागरण</span>
+        <span class="card-title">बौद्ध धर्म भारत लौटा — डॉ॰ आम्बेडकर की क्रान्ति</span></div>
+      <div class="card-body">14 अक्टूबर 1956, नागपुर — डॉ॰ भीमराव आम्बेडकर ने 6 लाख अनुयायियों के साथ बौद्ध धर्म ग्रहण किया — इतिहास का सबसे बड़ा धार्मिक सामूहिक रूपान्तरण। उन्होंने कहा — बौद्ध धर्म ही एकमात्र परम्परा है जो जाति-भेद के बिना मानव-गरिमा देती है। आज भारत में 8–9 करोड़ दलित बौद्ध हैं।</div>
+    </div>
+  </div>
+
+  <div class="tl-item major">
+    <div class="tl-left">
+      <div class="tl-lotus" style="border-color:var(--teal3)"><span class="lotus-emoji">🪷</span><span class="lotus-yr" style="color:var(--teal3)">2026</span></div>
+    </div>
+    <div class="tl-conn"></div>
+    <div class="tl-card major" style="border-color:rgba(80,216,190,0.35)">
+      <div class="card-hdr"><span class="card-tag" style="background:var(--teal)">आज</span>
+        <span class="card-title">50 करोड़ बौद्ध — वैश्विक धर्म</span></div>
+      <div class="card-body">47 देशों में 50 करोड़ से अधिक बौद्ध। चीन (लगभग 25 करोड़), थाईलैण्ड, जापान, म्यानमार, श्रीलंका, कम्बोडिया, लाओस, वियतनाम। माइंडफुलनेस — बुद्ध की सम्यक् स्मृति — का अब विश्वभर के अस्पतालों, स्कूलों और कम्पनियों में उपयोग। 2,500 वर्ष पहले बिहार में जो आरम्भ हुआ — वह आज सम्पूर्ण मानव सभ्यता को प्रभावित कर रहा है।</div>
+    </div>
+  </div>
+
+</div><!-- end timeline -->
+
+<!-- THREE SCHOOLS -->
+<div class="sec-hdr">
+  <h2>बौद्ध धर्म की तीन शाखाएँ</h2>
+  <p>तीन मार्ग · एक स्रोत · एक महाद्वीप समृद्ध हुआ</p>
+</div>
+
+<div class="school-card">
+  <div class="school-hdr">
+    <h3 style="color:#006600">थेरवाद — बड़ों का मार्ग</h3>
+    <div class="school-pali">पाली त्रिपिटक · विपश्यना ध्यान · व्यक्तिगत मुक्ति</div>
+    <div class="school-geo">📍 श्रीलंका · म्यानमार · थाईलैण्ड · कम्बोडिया · लाओस</div>
+  </div>
+  <div class="school-body">सबसे प्राचीन, मूल शिक्षाओं के सबसे निकट। अर्हत आदर्श — अपने प्रयास से मुक्ति। पूर्ण पाली त्रिपिटक — 1ली सदी ईपू में श्रीलंका में लिपिबद्ध। विपश्यना ध्यान — जो आज माइंडफुलनेस के रूप में विश्वभर में है — यहीं से आया। भिक्षु केसरिया वस्त्र, कड़ी विनय अनुशासन। दक्षिण-पूर्व एशिया की कला, शासन, शिक्षा — सब पर थेरवाद की गहरी छाप।</div>
+</div>
+
+<div class="school-card">
+  <div class="school-hdr">
+    <h3 style="color:#003366">महायान — महान् यान</h3>
+    <div class="school-pali">संस्कृत सूत्र · बोधिसत्त्व आदर्श · सार्वभौमिक मुक्ति</div>
+    <div class="school-geo">📍 चीन · जापान · कोरिया · वियतनाम · ताइवान</div>
+  </div>
+  <div class="school-body">लगभग 1ली सदी ईपू में भारत में उदय। नया आदर्श — बोधिसत्त्व — जो स्वयं मुक्ति विलम्बित करके सभी प्राणियों की मुक्ति में सहायक हो। नए सूत्र, नई दार्शनिक शाखाएँ (माध्यमक, योगाचार)। चीन में — चान (ज़ेन का पूर्वज), शुद्ध भूमि, तियान्ताई। जापान में — ज़ेन, जोदो, शिंगोन, तेन्दाई। महायान की कला, दर्शन और साधना ने चीनी और जापानी सभ्यता को गहराई से आकार दिया।</div>
+</div>
+
+<div class="school-card">
+  <div class="school-hdr">
+    <h3 style="color:#660066">वज्रयान — हीरे का यान</h3>
+    <div class="school-pali">तांत्रिक साधना · देवता योग · शीघ्र मार्ग</div>
+    <div class="school-geo">📍 तिब्बत · मंगोलिया · भूटान · नेपाल</div>
+  </div>
+  <div class="school-body">6–7वीं सदी में भारत में उदय, तिब्बत में पूर्ण विकास। सबसे विस्तृत और रहस्यमय शाखा — दृश्यावलोकन, मंत्र, मुद्रा, मण्डल — बोधि का शीघ्र मार्ग। गुरु-शिष्य परम्परा सर्वोपरि। तिब्बती बौद्ध धर्म ने उस भारतीय बौद्ध दर्शन को संरक्षित किया जो भारत में नष्ट हो गया। दलाई लामा परम्परा — अवलोकितेश्वर का अवतार — वज्रयान की सर्वाधिक प्रसिद्ध अभिव्यक्ति। 1959 के बाद तिब्बती प्रवासी समुदाय ने वज्रयान को विश्वभर में फैलाया।</div>
+</div>
+
+<!-- PALI LANGUAGE -->
+<div class="sec-hdr">
+  <h2>पालि — बुद्ध की शिक्षाओं की भाषा</h2>
+  <p>वह भाषा जिसे अधिकांश लोग नहीं जानते — पर जिसके शब्द सभी बोलते हैं</p>
+</div>
+
+<div class="intro-b" style="border-color:var(--teal)">
+  <p class="intro-lead">पालि — वह भाषा जिसमें बुद्ध की शिक्षाएँ पहली बार लिखी गईं — आज भी लाखों मन्दिरों में प्रतिदिन जपी जाती है।</p>
+  <p>संस्कृत जहाँ ब्राह्मणों की भाषा थी — पालि आम जन की भाषा थी। बुद्ध ने जानबूझकर संस्कृत में नहीं पढ़ाया — उन्होंने उस भाषा में पढ़ाया जो लोग बोलते थे। यही बौद्ध धर्म की सबसे मौलिक लोकतांत्रिक विशेषता है — ज्ञान पर किसी वर्ग का एकाधिकार नहीं।</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-title">त्रिपिटक — तीन टोकरियाँ</div>
+  <p>थेरवाद बौद्ध धर्म का सम्पूर्ण ग्रन्थ-संग्रह पालि में है — त्रिपिटक (तीन पिटक/टोकरियाँ): विनय पिटक (भिक्षु-नियम), सुत्त पिटक (बुद्ध के प्रवचन — धम्मपद सहित) और अभिधम्म पिटक (दार्शनिक विश्लेषण)। पूरा 40 खण्डों में। 400 वर्षों तक मौखिक परम्परा में जीवित रहा — श्रीलंका में 1ली सदी ईपू में लिपिबद्ध। मानव सभ्यता की सामूहिक स्मृति का अद्भुत कारनामा।</p>
+</div>
+
+<p style="font-size:13px;color:var(--muted);padding:10px 16px 6px;font-style:italic;font-family:'DM Sans',sans-serif">वे पालि शब्द जो आप पहले से जानते हैं:</p>
+
+<div class="pali-card">
+  <div class="pali-hdr">
+    <div class="pali-deva">धम्म</div>
+    <div><div class="pali-word">धम्म (पालि) — धर्म (संस्कृत)</div>
+    <div class="pali-type">शिक्षा · विधान · वास्तविकता का स्वभाव</div></div>
+  </div>
+  <div class="pali-body">बौद्ध धर्म में सबसे केन्द्रीय शब्द — बुद्ध की शिक्षा और उस सत्य का भी नाम जिसकी ओर शिक्षा संकेत करती है।</div>
+</div>
+
+<div class="pali-card">
+  <div class="pali-hdr">
+    <div class="pali-deva">निब्बान</div>
+    <div><div class="pali-word">निब्बान (पालि) — निर्वाण (संस्कृत)</div>
+    <div class="pali-type">मुक्ति · तृष्णा की अग्नि बुझना</div></div>
+  </div>
+  <div class="pali-body">शाब्दिक अर्थ — "बुझाना।" लालच, द्वेष और भ्रम की अग्नि का पूर्ण शमन। यह शब्द अंग्रेज़ी में 19वीं सदी में गया — अब आनन्द के लिए भी प्रयुक्त होता है।</div>
+</div>
+
+<div class="pali-card">
+  <div class="pali-hdr">
+    <div class="pali-deva">सति</div>
+    <div><div class="pali-word">सति (पालि) — स्मृति (संस्कृत)</div>
+    <div class="pali-type">माइंडफुलनेस · वर्तमान-क्षण-जागरूकता</div></div>
+  </div>
+  <div class="pali-body">आज का माइंडफुलनेस आन्दोलन सीधे सति का अनुवाद है। जॉन काबत-ज़िन ने 1979 में MIT में MBSR विकसित किया — विपश्यना ध्यान को चिकित्सा भाषा में। हर माइंडफुलनेस ऐप 2,500 वर्ष पुरानी साधना को छू रहा है।</div>
+</div>
+
+<div class="pali-card">
+  <div class="pali-hdr">
+    <div class="pali-deva">कम्म</div>
+    <div><div class="pali-word">कम्म (पालि) — कर्म (संस्कृत)</div>
+    <div class="pali-type">संकल्पपूर्ण क्रिया · कारण-फल का नियम</div></div>
+  </div>
+  <div class="pali-body">बुद्ध के लिए कम्म सटीक था — संकल्पित क्रिया और उसके परिणाम। भाग्य नहीं, कोई ब्रह्माण्डीय लेखा-जोखा नहीं। जो आप चुनकर करते हैं — वह आपको और आपके अनुभव को आकार देता है।</div>
+</div>
+
+<div class="pali-card">
+  <div class="pali-hdr">
+    <div class="pali-deva">दुक्ख</div>
+    <div><div class="pali-word">दुक्ख (पालि) — दुःख (संस्कृत)</div>
+    <div class="pali-type">पीड़ा · असंतोष · प्रथम आर्य सत्य</div></div>
+  </div>
+  <div class="pali-body">शाब्दिक अर्थ — "वह पहिया जिसकी धुरी टेढ़ी है।" केवल पीड़ा नहीं — वह सूक्ष्म असंतोष जो सुखद अनुभवों में भी बना रहता है। दुक्ख को पहचानना — निराशावाद नहीं — मुक्ति का पहला कदम है।</div>
+</div>
+
+<!-- NALANDA -->
+<div class="sec-hdr">
+  <h2>नालन्दा — वह विश्वविद्यालय जिसने एक सभ्यता का संचरण किया</h2>
+  <p>427–1197 ई॰ · विश्व का सर्वप्रथम आवासीय विश्वविद्यालय</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-title">नालन्दा — प्राचीन विश्व की महानतम संस्था</div>
+  <p>बिहार में लगभग 427 ई॰ में स्थापित — नालन्दा अपने चरम पर 10,000 छात्रों और 2,000 आचार्यों का घर था। यहाँ तर्कशास्त्र, व्याकरण, आयुर्वेद, गणित, ज्योतिष और दर्शन के साथ-साथ बौद्ध धर्मशास्त्र पढ़ाया जाता था। चीन, कोरिया, जापान, तिब्बत, मंगोलिया, फारस और तुर्की से विद्वार्थी आते थे। ह्वेनसांग यहाँ वर्षों पढ़ा। 1193 ई॰ में बख्तियार खिलजी ने नालन्दा को जला दिया और नष्ट कर दिया — मानव इतिहास की सबसे बड़ी बौद्धिक त्रासदियों में से एक। पुस्तकालय महीनों जलता रहा। तिब्बत — जिसने पहले से अनेक ग्रन्थों की प्रतियाँ बनाई थीं — इस ज्ञान का प्राथमिक संरक्षक बन गया। 2014 में नालन्दा विश्वविद्यालय फिर से खोला गया — उसी मूल स्थान के पास, बिहार में।</p>
+</div>
+
+<!-- MODERN RELEVANCE -->
+<div class="sec-hdr">
+  <h2>बौद्ध धर्म की मानव सभ्यता को देन</h2>
+  <p>2,500 वर्षों के बौद्ध विचार ने संसार को क्या दिया</p>
+</div>
+
+<div class="modern-card">
+  <div class="modern-title">विश्वविद्यालय प्रणाली</div>
+  <p>नालन्दा, विक्रमशिला और तक्षशिला — संगठित उच्च शिक्षा के प्रथम संस्थान थे, ऑक्सफोर्ड से 700 वर्ष पहले। जापान, कोरिया और तिब्बत के प्रथम विश्वविद्यालय बौद्ध मठ थे। बौद्ध देशों में साक्षरता दर ऐतिहासिक रूप से उच्च रही — क्योंकि संघ ने सार्वभौमिक शिक्षा दी।</p>
+</div>
+
+<div class="modern-card">
+  <div class="modern-title">करुणा को राज्य-नीति बनाया</div>
+  <p>अशोक का बौद्ध साम्राज्य इतिहास का पहला ऐसा था जिसने पशुओं के साथ-साथ मनुष्यों के कल्याण को राज्य-नीति में लिखा। पशु-चिकित्सालय, पर्यावरण संरक्षण, कैदियों के अधिकार — यह 2,300 वर्ष पहले। गाँधी ने स्वीकार किया कि अशोक के बौद्ध नैतिकता ने उनकी राजनीति को प्रभावित किया।</p>
+</div>
+
+<div class="modern-card">
+  <div class="modern-title">माइंडफुलनेस और आधुनिक मनोविज्ञान</div>
+  <p>MBSR, DBT, ACT — आधुनिक मनोचिकित्सा की ये विधियाँ सीधे बौद्ध विपश्यना और सति से आई हैं। यह बौद्ध खोज कि विचार तथ्य नहीं हैं, निर्णय-रहित जागरूकता पीड़ा घटाती है — अब तंत्रिका विज्ञान द्वारा प्रमाणित है। जापानी सौन्दर्यशास्त्र — वाबी-साबी, इकिगाई, मारी कोन्दो का "जो आनन्द दे वही रखो" — बौद्ध अनासक्ति के उत्तराधिकारी हैं।</p>
+</div>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div style="font-size:40px;margin-bottom:14px">🗺️</div>
+  <div class="jai">बिहार से पूरे विश्व तक</div>
+  <div class="victory">वह शिक्षा जो बिना सेना के फैली — और सर्वत्र पहुँची</div>
+  <div class="divider"></div>
+  <div style="background:transparent;padding:0 10px;text-align:center">
+    <div style="font-family:'Noto Serif Devanagari',serif;font-size:16px;color:var(--teal2);line-height:1.85;margin-bottom:8px">
+      "जाओ, भिक्षुओ — बहुतों के कल्याण के लिए,<br>बहुतों के सुख के लिए,<br>जगत पर करुणा करते हुए।"
+    </div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.45);font-family:'DM Sans',sans-serif">— गौतम बुद्ध · सारनाथ में शिष्यों को प्रथम निर्देश · 528 ईसा पूर्व</div>
+  </div>
+  <p class="footer-note">भाग 2 · बुद्ध पूर्णिमा 2026 · 1 मई<br>
+  सनातन सीरीज़ — धार्मिक परम्पराएँ</p>
+  <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.08)">
+    <div style="font-size:12px;color:rgba(255,255,255,0.65);font-family:'DM Sans',sans-serif">निर्मित</div>
+    <div style="font-family:'Lora',serif;font-size:15px;color:rgba(0,180,160,0.65);font-weight:600;margin-top:3px">Varun Dogar</div>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<div style="background:linear-gradient(135deg,#000A08 0%,#001510 100%);
+  border-top:2px solid rgba(0,95,95,0.35);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;color:rgba(0,180,160,0.4);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">Sanatanverse — मासिक न्यूज़लेटर</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.85);font-family:'Noto Serif Devanagari',serif;
+    line-height:1.75;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    हर महीने — नया गाइड · त्योहार · परम्परा का अर्थ · निःशुल्क
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide-hi" target="_blank" rel="noopener"
+    style="display:inline-block;background:#005F5F;color:white;text-decoration:none;
+      font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
+      padding:12px 28px;border-radius:100px">
+    🔔 सब्सक्राइब करें — निःशुल्क
+  </a>
+</div>
+
+</body>
+</html>

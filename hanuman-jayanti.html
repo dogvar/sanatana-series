@@ -211,6 +211,15 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 /* ── Chalisa group header ── */
 .chalisa-group { font-size:11px; letter-spacing:2px; text-transform:uppercase;
   color:var(--muted); padding:16px 16px 6px; font-weight:600; }
+
+/* Lang toggle */
+.lang-toggle { display:flex; gap:4px; align-items:center; margin-left:8px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; transition:all 0.15s; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+.lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
 </style>
 </head>
 <body>
@@ -222,6 +231,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     Sanatana Series
   </a>
   <span class="nav-om">ॐ</span>
+  <div class="lang-toggle">
+    <a class="lang-btn active" href="hanuman-jayanti.html">EN</a>
+    <a class="lang-btn" href="hanuman-jayanti-hi.html" style="border-color:rgba(0,0,0,0.15);color:rgba(0,0,0,0.45);">हिं</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -1176,6 +1189,31 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 </div>
 
 <!-- CLOSING -->
+
+<!-- Subscribe bar -->
+<div style="background:linear-gradient(135deg,#0D0400 0%,#1F0800 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.5);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.5);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide"
+    target="_blank" rel="noopener"
+    style="display:inline-block;background:#C94800;color:white;
+      text-decoration:none;font-family:'DM Sans',sans-serif;
+      font-size:14px;font-weight:600;padding:12px 28px;
+      border-radius:100px;transition:background 0.2s"
+    onmouseover="this.style.background='#E85D00'"
+    onmouseout="this.style.background='#C94800'">
+    🔔 Subscribe — Free
+  </a>
+</div>
+
 <div class="closing">
   <div style="font-size:36px;margin-bottom:16px">🏔️</div>
   <div class="jai">Jai Bajrang Bali!</div>

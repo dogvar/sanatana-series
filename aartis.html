@@ -1,18 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Aarti Sangrah — Sanatana Series</title>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Aarti Sangrah — Sacred Hindu Devotional Songs"/>
-<meta property="og:description" content="8 core aartis with Devanagari, Roman transliteration and English meaning. Om Jai Jagdish, Jai Ambe Gauri, Hanuman Aarti and more. Sanatana Series."/>
-<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
-<meta property="og:url" content="https://dogvar.github.io/sanatana-series/aartis.html"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta content="website" property="og:type"/>
+<meta content="Aarti Sangrah — Sacred Hindu Devotional Songs" property="og:title"/>
+<meta content="8 core aartis with Devanagari, Roman transliteration and English meaning. Om Jai Jagdish, Jai Ambe Gauri, Hanuman Aarti and more. Sanatana Series." property="og:description">
+<meta content="https://dogvar.github.io/sanatana-series/sanatana-og.png" property="og:image">
+<meta content="https://dogvar.github.io/sanatana-series/aartis.html" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Noto+Serif+Devanagari:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {
   --gold:#B8860B; --goldt:#D4A017; --saff:#C94800;
@@ -283,589 +284,700 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .closing .victory { color: rgba(255,255,255,0.72) !important; }
 .jai-deva { color: var(--gold, #B8860B) !important; }
 
-</style>
-</head>
-<body>
 
+/* ── Voice selector ── */
+.ab-voice {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(212,160,23,0.80);
+  border-radius: 6px;
+  padding: 3px 4px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 38px;
+  font-family: 'DM Sans', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.ab-voice:focus { outline: none; }
+.ab-voice option {
+  background: #0D0400;
+  color: white;
+  font-size: 13px;
+  padding: 4px;
+}
+
+
+
+
+/* When Hindi mode active */
+
+
+
+
+/* ── Google Translate Widget ── */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+}
+#google_translate_element .goog-te-gadget {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0 !important; /* hide "Powered by" text */
+}
+#google_translate_element .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(212,160,23,0.35) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  cursor: pointer;
+}
+#google_translate_element .goog-te-gadget-simple a {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#google_translate_element .goog-te-gadget-simple a span {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: none; /* hide language name, show only arrow */
+}
+/* Override Google's iframe banner */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
+
+/* Lang toggle */
+.lang-toggle { display:flex; gap:4px; align-items:center; margin-left:8px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; transition:all 0.15s; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+.lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
+</style>
+</meta></meta></head>
+<body>
 <!-- NAV -->
 <nav class="top-nav">
-  <a class="back" href="index.html">
-    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<a class="back" href="index.html">
+<svg fill="none" viewbox="0 0 16 16"><path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
     Sanatana Series
   </a>
-  <span class="nav-om">ॐ</span>
-</nav>
+<span class="nav-om">ॐ</span>
+  <div class="lang-toggle">
+    <a class="lang-btn active" href="aartis.html">EN</a>
+    <a class="lang-btn" href="aartis-hi.html" style="border-color:rgba(0,0,0,0.15);color:rgba(0,0,0,0.45);">हिं</a>
+  </div>
 
+  <div id="google_translate_element" style="margin-left:auto"></div>
+</nav>
 <!-- Audio Player Bar -->
 <div class="audio-bar" id="audioBar">
-  <button class="ab-play" id="abPlay" onclick="audioToggle()" aria-label="Play">
-    <svg id="abPlayIcon" viewBox="0 0 16 16" fill="white">
-      <polygon points="4,2 14,8 4,14"/>
-    </svg>
-  </button>
-  <div class="ab-info">
-    <div class="ab-section" id="abSection">Tap ▶ to listen</div>
-    <div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
-      <div class="ab-progress" id="abProgress"></div>
-    </div>
-  </div>
-  <button class="ab-skip" onclick="audioNext()" title="Next section" aria-label="Next section">
-    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-      <polygon points="3,3 12,9 3,15" fill="currentColor" stroke="none"/>
-      <line x1="14" y1="3" x2="14" y2="15"/>
-    </svg>
-  </button>
-  <button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<button aria-label="Play" class="ab-play" id="abPlay" onclick="audioToggle()">
+<svg fill="white" id="abPlayIcon" viewbox="0 0 16 16">
+<polygon points="4,2 14,8 4,14"></polygon>
+</svg>
+</button>
+<div class="ab-info">
+<div class="ab-section" id="abSection">Tap ▶ to listen</div>
+<button class="lang-btn" id="langHI" onclick="setLang('hi')">हिंदी</button>
 </div>
-
-
+<div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
+<div class="ab-progress" id="abProgress"></div>
+</div>
+</div>
+<button aria-label="Next section" class="ab-skip" onclick="audioNext()" title="Next section">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 18 18">
+<polygon fill="currentColor" points="3,3 12,9 3,15" stroke="none"></polygon>
+<line x1="14" x2="14" y1="3" y2="15"></line>
+</svg>
+</button>
+<button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<select class="ab-voice" id="abVoice" onchange="audioSetVoice(this.value)" title="Choose voice">
+<option value="">🎙</option>
+</select>
+</div>
 <!-- HERO -->
 <div class="hero">
-  <p class="eyebrow">Devotional Songs of Hindu Tradition</p>
-  <h1>Aarti Sangrah</h1>
-  <p class="hero-deva">आरती संग्रह</p>
-  <p class="hero-sub">Sacred hymns — Devanagari · Roman · English meaning</p>
+<p class="eyebrow">Devotional Songs of Hindu Tradition</p>
+<h1>Aarti Sangrah</h1>
+<p class="hero-deva">आरती संग्रह</p>
+<p class="hero-sub">Sacred hymns — Devanagari · Roman · English meaning</p>
 </div>
-
 <!-- WHAT IS AARTI -->
 <div class="what-box">
-  <p class="what-lead">Aarti (आरती) — the ritual of light — is the most universal act of Hindu devotion.</p>
-  <p>The word comes from Sanskrit Aratrika (आरात्रिक) — "that which removes darkness." An aarti is performed by waving a flame before the deity while singing a hymn — the light symbolising divine consciousness dispelling the darkness of ignorance. Aarti is sung at the end of every puja, at sunrise and sunset in temples, and at every festival. Even if you know nothing else about Hinduism, if you know the aarti, you can participate in any worship anywhere in India.</p>
+<p class="what-lead">Aarti (आरती) — the ritual of light — is the most universal act of Hindu devotion.</p>
+<p>The word comes from Sanskrit Aratrika (आरात्रिक) — "that which removes darkness." An aarti is performed by waving a flame before the deity while singing a hymn — the light symbolising divine consciousness dispelling the darkness of ignorance. Aarti is sung at the end of every puja, at sunrise and sunset in temples, and at every festival. Even if you know nothing else about Hinduism, if you know the aarti, you can participate in any worship anywhere in India.</p>
 </div>
-
 <!-- AARTI NAVIGATION -->
 <div class="aarti-nav">
-  <a href="#jagdish">Om Jai Jagdish</a>
-  <a href="#ambe">Jai Ambe Gauri</a>
-  <a href="#ganesh">Jai Ganesh</a>
-  <a href="#hanuman">Hanuman Aarti</a>
-  <a href="#shiv">Om Jai Shiv</a>
-  <a href="#ram">Jai Shri Ram</a>
-  <a href="#saraswati">Jai Saraswati</a>
-  <a href="#lakshmi">Jai Lakshmi Mata</a>
+<a href="#jagdish">Om Jai Jagdish</a>
+<a href="#ambe">Jai Ambe Gauri</a>
+<a href="#ganesh">Jai Ganesh</a>
+<a href="#hanuman">Hanuman Aarti</a>
+<a href="#shiv">Om Jai Shiv</a>
+<a href="#ram">Jai Shri Ram</a>
+<a href="#saraswati">Jai Saraswati</a>
+<a href="#lakshmi">Jai Lakshmi Mata</a>
 </div>
-
 <!-- ════ 1. OM JAI JAGDISH ════ -->
 <div class="aarti-card" id="jagdish">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#004080">1</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#004080">Lord Vishnu · Universal</div>
-      <h2 style="color:#004080">Om Jai Jagdish Hare</h2>
-      <div class="meaning">ॐ जय जगदीश हरे — "OM, glory to the Lord of the Universe"</div>
-    </div>
-  </div>
-  <div class="aarti-about">Composed by Pundit Shardha Ram Phillauri (1863). The most universally sung aarti in India — performed at virtually every puja of every deity. Many Hindus believe meditating on this aarti gives the blessings of all gods simultaneously. It is dedicated to Lord Vishnu (Jagdish = Lord of the Universe) but sung for all occasions.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।<br>भक्त जनों के संकट, दास जनों के संकट, क्षण में दूर करे॥</div>
-      <div class="v-roman">Om Jai Jagdish Hare, Swami Jai Jagdish Hare<br>Bhakt Jano Ke Sankat, Daas Jano Ke Sankat, Kshan Mein Door Kare</div>
-      <div class="v-meaning" style="border-color:#004080">OM, glory to the Lord of the Universe. In an instant He removes all afflictions of His devotees and servants.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">जो ध्यावे फल पावे, दुख बिनसे मन का।<br>सुख सम्पति घर आवे, कष्ट मिटे तन का॥</div>
-      <div class="v-roman">Jo Dhyave Phal Pave, Dukh Binse Man Ka<br>Sukh Sampati Ghar Aave, Kasht Mite Tan Ka</div>
-      <div class="v-meaning" style="border-color:#004080">Whoever meditates on Him receives the fruit — the sorrow of the mind vanishes. Happiness and prosperity come home; the suffering of the body is relieved.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">मात पिता तुम मेरे, शरण गहूं किसकी।<br>तुम बिन और न दूजा, आस करूं जिसकी॥</div>
-      <div class="v-roman">Maat Pita Tum Mere, Sharan Gahun Kiskee<br>Tum Bin Aur Na Dooja, Aas Karun Jiskee</div>
-      <div class="v-meaning" style="border-color:#004080">You are my mother and father — whose shelter shall I seek? Without You there is no other in whom I place my hope.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">तुम पूरन परमात्मा, तुम अन्तर्यामी।<br>पारब्रह्म परमेश्वर, तुम सबके स्वामी॥</div>
-      <div class="v-roman">Tum Puran Parmatma, Tum Antaryami<br>Par-Brahm Parmeshwar, Tum Sabke Swami</div>
-      <div class="v-meaning" style="border-color:#004080">You are the complete Supreme Soul, the inner witness of all. You are the Absolute Brahman, the Supreme Lord, master of all creation.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">तुम करुणा के सागर, तुम पालनकर्ता।<br>मैं मूरख खल कामी, कृपा करो भर्ता॥</div>
-      <div class="v-roman">Tum Karuna Ke Saagar, Tum Palankarta<br>Main Moorakh Khal Kami, Kripa Karo Bharta</div>
-      <div class="v-meaning" style="border-color:#004080">You are the ocean of compassion, the sustainer of all. I am foolish, corrupt and full of desire — have mercy on me, O Lord.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">तुम हो एक अगोचर, सबके प्राणपति।<br>किस विधि मिलूं दयामय, तुमको मैं कुमति॥</div>
-      <div class="v-roman">Tum Ho Ek Agochar, Sabke Pranpati<br>Kis Vidhi Milun Dayamay, Tumko Main Kumati</div>
-      <div class="v-meaning" style="border-color:#004080">You are the one invisible, the lord of the life of all. How can I, of poor intellect, find you, O compassionate one?</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">दीनबंधु दुखहर्ता, ठाकुर तुम मेरे।<br>अपने हाथ उठाओ, अपनी शरण लगाओ, द्वार खड़ा तेरे॥</div>
-      <div class="v-roman">Deenbandhu Dukhaharta, Thakur Tum Mere<br>Apne Haath Uthaao, Apni Sharan Lagaao, Dwar Khada Tere</div>
-      <div class="v-meaning" style="border-color:#004080">Friend of the humble, destroyer of sorrow — You are my Lord. Lift up Your hands, take me under Your shelter — I stand at Your door.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">विषय विकार मिटाओ, पाप हरो देवा।<br>श्रद्धा भक्ति बढ़ाओ, श्रद्धा प्रेम बढ़ाओ, संतन की सेवा॥</div>
-      <div class="v-roman">Vishay Vikaar Mitaao, Paap Haro Deva<br>Shradha Bhakti Badhaao, Shradha Prem Badhaao, Santan Ki Seva</div>
-      <div class="v-meaning" style="border-color:#004080">Remove worldly attachments and corruption, destroy sin, O Divine One. Increase my faith and devotion, increase love and faith — let me serve Your saints.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Jagdish+Hare+aarti" target="_blank" rel="noopener" style="color:#004080;border-color:#004080">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#004080">1</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#004080">Lord Vishnu · Universal</div>
+<h2 style="color:#004080">Om Jai Jagdish Hare</h2>
+<div class="meaning">ॐ जय जगदीश हरे — "OM, glory to the Lord of the Universe"</div>
+</div>
+</div>
+<div class="aarti-about">Composed by Pundit Shardha Ram Phillauri (1863). The most universally sung aarti in India — performed at virtually every puja of every deity. Many Hindus believe meditating on this aarti gives the blessings of all gods simultaneously. It is dedicated to Lord Vishnu (Jagdish = Lord of the Universe) but sung for all occasions.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे।<br/>भक्त जनों के संकट, दास जनों के संकट, क्षण में दूर करे॥</div>
+<div class="v-roman">Om Jai Jagdish Hare, Swami Jai Jagdish Hare<br/>Bhakt Jano Ke Sankat, Daas Jano Ke Sankat, Kshan Mein Door Kare</div>
+<div class="v-meaning" style="border-color:#004080">OM, glory to the Lord of the Universe. In an instant He removes all afflictions of His devotees and servants.</div>
+</div>
+<div class="verse">
+<div class="v-deva">जो ध्यावे फल पावे, दुख बिनसे मन का।<br/>सुख सम्पति घर आवे, कष्ट मिटे तन का॥</div>
+<div class="v-roman">Jo Dhyave Phal Pave, Dukh Binse Man Ka<br/>Sukh Sampati Ghar Aave, Kasht Mite Tan Ka</div>
+<div class="v-meaning" style="border-color:#004080">Whoever meditates on Him receives the fruit — the sorrow of the mind vanishes. Happiness and prosperity come home; the suffering of the body is relieved.</div>
+</div>
+<div class="verse">
+<div class="v-deva">मात पिता तुम मेरे, शरण गहूं किसकी।<br/>तुम बिन और न दूजा, आस करूं जिसकी॥</div>
+<div class="v-roman">Maat Pita Tum Mere, Sharan Gahun Kiskee<br/>Tum Bin Aur Na Dooja, Aas Karun Jiskee</div>
+<div class="v-meaning" style="border-color:#004080">You are my mother and father — whose shelter shall I seek? Without You there is no other in whom I place my hope.</div>
+</div>
+<div class="verse">
+<div class="v-deva">तुम पूरन परमात्मा, तुम अन्तर्यामी।<br/>पारब्रह्म परमेश्वर, तुम सबके स्वामी॥</div>
+<div class="v-roman">Tum Puran Parmatma, Tum Antaryami<br/>Par-Brahm Parmeshwar, Tum Sabke Swami</div>
+<div class="v-meaning" style="border-color:#004080">You are the complete Supreme Soul, the inner witness of all. You are the Absolute Brahman, the Supreme Lord, master of all creation.</div>
+</div>
+<div class="verse">
+<div class="v-deva">तुम करुणा के सागर, तुम पालनकर्ता।<br/>मैं मूरख खल कामी, कृपा करो भर्ता॥</div>
+<div class="v-roman">Tum Karuna Ke Saagar, Tum Palankarta<br/>Main Moorakh Khal Kami, Kripa Karo Bharta</div>
+<div class="v-meaning" style="border-color:#004080">You are the ocean of compassion, the sustainer of all. I am foolish, corrupt and full of desire — have mercy on me, O Lord.</div>
+</div>
+<div class="verse">
+<div class="v-deva">तुम हो एक अगोचर, सबके प्राणपति।<br/>किस विधि मिलूं दयामय, तुमको मैं कुमति॥</div>
+<div class="v-roman">Tum Ho Ek Agochar, Sabke Pranpati<br/>Kis Vidhi Milun Dayamay, Tumko Main Kumati</div>
+<div class="v-meaning" style="border-color:#004080">You are the one invisible, the lord of the life of all. How can I, of poor intellect, find you, O compassionate one?</div>
+</div>
+<div class="verse">
+<div class="v-deva">दीनबंधु दुखहर्ता, ठाकुर तुम मेरे।<br/>अपने हाथ उठाओ, अपनी शरण लगाओ, द्वार खड़ा तेरे॥</div>
+<div class="v-roman">Deenbandhu Dukhaharta, Thakur Tum Mere<br/>Apne Haath Uthaao, Apni Sharan Lagaao, Dwar Khada Tere</div>
+<div class="v-meaning" style="border-color:#004080">Friend of the humble, destroyer of sorrow — You are my Lord. Lift up Your hands, take me under Your shelter — I stand at Your door.</div>
+</div>
+<div class="verse">
+<div class="v-deva">विषय विकार मिटाओ, पाप हरो देवा।<br/>श्रद्धा भक्ति बढ़ाओ, श्रद्धा प्रेम बढ़ाओ, संतन की सेवा॥</div>
+<div class="v-roman">Vishay Vikaar Mitaao, Paap Haro Deva<br/>Shradha Bhakti Badhaao, Shradha Prem Badhaao, Santan Ki Seva</div>
+<div class="v-meaning" style="border-color:#004080">Remove worldly attachments and corruption, destroy sin, O Divine One. Increase my faith and devotion, increase love and faith — let me serve Your saints.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Jagdish+Hare+aarti" rel="noopener" style="color:#004080;border-color:#004080" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Jagdish+Hare+aarti+lyrics+meaning" target="_blank" rel="noopener" style="color:var(--muted);border-color:var(--border)">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Jagdish+Hare+aarti+lyrics+meaning" rel="noopener" style="color:var(--muted);border-color:var(--border)" target="_blank">
       With explanation
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 2. JAI AMBE GAURI ════ -->
 <div class="aarti-card" id="ambe">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#880035">2</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#880035">Goddess Durga · Navratri · All Shakti festivals</div>
-      <h2 style="color:#880035">Jai Ambe Gauri</h2>
-      <div class="meaning">जय अम्बे गौरी — "Glory to the Golden-Hued Mother Ambika"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The primary aarti of Goddess Durga, sung during Navratri and all Devi festivals. Ambe refers to the primordial mother (Amba = mother); Gauri refers to her fair/golden complexion as Parvati. This aarti praises all nine forms of the Goddess. It is traditionally sung at the end of the evening prayer throughout the nine nights of Navratri.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">जय अम्बे गौरी, मैया जय श्यामा गौरी।<br>तुमको निशदिन ध्यावत, हरि ब्रह्मा शिवरी॥</div>
-      <div class="v-roman">Jai Ambe Gauri, Maiya Jai Shyama Gauri<br>Tumko Nishdin Dhavat, Hari Brahma Shivari</div>
-      <div class="v-meaning" style="border-color:#880035">Glory to Ambe Gauri! Mother, glory to Shyama Gauri! Vishnu, Brahma and Shiva meditate on You day and night without rest.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">माँग सिन्दूर विराजत, टीको मृगमद को।<br>उज्ज्वल से दो नैना, चन्द्रवदन नीको॥</div>
-      <div class="v-roman">Maang Sindoor Virajat, Teeko Mrigmad Ko<br>Ujjawal Se Do Naina, Chandravadan Neeko</div>
-      <div class="v-meaning" style="border-color:#880035">Sindoor adorns her parting, a tilak of musk-deer fragrance on her brow. Her two eyes are radiant, her moon-like face is beautiful.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">कनक समान कलेवर, रक्ताम्बर राजे।<br>रक्त पुष्प गल माला, कण्ठन पर साजे॥</div>
-      <div class="v-roman">Kanak Samaan Kalevar, Raktaambar Raaje<br>Rakt Pushp Gal Maala, Kanthan Par Saaje</div>
-      <div class="v-meaning" style="border-color:#880035">Her body is golden like burnished gold, her red garment shines magnificently. A garland of red flowers adorns her throat, beautifully decorated.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">केहरि वाहन राजत, खड़ग खप्पर धारी।<br>सुर-नर-मुनिजन सेवत, तिनके दुखहारी॥</div>
-      <div class="v-roman">Kehari Vahan Raajat, Khadag Khappar Dhari<br>Sur-Nar-Munijan Sevat, Tinke Dukhhari</div>
-      <div class="v-meaning" style="border-color:#880035">She sits magnificently on her lion, bearing sword and skull-cup. Gods, humans and sages serve her — she who destroys their suffering.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">तुम ही जग की माता, तुम ही हो भर्ता।<br>भक्तन के दुख हर्ता, सुख सम्पति कर्ता॥</div>
-      <div class="v-roman">Tum Hi Jag Ki Maata, Tum Hi Ho Bharta<br>Bhaktan Ke Dukh Harta, Sukh Sampati Karta</div>
-      <div class="v-meaning" style="border-color:#880035">You alone are the mother of the world, You alone are its sustainer. You remove the sufferings of devotees and bestow happiness and prosperity.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">अम्बे माँ की आरती जो कोई नर गावे।<br>कहत शिवानन्द स्वामी, सुख सम्पति पावे॥</div>
-      <div class="v-roman">Ambe Maa Ki Aarti Jo Koi Nar Gaave<br>Kahat Shivananand Swami, Sukh Sampati Paave</div>
-      <div class="v-meaning" style="border-color:#880035">Whoever sings this aarti of Mother Ambe — says Swami Shivananda — shall attain happiness and prosperity.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Ambe+Gauri+aarti" target="_blank" rel="noopener" style="color:#880035;border-color:#880035">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#880035">2</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#880035">Goddess Durga · Navratri · All Shakti festivals</div>
+<h2 style="color:#880035">Jai Ambe Gauri</h2>
+<div class="meaning">जय अम्बे गौरी — "Glory to the Golden-Hued Mother Ambika"</div>
+</div>
+</div>
+<div class="aarti-about">The primary aarti of Goddess Durga, sung during Navratri and all Devi festivals. Ambe refers to the primordial mother (Amba = mother); Gauri refers to her fair/golden complexion as Parvati. This aarti praises all nine forms of the Goddess. It is traditionally sung at the end of the evening prayer throughout the nine nights of Navratri.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">जय अम्बे गौरी, मैया जय श्यामा गौरी।<br/>तुमको निशदिन ध्यावत, हरि ब्रह्मा शिवरी॥</div>
+<div class="v-roman">Jai Ambe Gauri, Maiya Jai Shyama Gauri<br/>Tumko Nishdin Dhavat, Hari Brahma Shivari</div>
+<div class="v-meaning" style="border-color:#880035">Glory to Ambe Gauri! Mother, glory to Shyama Gauri! Vishnu, Brahma and Shiva meditate on You day and night without rest.</div>
+</div>
+<div class="verse">
+<div class="v-deva">माँग सिन्दूर विराजत, टीको मृगमद को।<br/>उज्ज्वल से दो नैना, चन्द्रवदन नीको॥</div>
+<div class="v-roman">Maang Sindoor Virajat, Teeko Mrigmad Ko<br/>Ujjawal Se Do Naina, Chandravadan Neeko</div>
+<div class="v-meaning" style="border-color:#880035">Sindoor adorns her parting, a tilak of musk-deer fragrance on her brow. Her two eyes are radiant, her moon-like face is beautiful.</div>
+</div>
+<div class="verse">
+<div class="v-deva">कनक समान कलेवर, रक्ताम्बर राजे।<br/>रक्त पुष्प गल माला, कण्ठन पर साजे॥</div>
+<div class="v-roman">Kanak Samaan Kalevar, Raktaambar Raaje<br/>Rakt Pushp Gal Maala, Kanthan Par Saaje</div>
+<div class="v-meaning" style="border-color:#880035">Her body is golden like burnished gold, her red garment shines magnificently. A garland of red flowers adorns her throat, beautifully decorated.</div>
+</div>
+<div class="verse">
+<div class="v-deva">केहरि वाहन राजत, खड़ग खप्पर धारी।<br/>सुर-नर-मुनिजन सेवत, तिनके दुखहारी॥</div>
+<div class="v-roman">Kehari Vahan Raajat, Khadag Khappar Dhari<br/>Sur-Nar-Munijan Sevat, Tinke Dukhhari</div>
+<div class="v-meaning" style="border-color:#880035">She sits magnificently on her lion, bearing sword and skull-cup. Gods, humans and sages serve her — she who destroys their suffering.</div>
+</div>
+<div class="verse">
+<div class="v-deva">तुम ही जग की माता, तुम ही हो भर्ता।<br/>भक्तन के दुख हर्ता, सुख सम्पति कर्ता॥</div>
+<div class="v-roman">Tum Hi Jag Ki Maata, Tum Hi Ho Bharta<br/>Bhaktan Ke Dukh Harta, Sukh Sampati Karta</div>
+<div class="v-meaning" style="border-color:#880035">You alone are the mother of the world, You alone are its sustainer. You remove the sufferings of devotees and bestow happiness and prosperity.</div>
+</div>
+<div class="verse">
+<div class="v-deva">अम्बे माँ की आरती जो कोई नर गावे।<br/>कहत शिवानन्द स्वामी, सुख सम्पति पावे॥</div>
+<div class="v-roman">Ambe Maa Ki Aarti Jo Koi Nar Gaave<br/>Kahat Shivananand Swami, Sukh Sampati Paave</div>
+<div class="v-meaning" style="border-color:#880035">Whoever sings this aarti of Mother Ambe — says Swami Shivananda — shall attain happiness and prosperity.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Ambe+Gauri+aarti" rel="noopener" style="color:#880035;border-color:#880035" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 3. JAI GANESH ════ -->
 <div class="aarti-card" id="ganesh">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#CC6600">3</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#CC6600">Lord Ganesha · All beginnings · Ganesh Chaturthi</div>
-      <h2 style="color:#CC6600">Jai Ganesh Jai Ganesh Deva</h2>
-      <div class="meaning">जय गणेश देवा — "Glory to Lord Ganesha"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The most popular aarti of Lord Ganesha — the remover of obstacles and lord of all beginnings. Sung before every puja, every important undertaking, every exam, every journey. Ganesha is always worshipped first before any other deity. His aarti sets the tone for every ceremony. The mother in this aarti refers to Goddess Parvati; the father is Lord Shiva.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">जय गणेश जय गणेश जय गणेश देवा।<br>माता जाकी पार्वती पिता महादेवा॥</div>
-      <div class="v-roman">Jai Ganesh Jai Ganesh Jai Ganesh Deva<br>Maata Jaaki Parvati Pita Mahadeva</div>
-      <div class="v-meaning" style="border-color:#CC6600">Glory to Ganesha! Glory to Ganesha! Glory to Lord Ganesha! Whose mother is Parvati and father is Mahadeva (Shiva).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">एकदन्त दयावन्त, चार भुजाधारी।<br>माथे सिन्दूर सोहे, मूसे की सवारी॥</div>
-      <div class="v-roman">Ekdant Dayavant, Chaar Bhujaadhaari<br>Maathe Sindoor Sohe, Moose Ki Savari</div>
-      <div class="v-meaning" style="border-color:#CC6600">Single-tusked, compassionate, bearing four arms. Sindoor adorns his forehead; the mouse is his vehicle.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">पान चढे, फूल चढे, और चढे मेवा।<br>लड्डुअन का भोग लगे, संत करें सेवा॥</div>
-      <div class="v-roman">Paan Chadhe, Phool Chadhe, Aur Chadhe Meva<br>Ladduan Ka Bhog Lage, Sant Karen Seva</div>
-      <div class="v-meaning" style="border-color:#CC6600">Pan is offered, flowers are offered, and dry fruits too. An offering of laddoos is placed, and saints perform His service.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">अंधन को आँख देत, कोढ़िन को काया।<br>बाँझन को पुत्र देत, निर्धन को माया॥</div>
-      <div class="v-roman">Andhan Ko Aankh Det, Kodin Ko Kaya<br>Baanjhan Ko Putr Det, Nirdhan Ko Maya</div>
-      <div class="v-meaning" style="border-color:#CC6600">He gives sight to the blind, a healthy body to the diseased. He gives children to the childless, and wealth to the poor.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">दीनन की लाज रखो, शम्भु सुतकारी।<br>कामना को पूर्ण करो, जाऊं बलिहारी॥</div>
-      <div class="v-roman">Deenan Ki Laaj Rakho, Shambhu Sutkari<br>Kamna Ko Poorn Karo, Jaun Balihaaree</div>
-      <div class="v-meaning" style="border-color:#CC6600">Protect the honour of the humble, O son of Shambhu. Fulfil all desires — I sacrifice myself to You in devotion.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Ganesh+Deva+aarti" target="_blank" rel="noopener" style="color:#CC6600;border-color:#CC6600">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#CC6600">3</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#CC6600">Lord Ganesha · All beginnings · Ganesh Chaturthi</div>
+<h2 style="color:#CC6600">Jai Ganesh Jai Ganesh Deva</h2>
+<div class="meaning">जय गणेश देवा — "Glory to Lord Ganesha"</div>
+</div>
+</div>
+<div class="aarti-about">The most popular aarti of Lord Ganesha — the remover of obstacles and lord of all beginnings. Sung before every puja, every important undertaking, every exam, every journey. Ganesha is always worshipped first before any other deity. His aarti sets the tone for every ceremony. The mother in this aarti refers to Goddess Parvati; the father is Lord Shiva.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">जय गणेश जय गणेश जय गणेश देवा।<br/>माता जाकी पार्वती पिता महादेवा॥</div>
+<div class="v-roman">Jai Ganesh Jai Ganesh Jai Ganesh Deva<br/>Maata Jaaki Parvati Pita Mahadeva</div>
+<div class="v-meaning" style="border-color:#CC6600">Glory to Ganesha! Glory to Ganesha! Glory to Lord Ganesha! Whose mother is Parvati and father is Mahadeva (Shiva).</div>
+</div>
+<div class="verse">
+<div class="v-deva">एकदन्त दयावन्त, चार भुजाधारी।<br/>माथे सिन्दूर सोहे, मूसे की सवारी॥</div>
+<div class="v-roman">Ekdant Dayavant, Chaar Bhujaadhaari<br/>Maathe Sindoor Sohe, Moose Ki Savari</div>
+<div class="v-meaning" style="border-color:#CC6600">Single-tusked, compassionate, bearing four arms. Sindoor adorns his forehead; the mouse is his vehicle.</div>
+</div>
+<div class="verse">
+<div class="v-deva">पान चढे, फूल चढे, और चढे मेवा।<br/>लड्डुअन का भोग लगे, संत करें सेवा॥</div>
+<div class="v-roman">Paan Chadhe, Phool Chadhe, Aur Chadhe Meva<br/>Ladduan Ka Bhog Lage, Sant Karen Seva</div>
+<div class="v-meaning" style="border-color:#CC6600">Pan is offered, flowers are offered, and dry fruits too. An offering of laddoos is placed, and saints perform His service.</div>
+</div>
+<div class="verse">
+<div class="v-deva">अंधन को आँख देत, कोढ़िन को काया।<br/>बाँझन को पुत्र देत, निर्धन को माया॥</div>
+<div class="v-roman">Andhan Ko Aankh Det, Kodin Ko Kaya<br/>Baanjhan Ko Putr Det, Nirdhan Ko Maya</div>
+<div class="v-meaning" style="border-color:#CC6600">He gives sight to the blind, a healthy body to the diseased. He gives children to the childless, and wealth to the poor.</div>
+</div>
+<div class="verse">
+<div class="v-deva">दीनन की लाज रखो, शम्भु सुतकारी।<br/>कामना को पूर्ण करो, जाऊं बलिहारी॥</div>
+<div class="v-roman">Deenan Ki Laaj Rakho, Shambhu Sutkari<br/>Kamna Ko Poorn Karo, Jaun Balihaaree</div>
+<div class="v-meaning" style="border-color:#CC6600">Protect the honour of the humble, O son of Shambhu. Fulfil all desires — I sacrifice myself to You in devotion.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Ganesh+Deva+aarti" rel="noopener" style="color:#CC6600;border-color:#CC6600" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 4. HANUMAN AARTI ════ -->
 <div class="aarti-card" id="hanuman">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#C94800">4</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#C94800">Lord Hanuman · Tuesdays &amp; Saturdays · Hanuman Jayanti</div>
-      <h2 style="color:#C94800">Aarti Kije Hanuman Lala Ki</h2>
-      <div class="meaning">आरती कीजे हनुमान लला की — "Perform the aarti of young Hanuman"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The primary aarti of Lord Hanuman — sung after the Hanuman Chalisa, every Tuesday and Saturday (his sacred days), and on Hanuman Jayanti. This aarti celebrates Hanuman's extraordinary qualities: his strength, his devotion to Rama, his role in the Lanka War, and his status as the divine remover of all obstacles and negative forces.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">आरती कीजे हनुमान लला की।<br>दुष्ट दलन रघुनाथ कला की॥</div>
-      <div class="v-roman">Aarti Kije Hanuman Lala Ki<br>Dusht Dalan Raghunath Kala Ki</div>
-      <div class="v-meaning" style="border-color:#C94800">Perform the aarti of young Hanuman — He who destroys evil and embodies the glory of Lord Raghunath (Rama).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">जाके बल से गिरिवर काँपे।<br>रोग दोष जाके निकट न झाँपे॥</div>
-      <div class="v-roman">Jake Bal Se Girivar Kaanpe<br>Rog Dosh Jake Nikat Na Jhaanpe</div>
-      <div class="v-meaning" style="border-color:#C94800">By whose strength the greatest mountains tremble. Disease and defects dare not come near Him.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">अंजनि पुत्र महा बलदाई।<br>संतन के प्रभु सदा सहाई॥</div>
-      <div class="v-roman">Anjani Putr Maha Baldai<br>Santan Ke Prabhu Sada Sahai</div>
-      <div class="v-meaning" style="border-color:#C94800">Son of Anjani, the greatly powerful one. Lord of the saints, always their helper and support.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">दे बीड़ा रघुनाथ पठाए।<br>लंका जारि सिया सुधि लाए॥</div>
-      <div class="v-roman">De Beera Raghunath Pathaye<br>Lanka Jaari Siya Sudhi Laaye</div>
-      <div class="v-meaning" style="border-color:#C94800">Sent on a mission by Raghunath (Rama). He burned Lanka and brought back news of Sita.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">लंका विध्वंस कीन्ह रघुराई।<br>तुलसीदास प्रभु कीरति गाई॥</div>
-      <div class="v-roman">Lanka Vidhwans Keen Raghurai<br>Tulsidas Prabhu Keerti Gaai</div>
-      <div class="v-meaning" style="border-color:#C94800">Lanka was destroyed under the banner of Raghurai (Rama). Tulsidas has sung the glory of this great Lord.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Aarti+Kije+Hanuman+Lala+Ki" target="_blank" rel="noopener" style="color:#C94800;border-color:#C94800">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#C94800">4</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#C94800">Lord Hanuman · Tuesdays &amp; Saturdays · Hanuman Jayanti</div>
+<h2 style="color:#C94800">Aarti Kije Hanuman Lala Ki</h2>
+<div class="meaning">आरती कीजे हनुमान लला की — "Perform the aarti of young Hanuman"</div>
+</div>
+</div>
+<div class="aarti-about">The primary aarti of Lord Hanuman — sung after the Hanuman Chalisa, every Tuesday and Saturday (his sacred days), and on Hanuman Jayanti. This aarti celebrates Hanuman's extraordinary qualities: his strength, his devotion to Rama, his role in the Lanka War, and his status as the divine remover of all obstacles and negative forces.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">आरती कीजे हनुमान लला की।<br/>दुष्ट दलन रघुनाथ कला की॥</div>
+<div class="v-roman">Aarti Kije Hanuman Lala Ki<br/>Dusht Dalan Raghunath Kala Ki</div>
+<div class="v-meaning" style="border-color:#C94800">Perform the aarti of young Hanuman — He who destroys evil and embodies the glory of Lord Raghunath (Rama).</div>
+</div>
+<div class="verse">
+<div class="v-deva">जाके बल से गिरिवर काँपे।<br/>रोग दोष जाके निकट न झाँपे॥</div>
+<div class="v-roman">Jake Bal Se Girivar Kaanpe<br/>Rog Dosh Jake Nikat Na Jhaanpe</div>
+<div class="v-meaning" style="border-color:#C94800">By whose strength the greatest mountains tremble. Disease and defects dare not come near Him.</div>
+</div>
+<div class="verse">
+<div class="v-deva">अंजनि पुत्र महा बलदाई।<br/>संतन के प्रभु सदा सहाई॥</div>
+<div class="v-roman">Anjani Putr Maha Baldai<br/>Santan Ke Prabhu Sada Sahai</div>
+<div class="v-meaning" style="border-color:#C94800">Son of Anjani, the greatly powerful one. Lord of the saints, always their helper and support.</div>
+</div>
+<div class="verse">
+<div class="v-deva">दे बीड़ा रघुनाथ पठाए।<br/>लंका जारि सिया सुधि लाए॥</div>
+<div class="v-roman">De Beera Raghunath Pathaye<br/>Lanka Jaari Siya Sudhi Laaye</div>
+<div class="v-meaning" style="border-color:#C94800">Sent on a mission by Raghunath (Rama). He burned Lanka and brought back news of Sita.</div>
+</div>
+<div class="verse">
+<div class="v-deva">लंका विध्वंस कीन्ह रघुराई।<br/>तुलसीदास प्रभु कीरति गाई॥</div>
+<div class="v-roman">Lanka Vidhwans Keen Raghurai<br/>Tulsidas Prabhu Keerti Gaai</div>
+<div class="v-meaning" style="border-color:#C94800">Lanka was destroyed under the banner of Raghurai (Rama). Tulsidas has sung the glory of this great Lord.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Aarti+Kije+Hanuman+Lala+Ki" rel="noopener" style="color:#C94800;border-color:#C94800" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Hanuman+Chalisa+full" target="_blank" rel="noopener" style="color:var(--muted);border-color:var(--border)">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Hanuman+Chalisa+full" rel="noopener" style="color:var(--muted);border-color:var(--border)" target="_blank">
       Hanuman Chalisa (40 verses)
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 5. OM JAI SHIV OMKARA ════ -->
 <div class="aarti-card" id="shiv">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#4A0060">5</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#4A0060">Lord Shiva · Mondays · Maha Shivaratri · Shravan month</div>
-      <h2 style="color:#4A0060">Om Jai Shiv Omkara</h2>
-      <div class="meaning">ॐ जय शिव ओंकारा — "OM, glory to Shiva, the source of OM"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The primary aarti of Lord Shiva — the destroyer and transformer in the Hindu Trinity. Sung on Mondays (Shiva's day), during Maha Shivaratri, and throughout the sacred month of Shravan. Shiva is described here in all his forms: as the cosmic dancer, as the one who wears the Ganga in his matted locks, as the supreme renunciant who holds all siddhi powers.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">ॐ जय शिव ओंकारा, स्वामी जय शिव ओंकारा।<br>ब्रह्मा विष्णु सदाशिव, अर्धांगी धारा॥</div>
-      <div class="v-roman">Om Jai Shiv Omkara, Swami Jai Shiv Omkara<br>Brahma Vishnu Sadashiv, Ardhaangi Dhara</div>
-      <div class="v-meaning" style="border-color:#4A0060">OM, glory to Shiva the source of OM! Brahma, Vishnu and Sadashiva — three aspects of the One held in the half-body form (Ardhanarishvara).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">एकानन चतुरानन पञ्चानन राजे।<br>हंसासन गरुड़ासन वृषवाहन साजे॥</div>
-      <div class="v-roman">Ekaanan Chaturaanan Panchanan Raaje<br>Hansaasan Garudaasan Vrushvaahan Saaje</div>
-      <div class="v-meaning" style="border-color:#4A0060">One-faced, four-faced, five-faced — all faces shine gloriously. Riding the swan (Brahma), the eagle (Vishnu), the bull (Shiva) — all united.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">दो भुज चार चतुर्भुज दसभुज अति सोहे।<br>तीनों रूप निरखते त्रिभुवन जन मोहे॥</div>
-      <div class="v-roman">Do Bhuj Chaar Chaturbhuj Dasbhuj Ati Sohe<br>Teenon Roop Nirakhte Tribhuvan Jan Mohe</div>
-      <div class="v-meaning" style="border-color:#4A0060">Two-armed, four-armed, ten-armed — all radiantly beautiful. Beholding these three forms, all the people of the three worlds are enchanted.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">अक्षमाला वनमाला मुण्डमाला धारी।<br>चन्दन मृगमद सोहे भाले शशि धारी॥</div>
-      <div class="v-roman">Akshamala Vanamala Mundamala Dhari<br>Chandan Mrigmad Sohe Bhaale Shashi Dhari</div>
-      <div class="v-meaning" style="border-color:#4A0060">He wears the rosary of beads, garland of forest flowers, and garland of skulls. Sandalwood and musk-deer fragrance adorn him; a crescent moon rests on his forehead.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">ब्रह्माण्डों के ईश्वर, नन्दिवाहन राजे।<br>काशी में सदा बसे, दीनों के दुख भाजे॥</div>
-      <div class="v-roman">Brahmaandon Ke Ishwar, Nandivahan Raaje<br>Kaashi Mein Sada Base, Deenon Ke Dukh Bhaaje</div>
-      <div class="v-meaning" style="border-color:#4A0060">Lord of all universes, He rides magnificently on Nandi the bull. He dwells forever in Kashi (Varanasi), removing the sorrows of the humble.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Shiv+Omkara+aarti" target="_blank" rel="noopener" style="color:#4A0060;border-color:#4A0060">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#4A0060">5</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#4A0060">Lord Shiva · Mondays · Maha Shivaratri · Shravan month</div>
+<h2 style="color:#4A0060">Om Jai Shiv Omkara</h2>
+<div class="meaning">ॐ जय शिव ओंकारा — "OM, glory to Shiva, the source of OM"</div>
+</div>
+</div>
+<div class="aarti-about">The primary aarti of Lord Shiva — the destroyer and transformer in the Hindu Trinity. Sung on Mondays (Shiva's day), during Maha Shivaratri, and throughout the sacred month of Shravan. Shiva is described here in all his forms: as the cosmic dancer, as the one who wears the Ganga in his matted locks, as the supreme renunciant who holds all siddhi powers.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">ॐ जय शिव ओंकारा, स्वामी जय शिव ओंकारा।<br/>ब्रह्मा विष्णु सदाशिव, अर्धांगी धारा॥</div>
+<div class="v-roman">Om Jai Shiv Omkara, Swami Jai Shiv Omkara<br/>Brahma Vishnu Sadashiv, Ardhaangi Dhara</div>
+<div class="v-meaning" style="border-color:#4A0060">OM, glory to Shiva the source of OM! Brahma, Vishnu and Sadashiva — three aspects of the One held in the half-body form (Ardhanarishvara).</div>
+</div>
+<div class="verse">
+<div class="v-deva">एकानन चतुरानन पञ्चानन राजे।<br/>हंसासन गरुड़ासन वृषवाहन साजे॥</div>
+<div class="v-roman">Ekaanan Chaturaanan Panchanan Raaje<br/>Hansaasan Garudaasan Vrushvaahan Saaje</div>
+<div class="v-meaning" style="border-color:#4A0060">One-faced, four-faced, five-faced — all faces shine gloriously. Riding the swan (Brahma), the eagle (Vishnu), the bull (Shiva) — all united.</div>
+</div>
+<div class="verse">
+<div class="v-deva">दो भुज चार चतुर्भुज दसभुज अति सोहे।<br/>तीनों रूप निरखते त्रिभुवन जन मोहे॥</div>
+<div class="v-roman">Do Bhuj Chaar Chaturbhuj Dasbhuj Ati Sohe<br/>Teenon Roop Nirakhte Tribhuvan Jan Mohe</div>
+<div class="v-meaning" style="border-color:#4A0060">Two-armed, four-armed, ten-armed — all radiantly beautiful. Beholding these three forms, all the people of the three worlds are enchanted.</div>
+</div>
+<div class="verse">
+<div class="v-deva">अक्षमाला वनमाला मुण्डमाला धारी।<br/>चन्दन मृगमद सोहे भाले शशि धारी॥</div>
+<div class="v-roman">Akshamala Vanamala Mundamala Dhari<br/>Chandan Mrigmad Sohe Bhaale Shashi Dhari</div>
+<div class="v-meaning" style="border-color:#4A0060">He wears the rosary of beads, garland of forest flowers, and garland of skulls. Sandalwood and musk-deer fragrance adorn him; a crescent moon rests on his forehead.</div>
+</div>
+<div class="verse">
+<div class="v-deva">ब्रह्माण्डों के ईश्वर, नन्दिवाहन राजे।<br/>काशी में सदा बसे, दीनों के दुख भाजे॥</div>
+<div class="v-roman">Brahmaandon Ke Ishwar, Nandivahan Raaje<br/>Kaashi Mein Sada Base, Deenon Ke Dukh Bhaaje</div>
+<div class="v-meaning" style="border-color:#4A0060">Lord of all universes, He rides magnificently on Nandi the bull. He dwells forever in Kashi (Varanasi), removing the sorrows of the humble.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Om+Jai+Shiv+Omkara+aarti" rel="noopener" style="color:#4A0060;border-color:#4A0060" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 6. JAI SHRI RAM ════ -->
 <div class="aarti-card" id="ram">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#C94800">6</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#C94800">Lord Rama · Ram Navami · Daily Ram puja</div>
-      <h2 style="color:#C94800">Aarti Shri Ramayana Ji Ki</h2>
-      <div class="meaning">आरती श्री रामायण जी की — Aarti of the sacred Ramayana</div>
-    </div>
-  </div>
-  <div class="aarti-about">This unique aarti is not just to Lord Rama — it is performed to the sacred text of the Ramayana itself. In Hindu tradition, the scripture is treated as a living divine presence. When the Ramayana is read in a home or temple, this aarti concludes the reading. It praises the Ramayana for containing the complete wisdom of dharma, brahmavidya (knowledge of the Absolute) and devotion.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">आरती श्री रामायण जी की। कीर्ति कलित ललित सिय पी की॥</div>
-      <div class="v-roman">Aarti Shri Ramayan Ji Ki, Keerti Kalit Lalit Siya Pi Ki</div>
-      <div class="v-meaning" style="border-color:#C94800">The aarti of the sacred Ramayana — which celebrates the beautiful and eternal glory of Siya (Sita) and her beloved (Rama).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">गावत ब्रह्मादिक मुनि नारद, बाल्मीक बिगियान बखानी।<br>शुक सनकादिक शेष अरु शारद, बरनि पवन सुत कीरति मानी॥</div>
-      <div class="v-roman">Gaavat Brahmaadik Muni Narad, Valmiki Bigiyaan Bakhaani<br>Shuk Sankaadik Shesh Aru Shard, Barni Pavan Sut Keerti Maani</div>
-      <div class="v-meaning" style="border-color:#C94800">Brahma, sage Narada and Valmiki sing it, proclaiming its spiritual wisdom. Shuka, Sanaka, Shesha and Sharada (Saraswati) have all honoured the glory of the son of the wind (Hanuman).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">गावत सेवक भक्त मुरारी, पावत सुख सम्पति नर नारी।<br>सुर मुनि भावत पूर्ण हितकारी, अनुज सहित मिलि कीरति पावत॥</div>
-      <div class="v-roman">Gaavat Sevak Bhakt Muraari, Paavat Sukh Sampati Nar Naari<br>Sur Muni Bhaavat Poorn Hitkaari, Anuj Sahit Mil Keerti Paavat</div>
-      <div class="v-meaning" style="border-color:#C94800">Devotees and servants who sing it receive happiness and prosperity, men and women both. Gods and sages find it completely beneficial — and together with brothers they attain glory.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Aarti+Shri+Ramayana+Ji+Ki" target="_blank" rel="noopener" style="color:#C94800;border-color:#C94800">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#C94800">6</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#C94800">Lord Rama · Ram Navami · Daily Ram puja</div>
+<h2 style="color:#C94800">Aarti Shri Ramayana Ji Ki</h2>
+<div class="meaning">आरती श्री रामायण जी की — Aarti of the sacred Ramayana</div>
+</div>
+</div>
+<div class="aarti-about">This unique aarti is not just to Lord Rama — it is performed to the sacred text of the Ramayana itself. In Hindu tradition, the scripture is treated as a living divine presence. When the Ramayana is read in a home or temple, this aarti concludes the reading. It praises the Ramayana for containing the complete wisdom of dharma, brahmavidya (knowledge of the Absolute) and devotion.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">आरती श्री रामायण जी की। कीर्ति कलित ललित सिय पी की॥</div>
+<div class="v-roman">Aarti Shri Ramayan Ji Ki, Keerti Kalit Lalit Siya Pi Ki</div>
+<div class="v-meaning" style="border-color:#C94800">The aarti of the sacred Ramayana — which celebrates the beautiful and eternal glory of Siya (Sita) and her beloved (Rama).</div>
+</div>
+<div class="verse">
+<div class="v-deva">गावत ब्रह्मादिक मुनि नारद, बाल्मीक बिगियान बखानी।<br/>शुक सनकादिक शेष अरु शारद, बरनि पवन सुत कीरति मानी॥</div>
+<div class="v-roman">Gaavat Brahmaadik Muni Narad, Valmiki Bigiyaan Bakhaani<br/>Shuk Sankaadik Shesh Aru Shard, Barni Pavan Sut Keerti Maani</div>
+<div class="v-meaning" style="border-color:#C94800">Brahma, sage Narada and Valmiki sing it, proclaiming its spiritual wisdom. Shuka, Sanaka, Shesha and Sharada (Saraswati) have all honoured the glory of the son of the wind (Hanuman).</div>
+</div>
+<div class="verse">
+<div class="v-deva">गावत सेवक भक्त मुरारी, पावत सुख सम्पति नर नारी।<br/>सुर मुनि भावत पूर्ण हितकारी, अनुज सहित मिलि कीरति पावत॥</div>
+<div class="v-roman">Gaavat Sevak Bhakt Muraari, Paavat Sukh Sampati Nar Naari<br/>Sur Muni Bhaavat Poorn Hitkaari, Anuj Sahit Mil Keerti Paavat</div>
+<div class="v-meaning" style="border-color:#C94800">Devotees and servants who sing it receive happiness and prosperity, men and women both. Gods and sages find it completely beneficial — and together with brothers they attain glory.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Aarti+Shri+Ramayana+Ji+Ki" rel="noopener" style="color:#C94800;border-color:#C94800" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Shri+Ram+Stuti+aarti" target="_blank" rel="noopener" style="color:var(--muted);border-color:var(--border)">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Shri+Ram+Stuti+aarti" rel="noopener" style="color:var(--muted);border-color:var(--border)" target="_blank">
       Ram Stuti
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 7. JAI SARASWATI MATA ════ -->
 <div class="aarti-card" id="saraswati">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#1B5E20">7</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#1B5E20">Goddess Saraswati · Vasant Panchami · Before study</div>
-      <h2 style="color:#1B5E20">Jai Saraswati Mata</h2>
-      <div class="meaning">जय सरस्वती माता — "Glory to Mother Saraswati"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The aarti of Goddess Saraswati — deity of knowledge, music, arts, wisdom and learning. Sung on Vasant Panchami (her birthday in spring), on the first day of a school term, before examinations, before any creative or intellectual endeavour. Saraswati holds the veena (musical instrument), a book (Vedas), and a rosary, seated on a white lotus. Especially relevant for students.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">जय सरस्वती माता, मैया जय सरस्वती माता।<br>सद्गुण वैभव शालिनी, त्रिभुवन विख्याता॥</div>
-      <div class="v-roman">Jai Saraswati Mata, Maiya Jai Saraswati Mata<br>Sadgun Vaibhav Shalini, Tribhuvan Vikhyata</div>
-      <div class="v-meaning" style="border-color:#1B5E20">Glory to Mother Saraswati! Endowed with good virtues and splendour, renowned throughout all three worlds.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">चन्द्रवदनी पद्मासिनी, द्युति मंगलकारी।<br>सोहे शुभ हंस सवारी, अतुल तेजधारी॥</div>
-      <div class="v-roman">Chandravadani Padmaasini, Dyuti Mangalkari<br>Sohe Shubh Hans Savari, Atul Tejdhari</div>
-      <div class="v-meaning" style="border-color:#1B5E20">Moon-faced, seated on a lotus, radiant and auspicious. She shines on her sacred swan, bearing incomparable brilliance.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">बाएं कर में वीणा, दाएं कर माला।<br>शीश मुकुट मणि सोहे, गल मोतियन माला॥</div>
-      <div class="v-roman">Baaye Kar Mein Veena, Daaye Kar Mala<br>Sheesh Mukut Mani Sohe, Gal Motiyan Mala</div>
-      <div class="v-meaning" style="border-color:#1B5E20">In her left hand a veena (lute), in her right a rosary. A jewelled crown adorns her head; a garland of pearls adorns her neck.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">जो चित लाय भजे, तुमको भव से तारे।<br>मातु पिता भाई बन्धु, यही सब हमारे॥</div>
-      <div class="v-roman">Jo Chit Laay Bhaje, Tumko Bhav Se Taare<br>Matu Pita Bhai Bandhu, Yahi Sab Hamare</div>
-      <div class="v-meaning" style="border-color:#1B5E20">Whoever devotedly worships You is carried across the ocean of existence. Mother, father, brother, friend — You are all of these to us.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Saraswati+Mata+aarti" target="_blank" rel="noopener" style="color:#1B5E20;border-color:#1B5E20">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#1B5E20">7</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#1B5E20">Goddess Saraswati · Vasant Panchami · Before study</div>
+<h2 style="color:#1B5E20">Jai Saraswati Mata</h2>
+<div class="meaning">जय सरस्वती माता — "Glory to Mother Saraswati"</div>
+</div>
+</div>
+<div class="aarti-about">The aarti of Goddess Saraswati — deity of knowledge, music, arts, wisdom and learning. Sung on Vasant Panchami (her birthday in spring), on the first day of a school term, before examinations, before any creative or intellectual endeavour. Saraswati holds the veena (musical instrument), a book (Vedas), and a rosary, seated on a white lotus. Especially relevant for students.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">जय सरस्वती माता, मैया जय सरस्वती माता।<br/>सद्गुण वैभव शालिनी, त्रिभुवन विख्याता॥</div>
+<div class="v-roman">Jai Saraswati Mata, Maiya Jai Saraswati Mata<br/>Sadgun Vaibhav Shalini, Tribhuvan Vikhyata</div>
+<div class="v-meaning" style="border-color:#1B5E20">Glory to Mother Saraswati! Endowed with good virtues and splendour, renowned throughout all three worlds.</div>
+</div>
+<div class="verse">
+<div class="v-deva">चन्द्रवदनी पद्मासिनी, द्युति मंगलकारी।<br/>सोहे शुभ हंस सवारी, अतुल तेजधारी॥</div>
+<div class="v-roman">Chandravadani Padmaasini, Dyuti Mangalkari<br/>Sohe Shubh Hans Savari, Atul Tejdhari</div>
+<div class="v-meaning" style="border-color:#1B5E20">Moon-faced, seated on a lotus, radiant and auspicious. She shines on her sacred swan, bearing incomparable brilliance.</div>
+</div>
+<div class="verse">
+<div class="v-deva">बाएं कर में वीणा, दाएं कर माला।<br/>शीश मुकुट मणि सोहे, गल मोतियन माला॥</div>
+<div class="v-roman">Baaye Kar Mein Veena, Daaye Kar Mala<br/>Sheesh Mukut Mani Sohe, Gal Motiyan Mala</div>
+<div class="v-meaning" style="border-color:#1B5E20">In her left hand a veena (lute), in her right a rosary. A jewelled crown adorns her head; a garland of pearls adorns her neck.</div>
+</div>
+<div class="verse">
+<div class="v-deva">जो चित लाय भजे, तुमको भव से तारे।<br/>मातु पिता भाई बन्धु, यही सब हमारे॥</div>
+<div class="v-roman">Jo Chit Laay Bhaje, Tumko Bhav Se Taare<br/>Matu Pita Bhai Bandhu, Yahi Sab Hamare</div>
+<div class="v-meaning" style="border-color:#1B5E20">Whoever devotedly worships You is carried across the ocean of existence. Mother, father, brother, friend — You are all of these to us.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Saraswati+Mata+aarti" rel="noopener" style="color:#1B5E20;border-color:#1B5E20" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-  </div>
 </div>
-
+</div>
 <!-- ════ 8. JAI LAKSHMI MATA ════ -->
 <div class="aarti-card" id="lakshmi">
-  <div class="aarti-header">
-    <div class="aarti-num" style="background:#B8860B">8</div>
-    <div class="aarti-header-text">
-      <div class="deity" style="color:#B8860B">Goddess Lakshmi · Diwali · Friday puja · Prosperity</div>
-      <h2 style="color:#B8860B">Jai Lakshmi Mata</h2>
-      <div class="meaning">जय लक्ष्मी माता — "Glory to Mother Lakshmi"</div>
-    </div>
-  </div>
-  <div class="aarti-about">The primary aarti of Goddess Lakshmi — goddess of wealth, prosperity, beauty, grace and abundance. Sung every Friday (her sacred day), every Diwali evening, and during all Lakshmi pujas. Lakshmi is also Vishnu's consort — where she is present, Vishnu resides too. The aarti praises her four forms: Mahakali, Mahasaraswati, Mahalakshmi and Maha Durga.</div>
-  <div class="verses">
-
-    <div class="verse">
-      <div class="v-deva">जय लक्ष्मी माता, मैया जय लक्ष्मी माता।<br>तुमको निशदिन सेवत, हर विष्णु विधाता॥</div>
-      <div class="v-roman">Jai Lakshmi Mata, Maiya Jai Lakshmi Mata<br>Tumko Nishdin Sevat, Har Vishnu Vidhata</div>
-      <div class="v-meaning" style="border-color:#B8860B">Glory to Mother Lakshmi! Shiva, Vishnu and Brahma (Vidhata) serve You day and night without rest.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">उमा रमा ब्रह्माणी, तुम ही जग माता।<br>सूर्य चन्द्रमा ध्यावत, नारद ऋषि गाता॥</div>
-      <div class="v-roman">Uma Rama Brahmaani, Tum Hi Jag Mata<br>Surya Chandrama Dhyavat, Narad Rishi Gata</div>
-      <div class="v-meaning" style="border-color:#B8860B">Uma (Parvati), Rama (Lakshmi), Brahmani — You alone are the mother of the world. The Sun and Moon meditate on You; sage Narada sings Your praises.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">दुर्गा रूप निरंजनी, सुख सम्पति दाता।<br>जो कोई तुमको ध्यावत, ऋद्धि सिद्धि पाता॥</div>
-      <div class="v-roman">Durga Roop Niranjani, Sukh Sampati Data<br>Jo Koi Tumko Dhyavat, Riddhi Siddhi Pata</div>
-      <div class="v-meaning" style="border-color:#B8860B">In the form of Durga, the pure and stainless one — giver of happiness and prosperity. Whoever meditates on You attains Riddhi (wealth) and Siddhi (accomplishment).</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">तुम पाताल निवासिनी, तुम ही शुभदाता।<br>कर्म प्रभाव प्रकाशिनी, भवनिधि त्राता॥</div>
-      <div class="v-roman">Tum Pataal Nivasini, Tum Hi Shubhdata<br>Karm Prabhav Prakashini, Bhavnidhi Trata</div>
-      <div class="v-meaning" style="border-color:#B8860B">You dwell in the netherworld, You alone bestow auspiciousness. You illuminate the effects of karma, saving us from the ocean of worldly existence.</div>
-    </div>
-
-    <div class="verse">
-      <div class="v-deva">जिस घर में तुम रहती, सब सद्गुण आता।<br>सब सम्भव हो जाता, मन नहिं घबराता॥</div>
-      <div class="v-roman">Jis Ghar Mein Tum Rahati, Sab Sadgun Aata<br>Sab Sambhav Ho Jaata, Man Nahin Ghabrata</div>
-      <div class="v-meaning" style="border-color:#B8860B">In whatever home You dwell, all good qualities come. Everything becomes possible; the mind does not fear.</div>
-    </div>
-
-  </div>
-  <div class="listen-row">
-    <a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Lakshmi+Mata+aarti" target="_blank" rel="noopener" style="color:#B8860B;border-color:#B8860B">
-      <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"/></svg>
+<div class="aarti-header">
+<div class="aarti-num" style="background:#B8860B">8</div>
+<div class="aarti-header-text">
+<div class="deity" style="color:#B8860B">Goddess Lakshmi · Diwali · Friday puja · Prosperity</div>
+<h2 style="color:#B8860B">Jai Lakshmi Mata</h2>
+<div class="meaning">जय लक्ष्मी माता — "Glory to Mother Lakshmi"</div>
+</div>
+</div>
+<div class="aarti-about">The primary aarti of Goddess Lakshmi — goddess of wealth, prosperity, beauty, grace and abundance. Sung every Friday (her sacred day), every Diwali evening, and during all Lakshmi pujas. Lakshmi is also Vishnu's consort — where she is present, Vishnu resides too. The aarti praises her four forms: Mahakali, Mahasaraswati, Mahalakshmi and Maha Durga.</div>
+<div class="verses">
+<div class="verse">
+<div class="v-deva">जय लक्ष्मी माता, मैया जय लक्ष्मी माता।<br/>तुमको निशदिन सेवत, हर विष्णु विधाता॥</div>
+<div class="v-roman">Jai Lakshmi Mata, Maiya Jai Lakshmi Mata<br/>Tumko Nishdin Sevat, Har Vishnu Vidhata</div>
+<div class="v-meaning" style="border-color:#B8860B">Glory to Mother Lakshmi! Shiva, Vishnu and Brahma (Vidhata) serve You day and night without rest.</div>
+</div>
+<div class="verse">
+<div class="v-deva">उमा रमा ब्रह्माणी, तुम ही जग माता।<br/>सूर्य चन्द्रमा ध्यावत, नारद ऋषि गाता॥</div>
+<div class="v-roman">Uma Rama Brahmaani, Tum Hi Jag Mata<br/>Surya Chandrama Dhyavat, Narad Rishi Gata</div>
+<div class="v-meaning" style="border-color:#B8860B">Uma (Parvati), Rama (Lakshmi), Brahmani — You alone are the mother of the world. The Sun and Moon meditate on You; sage Narada sings Your praises.</div>
+</div>
+<div class="verse">
+<div class="v-deva">दुर्गा रूप निरंजनी, सुख सम्पति दाता।<br/>जो कोई तुमको ध्यावत, ऋद्धि सिद्धि पाता॥</div>
+<div class="v-roman">Durga Roop Niranjani, Sukh Sampati Data<br/>Jo Koi Tumko Dhyavat, Riddhi Siddhi Pata</div>
+<div class="v-meaning" style="border-color:#B8860B">In the form of Durga, the pure and stainless one — giver of happiness and prosperity. Whoever meditates on You attains Riddhi (wealth) and Siddhi (accomplishment).</div>
+</div>
+<div class="verse">
+<div class="v-deva">तुम पाताल निवासिनी, तुम ही शुभदाता।<br/>कर्म प्रभाव प्रकाशिनी, भवनिधि त्राता॥</div>
+<div class="v-roman">Tum Pataal Nivasini, Tum Hi Shubhdata<br/>Karm Prabhav Prakashini, Bhavnidhi Trata</div>
+<div class="v-meaning" style="border-color:#B8860B">You dwell in the netherworld, You alone bestow auspiciousness. You illuminate the effects of karma, saving us from the ocean of worldly existence.</div>
+</div>
+<div class="verse">
+<div class="v-deva">जिस घर में तुम रहती, सब सद्गुण आता।<br/>सब सम्भव हो जाता, मन नहिं घबराता॥</div>
+<div class="v-roman">Jis Ghar Mein Tum Rahati, Sab Sadgun Aata<br/>Sab Sambhav Ho Jaata, Man Nahin Ghabrata</div>
+<div class="v-meaning" style="border-color:#B8860B">In whatever home You dwell, all good qualities come. Everything becomes possible; the mind does not fear.</div>
+</div>
+</div>
+<div class="listen-row">
+<a class="listen-btn" href="https://www.youtube.com/results?search_query=Jai+Lakshmi+Mata+aarti" rel="noopener" style="color:#B8860B;border-color:#B8860B" target="_blank">
+<svg fill="currentColor" viewbox="0 0 14 14"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7S10.87 0 7 0zm-1.5 9.5v-5l4 2.5-4 2.5z"></path></svg>
       Listen on YouTube
     </a>
-  </div>
 </div>
-
+</div>
 <!-- HOW TO PERFORM AARTI -->
 <p class="sec-label">How to Perform Aarti</p>
 <div style="background:white;border-radius:var(--r);margin:0 16px 20px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.06)">
-  <ol style="padding-left:18px;display:grid;gap:10px">
-    <li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Light the lamp:</strong> Use a small brass or clay lamp with ghee or oil and a cotton wick. If unavailable, a simple candle works. The flame represents divine consciousness.</li>
-    <li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Face the deity:</strong> Stand or sit before the idol or image. Ring a bell (if available) to announce your presence to the divine.</li>
-    <li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Move the lamp in circles:</strong> Wave the lamp in slow, clockwise circles before the deity — usually 7 circles. This act is itself the aarti.</li>
-    <li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Sing the aarti:</strong> Sing or recite the appropriate aarti — alone or with family. Even reading without singing is meritorious.</li>
-    <li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Receive the blessing:</strong> Pass the flame to all present — each person briefly cups their hands over it and brings them to their eyes and forehead. This is receiving the divine light.</li>
-  </ol>
+<ol style="padding-left:18px;display:grid;gap:10px">
+<li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Light the lamp:</strong> Use a small brass or clay lamp with ghee or oil and a cotton wick. If unavailable, a simple candle works. The flame represents divine consciousness.</li>
+<li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Face the deity:</strong> Stand or sit before the idol or image. Ring a bell (if available) to announce your presence to the divine.</li>
+<li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Move the lamp in circles:</strong> Wave the lamp in slow, clockwise circles before the deity — usually 7 circles. This act is itself the aarti.</li>
+<li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Sing the aarti:</strong> Sing or recite the appropriate aarti — alone or with family. Even reading without singing is meritorious.</li>
+<li style="font-size:13.5px;color:var(--ink2);line-height:1.6"><strong style="color:var(--ink)">Receive the blessing:</strong> Pass the flame to all present — each person briefly cups their hands over it and brings them to their eyes and forehead. This is receiving the divine light.</li>
+</ol>
 </div>
-
 <!-- FOOTER -->
-<div class="footer">
-  <div class="footer-series">Sanatana Series</div>
-  <div class="footer-sub">Hinduism for the World · 2026</div>
-  <p class="attr-name">Varun Dogar</p>
-  <p class="attr-claude">With assistance from Claude · Anthropic</p>
+
+<!-- Subscribe bar -->
+<div style="background:linear-gradient(135deg,#0D0400 0%,#1F0800 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.5);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.5);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide"
+    target="_blank" rel="noopener"
+    style="display:inline-block;background:#C94800;color:white;
+      text-decoration:none;font-family:'DM Sans',sans-serif;
+      font-size:14px;font-weight:600;padding:12px 28px;
+      border-radius:100px;transition:background 0.2s"
+    onmouseover="this.style.background='#E85D00'"
+    onmouseout="this.style.background='#C94800'">
+    🔔 Subscribe — Free
+  </a>
 </div>
 
-
+<div class="footer">
+<div class="footer-series">Sanatana Series</div>
+<div class="footer-sub">Hinduism for the World · 2026</div>
+<p class="attr-name">Varun Dogar</p>
+<p class="attr-claude">With assistance from Claude · Anthropic</p>
+</div>
 <script>
-// ── Sanatana Series Audio Player ──
-// Skips all Devanagari, reads Roman + English content
+// ════ Sanatana Series Audio + Bilingual Player ════
 
 const SKIP_CLASSES = [
   'shloka-deva','jai-deva','mantra-deva','v-deva',
   'hero-deva','sh-deva','ch-name-deva','series-deva',
-  'phil-deva','shloka-deva','om','nav-om','top-nav',
-  'audio-bar','footer','attr-claude','attr-name',
-  'footer-series','footer-sub','eyebrow','hero-tags',
-  'hero-tag','hero-stats','h-stat-label','aarti-nav',
-  'listen-row','listen-btn','ch-verses','sec-label',
-  'cal-header','cal-tag','cal-date','soon-tag','ch-tag'
+  'phil-deva','om','nav-om','top-nav','audio-bar','lang-bar',
+  'footer','attr-claude','attr-name','footer-series','footer-sub',
+  'eyebrow','hero-tags','hero-tag','hero-stats','h-stat-label',
+  'aarti-nav','listen-row','listen-btn','ch-verses','sec-label',
+  'cal-header','cal-tag','cal-date','soon-tag','ch-tag','hi-content'
 ];
+const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH',
+  'LINE','CIRCLE','POLYGON','RECT','ELLIPSE','META','SELECT','OPTION'];
 
-const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH','LINE',
-                   'CIRCLE','POLYGON','RECT','ELLIPSE','META'];
-
-let segments = [];
-let curIdx = 0;
-let utterance = null;
-let speaking = false;
-let speeds = [0.8, 1.0, 1.4, 1.8];
-let speedIdx = 1;
+let segments = [], curIdx = 0, utterance = null, speaking = false;
+let speeds = [0.8,1.0,1.4,1.8], speedIdx = 1;
 let lastHighlighted = null;
+let selectedVoice = null;
+// ── Voice loader ──
+function loadVoices() {
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return;
+  const sel = document.getElementById('abVoice');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">🎙</option>';
 
+  // Filter to English + Hindi voices only, prioritise Indian
+  const priority = ['Rishi','Lekha','Aditi','Google हिन्दी',
+    'Hindi','Indian','Heera','Veena'];
+  const en = voices.filter(v => v.lang.startsWith('en'));
+  const hi = voices.filter(v => v.lang.startsWith('hi'));
+
+  // Sort: Indian voices first
+  const sortFn = (a,b) => {
+    const aP = priority.some(p => a.name.includes(p)) ? 0 : 1;
+    const bP = priority.some(p => b.name.includes(p)) ? 0 : 1;
+    return aP - bP;
+  };
+  en.sort(sortFn); hi.sort(sortFn);
+
+  if (en.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'English';
+    en.slice(0,8).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+  if (hi.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'हिंदी';
+    hi.slice(0,6).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+
+  // Auto-select best voice for current language
+  autoSelectVoice();
+}
+
+function autoSelectVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  const sel = document.getElementById('abVoice');
+  const priority = ['Rishi','Heera','Veena','en-IN','Indian'];
+
+  let best = voices.find(v => priority.some(p =>
+    v.name.includes(p) || v.lang.includes(p)
+  ));
+  if (!best) best = voices.find(v =>
+    v.lang.startsWith(currentLang === 'hi' ? 'hi' : 'en')
+  );
+  if (!best) best = voices.find(v => v.lang.startsWith('en'));
+
+  if (best) {
+    selectedVoice = best;
+    if (sel) sel.value = best.name;
+  }
+}
+
+function audioSetVoice(name) {
+  const voices = window.speechSynthesis.getVoices();
+  selectedVoice = voices.find(v => v.name === name) || null;
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
+}
+
+window.speechSynthesis.onvoiceschanged = loadVoices;
+setTimeout(loadVoices, 500);
+
+// ── Segment builder ──
 function shouldSkipEl(el) {
   if (!el || el.nodeType !== 1) return false;
   if (SKIP_TAGS.includes(el.tagName)) return true;
-  const cls = (el.className || '').toString();
+  const cls = (el.className||'').toString();
   if (SKIP_CLASSES.some(c => cls.includes(c))) return true;
-  // Skip empty or icon-only elements
-  const text = el.textContent.trim();
-  if (text.length < 3) return true;
+  if (el.textContent.trim().length < 3) return true;
+  // Skip hidden elements
+  if (el.style.display === 'none') return true;
   return false;
 }
 
 function extractText(el) {
-  // Clone and remove all Devanagari elements
   const clone = el.cloneNode(true);
-  // Remove deva children
   clone.querySelectorAll(
     '.shloka-deva,.jai-deva,.mantra-deva,.v-deva,.hero-deva,' +
-    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om'
+    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om,' +
+    'button,nav,.audio-bar,.lang-bar,.listen-row,svg,.top-nav,.hi-content'
   ).forEach(d => d.remove());
-  // Remove buttons, links, nav
-  clone.querySelectorAll('button,nav,.audio-bar,.listen-row,svg,.top-nav').forEach(d => d.remove());
-  return clone.textContent.replace(/\s+/g, ' ').trim();
+  return clone.textContent.replace(/\s+/g,' ').trim();
 }
 
 function buildSegments() {
   segments = [];
-  // Walk all meaningful elements
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_ELEMENT,
-    {
-      acceptNode(node) {
-        if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, {
+    acceptNode(node) {
+      if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
     }
-  );
-
+  });
   const readable = ['H1','H2','H3','P','LI','BLOCKQUOTE'];
   let node;
   while ((node = walker.nextNode())) {
     if (!readable.includes(node.tagName)) continue;
-    // Skip if ancestor is a skip class
     let skip = false;
     let p = node.parentElement;
     while (p && p !== document.body) {
@@ -873,114 +985,75 @@ function buildSegments() {
       p = p.parentElement;
     }
     if (skip) continue;
-
     const text = extractText(node);
     if (text.length < 5) continue;
-
-    // Get section label from nearest h2/h3
     let label = '';
-    if (node.tagName === 'H2' || node.tagName === 'H3') {
-      label = text.substring(0, 50);
+    if (node.tagName==='H2'||node.tagName==='H3') {
+      label = text.substring(0,50);
     } else {
-      // Find previous heading
-      let prev = node.previousElementSibling;
-      let searchEl = node.parentElement;
-      while (searchEl && !label) {
-        const hs = searchEl.querySelectorAll('h2,h3');
+      let s = node.parentElement;
+      while (s && !label) {
+        const hs = s.querySelectorAll('h2,h3');
         if (hs.length) label = hs[hs.length-1].textContent.trim().substring(0,50);
-        searchEl = searchEl.parentElement;
+        s = s.parentElement;
       }
     }
-
-    segments.push({ el: node, text, label: label || 'Introduction' });
+    segments.push({ el:node, text, label: label||'Introduction' });
   }
   return segments.length;
 }
 
+// ── Playback ──
 function audioToggle() {
-  if (!segments.length) {
-    const n = buildSegments();
-    if (!n) { alert('No readable content found.'); return; }
-  }
+  if (!segments.length) { const n = buildSegments(); if (!n) return; }
   if (speaking) {
     window.speechSynthesis.cancel();
-    speaking = false;
-    updatePlayBtn(false);
-    clearHighlight();
-  } else {
-    playFrom(curIdx);
-  }
+    speaking = false; updatePlayBtn(false); clearHighlight();
+  } else { playFrom(curIdx); }
 }
 
 function playFrom(idx) {
   window.speechSynthesis.cancel();
   if (idx >= segments.length) {
-    speaking = false;
-    curIdx = 0;
-    updatePlayBtn(false);
-    clearHighlight();
-    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to restart';
+    speaking = false; curIdx = 0; updatePlayBtn(false); clearHighlight();
+    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to replay';
     document.getElementById('abProgress').style.width = '100%';
     return;
   }
   curIdx = idx;
   const seg = segments[idx];
-
-  // Update UI
   document.getElementById('abSection').textContent = seg.label;
   document.getElementById('abProgress').style.width =
-    ((idx / segments.length) * 100) + '%';
-
-  // Highlight
+    ((idx/segments.length)*100)+'%';
   clearHighlight();
   seg.el.classList.add('audio-reading');
   lastHighlighted = seg.el;
-  // Scroll into view if needed
-  seg.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  seg.el.scrollIntoView({ behavior:'smooth', block:'center' });
 
-  // Speak
   utterance = new SpeechSynthesisUtterance(seg.text);
   utterance.rate = speeds[speedIdx];
   utterance.pitch = 1.0;
+  utterance.lang = 'en-IN';
+  if (selectedVoice) utterance.voice = selectedVoice;
 
-  // Pick best voice
-  const voices = window.speechSynthesis.getVoices();
-  const preferred = voices.find(v =>
-    v.lang.startsWith('en-IN') ||
-    v.name.includes('Rishi') ||
-    v.name.includes('Indian') ||
-    v.name.includes('Samantha')
-  ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
-  if (preferred) utterance.voice = preferred;
-
-  utterance.onend = () => {
-    if (speaking) playFrom(curIdx + 1);
-  };
-  utterance.onerror = (e) => {
-    if (e.error !== 'interrupted') playFrom(curIdx + 1);
-  };
-
+  utterance.onend = () => { if (speaking) playFrom(curIdx+1); };
+  utterance.onerror = (e) => { if (e.error!=='interrupted') playFrom(curIdx+1); };
   window.speechSynthesis.speak(utterance);
-  speaking = true;
-  updatePlayBtn(true);
+  speaking = true; updatePlayBtn(true);
 }
 
 function audioNext() {
   window.speechSynthesis.cancel();
   if (!segments.length) buildSegments();
   clearHighlight();
-  playFrom(Math.min(curIdx + 1, segments.length - 1));
+  playFrom(Math.min(curIdx+1, segments.length-1));
 }
 
 function audioCycleSpeed() {
-  speedIdx = (speedIdx + 1) % speeds.length;
+  speedIdx = (speedIdx+1) % speeds.length;
   const labels = ['0.8x','1x','1.4x','1.8x'];
   document.getElementById('abSpeed').textContent = labels[speedIdx];
-  if (utterance && speaking) {
-    const idx = curIdx;
-    window.speechSynthesis.cancel();
-    playFrom(idx);
-  }
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
 }
 
 function audioSeekClick(e, wrap) {
@@ -988,7 +1061,7 @@ function audioSeekClick(e, wrap) {
   const pct = e.offsetX / wrap.offsetWidth;
   const idx = Math.floor(pct * segments.length);
   window.speechSynthesis.cancel();
-  playFrom(Math.max(0, Math.min(idx, segments.length - 1)));
+  playFrom(Math.max(0, Math.min(idx, segments.length-1)));
 }
 
 function updatePlayBtn(isPlaying) {
@@ -996,25 +1069,41 @@ function updatePlayBtn(isPlaying) {
     ? '<rect x="3" y="2" width="4" height="12" fill="white"/><rect x="9" y="2" width="4" height="12" fill="white"/>'
     : '<polygon points="4,2 14,8 4,14" fill="white"/>';
 }
-
 function clearHighlight() {
-  if (lastHighlighted) {
-    lastHighlighted.classList.remove('audio-reading');
-    lastHighlighted = null;
-  }
+  if (lastHighlighted) { lastHighlighted.classList.remove('audio-reading'); lastHighlighted = null; }
 }
 
-// Voices load async on some browsers
-window.speechSynthesis.onvoiceschanged = () => {};
+  segments = [];
+  curIdx = 0;
+  document.getElementById('abSection').textContent = 'Tap ▶ to listen';
+  document.getElementById('abProgress').style.width = '0%';
 
-// Pause when tab is hidden, resume when visible
+  // Switch voice to match language
+  autoSelectVoice();
+  const sel = document.getElementById('abVoice');
+  if (sel && selectedVoice) sel.value = selectedVoice.name;
+}
+
+// Tab visibility
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && speaking) {
-    window.speechSynthesis.pause();
-  } else if (!document.hidden && speaking) {
-    window.speechSynthesis.resume();
-  }
+  if (document.hidden && speaking) window.speechSynthesis.pause();
+  else if (!document.hidden && speaking) window.speechSynthesis.resume();
 });
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'hi,gu,ta,te,ml,pa,bn,mr,kn,ur,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 
 </body>

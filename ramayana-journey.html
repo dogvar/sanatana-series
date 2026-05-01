@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Ram Navami 2026 — The Ramayana Complete Journey</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Noto+Serif+Devanagari:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {
   --saff: #C94800; --saff2: #E85D00;
@@ -422,842 +423,946 @@ svg.india-map { width: 100%; height: auto; display: block; }
 .closing .victory { color: rgba(255,255,255,0.72) !important; }
 .jai-deva { color: var(--gold, #B8860B) !important; }
 
+
+/* ── Voice selector ── */
+.ab-voice {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(212,160,23,0.80);
+  border-radius: 6px;
+  padding: 3px 4px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 38px;
+  font-family: 'DM Sans', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.ab-voice:focus { outline: none; }
+.ab-voice option {
+  background: #0D0400;
+  color: white;
+  font-size: 13px;
+  padding: 4px;
+}
+
+
+
+
+/* When Hindi mode active */
+
+
+
+
+/* ── Google Translate Widget ── */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+}
+#google_translate_element .goog-te-gadget {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0 !important; /* hide "Powered by" text */
+}
+#google_translate_element .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(212,160,23,0.35) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  cursor: pointer;
+}
+#google_translate_element .goog-te-gadget-simple a {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#google_translate_element .goog-te-gadget-simple a span {
+  color: rgba(212,160,23,0.85) !important;
+  font-size: 12px !important;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+  display: none; /* hide language name, show only arrow */
+}
+/* Override Google's iframe banner */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
+
+.lang-toggle { display:flex; gap:4px; align-items:center; margin-left:8px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+.lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
 </style>
 </head>
 <body>
-
 <nav class="top-nav">
-  <a class="back" href="index.html">
-    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+<a class="back" href="index.html">
+<svg fill="none" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
     Sanatana Series
   </a>
-  <span class="nav-title nav-om">ॐ</span>
-</nav>
+<span class="nav-title nav-om">ॐ</span>
 
+  <div id="google_translate_element" style="margin-left:auto"></div>
+  <div class="lang-toggle" style="margin-left:auto">
+    <a class="lang-btn active" href="ramayana-journey.html">EN</a>
+    <a class="lang-btn" href="ramayana-journey-hi.html">हिं</a>
+  </div>
+</nav>
 <!-- Audio Player Bar -->
 <div class="audio-bar" id="audioBar">
-  <button class="ab-play" id="abPlay" onclick="audioToggle()" aria-label="Play">
-    <svg id="abPlayIcon" viewBox="0 0 16 16" fill="white">
-      <polygon points="4,2 14,8 4,14"/>
-    </svg>
-  </button>
-  <div class="ab-info">
-    <div class="ab-section" id="abSection">Tap ▶ to listen</div>
-    <div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
-      <div class="ab-progress" id="abProgress"></div>
-    </div>
-  </div>
-  <button class="ab-skip" onclick="audioNext()" title="Next section" aria-label="Next section">
-    <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-      <polygon points="3,3 12,9 3,15" fill="currentColor" stroke="none"/>
-      <line x1="14" y1="3" x2="14" y2="15"/>
-    </svg>
-  </button>
-  <button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<button aria-label="Play" class="ab-play" id="abPlay" onclick="audioToggle()">
+<svg fill="white" id="abPlayIcon" viewbox="0 0 16 16">
+<polygon points="4,2 14,8 4,14"></polygon>
+</svg>
+</button>
+<div class="ab-info">
+<div class="ab-section" id="abSection">Tap ▶ to listen</div>
+<button class="lang-btn" id="langHI" onclick="setLang('hi')">हिंदी</button>
 </div>
-
-
-
+<div class="ab-progress-wrap" onclick="audioSeekClick(event, this)">
+<div class="ab-progress" id="abProgress"></div>
+</div>
+</div>
+<button aria-label="Next section" class="ab-skip" onclick="audioNext()" title="Next section">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 18 18">
+<polygon fill="currentColor" points="3,3 12,9 3,15" stroke="none"></polygon>
+<line x1="14" x2="14" y1="3" y2="15"></line>
+</svg>
+</button>
+<button class="ab-speed" id="abSpeed" onclick="audioCycleSpeed()">1x</button>
+<select class="ab-voice" id="abVoice" onchange="audioSetVoice(this.value)" title="Choose voice">
+<option value="">🎙</option>
+</select>
+</div>
 <!-- ════ HERO ════ -->
 <div class="hero">
-  <p class="hero-eyebrow">✦ Ram Navami 2026 · Vikram Samvat 2083 · Vol. II ✦</p>
-  <h1>The Ramayana</h1>
-  <p class="hero-sub">The Complete Journey — Dharma in Human Form</p>
-  <div class="bow-icon">🏹</div>
-  <div class="date-pill">Ram Navami: Thursday 26 March 2026 · Ram Janm: 12:27 PM IST</div>
-  <div class="hero-tags">
-    <span class="hero-tag">Dharma</span>
-    <span class="hero-tag">Valmiki Ramayana</span>
-    <span class="hero-tag">Ayodhya</span>
-    <span class="hero-tag">Ram Rajya</span>
-    <span class="hero-tag">Sanatana Series</span>
-  </div>
+<p class="hero-eyebrow">✦ Ram Navami 2026 · Vikram Samvat 2083 · Vol. II ✦</p>
+<h1>The Ramayana</h1>
+<p class="hero-sub">The Complete Journey — Dharma in Human Form</p>
+<div class="bow-icon">🏹</div>
+<div class="date-pill">Ram Navami: Thursday 26 March 2026 · Ram Janm: 12:27 PM IST</div>
+<div class="hero-tags">
+<span class="hero-tag">Dharma</span>
+<span class="hero-tag">Valmiki Ramayana</span>
+<span class="hero-tag">Ayodhya</span>
+<span class="hero-tag">Ram Rajya</span>
+<span class="hero-tag">Sanatana Series</span>
 </div>
-
+</div>
 <!-- ════ THE 7 KANDAS ════ -->
 <div class="sec-hdr">
-  <h2>The 7 Kandas — Seven Books, One Story</h2>
-  <p>Valmiki composed 24,000 shlokas in 7 books · ~500 BCE</p>
+<h2>The 7 Kandas — Seven Books, One Story</h2>
+<p>Valmiki composed 24,000 shlokas in 7 books · ~500 BCE</p>
 </div>
 <div class="pad" style="display:grid;gap:10px">
-  <div class="card"><div class="card-top" style="background:#1B5E20"></div><div class="card-body"><div class="card-title" style="color:#1B5E20">1. Bala Kanda — Birth &amp; Childhood</div><p>Rama's birth at Ayodhya on Ram Navami. Training at Vashistha's Gurukul. Journey with sage Vishwamitra — killing Tataka, freeing Ahalya, learning the Brahmastra. The Swayamvara at Mithila — breaking Shiva's bow and winning Sita's hand. The most celebrated wedding in Hindu mythology.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#C94800"></div><div class="card-body"><div class="card-title" style="color:#C94800">2. Ayodhya Kanda — The Exile Begins</div><p>Kaikeyi demands her two boons from Dasharatha: the throne for Bharata and 14 years' exile for Rama. Rama accepts without a word of protest. Sita and Lakshmana insist on joining. Dasharatha dies of grief. Bharata refuses the throne — places Rama's sandals on it as regent. One of the most emotionally devastating books ever written.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#004080"></div><div class="card-body"><div class="card-title" style="color:#004080">3. Aranya Kanda — The Forest Years</div><p>Fourteen years in the Dandakaranya forest. Meetings with sages, protection of yagnas, encounters with demons. The golden deer — Maricha in disguise. Sita's abduction by Ravana. Jatayu's heroic last battle and death. Rama performs Jatayu's last rites as a son for a father — one of the most touching moments in the Ramayana.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#4A0060"></div><div class="card-body"><div class="card-title" style="color:#4A0060">4. Kishkindha Kanda — The Vanara Alliance</div><p>Rama meets Hanuman at Lake Pampa near Hampi. Hanuman introduces Rama to Sugreeva. Rama kills Vali with a single arrow — fulfilling his promise to Sugreeva before asking for help. Sugreeva becomes king of Kishkindha. Search parties sent to all four directions. Hanuman is chosen for the southern mission to Lanka.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#7B0015"></div><div class="card-body"><div class="card-title" style="color:#7B0015">5. Sundara Kanda — Hanuman in Lanka</div><p>The heart of the Ramayana. Hanuman leaps the ocean alone — 500 yojanas — and enters Lanka. Finds Sita in the Ashoka garden. Delivers Rama's ring. Burns Lanka with his flaming tail after being captured. Returns to Rama with news of Sita. Sundara means "beautiful" — named for Hanuman's beautiful devotion, not for any place.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#8B0000"></div><div class="card-body"><div class="card-title" style="color:#8B0000">6. Yuddha Kanda — The Great War</div><p>Ram Setu built across the ocean. Vibhishana's defection to Rama's side. The 10-day battle for Lanka. Kumbhakarna awakened and slain. Indrajit's Brahmastra paralyses Rama's army — Hanuman lifts an entire mountain to find the Sanjeevani herb. Indrajit falls to Lakshmana. Ravana defeated by Rama with the Brahmastra. Agni Pariksha. Return to Ayodhya — Diwali.</p></div></div>
-  <div class="card"><div class="card-top" style="background:#B8860B"></div><div class="card-body"><div class="card-title" style="color:#B8860B">7. Uttara Kanda — Ram Rajya &amp; Legacy</div><p>Rama's coronation and the beginning of Ram Rajya — the golden age of righteous governance. Rama's later years as king. The birth of Lava and Kush. Valmiki completes the Ramayana. Lava and Kush sing the Ramayana to Rama himself in his own court — who does not recognise his sons until the end. Often considered a later addition to the original six books.</p></div></div>
+<div class="card"><div class="card-top" style="background:#1B5E20"></div><div class="card-body"><div class="card-title" style="color:#1B5E20">1. Bala Kanda — Birth &amp; Childhood</div><p>Rama's birth at Ayodhya on Ram Navami. Training at Vashistha's Gurukul. Journey with sage Vishwamitra — killing Tataka, freeing Ahalya, learning the Brahmastra. The Swayamvara at Mithila — breaking Shiva's bow and winning Sita's hand. The most celebrated wedding in Hindu mythology.</p></div></div>
+<div class="card"><div class="card-top" style="background:#C94800"></div><div class="card-body"><div class="card-title" style="color:#C94800">2. Ayodhya Kanda — The Exile Begins</div><p>Kaikeyi demands her two boons from Dasharatha: the throne for Bharata and 14 years' exile for Rama. Rama accepts without a word of protest. Sita and Lakshmana insist on joining. Dasharatha dies of grief. Bharata refuses the throne — places Rama's sandals on it as regent. One of the most emotionally devastating books ever written.</p></div></div>
+<div class="card"><div class="card-top" style="background:#004080"></div><div class="card-body"><div class="card-title" style="color:#004080">3. Aranya Kanda — The Forest Years</div><p>Fourteen years in the Dandakaranya forest. Meetings with sages, protection of yagnas, encounters with demons. The golden deer — Maricha in disguise. Sita's abduction by Ravana. Jatayu's heroic last battle and death. Rama performs Jatayu's last rites as a son for a father — one of the most touching moments in the Ramayana.</p></div></div>
+<div class="card"><div class="card-top" style="background:#4A0060"></div><div class="card-body"><div class="card-title" style="color:#4A0060">4. Kishkindha Kanda — The Vanara Alliance</div><p>Rama meets Hanuman at Lake Pampa near Hampi. Hanuman introduces Rama to Sugreeva. Rama kills Vali with a single arrow — fulfilling his promise to Sugreeva before asking for help. Sugreeva becomes king of Kishkindha. Search parties sent to all four directions. Hanuman is chosen for the southern mission to Lanka.</p></div></div>
+<div class="card"><div class="card-top" style="background:#7B0015"></div><div class="card-body"><div class="card-title" style="color:#7B0015">5. Sundara Kanda — Hanuman in Lanka</div><p>The heart of the Ramayana. Hanuman leaps the ocean alone — 500 yojanas — and enters Lanka. Finds Sita in the Ashoka garden. Delivers Rama's ring. Burns Lanka with his flaming tail after being captured. Returns to Rama with news of Sita. Sundara means "beautiful" — named for Hanuman's beautiful devotion, not for any place.</p></div></div>
+<div class="card"><div class="card-top" style="background:#8B0000"></div><div class="card-body"><div class="card-title" style="color:#8B0000">6. Yuddha Kanda — The Great War</div><p>Ram Setu built across the ocean. Vibhishana's defection to Rama's side. The 10-day battle for Lanka. Kumbhakarna awakened and slain. Indrajit's Brahmastra paralyses Rama's army — Hanuman lifts an entire mountain to find the Sanjeevani herb. Indrajit falls to Lakshmana. Ravana defeated by Rama with the Brahmastra. Agni Pariksha. Return to Ayodhya — Diwali.</p></div></div>
+<div class="card"><div class="card-top" style="background:#B8860B"></div><div class="card-body"><div class="card-title" style="color:#B8860B">7. Uttara Kanda — Ram Rajya &amp; Legacy</div><p>Rama's coronation and the beginning of Ram Rajya — the golden age of righteous governance. Rama's later years as king. The birth of Lava and Kush. Valmiki completes the Ramayana. Lava and Kush sing the Ramayana to Rama himself in his own court — who does not recognise his sons until the end. Often considered a later addition to the original six books.</p></div></div>
 </div>
-
 <!-- ════ JOURNEY MAP ════ -->
 <div class="sec-hdr">
-  <h2>The Journey — Ayodhya to Lanka &amp; Back</h2>
-  <p>Lord Rama's 14-year path across the Indian subcontinent</p>
+<h2>The Journey — Ayodhya to Lanka &amp; Back</h2>
+<p>Lord Rama's 14-year path across the Indian subcontinent</p>
 </div>
-
 <div class="map-wrap">
-  <div class="map-title">
-    <h3>🏹 Rama's Journey — Distance Timeline</h3>
-    <p>Ayodhya to Lanka and back · 14 years · ~4,000 km each way</p>
-  </div>
-  <div style="padding:16px">
-
-    <!-- Journey timeline vertical -->
-    <div style="position:relative;padding-left:32px">
-
-      <!-- Vertical line -->
-      <div style="position:absolute;left:11px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#C94800,#8B0000);border-radius:2px"></div>
-
-      <!-- Stop 1: Ayodhya -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#C94800;border:3px solid white;box-shadow:0 0 0 2px #C94800;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">1</div>
-        <div style="background:#FFF0E8;border-radius:10px;padding:12px 14px;border-left:3px solid #C94800">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#C94800">Ayodhya, Uttar Pradesh</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Birthplace · Start of exile · End of exile</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Rama's kingdom on the banks of the Sarayu river. Left for 14 years in exile. Returned to become king. Today home to the Ram Mandir consecrated in January 2024.</div>
-        </div>
-      </div>
-
-      <!-- Distance marker -->
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~350 km south to Chitrakoot</div>
-      </div>
-
-      <!-- Stop 2: Chitrakoot -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#1B5E20;border:3px solid white;box-shadow:0 0 0 2px #1B5E20;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">2</div>
-        <div style="background:#F0FFF0;border-radius:10px;padding:12px 14px;border-left:3px solid #1B5E20">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#1B5E20">Chitrakoot, MP/UP border</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 First exile settlement · Bharata's visit</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Peaceful hill where Rama, Sita and Lakshmana first settled. Bharata arrived here and placed Rama's sandals on the Ayodhya throne as regent.</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~800 km southwest through Dandakaranya forest</div>
-      </div>
-
-      <!-- Stop 3: Panchavati -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#7B0015;border:3px solid white;box-shadow:0 0 0 2px #7B0015;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">3</div>
-        <div style="background:#FFF5F5;border-radius:10px;padding:12px 14px;border-left:3px solid #7B0015">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#7B0015">Panchavati (Nashik), Maharashtra</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 On the Godavari river · Sita abducted here</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Rama and Sita settled here during exile. Ravana abducted Sita while Rama and Lakshmana were away. Jatayu the eagle died here protecting her. Nashik today has a temple at the exact site.</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~750 km southeast to Kishkindha</div>
-      </div>
-
-      <!-- Stop 4: Kishkindha -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#4A0060;border:3px solid white;box-shadow:0 0 0 2px #4A0060;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">4</div>
-        <div style="background:#FAF5FF;border-radius:10px;padding:12px 14px;border-left:3px solid #4A0060">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#4A0060">Kishkindha — Hampi, Karnataka</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Kingdom of Sugreeva · UNESCO World Heritage Site today</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Rama met Hanuman and Sugreeva at Lake Pampa near modern Hampi. The Vanara army was assembled here. The Anjanadri Hill nearby is believed to be Hanuman's birthplace.</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~650 km south to Rameswaram</div>
-      </div>
-
-      <!-- Stop 5: Rameswaram -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#C94800;border:3px solid white;box-shadow:0 0 0 2px #C94800;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">5</div>
-        <div style="background:#FFF0E8;border-radius:10px;padding:12px 14px;border-left:3px solid #C94800">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#C94800">Rameswaram, Tamil Nadu</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Southernmost point of India · Ram Setu begins here</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">The Vanara army built Ram Setu — the floating bridge — from here across to Lanka. Modern satellite imagery shows a submerged land bridge (Adam's Bridge) at this exact location. Ramanathaswamy temple here is one of the 12 Jyotirlingas.</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~30 km across Palk Strait via Ram Setu → Lanka</div>
-      </div>
-
-      <!-- Stop 6: Lanka -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#8B0000;border:3px solid white;box-shadow:0 0 0 2px #8B0000;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">6</div>
-        <div style="background:#FFF5F5;border-radius:10px;padding:12px 14px;border-left:3px solid #8B0000">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#8B0000">Lanka — ancient Sri Lanka</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Kingdom of Ravana · 10-day war · Ravana defeated</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Ravana's golden kingdom, ruled with brilliance and tyranny. Sita held in the Ashoka Vatika garden. The 10-day war ended here with Ravana's death on Vijayadashami. Vibhishana crowned king. Sri Lanka today has a Ramayana Trail with 50+ sites.</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:8px 0">
-        <div style="font-size:11px;color:#004080;font-style:italic">↑ Return by Pushpaka Vimana — all the way to Ayodhya in one flight</div>
-      </div>
-
-      <!-- Return -->
-      <div style="position:relative;margin-bottom:0">
-        <div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#B8860B;border:3px solid white;box-shadow:0 0 0 2px #B8860B;display:flex;align-items:center;justify-content:center;color:white;font-size:14px">↩</div>
-        <div style="background:#FFF8E8;border-radius:10px;padding:12px 14px;border-left:3px solid #B8860B">
-          <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#B8860B">Return to Ayodhya — Diwali 🪔</div>
-          <div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 After exactly 14 years · Ram Rajya begins</div>
-          <div style="font-size:13px;color:#3D2000;line-height:1.55">Rama, Sita and Lakshmana return on the celestial Pushpaka Vimana. The entire city of Ayodhya lit with diyas to welcome them home. <strong>This night is Diwali.</strong> Rama is crowned. Ram Rajya — the golden age — begins.</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Distance summary -->
-    <div style="background:#FFF0E8;border-radius:10px;padding:14px;margin-top:16px;text-align:center">
-      <div style="font-family:'Lora',serif;font-weight:700;font-size:14px;color:#C94800;margin-bottom:8px">Total Journey</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-        <div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#C94800">~4,000</div><div style="font-size:11px;color:#7A4020">km Ayodhya to Lanka</div></div>
-        <div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#1B5E20">14</div><div style="font-size:11px;color:#7A4020">years in exile</div></div>
-        <div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#8B0000">10</div><div style="font-size:11px;color:#7A4020">days war at Lanka</div></div>
-      </div>
-    </div>
-  </div>
+<div class="map-title">
+<h3>🏹 Rama's Journey — Distance Timeline</h3>
+<p>Ayodhya to Lanka and back · 14 years · ~4,000 km each way</p>
 </div>
-
+<div style="padding:16px">
+<!-- Journey timeline vertical -->
+<div style="position:relative;padding-left:32px">
+<!-- Vertical line -->
+<div style="position:absolute;left:11px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#C94800,#8B0000);border-radius:2px"></div>
+<!-- Stop 1: Ayodhya -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#C94800;border:3px solid white;box-shadow:0 0 0 2px #C94800;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">1</div>
+<div style="background:#FFF0E8;border-radius:10px;padding:12px 14px;border-left:3px solid #C94800">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#C94800">Ayodhya, Uttar Pradesh</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Birthplace · Start of exile · End of exile</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Rama's kingdom on the banks of the Sarayu river. Left for 14 years in exile. Returned to become king. Today home to the Ram Mandir consecrated in January 2024.</div>
+</div>
+</div>
+<!-- Distance marker -->
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~350 km south to Chitrakoot</div>
+</div>
+<!-- Stop 2: Chitrakoot -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#1B5E20;border:3px solid white;box-shadow:0 0 0 2px #1B5E20;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">2</div>
+<div style="background:#F0FFF0;border-radius:10px;padding:12px 14px;border-left:3px solid #1B5E20">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#1B5E20">Chitrakoot, MP/UP border</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 First exile settlement · Bharata's visit</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Peaceful hill where Rama, Sita and Lakshmana first settled. Bharata arrived here and placed Rama's sandals on the Ayodhya throne as regent.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~800 km southwest through Dandakaranya forest</div>
+</div>
+<!-- Stop 3: Panchavati -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#7B0015;border:3px solid white;box-shadow:0 0 0 2px #7B0015;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">3</div>
+<div style="background:#FFF5F5;border-radius:10px;padding:12px 14px;border-left:3px solid #7B0015">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#7B0015">Panchavati (Nashik), Maharashtra</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 On the Godavari river · Sita abducted here</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Rama and Sita settled here during exile. Ravana abducted Sita while Rama and Lakshmana were away. Jatayu the eagle died here protecting her. Nashik today has a temple at the exact site.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~750 km southeast to Kishkindha</div>
+</div>
+<!-- Stop 4: Kishkindha -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#4A0060;border:3px solid white;box-shadow:0 0 0 2px #4A0060;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">4</div>
+<div style="background:#FAF5FF;border-radius:10px;padding:12px 14px;border-left:3px solid #4A0060">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#4A0060">Kishkindha — Hampi, Karnataka</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Kingdom of Sugreeva · UNESCO World Heritage Site today</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Rama met Hanuman and Sugreeva at Lake Pampa near modern Hampi. The Vanara army was assembled here. The Anjanadri Hill nearby is believed to be Hanuman's birthplace.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~650 km south to Rameswaram</div>
+</div>
+<!-- Stop 5: Rameswaram -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#C94800;border:3px solid white;box-shadow:0 0 0 2px #C94800;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">5</div>
+<div style="background:#FFF0E8;border-radius:10px;padding:12px 14px;border-left:3px solid #C94800">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#C94800">Rameswaram, Tamil Nadu</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Southernmost point of India · Ram Setu begins here</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">The Vanara army built Ram Setu — the floating bridge — from here across to Lanka. Modern satellite imagery shows a submerged land bridge (Adam's Bridge) at this exact location. Ramanathaswamy temple here is one of the 12 Jyotirlingas.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#7A4020;font-style:italic">↓ ~30 km across Palk Strait via Ram Setu → Lanka</div>
+</div>
+<!-- Stop 6: Lanka -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#8B0000;border:3px solid white;box-shadow:0 0 0 2px #8B0000;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700">6</div>
+<div style="background:#FFF5F5;border-radius:10px;padding:12px 14px;border-left:3px solid #8B0000">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#8B0000">Lanka — ancient Sri Lanka</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 Kingdom of Ravana · 10-day war · Ravana defeated</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Ravana's golden kingdom, ruled with brilliance and tyranny. Sita held in the Ashoka Vatika garden. The 10-day war ended here with Ravana's death on Vijayadashami. Vibhishana crowned king. Sri Lanka today has a Ramayana Trail with 50+ sites.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 0">
+<div style="font-size:11px;color:#004080;font-style:italic">↑ Return by Pushpaka Vimana — all the way to Ayodhya in one flight</div>
+</div>
+<!-- Return -->
+<div style="position:relative;margin-bottom:0">
+<div style="position:absolute;left:-32px;width:24px;height:24px;border-radius:50%;background:#B8860B;border:3px solid white;box-shadow:0 0 0 2px #B8860B;display:flex;align-items:center;justify-content:center;color:white;font-size:14px">↩</div>
+<div style="background:#FFF8E8;border-radius:10px;padding:12px 14px;border-left:3px solid #B8860B">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:#B8860B">Return to Ayodhya — Diwali 🪔</div>
+<div style="font-size:11px;color:#7A4020;margin:2px 0 6px">📍 After exactly 14 years · Ram Rajya begins</div>
+<div style="font-size:13px;color:#3D2000;line-height:1.55">Rama, Sita and Lakshmana return on the celestial Pushpaka Vimana. The entire city of Ayodhya lit with diyas to welcome them home. <strong>This night is Diwali.</strong> Rama is crowned. Ram Rajya — the golden age — begins.</div>
+</div>
+</div>
+</div>
+<!-- Distance summary -->
+<div style="background:#FFF0E8;border-radius:10px;padding:14px;margin-top:16px;text-align:center">
+<div style="font-family:'Lora',serif;font-weight:700;font-size:14px;color:#C94800;margin-bottom:8px">Total Journey</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+<div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#C94800">~4,000</div><div style="font-size:11px;color:#7A4020">km Ayodhya to Lanka</div></div>
+<div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#1B5E20">14</div><div style="font-size:11px;color:#7A4020">years in exile</div></div>
+<div style="text-align:center"><div style="font-size:20px;font-weight:700;color:#8B0000">10</div><div style="font-size:11px;color:#7A4020">days war at Lanka</div></div>
+</div>
+</div>
+</div>
+</div>
 <!-- Journey waypoints -->
 <div class="waypoints">
-  <div class="wp-card" style="border-color:#1B5E20">
-    <div class="wp-num" style="background:#1B5E20">1–2</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#1B5E20">Ayodhya → Chitrakoot</div>
-      <h3>Exile Begins</h3>
-      <p>Crossing the Ganga at Shringaverpur with Nishadraj Guha — a tribal Dalit chief Rama embraced as a brother. Meeting sage Bharadwaja at Prayagraj. Settling at Chitrakoot. Bharata arrives and pleads for Rama's return — Rama refuses. Bharata places Rama's sandals on the throne and rules only as regent.</p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#004080">
-    <div class="wp-num" style="background:#004080">2–3</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#004080">Dandakaranya Forest</div>
-      <h3>The Forest Years</h3>
-      <p>Years spent at ashrams of Agastya, Viradha and others. Protecting sages from demon attacks. Eventually settling at Panchavati on the Godavari river near modern Nashik. Shurpanakha (Ravana's sister) confronts them. Her humiliation triggers the chain of events leading to Sita's abduction.</p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#7B0015">
-    <div class="wp-num" style="background:#7B0015">3</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#7B0015">Panchavati, Nashik</div>
-      <h3>Sita's Abduction</h3>
-      <p>Ravana sends Maricha as a golden deer. Sita is enchanted and insists Rama follow. Then sends Lakshmana. In their absence, Ravana — disguised as a sage — abducts Sita. Jatayu the eagle battles Ravana heroically, losing his wings and dying. Rama finds the dying Jatayu and performs his last rites — treating the eagle as a father.</p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#4A0060">
-    <div class="wp-num" style="background:#4A0060">4</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#4A0060">Kishkindha — modern Hampi, Karnataka</div>
-      <h3>The Vanara Alliance</h3>
-      <p>Rama meets Hanuman at Lake Pampa. Alliance forged with exiled monkey king Sugreeva. Rama kills Vali with a single arrow from hiding — controversially, but in justice for Sugreeva's suffering. Sugreeva becomes king of Kishkindha and commands the Vanara search parties. Only Hanuman's southern party succeeds — reaching Lanka.</p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#C94800">
-    <div class="wp-num" style="background:#C94800">5</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#C94800">Rameswaram, Tamil Nadu</div>
-      <h3>Ram Setu — The Bridge Across</h3>
-      <p>The Vanara army builds Ram Setu — a floating bridge using stones inscribed with Rama's name. Nala and Nila direct construction. The bridge stretches across to Lanka. Vibhishana — Ravana's righteous brother — defects to Rama's side. Rama welcomes him with open arms despite Sugreeva's objections: <em>"If someone comes to me for refuge, I will protect them."</em></p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#8B0000">
-    <div class="wp-num" style="background:#8B0000">6</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#8B0000">Lanka — 10-Day War</div>
-      <h3>Ravana Defeated</h3>
-      <p>The great war. Kumbhakarna slain. Indrajit's Brahmastra paralyses Rama's army — Hanuman lifts Mount Dronagiri to find the Sanjeevani herb. Lakshmana kills Indrajit. On the 10th day, Rama releases the Brahmastra and kills Ravana. Sita's Agni Pariksha — fire proves her purity. Vibhishana crowned king of Lanka. The war ends. Dharma is restored.</p>
-    </div>
-  </div>
-  <div class="wp-card" style="border-color:#B8860B">
-    <div class="wp-num" style="background:#B8860B">↩</div>
-    <div class="wp-content">
-      <div class="wp-label" style="background:#B8860B">Return — Pushpaka Vimana</div>
-      <h3>Diwali — The Return Home</h3>
-      <p>Rama, Sita and Lakshmana return to Ayodhya on the celestial Pushpaka Vimana after exactly 14 years. The entire city of Ayodhya is lit with diyas to welcome them home — <strong>this is Diwali.</strong> Rama is crowned king. Ram Rajya begins — the golden age of righteous governance that India still aspires to.</p>
-    </div>
-  </div>
+<div class="wp-card" style="border-color:#1B5E20">
+<div class="wp-num" style="background:#1B5E20">1–2</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#1B5E20">Ayodhya → Chitrakoot</div>
+<h3>Exile Begins</h3>
+<p>Crossing the Ganga at Shringaverpur with Nishadraj Guha — a tribal Dalit chief Rama embraced as a brother. Meeting sage Bharadwaja at Prayagraj. Settling at Chitrakoot. Bharata arrives and pleads for Rama's return — Rama refuses. Bharata places Rama's sandals on the throne and rules only as regent.</p>
 </div>
-
+</div>
+<div class="wp-card" style="border-color:#004080">
+<div class="wp-num" style="background:#004080">2–3</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#004080">Dandakaranya Forest</div>
+<h3>The Forest Years</h3>
+<p>Years spent at ashrams of Agastya, Viradha and others. Protecting sages from demon attacks. Eventually settling at Panchavati on the Godavari river near modern Nashik. Shurpanakha (Ravana's sister) confronts them. Her humiliation triggers the chain of events leading to Sita's abduction.</p>
+</div>
+</div>
+<div class="wp-card" style="border-color:#7B0015">
+<div class="wp-num" style="background:#7B0015">3</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#7B0015">Panchavati, Nashik</div>
+<h3>Sita's Abduction</h3>
+<p>Ravana sends Maricha as a golden deer. Sita is enchanted and insists Rama follow. Then sends Lakshmana. In their absence, Ravana — disguised as a sage — abducts Sita. Jatayu the eagle battles Ravana heroically, losing his wings and dying. Rama finds the dying Jatayu and performs his last rites — treating the eagle as a father.</p>
+</div>
+</div>
+<div class="wp-card" style="border-color:#4A0060">
+<div class="wp-num" style="background:#4A0060">4</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#4A0060">Kishkindha — modern Hampi, Karnataka</div>
+<h3>The Vanara Alliance</h3>
+<p>Rama meets Hanuman at Lake Pampa. Alliance forged with exiled monkey king Sugreeva. Rama kills Vali with a single arrow from hiding — controversially, but in justice for Sugreeva's suffering. Sugreeva becomes king of Kishkindha and commands the Vanara search parties. Only Hanuman's southern party succeeds — reaching Lanka.</p>
+</div>
+</div>
+<div class="wp-card" style="border-color:#C94800">
+<div class="wp-num" style="background:#C94800">5</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#C94800">Rameswaram, Tamil Nadu</div>
+<h3>Ram Setu — The Bridge Across</h3>
+<p>The Vanara army builds Ram Setu — a floating bridge using stones inscribed with Rama's name. Nala and Nila direct construction. The bridge stretches across to Lanka. Vibhishana — Ravana's righteous brother — defects to Rama's side. Rama welcomes him with open arms despite Sugreeva's objections: <em>"If someone comes to me for refuge, I will protect them."</em></p>
+</div>
+</div>
+<div class="wp-card" style="border-color:#8B0000">
+<div class="wp-num" style="background:#8B0000">6</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#8B0000">Lanka — 10-Day War</div>
+<h3>Ravana Defeated</h3>
+<p>The great war. Kumbhakarna slain. Indrajit's Brahmastra paralyses Rama's army — Hanuman lifts Mount Dronagiri to find the Sanjeevani herb. Lakshmana kills Indrajit. On the 10th day, Rama releases the Brahmastra and kills Ravana. Sita's Agni Pariksha — fire proves her purity. Vibhishana crowned king of Lanka. The war ends. Dharma is restored.</p>
+</div>
+</div>
+<div class="wp-card" style="border-color:#B8860B">
+<div class="wp-num" style="background:#B8860B">↩</div>
+<div class="wp-content">
+<div class="wp-label" style="background:#B8860B">Return — Pushpaka Vimana</div>
+<h3>Diwali — The Return Home</h3>
+<p>Rama, Sita and Lakshmana return to Ayodhya on the celestial Pushpaka Vimana after exactly 14 years. The entire city of Ayodhya is lit with diyas to welcome them home — <strong>this is Diwali.</strong> Rama is crowned king. Ram Rajya begins — the golden age of righteous governance that India still aspires to.</p>
+</div>
+</div>
+</div>
 <!-- ════ LANKA WAR ════ -->
 <div class="sec-hdr">
-  <h2>The Lanka War — Day by Day</h2>
-  <p>The Yuddha Kanda — greatest battle of the Treta Yuga</p>
+<h2>The Lanka War — Day by Day</h2>
+<p>The Yuddha Kanda — greatest battle of the Treta Yuga</p>
 </div>
-
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#F0F4FF">
-    <div class="battle-badge" style="background:#004080">Before Day 1</div>
-    <h3 style="color:#004080">Vibhishana Defects</h3>
-  </div>
-  <div class="battle-body">Ravana's own brother Vibhishana urges the return of Sita — righteousness above family loyalty. Ravana throws him out of Lanka. Vibhishana crosses to Rama's side. Rama welcomes him and declares him the rightful king of Lanka. This act of radical inclusion defines Rama's dharma: identity does not determine worthiness.</div>
+<div class="battle-hdr" style="background:#F0F4FF">
+<div class="battle-badge" style="background:#004080">Before Day 1</div>
+<h3 style="color:#004080">Vibhishana Defects</h3>
 </div>
-
+<div class="battle-body">Ravana's own brother Vibhishana urges the return of Sita — righteousness above family loyalty. Ravana throws him out of Lanka. Vibhishana crosses to Rama's side. Rama welcomes him and declares him the rightful king of Lanka. This act of radical inclusion defines Rama's dharma: identity does not determine worthiness.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#F0FFF0">
-    <div class="battle-badge" style="background:#1B5E20">Day 0</div>
-    <h3 style="color:#1B5E20">Ram Setu — The Floating Bridge</h3>
-  </div>
-  <div class="battle-body">The Vanara army builds a bridge across the ocean using stones that float because Rama's name is inscribed on them. Nala and Nila (sons of divine architect Vishwakarma) direct construction. The bridge stretches 100 yojanas. Modern satellite imagery shows a submerged land formation (Adam's Bridge) between Rameswaram and Sri Lanka.</div>
+<div class="battle-hdr" style="background:#F0FFF0">
+<div class="battle-badge" style="background:#1B5E20">Day 0</div>
+<h3 style="color:#1B5E20">Ram Setu — The Floating Bridge</h3>
 </div>
-
+<div class="battle-body">The Vanara army builds a bridge across the ocean using stones that float because Rama's name is inscribed on them. Nala and Nila (sons of divine architect Vishwakarma) direct construction. The bridge stretches 100 yojanas. Modern satellite imagery shows a submerged land formation (Adam's Bridge) between Rameswaram and Sri Lanka.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#FFF8F0">
-    <div class="battle-badge" style="background:#C94800">Days 1–3</div>
-    <h3 style="color:#C94800">Opening Battles</h3>
-  </div>
-  <div class="battle-body">Ravana's generals — Prahasta, Dhoomraksha, Vajradamshtra — sally out with massive armies. Hanuman, Angada and Nila lead the Vanara counter-attacks. All three generals are killed. The Vanara army suffers heavy losses but holds the siege around Lanka's walls. Angada is sent as a final envoy — Ravana refuses to return Sita. War continues.</div>
+<div class="battle-hdr" style="background:#FFF8F0">
+<div class="battle-badge" style="background:#C94800">Days 1–3</div>
+<h3 style="color:#C94800">Opening Battles</h3>
 </div>
-
+<div class="battle-body">Ravana's generals — Prahasta, Dhoomraksha, Vajradamshtra — sally out with massive armies. Hanuman, Angada and Nila lead the Vanara counter-attacks. All three generals are killed. The Vanara army suffers heavy losses but holds the siege around Lanka's walls. Angada is sent as a final envoy — Ravana refuses to return Sita. War continues.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#FFF5F5">
-    <div class="battle-badge" style="background:#8B0000">Day 4</div>
-    <h3 style="color:#8B0000">Kumbhakarna Awakens</h3>
-  </div>
-  <div class="battle-body">Ravana wakes his brother Kumbhakarna from his enchanted six-month sleep. The mountain-sized warrior tells Ravana he was <em>wrong</em> to abduct Sita. But loyal to his brother, he fights anyway. Kumbhakarna — who could eat entire armies in one sitting — is finally killed by Rama's divine arrows. Even Ravana weeps.</div>
+<div class="battle-hdr" style="background:#FFF5F5">
+<div class="battle-badge" style="background:#8B0000">Day 4</div>
+<h3 style="color:#8B0000">Kumbhakarna Awakens</h3>
 </div>
-
+<div class="battle-body">Ravana wakes his brother Kumbhakarna from his enchanted six-month sleep. The mountain-sized warrior tells Ravana he was <em>wrong</em> to abduct Sita. But loyal to his brother, he fights anyway. Kumbhakarna — who could eat entire armies in one sitting — is finally killed by Rama's divine arrows. Even Ravana weeps.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#F5F0FF">
-    <div class="battle-badge" style="background:#4A0060">Days 5–6</div>
-    <h3 style="color:#4A0060">Indrajit's Brahmastra</h3>
-  </div>
-  <div class="battle-body">Ravana's son Indrajit (Meghnad) — the greatest warrior of Lanka who had defeated Indra himself — uses the Brahmastra. Rama, Lakshmana and the entire Vanara army are paralysed, unable to move. Only the ancient bear Jambavan survives. He tells the semi-conscious Hanuman about the Sanjeevani herb on Mount Dronagiri in the Himalayas.</div>
+<div class="battle-hdr" style="background:#F5F0FF">
+<div class="battle-badge" style="background:#4A0060">Days 5–6</div>
+<h3 style="color:#4A0060">Indrajit's Brahmastra</h3>
 </div>
-
+<div class="battle-body">Ravana's son Indrajit (Meghnad) — the greatest warrior of Lanka who had defeated Indra himself — uses the Brahmastra. Rama, Lakshmana and the entire Vanara army are paralysed, unable to move. Only the ancient bear Jambavan survives. He tells the semi-conscious Hanuman about the Sanjeevani herb on Mount Dronagiri in the Himalayas.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#F0FFF0">
-    <div class="battle-badge" style="background:#1B5E20">Day 7</div>
-    <h3 style="color:#1B5E20">Hanuman Lifts the Mountain ⛰️</h3>
-  </div>
-  <div class="battle-body">Hanuman flies to the Himalayas for the Sanjeevani herb. Unable to identify which plant it is among hundreds of glowing herbs on the mountain, he does the impossible: <strong>lifts the entire Mount Dronagiri and carries it back to Lanka.</strong> This is one of the most beloved stories in all Hindu mythology. Lakshmana and the entire Vanara army are revived.</div>
+<div class="battle-hdr" style="background:#F0FFF0">
+<div class="battle-badge" style="background:#1B5E20">Day 7</div>
+<h3 style="color:#1B5E20">Hanuman Lifts the Mountain ⛰️</h3>
 </div>
-
+<div class="battle-body">Hanuman flies to the Himalayas for the Sanjeevani herb. Unable to identify which plant it is among hundreds of glowing herbs on the mountain, he does the impossible: <strong>lifts the entire Mount Dronagiri and carries it back to Lanka.</strong> This is one of the most beloved stories in all Hindu mythology. Lakshmana and the entire Vanara army are revived.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#F0F4FF">
-    <div class="battle-badge" style="background:#004080">Day 8</div>
-    <h3 style="color:#004080">Indrajit Falls</h3>
-  </div>
-  <div class="battle-body">The recovered Lakshmana faces Indrajit in the ultimate duel. Indrajit tries to create a false illusion of Sita being killed to break Rama's morale. Vibhishana reveals the deception. Lakshmana kills Indrajit with the Aindrastra — the arrow gifted by Indra. Ravana's greatest warrior and most powerful son is gone. Lanka falls into shock.</div>
+<div class="battle-hdr" style="background:#F0F4FF">
+<div class="battle-badge" style="background:#004080">Day 8</div>
+<h3 style="color:#004080">Indrajit Falls</h3>
 </div>
-
+<div class="battle-body">The recovered Lakshmana faces Indrajit in the ultimate duel. Indrajit tries to create a false illusion of Sita being killed to break Rama's morale. Vibhishana reveals the deception. Lakshmana kills Indrajit with the Aindrastra — the arrow gifted by Indra. Ravana's greatest warrior and most powerful son is gone. Lanka falls into shock.</div>
+</div>
 <div class="battle-card">
-  <div class="battle-hdr" style="background:#FFF5F5">
-    <div class="battle-badge" style="background:#8B0000">Days 9–10</div>
-    <h3 style="color:#8B0000">Ravana Defeated — Dharma Restored</h3>
-  </div>
-  <div class="battle-body">Ravana himself enters battle in his divine chariot. Epic duel with Rama begins. Rama's arrows cut off all ten of Ravana's heads — they grow back each time. The sage Agastya appears and reveals the secret: aim at Ravana's navel, the seat of his divine nectar of immortality. Rama releases the Brahmastra from Agastya. Ravana falls. The war ends. Dharma is restored. <strong>This day is celebrated as Vijayadashami — Dussehra.</strong></div>
+<div class="battle-hdr" style="background:#FFF5F5">
+<div class="battle-badge" style="background:#8B0000">Days 9–10</div>
+<h3 style="color:#8B0000">Ravana Defeated — Dharma Restored</h3>
 </div>
-
+<div class="battle-body">Ravana himself enters battle in his divine chariot. Epic duel with Rama begins. Rama's arrows cut off all ten of Ravana's heads — they grow back each time. The sage Agastya appears and reveals the secret: aim at Ravana's navel, the seat of his divine nectar of immortality. Rama releases the Brahmastra from Agastya. Ravana falls. The war ends. Dharma is restored. <strong>This day is celebrated as Vijayadashami — Dussehra.</strong></div>
+</div>
 <!-- ════ WHO WAS RAVANA ════ -->
 <div class="sec-hdr">
-  <h2>Who Was Ravana?</h2>
-  <p>The most brilliant and tragic villain in world literature</p>
+<h2>Who Was Ravana?</h2>
+<p>The most brilliant and tragic villain in world literature</p>
 </div>
 <div class="intro-b">
-  <p class="lead">Ravana was not simply evil. He was greatness — corrupted by ego.</p>
-  <p>Half-brahmin, half-rakshasa. Grandson of Brahma. Master of all 64 forms of knowledge. So perfectly versed in the Sama Veda he could make the gods weep with his music. He defeated Kubera, conquered the heavens, received near-invincibility from Brahma. Yet one act of ego — the abduction of Sita — destroyed everything.</p>
+<p class="lead">Ravana was not simply evil. He was greatness — corrupted by ego.</p>
+<p>Half-brahmin, half-rakshasa. Grandson of Brahma. Master of all 64 forms of knowledge. So perfectly versed in the Sama Veda he could make the gods weep with his music. He defeated Kubera, conquered the heavens, received near-invincibility from Brahma. Yet one act of ego — the abduction of Sita — destroyed everything.</p>
 </div>
-
 <p style="font-family:'Lora',serif;font-weight:700;font-size:15px;padding:4px 16px 10px;color:var(--red)">Ravana's 10 Heads — 10 Vices within every human</p>
 <div class="head-list">
-  <div class="head-item"><div class="head-n" style="background:#8B0000">1</div><div><div class="head-skt">Kama</div><div class="head-eng">Lust — desire that consumes judgment</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#C94800">2</div><div><div class="head-skt">Krodha</div><div class="head-eng">Anger — destruction without direction</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#8B4500">3</div><div><div class="head-skt">Lobha</div><div class="head-eng">Greed — never satisfied, always wanting more</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#7B0015">4</div><div><div class="head-skt">Moha</div><div class="head-eng">Infatuation — love blind to consequences</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#4A0060">5</div><div><div class="head-skt">Mada</div><div class="head-eng">Ego / Pride — the root of Ravana's fall</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#004080">6</div><div><div class="head-skt">Matsarya</div><div class="head-eng">Jealousy — unable to celebrate others' greatness</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#1B5E20">7</div><div><div class="head-skt">Swartha</div><div class="head-eng">Selfishness — only my needs matter</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#8B0000">8</div><div><div class="head-skt">Anyaaya</div><div class="head-eng">Injustice — might is right</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#C94800">9</div><div><div class="head-skt">Amanavata</div><div class="head-eng">Cruelty — indifference to suffering</div></div></div>
-  <div class="head-item"><div class="head-n" style="background:#4A0060">10</div><div><div class="head-skt">Ahamkara</div><div class="head-eng">Arrogance — the belief that rules don't apply to me</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#8B0000">1</div><div><div class="head-skt">Kama</div><div class="head-eng">Lust — desire that consumes judgment</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#C94800">2</div><div><div class="head-skt">Krodha</div><div class="head-eng">Anger — destruction without direction</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#8B4500">3</div><div><div class="head-skt">Lobha</div><div class="head-eng">Greed — never satisfied, always wanting more</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#7B0015">4</div><div><div class="head-skt">Moha</div><div class="head-eng">Infatuation — love blind to consequences</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#4A0060">5</div><div><div class="head-skt">Mada</div><div class="head-eng">Ego / Pride — the root of Ravana's fall</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#004080">6</div><div><div class="head-skt">Matsarya</div><div class="head-eng">Jealousy — unable to celebrate others' greatness</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#1B5E20">7</div><div><div class="head-skt">Swartha</div><div class="head-eng">Selfishness — only my needs matter</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#8B0000">8</div><div><div class="head-skt">Anyaaya</div><div class="head-eng">Injustice — might is right</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#C94800">9</div><div><div class="head-skt">Amanavata</div><div class="head-eng">Cruelty — indifference to suffering</div></div></div>
+<div class="head-item"><div class="head-n" style="background:#4A0060">10</div><div><div class="head-skt">Ahamkara</div><div class="head-eng">Arrogance — the belief that rules don't apply to me</div></div></div>
 </div>
 <div style="background:#FFF0F0;border-radius:var(--r);margin:12px 16px;padding:14px">
-  <p style="font-size:13.5px;color:var(--ink2);line-height:1.65"><strong style="color:var(--red)">When we burn Ravana on Dussehra,</strong> we are not celebrating the death of a demon. We are ritually burning these ten vices within ourselves. Dussehra is a ceremony of self-examination, not triumph.</p>
+<p style="font-size:13.5px;color:var(--ink2);line-height:1.65"><strong style="color:var(--red)">When we burn Ravana on Dussehra,</strong> we are not celebrating the death of a demon. We are ritually burning these ten vices within ourselves. Dussehra is a ceremony of self-examination, not triumph.</p>
 </div>
-
 <!-- ════ RAMA & HANUMAN ════ -->
 <div class="sec-hdr">
-  <h2>Rama &amp; Hanuman</h2>
-  <p>The greatest friendship in world literature</p>
+<h2>Rama &amp; Hanuman</h2>
+<p>The greatest friendship in world literature</p>
 </div>
 <div class="intro-b">
-  <p class="lead">"Where Rama is, there is Hanuman. Where Hanuman is, there is Rama."</p>
-  <p>The friendship between Rama and Hanuman is extraordinary because it is not between equals. Rama is the Avatar of Vishnu. Hanuman is the Avatar of Shiva. And yet their bond is purely one of love, trust and purpose. Hanuman never sought power, reward or recognition. He sought only to serve. And Rama never took that service for granted — he wept when Hanuman left, embraced him in front of all as his greatest friend.</p>
+<p class="lead">"Where Rama is, there is Hanuman. Where Hanuman is, there is Rama."</p>
+<p>The friendship between Rama and Hanuman is extraordinary because it is not between equals. Rama is the Avatar of Vishnu. Hanuman is the Avatar of Shiva. And yet their bond is purely one of love, trust and purpose. Hanuman never sought power, reward or recognition. He sought only to serve. And Rama never took that service for granted — he wept when Hanuman left, embraced him in front of all as his greatest friend.</p>
 </div>
-
 <div class="quality-list">
-  <div class="qual-item" style="border-color:#4A0060">
-    <div class="qual-icon">💪</div>
-    <div><div class="qual-title" style="color:#4A0060">Strength Without Ego</div><div class="qual-desc">Power entirely in service of purpose. Never once used for personal gain. The rarest combination in the universe.</div></div>
-  </div>
-  <div class="qual-item" style="border-color:#004080">
-    <div class="qual-icon">🧠</div>
-    <div><div class="qual-title" style="color:#004080">Extraordinary Intelligence</div><div class="qual-desc">Master of Sanskrit grammar, all four Vedas, nine grammars. Rama told Lakshmana: "Whoever sent this messenger has profound wisdom — no enemy could speak this way."</div></div>
-  </div>
-  <div class="qual-item" style="border-color:#C94800">
-    <div class="qual-icon">🏔️</div>
-    <div><div class="qual-title" style="color:#C94800">The Mountain Moment</div><div class="qual-desc">When Hanuman couldn't identify the Sanjeevani, he didn't say "I did my best." He lifted the entire mountain. This is what unconditional service looks like.</div></div>
-  </div>
-  <div class="qual-item" style="border-color:#1B5E20">
-    <div class="qual-icon">💍</div>
-    <div><div class="qual-title" style="color:#1B5E20">The Ring and the Hairpiece</div><div class="qual-desc">Rama gave his ring to Hanuman for Sita. Sita gave her chudamani (jewelled hairpiece) to Hanuman for Rama. Two objects exchanged across an ocean — one of the most moving moments in all literature.</div></div>
-  </div>
-  <div class="qual-item" style="border-color:#7B0015">
-    <div class="qual-icon">🫂</div>
-    <div><div class="qual-title" style="color:#7B0015">Rama's Gratitude</div><div class="qual-desc">When Hanuman returned with news of Sita, Rama wept and said: "What can I give you? My whole kingdom cannot repay this." Then he embraced Hanuman — an Avatar of Vishnu embracing a monkey.</div></div>
-  </div>
-  <div class="qual-item" style="border-color:#4A0060">
-    <div class="qual-icon">♾️</div>
-    <div><div class="qual-title" style="color:#4A0060">The Immortal Devotee</div><div class="qual-desc">Hanuman asked one boon: to remain alive as long as Rama's name is chanted on earth. He is Chiranjivi — immortal. Wherever the Ramayana is told, Hanuman is present in the room.</div></div>
-  </div>
+<div class="qual-item" style="border-color:#4A0060">
+<div class="qual-icon">💪</div>
+<div><div class="qual-title" style="color:#4A0060">Strength Without Ego</div><div class="qual-desc">Power entirely in service of purpose. Never once used for personal gain. The rarest combination in the universe.</div></div>
 </div>
-
+<div class="qual-item" style="border-color:#004080">
+<div class="qual-icon">🧠</div>
+<div><div class="qual-title" style="color:#004080">Extraordinary Intelligence</div><div class="qual-desc">Master of Sanskrit grammar, all four Vedas, nine grammars. Rama told Lakshmana: "Whoever sent this messenger has profound wisdom — no enemy could speak this way."</div></div>
+</div>
+<div class="qual-item" style="border-color:#C94800">
+<div class="qual-icon">🏔️</div>
+<div><div class="qual-title" style="color:#C94800">The Mountain Moment</div><div class="qual-desc">When Hanuman couldn't identify the Sanjeevani, he didn't say "I did my best." He lifted the entire mountain. This is what unconditional service looks like.</div></div>
+</div>
+<div class="qual-item" style="border-color:#1B5E20">
+<div class="qual-icon">💍</div>
+<div><div class="qual-title" style="color:#1B5E20">The Ring and the Hairpiece</div><div class="qual-desc">Rama gave his ring to Hanuman for Sita. Sita gave her chudamani (jewelled hairpiece) to Hanuman for Rama. Two objects exchanged across an ocean — one of the most moving moments in all literature.</div></div>
+</div>
+<div class="qual-item" style="border-color:#7B0015">
+<div class="qual-icon">🫂</div>
+<div><div class="qual-title" style="color:#7B0015">Rama's Gratitude</div><div class="qual-desc">When Hanuman returned with news of Sita, Rama wept and said: "What can I give you? My whole kingdom cannot repay this." Then he embraced Hanuman — an Avatar of Vishnu embracing a monkey.</div></div>
+</div>
+<div class="qual-item" style="border-color:#4A0060">
+<div class="qual-icon">♾️</div>
+<div><div class="qual-title" style="color:#4A0060">The Immortal Devotee</div><div class="qual-desc">Hanuman asked one boon: to remain alive as long as Rama's name is chanted on earth. He is Chiranjivi — immortal. Wherever the Ramayana is told, Hanuman is present in the room.</div></div>
+</div>
+</div>
 <!-- ════ SOCIAL JUSTICE ════ -->
 <div class="sec-hdr">
-  <h2>Social Justice in the Ramayana</h2>
-  <p>Rama treated all equally — regardless of caste, tribe or birth</p>
+<h2>Social Justice in the Ramayana</h2>
+<p>Rama treated all equally — regardless of caste, tribe or birth</p>
 </div>
 <div class="intro-b">
-  <p class="lead">"For Rama, no one was untouchable. No one was beneath dignity. No one was lesser."</p>
-  <p>Written 2,500+ years ago, the Ramayana contains some of the most radical acts of social equality in ancient literature. A Kshatriya prince repeatedly crossed caste barriers, treating fishermen, tribals, Dalits and even outcasts as equals, friends and family.</p>
+<p class="lead">"For Rama, no one was untouchable. No one was beneath dignity. No one was lesser."</p>
+<p>Written 2,500+ years ago, the Ramayana contains some of the most radical acts of social equality in ancient literature. A Kshatriya prince repeatedly crossed caste barriers, treating fishermen, tribals, Dalits and even outcasts as equals, friends and family.</p>
 </div>
-
 <div class="justice-card">
-  <div class="justice-hdr" style="border-top:3px solid #1B5E20">
-    <h3 style="color:#1B5E20">Nishadraj Guha — The Boatman King</h3>
-    <div class="justice-sub">Nishada tribe · Dalit community · Ganga crossing</div>
-  </div>
-  <div class="justice-body">
+<div class="justice-hdr" style="border-top:3px solid #1B5E20">
+<h3 style="color:#1B5E20">Nishadraj Guha — The Boatman King</h3>
+<div class="justice-sub">Nishada tribe · Dalit community · Ganga crossing</div>
+</div>
+<div class="justice-body">
     Crossing the Ganga to enter exile, Rama met Guha — chief of the Nishada tribe, considered a Dalit (lower caste) community. Rama embraced Guha as an elder brother. They shared a meal. They slept on the forest floor together. Guha later told Bharata: <em>"Rama called me his fifth brother."</em>
-    <div class="quote-block">A prince and a tribal chief — equal in Rama's eyes. When Bharata came searching, Guha initially prepared to fight a royal army with his tribal forces to protect Rama. That is how fierce his love was.</div>
-  </div>
+<div class="quote-block">A prince and a tribal chief — equal in Rama's eyes. When Bharata came searching, Guha initially prepared to fight a royal army with his tribal forces to protect Rama. That is how fierce his love was.</div>
 </div>
-
+</div>
 <div class="justice-card">
-  <div class="justice-hdr" style="border-top:3px solid #C94800">
-    <h3 style="color:#C94800">Shabari — The Devoted Tribal Woman</h3>
-    <div class="justice-sub">Matanga's ashram · Forest tribal · Pre-tasted berries</div>
-  </div>
-  <div class="justice-body">
+<div class="justice-hdr" style="border-top:3px solid #C94800">
+<h3 style="color:#C94800">Shabari — The Devoted Tribal Woman</h3>
+<div class="justice-sub">Matanga's ashram · Forest tribal · Pre-tasted berries</div>
+</div>
+<div class="justice-body">
     Shabari was a tribal woman who had waited decades in the forest for Rama to arrive, promised by her guru Matanga that she would meet him. She pre-tasted every berry to find the sweetest ones for Rama — discarding the rest. When Rama arrived she was embarrassed. Rama sat down and ate the half-bitten berries with joy.
     <div class="quote-block">"Shabari, I see only your devotion. These are the sweetest berries I have ever tasted." A high-caste prince eating from the hands of a tribal woman, seeing only love, not birth.</div>
-  </div>
 </div>
-
+</div>
 <div class="justice-card">
-  <div class="justice-hdr" style="border-top:3px solid #4A0060">
-    <h3 style="color:#4A0060">Sage Valmiki — The Outcast Who Wrote the Epic</h3>
-    <div class="justice-sub">Born low-caste dacoit · Transformed by Rama's name · Sheltered Sita</div>
-  </div>
-  <div class="justice-body">
+<div class="justice-hdr" style="border-top:3px solid #4A0060">
+<h3 style="color:#4A0060">Sage Valmiki — The Outcast Who Wrote the Epic</h3>
+<div class="justice-sub">Born low-caste dacoit · Transformed by Rama's name · Sheltered Sita</div>
+</div>
+<div class="justice-body">
     Valmiki — author of the Ramayana — was born as Ratnakar, a low-caste robber who attacked travelers. He was transformed by sage Narada through the repetition of Rama's name. The same man who robbed travelers became the Adi Kavi — the first poet of Sanskrit. When Rama banished the pregnant Sita, it was Valmiki who sheltered her in his ashram. Sita gave birth to Lava and Kush at Valmiki's hermitage.
     <div class="quote-block">A former outcast became the guardian of the Avatar's wife and children. The Ramayana was composed by someone Rama's own caste system would have excluded.</div>
-  </div>
 </div>
-
+</div>
 <div class="justice-card">
-  <div class="justice-hdr" style="border-top:3px solid #004080">
-    <h3 style="color:#004080">Vibhishana — The Enemy Who Chose Dharma</h3>
-    <div class="justice-sub">Rakshasa · Ravana's brother · Chose righteousness</div>
-  </div>
-  <div class="justice-body">
+<div class="justice-hdr" style="border-top:3px solid #004080">
+<h3 style="color:#004080">Vibhishana — The Enemy Who Chose Dharma</h3>
+<div class="justice-sub">Rakshasa · Ravana's brother · Chose righteousness</div>
+</div>
+<div class="justice-body">
     Vibhishana was a demon — Ravana's own brother. When he urged Ravana to return Sita and was thrown out of Lanka, Rama welcomed him with open arms. Sugreeva objected: "He is a demon and Ravana's brother — how can we trust him?" Rama's reply has echoed for millennia:
     <div class="quote-block">"If someone comes to me for refuge, I will protect them. Even if it is Ravana himself." This is the radical hospitality of Rama's dharma — identity does not determine worthiness.</div>
-  </div>
 </div>
-
+</div>
 <div class="justice-card">
-  <div class="justice-hdr" style="border-top:3px solid #8B4500">
-    <h3 style="color:#8B4500">Jatayu — The Eagle Given a Father's Rites</h3>
-    <div class="justice-sub">A vulture · Fought Ravana to protect Sita · Died in Rama's arms</div>
-  </div>
-  <div class="justice-body">
+<div class="justice-hdr" style="border-top:3px solid #8B4500">
+<h3 style="color:#8B4500">Jatayu — The Eagle Given a Father's Rites</h3>
+<div class="justice-sub">A vulture · Fought Ravana to protect Sita · Died in Rama's arms</div>
+</div>
+<div class="justice-body">
     Jatayu was a vulture — an animal — who battled Ravana with everything he had to protect Sita, losing his wings and dying in the attempt. When Rama found the dying Jatayu, he sat beside him, held him, and performed the last rites that a son performs for a father. He built a funeral pyre and conducted the sacred ceremonies.
     <div class="quote-block">"You died protecting my wife. You are my father." An Avatar of Vishnu performing a son's sacred duty for a bird.</div>
-  </div>
 </div>
-
+</div>
 <!-- ════ FESTIVALS ════ -->
 <div class="sec-hdr">
-  <h2>Festivals Born from the Ramayana</h2>
-  <p>Dussehra · Diwali · Ram Navami · Hanuman Jayanti · Ramlila</p>
+<h2>Festivals Born from the Ramayana</h2>
+<p>Dussehra · Diwali · Ram Navami · Hanuman Jayanti · Ramlila</p>
 </div>
-
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#FFF8F0">
-    <div class="fest-icon">🏹</div>
-    <div class="fest-hdr-text"><h3 style="color:#C94800">Ram Navami</h3><div class="fest-date">Chaitra Shukla Navami · March–April · In 2026: 26 March</div></div>
-  </div>
-  <div class="fest-body">Rama's birthday — the most sacred Ram festival. Observed on the 9th day of Chaitra Shukla Paksha. Puja at midday — the Madhyahna Muhurat 11:13–1:41 PM. In Ayodhya, the Surya Tilak: sunlight directed by mirrors to anoint Ram Lalla's forehead at 12:27 PM. Also the final day of Chaitra Navratri — the Divine Mother's nine nights conclude at her greatest devotee's birth.</div>
+<div class="fest-hdr" style="background:#FFF8F0">
+<div class="fest-icon">🏹</div>
+<div class="fest-hdr-text"><h3 style="color:#C94800">Ram Navami</h3><div class="fest-date">Chaitra Shukla Navami · March–April · In 2026: 26 March</div></div>
 </div>
-
+<div class="fest-body">Rama's birthday — the most sacred Ram festival. Observed on the 9th day of Chaitra Shukla Paksha. Puja at midday — the Madhyahna Muhurat 11:13–1:41 PM. In Ayodhya, the Surya Tilak: sunlight directed by mirrors to anoint Ram Lalla's forehead at 12:27 PM. Also the final day of Chaitra Navratri — the Divine Mother's nine nights conclude at her greatest devotee's birth.</div>
+</div>
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#FFF5F5">
-    <div class="fest-icon">🔥</div>
-    <div class="fest-hdr-text"><h3 style="color:#8B0000">Dussehra / Vijayadashami</h3><div class="fest-date">Ashwin Shukla Dashami · September–October</div></div>
-  </div>
-  <div class="fest-body">Commemorates Rama killing Ravana on the 10th day of the Lanka War. Vijaya = victory, Dashami = 10th day. Across India, massive effigies of Ravana (10 heads), Kumbhakarna and Indrajit are burned. The burning = burning the 10 vices within ourselves. Ayodhya hosts India's largest Ramlila — a 30-day theatrical performance culminating in the spectacular burning of Ravana.</div>
+<div class="fest-hdr" style="background:#FFF5F5">
+<div class="fest-icon">🔥</div>
+<div class="fest-hdr-text"><h3 style="color:#8B0000">Dussehra / Vijayadashami</h3><div class="fest-date">Ashwin Shukla Dashami · September–October</div></div>
 </div>
-
+<div class="fest-body">Commemorates Rama killing Ravana on the 10th day of the Lanka War. Vijaya = victory, Dashami = 10th day. Across India, massive effigies of Ravana (10 heads), Kumbhakarna and Indrajit are burned. The burning = burning the 10 vices within ourselves. Ayodhya hosts India's largest Ramlila — a 30-day theatrical performance culminating in the spectacular burning of Ravana.</div>
+</div>
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#FFF8E8">
-    <div class="fest-icon">🪔</div>
-    <div class="fest-hdr-text"><h3 style="color:#B8860B">Diwali — Festival of Lights</h3><div class="fest-date">Kartik Amavasya · October–November · 20 days after Dussehra</div></div>
-  </div>
-  <div class="fest-body">Celebrates Rama, Sita and Lakshmana's return to Ayodhya after 14 years of exile. The entire city lit with diyas to welcome them home — this is why Diwali is the Festival of Lights. First Ravana is defeated (Dussehra). Then the exile ends. Then the homecoming lit with love. The darkness of exile ends; the light of dharma returns.</div>
+<div class="fest-hdr" style="background:#FFF8E8">
+<div class="fest-icon">🪔</div>
+<div class="fest-hdr-text"><h3 style="color:#B8860B">Diwali — Festival of Lights</h3><div class="fest-date">Kartik Amavasya · October–November · 20 days after Dussehra</div></div>
 </div>
-
+<div class="fest-body">Celebrates Rama, Sita and Lakshmana's return to Ayodhya after 14 years of exile. The entire city lit with diyas to welcome them home — this is why Diwali is the Festival of Lights. First Ravana is defeated (Dussehra). Then the exile ends. Then the homecoming lit with love. The darkness of exile ends; the light of dharma returns.</div>
+</div>
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#FAF5FF">
-    <div class="fest-icon">⭐</div>
-    <div class="fest-hdr-text"><h3 style="color:#4A0060">Hanuman Jayanti</h3><div class="fest-date">Chaitra Purnima · April · Days after Ram Navami</div></div>
-  </div>
-  <div class="fest-body">Birthday of Lord Hanuman — celebrated on the full moon of Chaitra. The greatest symbol of devotion (bhakti), strength (shakti) and selfless service (seva). Temples stay open all night. The Hanuman Chalisa — 40 verses by Tulsidas — is chanted continuously. Hanuman is especially worshipped on Tuesdays and Saturdays throughout the year.</div>
+<div class="fest-hdr" style="background:#FAF5FF">
+<div class="fest-icon">⭐</div>
+<div class="fest-hdr-text"><h3 style="color:#4A0060">Hanuman Jayanti</h3><div class="fest-date">Chaitra Purnima · April · Days after Ram Navami</div></div>
 </div>
-
+<div class="fest-body">Birthday of Lord Hanuman — celebrated on the full moon of Chaitra. The greatest symbol of devotion (bhakti), strength (shakti) and selfless service (seva). Temples stay open all night. The Hanuman Chalisa — 40 verses by Tulsidas — is chanted continuously. Hanuman is especially worshipped on Tuesdays and Saturdays throughout the year.</div>
+</div>
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#F0F4FF">
-    <div class="fest-icon">🎭</div>
-    <div class="fest-hdr-text"><h3 style="color:#004080">Ramlila — Living Theatre</h3><div class="fest-date">10 nights before Dussehra · UNESCO Intangible Heritage 2008</div></div>
-  </div>
-  <div class="fest-body">A traditional 10-night performance of the Ramayana enacted across India. Most famous at Ramnagar (Varanasi) and Ayodhya. The entire Ramayana from birth to Lanka war is performed by communities for their communities — keeping the epic alive as living tradition rather than scripture. Millions attend. UNESCO recognised Ramlilas of India as Intangible Cultural Heritage in 2008.</div>
+<div class="fest-hdr" style="background:#F0F4FF">
+<div class="fest-icon">🎭</div>
+<div class="fest-hdr-text"><h3 style="color:#004080">Ramlila — Living Theatre</h3><div class="fest-date">10 nights before Dussehra · UNESCO Intangible Heritage 2008</div></div>
 </div>
-
+<div class="fest-body">A traditional 10-night performance of the Ramayana enacted across India. Most famous at Ramnagar (Varanasi) and Ayodhya. The entire Ramayana from birth to Lanka war is performed by communities for their communities — keeping the epic alive as living tradition rather than scripture. Millions attend. UNESCO recognised Ramlilas of India as Intangible Cultural Heritage in 2008.</div>
+</div>
 <div class="fest-card">
-  <div class="fest-hdr" style="background:#F0FFF8">
-    <div class="fest-icon">💒</div>
-    <div class="fest-hdr-text"><h3 style="color:#1B5E20">Vivah Panchami</h3><div class="fest-date">Margashirsha Shukla Panchami · November–December</div></div>
-  </div>
-  <div class="fest-body">Celebrates the wedding of Lord Rama and Goddess Sita at Mithila. Sita was found in a furrow while Janaka was ploughing — considered an earth-born divine being. She chose Rama at the Swayamvara. Their marriage is held as the ideal — love, respect, and cosmic partnership. Celebrated with extraordinary grandeur at Janakpur, Nepal (ancient Mithila) and Ayodhya.</div>
+<div class="fest-hdr" style="background:#F0FFF8">
+<div class="fest-icon">💒</div>
+<div class="fest-hdr-text"><h3 style="color:#1B5E20">Vivah Panchami</h3><div class="fest-date">Margashirsha Shukla Panchami · November–December</div></div>
 </div>
-
+<div class="fest-body">Celebrates the wedding of Lord Rama and Goddess Sita at Mithila. Sita was found in a furrow while Janaka was ploughing — considered an earth-born divine being. She chose Rama at the Swayamvara. Their marriage is held as the ideal — love, respect, and cosmic partnership. Celebrated with extraordinary grandeur at Janakpur, Nepal (ancient Mithila) and Ayodhya.</div>
+</div>
 <!-- ════ RAM RAJYA ════ -->
 <div class="sec-hdr">
-  <h2>Ram Rajya — The Ideal Kingdom</h2>
-  <p>What it means · Why it matters · India's eternal aspiration</p>
+<h2>Ram Rajya — The Ideal Kingdom</h2>
+<p>What it means · Why it matters · India's eternal aspiration</p>
 </div>
-
 <div class="shloka-box">
-  <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,220,120,0.6);margin-bottom:12px">Valmiki describes Ram Rajya</p>
-  <p style="font-family:'Lora',serif;font-style:italic;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.75">"No one died before their time. No child lost its parents. No disease flourished. No farmer lost his crop. No woman was widowed. No man went hungry. No door needed a lock."</p>
-  <p style="font-size:12px;color:rgba(255,220,120,0.7);margin-top:10px">— Valmiki Ramayana, Uttara Kanda</p>
+<p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,220,120,0.6);margin-bottom:12px">Valmiki describes Ram Rajya</p>
+<p style="font-family:'Lora',serif;font-style:italic;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.75">"No one died before their time. No child lost its parents. No disease flourished. No farmer lost his crop. No woman was widowed. No man went hungry. No door needed a lock."</p>
+<p style="font-size:12px;color:rgba(255,220,120,0.7);margin-top:10px">— Valmiki Ramayana, Uttara Kanda</p>
 </div>
-
 <div class="rajya-card" style="border-color:#1B5E20;margin-top:16px">
-  <div class="rajya-title" style="color:#1B5E20">1. No Early Death — Universal Healthcare</div>
-  <p>In Ram Rajya, no one dies before their natural time. Translated today: universal healthcare, clean water, safe food, maternal care. Ram Rajya demands that the state protect every life equally — regardless of wealth, caste or geography.</p>
+<div class="rajya-title" style="color:#1B5E20">1. No Early Death — Universal Healthcare</div>
+<p>In Ram Rajya, no one dies before their natural time. Translated today: universal healthcare, clean water, safe food, maternal care. Ram Rajya demands that the state protect every life equally — regardless of wealth, caste or geography.</p>
 </div>
 <div class="rajya-card" style="border-color:#C94800">
-  <div class="rajya-title" style="color:#C94800">2. No Hunger — Food Security for All</div>
-  <p>"No farmer lost his crop." Agriculture is sacred. The king protects the farmer. No family sleeps hungry. This is why food distribution — Bhandara, Langar, Annadanam — is considered a sacred act across Hindu, Sikh and Jain traditions.</p>
+<div class="rajya-title" style="color:#C94800">2. No Hunger — Food Security for All</div>
+<p>"No farmer lost his crop." Agriculture is sacred. The king protects the farmer. No family sleeps hungry. This is why food distribution — Bhandara, Langar, Annadanam — is considered a sacred act across Hindu, Sikh and Jain traditions.</p>
 </div>
 <div class="rajya-card" style="border-color:#004080">
-  <div class="rajya-title" style="color:#004080">3. No Crime — Justice That Serves All</div>
-  <p>"No door needed a lock." Safety is universal — not just for the wealthy in gated communities. When no one is desperate, no one steals. When justice is swift and equal, crime has no soil to grow in. The king himself is the first servant of the law.</p>
+<div class="rajya-title" style="color:#004080">3. No Crime — Justice That Serves All</div>
+<p>"No door needed a lock." Safety is universal — not just for the wealthy in gated communities. When no one is desperate, no one steals. When justice is swift and equal, crime has no soil to grow in. The king himself is the first servant of the law.</p>
 </div>
 <div class="rajya-card" style="border-color:#4A0060">
-  <div class="rajya-title" style="color:#4A0060">4. Equality Before the King</div>
-  <p>Rama heard every complaint personally. He was accessible to the poorest citizen. When a washerman questioned Sita's honour, Rama responded to the common person's voice — however painfully for him. The king is servant of all, not just the powerful.</p>
+<div class="rajya-title" style="color:#4A0060">4. Equality Before the King</div>
+<p>Rama heard every complaint personally. He was accessible to the poorest citizen. When a washerman questioned Sita's honour, Rama responded to the common person's voice — however painfully for him. The king is servant of all, not just the powerful.</p>
 </div>
 <div class="rajya-card" style="border-color:#B8860B">
-  <div class="rajya-title" style="color:#B8860B">5. Ram Rajya in Modern India</div>
-  <p>Mahatma Gandhi invoked Ram Rajya as his vision for independent India: "Enlightened anarchy — sovereignty of the people based on pure moral authority." It is not a theocracy. It is the highest ideal of a welfare state governed by dharma, not dynasty.</p>
+<div class="rajya-title" style="color:#B8860B">5. Ram Rajya in Modern India</div>
+<p>Mahatma Gandhi invoked Ram Rajya as his vision for independent India: "Enlightened anarchy — sovereignty of the people based on pure moral authority." It is not a theocracy. It is the highest ideal of a welfare state governed by dharma, not dynasty.</p>
 </div>
-
 <p style="font-family:'Lora',serif;font-weight:700;font-size:15px;padding:14px 16px 8px;color:var(--gold)">Those who invoked Ram Rajya</p>
 <div class="invoker">
-  <div class="invoker-name" style="color:#C94800">Mahatma Gandhi</div>
-  <blockquote>"Ram Rajya means sovereignty of the people based on pure moral authority. It is not the Hindu Raj. It is the divine Raj, the Kingdom of God."</blockquote>
+<div class="invoker-name" style="color:#C94800">Mahatma Gandhi</div>
+<blockquote>"Ram Rajya means sovereignty of the people based on pure moral authority. It is not the Hindu Raj. It is the divine Raj, the Kingdom of God."</blockquote>
 </div>
 <div class="invoker">
-  <div class="invoker-name" style="color:#004080">Swami Vivekananda</div>
-  <blockquote>"Ram is not just a god to worship. He is a model to follow. Ram Rajya is not a kingdom in the past. It is a call to the present — to build a society worthy of human dignity."</blockquote>
+<div class="invoker-name" style="color:#004080">Swami Vivekananda</div>
+<blockquote>"Ram is not just a god to worship. He is a model to follow. Ram Rajya is not a kingdom in the past. It is a call to the present — to build a society worthy of human dignity."</blockquote>
 </div>
 <div class="invoker">
-  <div class="invoker-name" style="color:#1B5E20">Rabindranath Tagore</div>
-  <blockquote>"Where Rama is — there is no want. This is not mythology. This is the deepest aspiration of the Indian heart: a society built on righteousness, not power."</blockquote>
+<div class="invoker-name" style="color:#1B5E20">Rabindranath Tagore</div>
+<blockquote>"Where Rama is — there is no want. This is not mythology. This is the deepest aspiration of the Indian heart: a society built on righteousness, not power."</blockquote>
 </div>
-
 <!-- ════ GLOBAL LEGACY ════ -->
 <div class="sec-hdr">
-  <h2>The Ramayana's Global Legacy</h2>
-  <p>300+ versions · 50+ countries · 2,500 years of living tradition</p>
+<h2>The Ramayana's Global Legacy</h2>
+<p>300+ versions · 50+ countries · 2,500 years of living tradition</p>
 </div>
 <div class="stats-row">
-  <div class="stat-pill" style="border-color:#C94800"><div class="stat-num" style="color:#C94800">300+</div><div class="stat-label">versions of the Ramayana exist worldwide</div></div>
-  <div class="stat-pill" style="border-color:#004080"><div class="stat-num" style="color:#004080">50+</div><div class="stat-label">countries where it is performed</div></div>
-  <div class="stat-pill" style="border-color:#1B5E20"><div class="stat-num" style="color:#1B5E20">1B+</div><div class="stat-label">people who know Rama's story</div></div>
+<div class="stat-pill" style="border-color:#C94800"><div class="stat-num" style="color:#C94800">300+</div><div class="stat-label">versions of the Ramayana exist worldwide</div></div>
+<div class="stat-pill" style="border-color:#004080"><div class="stat-num" style="color:#004080">50+</div><div class="stat-label">countries where it is performed</div></div>
+<div class="stat-pill" style="border-color:#1B5E20"><div class="stat-num" style="color:#1B5E20">1B+</div><div class="stat-label">people who know Rama's story</div></div>
 </div>
-
 <div class="country-card">
-  <div class="country-hdr" style="background:#FFF8F0"><div class="country-flag">🇹🇭</div><h3 style="color:#C94800">Thailand — The Ramakien</h3></div>
-  <div class="country-body">The Ramakien is Thailand's national epic — a retelling of the Ramayana adapted to Thai culture. The ancient Ayutthaya kingdom was named after Ayodhya. The Thai royal family uses the name Rama: King Rama X is the current monarch. Ramayana murals cover the entire 1km wall of Wat Phra Kaew (Temple of the Emerald Buddha) in Bangkok. The epic is central to Thai royal and national identity.</div>
+<div class="country-hdr" style="background:#FFF8F0"><div class="country-flag">🇹🇭</div><h3 style="color:#C94800">Thailand — The Ramakien</h3></div>
+<div class="country-body">The Ramakien is Thailand's national epic — a retelling of the Ramayana adapted to Thai culture. The ancient Ayutthaya kingdom was named after Ayodhya. The Thai royal family uses the name Rama: King Rama X is the current monarch. Ramayana murals cover the entire 1km wall of Wat Phra Kaew (Temple of the Emerald Buddha) in Bangkok. The epic is central to Thai royal and national identity.</div>
 </div>
-
 <div class="country-card">
-  <div class="country-hdr" style="background:#F0FFF0"><div class="country-flag">🇮🇩</div><h3 style="color:#1B5E20">Indonesia — Kakawin Ramayana</h3></div>
-  <div class="country-body">Indonesia has the world's largest Muslim population — yet the Ramayana is a living national treasure. The Kakawin Ramayana (9th century, Old Javanese) is performed as Wayang (shadow puppet) theatre and the spectacular Prambanan Ramayana ballet at the UNESCO-listed Hindu temple complex. A unique cultural synthesis where the epic transcends religious boundaries.</div>
+<div class="country-hdr" style="background:#F0FFF0"><div class="country-flag">🇮🇩</div><h3 style="color:#1B5E20">Indonesia — Kakawin Ramayana</h3></div>
+<div class="country-body">Indonesia has the world's largest Muslim population — yet the Ramayana is a living national treasure. The Kakawin Ramayana (9th century, Old Javanese) is performed as Wayang (shadow puppet) theatre and the spectacular Prambanan Ramayana ballet at the UNESCO-listed Hindu temple complex. A unique cultural synthesis where the epic transcends religious boundaries.</div>
 </div>
-
 <div class="country-card">
-  <div class="country-hdr" style="background:#F0F4FF"><div class="country-flag">🇰🇭</div><h3 style="color:#004080">Cambodia — Angkor Wat</h3></div>
-  <div class="country-body">The largest religious monument in the world — Angkor Wat — is dedicated to Vishnu, and its most dramatic murals depict the Ramayana. The Battle of Lanka covers an entire gallery wall. Cambodia's national dance drama — the Reamker — is a living Ramayana performance tradition, central to Khmer cultural identity.</div>
+<div class="country-hdr" style="background:#F0F4FF"><div class="country-flag">🇰🇭</div><h3 style="color:#004080">Cambodia — Angkor Wat</h3></div>
+<div class="country-body">The largest religious monument in the world — Angkor Wat — is dedicated to Vishnu, and its most dramatic murals depict the Ramayana. The Battle of Lanka covers an entire gallery wall. Cambodia's national dance drama — the Reamker — is a living Ramayana performance tradition, central to Khmer cultural identity.</div>
 </div>
-
 <div class="country-card">
-  <div class="country-hdr" style="background:#FAF5FF"><div class="country-flag">🌏</div><h3 style="color:#4A0060">Fiji, Mauritius, Guyana &amp; the Diaspora</h3></div>
-  <div class="country-body">Between 1838–1917, hundreds of thousands of Indian indentured labourers were sent to Fiji, Mauritius, Trinidad, Guyana and Suriname. They carried one possession across the ocean: the Ramcharitmanas. Tulsidas's Hindi Ramayana became scripture, community bond, and cultural survival tool for displaced communities. To this day, Ramlila is performed annually across these nations.</div>
+<div class="country-hdr" style="background:#FAF5FF"><div class="country-flag">🌏</div><h3 style="color:#4A0060">Fiji, Mauritius, Guyana &amp; the Diaspora</h3></div>
+<div class="country-body">Between 1838–1917, hundreds of thousands of Indian indentured labourers were sent to Fiji, Mauritius, Trinidad, Guyana and Suriname. They carried one possession across the ocean: the Ramcharitmanas. Tulsidas's Hindi Ramayana became scripture, community bond, and cultural survival tool for displaced communities. To this day, Ramlila is performed annually across these nations.</div>
 </div>
-
 <!-- ════ TIMELINE ════ -->
 <div class="sec-hdr">
-  <h2>The Ramayana — A Timeline</h2>
-  <p>From Treta Yuga to the present · Scroll to see the full timeline →</p>
+<h2>The Ramayana — A Timeline</h2>
+<p>From Treta Yuga to the present · Scroll to see the full timeline →</p>
 </div>
 <div class="timeline-scroll">
-  <div class="tl-bar">
-    <div class="tl-line"></div>
-    <div class="tl-events">
-      <div class="tl-event">
-        <div class="tl-top"><div class="tl-date">Treta Yuga</div><div class="tl-text">Rama born at Ayodhya</div></div>
-        <div class="tl-dot" style="background:#C94800;box-shadow-color:#C94800"></div>
-        <div class="tl-bot"></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"></div>
-        <div class="tl-dot" style="background:#004080"></div>
-        <div class="tl-bot"><div class="tl-date">~300 BCE</div><div class="tl-text">Ramayana spreads to Southeast Asia</div></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"><div class="tl-date">~500 BCE</div><div class="tl-text">Valmiki composes the Ramayana</div></div>
-        <div class="tl-dot" style="background:#1B5E20"></div>
-        <div class="tl-bot"></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"></div>
-        <div class="tl-dot" style="background:#4A0060"></div>
-        <div class="tl-bot"><div class="tl-date">9th C CE</div><div class="tl-text">Angkor Wat &amp; Kakawin Ramayana</div></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"><div class="tl-date">~11th C</div><div class="tl-text">Kamban's Tamil Ramayana</div></div>
-        <div class="tl-dot" style="background:#C94800"></div>
-        <div class="tl-bot"></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"></div>
-        <div class="tl-dot" style="background:#B8860B"></div>
-        <div class="tl-bot"><div class="tl-date">1574 CE</div><div class="tl-text">Tulsidas writes Ramcharitmanas</div></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"><div class="tl-date">1838–1917</div><div class="tl-text">Diaspora carries Ramcharitmanas</div></div>
-        <div class="tl-dot" style="background:#4A0060"></div>
-        <div class="tl-bot"></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"></div>
-        <div class="tl-dot" style="background:#8B0000"></div>
-        <div class="tl-bot"><div class="tl-date">2019 CE</div><div class="tl-text">Supreme Court verdict for temple</div></div>
-      </div>
-      <div class="tl-event">
-        <div class="tl-top"><div class="tl-date">2024 CE</div><div class="tl-text">Ram Mandir consecrated · 135.5M visitors</div></div>
-        <div class="tl-dot" style="background:#C94800"></div>
-        <div class="tl-bot"></div>
-      </div>
-    </div>
-  </div>
-  <p class="tl-note">← Swipe to see full timeline →</p>
+<div class="tl-bar">
+<div class="tl-line"></div>
+<div class="tl-events">
+<div class="tl-event">
+<div class="tl-top"><div class="tl-date">Treta Yuga</div><div class="tl-text">Rama born at Ayodhya</div></div>
+<div class="tl-dot" style="background:#C94800;box-shadow-color:#C94800"></div>
+<div class="tl-bot"></div>
 </div>
-
+<div class="tl-event">
+<div class="tl-top"></div>
+<div class="tl-dot" style="background:#004080"></div>
+<div class="tl-bot"><div class="tl-date">~300 BCE</div><div class="tl-text">Ramayana spreads to Southeast Asia</div></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"><div class="tl-date">~500 BCE</div><div class="tl-text">Valmiki composes the Ramayana</div></div>
+<div class="tl-dot" style="background:#1B5E20"></div>
+<div class="tl-bot"></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"></div>
+<div class="tl-dot" style="background:#4A0060"></div>
+<div class="tl-bot"><div class="tl-date">9th C CE</div><div class="tl-text">Angkor Wat &amp; Kakawin Ramayana</div></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"><div class="tl-date">~11th C</div><div class="tl-text">Kamban's Tamil Ramayana</div></div>
+<div class="tl-dot" style="background:#C94800"></div>
+<div class="tl-bot"></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"></div>
+<div class="tl-dot" style="background:#B8860B"></div>
+<div class="tl-bot"><div class="tl-date">1574 CE</div><div class="tl-text">Tulsidas writes Ramcharitmanas</div></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"><div class="tl-date">1838–1917</div><div class="tl-text">Diaspora carries Ramcharitmanas</div></div>
+<div class="tl-dot" style="background:#4A0060"></div>
+<div class="tl-bot"></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"></div>
+<div class="tl-dot" style="background:#8B0000"></div>
+<div class="tl-bot"><div class="tl-date">2019 CE</div><div class="tl-text">Supreme Court verdict for temple</div></div>
+</div>
+<div class="tl-event">
+<div class="tl-top"><div class="tl-date">2024 CE</div><div class="tl-text">Ram Mandir consecrated · 135.5M visitors</div></div>
+<div class="tl-dot" style="background:#C94800"></div>
+<div class="tl-bot"></div>
+</div>
+</div>
+</div>
+<p class="tl-note">← Swipe to see full timeline →</p>
+</div>
 <!-- ════ SEVEN TEACHINGS ════ -->
 <div class="sec-hdr">
-  <h2>Seven Teachings of the Ramayana</h2>
-  <p>As relevant in 2026 as in the Treta Yuga</p>
+<h2>Seven Teachings of the Ramayana</h2>
+<p>As relevant in 2026 as in the Treta Yuga</p>
 </div>
-
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#FFF5F0">
-    <div class="teaching-icon" style="background:#FFE0D0">⚖️</div>
-    <h3 style="color:#C94800">Dharma Over Comfort</h3>
-  </div>
-  <div class="teaching-body">Rama chose the right action over personal happiness at every turn. He gave up the throne not reluctantly, but with grace. The Ramayana's deepest teaching: doing what is right is always available to you, regardless of what has been done to you.
+<div class="teaching-hdr" style="background:#FFF5F0">
+<div class="teaching-icon" style="background:#FFE0D0">⚖️</div>
+<h3 style="color:#C94800">Dharma Over Comfort</h3>
+</div>
+<div class="teaching-body">Rama chose the right action over personal happiness at every turn. He gave up the throne not reluctantly, but with grace. The Ramayana's deepest teaching: doing what is right is always available to you, regardless of what has been done to you.
     <div class="teaching-lesson" style="background:#C94800">Lesson: Circumstances bend. Character does not.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#F0FFF0">
-    <div class="teaching-icon" style="background:#D0FFD0">🙏</div>
-    <h3 style="color:#1B5E20">Every Being Has Dignity</h3>
-  </div>
-  <div class="teaching-body">Rama ate Shabari's pre-tasted berries. He embraced Guha the boatman. He wept for Jatayu the eagle. He welcomed Vibhishana the demon. The Ramayana repeatedly shows that birth does not determine worth — only devotion, honesty and righteousness matter.
+<div class="teaching-hdr" style="background:#F0FFF0">
+<div class="teaching-icon" style="background:#D0FFD0">🙏</div>
+<h3 style="color:#1B5E20">Every Being Has Dignity</h3>
+</div>
+<div class="teaching-body">Rama ate Shabari's pre-tasted berries. He embraced Guha the boatman. He wept for Jatayu the eagle. He welcomed Vibhishana the demon. The Ramayana repeatedly shows that birth does not determine worth — only devotion, honesty and righteousness matter.
     <div class="teaching-lesson" style="background:#1B5E20">Lesson: Judge actions, not origins.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#FAF5FF">
-    <div class="teaching-icon" style="background:#EED0FF">🤝</div>
-    <h3 style="color:#4A0060">Friendship is Sacred</h3>
-  </div>
-  <div class="teaching-body">Rama's relationships with Hanuman, Sugreeva, Vibhishana and Guha show us that real friendship crosses every boundary. Real friendship: you show up in the dark. You cross the ocean. You carry the mountain. You don't ask what's in it for you.
+<div class="teaching-hdr" style="background:#FAF5FF">
+<div class="teaching-icon" style="background:#EED0FF">🤝</div>
+<h3 style="color:#4A0060">Friendship is Sacred</h3>
+</div>
+<div class="teaching-body">Rama's relationships with Hanuman, Sugreeva, Vibhishana and Guha show us that real friendship crosses every boundary. Real friendship: you show up in the dark. You cross the ocean. You carry the mountain. You don't ask what's in it for you.
     <div class="teaching-lesson" style="background:#4A0060">Lesson: The people who stay in your hardest moments are your real family.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#FFF5F5">
-    <div class="teaching-icon" style="background:#FFD0D0">⚡</div>
-    <h3 style="color:#8B0000">Power Must Serve</h3>
-  </div>
-  <div class="teaching-body">Ravana had everything: intelligence, strength, devotion, knowledge. He fell because his power served only his ego. Rama had the same power — and it served everyone around him. Power that serves only the powerful is tyranny. Power that serves all is Ram Rajya.
+<div class="teaching-hdr" style="background:#FFF5F5">
+<div class="teaching-icon" style="background:#FFD0D0">⚡</div>
+<h3 style="color:#8B0000">Power Must Serve</h3>
+</div>
+<div class="teaching-body">Ravana had everything: intelligence, strength, devotion, knowledge. He fell because his power served only his ego. Rama had the same power — and it served everyone around him. Power that serves only the powerful is tyranny. Power that serves all is Ram Rajya.
     <div class="teaching-lesson" style="background:#8B0000">Lesson: True power is measured by who it protects.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#F0F4FF">
-    <div class="teaching-icon" style="background:#D0E0FF">⏳</div>
-    <h3 style="color:#004080">Patience is Strength</h3>
-  </div>
-  <div class="teaching-body">14 years of exile. Months of searching for Sita. Hanuman waited decades to meet Rama. Shabari waited years. The Ramayana honours those who wait with faith — not as weakness, but as the deepest form of strength. Those who can wait with love are the ones worth waiting for.
+<div class="teaching-hdr" style="background:#F0F4FF">
+<div class="teaching-icon" style="background:#D0E0FF">⏳</div>
+<h3 style="color:#004080">Patience is Strength</h3>
+</div>
+<div class="teaching-body">14 years of exile. Months of searching for Sita. Hanuman waited decades to meet Rama. Shabari waited years. The Ramayana honours those who wait with faith — not as weakness, but as the deepest form of strength. Those who can wait with love are the ones worth waiting for.
     <div class="teaching-lesson" style="background:#004080">Lesson: Faith sustained through hardship is the rarest virtue.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#FFF8E8">
-    <div class="teaching-icon" style="background:#FFE8A0">✨</div>
-    <h3 style="color:#B8860B">Legacy Outlasts Life</h3>
-  </div>
-  <div class="teaching-body">Valmiki — a former robber — wrote the world's first great epic. Tulsidas — a poor brahmin abandoned by his wife — wrote the Ramcharitmanas, read by more people than almost any book in human history. What you create with love and truth will outlast everything else.
+<div class="teaching-hdr" style="background:#FFF8E8">
+<div class="teaching-icon" style="background:#FFE8A0">✨</div>
+<h3 style="color:#B8860B">Legacy Outlasts Life</h3>
+</div>
+<div class="teaching-body">Valmiki — a former robber — wrote the world's first great epic. Tulsidas — a poor brahmin abandoned by his wife — wrote the Ramcharitmanas, read by more people than almost any book in human history. What you create with love and truth will outlast everything else.
     <div class="teaching-lesson" style="background:#B8860B">Lesson: Your work matters. Create with intention.</div>
-  </div>
 </div>
-
+</div>
 <div class="teaching">
-  <div class="teaching-hdr" style="background:#F0FFF0">
-    <div class="teaching-icon" style="background:#D0FFE8">🌱</div>
-    <h3 style="color:#1B5E20">The Forest Years Are Sacred</h3>
-  </div>
-  <div class="teaching-body">Rama's exile was not a detour — it was the journey itself. The forest years shaped everything: the alliances, the wisdom, the victory. If Rama had gone directly to Lanka with an army, he would have won differently. He won the way he won because of every sage he met, every demon he defeated, every person he treated with dignity in those 14 years.
+<div class="teaching-hdr" style="background:#F0FFF0">
+<div class="teaching-icon" style="background:#D0FFE8">🌱</div>
+<h3 style="color:#1B5E20">The Forest Years Are Sacred</h3>
+</div>
+<div class="teaching-body">Rama's exile was not a detour — it was the journey itself. The forest years shaped everything: the alliances, the wisdom, the victory. If Rama had gone directly to Lanka with an army, he would have won differently. He won the way he won because of every sage he met, every demon he defeated, every person he treated with dignity in those 14 years.
     <div class="teaching-lesson" style="background:#1B5E20">Lesson: Your formative years define everything that follows.</div>
-  </div>
 </div>
-
+</div>
 <!-- ════ CLOSING ════ -->
-<div class="closing">
-  <div style="font-size:36px;margin-bottom:16px">🏹</div>
-  <div class="jai">Jai Shri Ram!</div>
-  <div class="jai-deva">जय श्री राम</div>
-  <div class="victory">Victory to Dharma — Victory to the Righteous!</div>
-  <div class="c-divider"></div>
-  <div class="shloka-box" style="margin:0;background:transparent">
-    <div class="shloka-deva">रामो विग्रहवान् धर्मः</div>
-    <div class="shloka-deva">साधुः सत्य-पराक्रमः</div>
-    <div class="shloka-roman" style="margin-top:12px">Ramo Vigrahavan Dharmah Sadhuh Satya-Parakramah</div>
-    <div class="shloka-meaning">"Rama is Dharma in human form — virtuous, with courage rooted in truth."<br>— Valmiki Ramayana</div>
-  </div>
-  <div class="c-divider"></div>
-  <div class="shloka-box" style="margin:0;background:transparent">
-    <div class="shloka-deva" style="font-size:15px">मंगल भवन अमंगल हारी</div>
-    <div class="shloka-roman">Mangal Bhavan Amangal Hari</div>
-    <div class="shloka-meaning">"Auspicious abode, destroyer of all inauspiciousness"<br>— Tulsidas, Ramcharitmanas</div>
-  </div>
-  <div class="contents">
-    <h4>This guide covers:</h4>
-    <ul>
-      <li>The 7 Kandas of Valmiki's Ramayana</li>
-      <li>The complete journey with accurate India map</li>
-      <li>The Lanka War — day-by-day battle infographic</li>
-      <li>Who was Ravana? — his 10 heads and what they mean</li>
-      <li>Rama &amp; Hanuman — the greatest friendship</li>
-      <li>Social justice — Shabari, Valmiki, Vibhishana, Nishadraj Guha</li>
-      <li>Festivals — Dussehra, Diwali, Ram Navami, Hanuman Jayanti, Ramlila</li>
-      <li>Ram Rajya — what it means and why it matters today</li>
-      <li>Global legacy — Ramayana across 50+ countries</li>
-      <li>Timeline from Treta Yuga to 2024</li>
-      <li>Seven timeless teachings of the Ramayana</li>
-    </ul>
-  </div>
-  <p class="footer">Part of the Sanatana Series — Hinduism for the World<br>The Ramayana: The Complete Journey · Ram Navami 2026</p>
-  <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);text-align:center">
-    <p style="font-size:12px;color:rgba(255,255,255,0.45);font-family:'DM Sans',sans-serif">Created by</p>
-    <p style="font-size:16px;color:rgba(255,220,120,0.7);font-family:'Lora',serif;font-weight:600;margin-top:2px">Varun Dogar</p>
-    <p style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
-  </div>
+
+<!-- Subscribe bar -->
+<div style="background:linear-gradient(135deg,#0D0400 0%,#1F0800 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.5);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.5);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide"
+    target="_blank" rel="noopener"
+    style="display:inline-block;background:#C94800;color:white;
+      text-decoration:none;font-family:'DM Sans',sans-serif;
+      font-size:14px;font-weight:600;padding:12px 28px;
+      border-radius:100px;transition:background 0.2s"
+    onmouseover="this.style.background='#E85D00'"
+    onmouseout="this.style.background='#C94800'">
+    🔔 Subscribe — Free
+  </a>
 </div>
 
-
+<div class="closing">
+<div style="font-size:36px;margin-bottom:16px">🏹</div>
+<div class="jai">Jai Shri Ram!</div>
+<div class="jai-deva">जय श्री राम</div>
+<div class="victory">Victory to Dharma — Victory to the Righteous!</div>
+<div class="c-divider"></div>
+<div class="shloka-box" style="margin:0;background:transparent">
+<div class="shloka-deva">रामो विग्रहवान् धर्मः</div>
+<div class="shloka-deva">साधुः सत्य-पराक्रमः</div>
+<div class="shloka-roman" style="margin-top:12px">Ramo Vigrahavan Dharmah Sadhuh Satya-Parakramah</div>
+<div class="shloka-meaning">"Rama is Dharma in human form — virtuous, with courage rooted in truth."<br/>— Valmiki Ramayana</div>
+</div>
+<div class="c-divider"></div>
+<div class="shloka-box" style="margin:0;background:transparent">
+<div class="shloka-deva" style="font-size:15px">मंगल भवन अमंगल हारी</div>
+<div class="shloka-roman">Mangal Bhavan Amangal Hari</div>
+<div class="shloka-meaning">"Auspicious abode, destroyer of all inauspiciousness"<br/>— Tulsidas, Ramcharitmanas</div>
+</div>
+<div class="contents">
+<h4>This guide covers:</h4>
+<ul>
+<li>The 7 Kandas of Valmiki's Ramayana</li>
+<li>The complete journey with accurate India map</li>
+<li>The Lanka War — day-by-day battle infographic</li>
+<li>Who was Ravana? — his 10 heads and what they mean</li>
+<li>Rama &amp; Hanuman — the greatest friendship</li>
+<li>Social justice — Shabari, Valmiki, Vibhishana, Nishadraj Guha</li>
+<li>Festivals — Dussehra, Diwali, Ram Navami, Hanuman Jayanti, Ramlila</li>
+<li>Ram Rajya — what it means and why it matters today</li>
+<li>Global legacy — Ramayana across 50+ countries</li>
+<li>Timeline from Treta Yuga to 2024</li>
+<li>Seven timeless teachings of the Ramayana</li>
+</ul>
+</div>
+<p class="footer">Part of the Sanatana Series — Hinduism for the World<br/>The Ramayana: The Complete Journey · Ram Navami 2026</p>
+<div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1);text-align:center">
+<p style="font-size:12px;color:rgba(255,255,255,0.45);font-family:'DM Sans',sans-serif">Created by</p>
+<p style="font-size:16px;color:rgba(255,220,120,0.7);font-family:'Lora',serif;font-weight:600;margin-top:2px">Varun Dogar</p>
+<p style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:4px;font-style:italic">With assistance from Claude · Anthropic</p>
+</div>
+</div>
 <script>
-// ── Sanatana Series Audio Player ──
-// Skips all Devanagari, reads Roman + English content
+// ════ Sanatana Series Audio + Bilingual Player ════
 
 const SKIP_CLASSES = [
   'shloka-deva','jai-deva','mantra-deva','v-deva',
   'hero-deva','sh-deva','ch-name-deva','series-deva',
-  'phil-deva','shloka-deva','om','nav-om','top-nav',
-  'audio-bar','footer','attr-claude','attr-name',
-  'footer-series','footer-sub','eyebrow','hero-tags',
-  'hero-tag','hero-stats','h-stat-label','aarti-nav',
-  'listen-row','listen-btn','ch-verses','sec-label',
-  'cal-header','cal-tag','cal-date','soon-tag','ch-tag'
+  'phil-deva','om','nav-om','top-nav','audio-bar','lang-bar',
+  'footer','attr-claude','attr-name','footer-series','footer-sub',
+  'eyebrow','hero-tags','hero-tag','hero-stats','h-stat-label',
+  'aarti-nav','listen-row','listen-btn','ch-verses','sec-label',
+  'cal-header','cal-tag','cal-date','soon-tag','ch-tag','hi-content'
 ];
+const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH',
+  'LINE','CIRCLE','POLYGON','RECT','ELLIPSE','META','SELECT','OPTION'];
 
-const SKIP_TAGS = ['NAV','STYLE','SCRIPT','BUTTON','A','SVG','PATH','LINE',
-                   'CIRCLE','POLYGON','RECT','ELLIPSE','META'];
-
-let segments = [];
-let curIdx = 0;
-let utterance = null;
-let speaking = false;
-let speeds = [0.8, 1.0, 1.4, 1.8];
-let speedIdx = 1;
+let segments = [], curIdx = 0, utterance = null, speaking = false;
+let speeds = [0.8,1.0,1.4,1.8], speedIdx = 1;
 let lastHighlighted = null;
+let selectedVoice = null;
+// ── Voice loader ──
+function loadVoices() {
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return;
+  const sel = document.getElementById('abVoice');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">🎙</option>';
 
+  // Filter to English + Hindi voices only, prioritise Indian
+  const priority = ['Rishi','Lekha','Aditi','Google हिन्दी',
+    'Hindi','Indian','Heera','Veena'];
+  const en = voices.filter(v => v.lang.startsWith('en'));
+  const hi = voices.filter(v => v.lang.startsWith('hi'));
+
+  // Sort: Indian voices first
+  const sortFn = (a,b) => {
+    const aP = priority.some(p => a.name.includes(p)) ? 0 : 1;
+    const bP = priority.some(p => b.name.includes(p)) ? 0 : 1;
+    return aP - bP;
+  };
+  en.sort(sortFn); hi.sort(sortFn);
+
+  if (en.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'English';
+    en.slice(0,8).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+  if (hi.length) {
+    const og = document.createElement('optgroup');
+    og.label = 'हिंदी';
+    hi.slice(0,6).forEach(v => {
+      const o = document.createElement('option');
+      o.value = v.name;
+      const star = priority.some(p => v.name.includes(p)) ? '★ ' : '';
+      o.textContent = star + v.name.replace('Google ','').substring(0,18);
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  }
+
+  // Auto-select best voice for current language
+  autoSelectVoice();
+}
+
+function autoSelectVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  const sel = document.getElementById('abVoice');
+  const priority = ['Rishi','Heera','Veena','en-IN','Indian'];
+
+  let best = voices.find(v => priority.some(p =>
+    v.name.includes(p) || v.lang.includes(p)
+  ));
+  if (!best) best = voices.find(v =>
+    v.lang.startsWith(currentLang === 'hi' ? 'hi' : 'en')
+  );
+  if (!best) best = voices.find(v => v.lang.startsWith('en'));
+
+  if (best) {
+    selectedVoice = best;
+    if (sel) sel.value = best.name;
+  }
+}
+
+function audioSetVoice(name) {
+  const voices = window.speechSynthesis.getVoices();
+  selectedVoice = voices.find(v => v.name === name) || null;
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
+}
+
+window.speechSynthesis.onvoiceschanged = loadVoices;
+setTimeout(loadVoices, 500);
+
+// ── Segment builder ──
 function shouldSkipEl(el) {
   if (!el || el.nodeType !== 1) return false;
   if (SKIP_TAGS.includes(el.tagName)) return true;
-  const cls = (el.className || '').toString();
+  const cls = (el.className||'').toString();
   if (SKIP_CLASSES.some(c => cls.includes(c))) return true;
-  // Skip empty or icon-only elements
-  const text = el.textContent.trim();
-  if (text.length < 3) return true;
+  if (el.textContent.trim().length < 3) return true;
+  // Skip hidden elements
+  if (el.style.display === 'none') return true;
   return false;
 }
 
 function extractText(el) {
-  // Clone and remove all Devanagari elements
   const clone = el.cloneNode(true);
-  // Remove deva children
   clone.querySelectorAll(
     '.shloka-deva,.jai-deva,.mantra-deva,.v-deva,.hero-deva,' +
-    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om'
+    '.sh-deva,.ch-name-deva,.series-deva,.phil-deva,.om,.nav-om,' +
+    'button,nav,.audio-bar,.lang-bar,.listen-row,svg,.top-nav,.hi-content'
   ).forEach(d => d.remove());
-  // Remove buttons, links, nav
-  clone.querySelectorAll('button,nav,.audio-bar,.listen-row,svg,.top-nav').forEach(d => d.remove());
-  return clone.textContent.replace(/\s+/g, ' ').trim();
+  return clone.textContent.replace(/\s+/g,' ').trim();
 }
 
 function buildSegments() {
   segments = [];
-  // Walk all meaningful elements
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_ELEMENT,
-    {
-      acceptNode(node) {
-        if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, {
+    acceptNode(node) {
+      if (shouldSkipEl(node)) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
     }
-  );
-
+  });
   const readable = ['H1','H2','H3','P','LI','BLOCKQUOTE'];
   let node;
   while ((node = walker.nextNode())) {
     if (!readable.includes(node.tagName)) continue;
-    // Skip if ancestor is a skip class
     let skip = false;
     let p = node.parentElement;
     while (p && p !== document.body) {
@@ -1265,114 +1370,75 @@ function buildSegments() {
       p = p.parentElement;
     }
     if (skip) continue;
-
     const text = extractText(node);
     if (text.length < 5) continue;
-
-    // Get section label from nearest h2/h3
     let label = '';
-    if (node.tagName === 'H2' || node.tagName === 'H3') {
-      label = text.substring(0, 50);
+    if (node.tagName==='H2'||node.tagName==='H3') {
+      label = text.substring(0,50);
     } else {
-      // Find previous heading
-      let prev = node.previousElementSibling;
-      let searchEl = node.parentElement;
-      while (searchEl && !label) {
-        const hs = searchEl.querySelectorAll('h2,h3');
+      let s = node.parentElement;
+      while (s && !label) {
+        const hs = s.querySelectorAll('h2,h3');
         if (hs.length) label = hs[hs.length-1].textContent.trim().substring(0,50);
-        searchEl = searchEl.parentElement;
+        s = s.parentElement;
       }
     }
-
-    segments.push({ el: node, text, label: label || 'Introduction' });
+    segments.push({ el:node, text, label: label||'Introduction' });
   }
   return segments.length;
 }
 
+// ── Playback ──
 function audioToggle() {
-  if (!segments.length) {
-    const n = buildSegments();
-    if (!n) { alert('No readable content found.'); return; }
-  }
+  if (!segments.length) { const n = buildSegments(); if (!n) return; }
   if (speaking) {
     window.speechSynthesis.cancel();
-    speaking = false;
-    updatePlayBtn(false);
-    clearHighlight();
-  } else {
-    playFrom(curIdx);
-  }
+    speaking = false; updatePlayBtn(false); clearHighlight();
+  } else { playFrom(curIdx); }
 }
 
 function playFrom(idx) {
   window.speechSynthesis.cancel();
   if (idx >= segments.length) {
-    speaking = false;
-    curIdx = 0;
-    updatePlayBtn(false);
-    clearHighlight();
-    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to restart';
+    speaking = false; curIdx = 0; updatePlayBtn(false); clearHighlight();
+    document.getElementById('abSection').textContent = 'Finished · Tap ▶ to replay';
     document.getElementById('abProgress').style.width = '100%';
     return;
   }
   curIdx = idx;
   const seg = segments[idx];
-
-  // Update UI
   document.getElementById('abSection').textContent = seg.label;
   document.getElementById('abProgress').style.width =
-    ((idx / segments.length) * 100) + '%';
-
-  // Highlight
+    ((idx/segments.length)*100)+'%';
   clearHighlight();
   seg.el.classList.add('audio-reading');
   lastHighlighted = seg.el;
-  // Scroll into view if needed
-  seg.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  seg.el.scrollIntoView({ behavior:'smooth', block:'center' });
 
-  // Speak
   utterance = new SpeechSynthesisUtterance(seg.text);
   utterance.rate = speeds[speedIdx];
   utterance.pitch = 1.0;
+  utterance.lang = 'en-IN';
+  if (selectedVoice) utterance.voice = selectedVoice;
 
-  // Pick best voice
-  const voices = window.speechSynthesis.getVoices();
-  const preferred = voices.find(v =>
-    v.lang.startsWith('en-IN') ||
-    v.name.includes('Rishi') ||
-    v.name.includes('Indian') ||
-    v.name.includes('Samantha')
-  ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
-  if (preferred) utterance.voice = preferred;
-
-  utterance.onend = () => {
-    if (speaking) playFrom(curIdx + 1);
-  };
-  utterance.onerror = (e) => {
-    if (e.error !== 'interrupted') playFrom(curIdx + 1);
-  };
-
+  utterance.onend = () => { if (speaking) playFrom(curIdx+1); };
+  utterance.onerror = (e) => { if (e.error!=='interrupted') playFrom(curIdx+1); };
   window.speechSynthesis.speak(utterance);
-  speaking = true;
-  updatePlayBtn(true);
+  speaking = true; updatePlayBtn(true);
 }
 
 function audioNext() {
   window.speechSynthesis.cancel();
   if (!segments.length) buildSegments();
   clearHighlight();
-  playFrom(Math.min(curIdx + 1, segments.length - 1));
+  playFrom(Math.min(curIdx+1, segments.length-1));
 }
 
 function audioCycleSpeed() {
-  speedIdx = (speedIdx + 1) % speeds.length;
+  speedIdx = (speedIdx+1) % speeds.length;
   const labels = ['0.8x','1x','1.4x','1.8x'];
   document.getElementById('abSpeed').textContent = labels[speedIdx];
-  if (utterance && speaking) {
-    const idx = curIdx;
-    window.speechSynthesis.cancel();
-    playFrom(idx);
-  }
+  if (speaking) { const i = curIdx; window.speechSynthesis.cancel(); playFrom(i); }
 }
 
 function audioSeekClick(e, wrap) {
@@ -1380,7 +1446,7 @@ function audioSeekClick(e, wrap) {
   const pct = e.offsetX / wrap.offsetWidth;
   const idx = Math.floor(pct * segments.length);
   window.speechSynthesis.cancel();
-  playFrom(Math.max(0, Math.min(idx, segments.length - 1)));
+  playFrom(Math.max(0, Math.min(idx, segments.length-1)));
 }
 
 function updatePlayBtn(isPlaying) {
@@ -1388,25 +1454,41 @@ function updatePlayBtn(isPlaying) {
     ? '<rect x="3" y="2" width="4" height="12" fill="white"/><rect x="9" y="2" width="4" height="12" fill="white"/>'
     : '<polygon points="4,2 14,8 4,14" fill="white"/>';
 }
-
 function clearHighlight() {
-  if (lastHighlighted) {
-    lastHighlighted.classList.remove('audio-reading');
-    lastHighlighted = null;
-  }
+  if (lastHighlighted) { lastHighlighted.classList.remove('audio-reading'); lastHighlighted = null; }
 }
 
-// Voices load async on some browsers
-window.speechSynthesis.onvoiceschanged = () => {};
+  segments = [];
+  curIdx = 0;
+  document.getElementById('abSection').textContent = 'Tap ▶ to listen';
+  document.getElementById('abProgress').style.width = '0%';
 
-// Pause when tab is hidden, resume when visible
+  // Switch voice to match language
+  autoSelectVoice();
+  const sel = document.getElementById('abVoice');
+  if (sel && selectedVoice) sel.value = selectedVoice.name;
+}
+
+// Tab visibility
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && speaking) {
-    window.speechSynthesis.pause();
-  } else if (!document.hidden && speaking) {
-    window.speechSynthesis.resume();
-  }
+  if (document.hidden && speaking) window.speechSynthesis.pause();
+  else if (!document.hidden && speaking) window.speechSynthesis.resume();
 });
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'hi,gu,ta,te,ml,pa,bn,mr,kn,ur,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
 
 </body>
