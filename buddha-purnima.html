@@ -90,6 +90,17 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .story-hdr h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; }
 .story-body { padding:0 14px 14px; font-size:14px; color:var(--ink2); line-height:1.65; }
 
+.story{position:relative;border:1px solid rgba(184,134,11,0.12);box-shadow:0 10px 24px rgba(42,24,0,0.07)}
+.story::before{content:'';position:absolute;left:18px;top:56px;bottom:18px;width:2px;background:linear-gradient(to bottom, rgba(212,160,23,0.65), rgba(212,160,23,0.08));}
+.story-hdr{position:relative;background:linear-gradient(180deg,#fffdf5 0%,#fff7e6 100%)}
+.story-body{padding:0 14px 16px 56px}
+.story-visual{margin:0 14px 14px 56px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#fff9ef;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.story-visual img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.story-visual figcaption{padding:10px 12px;font-size:12px;line-height:1.55;color:var(--muted)}
+.story-badge{box-shadow:0 0 0 4px #fff7e6, 0 8px 16px rgba(139,96,0,0.18)}
+@media (max-width:560px){.story-body,.story-visual{margin-left:14px;padding-left:0}.story::before{display:none}}
+
+
 /* Four Noble Truths */
 .truth-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
   overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); border-left:5px solid; }
@@ -123,6 +134,11 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .place-body { padding:12px 14px; font-size:14px; color:var(--ink2); line-height:1.65; }
 .place-tag { display:inline-block; font-size:11px; font-weight:600; padding:3px 9px;
   border-radius:100px; color:white; margin-top:6px; background:var(--amber); }
+
+.place-photo{margin:0 14px 14px;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#fff8ee;box-shadow:0 6px 18px rgba(0,0,0,0.07)}
+.place-photo img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.place-photo figcaption{padding:9px 11px;font-size:12px;line-height:1.55;color:var(--muted)}
+
 
 /* Quote */
 .quote-box { background:var(--dark2); border-radius:var(--r); margin:0 16px 10px;
@@ -204,6 +220,17 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
   color:var(--goldt); pointer-events:none; }
 .lang-btn:hover:not(.active) { border-color:rgba(212,160,23,0.4); color:var(--goldt); }
+
+.festival-image{margin:16px;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,0.10);border:1px solid var(--border);background:var(--white)}
+.festival-image img{width:100%;height:auto;display:block}
+.festival-image figcaption{padding:10px 12px;background:#fffaf0;color:var(--muted);font-size:12px;line-height:1.55}
+.hero-visual{margin:18px auto 0;max-width:520px;border-radius:18px;overflow:hidden;border:1px solid rgba(212,160,23,0.25);box-shadow:0 14px 36px rgba(0,0,0,0.28);position:relative}
+.hero-visual img{width:100%;height:auto;display:block}
+.inline-visual{margin:12px 16px 16px;border-radius:var(--r);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.08);border:1px solid var(--border);background:var(--white)}
+.inline-visual img{width:100%;height:auto;display:block}
+.inline-visual figcaption{padding:10px 12px;font-size:12px;color:var(--muted);background:#fffaf0}
+@media (min-width:700px){body{max-width:760px}.hero{padding:52px 28px 36px}}
+
 </style>
 </head>
 <body>
@@ -235,6 +262,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     <span class="hero-tag">Dharma</span>
     <span class="hero-tag">Vesak</span>
   </div>
+<div class="hero-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/644d2e31-51f1-4b12-830e-41d9a9d638ac.png" alt="Colorful Buddha Purnima greeting image showing Gautama Buddha seated in meditation with lotus flowers and a glowing full moon" width="1200" height="1200" loading="eager" decoding="async">
+  </div>
   <div class="hero-facts">
     <div class="hf"><div class="hf-label">Born</div><div class="hf-value">563 BCE · Lumbini, Nepal</div></div>
     <div class="hf"><div class="hf-label">Birth name</div><div class="hf-value">Siddhartha Gautama</div></div>
@@ -253,6 +283,11 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
   <p class="intro-lead">No other figure in human history is believed to have been born, achieved supreme enlightenment, and died on the same lunar day of the same month.</p>
   <p>Buddha Purnima — also called Vesak, Buddha Jayanti or Vaishakha Purnima — falls on the full moon of the month of Vaishakha. It is simultaneously the birthday of Prince Siddhartha, the day Siddhartha became the Buddha under the Bodhi tree at Bodh Gaya, and the day the Buddha passed into Mahaparinirvana at Kushinagar at age 80. This convergence of three transformative moments into a single annual day has made it the most sacred day in the Buddhist calendar — a day observed by over 500 million Buddhists across Asia and the world.</p>
 </div>
+
+<figure class="inline-visual">
+  <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7ceb90e1-034f-4ad5-9ba0-822b6e23c3ef.png" alt="Traditional colored Buddha Purnima artwork with Buddha in meditation, Bodhi leaves, and a luminous full moon" width="1200" height="1200" loading="lazy" decoding="async">
+  <figcaption>Buddha Purnima is traditionally associated with meditation, peace, compassion, the Bodhi tree, and the sacred full moon of Vaishakha.</figcaption>
+</figure>
 
 <div class="stats-row">
   <div class="stat-pill">
@@ -313,6 +348,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     <h3 style="color:var(--amber)">The Royal Birth — Lumbini, 563 BCE</h3>
   </div>
   <div class="story-body">Siddhartha Gautama was born to King Suddhodana and Queen Maya in the royal Shakya clan in Lumbini — present-day Nepal. The name Siddhartha means "one who has achieved his goal." At his birth, a sage named Asita visited the court and prophesied that the child would become either a great king or a great sage — someone who would show the world the path beyond suffering. Suddhodana, wanting a great king, shielded his son completely from any sight of suffering, old age, disease or death. Siddhartha grew up in extraordinary luxury — three palaces, entertainment year-round, married at 16 to the beautiful Yasodhara, with whom he had a son named Rahula. He lived the life of a prince for 29 years, completely insulated from the reality that surrounded him beyond the palace walls.</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/651c0454-c19c-4fd5-9fee-afc9fc3f632d.png" alt="Traditional illustration of the birth of Siddhartha Gautama with Queen Maya and sacred symbolism" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>The opening chapter of the Buddha's life is traditionally remembered with sacred royal symbolism and the serenity of Lumbini.</figcaption>
+  </figure>
 </div>
 
 <div class="story">
@@ -321,6 +360,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     <h3 style="color:var(--amber)">The Four Sights — The Moment Everything Changed</h3>
   </div>
   <div class="story-body">At 29, Siddhartha insisted on leaving the palace to see the city. His charioteer Channa drove him through the streets. In four journeys outside the palace, he encountered the Four Sights that would change the world forever: First — an old man, bent and trembling. Siddhartha asked Channa what had happened to him. Channa told him: he had grown old. This happens to everyone. Second — a diseased man, wracked with pain. Channa: disease afflicts all living beings. Third — a corpse being carried to cremation. Channa: every living being must die. These three sights devastated Siddhartha — he had never seen human vulnerability before, and its reality hit him with the force of revelation. The fourth sight gave him direction: a wandering ascetic, peaceful and serene, who had renounced everything in search of truth. That night, Siddhartha looked at his sleeping wife and infant son. He left the palace before dawn — the Great Renunciation. He was 29 years old.</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/51b20bab-57e5-4a30-baea-618181a9bda8.png" alt="Traditional illustration of Siddhartha Gautama witnessing the Four Sights from his chariot" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>The Four Sights turned Siddhartha from palace certainty toward a lifelong search for truth.</figcaption>
+  </figure>
 </div>
 
 <div class="story">
@@ -329,6 +372,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     <h3 style="color:var(--amber)">Six Years of Seeking — The Middle Path</h3>
   </div>
   <div class="story-body">Siddhartha first studied under two famous teachers — Alara Kalama and Uddaka Ramaputta — mastering their meditation systems completely. But he found their attainments insufficient — they did not lead to the complete cessation of suffering. He then joined five ascetics and practised extreme self-mortification for years — eating almost nothing, sitting in the sun and rain, pushing his body to its absolute limits. He became so thin his ribs showed through his skin. Still, no enlightenment came. He realised that neither extreme — the luxury of palace life nor the harshness of total asceticism — led to truth. He accepted a bowl of rice pudding offered by a village girl named Sujata and began eating. The five ascetics, disgusted, left him. But Siddhartha had discovered something profound: the Middle Path — avoiding both excess and deprivation in the search for truth. This principle is the foundation of everything that followed.</div>
+  <figure class="story-visual">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/635b8864-058c-478b-826d-645d2cb08b0d.png" alt="Traditional illustration of Siddhartha meditating beneath the Bodhi tree at enlightenment" width="1200" height="1200" loading="lazy" decoding="async">
+    <figcaption>Under the Bodhi tree, Siddhartha's inner search culminates in awakening and the discovery of the Middle Path.</figcaption>
+  </figure>
 </div>
 
 <div class="story">
@@ -505,6 +552,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     </div>
   </div>
   <div class="place-body">The most sacred site in Buddhism. The Mahabodhi Temple stands over the spot where the Buddha sat beneath the Bodhi tree and attained enlightenment. The original sacred fig tree is believed to be descended from the tree under which he sat — brought as a cutting to Sri Lanka by Ashoka's daughter Sanghamitta, and returned as a sapling. The Vajrasana — the diamond throne — marks the exact spot. On Buddha Purnima, Bodh Gaya draws hundreds of thousands from across the world.
+    <figure class="place-photo">
+      <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/eea25cf583de09fd168a5d6eb53b28e6d8dbb5ba.jpg" alt="Mahabodhi Temple at Bodh Gaya, the sacred place of the Buddha's enlightenment" width="1300" height="1601" loading="lazy" decoding="async">
+      <figcaption>Bodh Gaya is revered as the place where Siddhartha attained enlightenment beneath the Bodhi tree.</figcaption>
+    </figure>
     <div><span class="place-tag">Enlightenment · 528 BCE</span></div>
   </div>
 </div>
@@ -518,6 +569,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     </div>
   </div>
   <div class="place-body">The Deer Park at Sarnath is where the Buddha gave his first discourse to the five ascetics — Setting the Wheel of Dharma in Motion. The Dhamek Stupa marks the spot of the first sermon. The famous Ashoka Pillar at Sarnath, with its four-lion capital, is the basis of India's national emblem and national flag's Dharma Chakra. The Archaeological Museum here houses some of the finest Buddhist sculpture in existence.
+    <figure class="place-photo">
+      <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/298e286e0275801f7da6e2cc0fe8371eda8b2440.jpg" alt="Dhamek Stupa at Sarnath, where the Buddha is believed to have given his first sermon" width="1900" height="1267" loading="lazy" decoding="async">
+      <figcaption>Sarnath is traditionally linked with the Buddha's first sermon and the turning of the Wheel of Dharma.</figcaption>
+    </figure>
     <div><span class="place-tag">First Sermon · 528 BCE</span></div>
   </div>
 </div>
@@ -531,6 +586,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
     </div>
   </div>
   <div class="place-body">The Buddha passed into Mahaparinirvana at Kushinagar at age 80, lying between two sal trees in the Mahaparinirvana position — on his right side, feet together. The Mahaparinirvana Temple houses a remarkable reclining Buddha statue carved in the 5th century CE. Despite being a small town, Kushinagar is a major international pilgrimage site drawing Buddhists from Japan, Thailand, Sri Lanka and Myanmar — each country maintaining its own monastery here.
+    <figure class="place-photo">
+      <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/7292b60ae68b8e3527534bb7dd44177898fc85cd.jpg" alt="Mahaparinirvana Temple at Kushinagar, associated with the Buddha's final passing" width="879" height="586" loading="lazy" decoding="async">
+      <figcaption>Kushinagar is revered as the site of the Buddha's Mahaparinirvana and remains a major pilgrimage destination.</figcaption>
+    </figure>
     <div><span class="place-tag">Parinirvana · 483 BCE</span></div>
   </div>
 </div>
