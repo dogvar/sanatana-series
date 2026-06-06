@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>गायत्री मन्त्र — वेदों की माता · सनातन सीरीज़</title>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="गायत्री मन्त्र — वेदों की माता"/>
+<meta property="og:description" content="ऋग्वेद 3.62.10 · विश्वामित्र की कथा · प्रत्येक शब्द का अर्थ · तीन लोक · जप कब और कैसे करें · आधुनिक महत्त्व। सनातन सीरीज़।"/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/gayatri-mantra-hi.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sun:    #C47A00;
+  --gold:   #B8860B;
+  --goldt:  #D4A017;
+  --amber:  #8B5E00;
+  --saffron:#C94800;
+  --dark:   #080600;
+  --dark2:  #120E00;
+  --cream:  #FFFEF5;
+  --white:  #FFFFFF;
+  --ink:    #1A1200;
+  --ink2:   #362800;
+  --muted:  #7A6030;
+  --r:      12px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Noto Serif Devanagari','DM Sans',sans-serif;
+  background:var(--cream); color:var(--ink); line-height:1.75;
+  font-size:15px; max-width:640px; margin:0 auto; }
+
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(8,6,0,0.96);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(196,122,0,0.3);
+  padding:0 16px; display:flex; align-items:center; height:48px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(212,160,23,0.85); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; white-space:nowrap; font-family:'DM Sans',sans-serif; }
+.top-nav a.back svg { width:16px; height:16px; }
+.top-nav .nav-center { flex:1; text-align:center; font-size:11px;
+  color:rgba(212,160,23,0.45); }
+.lang-toggle { display:flex; gap:4px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); font-family:'DM Sans',sans-serif; }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+
+/* Hero — dark bg → white text */
+.hero { background:var(--dark); padding:44px 20px 32px; text-align:center;
+  position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 30%, rgba(196,122,0,0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(201,72,0,0.08) 0%, transparent 55%); }
+.eyebrow { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(212,160,23,0.82); margin-bottom:10px; position:relative;
+  font-family:'DM Sans',sans-serif; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(34px,9vw,54px);
+  color:var(--goldt); line-height:1.1; text-shadow:0 2px 40px rgba(196,122,0,0.4);
+  margin-bottom:6px; position:relative; }
+.hero-deva { font-family:'Noto Serif Devanagari',serif; font-size:18px;
+  color:rgba(212,160,23,0.78); margin-bottom:8px; position:relative; }
+.hero-mantra { font-family:'Noto Serif Devanagari',serif; font-size:16px;
+  color:rgba(255,255,255,0.92); line-height:2.1; margin-bottom:16px; position:relative; }
+.hero-icon { font-size:44px; margin:8px 0; position:relative; }
+.date-pill { display:inline-block; background:rgba(196,122,0,0.18);
+  border:1px solid rgba(212,160,23,0.45); color:#FFE090; font-size:13px;
+  font-weight:600; padding:8px 20px; border-radius:100px; margin:8px 0;
+  font-family:'DM Sans',sans-serif; }
+.hero-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center;
+  margin-top:12px; position:relative; }
+.hero-tag { font-size:11px; color:rgba(255,255,255,0.88); }
+.hero-tag::after { content:' •'; margin-left:5px; }
+.hero-tag:last-child::after { content:''; }
+.hero-facts { display:grid; grid-template-columns:1fr 1fr; gap:8px;
+  padding:16px 20px 0; position:relative; }
+.hf { background:rgba(255,255,255,0.04); border:1px solid rgba(196,122,0,0.22);
+  border-radius:8px; padding:10px 12px; }
+.hf-label { font-size:10px; letter-spacing:1px; text-transform:uppercase;
+  color:rgba(212,160,23,0.72); margin-bottom:4px; font-family:'DM Sans',sans-serif; }
+.hf-value { font-size:13px; font-weight:600; color:rgba(255,255,255,0.92); }
+
+/* Section header — dark bg */
+.sec-hdr { background:var(--dark); padding:18px 20px 14px; border-top:3px solid var(--gold); }
+.sec-hdr h2 { font-family:'Noto Serif Devanagari',serif; font-size:clamp(18px,5.5vw,26px);
+  color:var(--goldt); line-height:1.3; margin-bottom:3px; }
+.sec-hdr p { font-size:11px; letter-spacing:1.5px; color:rgba(212,160,23,0.75);
+  font-family:'DM Sans',sans-serif; }
+
+/* Mantra display — dark bg */
+.mantra-display { background:var(--dark); border-radius:var(--r); margin:14px 16px;
+  padding:24px 20px; text-align:center; border:1px solid rgba(196,122,0,0.25); }
+.md-label { font-size:10px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(212,160,23,0.55); margin-bottom:14px; font-family:'DM Sans',sans-serif; }
+.md-devanagari { font-family:'Noto Serif Devanagari',serif; font-size:18px;
+  color:var(--goldt); line-height:2.2; margin-bottom:14px; }
+.md-roman { font-family:'Lora',serif; font-style:italic; font-size:14px;
+  color:rgba(255,255,255,0.78); line-height:1.8; margin-bottom:12px; }
+.md-translation { font-size:14px; color:rgba(255,220,140,0.95); line-height:1.65;
+  padding:12px 16px; background:rgba(196,122,0,0.12); border-radius:8px; }
+
+/* Light bg cards — dark text */
+.intro-b { background:var(--white); border-left:4px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0; padding:14px 14px 14px 16px; margin:14px 16px; }
+.intro-lead { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--amber); margin-bottom:8px; }
+.intro-b p { font-size:14px; color:var(--ink2); line-height:1.75; }
+
+.story { background:var(--white); border-radius:var(--r); margin:10px 16px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); }
+.story-hdr { padding:13px 14px 10px; display:flex; align-items:center;
+  gap:10px; border-bottom:1px solid #F0E8D0; }
+.story-badge { width:32px; height:32px; border-radius:50%; display:flex;
+  align-items:center; justify-content:center; font-size:13px;
+  font-weight:700; color:white; flex-shrink:0; font-family:'DM Sans',sans-serif; }
+.story-hdr h3 { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--ink); }
+.story-body { padding:0 14px 14px; font-size:14px; color:var(--ink2); line-height:1.75; }
+
+/* Word cards — white bg */
+.word-card { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.07); display:flex; }
+.wc-bar { width:5px; flex-shrink:0; }
+.wc-body { padding:13px 14px; flex:1; }
+.wc-word { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:var(--sun); font-weight:700; margin-bottom:2px; }
+.wc-roman { font-family:'Lora',serif; font-style:italic; font-size:13px;
+  color:var(--muted); margin-bottom:5px; }
+.wc-meaning { font-size:14px; color:var(--ink2); line-height:1.75; }
+.wc-deep { font-size:12.5px; color:var(--muted); line-height:1.55;
+  margin-top:6px; font-style:italic; padding-top:6px;
+  border-top:1px solid #F0E8D0; }
+
+/* Part cards — white bg */
+.part-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); border-top:4px solid; }
+.pc-hdr { padding:13px 14px 8px; display:flex; align-items:center; gap:10px; }
+.pc-badge { width:32px; height:32px; border-radius:50%; display:flex;
+  align-items:center; justify-content:center; font-size:13px;
+  font-weight:700; color:white; flex-shrink:0; font-family:'DM Sans',sans-serif; }
+.pc-hdr h3 { font-family:'Noto Serif Devanagari',serif; font-weight:700; font-size:15px; }
+.pc-mantra { font-family:'Noto Serif Devanagari',serif; font-size:16px;
+  color:var(--sun); padding:0 14px 6px; }
+.pc-body { padding:0 14px 13px; font-size:14px; color:var(--ink2); line-height:1.75; }
+
+/* Steps — white bg */
+.step { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  padding:14px; display:flex; gap:13px; box-shadow:0 2px 6px rgba(0,0,0,0.07);
+  border-left:4px solid var(--gold); }
+.step-num { width:28px; height:28px; border-radius:50%; background:var(--gold);
+  color:white; font-weight:700; font-size:13px; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:1px; font-family:'DM Sans',sans-serif; }
+.step-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--amber); margin-bottom:4px; }
+.step p { font-size:14px; color:var(--ink2); line-height:1.75; }
+
+/* Dark notes — dark bg → white text */
+.dark-note { background:var(--dark2); border-radius:var(--r); margin:0 16px 12px;
+  padding:16px; border:1px solid rgba(196,122,0,0.22); }
+.dark-note-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:16px; color:var(--goldt); margin-bottom:8px; }
+.dark-note p { font-size:13.5px; color:rgba(255,255,255,0.90); line-height:1.75; }
+.dark-note strong { color:var(--goldt); }
+
+/* Plain card — white bg */
+.plain-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  padding:15px; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-top:3px solid var(--gold); }
+.plain-title { font-family:'Noto Serif Devanagari',serif; font-weight:700;
+  font-size:15px; color:var(--amber); margin-bottom:8px; }
+.plain-card p { font-size:14px; color:var(--ink2); line-height:1.75; }
+.plain-card ul { list-style:none; padding:0; display:grid; gap:7px; margin-top:8px; }
+.plain-card li { padding-left:20px; position:relative; font-size:14px; color:var(--ink2); }
+.plain-card li::before { content:'☀'; position:absolute; left:0;
+  color:var(--gold); font-size:10px; top:4px; }
+
+/* Stats — white bg */
+.stats-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; padding:16px; }
+.stat-pill { background:var(--white); border-radius:10px; padding:13px 10px;
+  text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.07); border-top:3px solid var(--gold); }
+.stat-num { font-family:'Yatra One',cursive; font-size:22px; color:var(--amber);
+  line-height:1; margin-bottom:4px; }
+.stat-label { font-size:11px; color:var(--muted); line-height:1.3;
+  font-family:'Noto Serif Devanagari',serif; }
+
+/* Closing — dark bg */
+.closing { background:var(--dark); padding:44px 24px; text-align:center; }
+.jai { font-family:'Yatra One',cursive; font-size:36px; color:var(--goldt);
+  text-shadow:0 0 40px rgba(196,122,0,0.5); margin-bottom:5px; }
+.jai-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:rgba(212,160,23,0.55); margin-bottom:8px; }
+.victory { color:rgba(255,255,255,0.90); font-size:15px; margin-bottom:22px; line-height:1.65; }
+.c-divider { width:60px; height:1px; background:var(--gold); margin:20px auto; }
+.closing-mantra { font-family:'Noto Serif Devanagari',serif; font-size:16px;
+  color:var(--goldt); line-height:2.0; margin-bottom:8px; }
+.closing-roman { font-family:'Lora',serif; font-style:italic; font-size:13px;
+  color:rgba(255,255,255,0.55); margin-bottom:6px; }
+.closing-meaning { font-size:13px; color:rgba(255,200,100,0.92); line-height:1.65; }
+.footer-note { font-size:11px; color:rgba(255,255,255,0.48); margin-top:20px;
+  letter-spacing:1px; line-height:1.8; font-family:'DM Sans',sans-serif; }
+.attr { margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.07); }
+.attr-by { font-size:12px; color:rgba(255,255,255,0.60); font-family:'DM Sans',sans-serif; }
+.attr-name { font-family:'Lora',serif; font-size:16px;
+  color:rgba(212,160,23,0.65); font-weight:600; margin-top:3px; }
+.attr-claude { font-size:11px; color:rgba(255,255,255,0.35); margin-top:4px;
+  font-style:italic; font-family:'DM Sans',sans-serif; }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor"
+      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    सनातन सीरीज़
+  </a>
+  <span class="nav-center">☀ गायत्री मन्त्र</span>
+  <div class="lang-toggle">
+    <a class="lang-btn" href="gayatri-mantra.html">EN</a>
+    <a class="lang-btn active" href="gayatri-mantra-hi.html">हिं</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">✦ वेदों की माता · ऋग्वेद 3.62.10 · सनातन सीरीज़ ✦</p>
+  <h1>गायत्री मन्त्र</h1>
+  <p class="hero-deva">Gayatri Mantra — The Mother of the Vedas</p>
+  <p class="hero-mantra">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं<br>
+  भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्॥</p>
+  <div class="hero-icon">☀️</div>
+  <div class="date-pill">ऋग्वेद 3.62.10 · 3,500+ वर्ष प्राचीन · 24 अक्षर</div>
+  <div class="hero-tags">
+    <span class="hero-tag">वेदों की माता</span>
+    <span class="hero-tag">विश्वामित्र</span>
+    <span class="hero-tag">सवितुर् — सूर्य देवता</span>
+    <span class="hero-tag">तीन लोक</span>
+    <span class="hero-tag">सन्धि वन्दना</span>
+  </div>
+  <div class="hero-facts">
+    <div class="hf"><div class="hf-label">स्रोत</div><div class="hf-value">ऋग्वेद · मण्डल 3 · 62.10</div></div>
+    <div class="hf"><div class="hf-label">ऋषि</div><div class="hf-value">विश्वामित्र — ब्रह्मर्षि</div></div>
+    <div class="hf"><div class="hf-label">देवता</div><div class="hf-value">सवितुर् — दिव्य सूर्य</div></div>
+    <div class="hf"><div class="hf-label">छन्द</div><div class="hf-value">गायत्री — 3 पंक्ति × 8 अक्षर</div></div>
+  </div>
+</div>
+
+<!-- FULL MANTRA -->
+<div class="sec-hdr">
+  <h2>सम्पूर्ण गायत्री मन्त्र</h2>
+  <p>व्याहृति सहित · देवनागरी · रोमन · सम्पूर्ण अर्थ</p>
+</div>
+
+<div class="mantra-display">
+  <div class="md-label">सम्पूर्ण गायत्री मन्त्र — व्याहृति सहित</div>
+  <div class="md-devanagari">
+    ॐ भूः ॐ भुवः ॐ स्वः<br>
+    ॐ महः ॐ जनः ॐ तपः ॐ सत्यम्<br>
+    ॐ तत्सवितुर्वरेण्यं<br>
+    भर्गो देवस्य धीमहि<br>
+    धियो यो नः प्रचोदयात्॥<br>
+    ॐ आपो ज्योतिर् रसोऽमृतं ब्रह्म<br>
+    भूर्भुवः स्वरोम्॥
+  </div>
+  <div class="md-roman">Om Bhuh Om Bhuvah Om Svah · Om Mahah Om Janah Om Tapah Om Satyam<br>
+  Om Tat Savitur Varenyam · Bhargo Devasya Dhimahi<br>
+  Dhiyo Yo Nah Prachodayat</div>
+  <div class="md-translation">"हम उस परम सत्ता के दिव्य तेज का ध्यान करते हैं जो सम्पूर्ण सृष्टि का स्रोत है — जिसका प्रकाश सभी लोकों को प्रकाशित करता है। वह दिव्य ज्योति हमारी बुद्धि को प्रेरित और प्रकाशित करे।"</div>
+</div>
+
+<div class="intro-b">
+  <p class="intro-lead">गायत्री मन्त्र परमात्मा से कुछ माँगने की प्रार्थना नहीं है — यह ध्यान है। मानवीय बुद्धि का दिव्य प्रकाश के साथ सचेत संरेखण।</p>
+  <p>अधिकांश मन्त्र किसी देवता को पुकारते हैं, सुरक्षा माँगते हैं, या स्तुति करते हैं। गायत्री अलग है। इसकी अन्तिम और सबसे महत्त्वपूर्ण पंक्ति — <em>धियो यो नः प्रचोदयात्</em> — एकमात्र निवेदन है: वह दिव्य ज्योति हमारी बुद्धि को प्रकाशित करे। धन नहीं, स्वास्थ्य नहीं, सुरक्षा नहीं — बुद्धि का प्रकाश। स्पष्टता। सत्य को जानने की क्षमता। यही गायत्री को सम्पूर्ण वैदिक परम्परा का सबसे बौद्धिक रूप से ईमानदार मन्त्र बनाता है।</p>
+</div>
+
+<div class="stats-row">
+  <div class="stat-pill">
+    <div class="stat-num">24</div>
+    <div class="stat-label">अक्षर — 3 पंक्ति × 8 अक्षर, गायत्री छन्द में</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">3,500+</div>
+    <div class="stat-label">वर्ष प्राचीन — ऋग्वेद की रचना से</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">3</div>
+    <div class="stat-label">भाग — स्तोत्र · ध्यान · प्रार्थना</div>
+  </div>
+</div>
+
+<!-- VISHWAMITRA -->
+<div class="sec-hdr">
+  <h2>ऋषि विश्वामित्र — जिन्होंने इसे प्राप्त किया</h2>
+  <p>वह राजा जो क्रोध, पतन और अन्ततः समर्पण से गुज़रकर महर्षि बना</p>
+</div>
+
+<div class="intro-b" style="border-color:var(--saffron)">
+  <p class="intro-lead">गायत्री मन्त्र किसी जन्मजात सन्त को नहीं मिला। यह एक राजा को मिला जो दशकों तक सन्त बनने में असफल होता रहा — और अन्ततः सफल हुआ।</p>
+  <p>विश्वामित्र की कथा सम्पूर्ण वैदिक साहित्य की सबसे असाधारण कथाओं में से एक है। वे एक क्षत्रिय राजा थे — शक्तिशाली, अभिमानी। ब्रह्मर्षि वशिष्ठ से उनकी मुठभेड़ ने उनका जीवन बदल दिया और एक ऐसे परिवर्तन की यात्रा आरम्भ की जो जन्मों तक चली।</p>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFFBEC">
+    <div class="story-badge" style="background:var(--amber)">१</div>
+    <h3 style="color:var(--amber)">वह राजा जो एक गाय से हार गया</h3>
+  </div>
+  <div class="story-body">राजा विश्वामित्र अपनी सेना के साथ ऋषि वशिष्ठ के आश्रम में आए। वशिष्ठ के पास कामधेनु — नन्दिनी — थी जो अपनी दिव्य शक्ति से पूरी सेना का भोजन कर सकती थी। विश्वामित्र आश्चर्यचकित हुए — फिर लालची। उन्होंने वह गाय खरीदनी चाही। वशिष्ठ ने मना किया। विश्वामित्र ने बल से छीनने की कोशिश की। कामधेनु ने सम्पूर्ण सेना को अकेले परास्त कर दिया। राजा का अपमान हुआ। उसी क्षण उन्हें समझ आया — एक ब्रह्मर्षि की आत्मिक शक्ति, जो वर्षों की साधना से आती है, किसी भी राजा की सैन्य शक्ति से असीम रूप से बड़ी है। उन्होंने निश्चय किया — मैं स्वयं ब्रह्मर्षि बनूँगा।</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFF8EC">
+    <div class="story-badge" style="background:var(--sun)">२</div>
+    <h3 style="color:var(--sun)">दशकों की तपस्या — और बार-बार पतन</h3>
+  </div>
+  <div class="story-body">इसके बाद जो हुआ वह शताब्दियों की तपस्या थी — इतनी घोर कि देवताओं का सिंहासन हिलने लगा। फिर भी विश्वामित्र की मूल कमज़ोरी — अहंकार और क्रोध — उन्हें बार-बार नीचे खींच लाती। वे महान् ऊँचाइयों पर पहुँचते और फिर क्रोध के एक क्षण में सब गँवा देते। एक बार क्रोध में उन्होंने एक समानान्तर ब्रह्माण्ड बनाने की कोशिश की — नया स्वर्ग, नए तारे, नया इन्द्र। देवताओं ने हस्तक्षेप किया। वे ऋषि बने, फिर महर्षि — पर ब्रह्मर्षि की उपाधि उन्हें तब तक नहीं मिली जब तक उन्होंने अपना अहंकार पूरी तरह नहीं छोड़ा।</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFFBEC">
+    <div class="story-badge" style="background:var(--amber)">३</div>
+    <h3 style="color:var(--amber)">वशिष्ठ का एक शब्द — और मन्त्र की प्राप्ति</h3>
+  </div>
+  <div class="story-body">युगों की तपस्या के बाद विश्वामित्र ने अन्ततः अपना क्रोध पूरी तरह वश में किया। हर उपाधि अर्जित कर चुके थे — पर जो सबसे महत्त्वपूर्ण थी, ब्रह्मर्षि, वह केवल उनके पुराने शत्रु वशिष्ठ से मिल सकती थी। वशिष्ठ ने विश्वामित्र का पूर्ण रूपान्तरण देखा और उन्हें स्वीकार किया — "ब्रह्मर्षि।" उसी क्षण गहरी समाधि में गायत्री मन्त्र विश्वामित्र को प्रकट हुआ। उन्होंने इसे संसार को दिया — इसीलिए उन्हें विश्व-मित्र कहते हैं: सम्पूर्ण विश्व के मित्र। वह मन्त्र मानव इतिहास में सर्वाधिक जपा जाने वाला वैदिक श्लोक बन गया।</div>
+</div>
+
+<!-- WHAT DOES GAYATRI MEAN -->
+<div class="sec-hdr">
+  <h2>"गायत्री" शब्द का अर्थ</h2>
+  <p>एक नाम — तीन परतें — सभी महत्त्वपूर्ण</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-note-title">गायत्री के तीन अर्थ</div>
+  <p><strong>१. छन्द:</strong> गायत्री मुख्यतः एक वैदिक काव्य छन्द है — तीन पंक्तियाँ, प्रत्येक में आठ अक्षर (8+8+8 = 24)। ऋग्वेद में हजारों श्लोक इसी छन्द में हैं। गायत्री मन्त्र उनमें सबसे प्रसिद्ध है।</p>
+  <br>
+  <p><strong>२. रक्षा:</strong> छान्दोग्य उपनिषद् (3.12.1) का व्युत्पत्ति अर्थ है: <em>गायन्तं त्रायते इति गायत्री</em> — "जो गाने (जपने) वाले की रक्षा करे, वह गायत्री है।" अर्थात् — वह गीत जो रक्षा करता है।</p>
+  <br>
+  <p><strong>३. देवी:</strong> पौराणिक परम्परा में गायत्री एक देवी भी हैं — देवी सरस्वती के पाँच रूपों में से एक। पाँच मुखों वाली, पाँच प्राणों या पंचभूतों का प्रतिनिधित्व करती हैं। उन्हें वेदों की माता और मन्त्र का साकार रूप माना जाता है। मथुरा और पुष्कर में उनके प्रमुख मन्दिर हैं।</p>
+</div>
+
+<!-- WORD BY WORD -->
+<div class="sec-hdr">
+  <h2>प्रत्येक शब्द का अर्थ — सभी 24 अक्षर</h2>
+  <p>हर शब्द एक सम्पूर्ण संसार है · मन्त्र में तीन लोक समाए हैं</p>
+</div>
+
+<p style="font-size:13px;color:var(--muted);padding:10px 16px 6px;line-height:1.65;font-style:italic">
+  गायत्री मन्त्र के दो भाग हैं: व्याहृति (ॐ + तीन लोक) और मूल मन्त्र। दोनों मिलकर प्रार्थना आरम्भ होने से पहले ही एक सम्पूर्ण ब्रह्माण्डीय वक्तव्य बनाते हैं।</p>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--dark)"></div>
+  <div class="wc-body">
+    <div class="wc-word">ॐ (Om)</div>
+    <div class="wc-roman">OM — आदिनाद</div>
+    <div class="wc-meaning">आदिनाद — वह कम्पन जिससे समस्त सृष्टि उत्पन्न हुई। कोई परिभाषा वाला शब्द नहीं — ब्रह्म का ध्वनि-स्वरूप। भूत, वर्तमान और भविष्य एकसाथ। माण्डूक्य उपनिषद् सम्पूर्णतः इसी एक अक्षर की व्याख्या करता है।</div>
+    <div class="wc-deep">ॐ सदा उपसर्ग है — यह संकेत है कि जो आगे आएगा वह पवित्र है और वक्ता ब्रह्माण्डीय क्रम के साथ संरेखित है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:#8B3A00"></div>
+  <div class="wc-body">
+    <div class="wc-word">भूः (Bhuh)</div>
+    <div class="wc-roman">भूर् — भौतिक लोक</div>
+    <div class="wc-meaning">पृथ्वी। भौतिक शरीर। भौतिक अस्तित्व का आयाम — जन्म, मृत्यु, पञ्चेन्द्रियों का अनुभव। इसका अर्थ "प्राण" भी है — जीवन-शक्ति।</div>
+    <div class="wc-deep">मन्त्र से पहले हम अपनी ब्रह्माण्डीय स्थिति स्थापित कर रहे हैं। यहाँ हमारे शरीर रहते हैं।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--sun)"></div>
+  <div class="wc-body">
+    <div class="wc-word">भुवः (Bhuvah)</div>
+    <div class="wc-roman">भुवः — सूक्ष्म / मानसिक लोक</div>
+    <div class="wc-meaning">अन्तरिक्ष। मन का आयाम। विचार, भावना, श्वास और प्राण-ऊर्जा का संसार। भौतिक और आत्मिक के बीच। इसका अर्थ "दुःखों का नाशक" भी है।</div>
+    <div class="wc-deep">मध्यलोक — जहाँ हमारे मन और हृदय रहते हैं, पदार्थ और आत्मा के बीच।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">स्वः (Svah)</div>
+    <div class="wc-roman">स्वः — दिव्य / आत्मिक लोक</div>
+    <div class="wc-meaning">स्वर्ग। आत्मिक आयाम। शुद्ध चेतना का लोक — पदार्थ और मन दोनों से परे। इसका अर्थ "आनन्द" या "सुख" भी है। यहीं से दिव्य प्रकाश उत्पन्न होता है।</div>
+    <div class="wc-deep">भूः भुवः स्वः = पृथ्वी, अन्तरिक्ष, स्वर्ग। मन्त्र प्रार्थना से पहले तीनों लोकों को समेटता है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">तत् (Tat)</div>
+    <div class="wc-roman">तत् — वह</div>
+    <div class="wc-meaning">"वह" — परम सत्य की ओर संकेत जिसे नाम नहीं दिया जा सकता। संस्कृत दर्शन में परम सत्य सभी नाम-रूपों से परे है। "तत्" भाषा की उतनी ही निकटता है जितनी उस ओर संकेत करने में सम्भव है। छान्दोग्य उपनिषद् की महावाक्य शिक्षा है — <em>तत् त्वम् असि</em> — "वह तू है।"</div>
+    <div class="wc-deep">मन्त्र किसी विशेष देवता का नाम नहीं लेता। वह परम सत्य की ओर संकेत करता है। यही गायत्री को सम्प्रदाय-निरपेक्ष बनाता है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">सवितुर् (Savitur)</div>
+    <div class="wc-roman">सवितुर् — दिव्य सूर्य का</div>
+    <div class="wc-meaning">सवितुर का — वैदिक सूर्य-देवता जो सूर्योदय से पहले के सूर्य का प्रतिनिधित्व करते हैं, प्रकाश और सृष्टि के सिद्धान्त का। सवितुर केवल भौतिक सूर्य नहीं — उसके पीछे की दिव्य प्रज्ञा और रचनात्मक बुद्धि। शब्द <em>सु</em> से — प्रेरित करना, गति देना।</div>
+    <div class="wc-deep">सूर्य किसी भी संस्कृति में दिव्य प्रकाश का सबसे तत्काल प्रतीक है। सवितुर वह दैवीय प्रज्ञा है जो प्रकाश के पीछे है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">वरेण्यं (Varenyam)</div>
+    <div class="wc-roman">वरेण्यम् — सर्वश्रेष्ठ, वन्दनीय</div>
+    <div class="wc-meaning">सर्वश्रेष्ठ। आराधना के सबसे योग्य। हम केवल सवितुर की स्तुति नहीं कर रहे — हम उसे सर्वोच्च घोषित कर रहे हैं। हमारे ध्यान और श्रद्धा के सबसे योग्य।</div>
+    <div class="wc-deep">एक सचेत चुनाव: ब्रह्माण्ड की सभी चीज़ों में से हम जानबूझकर दिव्य प्रकाश की ओर अपना ध्यान निर्देशित कर रहे हैं।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">भर्गो (Bhargo)</div>
+    <div class="wc-roman">भर्गो — दिव्य तेज जो अज्ञान नष्ट करे</div>
+    <div class="wc-meaning">तेज। दिव्य प्रकाश। वह जलता हुआ प्रकाश जो एकसाथ प्रकाशित और शुद्ध करता है — अज्ञान का अन्धकार उसी तरह नष्ट करता है जैसे सूर्य-प्रकाश अन्धेरा। एक कोमल आभा नहीं — प्रकाश की शुद्धिकारक अग्नि।</div>
+    <div class="wc-deep">"भर्गो" में दो विचार हैं: प्रकाश (तेज, चमक) और शुद्धि (अशुद्धता का नाश)। दिव्य प्रकाश केवल प्रकाश नहीं देता — वह पवित्र भी करता है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">देवस्य (Devasya)</div>
+    <div class="wc-roman">देवस्य — दिव्य का</div>
+    <div class="wc-meaning">ईश्वर का। दिव्य सत्ता का। <em>देव</em> शब्द <em>दिव्</em> से आया — चमकना। देव वह है जो स्वभाव से चमकता है। हम अब वर्णन पूर्ण कर चुके हैं — जिसका ध्यान करेंगे: वह परम सत्ता का तेजस्वी, शुद्धिकारक दिव्य प्रकाश।</div>
+    <div class="wc-deep">यहाँ मन्त्र का पहला भाग समाप्त होता है — हमने ध्यान के विषय की पहचान की।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">धीमहि (Dhimahi)</div>
+    <div class="wc-roman">धीमहि — हम ध्यान करते हैं</div>
+    <div class="wc-meaning">हम ध्यान करते हैं। हम विचार करते हैं। हम चेतना में धारण करते हैं। यह मध्य भाग की केन्द्रीय क्रिया है — यह मन्त्र को वर्णन से क्रिया में बदलती है। ध्यान: ध्यान का सचेत, निरन्तर निर्देशन।</div>
+    <div class="wc-deep">यह शब्द गायत्री को एक मौखिक प्रार्थना से साधना बनाता है। हम केवल दिव्य प्रकाश का वर्णन नहीं कर रहे — इसी जप में उसका ध्यान कर रहे हैं।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">धियो (Dhiyo)</div>
+    <div class="wc-roman">धियो — हमारी बुद्धि</div>
+    <div class="wc-meaning">बुद्धि। समझ, विवेक और प्रज्ञा की शक्ति। केवल तर्क-शक्ति नहीं — वह उच्चतर बुद्धि (बुद्धि) जो सत्य को असत्य से, नित्य को अनित्य से पहचान सके।</div>
+    <div class="wc-deep">यही वह है जिसके प्रकाशन की प्रार्थना की जा रही है। धन नहीं, स्वास्थ्य नहीं — बुद्धि की स्पष्टता। बाकी सब उससे स्वयं आता है।</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">यो नः प्रचोदयात् (Yo Nah Prachodayat)</div>
+    <div class="wc-roman">Yo Nah Prachodayat — वह हमारी बुद्धि को प्रेरित करे</div>
+    <div class="wc-meaning">यो = जो / वह। नः = हमारी / हमारा। प्रचोदयात् = प्रेरित करे, प्रकाशित करे, गतिमान करे। सम्पूर्ण अन्तिम पंक्ति: "वह दिव्य तेज हमारी बुद्धि को सत्य और धर्म की ओर प्रेरित, प्रकाशित और गतिमान करे।"</div>
+    <div class="wc-deep">"प्रचोदयात्" एक निवेदन है, निश्चितता नहीं। हम प्रकाश माँग रहे हैं, माँग नहीं कर रहे। मन्त्र विनम्रता से समाप्त होता है — हम जानते हैं प्रकाश कहाँ से आता है। हम उसे ग्रहण करने की प्रार्थना कर रहे हैं।</div>
+  </div>
+</div>
+
+<!-- THREE PARTS -->
+<div class="sec-hdr">
+  <h2>गायत्री के तीन भाग</h2>
+  <p>स्तोत्र · ध्यान · प्रार्थना — सही क्रम में</p>
+</div>
+
+<div class="intro-b" style="border-color:var(--sun)">
+  <p class="intro-lead">गायत्री मन्त्र असाधारण है क्योंकि इसमें परमात्मा के पास जाने के तीनों रूप एक ही उच्चारण में समाए हैं — और बिल्कुल सही क्रम में।</p>
+  <p>अधिकांश प्रार्थनाएँ या तो स्तुति हैं, या ध्यान, या याचना। गायत्री तीनों है — और क्रम जानबूझकर है। जब तक आप यह नहीं समझते कि आप किससे माँग रहे हैं, तब तक आप सार्थक रूप से प्रकाश नहीं माँग सकते।</p>
+</div>
+
+<div class="part-card" style="border-color:var(--amber)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--amber)">I</div>
+    <h3 style="color:var(--amber)">स्तोत्र — परमात्मा की स्तुति</h3>
+  </div>
+  <div class="pc-mantra">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं</div>
+  <div class="pc-body">पहला भाग स्थापित करता है कि हम किसे सम्बोधित कर रहे हैं और क्यों। तीन लोकों (भूः भुवः स्वः) का आह्वान करते हुए हम अपनी पूर्ण ब्रह्माण्डीय स्थिति में स्थित होते हैं — फिर सवितुर के दिव्य प्रकाश को हमारी श्रद्धा का सबसे योग्य विषय घोषित करते हैं। यह चापलूसी नहीं — दिशा-निर्धारण है।</div>
+</div>
+
+<div class="part-card" style="border-color:var(--sun)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--sun)">II</div>
+    <h3 style="color:var(--sun)">ध्यान — परमात्मा का चिन्तन</h3>
+  </div>
+  <div class="pc-mantra">भर्गो देवस्य धीमहि</div>
+  <div class="pc-body">दूसरा भाग स्वयं ध्यान है — दिव्य तेज को चेतना में धारण करने की सक्रिय साधना। हम केवल प्रकाश के बारे में गा नहीं रहे — उसकी ओर अपना ध्यान निर्देशित कर रहे हैं और उसे अपनी जागरूकता में भरने दे रहे हैं। "धीमहि" ("हम ध्यान करते हैं") सम्पूर्ण मन्त्र का धुरा-बिन्दु है।</div>
+</div>
+
+<div class="part-card" style="border-color:var(--gold)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--gold)">III</div>
+    <h3 style="color:var(--gold)">प्रार्थना — प्रकाशन के लिए विनय</h3>
+  </div>
+  <div class="pc-mantra">धियो यो नः प्रचोदयात्</div>
+  <div class="pc-body">अन्तिम भाग एकमात्र, विशिष्ट, विनम्र निवेदन है: वह दिव्य प्रकाश हमारी बुद्धि को प्रकाशित करे। परमात्मा की स्तुति कर, उसका ध्यान कर — एक ही माँग: स्पष्ट रूप से समझने की क्षमता। यह वैदिक परम्परा की सबसे निःस्वार्थ प्रार्थना है। बुद्धि यदि सच में प्रकाशित हो जाए — बाकी सब उससे स्वयं आता है।</div>
+</div>
+
+<!-- WHERE IT APPEARS -->
+<div class="sec-hdr">
+  <h2>गायत्री शास्त्रों में</h2>
+  <p>एक बार नहीं — सम्पूर्ण वैदिक साहित्य में गूँजती है</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-note-title">ऋग्वेद — मूल स्रोत</div>
+  <p>मन्त्र पहले ऋग्वेद मण्डल 3, सूक्त 62, मन्त्र 10 (RV 3.62.10) में प्रकट होता है — मानव इतिहास के सबसे प्राचीन ग्रन्थ का तीसरा खण्ड। तीसरा मण्डल विश्वामित्र और उनके वंश का है। अपने मूल वैदिक सन्दर्भ में यह सूक्त सवितुर को एक दीर्घ स्तुति का भाग है — पर यह विशेष मन्त्र निरन्तर उपयोग और अपनी शक्ति की पहचान से विशेष स्थान पर पहुँचा।</p>
+</div>
+
+<div class="dark-note" style="margin-top:8px">
+  <div class="dark-note-title">उपनिषद् और भगवद्गीता</div>
+  <p><strong>छान्दोग्य उपनिषद्</strong> पूरा एक खण्ड गायत्री को समर्पित करता है — उसे "सम्पूर्ण अस्तित्व का आधार" कहता है। <strong>बृहदारण्यक उपनिषद्</strong> भी इस पर विस्तार से चर्चा करता है। भगवद्गीता में श्रीकृष्ण कहते हैं: <strong>"छन्दों में मैं गायत्री हूँ"</strong> (गीता 10.35) — इसे सम्पूर्ण सृष्टि के सभी काव्य-रूपों के शिखर पर रखते हैं।</p>
+</div>
+
+<div class="dark-note" style="margin-top:8px">
+  <div class="dark-note-title">मनुस्मृति और दैनिक साधना</div>
+  <p>मनुस्मृति ने गायत्री को उपनयन संस्कार का केन्द्रीय मन्त्र स्थापित किया — वह दीक्षा जो परम्परागत रूप से छात्र के वैदिक शिक्षा में प्रवेश को चिह्नित करती है। गायत्री पहला मन्त्र था जो छात्र गुरु से प्राप्त करता था। इसे प्रातः, मध्याह्न और सायं — तीनों सन्धियों पर जपना था। यह सन्धि वन्दना का अभ्यास आज भी अनेक घरों और मन्दिरों में जारी है।</p>
+</div>
+
+<!-- HOW TO CHANT -->
+<div class="sec-hdr">
+  <h2>गायत्री मन्त्र का जप कैसे करें</h2>
+  <p>कब · कितनी बार · आसन · सामान्य त्रुटियाँ</p>
+</div>
+
+<div style="height:10px"></div>
+
+<div class="step">
+  <div class="step-num">१</div>
+  <div><div class="step-title">कब जपें — तीन सन्धियाँ</div>
+  <p>गायत्री परम्परागत रूप से तीन सन्धियों पर जपी जाती है — दिन के सन्धिकाल। <strong>प्रातः सन्धि:</strong> सूर्योदय पर, पूर्व की ओर मुख करके। <strong>मध्याह्न सन्धि:</strong> दोपहर, उत्तर की ओर। <strong>सायं सन्धि:</strong> सूर्यास्त पर, पश्चिम की ओर। इन तीनों में <strong>प्रातः सन्धि सबसे महत्त्वपूर्ण</strong> है — उगते सूर्य के सामने गायत्री का जप सबसे शक्तिशाली है।</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">२</div>
+  <div><div class="step-title">कैसे बैठें</div>
+  <p>सुखासन या पद्मासन में बैठें। रीढ़ सीधी। आँखें बन्द या हल्की नीचे। हाथ ध्यान मुद्रा (गोद में हथेली पर हथेली) या ज्ञान मुद्रा (अंगूठे से तर्जनी का स्पर्श) में। शरीर शिथिल पर सजग। यदि ज़मीन पर बैठना कठिन हो, कुर्सी पर बैठें — पाँव ज़मीन पर।</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">३</div>
+  <div><div class="step-title">कितनी बार जपें</div>
+  <p>परम्परागत गणनाएँ: <strong>10 बार</strong> — न्यूनतम (दस दिशाएँ + आकाश + पृथ्वी + हृदय)। <strong>28 बार</strong> — नक्षत्रों की संख्या। <strong>108 बार</strong> — एक माला — सबसे सामान्य पूर्ण अभ्यास। <strong>1,008 बार</strong> — विशेष अवसरों पर। 10 से आरम्भ करें और धीरे-धीरे बढ़ाएँ। महीनों की निरन्तरता एक दिन की तीव्रता से कहीं अधिक महत्त्वपूर्ण है।</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">४</div>
+  <div><div class="step-title">उच्चारण — सामान्य त्रुटियाँ</div>
+  <p><strong>भूर्भुवः स्वः</strong> — "स्वाहा" नहीं (वह अग्नि अनुष्ठानों का अलग शब्द है)। <strong>वरेण्यम्</strong> — "ण" मूर्धन्य है (जीभ ऊपरी तालु पर)। <strong>धीमहि</strong> — "ध" महाप्राण है। <strong>प्रचोदयात्</strong> — अन्तिम "त" हल्का, लगभग अनुच्चारित। मन्त्र शब्दों के बीच बिना विराम के बहना चाहिए — यह शब्दों की सूची नहीं, ध्वनि की एक अखण्ड धारा है।</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">५</div>
+  <div><div class="step-title">अर्थ के साथ — केवल ध्वनि नहीं</div>
+  <p>परम्परा स्पष्ट है: अर्थ समझकर गायत्री का जप, यन्त्रवत् दोहराने से असीम गुना शक्तिशाली है। जप से पहले एक बार अर्थ धीरे पढ़ें। फिर आँखें बन्द करें और जपते समय उगते सूर्य को — एक चमकीली सुनहरी रोशनी — मन में देखें और उस रोशनी को अपनी बुद्धि पर डालें। आप बुद्धि की स्पष्टता माँग रहे हैं। मन को उस माँग में भागीदार बनाएँ।</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">६</div>
+  <div><div class="step-title">कौन जप कर सकता है</div>
+  <p>गायत्री परम्परागत रूप से उपनयन संस्कार के बाद द्विज वर्णों तक सीमित थी। यह प्रतिबन्ध अब व्यापक रूप से एक ऐतिहासिक-सामाजिक परम्परा समझी जाती है, न कि आत्मिक नियम। स्वामी विवेकानन्द, श्री अरविन्द और अनेक आधुनिक आचार्यों ने पुष्टि की है — गायत्री सम्पूर्ण मानवता की है। यह मानव बुद्धि के प्रकाशन की प्रार्थना है — और किसी भी मानव बुद्धि को इससे वंचित नहीं किया जाना चाहिए। जपें। यह आपका है।</p></div>
+</div>
+
+<!-- MODERN RELEVANCE -->
+<div class="sec-hdr">
+  <h2>आज के जीवन में गायत्री</h2>
+  <p>3,500 वर्ष पुराना मन्त्र — 2026 में पहले से कहीं अधिक प्रासंगिक</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">एकमात्र प्रार्थना जो बुद्धि माँगती है</div>
+  <p>हम अभूतपूर्व सूचना और अभूतपूर्व भ्रम के युग में जी रहे हैं। इतना डेटा पहले कभी नहीं था — और स्पष्टता इतनी दुर्लभ भी पहले कभी नहीं थी। गायत्री ठीक वही माँगती है जिसकी हमें सबसे ज़्यादा ज़रूरत है: अधिक जानकारी नहीं — बल्कि यह जानने की क्षमता कि क्या सत्य है, क्या वास्तविक है, किस पर ध्यान देना सार्थक है। संस्कृत शब्द <em>धी</em> — जिस बुद्धि की प्रार्थना की जा रही है — केवल तर्क-बुद्धि नहीं है। यह प्रज्ञा है — नित्य को अनित्य से, अर्थपूर्ण को तुच्छ से पहचानने की क्षमता। यही आज के संसार में सबसे दुर्लभ और सबसे मूल्यवान शक्ति है।</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">प्रवासी परिवारों के लिए — सबसे सुवाह्य साधना</div>
+  <p>गायत्री के लिए कुछ भी नहीं चाहिए — न मन्दिर, न पण्डित, न विशेष सामग्री। सूर्योदय पर कुछ मिनट, पूर्व की ओर मुख करके, आँखें बन्द। हिन्दू परम्परा की सबसे सुवाह्य आत्मिक साधना।</p>
+  <ul>
+    <li>किसी अन्य मन्त्र से पहले बच्चों को गायत्री सिखाएँ — यह नींव है</li>
+    <li>सूर्योदय पर केवल 10 बार भी जपें — निरन्तरता महत्त्वपूर्ण है</li>
+    <li>अर्थ सीखना इसे ध्वनि से बोध में बदलता है</li>
+    <li>यह विश्वामित्र का सम्पूर्ण मानवता को उपहार है — ग्रहण करें</li>
+  </ul>
+</div>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div style="font-size:40px;margin-bottom:14px">☀️</div>
+  <div class="jai">ॐ तत्सवितुर्वरेण्यम्!</div>
+  <div class="jai-deva">गायत्री — वेदों की माता</div>
+  <div class="victory">वह मन्त्र जो धन नहीं, सुरक्षा नहीं — स्पष्टता से देखने का प्रकाश माँगता है</div>
+  <div class="c-divider"></div>
+  <div class="closing-mantra">ॐ तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि<br>धियो यो नः प्रचोदयात्॥</div>
+  <div class="closing-roman">Om Tat Savitur Varenyam Bhargo Devasya Dhimahi<br>Dhiyo Yo Nah Prachodayat</div>
+  <div class="closing-meaning">"वह परम सत्ता का दिव्य तेज हमारी बुद्धि को प्रकाशित करे।"</div>
+  <p class="footer-note">सनातन सीरीज़ · गायत्री मन्त्र<br>
+  ऋग्वेद 3.62.10 · वेदों की माता · सर्वदा प्रासंगिक</p>
+  <div class="attr">
+    <p class="attr-by">निर्मित</p>
+    <p class="attr-name">Varun Dogar</p>
+    <p class="attr-claude">क्लॉड (Anthropic) की सहायता से</p>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<div style="background:linear-gradient(135deg,#080600 0%,#120E00 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.40);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — मासिक न्यूज़लेटर</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.85);font-family:'Noto Serif Devanagari',serif;
+    line-height:1.75;margin-bottom:16px;max-width:400px;
+    margin-left:auto;margin-right:auto">
+    हर महीने — नया गाइड · आने वाले त्योहार · परम्परा का अर्थ<br>
+    निःशुल्क · कोई विज्ञापन नहीं
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide-hi" target="_blank" rel="noopener"
+    style="display:inline-block;background:#8B5E00;color:white;text-decoration:none;
+      font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
+      padding:12px 28px;border-radius:100px">
+    🔔 सब्सक्राइब करें — निःशुल्क
+  </a>
+</div>
+
+</body>
+</html>

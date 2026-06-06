@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gayatri Mantra — The Mother of the Vedas · Sanatana Series</title>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Gayatri Mantra — The Mother of the Vedas"/>
+<meta property="og:description" content="Origins in the Rigveda · Sage Vishwamitra's story · Word-by-word meaning of all 24 syllables · The three worlds · How and when to chant · Why it matters. Sanatana Series."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/gayatri-mantra.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sun:    #C47A00;
+  --gold:   #B8860B;
+  --goldt:  #D4A017;
+  --amber:  #8B5E00;
+  --saffron:#C94800;
+  --dark:   #080600;
+  --dark2:  #120E00;
+  --cream:  #FFFEF5;
+  --white:  #FFFFFF;
+  --ink:    #1A1200;
+  --ink2:   #362800;
+  --muted:  #7A6030;
+  --r:      12px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink);
+  line-height:1.65; font-size:15px; max-width:640px; margin:0 auto; }
+
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(8,6,0,0.96);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(196,122,0,0.3);
+  padding:0 16px; display:flex; align-items:center; height:48px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(212,160,23,0.85); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; white-space:nowrap; }
+.top-nav a.back svg { width:16px; height:16px; }
+.top-nav .nav-center { flex:1; text-align:center; font-size:12px;
+  color:rgba(212,160,23,0.45); letter-spacing:1px; }
+.lang-toggle { display:flex; gap:4px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+
+/* Hero */
+.hero { background:var(--dark); padding:44px 20px 32px; text-align:center;
+  position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 30%, rgba(196,122,0,0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(201,72,0,0.08) 0%, transparent 55%); }
+.eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase;
+  color:rgba(212,160,23,0.80); margin-bottom:10px; position:relative; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(34px,9vw,54px);
+  color:var(--goldt); line-height:1.1; text-shadow:0 2px 40px rgba(196,122,0,0.4);
+  margin-bottom:6px; position:relative; }
+.hero-deva { font-family:'Noto Serif Devanagari',serif; font-size:22px;
+  color:rgba(212,160,23,0.80); margin-bottom:8px; position:relative; }
+.hero-mantra { font-family:'Noto Serif Devanagari',serif; font-size:15px;
+  color:rgba(255,255,255,0.92); line-height:2.0; margin-bottom:16px;
+  position:relative; }
+.hero-icon { font-size:44px; margin:8px 0; position:relative; }
+.date-pill { display:inline-block; background:rgba(196,122,0,0.18);
+  border:1px solid rgba(212,160,23,0.45); color:#FFE090; font-size:13px;
+  font-weight:600; padding:8px 20px; border-radius:100px; margin:8px 0; }
+.hero-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center;
+  margin-top:12px; position:relative; }
+.hero-tag { font-size:11px; color:rgba(255,255,255,0.65); }
+.hero-tag::after { content:' •'; margin-left:5px; }
+.hero-tag:last-child::after { content:''; }
+.hero-facts { display:grid; grid-template-columns:1fr 1fr; gap:8px;
+  padding:16px 20px 0; position:relative; }
+.hf { background:rgba(255,255,255,0.04); border:1px solid rgba(196,122,0,0.22);
+  border-radius:8px; padding:10px 12px; }
+.hf-label { font-size:10px; letter-spacing:1px; text-transform:uppercase;
+  color:rgba(212,160,23,0.65); margin-bottom:4px; }
+.hf-value { font-size:13px; font-weight:600; color:rgba(255,255,255,0.90); }
+
+/* Section header */
+.sec-hdr { background:var(--dark); padding:18px 20px 14px; border-top:3px solid var(--gold); }
+.sec-hdr h2 { font-family:'Yatra One',cursive; font-size:clamp(20px,5.5vw,28px);
+  color:var(--goldt); line-height:1.2; margin-bottom:3px; }
+.sec-hdr p { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(212,160,23,0.65); }
+
+/* Intro */
+.intro-b { background:var(--white); border-left:4px solid var(--gold);
+  border-radius:0 var(--r) var(--r) 0; padding:14px 14px 14px 16px; margin:14px 16px; }
+.intro-lead { font-family:'Lora',serif; font-weight:700; font-size:14.5px;
+  color:var(--amber); margin-bottom:8px; }
+.intro-b p { font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* The full mantra display */
+.mantra-display { background:var(--dark); border-radius:var(--r); margin:14px 16px;
+  padding:24px 20px; text-align:center; border:1px solid rgba(196,122,0,0.25); }
+.md-label { font-size:10px; letter-spacing:2.5px; text-transform:uppercase;
+  color:rgba(212,160,23,0.55); margin-bottom:14px; font-family:'DM Sans',sans-serif; }
+.md-devanagari { font-family:'Noto Serif Devanagari',serif; font-size:18px;
+  color:var(--goldt); line-height:2.2; margin-bottom:14px; }
+.md-roman { font-family:'Lora',serif; font-style:italic; font-size:14px;
+  color:rgba(255,255,255,0.80); line-height:1.8; margin-bottom:12px; }
+.md-translation { font-size:14px; color:rgba(255,220,140,0.95); line-height:1.65;
+  font-style:italic; padding:12px 16px; background:rgba(196,122,0,0.12);
+  border-radius:8px; }
+
+/* Story */
+.story { background:var(--white); border-radius:var(--r); margin:10px 16px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); }
+.story-hdr { padding:13px 14px 10px; display:flex; align-items:center;
+  gap:10px; border-bottom:1px solid #F0E8D0; }
+.story-badge { width:32px; height:32px; border-radius:50%; display:flex;
+  align-items:center; justify-content:center; font-size:13px;
+  font-weight:700; color:white; flex-shrink:0; }
+.story-hdr h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; }
+.story-body { padding:0 14px 14px; font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Word by word */
+.word-card { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.07); display:flex; }
+.wc-bar { width:5px; flex-shrink:0; }
+.wc-body { padding:13px 14px; flex:1; }
+.wc-word { font-family:'Noto Serif Devanagari',serif; font-size:18px;
+  color:var(--sun); font-weight:700; margin-bottom:2px; }
+.wc-roman { font-family:'Lora',serif; font-style:italic; font-size:13px;
+  color:var(--muted); margin-bottom:5px; }
+.wc-meaning { font-size:14px; color:var(--ink2); line-height:1.6; }
+.wc-deep { font-size:12.5px; color:var(--muted); line-height:1.55;
+  margin-top:5px; font-style:italic; }
+
+/* Three parts */
+.part-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); border-top:4px solid; }
+.pc-hdr { padding:13px 14px 8px; display:flex; align-items:center; gap:10px; }
+.pc-badge { width:32px; height:32px; border-radius:50%; display:flex;
+  align-items:center; justify-content:center; font-size:13px;
+  font-weight:700; color:white; flex-shrink:0; font-family:'DM Sans',sans-serif; }
+.pc-hdr h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; }
+.pc-mantra { font-family:'Noto Serif Devanagari',serif; font-size:15px;
+  color:var(--sun); padding:0 14px 6px; }
+.pc-body { padding:0 14px 13px; font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* How to chant */
+.step { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  padding:14px; display:flex; gap:13px; box-shadow:0 2px 6px rgba(0,0,0,0.07);
+  border-left:4px solid var(--gold); }
+.step-num { width:28px; height:28px; border-radius:50%; background:var(--gold);
+  color:white; font-weight:700; font-size:13px; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:1px; font-family:'DM Sans',sans-serif; }
+.step-title { font-family:'Lora',serif; font-weight:700; font-size:15px;
+  color:var(--amber); margin-bottom:4px; }
+.step p { font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Dark note */
+.dark-note { background:var(--dark2); border-radius:var(--r); margin:0 16px 12px;
+  padding:16px; border:1px solid rgba(196,122,0,0.22); }
+.dark-note-title { font-family:'Lora',serif; font-weight:700; font-size:16px;
+  color:var(--goldt); margin-bottom:8px; }
+.dark-note p { font-size:13.5px; color:rgba(255,255,255,0.88); line-height:1.65; }
+.dark-note strong { color:var(--goldt); }
+
+/* Plain card */
+.plain-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  padding:15px; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-top:3px solid var(--gold); }
+.plain-title { font-family:'Lora',serif; font-weight:700; font-size:15px;
+  color:var(--amber); margin-bottom:8px; }
+.plain-card p { font-size:14px; color:var(--ink2); line-height:1.65; }
+.plain-card ul { list-style:none; padding:0; display:grid; gap:7px; margin-top:8px; }
+.plain-card li { padding-left:18px; position:relative; font-size:14px; color:var(--ink2); }
+.plain-card li::before { content:'☀'; position:absolute; left:0;
+  color:var(--gold); font-size:10px; top:3px; }
+
+/* Stats */
+.stats-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; padding:16px; }
+.stat-pill { background:var(--white); border-radius:10px; padding:13px 10px;
+  text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.07); border-top:3px solid var(--gold); }
+.stat-num { font-family:'Yatra One',cursive; font-size:22px; color:var(--amber);
+  line-height:1; margin-bottom:4px; }
+.stat-label { font-size:11px; color:var(--muted); line-height:1.3; }
+
+/* Closing */
+.closing { background:var(--dark); padding:44px 24px; text-align:center; }
+.jai { font-family:'Yatra One',cursive; font-size:36px; color:var(--goldt);
+  text-shadow:0 0 40px rgba(196,122,0,0.5); margin-bottom:5px; }
+.jai-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:rgba(212,160,23,0.55); margin-bottom:8px; }
+.victory { font-family:'Lora',serif; font-style:italic;
+  color:rgba(255,255,255,0.75); font-size:15px; margin-bottom:22px; }
+.c-divider { width:60px; height:1px; background:var(--gold); margin:20px auto; }
+.closing-mantra { font-family:'Noto Serif Devanagari',serif; font-size:16px;
+  color:var(--goldt); line-height:2.0; margin-bottom:8px; }
+.closing-roman { font-family:'Lora',serif; font-style:italic; font-size:13px;
+  color:rgba(255,255,255,0.55); margin-bottom:6px; }
+.closing-meaning { font-size:13px; color:rgba(255,200,100,0.90); line-height:1.6; }
+.footer-note { font-size:11px; color:rgba(255,255,255,0.38); margin-top:20px;
+  letter-spacing:1px; text-transform:uppercase; line-height:1.8; }
+.attr { margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.07); }
+.attr-by { font-size:12px; color:rgba(255,255,255,0.50); }
+.attr-name { font-family:'Lora',serif; font-size:16px;
+  color:rgba(212,160,23,0.65); font-weight:600; margin-top:3px; }
+.attr-claude { font-size:11px; color:rgba(255,255,255,0.28); margin-top:4px; font-style:italic; }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor"
+      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sanatana Series
+  </a>
+  <span class="nav-center">☀ GAYATRI MANTRA</span>
+  <div class="lang-toggle">
+    <a class="lang-btn active" href="gayatri-mantra.html">EN</a>
+    <a class="lang-btn" href="gayatri-mantra-hi.html">हिं</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">✦ The Mother of the Vedas · Rigveda 3.62.10 · Sanatana Series ✦</p>
+  <h1>Gayatri Mantra</h1>
+  <p class="hero-deva">गायत्री मन्त्र</p>
+  <p class="hero-mantra">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं<br>
+  भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्॥</p>
+  <div class="hero-icon">☀️</div>
+  <div class="date-pill">Rigveda 3.62.10 · 3,500+ Years Old · 24 Syllables</div>
+  <div class="hero-tags">
+    <span class="hero-tag">Mother of the Vedas</span>
+    <span class="hero-tag">Vishwamitra</span>
+    <span class="hero-tag">Savitur — Solar Deity</span>
+    <span class="hero-tag">Three Worlds</span>
+    <span class="hero-tag">Sandhi Vandana</span>
+  </div>
+  <div class="hero-facts">
+    <div class="hf"><div class="hf-label">Source</div><div class="hf-value">Rigveda · Mandala 3 · Hymn 62.10</div></div>
+    <div class="hf"><div class="hf-label">Seer (Rishi)</div><div class="hf-value">Vishwamitra — Brahmarshi</div></div>
+    <div class="hf"><div class="hf-label">Deity</div><div class="hf-value">Savitur — The Divine Sun</div></div>
+    <div class="hf"><div class="hf-label">Metre</div><div class="hf-value">Gayatri — 3 lines × 8 syllables</div></div>
+  </div>
+</div>
+
+<!-- THE MANTRA IN FULL -->
+<div class="sec-hdr">
+  <h2>The Complete Mantra</h2>
+  <p>With Vyahriti · Full text · Roman transliteration · Complete meaning</p>
+</div>
+
+<div class="mantra-display">
+  <div class="md-label">Complete Gayatri Mantra — With Vyahriti Prefix</div>
+  <div class="md-devanagari">
+    ॐ भूः ॐ भुवः ॐ स्वः<br>
+    ॐ महः ॐ जनः ॐ तपः ॐ सत्यम्<br>
+    ॐ तत्सवितुर्वरेण्यं<br>
+    भर्गो देवस्य धीमहि<br>
+    धियो यो नः प्रचोदयात्॥<br>
+    ॐ आपो ज्योतिर् रसोऽमृतं ब्रह्म<br>
+    भूर्भुवः स्वरोम्॥
+  </div>
+  <div class="md-roman">Om Bhuh Om Bhuvah Om Svah<br>
+  Om Mahah Om Janah Om Tapah Om Satyam<br>
+  Om Tat Savitur Varenyam<br>
+  Bhargo Devasya Dhimahi<br>
+  Dhiyo Yo Nah Prachodayat<br>
+  Om Apo Jyotir Raso'Amritam Brahma<br>
+  Bhur Bhuvah Svar Om</div>
+  <div class="md-translation">"We meditate on the divine radiance of that Supreme Being who is the source of all creation — whose effulgent light illumines all realms, physical, vital and spiritual. May that divine light illuminate and inspire our intellect."</div>
+</div>
+
+<div class="intro-b">
+  <p class="intro-lead">The Gayatri Mantra is not a prayer asking God for something. It is a meditation — a conscious alignment of human intellect with the light of the divine.</p>
+  <p>Most mantras invoke a deity, ask for protection, or offer praise. The Gayatri is different. Its final and most important line — <em>dhiyo yo nah prachodayat</em> — is a single request: may that divine light illuminate our intellect. Not wealth, not health, not protection. Illumination of the mind. Clarity of thought. The capacity to understand what is true. This makes the Gayatri the most intellectually honest mantra in the entire Vedic tradition — a prayer that asks not for what we want, but for the capacity to see clearly enough to know what is worth wanting.</p>
+</div>
+
+<div class="stats-row">
+  <div class="stat-pill">
+    <div class="stat-num">24</div>
+    <div class="stat-label">Syllables — 3 lines of 8 each in Gayatri metre</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">3,500+</div>
+    <div class="stat-label">Years since the Rigveda was composed</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Parts — Praise · Meditation · Prayer</div>
+  </div>
+</div>
+
+<!-- VISHWAMITRA -->
+<div class="sec-hdr">
+  <h2>Sage Vishwamitra — The Rishi Who Received It</h2>
+  <p>A king who became the greatest sage — through rage, failure, and finally surrender</p>
+</div>
+
+<div class="intro-b" style="border-color:var(--saffron)">
+  <p class="intro-lead">The Gayatri Mantra was not composed by a born saint. It was revealed to a king who spent decades failing at becoming a saint — and finally succeeded.</p>
+  <p>Vishwamitra's story is one of the most remarkable in all Vedic literature. He began as a kshatriya king — powerful, proud, and used to getting what he wanted. His encounter with the brahmarshi Vasishtha shattered his world and set him on a path of transformation that would take lifetimes. The mantra he ultimately received was not just a spiritual gift — it was the culmination of the most extreme tapasya in the Vedic record.</p>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFFBEC">
+    <div class="story-badge" style="background:var(--amber)">1</div>
+    <h3 style="color:var(--amber)">The King Who Lost Everything to a Cow</h3>
+  </div>
+  <div class="story-body">King Vishwamitra was a powerful ruler who arrived at the hermitage of the brahmarshi Vasishtha with his army. Vasishtha, who owned the divine cow Kamdhenu (Nandini), offered to feed the entire army through the cow's miraculous powers. Vishwamitra was astonished — then covetous. He offered to buy the cow. Vasishtha refused. Vishwamitra demanded it. Vasishtha refused again. Vishwamitra tried to take it by force. Kamdhenu repelled the entire army single-handedly, producing warriors from her body to defeat Vishwamitra's soldiers. The king was humiliated. In that moment he realised: the power of a brahmarshi — born of spiritual discipline — was incomparably greater than the power of a king born of military conquest. He made a decision that would change Indian spiritual history: he resolved to become a brahmarshi himself.</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFF8EC">
+    <div class="story-badge" style="background:var(--sun)">2</div>
+    <h3 style="color:var(--sun)">Decades of Tapasya — and Repeated Failure</h3>
+  </div>
+  <div class="story-body">What followed was centuries of tapasya — austerities so severe they threatened to destabilise the cosmos. Yet Vishwamitra's fundamental flaw — pride and anger — kept undoing him. He would ascend to great spiritual heights and then be brought down by ego. Once, in anger at a king who did not honour him, he attempted to create a parallel universe — an alternative heaven with new stars, a new Indra. The gods intervened before he could complete it. At another point, after years of austerity, he broke his vow in a moment of passion. Each setback forced him to begin again. The Mahabharata and Ramayana both record his story as the definitive teaching that spiritual achievement cannot be based on ego — no matter how extreme the tapasya. He achieved the titles of Rishi, then Maharishi — but Brahmarshi, the highest, eluded him until he truly surrendered his pride.</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#FFFBEC">
+    <div class="story-badge" style="background:var(--amber)">3</div>
+    <h3 style="color:var(--amber)">Vasishtha's One Word — and the Revelation</h3>
+  </div>
+  <div class="story-body">After an age of tapasya, Vishwamitra finally subdued his anger completely. He had earned every title — yet the one that mattered, Brahmarshi, could only come from his ancient enemy Vasishtha, whose cow he had once tried to steal. Vasishtha, seeing the complete transformation in Vishwamitra, recognised him at last: "Brahmarshi." With that acknowledgement, the cosmic knowledge that had been building through generations of austerity crystallised. In deep meditation, the Gayatri Mantra was revealed to Vishwamitra — the complete, perfect prayer for the illumination of the intellect. He shared it with the world, which is why he is called Vishwa-Mitra: the friend of the entire universe. The mantra became the most widely recited Vedic verse in history. Not bad for a man who began by trying to steal a cow.</div>
+</div>
+
+<!-- WHAT DOES GAYATRI MEAN -->
+<div class="sec-hdr">
+  <h2>What Does "Gayatri" Mean?</h2>
+  <p>A name with multiple layers — all of them important</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-note-title">Three Meanings of Gayatri</div>
+  <p><strong>1. The Metre:</strong> Gayatri is primarily a Vedic poetic metre — three lines of eight syllables each (8+8+8 = 24 syllables total). Thousands of verses in the Rigveda are composed in this metre. The Gayatri Mantra is simply the most famous of them all.</p>
+  <br>
+  <p><strong>2. The Protection:</strong> The Chandogya Upanishad (3.12.1) gives the etymology: <em>gāyantaṃ trāyate iti gāyatrī</em> — "Gayatri is that which protects the one who sings (or recites) it." The name means: the song that protects. This is why recitation is called japa — repetition that protects.</p>
+  <br>
+  <p><strong>3. The Goddess:</strong> In Puranic tradition, Gayatri is also a goddess — one of the five forms of Devi Saraswati, depicted with five faces representing the five pranas (life forces) or the five elements. She is considered the Mother of the Vedas and the divine embodiment of the mantra itself. Temples to Devi Gayatri exist across India, especially in Mathura and Pushkar.</p>
+</div>
+
+<!-- WORD BY WORD -->
+<div class="sec-hdr">
+  <h2>Word by Word — All 24 Syllables</h2>
+  <p>Every word is a complete world · The mantra contains three realms</p>
+</div>
+
+<p style="font-size:13px;color:var(--muted);padding:10px 16px 6px;line-height:1.6;font-style:italic">
+  The Gayatri Mantra has two distinct parts: the Vyahriti (OM + the three worlds) and the mantra proper. Together they form a complete cosmological statement before the prayer even begins.</p>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--dark)"></div>
+  <div class="wc-body">
+    <div class="wc-word">ॐ (Om)</div>
+    <div class="wc-roman">Om / Aum</div>
+    <div class="wc-meaning">The primordial sound — the vibration from which all creation emerged. Not a word with a definition but a sonic representation of Brahman, the ultimate reality. It is simultaneously the past, present and future. The Mandukya Upanishad dedicates itself entirely to explaining this one syllable.</div>
+    <div class="wc-deep">Om is always the prefix. It signals that what follows is sacred and that the speaker is aligning with the cosmic order before speaking.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:#8B3A00"></div>
+  <div class="wc-body">
+    <div class="wc-word">भूः (Bhuh)</div>
+    <div class="wc-roman">Bhur — The Physical Realm</div>
+    <div class="wc-meaning">The Earth. The physical body. The material plane of existence — the realm of matter, of the five senses, of birth and death and physical experience. The word also means "the vital spiritual force" — prana.</div>
+    <div class="wc-deep">We are situating ourselves cosmologically before we pray. This is where our bodies exist.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--sun)"></div>
+  <div class="wc-body">
+    <div class="wc-word">भुवः (Bhuvah)</div>
+    <div class="wc-roman">Bhuvah — The Vital / Mental Realm</div>
+    <div class="wc-meaning">The atmosphere. The mental plane. The realm of thought, emotion, breath, and vital energy. This is the world of the mind — between the purely physical and the purely spiritual. It also means "the destroyer of sufferings."</div>
+    <div class="wc-deep">The middle world — where our minds and hearts live, between matter and spirit.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">स्वः (Svah)</div>
+    <div class="wc-roman">Svah — The Celestial / Spiritual Realm</div>
+    <div class="wc-meaning">Heaven. The spiritual plane. The realm of pure consciousness, of the soul — beyond both matter and mind. It also means "happiness" or "bliss." This is where the divine light originates from.</div>
+    <div class="wc-deep">Together, Bhur Bhuvah Svah = earth, atmosphere, heaven. The mantra spans all three before it begins asking.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">तत् (Tat)</div>
+    <div class="wc-roman">Tat — That</div>
+    <div class="wc-meaning">"That" — a pointer toward the Supreme Reality that cannot be named. In Sanskrit philosophy, the ultimate truth is beyond all names and forms. "Tat" is the closest language can get to pointing at it: not this, not that other thing — THAT. The Chandogya Upanishad's great teaching is <em>Tat tvam asi</em> — "That thou art." This one word contains volumes.</div>
+    <div class="wc-deep">The mantra doesn't name a specific deity. It points toward the ultimate reality. This is why the Gayatri transcends sectarianism.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">सवितुर् (Savitur)</div>
+    <div class="wc-roman">Savitur — Of the Divine Sun</div>
+    <div class="wc-meaning">Of Savitur — the Vedic solar deity who represents the sun before sunrise, the principle of illumination and creation itself. Savitur is not merely the physical sun but the divine light and creative intelligence behind it. The word comes from <em>su</em> — to impel, to set in motion.</div>
+    <div class="wc-deep">The sun is the most immediate symbol of divine light in any culture. The Gayatri is, at one level, a solar prayer — but Savitur is the divine intelligence behind the light, not the astronomical object.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">वरेण्यं (Varenyam)</div>
+    <div class="wc-roman">Varenyam — Most Worthy of Worship</div>
+    <div class="wc-meaning">Most excellent. Most worthy of adoration. The best — the superlative of all that is worth choosing. We are not just worshipping Savitur — we are declaring it to be the highest, the most deserving of our attention and reverence.</div>
+    <div class="wc-deep">A conscious act of choosing: of all things in the universe that could receive our attention, we are deliberately directing it toward the divine light.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">भर्गो (Bhargo)</div>
+    <div class="wc-roman">Bhargo — Divine Radiance that Destroys Ignorance</div>
+    <div class="wc-meaning">Effulgence. Divine radiance. That blazing light which simultaneously illuminates and purifies — destroying the darkness of ignorance and sin the way sunlight destroys darkness. Not a gentle glow but a purifying fire of light.</div>
+    <div class="wc-deep">The word bhargo combines two ideas: light (brilliance, radiance) and purification (destruction of impurity). The divine light doesn't just illuminate — it cleanses.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">देवस्य (Devasya)</div>
+    <div class="wc-roman">Devasya — Of the Divine</div>
+    <div class="wc-meaning">Of God. Of the divine being. Of that which is inherently luminous, divine, and self-effulgent. <em>Deva</em> comes from <em>div</em> — to shine. A deva is literally "one who shines." The divine is, at its core, that which shines.</div>
+    <div class="wc-deep">We have now completed the first part — the identification of what we are meditating on: that radiant, purifying divine light of the Supreme Being.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--gold)"></div>
+  <div class="wc-body">
+    <div class="wc-word">धीमहि (Dhimahi)</div>
+    <div class="wc-roman">Dhimahi — We Meditate</div>
+    <div class="wc-meaning">We meditate upon. We contemplate. We hold in our awareness. This is the central verb of the middle section — it shifts the mantra from description (what the divine is) to action (what we are doing about it). Meditation: the deliberate, sustained direction of attention.</div>
+    <div class="wc-deep">This word transforms the Gayatri from a prayer into a practice. We are not just describing the divine light — we are meditating on it, right now, in this recitation.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--saffron)"></div>
+  <div class="wc-body">
+    <div class="wc-word">धियो (Dhiyo)</div>
+    <div class="wc-roman">Dhiyo — Our Intellect</div>
+    <div class="wc-meaning">The intellect. The faculty of understanding, discernment and wisdom. Not just the rational mind but the higher intelligence — the buddhi — that can distinguish between the real and the unreal, the eternal and the temporary.</div>
+    <div class="wc-deep">This is what the mantra asks to have illuminated. Not our bank accounts, not our health, not our relationships — our capacity to understand. Everything else follows from clarity of mind.</div>
+  </div>
+</div>
+
+<div class="word-card">
+  <div class="wc-bar" style="background:var(--amber)"></div>
+  <div class="wc-body">
+    <div class="wc-word">यो नः प्रचोदयात् (Yo Nah Prachodayat)</div>
+    <div class="wc-roman">Yo Nah Prachodayat — May That Inspire and Illuminate Our Intellect</div>
+    <div class="wc-meaning">Yo = Who / May that. Nah = Our / Ours. Prachodayat = May illuminate, inspire, set in motion, guide. The complete final phrase: "May THAT divine radiance inspire, illuminate, and set our intellect in motion toward truth and righteousness."</div>
+    <div class="wc-deep">The final word — prachodayat — is a request, not a certainty. We are asking for illumination, not demanding it. The mantra ends in humility: we know where the light comes from. We are asking to receive it.</div>
+  </div>
+</div>
+
+<!-- THREE PARTS -->
+<div class="sec-hdr">
+  <h2>The Three Parts of the Gayatri</h2>
+  <p>Stotra · Dhyana · Prarthana — Praise · Meditation · Prayer</p>
+</div>
+
+<div class="intro-b" style="border-color:var(--sun)">
+  <p class="intro-lead">The Gayatri Mantra is extraordinary because it contains all three modes of approaching the divine in a single utterance — and in exactly the right order.</p>
+  <p>Most prayers are either praise, or meditation, or petition. The Gayatri is all three — and the sequence is deliberate. You cannot meaningfully ask for illumination before you understand what you are asking it from.</p>
+</div>
+
+<div class="part-card" style="border-color:var(--amber)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--amber)">I</div>
+    <h3 style="color:var(--amber)">Stotra — Praise of the Divine</h3>
+  </div>
+  <div class="pc-mantra">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं</div>
+  <div class="pc-body">The first part establishes who we are addressing and why they deserve our attention. We invoke the three realms (Bhur Bhuvah Svah) — situating ourselves in the full cosmological context — then identify the divine light of Savitur as the most worthy object of our worship. This is not flattery. It is orientation: before you can pray to something, you must understand what it is and why it matters.</div>
+</div>
+
+<div class="part-card" style="border-color:var(--sun)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--sun)">II</div>
+    <h3 style="color:var(--sun)">Dhyana — Meditation on the Divine</h3>
+  </div>
+  <div class="pc-mantra">भर्गो देवस्य धीमहि</div>
+  <div class="pc-body">The second part is the meditation itself — the active practice of holding the divine radiance in consciousness. We are not just singing about the light; we are directing our attention toward it and letting it fill our awareness. This is why the Gayatri is considered a meditation and not merely a verbal prayer. The word Dhimahi ("we meditate") is the pivot point of the entire mantra.</div>
+</div>
+
+<div class="part-card" style="border-color:var(--gold)">
+  <div class="pc-hdr">
+    <div class="pc-badge" style="background:var(--gold)">III</div>
+    <h3 style="color:var(--gold)">Prarthana — Prayer for Illumination</h3>
+  </div>
+  <div class="pc-mantra">धियो यो नः प्रचोदयात्</div>
+  <div class="pc-body">The final part is the single, specific, humble request: may that divine light illuminate our intellect. Having praised the divine and meditated upon it, we make one ask — not for anything material or personal — but for the capacity to understand clearly. This is the most selfless prayer in the Vedic tradition. If the intellect is truly illuminated, everything else follows from that clarity.</div>
+</div>
+
+<!-- WHERE IT APPEARS -->
+<div class="sec-hdr">
+  <h2>The Gayatri Across the Scriptures</h2>
+  <p>It does not appear once — it echoes through all of Vedic literature</p>
+</div>
+
+<div class="dark-note">
+  <div class="dark-note-title">The Rigveda — The Source</div>
+  <p>The mantra appears first in Rigveda Mandala 3, Hymn 62, Verse 10 (RV 3.62.10) — the third book of the oldest scripture in human history. The third Mandala is attributed to Vishwamitra and his lineage. In its original Vedic context, the verse is part of a longer hymn to Savitur — but this particular verse was elevated to special status through continuous use and recognition of its power.</p>
+</div>
+
+<div class="dark-note" style="margin-top:8px">
+  <div class="dark-note-title">The Upanishads and Bhagavad Gita</div>
+  <p>The Gayatri appears prominently in the <strong>Chandogya Upanishad</strong>, which devotes an entire section to its meaning, calling it "the support of all existence" and explaining the four feet (pada) of Brahman through it. The <strong>Brihadaranyaka Upanishad</strong> also extensively discusses it. In the Bhagavad Gita, Krishna says: <strong>"Among metres (chandas), I am the Gayatri"</strong> (Gita 10.35) — placing it at the apex of all poetic forms in creation.</p>
+</div>
+
+<div class="dark-note" style="margin-top:8px">
+  <div class="dark-note-title">The Manu Smriti and Daily Practice</div>
+  <p>The Manu Smriti established the Gayatri as the central mantra of the Upanayana (sacred thread) ceremony — the initiation that traditionally marks a student's entry into Vedic education. The Gayatri was the first mantra a student received from the guru. It was to be recited at dawn, noon, and dusk — the three Sandhis (junctions of the day). This practice of Sandhi Vandana continues in many homes and temples today.</p>
+</div>
+
+<!-- HOW TO CHANT -->
+<div class="sec-hdr">
+  <h2>How to Chant the Gayatri Mantra</h2>
+  <p>When · How many times · Sitting position · Common mistakes</p>
+</div>
+
+<div style="height:10px"></div>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div><div class="step-title">When to Chant — The Three Sandhis</div>
+  <p>Traditionally, the Gayatri is chanted at the three Sandhis — junctions of the day. <strong>Pratah Sandhi</strong>: at sunrise, facing east. <strong>Madhyahna Sandhi</strong>: at noon, facing north. <strong>Sayam Sandhi</strong>: at sunset, facing west. Of these three, <strong>sunrise is most important</strong> — reciting the Gayatri while facing the rising sun is the most powerful time. If only one time is possible, sunrise is the one.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div><div class="step-title">How to Sit</div>
+  <p>Sit in a comfortable cross-legged position — Sukhasana or Padmasana. Spine upright. Eyes closed or slightly open and downcast. Hands in Dhyana Mudra (palms together in lap) or Jnana Mudra (index finger touching thumb). The body should be relaxed but alert. Do not lie down. If sitting on the floor is difficult, a chair with feet flat on the ground is fine.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <div><div class="step-title">How Many Times</div>
+  <p>The traditional counts are: <strong>10 times</strong> minimum (one for each direction + sky + earth + heart). <strong>28 times</strong> (the number of Nakshatra — lunar mansions). <strong>108 times</strong> — one full mala — the most common full practice. <strong>1,008 times</strong> for special occasions. Begin with 10 and build gradually. Consistency over months matters far more than intensity on one day.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <div><div class="step-title">Pronunciation — The Most Common Mistakes</div>
+  <p><strong>Bhur Bhuvah Svah</strong> — not "Swaha" (that is a different word used in fire ceremonies). <strong>Varenyam</strong> — not "Varenyam" with a hard N; the ṇ is a retroflex. <strong>Dhimahi</strong> — the Dh is aspirated (tongue on upper palate). <strong>Prachodayat</strong> — the final 't' is soft, barely voiced. The mantra should flow without breaks between words — it is one unbroken stream of sound, not a list of separate words.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <div><div class="step-title">With Understanding — Not Just Sound</div>
+  <p>The tradition is clear: reciting the Gayatri while understanding its meaning is immeasurably more powerful than mechanical repetition. Before you begin your japa, read the meaning once slowly. Then close your eyes and as you chant, visualise the rising sun — a brilliant golden light — and direct that image at your own intellect. You are asking for clarity of mind. Let the mind participate in that ask.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">6</div>
+  <div><div class="step-title">Who Can Chant</div>
+  <p>The Gayatri was traditionally restricted to the twice-born (Dwija) castes who had undergone Upanayana. This restriction is now widely understood to be a historical-social convention rather than a spiritual law. Swami Vivekananda, Sri Aurobindo, and many modern teachers have affirmed that the Gayatri belongs to all of humanity — it is a prayer for the illumination of human intellect, and no human intellect should be excluded from it. Chant it. It is yours.</p></div>
+</div>
+
+<!-- MODERN RELEVANCE -->
+<div class="sec-hdr">
+  <h2>The Gayatri for the Modern World</h2>
+  <p>Why a 3,500-year-old mantra is more relevant now than ever</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">The Only Prayer That Asks for Intelligence</div>
+  <p>We live in an era of unprecedented information and unprecedented confusion. More data than ever exists and clarity seems harder to find than ever. The Gayatri asks for exactly what we most need: not more information, but the capacity to discern what is true, what is real, what is worth caring about. The Sanskrit word <em>dhi</em> — the intellect being prayed for — is not merely rational intelligence. It is the capacity for wisdom, for distinguishing the permanent from the transient, the meaningful from the trivial. That is the rarest and most valuable faculty in the modern world.</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">For Diaspora Families — The Portable Practice</div>
+  <p>The Gayatri requires nothing — no temple, no priest, no special equipment. A few minutes at sunrise, facing east, eyes closed. It is the most portable spiritual practice in the Hindu tradition. For families living across cultures:
+  </p>
+  <ul>
+    <li>Teach children the Gayatri before any other mantra — it is the foundation</li>
+    <li>Chant it at sunrise even if only for 10 repetitions — the consistency matters</li>
+    <li>Learning the meaning transforms it from sound into understanding</li>
+    <li>The Gayatri can be chanted in any language's phonetics — the sound matters</li>
+    <li>It is a gift from Vishwamitra to all of humanity — receive it</li>
+  </ul>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">Scientists, Philosophers and the Gayatri</div>
+  <p>The Gayatri has attracted attention far beyond traditional Hindu devotion. Nikola Tesla is said to have been fascinated by Vedic sound science. Sri Aurobindo devoted extensive philosophical writing to its meaning. The Theosophical Society promoted it globally in the early 20th century. Modern neuroscientists have studied the specific frequency effects of its 24 syllables on brainwave states. Whether or not you accept the metaphysical claims — the Gayatri as a daily practice of focused meditation, combined with the meaning of asking for clarity of mind, is something that any thoughtful person in any tradition could benefit from.</p>
+</div>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div style="font-size:40px;margin-bottom:14px">☀️</div>
+  <div class="jai">Om Tat Savitur Varenyam!</div>
+  <div class="jai-deva">गायत्री — वेदों की माता</div>
+  <div class="victory">The mantra that asks not for wealth or safety — but for the light to see clearly</div>
+  <div class="c-divider"></div>
+  <div class="closing-mantra">ॐ तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि<br>धियो यो नः प्रचोदयात्॥</div>
+  <div class="closing-roman">Om Tat Savitur Varenyam Bhargo Devasya Dhimahi<br>Dhiyo Yo Nah Prachodayat</div>
+  <div class="closing-meaning">"May the divine radiance of the Supreme illuminate our intellect."</div>
+  <p class="footer-note">Sanatana Series · Gayatri Mantra<br>
+  Rigveda 3.62.10 · The Mother of the Vedas · Evergreen</p>
+  <div class="attr">
+    <p class="attr-by">Created by</p>
+    <p class="attr-name">Varun Dogar</p>
+    <p class="attr-claude">With assistance from Claude · Anthropic</p>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<div style="background:linear-gradient(135deg,#080600 0%,#120E00 100%);
+  border-top:2px solid rgba(184,134,11,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(212,160,23,0.40);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.70);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;
+    margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide" target="_blank" rel="noopener"
+    style="display:inline-block;background:#8B5E00;color:white;text-decoration:none;
+      font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
+      padding:12px 28px;border-radius:100px">
+    🔔 Subscribe — Free
+  </a>
+</div>
+
+</body>
+</html>
