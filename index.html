@@ -3,917 +3,439 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanatana Series — Hindu Festivals, Epics & Philosophy</title>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Sanatana Series — Hinduism for the World"/>
-<meta property="og:description" content="Free guides to Hindu festivals, epics and philosophy — for every generation, wherever you are."/>
+<title>Sanatana Series — Hindu Guides for Every Generation</title>
+<meta property="og:title" content="Sanatana Series — Hindu Guides for Every Generation"/>
+<meta property="og:description" content="Free guides to Hindu festivals, epics and philosophy — in English and Hindi. For the diaspora, for curious minds, for every generation."/>
 <meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
 <meta property="og:url" content="https://dogvar.github.io/sanatana-series/"/>
-<meta name="twitter:card" content="summary_large_image"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-
-/* ── Tokens ── */
 :root {
-  --saff:   #C94800;
-  --gold:   #B8860B;
-  --goldt:  #D4A017;
-  --dark:   #0D0400;
-  --dark2:  #180900;
-  --cream:  #FFFBF4;
-  --ink:    #1C0E00;
-  --ink2:   #3D2000;
-  --muted:  #7A5030;
-  --border: rgba(184,134,11,0.2);
-  --r:      12px;
-  --max:    1200px;
-  --col:    680px;
+  --saff:#C94800; --gold:#B8860B; --goldt:#D4A017;
+  --dark:#0D0400; --dark2:#1A0A00;
+  --cream:#FFFBF4; --white:#FFFFFF;
+  --ink:#1C0E00; --ink2:#3D2000; --muted:#7A5030;
+  --r:12px;
 }
-
 * { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',sans-serif; background:var(--cream);
+  color:var(--ink); line-height:1.6; font-size:15px; max-width:1200px;
+  margin:0 auto; }
 
-html { background:var(--dark); }
+/* NAV */
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(13,4,0,0.96);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(184,134,11,0.22);
+  padding:0 24px; display:flex; align-items:center; height:52px; gap:20px; }
+.nav-brand { font-family:'Yatra One',cursive; font-size:20px; color:var(--goldt);
+  text-decoration:none; white-space:nowrap; }
+.nav-brand span { font-size:13px; color:rgba(212,160,23,0.50);
+  font-family:'DM Sans',sans-serif; font-weight:400; margin-left:8px; }
+.nav-links { display:flex; gap:16px; margin-left:auto; align-items:center; }
+.nav-links a { font-size:13px; font-weight:500; text-decoration:none;
+  color:rgba(212,160,23,0.70); transition:color 0.15s; }
+.nav-links a:hover { color:var(--goldt); }
 
-body {
-  font-family:'DM Sans',sans-serif;
-  background:var(--cream);
-  color:var(--ink);
-  font-size:14px;
-  line-height:1.55;
-}
+/* HERO */
+.hero { background:var(--dark); padding:56px 24px 44px;
+  display:grid; grid-template-columns:1fr 340px; gap:40px; align-items:start; }
+@media(max-width:760px) { .hero { grid-template-columns:1fr; } .hero-cal { display:none; } }
+.hero-left {}
+.hero-om { font-family:'Noto Serif Devanagari',serif; font-size:44px;
+  color:rgba(212,160,23,0.25); line-height:1; margin-bottom:14px; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(32px,5vw,52px);
+  color:var(--goldt); line-height:1.1; margin-bottom:10px;
+  text-shadow:0 2px 40px rgba(184,134,11,0.25); }
+.hero-tagline { font-family:'Lora',serif; font-style:italic; font-size:17px;
+  color:rgba(255,255,255,0.80); margin-bottom:18px; line-height:1.5; }
+.hero-desc { font-size:14px; color:rgba(255,255,255,0.55); line-height:1.65;
+  max-width:480px; margin-bottom:24px; }
+.hero-stats { display:flex; gap:24px; flex-wrap:wrap; }
+.hs { text-align:left; }
+.hs-num { font-family:'Yatra One',cursive; font-size:28px; color:var(--goldt); line-height:1; }
+.hs-label { font-size:11px; color:rgba(255,255,255,0.40); margin-top:2px; }
+.sub-btn { display:inline-flex; align-items:center; gap:8px;
+  background:#C94800; color:white; text-decoration:none;
+  font-size:13px; font-weight:600; padding:10px 22px; border-radius:100px;
+  margin-top:20px; transition:background 0.15s; }
+.sub-btn:hover { background:#E05500; }
 
-/* ── Nav ── */
-.nav {
-  position:sticky; top:0; z-index:100;
-  background:rgba(13,4,0,0.97);
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(212,160,23,0.15);
-  height:52px;
-}
-.nav-inner {
-  max-width:var(--max);
-  margin:0 auto;
-  padding:0 24px;
-  height:100%;
-  display:flex;
-  align-items:center;
-  gap:16px;
-}
-.nav-om {
-  font-family:'Noto Serif Devanagari',serif;
-  font-size:20px;
-  color:rgba(212,160,23,0.45);
-  line-height:1;
-}
-.nav-title {
-  font-family:'Yatra One',cursive;
-  font-size:18px;
-  color:var(--goldt);
-  letter-spacing:0.5px;
-}
-.nav-sub {
-  font-family:'Noto Serif Devanagari',serif;
-  font-size:13px;
-  color:rgba(212,160,23,0.35);
-  margin-left:2px;
-}
-.nav-links {
-  margin-left:auto;
-  display:flex;
-  gap:6px;
-  align-items:center;
-}
-.nav-link {
-  text-decoration:none;
-  font-size:12px;
-  color:rgba(212,160,23,0.60);
-  padding:5px 12px;
-  border-radius:100px;
-  border:1px solid rgba(212,160,23,0.18);
-  transition:border-color 0.15s, color 0.15s;
-  white-space:nowrap;
-}
-.nav-link:hover { color:var(--goldt); border-color:rgba(212,160,23,0.45); }
-.nav-link.sub-link {
-  background:rgba(201,72,0,0.15);
-  border-color:rgba(201,72,0,0.35);
-  color:rgba(255,140,80,0.85);
-}
-.nav-link.sub-link:hover { background:rgba(201,72,0,0.28); }
+/* CALENDAR PANEL */
+.hero-cal { background:rgba(255,255,255,0.04); border:1px solid rgba(184,134,11,0.18);
+  border-radius:var(--r); padding:18px; }
+.cal-title { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(212,160,23,0.55); margin-bottom:14px; font-weight:600; }
+.cal-item { display:flex; gap:12px; align-items:flex-start;
+  padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+.cal-item:last-child { border-bottom:none; }
+.cal-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; margin-top:5px; }
+.cal-date { font-size:11px; color:rgba(212,160,23,0.60); font-weight:600;
+  white-space:nowrap; min-width:52px; }
+.cal-name { font-size:13px; color:rgba(255,255,255,0.80); line-height:1.35; }
+.cal-name a { color:rgba(255,255,255,0.80); text-decoration:none; }
+.cal-name a:hover { color:var(--goldt); }
 
-/* ── Page wrapper ── */
-.page { max-width:var(--max); margin:0 auto; padding:0 24px; }
+/* MAIN CONTENT */
+.main { padding:32px 24px; }
 
-/* ── Hero ── */
-.hero {
-  background:var(--dark);
-  padding:0;
-  position:relative;
-  overflow:hidden;
-}
-.hero-inner {
-  max-width:var(--max);
-  margin:0 auto;
-  padding:56px 24px 44px;
-  display:grid;
-  grid-template-columns:1fr 420px;
-  gap:40px;
-  align-items:center;
-}
-.hero::before {
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(ellipse 55% 80% at 20% 50%, rgba(201,72,0,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 60% at 85% 30%, rgba(184,134,11,0.06) 0%, transparent 55%);
-  pointer-events:none;
-}
-.hero-left { position:relative; }
-.hero-eyebrow {
-  font-size:10px; letter-spacing:3.5px; text-transform:uppercase;
-  color:rgba(212,160,23,0.60); margin-bottom:14px;
-}
-.hero h1 {
-  font-family:'Yatra One',cursive;
-  font-size:clamp(36px,5vw,62px);
-  color:var(--goldt);
-  line-height:1.05;
-  text-shadow:0 2px 40px rgba(184,134,11,0.2);
-  margin-bottom:8px;
-}
-.hero-deva {
-  font-family:'Noto Serif Devanagari',serif;
-  font-size:20px;
-  color:rgba(212,160,23,0.45);
-  margin-bottom:16px;
-}
-.hero-tagline {
-  font-family:'Lora',serif;
-  font-style:italic;
-  font-size:17px;
-  color:rgba(255,255,255,0.65);
-  line-height:1.65;
-  max-width:480px;
-  margin-bottom:28px;
-}
-.hero-stats {
-  display:flex;
-  gap:28px;
-}
-.hs-num {
-  font-family:'Yatra One',cursive;
-  font-size:28px;
-  color:var(--goldt);
-  line-height:1;
-  margin-bottom:3px;
-}
-.hs-label {
-  font-size:11px;
-  color:rgba(255,255,255,0.38);
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
+/* FILTER TABS */
+.filter-tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
+.tab { padding:7px 16px; border-radius:100px; font-size:12px; font-weight:600;
+  border:1px solid rgba(184,134,11,0.25); color:var(--muted);
+  cursor:pointer; background:none; transition:all 0.15s; }
+.tab:hover { border-color:rgba(184,134,11,0.5); color:var(--gold); }
+.tab.active { background:rgba(184,134,11,0.15); border-color:var(--gold);
+  color:var(--goldt); }
 
-/* Hero right — calendar preview */
-.hero-right {
-  position:relative;
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(212,160,23,0.15);
-  border-radius:16px;
-  padding:20px;
-  overflow:hidden;
-}
-.hero-right::before {
-  content:'';
-  position:absolute;
-  inset:0;
-  background:radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,134,11,0.06) 0%, transparent 70%);
-  pointer-events:none;
-}
-.hr-label {
-  font-size:10px;
-  letter-spacing:2.5px;
-  text-transform:uppercase;
-  color:rgba(212,160,23,0.50);
-  margin-bottom:12px;
-  position:relative;
-}
-.hr-events { display:grid; gap:6px; position:relative; }
-.hr-event {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:8px 11px;
-  background:rgba(255,255,255,0.04);
-  border-radius:8px;
-  text-decoration:none;
-  border:1px solid rgba(255,255,255,0.05);
-  transition:background 0.15s;
-}
-.hr-event:hover { background:rgba(255,255,255,0.08); }
-.hr-event-dot {
-  width:7px; height:7px;
-  border-radius:50%;
-  flex-shrink:0;
-}
-.hr-event-date {
-  font-size:11px;
-  font-weight:600;
-  color:rgba(255,255,255,0.45);
-  flex-shrink:0;
-  width:42px;
-}
-.hr-event-name {
-  font-size:13px;
-  color:rgba(255,255,255,0.80);
-  flex:1;
-}
-.hr-event-tag {
-  font-size:10px;
-  font-weight:700;
-  padding:2px 8px;
-  border-radius:100px;
-  color:white;
-}
-.hr-cal-link {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:6px;
-  margin-top:10px;
-  padding:9px;
-  background:rgba(184,134,11,0.10);
-  border-radius:8px;
-  border:1px solid rgba(184,134,11,0.2);
-  text-decoration:none;
-  font-size:12px;
-  font-weight:600;
-  color:var(--goldt);
-  transition:background 0.15s;
-  position:relative;
-}
-.hr-cal-link:hover { background:rgba(184,134,11,0.20); }
+/* SECTION LABEL */
+.section-label { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:var(--muted); font-weight:600; margin-bottom:16px; }
 
-/* ── Section labels ── */
-.sec-label {
-  padding:24px 0 10px;
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.sec-label-text {
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:2.5px;
-  text-transform:uppercase;
-  color:var(--muted);
-  white-space:nowrap;
-}
-.sec-label::after {
-  content:'';
-  flex:1;
-  height:1px;
-  background:var(--border);
-}
+/* GUIDE GRID */
+.guide-grid { display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:16px; margin-bottom:32px; }
 
-/* ── Guide grid ── */
-.guides {
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
-  gap:12px;
-  margin-bottom:8px;
-}
+/* GUIDE CARD */
+.guide-card { background:var(--white); border-radius:var(--r); overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.07); text-decoration:none;
+  display:flex; flex-direction:column;
+  transition:transform 0.15s, box-shadow 0.15s; border-top:3px solid; }
+.guide-card:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.12); }
+.gc-top { padding:14px 14px 10px; flex:1; }
+.gc-icon { font-size:28px; margin-bottom:8px; }
+.gc-festival { font-size:10px; font-weight:700; letter-spacing:1px;
+  text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+.gc-title { font-family:'Yatra One',cursive; font-size:20px; color:var(--ink);
+  margin-bottom:6px; line-height:1.2; }
+.gc-desc { font-size:12.5px; color:var(--muted); line-height:1.5; }
+.gc-footer { padding:10px 14px; border-top:1px solid #f5e8d8;
+  display:flex; align-items:center; justify-content:space-between; }
+.gc-lang { display:flex; gap:6px; }
+.gc-lang a { font-size:10px; font-weight:700; padding:3px 9px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(184,134,11,0.25);
+  color:var(--muted); transition:all 0.15s; }
+.gc-lang a:hover { border-color:var(--gold); color:var(--gold); }
+.gc-lang a.primary { background:rgba(184,134,11,0.10); border-color:rgba(184,134,11,0.35);
+  color:var(--gold); }
+.gc-badge { font-size:10px; font-weight:700; padding:3px 9px; border-radius:100px;
+  color:white; }
+.gc-new { background:var(--saff); }
+.gc-soon { background:var(--muted); opacity:0.7; }
 
-/* ── Guide card ── */
-.guide-card {
-  display:flex;
-  text-decoration:none;
-  background:white;
-  border-radius:var(--r);
-  overflow:hidden;
-  box-shadow:0 2px 8px rgba(0,0,0,0.07);
-  border:1px solid rgba(184,134,11,0.1);
-  transition:transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-  position:relative;
-}
-.guide-card:hover {
-  transform:translateY(-2px);
-  box-shadow:0 6px 20px rgba(0,0,0,0.12);
-  border-color:rgba(184,134,11,0.28);
-}
-.guide-card.soon {
-  opacity:0.65;
-  pointer-events:none;
-}
-.gc-accent {
-  width:4px;
-  flex-shrink:0;
-}
-.gc-inner {
-  flex:1;
-  padding:12px 12px 12px 10px;
-  display:flex;
-  gap:10px;
-  align-items:flex-start;
-  min-width:0;
-}
-.gc-icon {
-  width:36px; height:36px;
-  border-radius:10px;
-  flex-shrink:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:18px;
-  margin-top:1px;
-}
-.gc-body { flex:1; min-width:0; }
-.gc-festival {
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:0.3px;
-  margin-bottom:2px;
-  line-height:1.3;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-.gc-title {
-  font-family:'Lora',serif;
-  font-weight:700;
-  font-size:14.5px;
-  color:var(--ink);
-  line-height:1.3;
-  margin-bottom:4px;
-}
-.gc-desc {
-  font-size:11.5px;
-  color:var(--muted);
-  line-height:1.45;
-  display:-webkit-box;
-  -webkit-line-clamp:2;
-  -webkit-box-orient:vertical;
-  overflow:hidden;
-}
-.gc-meta {
-  display:flex;
-  align-items:center;
-  gap:6px;
-  margin-top:5px;
-}
-.gc-badge {
-  font-size:10px;
-  font-weight:700;
-  padding:2px 8px;
-  border-radius:100px;
-  color:white;
-}
-.gc-new {
-  font-size:10px;
-  color:var(--muted);
-}
-.gc-arrow {
-  font-size:18px;
-  color:rgba(184,134,11,0.35);
-  flex-shrink:0;
-  padding-top:8px;
-  padding-right:2px;
-  align-self:center;
-}
+/* COMING SOON CARD */
+.soon-card { background:var(--white); border-radius:var(--r); overflow:hidden;
+  box-shadow:0 1px 4px rgba(0,0,0,0.05); border-top:3px solid #ddd;
+  opacity:0.6; }
+.soon-card .gc-top { padding:14px; }
+.soon-card .gc-title { color:var(--muted); font-size:18px; }
 
-/* ── Cat header ── */
-.cat-hdr {
-  padding:20px 0 8px;
-  display:grid;
-  grid-template-columns:auto 1fr auto;
-  align-items:center;
-  gap:12px;
-}
-.cat-icon { font-size:16px; }
-.cat-name {
-  font-family:'Lora',serif;
-  font-weight:700;
-  font-size:16px;
-  color:var(--ink);
-}
-.cat-desc {
-  font-size:12px;
-  color:var(--muted);
-  line-height:1.4;
-}
-.cat-line { height:1px; background:var(--border); }
-
-/* ── Subscribe ── */
-.subscribe {
-  background:var(--dark);
-  margin-top:40px;
-  padding:48px 24px;
-  text-align:center;
-}
-.sub-om {
-  font-family:'Noto Serif Devanagari',serif;
-  font-size:24px;
-  color:rgba(212,160,23,0.35);
-  margin-bottom:8px;
-}
-.sub-title {
-  font-family:'Yatra One',cursive;
-  font-size:24px;
-  color:var(--goldt);
-  margin-bottom:8px;
-}
-.sub-desc {
-  font-family:'Lora',serif;
-  font-style:italic;
-  font-size:15px;
-  color:rgba(255,255,255,0.55);
-  line-height:1.65;
-  max-width:480px;
-  margin:0 auto 20px;
-}
-.sub-btn {
-  display:inline-block;
-  background:var(--saff);
-  color:white;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:600;
-  padding:12px 28px;
-  border-radius:100px;
-  transition:background 0.15s;
-}
-.sub-btn:hover { background:#E05000; }
-
-/* ── Footer ── */
-.footer {
-  background:var(--dark2);
-  padding:24px;
-  text-align:center;
-  border-top:1px solid rgba(255,255,255,0.06);
-}
-.footer-note {
-  font-size:12px;
-  color:rgba(255,255,255,0.25);
-  line-height:1.8;
-}
-.footer-note a {
-  color:rgba(212,160,23,0.45);
-  text-decoration:none;
-}
-
-/* ── Responsive ── */
-@media (max-width: 900px) {
-  .hero-inner {
-    grid-template-columns:1fr;
-    gap:28px;
-    padding:44px 20px 36px;
-  }
-  .hero-right { display:none; }
-  .guides { grid-template-columns:1fr; }
-}
-@media (max-width: 640px) {
-  .nav-links .nav-link:not(.sub-link) { display:none; }
-  .page { padding:0 14px; }
-}
+/* FOOTER */
+footer { background:var(--dark); padding:40px 24px; text-align:center; }
+footer p { font-size:12px; color:rgba(255,255,255,0.30); line-height:1.8; }
+footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
+footer .footer-brand { font-family:'Yatra One',cursive; font-size:24px;
+  color:var(--goldt); margin-bottom:8px; }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="nav">
-  <div class="nav-inner">
-    <span class="nav-om">ॐ</span>
-    <span class="nav-title">Sanatana Series</span>
-    <span class="nav-sub">सनातन</span>
-    <div class="nav-links">
-      <a class="nav-link" href="calendar.html">📅 Calendar 2026</a>
-      <a class="nav-link sub-link" href="https://sanatanverse.substack.com" target="_blank" rel="noopener">🔔 Sanatanverse</a>
-    </div>
+<nav class="top-nav">
+  <a href="index.html" class="nav-brand">Sanatana Series <span>सनातन सीरीज़</span></a>
+  <div class="nav-links">
+    <a href="calendar.html">📅 Calendar</a>
+    <a href="date-card-generator.html">🎴 Cards</a>
+    <a href="https://sanatanverse.substack.com" target="_blank">📬 Newsletter</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <p class="hero-eyebrow">✦ Hinduism for the World · Free · No Ads ✦</p>
-      <h1>Sanatana Series</h1>
-      <p class="hero-deva">सनातन सीरीज़</p>
-      <p class="hero-tagline">Guides to Hindu festivals, epics and philosophy — whether you grew up in India or were born outside it.</p>
-      <div class="hero-stats">
-        <div class="hs"><div class="hs-num" id="guideCount">13</div><div class="hs-label">Guides</div></div>
-        <div class="hs"><div class="hs-num">2026</div><div class="hs-label">Festival Year</div></div>
-        <div class="hs"><div class="hs-num">∞</div><div class="hs-label">Free Always</div></div>
-      </div>
+  <div class="hero-left">
+    <div class="hero-om">ॐ</div>
+    <h1>Sanatana Series</h1>
+    <p class="hero-tagline">Hindu guides for every generation — wherever you are</p>
+    <p class="hero-desc">Free, ad-free guides to festivals, epics and philosophy. In English and Hindi. For diaspora families, curious minds, and anyone who wants to understand the tradition.</p>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-num">18</div><div class="hs-label">Guides</div></div>
+      <div class="hs"><div class="hs-num">EN + हिं</div><div class="hs-label">Bilingual</div></div>
+      <div class="hs"><div class="hs-num">0</div><div class="hs-label">Ads</div></div>
     </div>
-    <div class="hero-right">
-      <p class="hr-label">Upcoming Festivals</p>
-      <div class="hr-events" id="heroCalendar"></div>
-      <a class="hr-cal-link" href="calendar.html">📅 Full Hindu Calendar 2026 ›</a>
-    </div>
-  </div>
-</div>
-
-<!-- CALENDAR BANNER -->
-<div style="background:var(--dark2); border-top:1px solid rgba(184,134,11,0.15); border-bottom:1px solid rgba(184,134,11,0.15);">
-  <div style="max-width:var(--max);margin:0 auto;padding:0 24px;">
-    <a href="calendar.html" style="display:flex;align-items:center;gap:14px;padding:14px 0;text-decoration:none;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-      <span style="font-size:28px;flex-shrink:0">📅</span>
-      <div style="flex:1;min-width:0">
-        <div style="font-family:'Lora',serif;font-weight:700;font-size:15px;color:var(--goldt);margin-bottom:2px">Hindu Calendar 2026 — Full Year</div>
-        <div style="font-size:12px;color:rgba(212,160,23,0.50)">Every festival · Ekadashi · Purnima · Amavasya · Pradosh — month by month</div>
-      </div>
-      <span style="font-size:22px;color:rgba(212,160,23,0.35);flex-shrink:0">›</span>
+    <a href="https://sanatanverse.substack.com" target="_blank" class="sub-btn">
+      🔔 Subscribe Free
     </a>
   </div>
-</div>
-
-<!-- GUIDES -->
-<div class="page">
-  <div id="guidesContainer"></div>
-
-  <!-- SUBSCRIBE -->
-  <div class="subscribe">
-    <div class="sub-om">ॐ</div>
-    <div class="sub-title">Sanatanverse</div>
-    <p class="sub-desc">Monthly newsletter — upcoming festivals, new guide, the meaning behind a ritual.<br>Free · No ads · For every generation.</p>
-    <a class="sub-btn" href="https://sanatanverse.substack.com?utm_source=index" target="_blank" rel="noopener">🔔 Subscribe Free</a>
+  <div class="hero-cal">
+    <div class="cal-title">Upcoming Festivals</div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#6A00B8"></div>
+      <div class="cal-date">Until 15 Jun</div>
+      <div class="cal-name"><a href="adhik-maas.html">Adhik Maas — Purushottam Maas</a></div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#B8860B"></div>
+      <div class="cal-date">13 Jul</div>
+      <div class="cal-name">Guru Purnima 2026</div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#C94800"></div>
+      <div class="cal-date">29 Jun</div>
+      <div class="cal-name"><a href="kabir-jayanti.html">Kabir Jayanti 2026</a></div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#C94800"></div>
+      <div class="cal-date">4 Sep</div>
+      <div class="cal-name">Janmashtami 2026</div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#C94800"></div>
+      <div class="cal-date">14 Sep</div>
+      <div class="cal-name">Ganesh Chaturthi 2026</div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#880035"></div>
+      <div class="cal-date">Oct</div>
+      <div class="cal-name">Sharad Navratri 2026</div>
+    </div>
+    <div class="cal-item">
+      <div class="cal-dot" style="background:#B8860B"></div>
+      <div class="cal-date">8 Nov</div>
+      <div class="cal-name">Diwali 2026</div>
+    </div>
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p class="footer-note">
-    Sanatana Series · <a href="https://dogvar.github.io/sanatana-series/">dogvar.github.io/sanatana-series</a><br>
-    Created by Varun Dogar · Free forever · No ads<br>
-    whether you grew up in India or were born outside it
+<!-- MAIN -->
+<div class="main">
+
+  <!-- Filter tabs -->
+  <div class="filter-tabs">
+    <button class="tab active" onclick="filterGuides('all',this)">All Guides</button>
+    <button class="tab" onclick="filterGuides('festivals',this)">🌸 Festivals</button>
+    <button class="tab" onclick="filterGuides('epics',this)">📜 Epics</button>
+    <button class="tab" onclick="filterGuides('practice',this)">🪔 Practice</button>
+    <button class="tab" onclick="filterGuides('dharmic',this)">☸ Dharmic</button>
+    <button class="tab" onclick="filterGuides('tools',this)">🛠 Tools</button>
+  </div>
+
+  <div class="section-label" id="grid-label">All 18 Guides</div>
+  <div class="guide-grid" id="guide-grid"></div>
+
+  <!-- Coming soon -->
+  <div class="section-label" style="margin-top:8px">Coming Soon</div>
+  <div class="guide-grid">
+    <div class="soon-card">
+      <div class="gc-top">
+        <div class="gc-icon">🪷</div>
+        <div class="gc-festival">Festival · July 2026</div>
+        <div class="gc-title">Guru Purnima</div>
+        <div class="gc-desc">The full moon of Ashadha · Honouring your teacher · Vyasa who compiled the Vedas</div>
+      </div>
+    </div>
+    <div class="soon-card">
+      <div class="gc-top">
+        <div class="gc-icon">🦚</div>
+        <div class="gc-festival">Festival · September 2026</div>
+        <div class="gc-title">Janmashtami</div>
+        <div class="gc-desc">The birth of Lord Krishna · Midnight celebration · Dahi Handi</div>
+      </div>
+    </div>
+    <div class="soon-card">
+      <div class="gc-top">
+        <div class="gc-icon">🐘</div>
+        <div class="gc-festival">Festival · September 2026</div>
+        <div class="gc-title">Ganesh Chaturthi</div>
+        <div class="gc-desc">10-day celebration of Ganesha · Visarjan · The remover of obstacles</div>
+      </div>
+    </div>
+    <div class="soon-card">
+      <div class="gc-top">
+        <div class="gc-icon">🪔</div>
+        <div class="gc-festival">Festival · November 2026</div>
+        <div class="gc-title">Diwali — 8 November</div>
+        <div class="gc-desc">Festival of lights · Ram's return · Lakshmi puja · Why Diwali is later this year</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">Sanatana Series</div>
+  <p>
+    Free Hindu guides for the diaspora · English + Hindi · No ads · No paywall<br>
+    <a href="https://sanatanverse.substack.com" target="_blank">📬 sanatanverse.substack.com</a>
+    · <a href="https://github.com/dogvar/sanatana-series" target="_blank">GitHub</a>
   </p>
+  <p style="margin-top:8px">Created by Varun Dogar · With assistance from Claude · Anthropic</p>
 </footer>
 
 <script>
-
-// ══════════════════════════════════════════
-// GUIDE DATA — add new guides here only
-// ══════════════════════════════════════════
 const GUIDES = [
   // FESTIVALS
-  { category:'festivals', href:'narasimha-jayanti.html', pubdate:'2026-04-30',
-    accent:'#8B0000', iconBg:'rgba(139,0,0,0.12)', icon:'🦁',
-    festival:'Narasimha Jayanti · 30 April 2026',
-    title:'Narasimha Jayanti 2026',
-    desc:'4th Avatar · The Five Neithers · Prahlada&#39;s faith · Ugram Veeram · Ahobilam temples' },
+  { cat:'festivals', href:'hanuman-jayanti.html', hiHref:'hanuman-jayanti-hi.html',
+    pubdate:'2026-03-20', accent:'#C94800', icon:'🏔️',
+    festival:'Festival · 2 Apr 2026',
+    title:'Hanuman Jayanti',
+    desc:'Full Hanuman Chalisa 40 verses · Birth story · Powers · Shani promise · 4 temples · Tuesday worship' },
 
-  { category:'dharmic', href:'buddha-purnima.html', pubdate:'2026-04-30', hindiHref:'buddha-purnima-hi.html',
-    accent:'#007A7A', iconBg:'rgba(0,122,122,0.12)', icon:'☸️',
-    festival:'Buddha Purnima · 1 May 2026 · Part 1 of 2',
-    title:'Gautam Buddha — The Awakened One',
-    desc:'Life of Siddhartha · Four Noble Truths · Eightfold Path · Four Sacred Sites · Mantras' },
+  { cat:'festivals', href:'navratri.html', hiHref:'navratri-hi.html',
+    pubdate:'2026-03-18', accent:'#880035', icon:'🌸',
+    festival:'Festival · Chaitra Navratri',
+    title:'Navratri — Nav Durga',
+    desc:'Nine divine forms of Devi · Day-by-day guide · Puja vidhi · Fasting · Garba' },
 
-  { category:'dharmic', href:'buddhism-spread.html', pubdate:'2026-04-30',
-    accent:'#005F5F', iconBg:'rgba(0,95,95,0.12)', icon:'🗺️',
-    festival:'Buddha Purnima · 1 May 2026 · Part 2 of 2',
-    title:'The Spread of Buddhism Across Asia',
-    desc:'Ashoka · Silk Road · Sri Lanka · China · Japan · Tibet · Pali language · 2,500 years' },
+  { cat:'festivals', href:'ram-navami.html', hiHref:'ram-navami-hi.html',
+    pubdate:'2026-03-25', accent:'#C94800', icon:'🏹',
+    festival:'Festival · Chaitra Shukla Navami',
+    title:'Ram Navami',
+    desc:'Birth of Lord Ram · Maryada Purushottam · Puja vidhi · Ayodhya · Shri Ram Jai Ram' },
 
-  { category:'festivals', href:'akshaya-tritiya.html', pubdate:'2026-04-19',
-    accent:'#B8860B', iconBg:'rgba(184,134,11,0.12)', icon:'✨',
-    festival:'Akshaya Tritiya · 19 April 2026',
-    title:'Akshaya Tritiya 2026',
-    desc:'Abujha Muhurat · Gold & new beginnings · Sudama & Krishna · Puja Vidhi · Mantras' },
+  { cat:'festivals', href:'hindu-new-year.html', hiHref:'hindu-new-year-hi.html',
+    pubdate:'2026-03-15', accent:'#B8860B', icon:'🌸',
+    festival:'Festival · 30 Mar 2026',
+    title:'Hindu New Year — VS 2083',
+    desc:'Gudi Padwa · Ugadi · Vikram Samvat · Why spring is the right new year · 5 regional celebrations' },
 
-  { category:'festivals', href:'hanuman-jayanti.html', pubdate:'2026-04-02',
-    accent:'#C94800', iconBg:'rgba(201,72,0,0.12)', icon:'🏔️',
-    festival:'Hanuman Jayanti · 2 April 2026',
-    title:'Hanuman Jayanti 2026',
-    desc:'Birth story · Hanuman Chalisa all 40 verses · Temples · Tuesday & Saturday worship' },
+  { cat:'festivals', href:'mahavir-jayanti.html', hiHref:'mahavir-jayanti-hi.html',
+    pubdate:'2026-03-22', accent:'#006D6D', icon:'🪷',
+    festival:'Festival · 31 Mar 2026',
+    title:'Mahavir Jayanti',
+    desc:'24th Tirthankara · Pancha Mahavrata · Ahimsa · Anekantavada · Jain philosophy for today' },
 
-  { category:'festivals', href:'hindu-new-year.html', pubdate:'2026-03-30',
-    accent:'#8B6000', iconBg:'rgba(139,96,0,0.12)', icon:'☀️',
-    festival:'Hindu New Year · Vikram Samvat 2083',
-    title:'Hindu New Year 2026',
-    desc:'Vikram Samvat 2083 · 12 months · Birthday calculator · Significance' },
+  { cat:'festivals', href:'akshaya-tritiya.html', hiHref:'akshaya-tritiya-hi.html',
+    pubdate:'2026-04-10', accent:'#B8860B', icon:'✨',
+    festival:'Festival · 19 Apr 2026',
+    title:'Akshaya Tritiya',
+    desc:'Abujh muhurta · Sudama and Krishna · Akshaya Patra · Parshuram Jayanti · What to do' },
 
-  { category:'festivals', href:'ram-navami.html', pubdate:'2026-03-26',
-    accent:'#C94800', iconBg:'rgba(201,72,0,0.12)', icon:'🏹',
-    festival:'Ram Navami · 6 April 2026',
-    title:'Ram Navami 2026',
-    desc:'Birth of Rama · Ayodhya Ram Mandir · Puja Vidhi · Taraka Mantra' },
+  { cat:'festivals', href:'narasimha-jayanti.html', hiHref:'narasimha-jayanti-hi.html',
+    pubdate:'2026-04-22', accent:'#8B0000', icon:'🦁',
+    festival:'Festival · 30 Apr 2026',
+    title:'Narasimha Jayanti',
+    desc:'Vishnu\'s 4th avatar · The five "neither" · Prahlad · The pillar that split · Ugra and Soumya Narasimha' },
 
-  { category:'festivals', href:'navratri.html', pubdate:'2026-03-19',
-    accent:'#880035', iconBg:'rgba(136,0,53,0.10)', icon:'🌸',
-    festival:'Chaitra Navratri · 30 March – 7 April 2026',
-    title:'Chaitra Navratri 2026',
-    desc:'Nine Navdurga forms · Day-by-day guide · 18 Shakti Peeths · Rituals' },
+  { cat:'festivals', href:'shani-jayanti.html', hiHref:'shani-jayanti-hi.html',
+    pubdate:'2026-05-11', accent:'#2C3E6B', icon:'🪐',
+    festival:'Festival · 16 May 2026',
+    title:'Shani Jayanti 2026',
+    desc:'Rare Saturday alignment · Cosmic judge of karma · Sade Sati · Tailabhishekam · Shani Shignapur' },
+
+  { cat:'festivals', href:'adhik-maas.html', hiHref:'adhik-maas-hi.html',
+    pubdate:'2026-05-17', accent:'#6A00B8', icon:'🌙',
+    festival:'Sacred Month · 17 May – 15 Jun',
+    title:'Adhik Maas — Purushottam Maas',
+    desc:'Extra lunar month every 3 years · Mal Maas to Purushottam · Parama Ekadashi · 10× merit' },
+
+  { cat:'festivals', href:'kabir-jayanti.html', hiHref:'kabir-jayanti-hi.html',
+    pubdate:'2026-05-28', accent:'#8B5E00', icon:'🪡',
+    festival:'Jayanti · 29 Jun 2026',
+    title:'Sant Kabir Jayanti',
+    desc:'The weaver who rewove India · 12 greatest dohas with meaning · Guru Granth Sahib · Bhakti movement' },
+
+  { cat:'festivals', href:'buddha-purnima.html', hiHref:'buddha-purnima-hi.html',
+    pubdate:'2026-04-30', accent:'#B8860B', icon:'☸️',
+    festival:'Festival · 1 May 2026',
+    title:'Buddha Purnima',
+    desc:'2588th Jayanti · Triple blessed day · Life of Siddhartha · Four Noble Truths · Eightfold Path' },
 
   // EPICS
-  { category:'epics', href:'ramayana-journey.html', pubdate:'2026-03-27',
-    accent:'#B8860B', iconBg:'rgba(184,134,11,0.12)', icon:'📜',
-    festival:'Epic · Ramayana',
-    title:'The Ramayana — Complete Journey',
-    desc:'All 7 Kandas · Lanka War day by day · Hanuman & Rama · Ram Rajya & legacy' },
+  { cat:'epics', href:'gita.html', hiHref:'gita-hi.html',
+    pubdate:'2026-02-10', accent:'#003366', icon:'📖',
+    festival:'Scripture · Evergreen',
+    title:'Bhagavad Gita',
+    desc:'18 chapters · 700 verses · Arjuna\'s question · Krishna\'s answer · Karma, Bhakti, Jnana Yoga' },
 
-  { category:'epics', href:'gita.html', pubdate:'2026-03-27',
-    accent:'#003366', iconBg:'rgba(0,51,102,0.10)', icon:'📖',
-    festival:'Scripture · Bhagavad Gita',
-    title:'Bhagavad Gita — 18 Chapters',
-    desc:'All 18 chapters explained · 20 key shlokas · Three Yogas · Modern relevance' },
+  { cat:'epics', href:'ramayana-journey.html', hiHref:'ramayana-journey-hi.html',
+    pubdate:'2026-02-15', accent:'#C94800', icon:'📜',
+    festival:'Epic · Evergreen',
+    title:'The Ramayana',
+    desc:'7 Kandas · Ayodhya to Lanka · Ram the ideal man · Hanuman\'s devotion · Ram Rajya' },
 
-  // DAILY PRACTICE
-  { category:'practice', href:'aartis.html', pubdate:'2026-03-27',
-    accent:'#C94800', iconBg:'rgba(201,72,0,0.12)', icon:'🪔',
-    festival:'Daily Practice · Aarti Sangrah',
-    title:'Aarti Sangrah — 8 Core Aartis',
-    desc:'Devanagari · Roman · English meaning · Om Jai Jagdish · Jai Ambe Gauri & more' },
-
-  // DHARMIC TRADITIONS
-  { category:'dharmic', href:'mahavir-jayanti.html', pubdate:'2026-03-31',
-    accent:'#006D6D', iconBg:'rgba(0,109,109,0.12)', icon:'🪷',
-    festival:'Mahavir Jayanti · 31 March 2026 · Jainism',
-    title:'Mahavir Jayanti 2026',
-    desc:'24th Tirthankara · Five Great Vows · Ahimsa · Anekantavada · Jainism&#39;s global legacy' },
-
-  // TOOLS & CALENDAR
-  { category:'tools', href:'calendar.html', pubdate:'2026-03-27',
-    accent:'#B8860B', iconBg:'rgba(184,134,11,0.12)', icon:'📅',
-    festival:'Hindu Calendar 2026 · Full Year',
-    title:'Hindu Calendar 2026 — All Festivals',
-    desc:'Every festival · Ekadashi · Purnima · Amavasya · Pradosh · Month by month · Apr–Dec 2026' },
-
-  { category:'tools', href:'date-card-generator.html', pubdate:'2026-03-27',
-    accent:'#C94800', iconBg:'rgba(201,72,0,0.10)', icon:'📱',
-    festival:'WhatsApp Card Generator',
-    title:'Festival Date Card Generator',
-    desc:'Create shareable date cards for any festival · Download as image · Forward to family groups' },
-
-  { category:'festivals', href:'shani-jayanti.html', pubdate:'2026-05-11',
-    accent:'#2C3E6B', iconBg:'rgba(44,62,107,0.12)', icon:'🪐',
-    festival:'Shani Jayanti · 16 May 2026',
-    title:'Shani Jayanti 2026',
-    desc:'The Cosmic Judge of Karma · Rare Saturday alignment · Sade Sati explained · Tailabhishekam · Shani Shignapur · 3 key mantras' },
-
-  { category:'festivals', href:'adhik-maas.html', pubdate:'2026-05-24',
-    accent:'#6A00B8', iconBg:'rgba(106,0,184,0.10)', icon:'🌙',
-    festival:'Adhik Maas · 17 May – 15 Jun 2026',
-    title:'Adhik Maas 2026 — Purushottam Maas',
-    desc:'The extra lunar month that arrives once every 3 years · Mal Maas to Purushottam · Parama Ekadashi · what to do in 30 days · how Diwali shifts' },
-
-  { category:'practice', href:'gayatri-mantra.html', pubdate:'2026-05-31',
-    accent:'#B8860B', iconBg:'rgba(184,134,11,0.10)', icon:'☀️',
-    festival:'The Mother of the Vedas · Evergreen',
+  // PRACTICE
+  { cat:'practice', href:'gayatri-mantra.html', hiHref:'gayatri-mantra-hi.html',
+    pubdate:'2026-05-31', accent:'#B8860B', icon:'☀️',
+    festival:'Mantra · Evergreen',
     title:'Gayatri Mantra',
-    desc:'Origins in Rigveda 3.62.10 · Vishwamitra's story · Every word explained · Three worlds · How and when to chant · Why it matters today' },
+    desc:'Rigveda 3.62.10 · Vishwamitra\'s story · Every word explained · Three worlds · How to chant' },
 
-  // COMING SOON
-  { category:'dharmic', href:null, pubdate:null,
-    accent:'#4A0060', iconBg:'rgba(74,0,96,0.10)', icon:'🪯',
-    festival:'Guru Nanak Jayanti · November 2026 · Sikhism',
-    title:'Guru Nanak Jayanti Guide',
-    desc:'First Sikh Guru · Ik Onkar · Seva and Langar · Sikhism&#39;s roots in the Bhakti tradition',
-    soon:true, soonLabel:'Coming November 2026' },
+  { cat:'practice', href:'aartis.html', hiHref:'aartis-hi.html',
+    pubdate:'2026-03-01', accent:'#C94800', icon:'🪔',
+    festival:'Daily Practice · Evergreen',
+    title:'Aarti Sangrah',
+    desc:'8 complete aartis — Vishnu, Durga, Ganesh, Shiv, Krishna, Hanuman, Lakshmi, Saraswati' },
+
+  // DHARMIC
+  { cat:'dharmic', href:'buddhism-spread.html', hiHref:'buddhism-spread-hi.html',
+    pubdate:'2026-04-29', accent:'#006D6D', icon:'🗺️',
+    festival:'Dharmic Traditions · Part 2',
+    title:'Buddhism Across Asia',
+    desc:'Ashoka · Silk Road · Sri Lanka · China · Japan · Tibet · Nalanda · 2,500 years of spread' },
+
+  // TOOLS
+  { cat:'tools', href:'calendar.html', hiHref:null,
+    pubdate:'2026-01-01', accent:'#B8860B', icon:'📅',
+    festival:'Tool · 2026',
+    title:'Hindu Calendar 2026',
+    desc:'79 festivals Apr–Dec · All major dates · Ekadashi · Amavasya · Purnima · Download card' },
+
+  { cat:'tools', href:'date-card-generator.html', hiHref:null,
+    pubdate:'2026-01-15', accent:'#C94800', icon:'🎴',
+    festival:'Tool · WhatsApp Cards',
+    title:'Festival Card Generator',
+    desc:'Create beautiful date cards for any festival · Share on WhatsApp · Custom messages' },
 ];
 
-// ══════════════════════════════════════════
-// CALENDAR DATA
-// ══════════════════════════════════════════
-const CALENDAR = [
-  { date:'30 Mar', month:'Mar', name:'Chaitra Navratri',  href:'navratri.html',          iso:'2026-03-30', color:'#880035' },
-  { date:'31 Mar', month:'Mar', name:'Mahavir Jayanti',   href:'mahavir-jayanti.html',   iso:'2026-03-31', color:'#006D6D' },
-  { date:'2 Apr',  month:'Apr', name:'Hanuman Jayanti',   href:'hanuman-jayanti.html',   iso:'2026-04-02', color:'#C94800' },
-  { date:'6 Apr',  month:'Apr', name:'Ram Navami',         href:'ram-navami.html',        iso:'2026-04-06', color:'#C94800' },
-  { date:'14 Apr', month:'Apr', name:'Baisakhi / Vishu',  href:'calendar.html',          iso:'2026-04-14', color:'#2E7D32' },
-  { date:'17 Apr', month:'Apr', name:'Amavasya',           href:'calendar.html',          iso:'2026-04-17', color:'#4A4A4A' },
-  { date:'19 Apr', month:'Apr', name:'Akshaya Tritiya',    href:'akshaya-tritiya.html',   iso:'2026-04-19', color:'#B8860B' },
-  { date:'30 Apr', month:'Apr', name:'Narasimha Jayanti',  href:'narasimha-jayanti.html', iso:'2026-04-30', color:'#8B0000' },
-  { date:'1 May',  month:'May', name:'Buddha Purnima',     href:'buddha-purnima.html',    iso:'2026-05-01', color:'#007A7A' },
-  { date:'1 May',  month:'May', name:'Purnima',             href:'calendar.html',          iso:'2026-05-01', color:'#B8860B' },
-  { date:'25 Jun', month:'Jun', name:'Nirjala Ekadashi',   href:'calendar.html',          iso:'2026-06-25', color:'#006D6D' },
-  { date:'10 Jul', month:'Jul', name:'Guru Purnima',       href:'calendar.html',          iso:'2026-07-10', color:'#B8860B' },
-  { date:'28 Aug', month:'Aug', name:'Raksha Bandhan',     href:'calendar.html',          iso:'2026-08-28', color:'#880035' },
-  { date:'4 Sep',  month:'Sep', name:'Janmashtami',        href:'calendar.html',          iso:'2026-09-04', color:'#003366' },
-  { date:'14 Sep', month:'Sep', name:'Ganesh Chaturthi',   href:'calendar.html',          iso:'2026-09-14', color:'#CC6600' },
-  { date:'19 Oct', month:'Oct', name:'Dussehra',           href:'calendar.html',          iso:'2026-10-19', color:'#C94800' },
-  { date:'8 Nov',  month:'Nov', name:'Diwali',             href:'calendar.html',          iso:'2026-11-08', color:'#B8860B' },
-];
+const LABELS = { all:'All 18 Guides', festivals:'Festivals', epics:'Epics & Literature',
+  practice:'Daily Practice', dharmic:'Dharmic Traditions', tools:'Tools' };
 
-// ══════════════════════════════════════════
-// RENDER CALENDAR STRIP
-// ══════════════════════════════════════════
-
-
-// ══════════════════════════════════════════
-// RENDER GUIDES
-// ══════════════════════════════════════════
-function renderGuides() {
-  var today = new Date();
-  today.setHours(0,0,0,0);
-  var container = document.getElementById('guidesContainer');
-
-  // Sort all published guides by pubdate DESC (newest first)
-  var published = GUIDES.filter(function(g){ return !g.soon && g.pubdate; });
-  var soon = GUIDES.filter(function(g){ return g.soon; });
-
-  published.sort(function(a,b){ return new Date(b.pubdate) - new Date(a.pubdate); });
-
-  // Assign badge
-  function badge(g) {
-    var pub = new Date(g.pubdate);
-    pub.setHours(0,0,0,0);
-    var diff = Math.round((today - pub) / 86400000);
-    if (diff === 0) return { text:'New today', bg:g.accent };
-    if (diff <= 3)  return { text:'New', bg:g.accent };
-    if (diff <= 10) return { text:'New', bg:'#7A5030' };
-    return null;
-  }
-
-  function cardHTML(g, showCat) {
-    if (g.soon) {
-      return '<a class="guide-card soon" href="#">'+
-        '<div class="gc-accent" style="background:'+g.accent+'"></div>'+
-        '<div class="gc-inner">'+
-          '<div class="gc-icon" style="background:'+g.iconBg+'">'+g.icon+'</div>'+
-          '<div class="gc-body">'+
-            '<div class="gc-festival" style="color:'+g.accent+'">'+g.festival+'</div>'+
-            '<div class="gc-title">'+g.title+'</div>'+
-            '<div class="gc-desc">'+g.desc+'</div>'+
-            '<div class="gc-meta"><span class="gc-new">'+g.soonLabel+'</span></div>'+
-          '</div>'+
-        '</div>'+
-      '</a>';
-    }
-    var b = badge(g);
-    var badgeHtml = b ? '<span class="gc-badge" style="background:'+b.bg+'">'+b.text+'</span>' : '';
-    return '<a class="guide-card" href="'+g.href+'">'+
-      '<div class="gc-accent" style="background:'+g.accent+'"></div>'+
-      '<div class="gc-inner">'+
-        '<div class="gc-icon" style="background:'+g.iconBg+'">'+g.icon+'</div>'+
-        '<div class="gc-body">'+
-          '<div class="gc-festival" style="color:'+g.accent+'">'+g.festival+'</div>'+
-          '<div class="gc-title">'+g.title+'</div>'+
-          '<div class="gc-desc">'+g.desc+'</div>'+
-          '<div class="gc-meta">'+badgeHtml+'</div>'+
-        '</div>'+
-        '<div class="gc-arrow">›</div>'+
-      '</div>'+
-    '</a>';
-  }
-
-  var html = '';
-
-  // ── Latest (newest 4 published guides) ──
-  html += '<div class="sec-label"><span class="sec-label-text">Latest Guides</span></div>';
-  html += '<div class="guides">';
-  published.slice(0,4).forEach(function(g){ html += cardHTML(g); });
-  html += '</div>';
-
-  // ── Categories ──
-  var cats = [
-    { key:'festivals', label:'Festivals', icon:'🌸', desc:'Major Hindu festival guides — stories, puja vidhi, mantras and significance.' },
-    { key:'epics',     label:'Epics & Literature', icon:'📜', desc:'The Ramayana and Bhagavad Gita — complete, accessible, for every generation.' },
-    { key:'practice',  label:'Daily Practice', icon:'🪔', desc:'Aartis, mantras and daily rituals for the home.' },
-    { key:'dharmic',   label:'Dharmic Traditions', icon:'☸️', desc:'Jainism, Buddhism and Sikhism — the Indic traditions that share our roots.' },
-  ];
-
-  cats.forEach(function(cat) {
-    var guides = GUIDES.filter(function(g){ return g.category === cat.key; });
-    if (!guides.length) return;
-
-    // Sort: published (by date desc) then soon
-    var pub = guides.filter(function(g){ return !g.soon; });
-    var sn  = guides.filter(function(g){ return g.soon; });
-    pub.sort(function(a,b){ return new Date(b.pubdate) - new Date(a.pubdate); });
-    var sorted = pub.concat(sn);
-
-    html += '<div class="cat-divider"><span class="cat-icon">'+cat.icon+'</span><span class="cat-name">'+cat.label+'</span><div class="cat-line"></div></div>';
-    html += '<p class="cat-desc">'+cat.desc+'</p>';
-    html += '<div class="guides">';
-    sorted.forEach(function(g){ html += cardHTML(g); });
-    html += '</div>';
-  });
-
-  // Update guide count
-  document.getElementById('guideCount').textContent = published.length;
-
-  container.innerHTML = html;
+function daysSince(pubdate) {
+  return Math.floor((Date.now() - new Date(pubdate)) / 86400000);
 }
 
-// Boot
-renderGuides();
-
-
-// ── Hero calendar (next 5 upcoming events) ──
-function renderHeroCalendar() {
-  var today = new Date(); today.setHours(0,0,0,0);
-  var sorted = CALENDAR.slice().sort(function(a,b){ return new Date(a.iso)-new Date(b.iso); });
-  var upcoming = sorted.filter(function(e){ 
-    var d=new Date(e.iso); d.setHours(0,0,0,0);
-    return d >= today;
-  }).slice(0,5);
-
-  var html = '';
-  upcoming.forEach(function(ev){
-    var diff = Math.round((new Date(ev.iso)-today)/86400000);
-    var tagText = diff===0?'Today':diff<=7?'This week':diff<=30?'In '+diff+'d':ev.month;
-    var tagBg = diff===0||diff<=7 ? ev.color : 'rgba(184,134,11,0.4)';
-    html += '<a class="hr-event" href="'+ev.href+'">'+
-      '<div class="hr-event-dot" style="background:'+ev.color+'"></div>'+
-      '<div class="hr-event-date">'+ev.date+'</div>'+
-      '<div class="hr-event-name">'+ev.name+'</div>'+
-      '<span class="hr-event-tag" style="background:'+tagBg+'">'+tagText+'</span>'+
-    '</a>';
-  });
-  document.getElementById('heroCalendar').innerHTML = html;
+function badge(pubdate) {
+  const d = daysSince(pubdate);
+  if (d <= 1)  return '<span class="gc-badge gc-new">New Today</span>';
+  if (d <= 14) return '<span class="gc-badge gc-new">New</span>';
+  if (d <= 30) return '<span class="gc-badge gc-new" style="opacity:0.6">New</span>';
+  return '';
 }
 
-// ── Render guides ──
-function renderGuides() {
-  var today = new Date(); today.setHours(0,0,0,0);
-  var container = document.getElementById('guidesContainer');
+function renderGuides(cat) {
+  const grid = document.getElementById('guide-grid');
+  const label = document.getElementById('grid-label');
+  const filtered = cat === 'all' ? GUIDES : GUIDES.filter(g => g.cat === cat);
+  label.textContent = LABELS[cat] || `${filtered.length} Guides`;
 
-  var published = GUIDES.filter(function(g){ return !g.soon && g.pubdate; });
-  var soon = GUIDES.filter(function(g){ return g.soon; });
-  published.sort(function(a,b){ return new Date(b.pubdate)-new Date(a.pubdate); });
-
-  function badge(g) {
-    var diff = Math.round((today-new Date(g.pubdate))/86400000);
-    if (diff===0)  return { text:'New today', bg:g.accent };
-    if (diff<=3)   return { text:'New', bg:g.accent };
-    if (diff<=10)  return { text:'New', bg:'#7A5030' };
-    return null;
-  }
-
-  function cardHTML(g) {
-    if (g.soon) {
-      return '<a class="guide-card soon" href="#">'+
-        '<div class="gc-accent" style="background:'+g.accent+'"></div>'+
-        '<div class="gc-inner">'+
-          '<div class="gc-icon" style="background:'+g.iconBg+'">'+g.icon+'</div>'+
-          '<div class="gc-body">'+
-            '<div class="gc-festival" style="color:'+g.accent+'">'+g.festival+'</div>'+
-            '<div class="gc-title">'+g.title+'</div>'+
-            '<div class="gc-desc">'+g.desc+'</div>'+
-            '<div class="gc-meta"><span class="gc-new">'+g.soonLabel+'</span></div>'+
-          '</div>'+
-        '</div>'+
-      '</a>';
-    }
-    var b = badge(g);
-    var bHtml = b ? '<span class="gc-badge" style="background:'+b.bg+'">'+b.text+'</span>' : '';
-    return '<a class="guide-card" href="'+g.href+'">'+
-      '<div class="gc-accent" style="background:'+g.accent+'"></div>'+
-      '<div class="gc-inner">'+
-        '<div class="gc-icon" style="background:'+g.iconBg+'">'+g.icon+'</div>'+
-        '<div class="gc-body">'+
-          '<div class="gc-festival" style="color:'+g.accent+'">'+g.festival+'</div>'+
-          '<div class="gc-title">'+g.title+'</div>'+
-          '<div class="gc-desc">'+g.desc+'</div>'+
-          '<div class="gc-meta">'+bHtml+'</div>'+
-        '</div>'+
-        '<div class="gc-arrow">›</div>'+
-      '</div>'+
-    '</a>';
-  }
-
-  var html = '';
-  document.getElementById('guideCount').textContent = published.length;
-
-  // Latest 4
-  html += '<div class="sec-label"><span class="sec-label-text">Latest Guides</span></div>';
-  html += '<div class="guides">';
-  published.slice(0,4).forEach(function(g){ html+=cardHTML(g); });
-  html += '</div>';
-
-  // Categories
-  var cats = [
-    { key:'festivals', label:'Festivals', icon:'🌸' },
-    { key:'epics',     label:'Epics & Literature', icon:'📜' },
-    { key:'practice',  label:'Daily Practice', icon:'🪔' },
-    { key:'dharmic',   label:'Dharmic Traditions', icon:'☸️' },
-    { key:'tools',     label:'Tools & Calendar', icon:'📅' },
-  ];
-  cats.forEach(function(cat) {
-    var guides = published.filter(function(g){ return g.category===cat.key; });
-    var soonGuides = soon.filter(function(g){ return g.category===cat.key; });
-    if (!guides.length && !soonGuides.length) return;
-    html += '<div class="cat-hdr">'+
-      '<span class="cat-icon">'+cat.icon+'</span>'+
-      '<span class="cat-name">'+cat.label+'</span>'+
-      '<div class="cat-line"></div>'+
-    '</div>';
-    html += '<div class="guides">';
-    guides.forEach(function(g){ html+=cardHTML(g); });
-    soonGuides.forEach(function(g){ html+=cardHTML(g); });
-    html += '</div>';
-  });
-
-  container.innerHTML = html;
+  grid.innerHTML = filtered.map(g => `
+    <a href="${g.href}" class="guide-card" style="border-color:${g.accent}">
+      <div class="gc-top">
+        <div class="gc-icon" style="background:rgba(0,0,0,0.04);
+          width:48px;height:48px;border-radius:10px;display:flex;align-items:center;
+          justify-content:center;margin-bottom:10px">${g.icon}</div>
+        <div class="gc-festival" style="color:${g.accent}">${g.festival}</div>
+        <div class="gc-title" style="color:${g.accent}">${g.title}</div>
+        <div class="gc-desc">${g.desc}</div>
+      </div>
+      <div class="gc-footer">
+        <div class="gc-lang">
+          <a href="${g.href}" class="primary" onclick="event.stopPropagation()">EN</a>
+          ${g.hiHref ? `<a href="${g.hiHref}" onclick="event.stopPropagation()">हिं</a>` : ''}
+        </div>
+        ${badge(g.pubdate)}
+      </div>
+    </a>`).join('');
 }
 
-renderHeroCalendar();
-renderGuides();
+function filterGuides(cat, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderGuides(cat);
+}
+
+renderGuides('all');
 </script>
 </body>
 </html>
