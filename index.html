@@ -159,7 +159,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <p class="hero-tagline">Hindu guides for every generation</p>
   <p class="hero-desc">Free, ad-free guides to festivals, epics and philosophy — in English and Hindi. For diaspora families and curious minds everywhere.</p>
   <div class="hero-stats">
-    <div class="hs"><div class="hs-num">19</div><div class="hs-label">Guides</div></div>
+    <div class="hs"><div class="hs-num">20</div><div class="hs-label">Guides</div></div>
     <div class="hs"><div class="hs-num">EN+हिं</div><div class="hs-label">Bilingual</div></div>
     <div class="hs"><div class="hs-num">Free</div><div class="hs-label">Always</div></div>
   </div>
@@ -176,7 +176,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
 
 <!-- FILTERS -->
 <div class="filters">
-  <button class="tab active" onclick="filter('all',this)">All (19)</button>
+  <button class="tab active" onclick="filter('all',this)">All (20)</button>
   <button class="tab" onclick="filter('festivals',this)">🌸 Festivals</button>
   <button class="tab" onclick="filter('epics',this)">📜 Epics</button>
   <button class="tab" onclick="filter('practice',this)">🪔 Practice</button>
@@ -192,10 +192,6 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <div class="section-title">Coming Soon</div>
 </div>
 <div class="soon-grid">
-  <div class="soon-card">
-    <div class="soon-icon">🪷</div>
-    <div><div class="soon-title">Guru Purnima</div><div class="soon-date">13 July 2026 · Honouring the teacher</div></div>
-  </div>
   <div class="soon-card">
     <div class="soon-icon">🦚</div>
     <div><div class="soon-title">Janmashtami</div><div class="soon-date">4 September 2026 · Birth of Krishna</div></div>
@@ -295,6 +291,12 @@ const GUIDES = [
     title:'Jagannath Rath Yatra',
     desc:'The chariot festival of Puri · Why the idol is unfinished · 3 chariots · Bahuda Yatra · Open to everyone' },
 
+  { cat:'festivals', href:'guru-purnima.html', hi:'guru-purnima-hi.html',
+    pub:'2026-07-05', accent:'#4A3B8B', bg:'rgba(74,59,139,0.10)', icon:'🪷',
+    festival:'Festival · 29 Jul 2026',
+    title:'Guru Purnima',
+    desc:'Sage Vyasa who compiled the Vedas · Shiva as Adi Guru · Buddha\'s first sermon · Start of Chaturmas · How to honour your teacher' },
+
   // EPICS
   { cat:'epics', href:'gita.html', hi:'gita-hi.html',
     pub:'2026-02-10', accent:'#003366', bg:'rgba(0,51,102,0.10)', icon:'📖',
@@ -345,7 +347,7 @@ const GUIDES = [
 const CALENDAR = [
   { date:'Until 15 Jun', name:'Adhik Maas — Purushottam Maas', href:'adhik-maas.html', color:'#6A00B8' },
   { date:'29 Jun', name:'Kabir Jayanti 2026', href:'kabir-jayanti.html', color:'#8B5E00' },
-  { date:'13 Jul', name:'Guru Purnima 2026', href:null, color:'#B8860B' },
+  { date:'29 Jul', name:'Guru Purnima 2026', href:'guru-purnima.html', color:'#4A3B8B' },
   { date:'16 Jul', name:'Jagannath Rath Yatra 2026', href:'jagannath-rath-yatra.html', color:'#B8341E' },
   { date:'4 Sep', name:'Janmashtami 2026', href:null, color:'#C94800' },
   { date:'14 Sep', name:'Ganesh Chaturthi 2026', href:null, color:'#C94800' },
