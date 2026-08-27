@@ -159,7 +159,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <p class="hero-tagline">Hindu guides for every generation</p>
   <p class="hero-desc">Free, ad-free guides to festivals, epics and philosophy — in English and Hindi. For diaspora families and curious minds everywhere.</p>
   <div class="hero-stats">
-    <div class="hs"><div class="hs-num">20</div><div class="hs-label">Guides</div></div>
+    <div class="hs"><div class="hs-num">23</div><div class="hs-label">Guides</div></div>
     <div class="hs"><div class="hs-num">EN+हिं</div><div class="hs-label">Bilingual</div></div>
     <div class="hs"><div class="hs-num">Free</div><div class="hs-label">Always</div></div>
   </div>
@@ -176,7 +176,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
 
 <!-- FILTERS -->
 <div class="filters">
-  <button class="tab active" onclick="filter('all',this)">All (20)</button>
+  <button class="tab active" onclick="filter('all',this)">All (23)</button>
   <button class="tab" onclick="filter('festivals',this)">🌸 Festivals</button>
   <button class="tab" onclick="filter('epics',this)">📜 Epics</button>
   <button class="tab" onclick="filter('practice',this)">🪔 Practice</button>
@@ -297,6 +297,24 @@ const GUIDES = [
     title:'Guru Purnima',
     desc:'Sage Vyasa who compiled the Vedas · Shiva as Adi Guru · Buddha\'s first sermon · Start of Chaturmas · How to honour your teacher' },
 
+  { cat:'festivals', href:'shravan-month.html', hi:'shravan-month-hi.html',
+    pub:'2026-07-25', accent:'#2E5A6C', bg:'rgba(74,122,140,0.10)', icon:'🔱',
+    festival:'Sacred Month · 30 Jul – 28 Aug',
+    title:'Shravan 2026',
+    desc:'The month entirely devoted to Shiva · Samudra Manthan · Neelkanth · 4 sacred Mondays · Fasting rules and puja vidhi' },
+
+  { cat:'festivals', href:'nag-panchami.html', hi:'nag-panchami-hi.html',
+    pub:'2026-08-01', accent:'#1F6B4A', bg:'rgba(31,107,74,0.10)', icon:'🐍',
+    festival:'Festival · 17 Aug 2026',
+    title:'Nag Panchami 2026',
+    desc:'Why Hindus worship snakes · Janamejaya\'s sacrifice · Krishna and Kaliya · Shesha Nag · An ecological festival before ecology had a name' },
+
+  { cat:'festivals', href:'onam.html', hi:'onam-hi.html',
+    pub:'2026-08-10', accent:'#1E7A3C', bg:'rgba(30,122,60,0.10)', icon:'🌼',
+    festival:'Festival · 26 Aug 2026',
+    title:'Onam 2026',
+    desc:'Kerala\'s harvest festival · King Mahabali and the Vamana avatar · Pookalam flower carpets · Onam Sadya · Celebrated by every religion' },
+
   // EPICS
   { cat:'epics', href:'gita.html', hi:'gita-hi.html',
     pub:'2026-02-10', accent:'#003366', bg:'rgba(0,51,102,0.10)', icon:'📖',
@@ -349,6 +367,9 @@ const CALENDAR = [
   { date:'29 Jun', name:'Kabir Jayanti 2026', href:'kabir-jayanti.html', color:'#8B5E00' },
   { date:'29 Jul', name:'Guru Purnima 2026', href:'guru-purnima.html', color:'#4A3B8B' },
   { date:'16 Jul', name:'Jagannath Rath Yatra 2026', href:'jagannath-rath-yatra.html', color:'#B8341E' },
+  { date:'30 Jul – 28 Aug', name:'Shravan — Month of Shiva', href:'shravan-month.html', color:'#2E5A6C' },
+  { date:'17 Aug', name:'Nag Panchami 2026', href:'nag-panchami.html', color:'#1F6B4A' },
+  { date:'26 Aug', name:'Onam 2026 — Thiruvonam', href:'onam.html', color:'#1E7A3C' },
   { date:'4 Sep', name:'Janmashtami 2026', href:null, color:'#C94800' },
   { date:'14 Sep', name:'Ganesh Chaturthi 2026', href:null, color:'#C94800' },
   { date:'8 Nov', name:'Diwali 2026', href:null, color:'#B8860B' },

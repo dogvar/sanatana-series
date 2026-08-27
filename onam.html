@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onam 2026 — The King Who Comes Home Every Year · Sanatana Series</title>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Onam 2026 — The King Who Comes Home Every Year"/>
+<meta property="og:description" content="26 August 2026 · King Mahabali and the Vamana avatar · Pookalam flower carpets · Onam Sadya · Kerala's harvest festival that unites every religion. Sanatana Series."/>
+<meta property="og:image" content="https://dogvar.github.io/sanatana-series/sanatana-og.png"/>
+<meta property="og:url" content="https://dogvar.github.io/sanatana-series/onam.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --leaf:   #1E7A3C;
+  --leaf2:  #145A2C;
+  --gold:   #B8860B;
+  --goldt:  #D4A017;
+  --marigold:#E8A020;
+  --dark:   #060F08;
+  --dark2:  #0C1D10;
+  --cream:  #F5FBF2;
+  --white:  #FFFFFF;
+  --ink:    #0A1D0E;
+  --ink2:   #1C3822;
+  --muted:  #5A7860;
+  --r:      12px;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--ink);
+  line-height:1.65; font-size:15px; max-width:640px; margin:0 auto; }
+
+.top-nav { position:sticky; top:0; z-index:100; background:rgba(6,15,8,0.96);
+  backdrop-filter:blur(12px); border-bottom:1px solid rgba(30,122,60,0.3);
+  padding:0 16px; display:flex; align-items:center; height:48px; }
+.top-nav a.back { display:flex; align-items:center; gap:6px; text-decoration:none;
+  color:rgba(196,224,204,0.85); font-size:13px; font-weight:500;
+  padding:0 12px 0 0; border-right:1px solid rgba(255,255,255,0.1);
+  height:100%; white-space:nowrap; }
+.top-nav a.back svg { width:16px; height:16px; }
+.top-nav .nav-center { flex:1; text-align:center; font-size:12px;
+  color:rgba(196,224,204,0.45); letter-spacing:1px; }
+.lang-toggle { display:flex; gap:4px; }
+.lang-btn { font-size:11px; font-weight:600; padding:4px 10px; border-radius:100px;
+  text-decoration:none; border:1px solid rgba(212,160,23,0.25);
+  color:rgba(212,160,23,0.55); }
+.lang-btn.active { background:rgba(212,160,23,0.15); border-color:rgba(212,160,23,0.5);
+  color:var(--goldt); pointer-events:none; }
+
+/* Hero */
+.hero { background:var(--dark); padding:44px 20px 32px; text-align:center;
+  position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 65% 55% at 50% 25%, rgba(30,122,60,0.28) 0%, transparent 65%),
+    radial-gradient(circle 100px at 50% 15%, rgba(232,160,32,0.18) 0%, transparent 75%); }
+.eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase;
+  color:rgba(196,224,204,0.75); margin-bottom:10px; position:relative; }
+.hero h1 { font-family:'Yatra One',cursive; font-size:clamp(34px,9vw,54px);
+  color:var(--goldt); line-height:1.1; text-shadow:0 2px 40px rgba(30,122,60,0.4);
+  margin-bottom:6px; position:relative; }
+.hero-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:rgba(196,224,204,0.75); margin-bottom:8px; position:relative; }
+.hero-sub { font-family:'Lora',serif; font-style:italic; font-size:16px;
+  color:rgba(255,255,255,0.88); margin-bottom:16px; position:relative; line-height:1.55; }
+.hero-icon { font-size:44px; margin:8px 0; position:relative; }
+.date-pill { display:inline-block; background:rgba(30,122,60,0.25);
+  border:1px solid rgba(196,224,204,0.4); color:#E0F5E8; font-size:13px;
+  font-weight:600; padding:8px 20px; border-radius:100px; margin:8px 0; }
+.hero-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center;
+  margin-top:12px; position:relative; }
+.hero-tag { font-size:11px; color:rgba(255,255,255,0.65); }
+.hero-tag::after { content:' •'; margin-left:5px; }
+.hero-tag:last-child::after { content:''; }
+.hero-facts { display:grid; grid-template-columns:1fr 1fr; gap:8px;
+  padding:16px 20px 0; position:relative; }
+.hf { background:rgba(255,255,255,0.04); border:1px solid rgba(196,224,204,0.20);
+  border-radius:8px; padding:10px 12px; }
+.hf-label { font-size:10px; letter-spacing:1px; text-transform:uppercase;
+  color:rgba(196,224,204,0.65); margin-bottom:4px; }
+.hf-value { font-size:13px; font-weight:600; color:rgba(255,255,255,0.90); }
+
+/* Section header */
+.sec-hdr { background:var(--dark); padding:18px 20px 14px; border-top:3px solid var(--leaf); }
+.sec-hdr h2 { font-family:'Yatra One',cursive; font-size:clamp(20px,5.5vw,28px);
+  color:var(--goldt); line-height:1.2; margin-bottom:3px; }
+.sec-hdr p { font-size:11px; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(196,224,204,0.65); }
+
+.intro-b { background:var(--white); border-left:4px solid var(--leaf);
+  border-radius:0 var(--r) var(--r) 0; padding:14px 14px 14px 16px; margin:14px 16px; }
+.intro-lead { font-family:'Lora',serif; font-weight:700; font-size:14.5px;
+  color:var(--leaf2); margin-bottom:8px; }
+.intro-b p { font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Unity box */
+.unity-box { background:var(--dark2); border-radius:var(--r); margin:0 16px 12px;
+  padding:18px; border:1px solid rgba(196,224,204,0.2); }
+.unity-title { font-family:'Lora',serif; font-weight:700; font-size:16px;
+  color:var(--goldt); margin-bottom:8px; }
+.unity-box p { font-size:13.5px; color:rgba(255,255,255,0.88); line-height:1.65; }
+.unity-box strong { color:var(--goldt); }
+
+/* Story */
+.story { background:var(--white); border-radius:var(--r); margin:10px 16px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); }
+.story-hdr { padding:13px 14px 10px; display:flex; align-items:center;
+  gap:10px; border-bottom:1px solid #E4F2E8; }
+.story-badge { width:32px; height:32px; border-radius:50%; display:flex;
+  align-items:center; justify-content:center; font-size:13px;
+  font-weight:700; color:white; flex-shrink:0; }
+.story-hdr h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; }
+.story-body { padding:0 14px 14px; font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Timeline */
+.date-card { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  display:flex; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.07); }
+.dc-bar { width:5px; flex-shrink:0; }
+.dc-body { padding:12px 14px; flex:1; }
+.dc-date { font-size:11px; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.8px; color:var(--muted); margin-bottom:3px; }
+.dc-name { font-family:'Lora',serif; font-weight:700; font-size:15px; color:var(--leaf2); }
+.dc-note { font-size:12.5px; color:var(--muted); margin-top:3px; }
+
+/* Feast/tradition cards */
+.trad-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.07); border-top:4px solid; }
+.tc-hdr { padding:13px 14px 8px; display:flex; align-items:center; gap:10px; }
+.tc-icon { font-size:26px; flex-shrink:0; }
+.tc-hdr h3 { font-family:'Lora',serif; font-weight:700; font-size:15px; }
+.tc-body { padding:0 14px 13px; font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Sadya dish grid */
+.dish-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:0 16px 8px; }
+.dish-card { background:var(--white); border-radius:10px; padding:12px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.07); border-top:3px solid var(--leaf); }
+.dish-icon { font-size:20px; margin-bottom:4px; }
+.dish-title { font-weight:700; font-size:13px; color:var(--ink); margin-bottom:2px; }
+.dish-desc { font-size:12px; color:var(--muted); line-height:1.5; }
+
+/* Steps */
+.step { background:var(--white); border-radius:var(--r); margin:0 16px 8px;
+  padding:14px; display:flex; gap:13px; box-shadow:0 2px 6px rgba(0,0,0,0.07);
+  border-left:4px solid var(--leaf); }
+.step-num { width:28px; height:28px; border-radius:50%; background:var(--leaf2);
+  color:white; font-weight:700; font-size:13px; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:1px; }
+.step-title { font-family:'Lora',serif; font-weight:700; font-size:15px;
+  color:var(--leaf2); margin-bottom:4px; }
+.step p { font-size:14px; color:var(--ink2); line-height:1.65; }
+
+/* Plain card */
+.plain-card { background:var(--white); border-radius:var(--r); margin:0 16px 10px;
+  padding:15px; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-top:3px solid var(--leaf); }
+.plain-title { font-family:'Lora',serif; font-weight:700; font-size:15px;
+  color:var(--leaf2); margin-bottom:8px; }
+.plain-card p { font-size:14px; color:var(--ink2); line-height:1.65; }
+.plain-card ul { list-style:none; padding:0; display:grid; gap:7px; margin-top:8px; }
+.plain-card li { padding-left:18px; position:relative; font-size:14px; color:var(--ink2); }
+.plain-card li::before { content:'🌼'; position:absolute; left:0; font-size:11px; top:3px; }
+
+/* Stats */
+.stats-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; padding:16px; }
+.stat-pill { background:var(--white); border-radius:10px; padding:13px 10px;
+  text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.07); border-top:3px solid var(--leaf); }
+.stat-num { font-family:'Yatra One',cursive; font-size:22px; color:var(--leaf2);
+  line-height:1; margin-bottom:4px; }
+.stat-label { font-size:11px; color:var(--muted); line-height:1.3; }
+
+/* Closing */
+.closing { background:var(--dark); padding:44px 24px; text-align:center; }
+.jai { font-family:'Yatra One',cursive; font-size:34px; color:var(--goldt);
+  text-shadow:0 0 40px rgba(30,122,60,0.5); margin-bottom:5px; }
+.jai-deva { font-family:'Noto Serif Devanagari',serif; font-size:20px;
+  color:rgba(196,224,204,0.55); margin-bottom:8px; }
+.victory { font-family:'Lora',serif; font-style:italic;
+  color:rgba(255,255,255,0.75); font-size:15px; margin-bottom:22px; }
+.c-divider { width:60px; height:1px; background:var(--leaf); margin:20px auto; }
+.footer-note { font-size:11px; color:rgba(255,255,255,0.38); margin-top:20px;
+  letter-spacing:1px; text-transform:uppercase; line-height:1.8; }
+.attr { margin-top:18px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.07); }
+.attr-by { font-size:12px; color:rgba(255,255,255,0.50); }
+.attr-name { font-family:'Lora',serif; font-size:16px;
+  color:rgba(196,224,204,0.65); font-weight:600; margin-top:3px; }
+.attr-claude { font-size:11px; color:rgba(255,255,255,0.28); margin-top:4px; font-style:italic; }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 L5 8 L10 13" stroke="currentColor"
+      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sanatana Series
+  </a>
+  <span class="nav-center">🌼 ONAM 2026</span>
+  <div class="lang-toggle">
+    <a class="lang-btn active" href="onam.html">EN</a>
+    <a class="lang-btn" href="onam-hi.html">हिं</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="eyebrow">✦ Onam 2026 · Thiruvonam · Chingam Month · Sanatana Series ✦</p>
+  <h1>Onam</h1>
+  <p class="hero-deva">ഓണം · ओणम्</p>
+  <p class="hero-sub">The ten days every year when a beloved king is allowed to come home and see his people again</p>
+  <div class="hero-icon">🌼</div>
+  <div class="date-pill">Thiruvonam: Wednesday, 26 August 2026</div>
+  <div class="hero-tags">
+    <span class="hero-tag">King Mahabali</span>
+    <span class="hero-tag">Vamana Avatar</span>
+    <span class="hero-tag">Pookalam</span>
+    <span class="hero-tag">Onam Sadya</span>
+    <span class="hero-tag">Vallamkali</span>
+  </div>
+  <div class="hero-facts">
+    <div class="hf"><div class="hf-label">Festival Length</div><div class="hf-value">10 Days · Atham to Thiruvonam</div></div>
+    <div class="hf"><div class="hf-label">Begins</div><div class="hf-value">Atham — 16/17 Aug 2026</div></div>
+    <div class="hf"><div class="hf-label">Malayalam Month</div><div class="hf-value">Chingam</div></div>
+    <div class="hf"><div class="hf-label">Region</div><div class="hf-value">Kerala — celebrated worldwide</div></div>
+  </div>
+</div>
+
+<!-- UNITY BOX -->
+<div class="unity-box" style="margin-top:14px">
+  <div class="unity-title">🕊️ The Festival That Belongs to Everyone</div>
+  <p>Onam is genuinely unique among major Indian festivals: it is celebrated across <strong>every community in Kerala — Hindu, Christian and Muslim alike</strong> — as a shared cultural and harvest celebration that transcends religious lines. Kerala's government treats it as the state's official festival, with public holidays across the entire ten-day period. This is one of the rare celebrations in India that unifies people regardless of faith — everyone welcomes the same king home.</p>
+</div>
+
+<!-- WHAT IS IT -->
+<div class="sec-hdr">
+  <h2>What is Onam?</h2>
+  <p>A harvest festival, a homecoming, and Kerala's proudest ten days of the year</p>
+</div>
+
+<div class="intro-b">
+  <p class="intro-lead">Onam marks the Malayalam month of Chingam — Kerala's New Year season and the peak of the harvest — but at its heart, it is a story about welcoming someone home.</p>
+  <p>According to legend, King Mahabali was once the ruler of Kerala — an asura (demon) king by lineage, but a monarch whose reign is remembered as a golden age of prosperity, equality and justice, where no one lied, no one stole, and everyone lived in harmony regardless of caste or status. His popularity grew so great that even the gods felt threatened by it. This is the story of what happened next — and why, every year, Kerala still prepares for his one-day return.</p>
+</div>
+
+<div class="stats-row">
+  <div class="stat-pill">
+    <div class="stat-num">10</div>
+    <div class="stat-label">Days of celebration — Atham to Thiruvonam</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">26+</div>
+    <div class="stat-label">Dishes in a complete Onam Sadya feast</div>
+  </div>
+  <div class="stat-pill">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Religions celebrating together — Hindu, Christian, Muslim</div>
+  </div>
+</div>
+
+<!-- THE STORY -->
+<div class="sec-hdr">
+  <h2>King Mahabali and the Vamana Avatar</h2>
+  <p>The story behind why Kerala welcomes a king back every single year</p>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#EEF8EE">
+    <div class="story-badge" style="background:var(--leaf2)">1</div>
+    <h3 style="color:var(--leaf2)">The King Too Beloved for His Own Good</h3>
+  </div>
+  <div class="story-body">Mahabali, grandson of the great devotee Prahlad, ruled with such fairness and generosity that his kingdom became a genuine utopia — abundance for all, no crime, no inequality, no suffering. His subjects loved him completely. But this very perfection troubled the Devas, who worried that a demon king's rising glory and growing power might eventually threaten the cosmic balance between gods and asuras.</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#E8F5E8">
+    <div class="story-badge" style="background:var(--leaf)">2</div>
+    <h3 style="color:var(--leaf2)">The Dwarf Who Asked for Three Steps</h3>
+  </div>
+  <div class="story-body">Lord Vishnu descended in his fifth avatar — Vamana, a humble dwarf Brahmin — and approached Mahabali during a great sacrificial ceremony where the king was granting wishes to all who asked. Vamana requested something modest-sounding: as much land as he could cover in three paces. Mahabali, true to his generous nature and against the warning of his guru Shukracharya (who recognised Vishnu in disguise), happily agreed.</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#EEF8EE">
+    <div class="story-badge" style="background:var(--leaf2)">3</div>
+    <h3 style="color:var(--leaf2)">Two Steps — And Nothing Left But a Head</h3>
+  </div>
+  <div class="story-body">The moment Mahabali agreed, Vamana grew to cosmic proportions. With his first step he covered the entire earth; with his second, the whole of the heavens. There was nowhere left for a third step. True to his word even in complete defeat, Mahabali — having nothing else left to offer — bowed his head and asked Vishnu to place his final step upon it. Moved by this ultimate act of humility and honesty, Vishnu pressed Mahabali down into the netherworld (Patala) with his foot — but did not destroy him.</div>
+</div>
+
+<div class="story">
+  <div class="story-hdr" style="background:#E8F5E8">
+    <div class="story-badge" style="background:var(--leaf)">4</div>
+    <h3 style="color:var(--leaf2)">One Wish Granted — The Wish to Come Home</h3>
+  </div>
+  <div class="story-body">Impressed by Mahabali's unwavering devotion, honesty, and love for his people even as he lost his kingdom and freedom, Vishnu granted him a single boon: he could return to Kerala once every year to see his beloved subjects and witness that they still lived in the prosperity and harmony he had built. Onam is that homecoming — the ten days when Kerala prepares its finest welcome for a king who lost everything except the love of his people, and the honesty to keep his word even when it cost him his throne.</div>
+</div>
+
+<!-- 10 DAY TIMELINE -->
+<div class="sec-hdr">
+  <h2>The Ten Days — 2026 Timeline</h2>
+  <p>From the first day to the grandest celebration</p>
+</div>
+
+<div style="padding:12px 16px 4px;display:grid;gap:8px">
+  <div class="date-card">
+    <div class="dc-bar" style="background:var(--leaf)"></div>
+    <div class="dc-body">
+      <div class="dc-date">Day 1 — Atham</div>
+      <div class="dc-name">Monday, 17 August 2026</div>
+      <div class="dc-note">The festival begins. The first small ring of the Pookalam flower carpet is laid at the doorstep</div>
+    </div>
+  </div>
+  <div class="date-card">
+    <div class="dc-bar" style="background:var(--leaf2)"></div>
+    <div class="dc-body">
+      <div class="dc-date">Days 2–8</div>
+      <div class="dc-name">Pookalam Grows Daily</div>
+      <div class="dc-note">Each day, a new ring of flowers is added, expanding outward, culminating in the most elaborate design on Thiruvonam</div>
+    </div>
+  </div>
+  <div class="date-card" style="outline:1.5px solid var(--goldt);border-radius:var(--r)">
+    <div class="dc-bar" style="background:var(--goldt)"></div>
+    <div class="dc-body">
+      <div class="dc-date">Day 9 — Uthradom</div>
+      <div class="dc-name">Monday, 24 August 2026</div>
+      <div class="dc-note">"First Onam" — the day King Mahabali is believed to arrive at Kerala's border, preparing to enter</div>
+    </div>
+  </div>
+  <div class="date-card" style="outline:2px solid var(--leaf);border-radius:var(--r)">
+    <div class="dc-bar" style="background:var(--leaf)"></div>
+    <div class="dc-body">
+      <div class="dc-date">⭐ Day 10 — Thiruvonam</div>
+      <div class="dc-name">Wednesday, 26 August 2026</div>
+      <div class="dc-note">The main day. Mahabali is believed to walk among his people. New clothes, temple visits, the grandest Pookalam, and the full Onam Sadya feast</div>
+    </div>
+  </div>
+  <div class="date-card">
+    <div class="dc-bar" style="background:var(--muted)"></div>
+    <div class="dc-body">
+      <div class="dc-date">Avittom & Chatayam</div>
+      <div class="dc-note">Thursday–Friday, 27–28 August 2026</div>
+      <div class="dc-note">Preparations for Mahabali's departure; the Pookalam is cleared and clay figures of Onathappan are immersed in water</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRADITIONS -->
+<div class="sec-hdr">
+  <h2>The Traditions of Onam</h2>
+  <p>What makes this festival so visually and culturally distinct</p>
+</div>
+
+<div class="trad-card" style="border-color:var(--leaf)">
+  <div class="tc-hdr"><div class="tc-icon">🌸</div>
+    <h3 style="color:var(--leaf2)">Pookalam — The Flower Carpet</h3></div>
+  <div class="tc-body">Every morning of the ten days, women of the household lay a fresh, colourful floral design at the entrance of the home, growing larger and more intricate each day. The Pookalam welcomes Mahabali's spirit and grows in complexity until Thiruvonam, when it reaches its most elaborate form using dozens of harvest-season blooms native to Kerala.</div>
+</div>
+
+<div class="trad-card" style="border-color:var(--marigold)">
+  <div class="tc-hdr"><div class="tc-icon">🍽️</div>
+    <h3 style="color:var(--leaf2)">Onam Sadya — The Grand Feast</h3></div>
+  <div class="tc-body">A vegetarian feast of 26 or more dishes, served traditionally on a fresh banana leaf and eaten with the hands. Guests, family, and neighbours are welcomed generously — echoing Mahabali's own open-hearted rule, where hospitality was never withheld from anyone.</div>
+</div>
+
+<div class="trad-card" style="border-color:var(--leaf2)">
+  <div class="tc-hdr"><div class="tc-icon">🚣</div>
+    <h3 style="color:var(--leaf2)">Vallamkali — Snake Boat Races</h3></div>
+  <div class="tc-body">Long, ornately decorated snake boats (Chundan Vallam), each rowed by upwards of 100 people, race along Kerala's backwaters to the rhythm of traditional Vanchipattu boat songs. The races are among the most spectacular and widely attended public events of the entire festival.</div>
+</div>
+
+<div class="trad-card" style="border-color:var(--gold)">
+  <div class="tc-hdr"><div class="tc-icon">🐅</div>
+    <h3 style="color:var(--leaf2)">Pulikali — The Tiger Dance</h3></div>
+  <div class="tc-body">Performers paint their bodies as tigers and hunters and dance through the streets to energetic drumbeats — a folk-art tradition especially associated with Thrissur, drawing enormous crowds and considered one of Onam's most theatrical public spectacles.</div>
+</div>
+
+<!-- ONAM SADYA DISHES -->
+<div class="sec-hdr">
+  <h2>The Onam Sadya — What's on the Leaf</h2>
+  <p>A complete feast of over 26 dishes, served on banana leaf</p>
+</div>
+
+<div class="dish-grid">
+  <div class="dish-card">
+    <div class="dish-icon">🍛</div>
+    <div class="dish-title">Sambar & Rasam</div>
+    <div class="dish-desc">Lentil-vegetable stew and a tangy tamarind soup — the base of the feast</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🥥</div>
+    <div class="dish-title">Avial</div>
+    <div class="dish-desc">Mixed vegetables in coconut and yoghurt gravy</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🫘</div>
+    <div class="dish-title">Olan</div>
+    <div class="dish-desc">Ash gourd and black-eyed peas in coconut milk</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🥗</div>
+    <div class="dish-title">Kichadi & Pachadi</div>
+    <div class="dish-desc">Yoghurt-based side dishes with vegetables or fruit</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🍥</div>
+    <div class="dish-title">Pappadam</div>
+    <div class="dish-desc">Crisp lentil wafers served alongside the meal</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🍌</div>
+    <div class="dish-title">Banana Chips</div>
+    <div class="dish-desc">Kerala's iconic crispy fried plantain chips</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🍚</div>
+    <div class="dish-title">Rice & Ghee</div>
+    <div class="dish-desc">The centrepiece around which every dish is arranged</div>
+  </div>
+  <div class="dish-card">
+    <div class="dish-icon">🍮</div>
+    <div class="dish-title">Payasam</div>
+    <div class="dish-desc">Sweet milk-based dessert — the most fought-over dish at the table, always saved for last</div>
+  </div>
+</div>
+
+<!-- HOW TO OBSERVE -->
+<div class="sec-hdr">
+  <h2>How to Celebrate Onam</h2>
+  <p>Simple, joyful, and needs no temple at all</p>
+</div>
+
+<div style="height:10px"></div>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div><div class="step-title">Lay a Pookalam at Your Doorstep</div>
+  <p>Even a small flower arrangement grown day by day carries the spirit of the tradition — it doesn't need to be elaborate to be meaningful.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div><div class="step-title">Wear New Clothes — Ideally Kasavu</div>
+  <p>Onakkodi — new clothing — is traditionally worn on Thiruvonam. The classic Kerala kasavu (cream and gold bordered saree or mundu) is especially treasured for the day.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <div><div class="step-title">Prepare or Share an Onam Sadya</div>
+  <p>A full 26-dish feast is a wonderful goal, but even a handful of Sadya staples — rice, sambar, avial, payasam — served on a banana leaf carries the meal's spirit fully.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <div><div class="step-title">Welcome Guests Generously</div>
+  <p>In the spirit of Mahabali's open kingdom, invite neighbours, friends, and especially anyone who might otherwise spend the day alone or far from family.</p></div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <div><div class="step-title">Watch or Join in the Festivities</div>
+  <p>If a Vallamkali boat race or Pulikali performance is happening nearby, it's worth experiencing — these are some of the most visually spectacular traditions in the entire Hindu festival calendar.</p></div>
+</div>
+
+<!-- MODERN RELEVANCE -->
+<div class="sec-hdr">
+  <h2>Onam for the Modern World</h2>
+  <p>A harvest festival built entirely around welcome, honesty, and shared abundance</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">A King Remembered for Losing Well</div>
+  <p>Mahabali is one of the rare figures in any mythology celebrated not for a victory, but for how gracefully and honestly he accepted defeat. He kept his word even when it cost him everything. He remained beloved by his people even after losing his throne. Onam is, at its core, a festival about what it means to rule — and to lose — with dignity, generosity and truth intact.</p>
+</div>
+
+<div class="plain-card">
+  <div class="plain-title">For Diaspora Families — Kerala's Global Homecoming</div>
+  <p>Onam travels remarkably well. Large Malayali communities in the Gulf states, the United States, and the United Kingdom organise Onam melas — community feasts, cultural performances, and games — keeping the festival firmly alive far from Kerala's shores.</p>
+  <ul>
+    <li>Tell children the Vamana story — a rare tale where the "loser" is the one everyone still loves</li>
+    <li>Even a simple Pookalam at the door is a meaningful, visual way to mark the day</li>
+    <li>Don't waste the Sadya — serving modestly and finishing what's on the leaf is part of the tradition's spirit</li>
+    <li>Invite someone who might otherwise be alone — this is the single most important part of Onam's ethic</li>
+    <li>Remember Onam belongs to everyone in Kerala regardless of religion — a genuinely rare unifying celebration worth honouring as such</li>
+  </ul>
+</div>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div style="font-size:40px;margin-bottom:14px">🌼</div>
+  <div class="jai">Onam Ashamsakal!</div>
+  <div class="jai-deva">ഓണാശംസകൾ</div>
+  <div class="victory">Happy Onam — welcome the king home, and welcome everyone else to the table too</div>
+  <div class="c-divider"></div>
+  <p style="font-family:'Lora',serif;font-style:italic;color:rgba(255,255,255,0.75);
+    font-size:14px;line-height:1.65;padding:0 10px">
+    "Maveli naadu vaneedum kaalam, manushyarellarum onnu pole" —<br>
+    "When Maveli ruled the land, all people lived as one."
+  </p>
+  <p class="footer-note">Sanatana Series · Onam 2026<br>
+  Thiruvonam — 26 August · Chingam Month</p>
+  <div class="attr">
+    <p class="attr-by">Created by</p>
+    <p class="attr-name">Varun Dogar</p>
+    <p class="attr-claude">With assistance from Claude · Anthropic</p>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<div style="background:linear-gradient(135deg,#060F08 0%,#0C1D10 100%);
+  border-top:2px solid rgba(30,122,60,0.3);padding:28px 20px;text-align:center">
+  <div style="font-family:'Noto Serif Devanagari',serif;font-size:18px;
+    color:rgba(196,224,204,0.40);margin-bottom:6px">ॐ</div>
+  <div style="font-family:'Yatra One',cursive;font-size:20px;color:#D4A017;margin-bottom:6px">
+    Sanatanverse — Monthly Newsletter</div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.70);font-family:'Lora',serif;
+    font-style:italic;line-height:1.6;margin-bottom:16px;max-width:400px;
+    margin-left:auto;margin-right:auto">
+    New guide every month · Festival calendar · The meaning behind the ritual<br>
+    Free · No ads · For every generation
+  </p>
+  <a href="https://sanatanverse.substack.com?utm_source=guide" target="_blank" rel="noopener"
+    style="display:inline-block;background:#1E7A3C;color:white;text-decoration:none;
+      font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
+      padding:12px 28px;border-radius:100px">
+    🔔 Subscribe — Free
+  </a>
+</div>
+
+</body>
+</html>
