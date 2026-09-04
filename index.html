@@ -159,7 +159,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <p class="hero-tagline">Hindu guides for every generation</p>
   <p class="hero-desc">Free, ad-free guides to festivals, epics and philosophy — in English and Hindi. For diaspora families and curious minds everywhere.</p>
   <div class="hero-stats">
-    <div class="hs"><div class="hs-num">23</div><div class="hs-label">Guides</div></div>
+    <div class="hs"><div class="hs-num">24</div><div class="hs-label">Guides</div></div>
     <div class="hs"><div class="hs-num">EN+हिं</div><div class="hs-label">Bilingual</div></div>
     <div class="hs"><div class="hs-num">Free</div><div class="hs-label">Always</div></div>
   </div>
@@ -176,7 +176,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
 
 <!-- FILTERS -->
 <div class="filters">
-  <button class="tab active" onclick="filter('all',this)">All (23)</button>
+  <button class="tab active" onclick="filter('all',this)">All (24)</button>
   <button class="tab" onclick="filter('festivals',this)">🌸 Festivals</button>
   <button class="tab" onclick="filter('epics',this)">📜 Epics</button>
   <button class="tab" onclick="filter('practice',this)">🪔 Practice</button>
@@ -192,10 +192,6 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <div class="section-title">Coming Soon</div>
 </div>
 <div class="soon-grid">
-  <div class="soon-card">
-    <div class="soon-icon">🦚</div>
-    <div><div class="soon-title">Janmashtami</div><div class="soon-date">4 September 2026 · Birth of Krishna</div></div>
-  </div>
   <div class="soon-card">
     <div class="soon-icon">🐘</div>
     <div><div class="soon-title">Ganesh Chaturthi</div><div class="soon-date">14 September 2026 · 10-day festival</div></div>
@@ -315,6 +311,12 @@ const GUIDES = [
     title:'Onam 2026',
     desc:'Kerala\'s harvest festival · King Mahabali and the Vamana avatar · Pookalam flower carpets · Onam Sadya · Celebrated by every religion' },
 
+  { cat:'festivals', href:'janmashtami.html', hi:'janmashtami-hi.html',
+    pub:'2026-09-04', accent:'#1A4B6B', bg:'rgba(26,75,107,0.10)', icon:'🪈',
+    festival:'Festival · 4 Sep 2026',
+    title:'Krishna Janmashtami 2026',
+    desc:'Born in a prison cell at midnight · Vasudev crossing the flooding Yamuna · Kansa\'s fear · Dahi Handi · Nishita Kaal puja' },
+
   // EPICS
   { cat:'epics', href:'gita.html', hi:'gita-hi.html',
     pub:'2026-02-10', accent:'#003366', bg:'rgba(0,51,102,0.10)', icon:'📖',
@@ -370,6 +372,7 @@ const CALENDAR = [
   { date:'30 Jul – 28 Aug', name:'Shravan — Month of Shiva', href:'shravan-month.html', color:'#2E5A6C' },
   { date:'17 Aug', name:'Nag Panchami 2026', href:'nag-panchami.html', color:'#1F6B4A' },
   { date:'26 Aug', name:'Onam 2026 — Thiruvonam', href:'onam.html', color:'#1E7A3C' },
+  { date:'4 Sep', name:'Krishna Janmashtami 2026', href:'janmashtami.html', color:'#1A4B6B' },
   { date:'4 Sep', name:'Janmashtami 2026', href:null, color:'#C94800' },
   { date:'14 Sep', name:'Ganesh Chaturthi 2026', href:null, color:'#C94800' },
   { date:'8 Nov', name:'Diwali 2026', href:null, color:'#B8860B' },
