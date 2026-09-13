@@ -159,7 +159,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <p class="hero-tagline">Hindu guides for every generation</p>
   <p class="hero-desc">Free, ad-free guides to festivals, epics and philosophy — in English and Hindi. For diaspora families and curious minds everywhere.</p>
   <div class="hero-stats">
-    <div class="hs"><div class="hs-num">24</div><div class="hs-label">Guides</div></div>
+    <div class="hs"><div class="hs-num">26</div><div class="hs-label">Guides</div></div>
     <div class="hs"><div class="hs-num">EN+हिं</div><div class="hs-label">Bilingual</div></div>
     <div class="hs"><div class="hs-num">Free</div><div class="hs-label">Always</div></div>
   </div>
@@ -176,7 +176,7 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
 
 <!-- FILTERS -->
 <div class="filters">
-  <button class="tab active" onclick="filter('all',this)">All (24)</button>
+  <button class="tab active" onclick="filter('all',this)">All (26)</button>
   <button class="tab" onclick="filter('festivals',this)">🌸 Festivals</button>
   <button class="tab" onclick="filter('epics',this)">📜 Epics</button>
   <button class="tab" onclick="filter('practice',this)">🪔 Practice</button>
@@ -192,10 +192,6 @@ footer a { color:rgba(212,160,23,0.55); text-decoration:none; }
   <div class="section-title">Coming Soon</div>
 </div>
 <div class="soon-grid">
-  <div class="soon-card">
-    <div class="soon-icon">🐘</div>
-    <div><div class="soon-title">Ganesh Chaturthi</div><div class="soon-date">14 September 2026 · 10-day festival</div></div>
-  </div>
   <div class="soon-card">
     <div class="soon-icon">🪔</div>
     <div><div class="soon-title">Diwali</div><div class="soon-date">8 November 2026 · Later this year due to Adhik Maas</div></div>
@@ -317,6 +313,18 @@ const GUIDES = [
     title:'Krishna Janmashtami 2026',
     desc:'Born in a prison cell at midnight · Vasudev crossing the flooding Yamuna · Kansa\'s fear · Dahi Handi · Nishita Kaal puja' },
 
+  { cat:'festivals', href:'ganesh-chaturthi.html', hi:'ganesh-chaturthi-hi.html',
+    pub:'2026-09-13', accent:'#A0522D', bg:'rgba(160,82,45,0.10)', icon:'🐘',
+    festival:'Festival · 14–25 Sep 2026',
+    title:'Ganesh Chaturthi 2026',
+    desc:'Sthapana muhurat · Why Ganesha has an elephant head · Why you must not look at the moon · 21 modaks · All visarjan dates' },
+
+  { cat:'festivals', href:'pitru-paksha.html', hi:'pitru-paksha-hi.html',
+    pub:'2026-09-20', accent:'#6B5740', bg:'rgba(139,115,85,0.10)', icon:'🪔',
+    festival:'Observance · 26 Sep – 10 Oct 2026',
+    title:'Pitru Paksha 2026',
+    desc:'The fortnight for ancestors · The story of Karna · Tarpan at home without a priest · How to find your ancestor\'s tithi · Sarva Pitru Amavasya' },
+
   // EPICS
   { cat:'epics', href:'gita.html', hi:'gita-hi.html',
     pub:'2026-02-10', accent:'#003366', bg:'rgba(0,51,102,0.10)', icon:'📖',
@@ -373,6 +381,9 @@ const CALENDAR = [
   { date:'17 Aug', name:'Nag Panchami 2026', href:'nag-panchami.html', color:'#1F6B4A' },
   { date:'26 Aug', name:'Onam 2026 — Thiruvonam', href:'onam.html', color:'#1E7A3C' },
   { date:'4 Sep', name:'Krishna Janmashtami 2026', href:'janmashtami.html', color:'#1A4B6B' },
+  { date:'14 Sep', name:'Ganesh Chaturthi 2026', href:'ganesh-chaturthi.html', color:'#A0522D' },
+  { date:'26 Sep – 10 Oct', name:'Pitru Paksha 2026', href:'pitru-paksha.html', color:'#6B5740' },
+  { date:'11 Oct', name:'Sharad Navratri begins', href:null, color:'#880035' },
   { date:'4 Sep', name:'Janmashtami 2026', href:null, color:'#C94800' },
   { date:'14 Sep', name:'Ganesh Chaturthi 2026', href:null, color:'#C94800' },
   { date:'8 Nov', name:'Diwali 2026', href:null, color:'#B8860B' },
