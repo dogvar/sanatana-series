@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Festival Date Cards — Sanatana Series</title>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;700&family=Lora:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Noto+Serif+Devanagari:wght@400;700&amp;family=Lora:ital,wght@0,600;1,400&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 :root { --dark:#0D0400; --gold:#D4A017; --saff:#C94800; --cream:#FFFBF4; }
 * { box-sizing:border-box; margin:0; padding:0; }
@@ -57,97 +58,85 @@ canvas { border-radius:12px; max-width:100%; display:block; margin:0 auto; }
 .preset-btn .pf-name { font-weight:600; font-size:13px; }
 .preset-btn .pf-date { color:rgba(212,160,23,0.6); font-size:11px; }
 </style>
-</head>
-<body>
-
+<link href="article-responsive.css?v=20261012" rel="stylesheet"/><meta content="Festival Date Cards — Explore this guide in the Sanatana Series." name="description"/></head>
+<body class="sanatana-article">
 <h1>Festival Date Cards</h1>
 <p class="sub">Create WhatsApp-shareable cards for any Hindu festival · Sanatana Series</p>
-
 <!-- PICKER -->
 <div class="picker">
-  <label>Festival Name</label>
-  <input type="text" id="festName" placeholder="e.g. Hanuman Jayanti" value="Hanuman Jayanti">
-
-  <label>Date</label>
-  <input type="text" id="festDate" placeholder="e.g. Thursday, 2 April 2026" value="Thursday, 2 April 2026">
-
-  <label>Subtitle / What to do</label>
-  <input type="text" id="festSub" placeholder="e.g. Recite Hanuman Chalisa · Visit temple at sunrise"
-    value="Recite Hanuman Chalisa · Visit temple at sunrise">
-
-  <label>Devanagari name (optional)</label>
-  <input type="text" id="festDeva" placeholder="e.g. हनुमान जयन्ती" value="हनुमान जयन्ती">
-
-  <label>Colour theme</label>
-  <select id="festColor">
-    <option value="#C94800">Saffron — Hanuman / Ram</option>
-    <option value="#880035">Deep Red — Navratri / Durga</option>
-    <option value="#003366">Navy — Bhagavad Gita / Krishna</option>
-    <option value="#006D6D">Teal — Jainism / Mahavir</option>
-    <option value="#2E7D32">Forest Green — Nature / Harvest</option>
-    <option value="#4A0060">Purple — Shiva / Pradosh</option>
-    <option value="#B8860B">Gold — Purnima / Diwali / Lakshmi</option>
-    <option value="#8B4500">Brown — Ramayana / Vrat</option>
-  </select>
-
-  <button class="generate-btn" onclick="generateCard()">✨ Generate Card</button>
+<label>Festival Name</label>
+<input id="festName" placeholder="e.g. Hanuman Jayanti" type="text" value="Hanuman Jayanti"/>
+<label>Date</label>
+<input id="festDate" placeholder="e.g. Thursday, 2 April 2026" type="text" value="Thursday, 2 April 2026"/>
+<label>Subtitle / What to do</label>
+<input id="festSub" placeholder="e.g. Recite Hanuman Chalisa · Visit temple at sunrise" type="text" value="Recite Hanuman Chalisa · Visit temple at sunrise"/>
+<label>Devanagari name (optional)</label>
+<input id="festDeva" placeholder="e.g. हनुमान जयन्ती" type="text" value="हनुमान जयन्ती"/>
+<label>Colour theme</label>
+<select id="festColor">
+<option value="#C94800">Saffron — Hanuman / Ram</option>
+<option value="#880035">Deep Red — Navratri / Durga</option>
+<option value="#003366">Navy — Bhagavad Gita / Krishna</option>
+<option value="#006D6D">Teal — Jainism / Mahavir</option>
+<option value="#2E7D32">Forest Green — Nature / Harvest</option>
+<option value="#4A0060">Purple — Shiva / Pradosh</option>
+<option value="#B8860B">Gold — Purnima / Diwali / Lakshmi</option>
+<option value="#8B4500">Brown — Ramayana / Vrat</option>
+</select>
+<button class="generate-btn" onclick="generateCard()">✨ Generate Card</button>
 </div>
-
 <!-- PREVIEW -->
 <div class="preview-wrap">
-  <div class="preview-label">Preview (1080 × 1080px — square for WhatsApp)</div>
-  <canvas id="cardCanvas" width="1080" height="1080"></canvas>
+<div class="preview-label">Preview (1080 × 1080px — square for WhatsApp)</div>
+<canvas height="1080" id="cardCanvas" width="1080"></canvas>
 </div>
-
 <!-- ACTIONS -->
 <div class="action-row">
-  <button class="action-btn dl-btn" onclick="downloadCard()">
+<button class="action-btn dl-btn" onclick="downloadCard()">
     ⬇️ Download PNG
   </button>
-  <button class="action-btn wa-btn" onclick="shareWhatsApp()">
+<button class="action-btn wa-btn" onclick="shareWhatsApp()">
     💬 Share Link
   </button>
 </div>
-
 <!-- PRESETS -->
 <div class="presets">
-  <div class="preset-label">Quick presets — 2026</div>
-  <div class="preset-grid">
-    <button class="preset-btn" onclick="loadPreset('Hanuman Jayanti','Thursday, 2 April 2026','Recite Hanuman Chalisa · Visit temple at sunrise','हनुमान जयन्ती','#C94800')">
-      <span class="pf-name">🏔️ Hanuman Jayanti</span>
-      <span class="pf-date">2 April 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Akshaya Tritiya','Sunday, 19 April 2026','Most auspicious day · New beginnings · Gold & charity','अक्षय तृतीया','#B8860B')">
-      <span class="pf-name">✨ Akshaya Tritiya</span>
-      <span class="pf-date">19 April 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Buddha Purnima','Friday, 1 May 2026','Meditation · Dana (giving) · Temple visit','बुद्ध पूर्णिमा','#006D6D')">
-      <span class="pf-name">☸️ Buddha Purnima</span>
-      <span class="pf-date">1 May 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Nirjala Ekadashi','Thursday, 25 June 2026','Waterless fast · Merit of all 24 Ekadashis','निर्जला एकादशी','#003366')">
-      <span class="pf-name">💧 Nirjala Ekadashi</span>
-      <span class="pf-date">25 June 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Guru Purnima','Wednesday, 29 July 2026','Honour your Guru · Initiation · Spiritual learning','गुरु पूर्णिमा','#B8860B')">
-      <span class="pf-name">🙏 Guru Purnima</span>
-      <span class="pf-date">29 July 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Raksha Bandhan','Friday, 28 August 2026','Sisters tie rakhi · Brother-sister bond','रक्षा बंधन','#880035')">
-      <span class="pf-name">🪢 Raksha Bandhan</span>
-      <span class="pf-date">28 August 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Ganesh Chaturthi','Monday, 14 September 2026','Birth of Lord Ganesha · 10-day celebration begins','गणेश चतुर्थी','#CC6600')">
-      <span class="pf-name">🐘 Ganesh Chaturthi</span>
-      <span class="pf-date">14 September 2026</span>
-    </button>
-    <button class="preset-btn" onclick="loadPreset('Diwali','Sunday, 8 November 2026','Festival of lights · Lakshmi Puja · Deepotsav','दीपावली','#B8860B')">
-      <span class="pf-name">🪔 Diwali</span>
-      <span class="pf-date">8 November 2026</span>
-    </button>
-  </div>
+<div class="preset-label">Quick presets — 2026</div>
+<div class="preset-grid">
+<button class="preset-btn" onclick="loadPreset('Hanuman Jayanti','Thursday, 2 April 2026','Recite Hanuman Chalisa · Visit temple at sunrise','हनुमान जयन्ती','#C94800')">
+<span class="pf-name">🏔️ Hanuman Jayanti</span>
+<span class="pf-date">2 April 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Akshaya Tritiya','Sunday, 19 April 2026','Most auspicious day · New beginnings · Gold &amp; charity','अक्षय तृतीया','#B8860B')">
+<span class="pf-name">✨ Akshaya Tritiya</span>
+<span class="pf-date">19 April 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Buddha Purnima','Friday, 1 May 2026','Meditation · Dana (giving) · Temple visit','बुद्ध पूर्णिमा','#006D6D')">
+<span class="pf-name">☸️ Buddha Purnima</span>
+<span class="pf-date">1 May 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Nirjala Ekadashi','Thursday, 25 June 2026','Waterless fast · Merit of all 24 Ekadashis','निर्जला एकादशी','#003366')">
+<span class="pf-name">💧 Nirjala Ekadashi</span>
+<span class="pf-date">25 June 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Guru Purnima','Wednesday, 29 July 2026','Honour your Guru · Initiation · Spiritual learning','गुरु पूर्णिमा','#B8860B')">
+<span class="pf-name">🙏 Guru Purnima</span>
+<span class="pf-date">29 July 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Raksha Bandhan','Friday, 28 August 2026','Sisters tie rakhi · Brother-sister bond','रक्षा बंधन','#880035')">
+<span class="pf-name">🪢 Raksha Bandhan</span>
+<span class="pf-date">28 August 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Ganesh Chaturthi','Monday, 14 September 2026','Birth of Lord Ganesha · 10-day celebration begins','गणेश चतुर्थी','#CC6600')">
+<span class="pf-name">🐘 Ganesh Chaturthi</span>
+<span class="pf-date">14 September 2026</span>
+</button>
+<button class="preset-btn" onclick="loadPreset('Diwali','Sunday, 8 November 2026','Festival of lights · Lakshmi Puja · Deepotsav','दीपावली','#B8860B')">
+<span class="pf-name">🪔 Diwali</span>
+<span class="pf-date">8 November 2026</span>
+</button>
 </div>
-
+</div>
 <script>
 // ── Load Google Font into canvas ──
 // We pre-render text with system fallback since canvas can't load web fonts
@@ -345,6 +334,5 @@ window.addEventListener('load', function() {
   setTimeout(generateCard, 600);
 });
 </script>
-
 </body>
 </html>
