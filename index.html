@@ -39,6 +39,14 @@
 @media(max-width:900px){.wrap{padding-left:clamp(16px,3.2vw,26px);padding-right:clamp(16px,3.2vw,26px)}}
 @media(max-width:560px){.wrap{padding-left:16px;padding-right:16px}.hero-grid{min-width:0}.hero-media img{max-width:100%;height:auto}}
 </style>
+<style>
+/* Three guide-specific featured artwork panels */
+a.feature-art[href="gita.html"],a.feature-art[href="ramayana-journey.html"],a.feature-art[href="gayatri-mantra.html"]{background-position:center!important;background-size:cover!important;overflow:hidden}
+a.feature-art[href="gita.html"]{background-image:url('images/gita-thumb.webp?v=20261012')!important}
+a.feature-art[href="ramayana-journey.html"]{background-image:url('images/ramayana-journey-thumb.webp?v=20261012')!important}
+a.feature-art[href="gayatri-mantra.html"]{background-image:url('images/gayatri-mantra-thumb.webp?v=20261012')!important}
+a.feature-art[href="gita.html"] .art-glyph,a.feature-art[href="ramayana-journey.html"] .art-glyph,a.feature-art[href="gayatri-mantra.html"] .art-glyph,a.feature-art[href="gita.html"] .art-ring,a.feature-art[href="ramayana-journey.html"] .art-ring,a.feature-art[href="gayatri-mantra.html"] .art-ring{display:none!important}
+</style>
 </head>
 <body>
 <div class="topnote">A FREE CULTURAL LIBRARY <b>✦</b> ROOTED IN TRADITION, OPEN TO EVERYONE</div>
@@ -163,7 +171,7 @@ function formatDate(s){return parseDate(s).toLocaleDateString('en-GB',{day:'nume
 function dateText(g){return g.e?formatDate(g.s)+' – '+formatDate(g.e):g.s?formatDate(g.s):'';}
 function glyph(g){const x={lotus:'✺',sun:'☼',chakra:'☸',moon:'☾',wheel:'◉',orbit:'◌',serpent:'न',pookalam:'✿',peacock:'✧',modak:'श्री',lamp:'दी',weave:'क',trishul:'ॐ',bow:'रा',gada:'ह',pillar:'न',yantra:'◈'};return x[g.motif]||'ॐ';}
 function thumbColor(g){const pal={festivals:['#d9b58a','#9b534a'],epics:['#d7ba92','#7e4d49'],practice:['#d8ba87','#a76a44'],dharmic:['#b5c9aa','#577970'],tools:['#dfc8a2','#a16c50']};return pal[g.c]||pal.festivals;}
-function card(g){const colors=thumbColor(g);const pic=g.h==='sharad-navratri.html'?'<img src="images/navratri-hero.webp?v=20261011" alt="" loading="lazy">':'';return `<article class="library-card"><div class="thumb" style="background:linear-gradient(145deg,${colors[0]},${colors[1]})"><span aria-hidden="true">${glyph(g)}</span>${pic}</div><div class="card-text"><span class="card-kicker">${g.k}</span><h3>${g.t}</h3><span class="card-dv">${g.dv}</span>${g.ever?'':`<span class="card-date">${dateText(g)}</span>`}<div class="card-links"><a href="${g.h}" aria-label="Read ${g.t} in English">English ↗</a>${g.hi?`<a href="${g.hi}" lang="hi" aria-label="${g.dv} हिंदी में पढ़ें">हिंदी ↗</a>`:''}</div></div></article>`;}
+function card(g){const colors=thumbColor(g);const pic=({'sharad-navratri.html':'navratri-hero.webp','gita.html':'gita-thumb.webp','ramayana-journey.html':'ramayana-journey-thumb.webp','gayatri-mantra.html':'gayatri-mantra-thumb.webp'}[g.h] ? `<img src="images/${{'sharad-navratri.html':'navratri-hero.webp','gita.html':'gita-thumb.webp','ramayana-journey.html':'ramayana-journey-thumb.webp','gayatri-mantra.html':'gayatri-mantra-thumb.webp'}[g.h]}?v=20261012" alt="" loading="lazy">` : '');return `<article class="library-card"><div class="thumb" style="background:linear-gradient(145deg,${colors[0]},${colors[1]})"><span aria-hidden="true">${glyph(g)}</span>${pic}</div><div class="card-text"><span class="card-kicker">${g.k}</span><h3>${g.t}</h3><span class="card-dv">${g.dv}</span>${g.ever?'':`<span class="card-date">${dateText(g)}</span>`}<div class="card-links"><a href="${g.h}" aria-label="Read ${g.t} in English">English ↗</a>${g.hi?`<a href="${g.hi}" lang="hi" aria-label="${g.dv} हिंदी में पढ़ें">हिंदी ↗</a>`:''}</div></div></article>`;}
 function group(label,items){if(!items.length)return '';return `<section class="catalog-group"><h3 class="catalog-title">${label}<small>${items.length}</small></h3><div class="catalog-grid">${items.map(card).join('')}</div></section>`;}
 function render(){const q=document.getElementById('search').value.trim().toLocaleLowerCase();const pool=G.filter(g=>(active==='all'||g.c===active)&&[g.t,g.dv,g.d,g.k].some(v=>v.toLocaleLowerCase().includes(q)));document.getElementById('count').textContent=`${pool.length} of ${G.length} guides`;
 const asc=(a,b)=>parseDate(a.s)-parseDate(b.s),desc=(a,b)=>parseDate(b.s)-parseDate(a.s);
