@@ -1,0 +1,10 @@
+SANATANA SERIES — VIJAYADASHAMI 2026
+
+Upload from this ZIP:
+1. Main repository folder: vijayadashami-dussehra.html, vijayadashami-dussehra-hi.html, dussehra-guide.css, dussehra-guide.js.
+2. Upload all WebP images into the existing images/ folder (not the repository root).
+3. The included index.html is an optional homepage update based on a prior local copy. Your live homepage may contain newer changes: BACK UP the current index.html before replacing it. If you wish to preserve it, add the two Dussehra links manually instead of overwriting.
+4. Commit changes. No other files need replacing.
+5. Check both new article URLs and all image links after GitHub Pages deploys.
+
+Dussehra 20 Oct 2026, Bengal Bijoya 21 Oct. Images are artistic illustrations. Greeting intentionally unbranded.
