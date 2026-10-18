@@ -38,3 +38,10 @@
 @media (max-width:1100px){.craft-steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:650px){.craft-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.craft-step{padding:10px 8px}.craft-step .step-photo{aspect-ratio:4/3}}
 @media (max-width:360px){.craft-steps{grid-template-columns:1fr}}
+
+/* Restore missing right-column artwork in Uma and Bijoya sections */
+.visual-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px;align-items:center}
+.visual-split>div{min-width:0}
+.visual-split .split-illustration{min-width:0;margin:0}
+.visual-split .split-illustration img{display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 28px #632e1a13;cursor:zoom-in}
+@media(max-width:850px){.visual-split{grid-template-columns:1fr;gap:18px}.visual-split .split-illustration img{aspect-ratio:16/10;max-height:420px}}
