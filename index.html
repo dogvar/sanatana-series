@@ -196,6 +196,42 @@ footer{padding:52px 0 64px}
 footer p{font-size:14.5px;font-weight:300;color:var(--sand-3)}
 footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 .f-om{font-family:'Noto Serif Devanagari',serif;font-size:26px;color:var(--gold);opacity:.5}
+
+/* Editorial hero 2026: photographic, not programmatically drawn */
+.hero{min-height:610px;isolation:isolate;background:#0b0a08;display:flex;align-items:center}
+.hero-scene{position:absolute;z-index:-2;inset:0 0 0 37%;
+ background-image:url('images/sanatana-hero-ghats.webp');
+ background-position:center center;background-size:cover;background-repeat:no-repeat;
+ filter:saturate(.96) contrast(1.06)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:linear-gradient(90deg,#0b0a08 0%,#0b0a08 23%,rgba(11,10,8,.95) 35%,rgba(11,10,8,.65) 52%,rgba(11,10,8,.08) 80%),
+ linear-gradient(0deg,rgba(11,10,8,.88),transparent 29%)}
+.hero-inner{padding-top:76px;padding-bottom:78px;width:100%}
+.hero-copy{max-width:730px}
+.hero h1{font-family:Fraunces,Georgia,serif;font-size:clamp(44px,5.2vw,77px);
+ letter-spacing:-.027em;line-height:1.04;max-width:15ch;text-wrap:balance;
+ text-shadow:0 3px 24px rgba(0,0,0,.35)}
+.hero h1 em{font-style:italic;font-weight:300;color:#edc66b}
+.hero-lede{max-width:47ch;color:rgba(239,231,216,.83);font-size:clamp(17px,1.6vw,21px)}
+.hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:-5px 0 28px}
+.hero-cta{display:inline-flex;gap:25px;align-items:center;background:#c9a227;color:#0b0a08;
+ padding:13px 21px;font:14px Marcellus,serif;letter-spacing:.045em;transition:background .2s}
+.hero-cta:hover{background:#e8c765}
+.hero-note{font:11px Marcellus,serif;letter-spacing:.16em;text-transform:uppercase;color:#d5c4a6}
+.hero .plaque{background:rgba(14,11,10,.83);border-color:rgba(201,162,39,.5);max-width:540px}
+.hero .plaque-mark{width:82px}
+@media(max-width:760px){
+ .hero{min-height:650px;align-items:flex-end}
+ .hero-scene{inset:0;background-position:62% center}
+ .hero:after{background:linear-gradient(0deg,#0b0a08 0%,rgba(11,10,8,.98) 15%,rgba(11,10,8,.78) 57%,rgba(11,10,8,.27) 100%)}
+ .hero-inner{padding-top:155px;padding-bottom:44px}
+ .hero h1{font-size:clamp(39px,9vw,57px)}
+ .hero-lede{font-size:17px}
+ .hero-note{display:none}
+ .hero .plaque{max-width:100%}
+}
+@media(max-width:420px){.hero-inner{padding-top:145px}.hero .plaque-mark{display:none}}
+
 </style>
 </head>
 <body>
@@ -214,12 +250,14 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 </header>
 
 <section class="hero">
-  <svg class="sky" id="sky" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
-  <div class="wrap hero-inner">
+  <div class="hero-scene" aria-hidden="true"></div>
+  <div class="wrap hero-inner"><div class="hero-copy">
     <div class="eyebrow-rule"><span>Free · English &amp; हिंदी</span><i></i></div>
     <h1>Every festival has a reason. <em>Here is why.</em></h1>
     <p class="hero-lede">Guides to the stories, dates and rituals of the Hindu year — written plainly, for families far from home and anyone who ever wondered what today means.</p>
+    <div class="hero-actions"><a class="hero-cta" href="#guides">Explore the guides <span aria-hidden="true">→</span></a><span class="hero-note">Stories · Wisdom · Traditions</span></div>
     <div id="plaque"></div>
+    </div>
   </div>
 </section>
 
@@ -255,71 +293,71 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 var G=[
  {c:'festivals',h:'navratri.html',hi:'navratri-hi.html',s:'2026-03-19',e:'2026-03-27',
   k:'Spring nine nights',t:'Chaitra Navratri',dv:'चैत्र नवरात्रि',motif:'lotus',hue:340,
-  d:'The nine forms of Durga, one for each night, with puja vidhi, fasting rules and kanya puja.'},
+  d:'The nine forms of Durga, one for each night, with puja vidhi, fasting rules and kanya puja.',img:'images/navratri-index.webp'},
  {c:'festivals',h:'hindu-new-year.html',hi:'hindu-new-year-hi.html',s:'2026-03-30',
   k:'New year',t:'Hindu New Year',dv:'विक्रम संवत् 2083',motif:'sun',hue:42,
-  d:'Gudi Padwa, Ugadi and Vikram Samvat 2083 — why the year turns in spring, across five regions.'},
+  d:'Gudi Padwa, Ugadi and Vikram Samvat 2083 — why the year turns in spring, across five regions.',img:'images/hindu-new-year-editorial.webp'},
  {c:'festivals',h:'mahavir-jayanti.html',hi:'mahavir-jayanti-hi.html',s:'2026-03-31',
   k:'Jayanti',t:'Mahavir Jayanti',dv:'महावीर जयन्ती',motif:'lotus',hue:175,
-  d:'The twenty-fourth Tirthankara, the five great vows, and what ahimsa asks of us now.'},
+  d:'The twenty-fourth Tirthankara, the five great vows, and what ahimsa asks of us now.',img:'images/mahavir-jayanti-editorial.webp'},
  {c:'festivals',h:'hanuman-jayanti.html',hi:'hanuman-jayanti-hi.html',s:'2026-04-02',
   k:'Jayanti',t:'Hanuman Jayanti',dv:'हनुमान जयन्ती',motif:'gada',hue:20,
-  d:'All forty verses of the Chalisa, the birth story, and the promise Shani once made to Hanuman.'},
+  d:'All forty verses of the Chalisa, the birth story, and the promise Shani once made to Hanuman.',img:'images/hanuman-jayanti-editorial.webp'},
  {c:'festivals',h:'ram-navami.html',hi:'ram-navami-hi.html',s:'2026-04-07',
   k:'Birth of Ram',t:'Ram Navami',dv:'राम नवमी',motif:'bow',hue:26,
-  d:'The birth of Maryada Purushottam at midday, the puja, and the Ram mantra.'},
+  d:'The birth of Maryada Purushottam at midday, the puja, and the Ram mantra.',img:'images/ram-navami-index.webp'},
  {c:'festivals',h:'akshaya-tritiya.html',hi:'akshaya-tritiya-hi.html',s:'2026-04-19',
   k:'The day that never fades',t:'Akshaya Tritiya',dv:'अक्षय तृतीया',motif:'sun',hue:45,
-  d:'Sudama and Krishna, the Akshaya Patra, and why this day needs no muhurat at all.'},
+  d:'Sudama and Krishna, the Akshaya Patra, and why this day needs no muhurat at all.',img:'images/akshaya-tritiya-editorial.webp'},
  {c:'festivals',h:'narasimha-jayanti.html',hi:'narasimha-jayanti-hi.html',s:'2026-04-30',
   k:'Jayanti',t:'Narasimha Jayanti',dv:'नरसिंह जयन्ती',motif:'pillar',hue:2,
-  d:'The fourth avatar, the five conditions of an unbreakable boon, and the pillar that split at dusk.'},
+  d:'The fourth avatar, the five conditions of an unbreakable boon, and the pillar that split at dusk.',img:'images/narasimha-jayanti-editorial.webp'},
  {c:'festivals',h:'buddha-purnima.html',hi:'buddha-purnima-hi.html',s:'2026-05-01',
   k:'Purnima',t:'Buddha Purnima',dv:'बुद्ध पूर्णिमा',motif:'chakra',hue:40,
-  d:'Birth, awakening and passing on a single full moon. The Four Noble Truths, plainly told.'},
+  d:'Birth, awakening and passing on a single full moon. The Four Noble Truths, plainly told.',img:'images/buddha-purnima-editorial.webp'},
  {c:'festivals',h:'shani-jayanti.html',hi:'shani-jayanti-hi.html',s:'2026-05-16',
   k:'Jayanti',t:'Shani Jayanti',dv:'शनि जयन्ती',motif:'orbit',hue:222,
-  d:'The judge of karma. Sade Sati explained without fear, tailabhishek, and a rare Saturday alignment.'},
+  d:'The judge of karma. Sade Sati explained without fear, tailabhishek, and a rare Saturday alignment.',img:'images/shani-jayanti-editorial.webp'},
  {c:'festivals',h:'adhik-maas.html',hi:'adhik-maas-hi.html',s:'2026-05-17',e:'2026-06-15',
   k:'The extra month',t:'Adhik Maas',dv:'पुरुषोत्तम मास',motif:'moon',hue:276,
-  d:'Why the lunar year gains a whole month every three years, and why it belongs to Vishnu.'},
+  d:'Why the lunar year gains a whole month every three years, and why it belongs to Vishnu.',img:'images/adhik-maas-editorial.webp'},
  {c:'festivals',h:'kabir-jayanti.html',hi:'kabir-jayanti-hi.html',s:'2026-06-29',
   k:'Jayanti',t:'Sant Kabir',dv:'कबीर जयन्ती',motif:'weave',hue:36,
-  d:'The weaver who never wrote a word. Twelve dohas with meaning, and 500 verses in the Guru Granth Sahib.'},
+  d:'The weaver who never wrote a word. Twelve dohas with meaning, and 500 verses in the Guru Granth Sahib.',img:'images/kabir-jayanti-editorial.webp'},
  {c:'festivals',h:'jagannath-rath-yatra.html',hi:'jagannath-rath-yatra-hi.html',s:'2026-07-16',e:'2026-07-24',
   k:'Chariot festival',t:'Jagannath Rath Yatra',dv:'रथ यात्रा',motif:'wheel',hue:8,
-  d:'Why the idol is unfinished, the three chariots of Puri, and the one day the god comes to the street.'},
+  d:'Why the idol is unfinished, the three chariots of Puri, and the one day the god comes to the street.',img:'images/jagannath-rath-yatra-editorial.webp'},
  {c:'festivals',h:'guru-purnima.html',hi:'guru-purnima-hi.html',s:'2026-07-29',
   k:'Purnima',t:'Guru Purnima',dv:'गुरु पूर्णिमा',motif:'moon',hue:250,
-  d:'Vyasa who divided the Vedas, Shiva as the first teacher, and the full moon we give to ours.'},
+  d:'Vyasa who divided the Vedas, Shiva as the first teacher, and the full moon we give to ours.',img:'images/guru-purnima-editorial.webp'},
  {c:'festivals',h:'shravan-month.html',hi:'shravan-month-hi.html',s:'2026-07-30',e:'2026-08-28',
   k:'The month of Shiva',t:'Shravan',dv:'श्रावण मास',motif:'trishul',hue:196,
-  d:'Samudra Manthan, the poison held in the throat, and the four Mondays that anchor the month.'},
+  d:'Samudra Manthan, the poison held in the throat, and the four Mondays that anchor the month.',img:'images/shravan-month-editorial.webp'},
  {c:'festivals',h:'nag-panchami.html',hi:'nag-panchami-hi.html',s:'2026-08-17',
   k:'Serpent worship',t:'Nag Panchami',dv:'नाग पंचमी',motif:'serpent',hue:152,
-  d:'Why Hindus honour what most of the world fears — Janamejaya\u2019s sacrifice, Krishna and Kaliya.'},
+  d:'Why Hindus honour what most of the world fears — Janamejaya\u2019s sacrifice, Krishna and Kaliya.',img:'images/nag-panchami-editorial.webp'},
  {c:'festivals',h:'onam.html',hi:'onam-hi.html',s:'2026-08-17',e:'2026-08-26',
   k:'Kerala\u2019s harvest',t:'Onam',dv:'ओणम्',motif:'pookalam',hue:130,
-  d:'King Mahabali comes home. Pookalam, the Sadya, and a festival every religion in Kerala keeps.'},
+  d:'King Mahabali comes home. Pookalam, the Sadya, and a festival every religion in Kerala keeps.',img:'images/onam-editorial.webp'},
  {c:'festivals',h:'janmashtami.html',hi:'janmashtami-hi.html',s:'2026-09-04',
   k:'Birth of Krishna',t:'Janmashtami',dv:'जन्माष्टमी',motif:'peacock',hue:205,
-  d:'Born at midnight in a locked cell, carried across a flooding Yamuna by a father who could not keep him.'},
+  d:'Born at midnight in a locked cell, carried across a flooding Yamuna by a father who could not keep him.',img:'images/janmashtami-editorial.webp'},
  {c:'festivals',h:'ganesh-chaturthi.html',hi:'ganesh-chaturthi-hi.html',s:'2026-09-14',e:'2026-09-25',
   k:'Ten days with Bappa',t:'Ganesh Chaturthi',dv:'गणेश चतुर्थी',motif:'modak',hue:22,
-  d:'The midday sthapana, why the elephant head, why you must not look at the moon tonight, and every visarjan date.'},
+  d:'The midday sthapana, why the elephant head, why you must not look at the moon tonight, and every visarjan date.',img:'images/ganesh-chaturthi-editorial.webp'},
  {c:'festivals',h:'pitru-paksha.html',hi:'pitru-paksha-hi.html',s:'2026-09-26',e:'2026-10-10',
   k:'Fortnight for ancestors',t:'Pitru Paksha',dv:'पितृ पक्ष',motif:'lamp',hue:38,
-  d:'The story of Karna, tarpan you can perform at home, and how to find the tithi your ancestor left on.'},
+  d:'The story of Karna, tarpan you can perform at home, and how to find the tithi your ancestor left on.',img:'images/pitru-paksha-editorial.webp'},
  {c:'festivals',h:'sharad-navratri.html',hi:'sharad-navratri-hi.html',s:'2026-10-11',e:'2026-10-20',
   k:'Nine nights and the tenth day',t:'Sharad Navratri',dv:'शारदीय नवरात्रि',motif:'lotus',hue:350,
-  d:'The nine Durgas day by day, Ghatasthapana, fasting, Kanya Pujan, garba and dandiya, and Vijayadashami on 20 October.'},
+  d:'The nine Durgas day by day, Ghatasthapana, fasting, Kanya Pujan, garba and dandiya, and Vijayadashami on 20 October.',img:'images/sharad-navratri-index.webp'},
 
  {c:'festivals',h:'bengali-durga-puja.html',hi:'bengali-durga-puja-hi.html',s:'2026-10-16',e:'2026-10-21',
   k:'Bengal welcomes Maa Durga',t:'Bengali Durga Puja',dv:'বাঙালি দুর্গাপূজা',motif:'lotus',hue:348,
-  d:'From the goddess’s arrival and the artistry of pandals to immersion, homecoming and Shubho Bijoya.'},
+  d:'From the goddess’s arrival and the artistry of pandals to immersion, homecoming and Shubho Bijoya.',img:'images/bengali-durga-puja-index.webp'},
  {c:'festivals',h:'vijayadashami-dussehra.html',hi:'vijayadashami-dussehra-hi.html',s:'2026-10-20',
   k:'The victory of dharma',t:'Vijayadashami / Dussehra',dv:'विजयादशमी / दशहरा',motif:'bow',hue:24,
-  d:'Rama and Ravana, Durga’s victory, and why the tenth day is celebrated in so many ways.'},
+  d:'Rama and Ravana, Durga’s victory, and why the tenth day is celebrated in so many ways.',img:'images/vijayadashami-dussehra-index.webp'},
  {c:'festivals',h:'sharad-purnima.html',hi:'sharad-purnima-hi.html',s:'2026-10-25',
   k:'The autumn full moon',t:'Sharad Purnima',dv:'शरद पूर्णिमा',motif:'moon',hue:263,
   img:'images/sharad-purnima-index.webp',
@@ -331,25 +369,25 @@ var G=[
 
  {c:'epics',h:'gita.html',hi:'gita-hi.html',ever:1,k:'Scripture',t:'Bhagavad Gita',dv:'भगवद्गीता',
   motif:'chakra',hue:214,
-  d:'Eighteen chapters, seven hundred verses. Arjuna\u2019s question and the answer given between two armies.'},
+  d:'Eighteen chapters, seven hundred verses. Arjuna\u2019s question and the answer given between two armies.',img:'images/gita-index.webp'},
  {c:'epics',h:'ramayana-journey.html',hi:'ramayana-journey-hi.html',ever:1,k:'Epic',t:'The Ramayana',dv:'रामायण',
   motif:'bow',hue:24,
-  d:'Seven kandas from Ayodhya to Lanka and back — Ram as the ideal man, Hanuman as the ideal devotee.'},
+  d:'Seven kandas from Ayodhya to Lanka and back — Ram as the ideal man, Hanuman as the ideal devotee.',img:'images/ramayana-journey-index.webp'},
  {c:'practice',h:'gayatri-mantra.html',hi:'gayatri-mantra-hi.html',ever:1,k:'Mantra',t:'Gayatri Mantra',dv:'गायत्री मन्त्र',
   motif:'sun',hue:44,
-  d:'Rigveda 3.62.10 — Vishwamitra\u2019s long failure, every word explained, and how to chant it.'},
+  d:'Rigveda 3.62.10 — Vishwamitra\u2019s long failure, every word explained, and how to chant it.',img:'images/gayatri-mantra-index.webp'},
  {c:'practice',h:'aartis.html',hi:'aartis-hi.html',ever:1,k:'Daily practice',t:'Aarti Sangrah',dv:'आरती संग्रह',
   motif:'lamp',hue:32,
-  d:'Eight complete aartis for Vishnu, Durga, Ganesh, Shiv, Krishna, Hanuman, Lakshmi and Saraswati.'},
+  d:'Eight complete aartis for Vishnu, Durga, Ganesh, Shiv, Krishna, Hanuman, Lakshmi and Saraswati.',img:'images/aartis-index.webp'},
  {c:'dharmic',h:'buddhism-spread.html',hi:'buddhism-spread-hi.html',ever:1,k:'Dharmic traditions',t:'Buddhism Across Asia',dv:'बौद्ध धर्म',
   motif:'chakra',hue:168,
-  d:'Ashoka, the Silk Road, Nalanda — how one teaching crossed a continent without an army.'},
+  d:'Ashoka, the Silk Road, Nalanda — how one teaching crossed a continent without an army.',img:'images/buddhism-spread-index.webp'},
  {c:'tools',h:'calendar.html',hi:null,ever:1,k:'Reference',t:'Hindu Calendar 2026',dv:'पंचांग',
   motif:'yantra',hue:48,
-  d:'Every major festival, Ekadashi, Amavasya and Purnima of the year, in one page.'},
+  d:'Every major festival, Ekadashi, Amavasya and Purnima of the year, in one page.',img:'images/calendar-editorial.webp'},
  {c:'tools',h:'date-card-generator.html',hi:null,ever:1,k:'Tool',t:'Festival Card Maker',dv:'शुभकामना',
   motif:'yantra',hue:16,
-  d:'Make a date card for any festival and send it on WhatsApp in a few taps.'}
+  d:'Make a date card for any festival and send it on WhatsApp in a few taps.',img:'images/date-card-generator-editorial.webp'}
 ];
 
 /* ════════ dates ════════ */
@@ -573,7 +611,7 @@ function tile(g){
   else if(s0==='soon') tag='<span class="plate-tag">'+word(g)+'</span>';
   else if(s0==='past') tag='<span class="plate-tag past">'+span(g)+'</span>';
   return '<article class="tile '+s0+'">'+
-    '<a class="plate" href="'+g.h+'">'+(g.img?'<img src="'+g.img+'" alt="">':plate(g,4/3))+tag+'</a>'+
+    '<a class="plate" href="'+g.h+'">'+(g.img?'<img src="'+g.img+'" alt="Illustration for '+g.t+'" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'"><span style="display:none">'+plate(g,4/3)+'</span>':plate(g,4/3))+tag+'</a>'+
     '<div class="tile-body"><div class="kicker">'+g.k+'</div><h3>'+g.t+'</h3>'+
     '<div class="t-dv">'+g.dv+'</div>'+
     (g.ever?'':'<div class="t-date">'+span(g)+'</div>')+
@@ -621,7 +659,7 @@ function render(){
   for(var i=0;i<b.length;i++) b[i].onclick=function(){cur=this.getAttribute('data-c');render()};
 }
 
-renderSky();renderPlaque();render();
+renderPlaque();render();
 </script>
 </body>
 </html>
