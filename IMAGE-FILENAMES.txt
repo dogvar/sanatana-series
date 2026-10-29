@@ -1,0 +1,10 @@
+All eight final images are provided in images/ with their exact website filenames. Upload both HTML files, CSS, and the images/ directory to the root of the GitHub Pages repository.
+
+sharad-purnima-hero.webp
+sharad-purnima-lakshmi.webp
+sharad-purnima-raas.webp
+sharad-purnima-kheer.webp
+sharad-purnima-regions.webp
+sharad-purnima-moon.webp
+sharad-purnima-family.webp
+sharad-purnima-greeting.webp
