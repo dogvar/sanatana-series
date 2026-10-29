@@ -1,0 +1,1 @@
+Karwa Chauth complete illustrated guide. Upload both HTML files, CSS file, and images/ folder to the root of your Sanatana Series GitHub Pages repository. The 8 WebP images are included and referenced in both HTML pages. The greeting image has no website branding.
