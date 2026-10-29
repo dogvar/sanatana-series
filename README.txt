@@ -1,28 +1,14 @@
-SANATANA SERIES — ALL 31 THUMBNAILS + WORKING CALENDAR
-===========================================================
-Upload to the ROOT of your GitHub Pages repository:
-  index.html
-  calendar.html
-  images/ (all included .webp files)
+SANATANA SERIES — HOMEPAGE + CALENDAR CORRECTION
 
-All 19 former placeholder-symbol thumbnails are now replaced with original
-subject-specific illustrated thumbnails, with distinct *-editorial.webp names
-to bypass stale browser caches. Existing other subject-specific thumbnails remain.
+Upload index.html and calendar.html to the GitHub Pages repository root. Upload images/ if you have not already uploaded the previous subject-matched thumbnails.
 
-Calendar navigation:
-  The link already points to calendar.html. It was not included in the earlier
-  homepage-only ZIP, which could cause a 404 if that file was not deployed.
-  This package includes the original calendar.html from your repository archive.
-  The calendar is a STATIC page; it does not require external synchronization.
+Corrections:
+- Stylish and enlarged Hindi wordmark using Yatra One.
+- Replaces Always in season with Timeless wisdom.
+- Full-width responsive dark calendar with monthly navigation, today highlight and festival list.
+- Corrected October 2026 dates, including Dussehra Oct 20, Sharad Purnima Oct 25, Karwa Chauth Oct 29.
+- Verified selected Oct-Nov 2026 dates, external city-specific live panchang for full information.
+- Calendar automatically shows current month but is NOT a live panchang calculation service.
+- Some festival dates differ between India and Netherlands. Please verify locally.
 
-Important: This ZIP changes only homepage assets and calendar.html, not the
-underlying 31 individual guide pages. Uploading the ZIP cannot make any
-not-yet-published guide page exist. Do not delete existing guide pages.
-
-Visual editorial notes:
-  - Mahavir Jayanti: Jain marble Tirthankara image
-  - Gayatri Mantra: retained Gayatri devotional depiction
-  - Shravan: Shiva linga abhishekam
-  - Pitru Paksha: tarpan by the river
-  - Hindu Calendar: traditional panchang/astronomy manuscripts
-  - Festival Card Maker: artisans decorating greeting cards
+Sources: Drik Panchang Hindu Calendar 2026 and desi.net Rotterdam / Amsterdam.

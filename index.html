@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://dogvar.github.io/sanatana-series/"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Noto+Serif+Devanagari:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
 <style>
 /* ══════════════════════════════════════════════
    Sanatana Series
@@ -232,6 +232,13 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 }
 @media(max-width:420px){.hero-inner{padding-top:145px}.hero .plaque-mark{display:none}}
 
+
+/* The Hindi wordmark is a co-equal brand element, not a tiny prefix. */
+.logo{align-items:center;gap:14px}
+.logo .dv{font-family:'Yatra One','Noto Serif Devanagari',serif;font-size:27px;line-height:1.15;letter-spacing:.015em;color:#e8c765;text-shadow:0 0 16px rgba(201,162,39,.14)}
+.logo .en{font-size:19px;letter-spacing:.085em}
+@media(max-width:760px){.logo{gap:7px}.logo .dv{font-size:21px}.logo .en{font-size:13px;letter-spacing:.035em}}
+@media(max-width:390px){.logo .dv{font-size:19px}.logo .en{font-size:11px}.mast nav .sub{padding:8px 9px}}
 </style>
 </head>
 <body>
@@ -239,7 +246,7 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 <header class="mast">
   <div class="wrap">
     <a class="logo" href="index.html">
-      <span class="dv">सनातन</span><span class="en">Sanatana Series</span>
+      <span class="dv" lang="hi">सनातन</span><span class="en">Sanatana Series</span>
     </a>
     <nav>
       <a href="calendar.html">Calendar</a>
@@ -639,7 +646,7 @@ function render(){
   var secs=[
     {t:'Happening now',p:'Observed at this moment',it:by('now').sort(asc),lead:1},
     {t:'Coming up',p:'The next festivals of the year',it:by('soon').sort(asc),lead:1},
-    {t:'Always in season',p:'Scripture, mantra, daily practice and reference',it:by('ever')},
+    {t:'Timeless wisdom',p:'Scriptures, epics, mantras and practices to explore anytime',it:by('ever')},
     {t:'Earlier this year',p:'Already passed, still worth reading',it:by('past').sort(desc)}
   ].filter(function(x){return x.it.length});
 
