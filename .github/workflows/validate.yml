@@ -1,0 +1,52 @@
+name: Validate changed site pages
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  site-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate local links and image paths in changed HTML
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import html.parser, pathlib, re, subprocess, sys, urllib.parse
+          root = pathlib.Path.cwd()
+          base = subprocess.check_output(['git','merge-base','HEAD','origin/main'], text=True).strip()
+          changed = subprocess.check_output(['git','diff','--name-only','--diff-filter=ACMR',base,'HEAD'], text=True).splitlines()
+          pages = [pathlib.Path(p) for p in changed if p.lower().endswith(('.html','.htm'))]
+          class Parser(html.parser.HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.refs=[]
+              def handle_starttag(self,tag,attrs):
+                  attrs=dict(attrs)
+                  for key in ('src','href'):
+                      if key in attrs: self.refs.append((key,attrs[key]))
+          errors=[]
+          for page in pages:
+              if not page.is_file(): continue
+              parser=Parser(); parser.feed(page.read_text(encoding='utf-8'))
+              for key,value in parser.refs:
+                  if not value or value.startswith(('#','//','data:','mailto:','tel:','javascript:')): continue
+                  parsed=urllib.parse.urlsplit(value)
+                  if parsed.scheme or parsed.netloc: continue
+                  path=urllib.parse.unquote(parsed.path)
+                  if not path or path.startswith('/'): continue
+                  if '{' in path or '}' in path: continue
+                  target=(page.parent/path).resolve()
+                  if not target.is_relative_to(root) or not target.exists():
+                      errors.append(f'{page}: missing {key}={value}')
+          print(f'Checked {len(pages)} changed HTML page(s)')
+          if errors:
+              print('\n'.join(errors)); sys.exit(1)
+          print('Local link and image path check passed')
+          PY
