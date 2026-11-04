@@ -50,3 +50,5 @@ jobs:
               print('\n'.join(errors)); sys.exit(1)
           print('Local link and image path check passed')
           PY
+      - name: Validate bilingual festival guide structure and data links
+        run: python3 scripts/validate_festival_guides.py

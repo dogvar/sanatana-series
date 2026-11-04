@@ -16,6 +16,8 @@ The following English and Hindi pages are included in this repository:
 | Aarti Sangrah | [aartis.html](aartis.html) | [aartis-hi.html](aartis-hi.html) |
 | Adhik Maas | [adhik-maas.html](adhik-maas.html) | [adhik-maas-hi.html](adhik-maas-hi.html) |
 | Akshaya Tritiya | [akshaya-tritiya.html](akshaya-tritiya.html) | [akshaya-tritiya-hi.html](akshaya-tritiya-hi.html) |
+| Dhanteras 2026 | [dhanteras.html](dhanteras.html) | [dhanteras-hi.html](dhanteras-hi.html) |
+| Diwali 2026 (extended) | [diwali.html](diwali.html) | [diwali-hi.html](diwali-hi.html) |
 | Buddha Purnima | [buddha-purnima.html](buddha-purnima.html) | [buddha-purnima-hi.html](buddha-purnima-hi.html) |
 | Buddhism Across Asia | [buddhism-spread.html](buddhism-spread.html) | [buddhism-spread-hi.html](buddhism-spread-hi.html) |
 | Ganesh Chaturthi | [ganesh-chaturthi.html](ganesh-chaturthi.html) | [ganesh-chaturthi-hi.html](ganesh-chaturthi-hi.html) |
@@ -65,14 +67,21 @@ sanatana-og.png             General social-preview fallback
 README.md                   Project documentation
 ```
 
-## Publishing updates
+## Publishing illustrated festival guides
 
-1. Keep all HTML and CSS files in the repository root.
-2. Preserve the paths under `images/` and `images/guide-covers/`.
-3. Commit changes to the branch configured for GitHub Pages.
-4. Check the live site after deployment. Social platforms and browsers may cache old preview images; changing the image URL version can help refresh previews.
+The repository is the source of truth. Follow [AGENTS.md](AGENTS.md) and the repeatable [festival workflow](docs/festival-workflow.md). Work on a feature branch and open a **draft PR**. The owner reviews and merges; GitHub Pages uses its existing deployment setup. Do not push content directly to `main` or replace the site with an older ZIP.
 
-**Do not upload a ZIP archive as the website.** Extract the publishing ZIP and commit its contents while preserving the folder structure.
+- Review comparable English/Hindi pages and preserve current navigation, images and styling.
+- Record city, year, timezone, source and verification date in a [date evidence file](docs/festival-dates-2026.md). Festival dates, ritual windows and temple events are different facts.
+- Use original subject-matched artwork, localized alt text and an [asset provenance record](docs/festival-artwork-2026.json).
+- Link both editions from the homepage, related guides and verified calendar highlights.
+- Run `python3 scripts/validate_festival_guides.py` and the existing changed-page link check. Manually inspect mobile, tablet and desktop layouts before review.
+
+### Dhanteras and extended Diwali 2026
+
+These pages integrate selected prose from the owner's supplied November 2026 ZIP drafts. Neither guide existed on the default branch at the start of this change. Old homepage, calendar, CSS and images from the ZIPs were not copied over the repository. The Diwali draft was expanded with separate Bali Pratipada and regional chapters, fuller Hindi content and corrected date notes. New illustrations were generated for this change; see the provenance record for prompts and image paths.
+
+Amsterdam reference dates: Dhanteras **6 November**, Narak Chaturdashi **7 November** (bath observance varies), Lakshmi Puja **8 November**, Govardhan Puja **9 November** (local temple lists **10 November**), Bhai Dooj **10 November**. All published ritual windows are **CET (UTC+1), Amsterdam**. Independent local dates for Bali Pratipada and Gujarati New Year remain unverified and are not asserted. See the evidence file for sources and limitations. Mechanical checks do not establish religious accuracy.
 
 ## Updates and community
 
