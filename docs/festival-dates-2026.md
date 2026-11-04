@@ -1,6 +1,14 @@
 # Dhanteras and Diwali 2026 — date evidence
 
-Checked **4 November 2026**. Reference city: **Amsterdam, North Holland, Netherlands** (Drik geoname ID `2759794`). Zone: `Europe/Amsterdam`; the November dates below use **CET, UTC+1**. Times are local 24-hour clock times, not India times converted to CET. The pages print only the verified Dhanteras and Lakshmi Puja windows.
+## Current reader-facing reference (5 November 2026)
+
+The guides now address the global diaspora. Dhanteras **Friday 6 November** and Diwali **Sunday 8 November** were reverified using [Drik Dhanteras — New Delhi](https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?year=2026&geoname-id=1261481) and [Drik Lakshmi Puja — New Delhi](https://www.drikpanchang.com/festivals/lakshmipuja/festivals-lakshmipuja-timings.html?year=2026&geoname-id=1261481). The source city is disclosed as provenance, not as the reader’s location. No clock windows are displayed. The **Find your city’s date & timing** link opens the festival-specific 2026 panchang; the reader selects their own city there. The guide does not detect geolocation or recalculate dates.
+
+The Diwali sequence uses lunar tithis rather than presenting one city’s Gregorian dates as a worldwide schedule. The calendar continues to label its existing editorial reference separately.
+
+## Earlier location-specific research (archival; not displayed as guide timings)
+
+Checked **4 November 2026**. Reference city: **Amsterdam, North Holland, Netherlands** (Drik geoname ID `2759794`). Zone: `Europe/Amsterdam`; the November dates below use **CET, UTC+1**. Times are local 24-hour clock times, not India times converted to CET. These windows were displayed in the initial draft and removed from the reader-facing guides during the global-diaspora revision.
 
 | Observance | Amsterdam reference | Evidence / qualification |
 |---|---|---|

@@ -35,6 +35,10 @@ with sync_playwright() as p:
     page.locator('#next').click();assert 'December' in page.locator('#monthtitle').inner_text()
     page.locator('#prev').click();assert 'November' in page.locator('#monthtitle').inner_text()
    else:
+    assert 'year=2026' in page.locator('[data-local-panchang]').get_attribute('href')
+    assert page.locator('#when-title').count()==1
+    page.locator('#dates summary').click()
+    assert page.locator('#dates details').get_attribute('open') is not None
     other=name.replace('-hi','') if '-hi' in name else name.replace('.html','-hi.html')
     page.locator('nav.nav a[href="'+other+'"]').click();assert page.url.endswith(other)
     page.goto(args.base_url.rstrip('/')+'/'+name)

@@ -57,10 +57,13 @@ for slug in GUIDES:
             if u.fragment and target.suffix == '.html' and urllib.parse.unquote(u.fragment) not in parse(target).ids:
                 errors.append(f'{name}: missing anchor {ref}')
         text = p.path.read_text()
-        if '17:19–18:55' not in text or 'CET (UTC+1)' not in text:
-            errors.append(f'{name}: missing verified local Dhanteras window')
-        if slug == 'diwali' and '17:11–18:48' not in text:
-            errors.append(f'{name}: missing verified Lakshmi Puja window')
+        expected_date = ('8' if slug == 'diwali' else '6') + (' नवंबर 2026' if lang == 'hi' else ' November 2026')
+        if expected_date not in text or 'data-local-panchang' not in text:
+            errors.append(f'{name}: missing reference date or local panchang action')
+        if any(term in text for term in ('Amsterdam', 'एम्स्टर्डम', 'Netherlands', 'नीदरलैंड', 'CET')):
+            errors.append(f'{name}: unexpected country-specific guide framing')
+        if '1261481' not in text or 'year=2026' not in text:
+            errors.append(f'{name}: missing sourced 2026 reference')
         if re.search(r'TODO|Lorem ipsum|17:11–18:47|17:23–18:59', text):
             errors.append(f'{name}: placeholder or inherited unverified timing')
     if set(pair[0].ids) != set(pair[1].ids): errors.append(f'{slug}: bilingual section mismatch')
@@ -92,4 +95,4 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css):
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print('PASS: four guide pages, bilingual sections, anchors, local images, metadata alternates, verified windows and homepage/calendar data references')
+print('PASS: four guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')

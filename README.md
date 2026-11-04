@@ -81,7 +81,9 @@ The repository is the source of truth. Follow [AGENTS.md](AGENTS.md) and the rep
 
 These pages integrate selected prose from the owner's supplied November 2026 ZIP drafts. Neither guide existed on the default branch at the start of this change. Old homepage, calendar, CSS and images from the ZIPs were not copied over the repository. The Diwali draft was expanded with separate Bali Pratipada and regional chapters, fuller Hindi content and corrected date notes. New illustrations were generated for this change; see the provenance record for prompts and image paths.
 
-Amsterdam reference dates: Dhanteras **6 November**, Narak Chaturdashi **7 November** (bath observance varies), Lakshmi Puja **8 November**, Govardhan Puja **9 November** (local temple lists **10 November**), Bhai Dooj **10 November**. All published ritual windows are **CET (UTC+1), Amsterdam**. Independent local dates for Bali Pratipada and Gujarati New Year remain unverified and are not asserted. See the evidence file for sources and limitations. Mechanical checks do not establish religious accuracy.
+The guides address the global diaspora. Their redesigned **When** sections distinguish a sourced 2026 reference date, the lunar observance and a reader's local puja timing. Dhanteras is shown as **6 November** and Diwali as **8 November**, using Drik Panchang's New Delhi reference listings. Neither date is presented as an automatically localized result. Readers can open the festival-specific panchang, select their city and confirm 2026. Exact city-specific clock windows are not printed in the guides.
+
+The calendar retains its separately labeled Amsterdam editorial highlights; selecting an external lookup location does not recalculate that stored data. Earlier Netherlands research is preserved in the evidence file for traceability. Local observance and temple schedules still require confirmation.
 
 ## Updates and community
 

@@ -17,3 +17,7 @@ Use a new evidence file for each year. Recheck every city and regional observanc
 ## Optional automated browser QA
 
 Install Python Playwright in a virtual environment, then run `playwright install chromium` (or use an installed Chrome). Serve the checkout with `python3 -m http.server 8765 --bind 127.0.0.1` and run `python3 scripts/check_festival_layouts.py`. An installed browser can be selected with `--chrome /path/to/chrome`; a different local server with `--base-url`. The script freezes the browser date to 5 November 2026 for repeatable homepage/calendar behavior, checks all six affected pages at four widths, follows language links, checks keyboard skip links, and saves screenshots plus a JSON report. These browser tools are optional local dependencies; CI keeps the dependency-free checks.
+
+## Audience and date presentation
+
+Write for the global diaspora. Keep the guide’s opening and practical advice independent of one country. A When section separates a labeled, sourced annual reference date from its lunar observance and a clear path to local timing. Never imply that static HTML adjusts to the reader. A city-selection link should open the correct festival and year. If exact clock windows are shown in a future edition, label their city, date and timezone explicitly; do not silently infer location from a browser timezone. Preserve any location-specific research as editorial evidence rather than making it the guide’s identity.
