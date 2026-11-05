@@ -132,6 +132,42 @@
       "sha256": "cbc14d16dd248ad1b0fb982e3f8c43fcfcc4f19544009a295ff70d782b3f90c3",
       "source": "Original generation for this change; no external image or ZIP image used",
       "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/vessels-festival-2026.webp",
+      "subject": "vessels",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original landscape editorial painting for Sanatana Series, matching finely detailed Indian miniature-inspired devotional art with midnight indigo and warm lamp gold. Scene: Dhanteras preparations, modest polished brass and steel bowls and a kalash on a carved wooden counter, marigolds, rice, a clay diya on a brass tray, a parent and child thoughtfully choosing one useful vessel in a traditional artisan's shop. Warm dignified human moment, detailed metalwork, not ostentatious piles of gold. No text, prices, logos, watermark or modern branding. Wide composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "345051730ce2fea83f35add03acef8be5b6b9ddc8c3187b7ab25a353f6b5715f",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Visually reviewed for subject fit; interpretive artwork"
+    },
+    {
+      "path": "images/family-puja-festival-2026.webp",
+      "subject": "family-puja",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape Indian miniature-inspired editorial painting in midnight indigo and rich lamp gold for Sanatana Series. Scene: a multigenerational Indian diaspora family celebrating a gentle Diwali puja in a warm contemporary home that could be anywhere in the world. Grandparent, parents and children sit respectfully before a modest Lakshmi and Ganesha altar with flowers, fruit, sweets and one supervised clay lamp on a brass tray. An adult gently guides a child offering flowers; other hands in namaste. Rangoli near a doorway, indigo evening at the window, subtle elegant textile borders. Clear culturally respectful details, natural anatomy, no identifiable country or city, no excessive luxury, no text or watermark.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "67eab7e47d3f0198f47264eec7e227bc5039b173343de3e423df3a9f8791430c",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Visually reviewed for subject fit; interpretive artwork"
+    },
+    {
+      "path": "images/regional-diwali-festival-2026.webp",
+      "subject": "regional-diwali",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape editorial triptych painting for Sanatana Series, three clearly distinct scenes framed by delicate gold Indian miniature arches, consistent midnight indigo and warm lamp gold palette, highly detailed hand-painted texture. Left: Bengali Kali Puja, devotees offering lamps in a decorated pandal with a respectful traditional Kali shrine visible in the distance, goddess dark blue with four arms and red tongue, non-graphic traditional iconography. Center: a South Indian household courtyard with a woman drawing white rice-flour kolam and relatives setting brass lamps near the threshold. Right: a Maharashtrian home with an illuminated colorful paper akash kandil, marigold toran and earthen lamps, family sharing sweets. Keep scenes distinct rather than blending rituals into one mandatory tradition. Dignified, culturally informed, no fireworks, no city landmarks, no writing, no logos, no watermark.",
+      "width": 1774,
+      "height": 887,
+      "sha256": "b8f27ff2aaa6689282ffc484d337e0f827085b64efd6edd2e0063e2d1cdf58e3",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Visually reviewed for subject fit; interpretive artwork"
     }
   ]
 }

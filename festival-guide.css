@@ -84,3 +84,10 @@ body.hi .eyebrow{font-family:'DM Sans',sans-serif}
 .when details p{color:var(--muted);margin-bottom:0}
 body.hi .when-date{font-family:'Noto Serif Devanagari',serif;line-height:1.7}
 @media(max-width:500px){.when h2{font-size:29px}.when-cta{display:block;text-align:center}}
+
+/* An illustrated overview of the Diwali season. */
+.dates>.festival-day{padding:0;overflow:hidden;background:var(--panel)}
+.festival-day>img{display:block;width:100%;height:145px;object-fit:cover;object-position:center 35%;border:0;border-bottom:1px solid var(--line);border-radius:0}
+.festival-day-label{padding:14px 16px;color:var(--muted)}
+.festival-day-label strong{margin-bottom:5px}
+@media(max-width:500px){.festival-day>img{height:170px}}
