@@ -1,0 +1,239 @@
+{
+  "tool": "Built-in imagegen; optimized to WebP with Pillow",
+  "assets": [
+    {
+      "path": "images/samudra-manthan-2026.webp",
+      "subject": "ocean",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Create an original wide landscape Indian devotional editorial painting for Sanatana Series. Scene: Samudra Manthan, devas and asuras on opposite shores pulling the single serpent Vasuki wrapped around Mandara mountain, Vishnu's Kurma tortoise supporting the mountain in the milky ocean. Respectful culturally informed miniature-inspired painterly art, midnight indigo and warm gold, rich fine detail, no text, no watermark, no modern objects, no violence. Horizontal image.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d30c5f503a76b521a9b3450fd734ec478563beb18ea161000fccdd0a38c8d081",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/dhanvantari-2026.webp",
+      "subject": "dhanvantari",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Lord Dhanvantari emerging from the milky ocean carrying a golden pot of amrita, serene divine physician with four arms holding conch, discus, medicinal leech and pot, traditional dhoti and crown. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f4a55bb11cc02d025259203c1dbaf0f3899a18819b866dabf4ad03e19307df3a",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/hima-vigil-2026-architecture-v2.webp",
+      "subject": "hima",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. Replace the ornate cusped palace doorway and distant domed pavilion in the King Hima household folk scene with a dignified Indian timber-and-stone veranda: carved square posts, straight lintels, rectangular door openings, warm lime-plaster walls, and a simple pitched-roof garden pavilion. Keep a lotus floral border that is clearly painted ornament, not a palace arch. Preserve the bride, prince, serpent, metal vessels and oil lamps exactly.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2be93ca5750453ec342ad09a7822db7216169304690f94cf3468c236b5f578b2",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/hima-vigil-2026.webp",
+          "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. The regional folk tale of King Hima's son: a young bride sits telling stories to her awake husband inside a lamplit palace doorway, gold and silver vessels near the threshold, a single non-threatening serpent pauses outside in the night. No deity figures. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+          "width": 1536,
+          "height": 1024,
+          "sha256": "5ba104dd64d0cdc622a6170185d064d1ed7a14915a250772a9ee3eb47703e023",
+          "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/yama-deepam-2026.webp",
+      "subject": "yama",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Dhanteras Yama Deepam: a single clay oil lamp burns on a safe stone threshold of a traditional Indian home at dusk, rangoli and flower petals, a family praying in the background. No depiction of Yama. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7175364ddccc43a8827900d566ae59ee50cf169eaf4d35371c72fab0daf71def",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/lakshmi-puja-2026.webp",
+      "subject": "lakshmi",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Lakshmi seated on a pink lotus, four arms with upper hands holding lotuses and lower hands in blessing and generosity, red sari and gold ornaments, Ganesha beside her on a separate seat, lamps and modest offerings, dignified domestic Diwali altar. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "47fb0c31d5f432599d12c9f87c570a493ee8982b1c0ce17d613f23068037a0b6",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/rama-ayodhya-2026-architecture-v2.webp",
+      "subject": "rama",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. For Rama's imagined Ayodhya homecoming, replace the entire distant central gateway and all domed pavilions and cusped galleries with an imagined early Indian timber-and-stone city: straight post-and-lintel gateways, pillared verandas, rectangular doorways, simple pitched or tiered roofs, and modest curvilinear North Indian temple shikharas with amalaka/kalasha tops in the distance. Do not copy the modern Ayodhya temple or any named monument. Preserve Rama, Sita, Lakshmana, Hanuman and the welcoming crowd exactly. Keep the rows of lamps.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "11d4d6cbec9c18fc69534c366a44c4e7ec3a3304c46da67aac7c00cc7a1929d4",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/rama-ayodhya-2026.webp",
+          "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Rama with blue complexion and bow, Sita in a red sari and Lakshmana with bow returning together to Ayodhya, Hanuman humbly accompanying them, townspeople welcoming them with rows of earthen lamps in an imagined ancient Indian city. No modern landmarks. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+          "width": 1672,
+          "height": 941,
+          "sha256": "9210afcd58f037003c9275632ba1925c128cf84711fd004fc9033941bf91bc23",
+          "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/narakasura-2026-architecture-v2.webp",
+      "subject": "narakasura",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. Replace Narakasura's domed Mughal-looking hill fort with an imagined ancient northeastern Indian fortified settlement: timber palisades, masonry ramparts, a broad rectangular post-and-lintel gateway and simple timber structures with pitched roofs following the hillside. No new deity or monumental temple is required in this asura city. Preserve Krishna, Satyabhama, Garuda, the rescued people, dawn landscape and their exact placement.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "275c07b75832c017b9ff9f4eac70d0f15597bfe3aff578e25a1b6d3658b777e3",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/narakasura-2026.webp",
+          "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Krishna and Satyabhama seated together on Garuda in the sky outside Narakasura's fortified city at dawn, Krishna holds the sudarshana discus, distant city gates open and liberated people emerge. Respectful narrative image, no blood, no graphic combat. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+          "width": 1672,
+          "height": 941,
+          "sha256": "8df9f053a4f44fdaa061feee8e62b951ea50559ef3322d9a899b835f7466318c",
+          "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/govardhan-2026.webp",
+      "subject": "govardhan",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Youthful blue Krishna with peacock feather and yellow dhoti raising Govardhan Hill on the little finger of his left hand, entire hill visible like a shelter, villagers and cows safely beneath during monsoon rain. No extra limbs. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1f5a54691848691a760d608c4386a3f14d900a8c9d7a503d50e5f0fe5285c8cc",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/annakut-2026.webp",
+      "subject": "annakut",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Annakut in a traditional Vaishnava temple: a carefully arranged mountain of vegetarian rice, sweets, fruits and vegetables before a small Krishna shrine, devotees preparing to share prasad, no meat or alcohol. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a5ba65af28423ffbb3ed1e5751c8bcfa3a907f58069542bd65e065a7fd8d5dac",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/vamana-bali-2026.webp",
+      "subject": "bali",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Vamana as a young diminutive brahmin with sacred thread, simple dhoti and parasol, receiving King Bali's gift at a traditional ritual pavilion. Bali pours water from a small vessel into Vamana's hand as a promise, respectful expressions. No crushing or violence. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "982144e24df87525a900c216c79d06bc48de792b9dd103c3bd1749c9c25346f0",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+    },
+    {
+      "path": "images/yama-yamuna-2026-architecture-v2.webp",
+      "subject": "bhai-dooj",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. For Yamuna welcoming Yama, replace the domed river pavilions and scalloped stone canopy with an open Hindu ritual mandapa beside river steps: carved stone pillars carrying straight lintels and a small pyramidal or pitched canopy, with distant curvilinear temple shikharas among trees. Keep Yamuna applying tilak, Yama's peaceful face and crown, the thali, flowers, moonlit river and all foreground figures exactly.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "dc5f0d46428263cda18f095813e32cd2b4a558e9930c1ee40c61a924c1d356c2",
+      "source": "Original generation for this change; no external image or ZIP image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/yama-yamuna-2026.webp",
+          "prompt": "Use case: illustration-story. Original wide landscape devotional editorial painting for a bilingual Hindu festival guide. Yamuna welcomes her brother Yama in a gentle traditional devotional scene for Yama Dwitiya: Yamuna applies tilak to crowned Yama seated peacefully, a brass plate with sweets, flowers and diya, river courtyard background. Yama has warm brown complexion, traditional red and gold garments, no scary imagery. Style: culturally informed Indian miniature-inspired painterly illustration, midnight indigo, warm lamp gold and rich jewel colors, finely detailed, readable faces and hands, no writing, no watermark, no modern objects. Horizontal composition.",
+          "width": 1672,
+          "height": 941,
+          "sha256": "cbc14d16dd248ad1b0fb982e3f8c43fcfcc4f19544009a295ff70d782b3f90c3",
+          "review": "Visually reviewed for story fit; interpretive art, with owner cultural review requested before merge"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/vessels-festival-2026-architecture-v2.webp",
+      "subject": "vessels",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. Change the Dhanteras utensil shop from a cusped palace interior into a modest regional Indian craft shop with teak square posts and straight beams, a rectangular opening, wooden shelves, lime-plaster walls and a sloping tiled roof outside. Through the opening show a simple courtyard and a small distant Hindu temple shikhara rather than domed pavilions. Preserve the parent, child, artisan, selected bowl, kalash, metal vessels, flowers and diya exactly.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "27ec79ca20c933ea2f710b6afc8638d19c5e63d71d9f577286acec75664b437a",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/vessels-festival-2026.webp",
+          "prompt": "Use case: illustration-story. Original landscape editorial painting for Sanatana Series, matching finely detailed Indian miniature-inspired devotional art with midnight indigo and warm lamp gold. Scene: Dhanteras preparations, modest polished brass and steel bowls and a kalash on a carved wooden counter, marigolds, rice, a clay diya on a brass tray, a parent and child thoughtfully choosing one useful vessel in a traditional artisan's shop. Warm dignified human moment, detailed metalwork, not ostentatious piles of gold. No text, prices, logos, watermark or modern branding. Wide composition.",
+          "width": 1672,
+          "height": 941,
+          "sha256": "345051730ce2fea83f35add03acef8be5b6b9ddc8c3187b7ab25a353f6b5715f",
+          "review": "Visually reviewed for subject fit; interpretive artwork"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/family-puja-festival-2026.webp",
+      "subject": "family-puja",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen",
+      "prompt": "Use case: illustration-story. Original wide landscape Indian miniature-inspired editorial painting in midnight indigo and rich lamp gold for Sanatana Series. Scene: a multigenerational Indian diaspora family celebrating a gentle Diwali puja in a warm contemporary home that could be anywhere in the world. Grandparent, parents and children sit respectfully before a modest Lakshmi and Ganesha altar with flowers, fruit, sweets and one supervised clay lamp on a brass tray. An adult gently guides a child offering flowers; other hands in namaste. Rangoli near a doorway, indigo evening at the window, subtle elegant textile borders. Clear culturally respectful details, natural anatomy, no identifiable country or city, no excessive luxury, no text or watermark.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "67eab7e47d3f0198f47264eec7e227bc5039b173343de3e423df3a9f8791430c",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Visually reviewed for subject fit; interpretive artwork"
+    },
+    {
+      "path": "images/regional-diwali-festival-2026-architecture-v2.webp",
+      "subject": "regional-diwali",
+      "created": "2026-11-05",
+      "method": "OpenAI built-in imagegen edit of original illustration",
+      "prompt": "Edit only the architectural environment and decorative architectural framing in this illustration. Preserve the main people/deities, faces, poses, clothing, religious attributes, lamps, foreground actions, painterly texture, composition, landscape format and indigo/gold palette. Use deliberate region-appropriate Hindu temple or vernacular domestic visual references. Do not add mosques, minarets, crescent finials, onion domes, Mughal-style fort facades, cusped palace portals or generic Islamic-palace scenery. Do not treat all decorative curves as religious architecture. Do not add text. This remains interpretive devotional art, not a claimed archaeological reconstruction. Change ONLY the three large cusped-arch triptych framing shapes into straight rectangular panels separated by slender gold floral borders with lotus and leaf motifs. Do not change the Bengali Kali Puja shrine and devotees, South Indian tiled-roof courtyard and kolam, or Maharashtrian wooden home, lantern and family. Preserve each region's existing domestic architecture; no generic palace arches across these three different settings. Keep the three scenes distinct.",
+      "width": 1774,
+      "height": 887,
+      "sha256": "1f13b83e002769e2a3ff9746b87266bd662059fdc46db5d5c9f1c8af85c041e4",
+      "source": "Original generation for this guide expansion; no external image used",
+      "review": "Architecture and framing visually reviewed for story/region fit; interpretive, not an archaeological reconstruction",
+      "previousVersions": [
+        {
+          "path": "images/regional-diwali-festival-2026.webp",
+          "prompt": "Use case: illustration-story. Original wide landscape editorial triptych painting for Sanatana Series, three clearly distinct scenes framed by delicate gold Indian miniature arches, consistent midnight indigo and warm lamp gold palette, highly detailed hand-painted texture. Left: Bengali Kali Puja, devotees offering lamps in a decorated pandal with a respectful traditional Kali shrine visible in the distance, goddess dark blue with four arms and red tongue, non-graphic traditional iconography. Center: a South Indian household courtyard with a woman drawing white rice-flour kolam and relatives setting brass lamps near the threshold. Right: a Maharashtrian home with an illuminated colorful paper akash kandil, marigold toran and earthen lamps, family sharing sweets. Keep scenes distinct rather than blending rituals into one mandatory tradition. Dignified, culturally informed, no fireworks, no city landmarks, no writing, no logos, no watermark.",
+          "width": 1774,
+          "height": 887,
+          "sha256": "b8f27ff2aaa6689282ffc484d337e0f827085b64efd6edd2e0063e2d1cdf58e3",
+          "review": "Visually reviewed for subject fit; interpretive artwork"
+        }
+      ],
+      "architectureReview": "docs/illustration-architecture-review.md"
+    }
+  ]
+}

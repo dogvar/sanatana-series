@@ -378,6 +378,15 @@ var G=[
   img:'images/ahoi-family.webp',
   d:'The story of Syahu and her young, the youngest daughter-in-law and Surahi, the evening puja, and prayers for children.'},
 
+ {c:'festivals',h:'dhanteras.html',hi:'dhanteras-hi.html',s:'2026-11-06',
+  k:'Health and prosperity',t:'Dhanteras',dv:'धनतेरस',motif:'lamp',hue:42,
+  img:'images/dhanvantari-2026.webp',
+  d:'Dhanvantari, the churning ocean, the Yama lamp and the meaning of wealth. Festival dates and guidance for celebrating wherever you live.'},
+ {c:'festivals',h:'diwali.html',hi:'diwali-hi.html',s:'2026-11-08',
+  k:'The festival of lights',t:'Diwali',dv:'दीपावली',motif:'lamp',hue:35,
+  img:'images/rama-ayodhya-2026-architecture-v2.webp',
+  d:'The full Diwali season: Naraka, Rama, Lakshmi Puja, Govardhan, Annakut, Bali and Bhai Dooj. Regional dates explained.'},
+
  {c:'epics',h:'gita.html',hi:'gita-hi.html',ever:1,k:'Scripture',t:'Bhagavad Gita',dv:'भगवद्गीता',
   motif:'chakra',hue:214,
   d:'Eighteen chapters, seven hundred verses. Arjuna\u2019s question and the answer given between two armies.',img:'images/gita-index.webp'},
@@ -635,12 +644,13 @@ function banner(g){
   var s0=st(g),tag='';
   if(s0==='now') tag='<span class="plate-tag now">Happening now</span>';
   else if(s0==='soon') tag='<span class="plate-tag">'+word(g)+'</span>';
-  return '<a class="banner" href="'+g.h+'">'+
-    '<span class="plate">'+(g.img?'<img src="'+g.img+'" alt="">':plate(g,16/10))+tag+'</span>'+
-    '<span class="banner-body"><span class="kicker">'+g.k+'</span>'+
-    '<h3>'+g.t+'</h3><span class="t-dv">'+g.dv+'</span>'+
+  return '<article class="banner">'+
+    '<a class="plate" href="'+g.h+'">'+(g.img?'<img src="'+g.img+'" alt="Illustration for '+g.t+'">':plate(g,16/10))+tag+'</a>'+
+    '<div class="banner-body"><span class="kicker">'+g.k+'</span>'+
+    '<h3><a href="'+g.h+'">'+g.t+'</a></h3><span class="t-dv">'+g.dv+'</span>'+
     (g.ever?'':'<span class="t-date">'+span(g)+'</span>')+
-    '<p>'+g.d+'</p></span></a>';
+    '<p>'+g.d+'</p><div class="t-langs"><a href="'+g.h+'">English</a>'+
+    (g.hi?'<a class="dv" lang="hi" href="'+g.hi+'">हिंदी</a>':'')+'</div></div></article>';
 }
 
 function render(){

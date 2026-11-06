@@ -1,0 +1,130 @@
+[
+  {
+    "page": "dhanteras",
+    "width": 360,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras-hi",
+    "width": 360,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali",
+    "width": 360,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali-hi",
+    "width": 360,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras",
+    "width": 390,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras-hi",
+    "width": 390,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali",
+    "width": 390,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali-hi",
+    "width": 390,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras",
+    "width": 768,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras-hi",
+    "width": 768,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali",
+    "width": 768,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali-hi",
+    "width": 768,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras",
+    "width": 1440,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "dhanteras-hi",
+    "width": 1440,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 8,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali",
+    "width": 1440,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  },
+  {
+    "page": "diwali-hi",
+    "width": 1440,
+    "overflow": false,
+    "brokenImages": [],
+    "imageCount": 16,
+    "jsErrors": []
+  }
+]
