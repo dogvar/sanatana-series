@@ -20,3 +20,5 @@ Validation completed 5 November 2026. The global-diaspora revision replaces the 
 - Unrelated existing calendar dates were preserved, not re-audited. Temple schedules can change.
 
 No merge, Pages deployment, publication or default-branch write is part of this change.
+
+Architectural review: six generic palace/backdrop or framing treatments were revised using versioned images; original assets are retained. See [architecture review](illustration-architecture-review.md) for scope, sources and limits.
