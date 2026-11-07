@@ -85,6 +85,10 @@ The guides address the global diaspora. Their redesigned **When** sections disti
 
 The calendar retains its separately labeled Amsterdam editorial highlights; selecting an external lookup location does not recalculate that stored data. Earlier Netherlands research is preserved in the evidence file for traceability. Local observance and temple schedules still require confirmation.
 
+### Heritage editorial design (draft)
+
+The proposed visual refresh preserves the published English/Hindi text, links, metadata and date guidance while improving frontispieces, chapter compositions, typography and mobile reading. See [design notes, artwork review, validation and screenshots](docs/redesign/README.md). It is prepared on a separate branch for review.
+
 ## Updates and community
 
 A WhatsApp group or channel may be added later for new guides and festival reminders. No WhatsApp invitation link is configured here yet. A newsletter link may also be offered separately; the static website does not itself provide an email-subscription backend.

@@ -1,0 +1,37 @@
+{
+  "base": "a91b268abd19a61269c38d8d12f93c2ff8f447bb",
+  "preserved": [
+    {
+      "page": "dhanteras.html",
+      "original_text_blocks": 53,
+      "original_links": 27,
+      "original_images": 8,
+      "metadata": "unchanged",
+      "date_guidance": "unchanged"
+    },
+    {
+      "page": "dhanteras-hi.html",
+      "original_text_blocks": 53,
+      "original_links": 27,
+      "original_images": 8,
+      "metadata": "unchanged",
+      "date_guidance": "unchanged"
+    },
+    {
+      "page": "diwali.html",
+      "original_text_blocks": 84,
+      "original_links": 43,
+      "original_images": 16,
+      "metadata": "unchanged",
+      "date_guidance": "unchanged"
+    },
+    {
+      "page": "diwali-hi.html",
+      "original_text_blocks": 84,
+      "original_links": 43,
+      "original_images": 16,
+      "metadata": "unchanged",
+      "date_guidance": "unchanged"
+    }
+  ]
+}

@@ -234,6 +234,18 @@
         }
       ],
       "architectureReview": "docs/illustration-architecture-review.md"
+    },
+    {
+      "path": "images/dhanteras-ritual-still-life-2026.webp",
+      "subject": "Dhanteras vessels, silver, flowers and diyas",
+      "created": "2026-11-07",
+      "method": "OpenAI built-in imagegen; optimized to WebP with Pillow",
+      "prompt": "Use case: illustration-story. Asset: a luxurious, culturally grounded Dhanteras editorial still life, wide landscape 3:2 composition for Sanatana Series. On a dark polished stone household puja surface place a carefully composed modest brass kalash with mango leaves, two beautifully worked brass bowls, a few plain silver coins with subtle lotus embossing (no letters or numerals), scattered marigold and jasmine flowers and two small earthen diyas on safe metal saucers. Restrained vermilion kumkum in a small bowl, warm ivory woven textile partly beneath vessels. No people, no deity statues, no architecture or palace arches, no text. Indian devotional manuscript and museum still-life painting, tactile brushwork, luminous warm lamp gold against midnight indigo and saffron, exquisite realistic metal patina and soft shadows. Objects must feel cared for, useful and attainable rather than extravagant piles of wealth. No photography, no logos or watermark. Keep all principal objects fully visible with generous quiet space.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e087253b01396b10cd7e48f3319da6fd37fe2065be90c8f952f15fa59df16679",
+      "source": "Original generation; supplements the existing artisan illustration",
+      "review": "Visually reviewed: subject matches the purchase section; no architecture or deity iconography. Interpretive illustration, not a ritual prescription."
     }
   ]
 }
