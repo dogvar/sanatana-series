@@ -85,9 +85,9 @@ The guides address the global diaspora. Their redesigned **When** sections disti
 
 The calendar retains its separately labeled Amsterdam editorial highlights; selecting an external lookup location does not recalculate that stored data. Earlier Netherlands research is preserved in the evidence file for traceability. Local observance and temple schedules still require confirmation.
 
-### Heritage editorial design (draft)
+### Heritage editorial design
 
-The proposed visual refresh preserves the published English/Hindi text, links, metadata and date guidance while improving frontispieces, chapter compositions, typography and mobile reading. See [design notes, artwork review, validation and screenshots](docs/redesign/README.md). It is prepared on a separate branch for review.
+The visual refresh preserves the published English/Hindi text, links, metadata and date guidance while improving frontispieces, chapter compositions, typography and mobile reading. See [design notes, artwork review, validation and screenshots](docs/redesign/README.md). Deepavali has its own rangoli-inspired margin pattern and diya separators; Dhanteras retains its approved design.
 
 ## Updates and community
 

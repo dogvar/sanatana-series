@@ -1542,7 +1542,66 @@ body.hi .purchase-label strong {
     transition:none
   }
 }
+/* Deepavali identity: welcoming rangoli in the margins and a lamp at each threshold.
+   Every selector is scoped so the approved Dhanteras design remains unchanged. */
+body.guide-diwali {
+  position:relative;
+  isolation:isolate;
+}
+body.guide-diwali::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:url('images/ornaments/diwali-rangoli.svg') 0 20px/224px 224px repeat;
+  opacity:.14;
+  -webkit-mask-image:linear-gradient(to right,#000,transparent 16%,transparent 84%,#000);
+  mask-image:linear-gradient(to right,#000,transparent 16%,transparent 84%,#000);
+}
+.guide-diwali .hero-symbol,
+.guide-diwali .chapter-mark {
+  -webkit-mask-image:url('images/ornaments/diwali-diya.svg');
+  mask-image:url('images/ornaments/diwali-diya.svg');
+}
+.guide-diwali .hero-symbol {
+  width:96px;
+  height:39px;
+}
+.guide-diwali .hero-art::after {
+  content:"";
+  position:absolute;
+  inset:-14px;
+  pointer-events:none;
+  background:linear-gradient(var(--gold),var(--gold)) top left/26px 1px no-repeat,
+    linear-gradient(var(--gold),var(--gold)) top left/1px 26px no-repeat,
+    linear-gradient(var(--gold),var(--gold)) bottom right/26px 1px no-repeat,
+    linear-gradient(var(--gold),var(--gold)) bottom right/1px 26px no-repeat;
+  opacity:.8;
+}
+.guide-diwali .chapter::after {
+  content:"";
+  position:absolute;
+  width:190px;
+  height:35px;
+  bottom:-18px;
+  left:50%;
+  transform:translateX(-50%);
+  pointer-events:none;
+  background:var(--night) url('images/ornaments/diwali-divider.svg') center/contain no-repeat;
+}
+@media(max-width:760px) {
+  body.guide-diwali::before {
+    background-size:112px 112px;
+    opacity:.14;
+    -webkit-mask-image:linear-gradient(to right,#000,transparent 7%,transparent 93%,#000);
+    mask-image:linear-gradient(to right,#000,transparent 7%,transparent 93%,#000);
+  }
+  .guide-diwali .hero-art::after { inset:-10px; }
+  .guide-diwali .chapter::after { width:152px; height:28px; bottom:-14px; }
+}
 @media print {
+  body.guide-diwali::before,.guide-diwali .chapter::after,.guide-diwali .hero-art::after { display:none; }
   body {
     background:white;
     color:#222

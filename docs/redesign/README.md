@@ -37,7 +37,7 @@ Keyboard focus is visible, the skip link and bilingual switch remain functional,
 - Desktop/mobile screenshots were visually reviewed for all four heroes plus representative chapters and the purchase section. Iteration increased small caption sizes, enlarged navigation targets moved fonts to local hosting, and corrected Devanagari chapter-number wrapping.
 - `git diff --check`: passed.
 
-No known automated failures remain. Browser review used installed Chrome; Safari/Firefox and screen-reader testing were not performed. This is a draft for owner visual review, with no merge or deployment.
+No known automated failures remain. Browser review used installed Chrome; Safari/Firefox and screen-reader testing were not performed. The owner approved publication on 7 November 2026 after requesting a distinct Deepavali pattern treatment and asking that Dhanteras stay unchanged. Publication follows the existing GitHub Pages setup through PR #3.
 
 Reproduce from a local HTTP preview on port 8765 (install Playwright in your Python environment; pass `--chrome` for an installed browser if necessary):
 
@@ -60,3 +60,12 @@ python3 scripts/check_festival_design.py
 ![Dhanteras purchase still life](screenshots/dhanteras-purchase-1440.webp)
 
 Additional Hindi close-ups: [Sanskrit reflection and chapter typography](screenshots/dhanteras-hi-details.webp) · [date panel and sequence](screenshots/diwali-hi-details.webp).
+
+## Deepavali-specific ornament · approved publication refinement
+
+Both Deepavali language versions now have original, lightweight SVG rangoli-inspired floral geometry in the outer margins, a diya motif in chapter headings and the hero, fine corner details around the frontispiece, and lamp-and-flower chapter separators. These are decorative designs, not sacred diagrams or claims to reproduce a particular regional tradition. The motifs reflect welcoming thresholds and lamplight; no deity or sacred syllable is used as wallpaper. The pattern was reduced in contrast and spaced more generously after desktop review. Mobile keeps it at the extreme edges.
+
+All new CSS selectors are scoped to `guide-diwali`. Neither Dhanteras HTML file nor its artwork was changed. Full-page screenshot comparisons of English and Hindi Dhanteras at 1440px and 390px are pixel-identical to the approved design: [comparison results](dhanteras-unchanged-check.json). All original prose, links, dates and SEO metadata remain unchanged in all four guides.
+
+![Deepavali chapter separator](screenshots/diwali-patterns-divider-1440.webp)
+![Deepavali Hindi mobile patterns](screenshots/diwali-hi-390.webp)
