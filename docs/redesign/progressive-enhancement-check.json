@@ -1,0 +1,74 @@
+[
+  {
+    "page": "dhanteras",
+    "javascript": true,
+    "width": 320,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "n/a"
+  },
+  {
+    "page": "dhanteras-hi",
+    "javascript": true,
+    "width": 320,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "n/a"
+  },
+  {
+    "page": "diwali",
+    "javascript": true,
+    "width": 320,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "n/a"
+  },
+  {
+    "page": "diwali-hi",
+    "javascript": true,
+    "width": 320,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "n/a"
+  },
+  {
+    "page": "dhanteras",
+    "javascript": false,
+    "width": 390,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "pass"
+  },
+  {
+    "page": "dhanteras-hi",
+    "javascript": false,
+    "width": 390,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "pass"
+  },
+  {
+    "page": "diwali",
+    "javascript": false,
+    "width": 390,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "pass"
+  },
+  {
+    "page": "diwali-hi",
+    "javascript": false,
+    "width": 390,
+    "overflow": false,
+    "reducedMotion": "pass",
+    "localAssets": "pass",
+    "noJsContents": "pass"
+  }
+]
