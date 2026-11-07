@@ -22,7 +22,7 @@ with sync_playwright() as p:
    pg=ctx.new_page();bad=[];pg.on('response',lambda response:bad.append(response.url) if response.status>=400 else None)
    pg.goto(base+name+'.html');pg.evaluate('document.fonts.ready')
    assert pg.evaluate('getComputedStyle(document.documentElement).getPropertyValue("--night").trim()')=='#101722'
-   assert pg.locator('.chapter-index').evaluate_all('(items)=>items.every(e=>e.getBoundingClientRect().height<75)'),(name,'Wrapped chapter number')
+   assert pg.locator('.chapter-index').evaluate_all('(items)=>items.every(e=>{const r=document.createRange();r.selectNodeContents(e);return r.getClientRects().length===1})'),(name,'Wrapped chapter number')
    assert pg.evaluate('document.documentElement.scrollWidth<=innerWidth'),(name,js,'overflow')
    if not js:
     assert pg.locator('.toc-disclosure').get_attribute('open') is not None
