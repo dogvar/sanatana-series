@@ -1,0 +1,79 @@
+{
+  "browser": "Chrome via Playwright",
+  "checked": [
+    {
+      "page": "chhath-puja.html",
+      "width": 320,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja-hi.html",
+      "width": 320,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja.html",
+      "width": 390,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja-hi.html",
+      "width": 390,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja.html",
+      "width": 768,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja-hi.html",
+      "width": 768,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja.html",
+      "width": 1440,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    },
+    {
+      "page": "chhath-puja-hi.html",
+      "width": 1440,
+      "assets": 8,
+      "overflow": false,
+      "keyboardNavigation": "pass",
+      "consoleAndLocalResources": "pass",
+      "fonts": "pass"
+    }
+  ],
+  "homepageAndCalendarAtAllWidths": "pass",
+  "noJavaScript": "pass"
+}

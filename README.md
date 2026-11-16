@@ -18,6 +18,7 @@ The following English and Hindi pages are included in this repository:
 | Akshaya Tritiya | [akshaya-tritiya.html](akshaya-tritiya.html) | [akshaya-tritiya-hi.html](akshaya-tritiya-hi.html) |
 | Dhanteras 2026 | [dhanteras.html](dhanteras.html) | [dhanteras-hi.html](dhanteras-hi.html) |
 | Diwali 2026 (extended) | [diwali.html](diwali.html) | [diwali-hi.html](diwali-hi.html) |
+| Chhath Puja 2026 | [chhath-puja.html](chhath-puja.html) | [chhath-puja-hi.html](chhath-puja-hi.html) |
 | Buddha Purnima | [buddha-purnima.html](buddha-purnima.html) | [buddha-purnima-hi.html](buddha-purnima-hi.html) |
 | Buddhism Across Asia | [buddhism-spread.html](buddhism-spread.html) | [buddhism-spread-hi.html](buddhism-spread-hi.html) |
 | Ganesh Chaturthi | [ganesh-chaturthi.html](ganesh-chaturthi.html) | [ganesh-chaturthi-hi.html](ganesh-chaturthi-hi.html) |

@@ -8,7 +8,8 @@ import sys
 import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-GUIDES = ['dhanteras', 'diwali']
+REFERENCE_DATES = {'dhanteras': '6', 'diwali': '8', 'chhath-puja': '13–16'}
+CHHATH_DAYS = {'nahay-khay': '13', 'kharna': '14', 'sandhya-arghya': '15', 'usha-arghya': '16'}
 errors = []
 
 class Page(html.parser.HTMLParser):
@@ -36,7 +37,7 @@ def parse(path):
     if path not in cache: cache[path] = Page(path)
     return cache[path]
 
-for slug in GUIDES:
+for slug, reference_day in REFERENCE_DATES.items():
     pair = []
     for lang in ('en', 'hi'):
         name = slug + ('-hi' if lang == 'hi' else '') + '.html'
@@ -57,13 +58,22 @@ for slug in GUIDES:
             if u.fragment and target.suffix == '.html' and urllib.parse.unquote(u.fragment) not in parse(target).ids:
                 errors.append(f'{name}: missing anchor {ref}')
         text = p.path.read_text()
-        expected_date = ('8' if slug == 'diwali' else '6') + (' नवंबर 2026' if lang == 'hi' else ' November 2026')
+        expected_date = reference_day + (' नवंबर 2026' if lang == 'hi' else ' November 2026')
         if expected_date not in text or 'data-local-panchang' not in text:
             errors.append(f'{name}: missing reference date or local panchang action')
-        if any(term in text for term in ('Amsterdam', 'एम्स्टर्डम', 'Netherlands', 'नीदरलैंड', 'CET')):
-            errors.append(f'{name}: unexpected country-specific guide framing')
-        if '1261481' not in text or 'year=2026' not in text:
+        if 'year=2026' not in text:
             errors.append(f'{name}: missing sourced 2026 reference')
+        if slug == 'chhath-puja':
+            if 'drikpanchang.com/chhath/chhath-puja-calendar.html' not in text:
+                errors.append(f'{name}: missing Chhath calendar source')
+            cards = dict(re.findall(r'<li class="chhath-day" id="([a-z-]+)">.*?<time datetime="2026-11-([0-9]{2})"', text, re.S))
+            if list(cards.items()) != list(CHHATH_DAYS.items()):
+                errors.append(f'{name}: Chhath observance dates or order differ from the calendar')
+        else:
+            if any(term in text for term in ('Amsterdam', 'एम्स्टर्डम', 'Netherlands', 'नीदरलैंड', 'CET')):
+                errors.append(f'{name}: unexpected country-specific guide framing')
+            if '1261481' not in text:
+                errors.append(f'{name}: missing New Delhi reference')
         if re.search(r'TODO|Lorem ipsum|17:11–18:47|17:23–18:59', text):
             errors.append(f'{name}: placeholder or inherited unverified timing')
     if set(pair[0].ids) != set(pair[1].ids): errors.append(f'{slug}: bilingual section mismatch')
@@ -83,7 +93,7 @@ calendar = (ROOT / 'calendar.html').read_text()
 highlights = json.loads(re.search(r'const highlights=(\[.*?\]);', calendar, re.S)[1])
 expected = {'Dhanteras': '2026-11-06', 'Narak Chaturdashi (Amsterdam)': '2026-11-07',
             'Diwali / Lakshmi Puja': '2026-11-08', 'Govardhan Puja': '2026-11-09',
-            'Bhai Dooj (Amsterdam)': '2026-11-10'}
+            'Bhai Dooj (Amsterdam)': '2026-11-10', 'Chhath Puja': '2026-11-15'}
 for title, date in expected.items():
     matches = [e for e in highlights if e['title'] == title]
     if len(matches) != 1 or matches[0]['date'] != date:
@@ -95,4 +105,4 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css):
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print('PASS: four guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')
+print('PASS: six guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')

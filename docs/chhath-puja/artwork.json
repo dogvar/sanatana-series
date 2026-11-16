@@ -1,0 +1,83 @@
+{
+  "created": "2026-11-16",
+  "assets": [
+    {
+      "path": "images/chhath-puja/sunset-ghat.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 207854,
+      "sha256": "bd260a8fca4b2ef4ef0af5b3bea371fcecb388e733b820ff7d905593e4020127",
+      "method": "Owner-supplied image, optimized to WebP",
+      "description": "A devotee stands waist-deep in the river while offering water to the setting Sun."
+    },
+    {
+      "path": "images/chhath-puja/nahay-khay.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 152096,
+      "sha256": "f3b6d77842b2b45694a073435757c951f962f1d386ab59696f7c9ecb019092e2",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 horizontal painting for Nahay Khay, day one of Chhath Puja. Intimate close still life of a modest freshly swept Bihar household kitchen with separate plain earthen and brass cookware, a brass thali with small portions of plain cooked rice, yellow chana dal and pale green diced bottle gourd vegetable, slices from a recognizable long pale green bottle gourd beside a bowl for washing. Plain terracotta and plaster, ochre daylight, cotton cloth. No people or ornamental shrines; show only a customary illustrative meal, no onions, garlic, chilies or meat. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+    },
+    {
+      "path": "images/chhath-puja/kharna.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 107946,
+      "sha256": "554ea025bb273e45003e18fe45296efc4af8f72d2c65c990e84aadaddda33c36",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 horizontal painting for Kharna on the evening of Chhath’s second day. Close-up of a small brass bowl of rice kheer with jaggery, pale beige creamy pudding with grains visible, and simple plain rotis, on a modest brass plate on a neat earthen veranda. Only one small earthen oil lamp behind the food, cool indigo twilight falling through an open doorway. Natural still-life scale, quiet evening, no people, no embellished sweets or decorative lanterns. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+    },
+    {
+      "path": "images/chhath-puja/sandhya-arghya.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 167564,
+      "sha256": "c11dee894778f4d5e0eca697f444e1edf8d0d31896f82b2a9d9f967ab1742716",
+      "method": "Owner-supplied image, cropped and optimized to WebP",
+      "description": "Families gather on a lamp-lit ghat with fruit, thekua and bamboo baskets before the evening offering."
+    },
+    {
+      "path": "images/chhath-puja/usha-arghya.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 89988,
+      "sha256": "e542b9f6406b1f43096665b2754ed3f31080bd28e532c6988fcaf201a5ac3158",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 horizontal painting for Usha Arghya, the fourth morning of Chhath Puja. From behind and at a distance two modestly dressed adult devotees with backs to viewer stand in shallow calm river facing a pale newly risen Sun, sober precise human silhouettes, one person holds a modest brass vessel at chest height without exaggerated gestures, pale blue haze and rose gold eastern sky, mud bank and a simple woven offering basket low in foreground. Quiet unadorned shore, misty dawn, visually cooler and brighter than sunset. No faces or ornate costumes. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+    },
+    {
+      "path": "images/chhath-puja/offerings.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 167160,
+      "sha256": "c49676b663d91dfcc4ac0dd6532815d9b88222ce9538d3fe5b56eb44c24636cd",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 horizontal still life for Chhath traditional offerings. Highly readable overhead three-quarter composition on a muted terracotta mat: one large shallow open oval bamboo winnowing fan with clear woven pattern, a simple deep round bamboo basket next to it, several small golden brown molded thekua biscuits with simple stamped leaf patterns, bananas, one intact fibrous coconut, a couple of straight cut sugarcane stalks, plain brass lota, small earthen diya. Clear gaps between objects, colors natural. Soft light from left and uncluttered. No deity figures, no other festival props or text. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+    },
+    {
+      "path": "images/chhath-puja/river-at-dawn.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 100056,
+      "sha256": "eae86b5d13ec68b3a325eb769bdc4c36228d516f593fe78af5013ea13928a403",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 horizontal closing illustration for an editorial guide to Chhath Puja. An empty stretch of calm eastern Indian river at dawn from a sandy riverbank, one small sun on misty horizon, faint dawn pink turning to ivory and pale gold, fine reflections and subtle river current, a single simple empty woven bamboo winnowing tray resting on clean dry riverbank in near corner. No people, no floating objects, no buildings, no ornament. Calm atmospheric ending, very clear difference from dusk. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+    },
+    {
+      "path": "images/chhath-puja/sindoor-at-the-ghat.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 145622,
+      "sha256": "9d11e3ad7f5838007c17ffbb6755fb6d5bdf862dbbc625ee70810848f7ff556a",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Wide 3:2 hand-painted Sanatana Series Indian festival editorial portrait in naturalistic gouache on subtly textured paper, showing one ordinary married Bihari woman devotee at a Chhath Puja ghat, eye level, head-and-shoulders close front view to make a specific authentic regional custom clearly visible: one thin uninterrupted visibly matte bright saffron-orange powder sindoor line starts in the visible center hair parting, crosses the middle of the forehead vertically, continues down the bridge of the nose, and ends on the tip of her nose. The line must reach the tip of the nose; no separate bindi or tripundra, no mark below nose, cheeks blank. Both eyes visible, quiet dignified expression, hair pulled back with clear center part, warm muted marigold traditional saree pallu draped over head behind hairline so start of line is visible. Simple small earrings, optional subtle nose stud on one side, no ornate jewelry, no royal dress or stylized goddess visual. In softly blurred background genuinely understated sunrise Chhath riverbank, out-of-focus bamboo soop with bananas and an adult companion in a saree. No visible hands, no text, no marks on horizon, no photograph or sensational portrait. Warm amber muted rose and river indigo, high quality traditional painted illustration. The culturally distinctive long orange sindoor is the central detail."
+    }
+  ],
+  "social": {
+    "path": "images/chhath-puja/social.jpg",
+    "width": 1200,
+    "height": 630,
+    "derivedFrom": "Owner-supplied Sandhya Arghya image used for sunset-ghat.webp, separately cropped from the original PNG"
+  }
+}
