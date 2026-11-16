@@ -72,6 +72,33 @@
       "sha256": "9d11e3ad7f5838007c17ffbb6755fb6d5bdf862dbbc625ee70810848f7ff556a",
       "method": "OpenAI ImageGen, optimized to WebP",
       "prompt": "Wide 3:2 hand-painted Sanatana Series Indian festival editorial portrait in naturalistic gouache on subtly textured paper, showing one ordinary married Bihari woman devotee at a Chhath Puja ghat, eye level, head-and-shoulders close front view to make a specific authentic regional custom clearly visible: one thin uninterrupted visibly matte bright saffron-orange powder sindoor line starts in the visible center hair parting, crosses the middle of the forehead vertically, continues down the bridge of the nose, and ends on the tip of her nose. The line must reach the tip of the nose; no separate bindi or tripundra, no mark below nose, cheeks blank. Both eyes visible, quiet dignified expression, hair pulled back with clear center part, warm muted marigold traditional saree pallu draped over head behind hairline so start of line is visible. Simple small earrings, optional subtle nose stud on one side, no ornate jewelry, no royal dress or stylized goddess visual. In softly blurred background genuinely understated sunrise Chhath riverbank, out-of-focus bamboo soop with bananas and an adult companion in a saree. No visible hands, no text, no marks on horizon, no photograph or sensational portrait. Warm amber muted rose and river indigo, high quality traditional painted illustration. The culturally distinctive long orange sindoor is the central detail."
+    },
+    {
+      "path": "images/chhath-puja/story-chhathi-maiya.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 203944,
+      "sha256": "25f2bfbf415f9390a5d94a33992762c292c4a2ee02b10daae86573bccdbef99a",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Horizontal 3:2 Indian devotional manuscript-style historical gouache, warm ivory/saffron and deep indigo at twilight under a banyan: Shashthi Devi (Chhathi Maiya in this retelling) gently holds a living swaddled newborn, King Priyavrata with palms joined looking up in relief. Graceful adult goddess with TWO visible human arms, opaque pale ivory sari with red-gold edge, understated jewelry, golden light; infant safely cradled, open eyes. Compassionate expressions, simple ancient eastern Indian setting, quiet vegetation, no architecture, no lettering, no symbols suggesting Lakshmi or Durga, no cat necessary, no modern elements. Warm tactile painted fine detail, generous breathing room, respectful devotional illustration."
+    },
+    {
+      "path": "images/chhath-puja/story-karna.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 146078,
+      "sha256": "b9c0f2c42af27f69069f7a400e950262a2e479c01ea5026a89ee2055eee5ed2f",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "A horizontal 3:2 naturalistic Indian epic manuscript gouache painting for a premium cultural guide, warm saffron and earthy blue. A single adult Indian warrior Karna, with two simple gold earrings and a saffron dhoti, seen in side silhouette at the shallow edge of an ancient river, wearing an unstitched ochre shoulder drape. His two palms joined in a single namaste gesture at chest height; both forearms visibly connect to their respective shoulders. No object in either hand. His prayer faces the bright midday Sun high in a pale sky, sun reflection on water, plain wooded flat far bank, no architecture, no other people, no lettering, no weapons. Show his whole figure from waist up with breathing room. Traditional painted texture, serene story-book illustration, consistent with a hand-painted devotional editorial."
+    },
+    {
+      "path": "images/chhath-puja/story-draupadi.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 175478,
+      "sha256": "4d4d153ee48c051c43d09a2716acc1df4cfabb4017cc42cdd88993075c81beca",
+      "method": "OpenAI ImageGen, optimized to WebP",
+      "prompt": "Horizontal 3:2 gouache and muted mineral pigments on paper, Indian illustrated epic manuscript editorial style. Draupadi, dignified adult Indian woman in an opaque deep madder-red sari with simple gold edge, kneels next to a plain rounded copper food vessel on the packed-earth floor of a modest open forest shelter, serving food with a ladle to a leaf plate. Two travelers seated farther back in shadow, foliage and morning light beyond, attentive atmosphere, correct natural hands, ancient Indian woodland hermitage setting. Copper vessel visible and centered alongside Draupadi, no palace, no arches, no monuments, no modern utensils, no text. Deep forest green, amber and copper."
     }
   ],
   "social": {
