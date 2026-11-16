@@ -449,7 +449,7 @@ var G=[
   img:'images/rama-ayodhya-2026-architecture-v2.webp',
   d:'The full Diwali season: Naraka, Rama, Lakshmi Puja, Govardhan, Annakut, Bali and Bhai Dooj. Regional dates explained.'},
 
- {c:'festivals',h:'chhath-puja.html',hi:'chhath-puja-hi.html',s:'2026-11-13',e:'2026-11-16',
+ {c:'festivals',h:'chhath-puja.html',hi:'chhath-puja-hi.html',s:'2026-11-13',e:'2026-11-16',heroFeature:true,
   k:'From sunset to sunrise',t:'Chhath Puja',dv:'छठ पूजा',motif:'sun',hue:26,
   img:'images/chhath-puja/sunset-ghat.webp',
   d:'Four illustrated days of devotion to Surya and Chhathi Maiya, from Nahay Khay to the dawn arghya. Includes guidance for local timings.'},
@@ -672,14 +672,17 @@ function renderPlaque(){
   var asc=function(a,b){return P(a.s)-P(b.s)};
   var now=G.filter(function(g){return st(g)==='now'}).sort(asc);
   var soon=G.filter(function(g){return st(g)==='soon'}).sort(asc);
-  var g=now[0]||soon[0]; if(!g)return;
+  // Editorial features can stay visible after their observance ends.
+  var featured=G.find(function(g){return g.heroFeature});
+  var g=featured||now[0]||soon[0]; if(!g)return;
   var live=st(g)==='now';
+  var label=live?'Happening now':featured?'Featured guide':word(g);
   var art=g.img?'<img src="'+g.img+'" alt="" decoding="async">':plate(g);
   document.getElementById('plaque').innerHTML=
     '<a class="plaque" href="'+g.h+'">'+
       '<span class="plaque-mark'+(g.img?' plaque-art':'')+'">'+art+'</span>'+
       '<span class="plaque-body">'+
-        '<span class="plaque-when'+(live?' now':'')+'">'+(live?'Happening now':word(g))+'</span>'+
+        '<span class="plaque-when'+(live?' now':'')+'">'+label+'</span>'+
         '<span class="plaque-title">'+g.t+'</span>'+
         '<span class="plaque-dv">'+g.dv+'</span>'+
         '<span class="plaque-date">'+span(g)+'</span>'+
