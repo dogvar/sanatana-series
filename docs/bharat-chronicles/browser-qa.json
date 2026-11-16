@@ -4,8 +4,13 @@
   "noScriptContentsAndTimeline": true,
   "homepageCardAtAllWidths": true,
   "wordCountsIncludingTimelineAndGlossary": {
-    "birsa-munda.html": 3074,
-    "birsa-munda-hi.html": 3376
+    "birsa-munda.html": 3344,
+    "birsa-munda-hi.html": 3714
+  },
+  "visualRevision": {
+    "photographsAndIllustrationsPerEdition": 8,
+    "dombariSequenceEntries": 4,
+    "intrinsicImageDimensionsVerified": true
   },
   "checks": [
     {
