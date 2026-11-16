@@ -111,11 +111,34 @@ body.guide-chhath.hi .hero h1 {
 .guide-chhath .chhath-day-copy { padding: .9rem 1rem 1.2rem; }
 .guide-chhath .chhath-day-copy p:last-child { margin: 0; }
 .guide-chhath .chhath-date { margin-bottom: .5rem; color: var(--rose); }
-.guide-chhath .chhath-stories > div {
-  padding: 1rem 1.2rem .55rem;
-  margin-bottom: .8rem;
-  border-inline-start: 2px solid #b97a68;
+.guide-chhath .chhath-stories {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  margin-top: 1.5rem;
+}
+.guide-chhath .chhath-story {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+  align-items: start;
+  gap: .9rem clamp(1rem, 3vw, 1.8rem);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-top: 1px solid #99776b;
+  border-radius: .65rem;
   background: #242136;
+}
+.guide-chhath .chhath-story:nth-child(2) { background: #302536; }
+.guide-chhath .chhath-story:nth-child(3) { background: #212d35; }
+.guide-chhath .chhath-story h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: clamp(1.28rem, 2.8vw, 1.75rem);
+}
+.guide-chhath .chhath-story figure { margin: 0; }
+.guide-chhath .chhath-story-copy p:first-child { margin-top: 0; }
+.guide-chhath .chhath-story .chhath-story-sources {
+  margin-bottom: 0;
+  color: var(--rose);
+  font-size: .88rem;
 }
 .guide-chhath .chhath-horizon {
   padding: clamp(1rem, 3vw, 2rem);
@@ -151,6 +174,7 @@ body.guide-chhath.hi .hero h1 {
   .guide-chhath .hero-content { order: 0; }
   .guide-chhath .chhath-times,
   .guide-chhath .chhath-sequence,
+  .guide-chhath .chhath-story,
   .guide-chhath .horizon-pair,
   .guide-chhath .offering-list { grid-template-columns: 1fr; }
   .guide-chhath .navlinks a { min-height: 44px; }
@@ -158,7 +182,7 @@ body.guide-chhath.hi .hero h1 {
 @media print {
   .guide-chhath { background: white; color: #222; }
   .guide-chhath .chhath-day, .guide-chhath .chhath-horizon,
-  .guide-chhath .chhath-stories > div, .guide-chhath .hero-art {
+  .guide-chhath .chhath-stories .chhath-story, .guide-chhath .hero-art {
     background: white;
     color: #222;
   }
