@@ -1,0 +1,89 @@
+{
+  "browser": "Google Chrome via Playwright",
+  "localAnchorAndSectionParity": true,
+  "noScriptContentsAndTimeline": true,
+  "homepageCardAtAllWidths": true,
+  "wordCountsIncludingTimelineAndGlossary": {
+    "birsa-munda.html": 3344,
+    "birsa-munda-hi.html": 3714
+  },
+  "visualRevision": {
+    "photographsAndIllustrationsPerEdition": 8,
+    "dombariSequenceEntries": 4,
+    "intrinsicImageDimensionsVerified": true
+  },
+  "checks": [
+    {
+      "page": "birsa-munda.html",
+      "width": 320,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda-hi.html",
+      "width": 320,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda.html",
+      "width": 390,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda-hi.html",
+      "width": 390,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda.html",
+      "width": 768,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda-hi.html",
+      "width": 768,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda.html",
+      "width": 1440,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    },
+    {
+      "page": "birsa-munda-hi.html",
+      "width": 1440,
+      "verticalReflow": true,
+      "navigation": true,
+      "imageDecode": true,
+      "keyboardTimeline": true,
+      "font": true
+    }
+  ]
+}

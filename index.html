@@ -239,6 +239,14 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 .logo .en{font-size:19px;letter-spacing:.085em}
 @media(max-width:760px){.logo{gap:7px}.logo .dv{font-size:21px}.logo .en{font-size:13px;letter-spacing:.035em}}
 @media(max-width:390px){.logo .dv{font-size:19px}.logo .en{font-size:11px}.mast nav .sub{padding:8px 9px}}
+.chronicles-jump{display:none}
+#bharat-chronicles{padding-bottom:48px;scroll-margin-top:24px}
+#bharat-chronicles .sec-head{display:block}
+#bharat-chronicles .collection-title-hi{color:var(--gold)}
+#bharat-chronicles .chronicles-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:18px}
+#bharat-chronicles .chronicles-links a,.chronicles-jump{color:var(--gold);font-weight:500;text-decoration:underline;text-underline-offset:.2em}
+#bharat-chronicles .chronicles-links a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:760px){.chronicles-jump{display:inline-flex;align-items:center;min-height:44px;margin-top:6px}}
 </style>
 </head>
 <body>
@@ -251,6 +259,7 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
     <nav>
       <a href="calendar.html">Calendar</a>
       <a href="#guides">Guides</a>
+      <a href="#bharat-chronicles">Bharat Chronicles</a>
       <a class="sub" href="https://sanatanverse.substack.com" target="_blank" rel="noopener">Subscribe</a>
     </nav>
   </div>
@@ -263,6 +272,7 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
     <h1>Every festival has a reason. <em>Here is why.</em></h1>
     <p class="hero-lede">Guides to the stories, dates and rituals of the Hindu year — written plainly, for families far from home and anyone who ever wondered what today means.</p>
     <div class="hero-actions"><a class="hero-cta" href="#guides">Explore the guides <span aria-hidden="true">→</span></a><span class="hero-note">Stories · Wisdom · Traditions</span></div>
+    <a class="chronicles-jump" href="#bharat-chronicles">Bharat Chronicles</a>
     <div id="plaque"></div>
     </div>
   </div>
@@ -274,6 +284,28 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
   </div>
   <div id="sections"></div>
 </div>
+
+<section class="wrap sec" id="bharat-chronicles" aria-labelledby="chronicles-title">
+  <div class="sec-head">
+    <h2 id="chronicles-title">Bharat Chronicles <span class="collection-title-hi" lang="hi">· भारत की ऐतिहासिक गाथाएँ</span></h2>
+    <p>Researched stories of people, kingdoms, communities and movements from the Indian subcontinent.</p>
+    <p lang="hi">भारतीय उपमहाद्वीप के व्यक्तित्वों, राज्यों, समुदायों और आंदोलनों की शोध-आधारित गाथाएँ।</p>
+  </div>
+  <article class="banner">
+    <a class="plate" href="birsa-munda.html" aria-label="Read the Birsa Munda biography in English">
+      <img src="images/bharat-chronicles/birsa-social.jpg" alt="" width="1200" height="630" loading="lazy" decoding="async">
+    </a>
+    <div class="banner-body">
+      <h3>Birsa Munda · Dharti Aba</h3>
+      <p class="t-dv" lang="hi">बिरसा मुंडा · धरती आबा</p>
+      <p>Land, dignity and the Ulgulan in colonial Chotanagpur.</p>
+      <div class="chronicles-links">
+        <a href="birsa-munda.html" hreflang="en">Read in English</a>
+        <a href="birsa-munda-hi.html" lang="hi" hreflang="hi">हिन्दी में पढ़ें</a>
+      </div>
+    </div>
+  </article>
+</section>
 
 <section class="band">
   <div class="wrap">

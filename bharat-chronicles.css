@@ -1,0 +1,192 @@
+@font-face {
+  font-family: Chronicle Devanagari;
+  src: url("fonts/festival/noto-serif-devanagari-devanagari.woff2") format("woff2");
+  font-weight: 400 600;
+  font-display: swap;
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+A8E0-A8FF;
+}
+@font-face {
+  font-family: Chronicle Display;
+  src: url("fonts/festival/cormorant-garamond-latin.woff2") format("woff2");
+  font-weight: 400 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Chronicle Sans;
+  src: url("fonts/festival/dm-sans-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+.chronicle {
+  --forest: #183b32;
+  --deep: #132d27;
+  --paper: #f4e8d2;
+  --ink: #252824;
+  --brown: #75513a;
+  --copper: #b47a45;
+  --gold: #e2bc80;
+  --line: #d4bda0;
+  --sans: "Chronicle Sans", "Chronicle Devanagari", system-ui, sans-serif;
+  --display: "Chronicle Display", "Chronicle Devanagari", Georgia, serif;
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font: 1.14rem/1.77 Georgia,"Chronicle Devanagari",serif;
+}
+.chronicle *, .chronicle *::before, .chronicle *::after { box-sizing: border-box; }
+.chronicle:lang(hi) { font-family: "Chronicle Devanagari", Georgia, serif; line-height: 1.9; }
+.chronicle:lang(hi) h1, .chronicle:lang(hi) h2, .chronicle:lang(hi) h3 {
+  font-family: "Chronicle Devanagari", Georgia, serif;
+  line-height: 1.48;
+}
+.chronicle a { color: inherit; text-underline-offset: .21em; }
+.chronicle a:focus-visible, .chronicle summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 2px; }
+.chronicle img { display: block; max-width: 100%; height: auto; }
+.chronicle h1, .chronicle h2, .chronicle h3 {
+  font-family: var(--display);
+  line-height: 1.05;
+  font-weight: 600;
+  text-wrap: balance;
+}
+.chronicle h2 { font-size: clamp(2rem, 5.5vw, 3.75rem); margin: 0 0 .48em; color: var(--forest); }
+.chronicle h3 { font-size: clamp(1.55rem, 3.4vw, 2.3rem); margin: 1.25em 0 .4em; }
+.chronicle h4 { margin: 0; font: 600 1.05rem/1.5 var(--sans); }
+.chronicle p { margin: 0 0 1.18em; overflow-wrap: break-word; }
+.chronicle .skip { position: fixed; top: .6rem; left: .6rem; z-index: 5; transform: translateY(-150%); padding: .45rem .85rem; background: var(--paper); color: var(--ink); }
+.chronicle .skip:focus { transform: none; }
+.chronicle-nav { background: var(--deep); color: var(--paper); border-bottom: 1px solid #e2bc8052; }
+.chronicle-nav > div { max-width: 81rem; margin: auto; display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; justify-content: space-between; align-items: center; padding: .65rem clamp(1rem, 5vw, 3rem); }
+.chronicle-nav a { text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+.chronicle-nav a:hover { text-decoration: underline; }
+.chronicle-brand { font: 500 1.15rem var(--display); gap: .65rem; }
+.chronicle-brand b { font: 600 1.4rem "Chronicle Devanagari",serif; color: var(--gold); }
+.chronicle-controls { display:flex; flex-wrap: wrap; gap: .25rem 1rem; align-items: center; font: 500 .88rem/1.5 var(--sans); }
+.chronicle-controls [hreflang] { border: 1px solid #e2bc8060; padding-inline: .72rem; }
+.chronicle-hero {
+  background: radial-gradient(ellipse at 70% 76%, #375045 0%, transparent 55%), var(--deep);
+  color: var(--paper);
+}
+.chronicle-hero-inner {
+  max-width: 81rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(0,1.6fr) minmax(0,1fr);
+  align-items: center;
+  gap: clamp(2rem, 7vw, 7rem);
+  padding: clamp(2rem, 7vw, 6.4rem) clamp(1rem, 5vw, 3rem);
+}
+.chronicle .collection-label, .chronicle .life-dates, .chronicle figcaption { font: 500 .9rem/1.65 var(--sans); }
+.chronicle .collection-label { color: var(--gold); display: inline-block; margin-bottom: 1.05rem; }
+.chronicle h1 { font-size: clamp(3.15rem, 8vw, 7.8rem); margin: 0 0 .08em; letter-spacing: -.045em; color: var(--paper); }
+.chronicle:lang(hi) h1 { font-size: clamp(2.75rem, 6.4vw, 6rem); letter-spacing: normal; }
+.chronicle .subtitle { font: 500 clamp(1.5rem,3.1vw,2.65rem)/1.25 var(--display); color: var(--gold); margin-bottom: .45em; }
+.chronicle:lang(hi) .subtitle { font-family: "Chronicle Devanagari",serif; line-height: 1.55; }
+.chronicle .life-dates { margin-block: 1.2rem .6rem; }
+.chronicle .hero-lead { max-width: 35rem; }
+.chronicle .observance { display: inline-block; color: var(--gold); font: 600 .9rem/1.6 var(--sans); padding-block: .52rem; }
+.chronicle figure { margin: 1.8rem 0; }
+.chronicle .archival { margin: 0; justify-self: center; max-width: 21rem; padding: .65rem; border: 1px solid #e2bc808f; }
+.chronicle .archival img { width: 100%; max-width: 280px; margin: auto; }
+.chronicle figcaption { padding: .65rem .15rem 0; }
+.chronicle .art { padding: .45rem; border: 1px solid var(--line); }
+.chronicle .art img { width: 100%; }
+.chronicle .layout { max-width: 81rem; margin: auto; padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 5vw, 3rem); display: grid; grid-template-columns: 13rem minmax(0,1fr); gap: clamp(1.7rem, 6vw, 6rem); align-items: start; }
+.chronicle .toc { position: sticky; top: 1rem; font: 500 .91rem/1.45 var(--sans); max-height: calc(100vh - 2rem); overflow-y: auto; }
+.chronicle summary { cursor: pointer; color: var(--forest); font: 600 1rem/1.5 var(--sans); padding-block: .68rem; }
+.chronicle .toc a { display: block; padding: .45rem .6rem; border-inline-start: 2px solid var(--line); text-decoration: none; }
+.chronicle .toc a:hover, .chronicle .toc a[aria-current] { background: #e8d8bc; border-color: var(--brown); text-decoration: underline; }
+.chronicle main { min-width: 0; max-width: 52rem; }
+.chronicle main > section { margin: 0 0 clamp(2.8rem,7vw,5rem); padding: 0 0 1.2rem; border-bottom: 1px solid var(--line); scroll-margin-top: 1rem; }
+.chronicle .ref { color: #5a3d2a; font: 600 .81rem/1.55 var(--sans); display: inline-block; }
+.chronicle .feature { border-top: .34rem solid var(--forest); padding-top: 1.55rem; }
+.chronicle .evidence { margin-block: 1.3rem; padding: 1.05rem 1.25rem; background: #eadac0; border-inline-start: .23rem solid var(--copper); }
+.chronicle .evidence h3, .chronicle .evidence p:last-child { margin-bottom: 0; }
+.chronicle .evidence h3 { margin-top: 0; margin-bottom: .55rem; }
+.chronicle .evidence-pair, .chronicle .tenure { display: grid; gap: .75rem; }
+.chronicle .evidence-pair { grid-template-columns: 1fr 1fr; }
+.chronicle .tenure { grid-template-columns: repeat(3, 1fr); margin-block: 1.5rem; }
+.chronicle .tenure > div { padding: 1rem; border-top: 2px solid var(--copper); background: #eadac0; }
+.chronicle .tenure strong { color: var(--forest); }
+.chronicle .tenure p { font: 500 .94rem/1.55 var(--sans); margin: .45rem 0 0; }
+.chronicle .action { font: 600 .93rem/1.5 var(--sans); color: var(--forest); }
+.chronicle main .reflection { background: var(--forest); color: var(--paper); padding: clamp(1.1rem,4vw,2rem); }
+.chronicle .reflection h2 { color: var(--paper); }
+.chronicle .reflection p:last-child { margin-bottom: 0; }
+.chronicle .milestones { list-style: none; padding: 0; margin: 1.2rem 0; border-inline-start: 2px solid var(--copper); }
+.chronicle .milestones li { padding-inline-start: 1rem; border-bottom: 1px solid var(--line); }
+.chronicle .milestones time, .chronicle .milestones .period { color: var(--brown); margin-inline-end: .6rem; }
+.chronicle .milestones details p { margin-bottom: .65rem; }
+.chronicle .glossary { display: grid; grid-template-columns: minmax(7rem,1fr) 3fr; gap: .9rem; }
+.chronicle .glossary dt { font-weight: 600; color: var(--forest); }
+.chronicle .glossary dd { margin: 0; }
+.chronicle .bibliography { font: 400 .98rem/1.7 var(--sans); padding-inline-start: 1.35rem; overflow-wrap: anywhere; }
+.chronicle .bibliography li { padding-block: .35rem; }
+.chronicle .bibliography li:target { background: #e8d8bc; }
+.chronicle footer { background: var(--deep); color: var(--paper); padding: 1.5rem 1rem; text-align: center; font: 500 .9rem/1.65 var(--sans); }
+@media (max-width: 1049px) {
+  .chronicle .layout { display: block; }
+  .chronicle .toc { position: static; max-height: none; margin-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+  .chronicle .toc-links { columns: 2; padding-bottom: .7rem; }
+  .chronicle .toc-links a { break-inside: avoid; }
+  .chronicle main { margin-inline: auto; }
+}
+@media (max-width: 650px) {
+  .chronicle { font-size: 1.06rem; }
+  .chronicle-hero-inner { grid-template-columns: 1fr; gap: 1.65rem; }
+  .chronicle .archival img { max-width: min(100%,220px); }
+  .chronicle .toc-links { columns: 1; }
+  .chronicle .evidence-pair, .chronicle .tenure, .chronicle .glossary { grid-template-columns: 1fr; }
+  .chronicle .glossary { gap: .42rem; }
+  .chronicle .glossary dd { margin-bottom: .55rem; }
+}
+
+.chronicle .art figcaption strong {
+  display: block;
+  color: var(--forest);
+  font-weight: 700;
+}
+.chronicle .event-sequence {
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-top: .25rem solid var(--forest);
+  background: #eadac0;
+}
+.chronicle .event-sequence figcaption {
+  padding: 0;
+  color: var(--forest);
+  font-weight: 700;
+}
+.chronicle .event-sequence ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  margin: .7rem 0;
+  padding: 0;
+}
+.chronicle .event-sequence li {
+  padding: .7rem .8rem .7rem .65rem;
+  border-inline-start: 2px solid var(--copper);
+  font: 500 .9rem/1.55 var(--sans);
+}
+.chronicle .event-sequence li strong,
+.chronicle .event-sequence li span { display: block; }
+.chronicle .event-sequence li strong { margin-bottom: .35rem; color: var(--forest); }
+.chronicle .event-sequence p { margin: .8rem 0 0; font: 500 .83rem/1.6 var(--sans); }
+.chronicle .memory-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+.chronicle .art--portrait { margin: 0 0 1rem; }
+@media (max-width: 650px) {
+  .chronicle .event-sequence ol,
+  .chronicle .memory-layout { grid-template-columns: 1fr; }
+  .chronicle .memory-layout { gap: .5rem; }
+  .chronicle .art--portrait { max-width: 19rem; }
+}
+
+.chronicle .art--detail {
+  width: min(100%, 40rem);
+  margin-inline: auto;
+}
