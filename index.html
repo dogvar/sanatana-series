@@ -88,6 +88,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 .plaque-mark{width:104px;flex-shrink:0;border-right:1px solid var(--hair);
   display:flex;align-items:center;justify-content:center;padding:12px}
 .plaque-mark svg{width:100%;height:auto;display:block}
+.plaque-mark img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
 .plaque-body{padding:16px 22px;display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0}
 .plaque-when{font-family:Marcellus,serif;font-size:11.5px;letter-spacing:.2em;
   text-transform:uppercase;color:var(--saffron)}
@@ -219,7 +220,11 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 .hero-cta:hover{background:#e8c765}
 .hero-note{font:11px Marcellus,serif;letter-spacing:.16em;text-transform:uppercase;color:#d5c4a6}
 .hero .plaque{background:rgba(14,11,10,.83);border-color:rgba(201,162,39,.5);max-width:540px}
-.hero .plaque-mark{width:82px}
+.hero .plaque-mark{width:104px}
+@media(max-width:620px){
+ .hero .plaque-mark{width:100%}
+ .hero .plaque-mark img{width:110px;height:100%}
+}
 @media(max-width:760px){
  .hero{min-height:650px;align-items:flex-end}
  .hero-scene{inset:0;background-position:62% center}
@@ -230,7 +235,7 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
  .hero-note{display:none}
  .hero .plaque{max-width:100%}
 }
-@media(max-width:420px){.hero-inner{padding-top:145px}.hero .plaque-mark{display:none}}
+@media(max-width:420px){.hero-inner{padding-top:145px}.hero .plaque-mark:not(.plaque-art){display:none}}
 
 
 /* The Hindi wordmark is a co-equal brand element, not a tiny prefix. */
@@ -644,9 +649,10 @@ function renderPlaque(){
   var soon=G.filter(function(g){return st(g)==='soon'}).sort(asc);
   var g=now[0]||soon[0]; if(!g)return;
   var live=st(g)==='now';
+  var art=g.img?'<img src="'+g.img+'" alt="" decoding="async">':plate(g);
   document.getElementById('plaque').innerHTML=
     '<a class="plaque" href="'+g.h+'">'+
-      '<span class="plaque-mark">'+plate(g)+'</span>'+
+      '<span class="plaque-mark'+(g.img?' plaque-art':'')+'">'+art+'</span>'+
       '<span class="plaque-body">'+
         '<span class="plaque-when'+(live?' now':'')+'">'+(live?'Happening now':word(g))+'</span>'+
         '<span class="plaque-title">'+g.t+'</span>'+
