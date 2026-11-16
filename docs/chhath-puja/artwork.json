@@ -5,10 +5,10 @@
       "path": "images/chhath-puja/sunset-ghat.webp",
       "width": 1440,
       "height": 810,
-      "bytes": 145914,
-      "sha256": "04d83bd3d5a042021ba17d0ca0149b8bf498678b78b3f32f029d7710b973ebd7",
-      "method": "OpenAI ImageGen, optimized to WebP",
-      "prompt": "Wide panoramic landscape 16:9 cinematic illustration for Chhath Puja. Rear three-quarter viewpoint from dry riverbank in Bihar looking west over a calm wide river, devotees facing a single low setting sun, modest sarees with pallu, a few plain white kurta/dhoti garments. One foreground adult woman with her back to viewer tilts a small plain brass lota with both hands, one subtle narrow stream of water falling into the river. Others quietly face the horizon at a respectful distance; no crowds in foreground. Low bamboo trays with bananas, coconut and a little sugarcane on sandy bank, rice fields and hazy far bank. Warm copper and gold against twilight indigo, foreground terracotta and muted rose. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+      "bytes": 207854,
+      "sha256": "bd260a8fca4b2ef4ef0af5b3bea371fcecb388e733b820ff7d905593e4020127",
+      "method": "Owner-supplied image, optimized to WebP",
+      "description": "A devotee stands waist-deep in the river while offering water to the setting Sun."
     },
     {
       "path": "images/chhath-puja/nahay-khay.webp",
@@ -32,10 +32,10 @@
       "path": "images/chhath-puja/sandhya-arghya.webp",
       "width": 1120,
       "height": 747,
-      "bytes": 140370,
-      "sha256": "6751369b9486ca4bbc3a892b1e4307e74ae42922892de352d44faaa295ee330b",
-      "method": "OpenAI ImageGen, optimized to WebP",
-      "prompt": "Wide 3:2 horizontal painting for Sandhya Arghya. View very low from the shallow water of an eastern Indian river at dusk. In the near frame a small plain brass lota held modestly by two naturally posed adult hands over the water, narrow stream falls from a slightly tilted vessel, reflections of a single setting Sun and rose and indigo ripples. One woven bamboo soop with bananas and coconut safely set on dry bank at side. Faces entirely out of frame, no architecture, intimate ritual detail unlike a panorama. Original Sanatana Series Indian festival editorial art, naturalistic hand-painted gouache and oil texture, rich but restrained color, respectful ordinary eastern Indo-Gangetic setting. Unmistakably an illustration, no text, lettering, logos, generic Diwali decorations, built monuments, fantastical elements, or photo styling."
+      "bytes": 167564,
+      "sha256": "c11dee894778f4d5e0eca697f444e1edf8d0d31896f82b2a9d9f967ab1742716",
+      "method": "Owner-supplied image, cropped and optimized to WebP",
+      "description": "Families gather on a lamp-lit ghat with fruit, thekua and bamboo baskets before the evening offering."
     },
     {
       "path": "images/chhath-puja/usha-arghya.webp",
@@ -78,6 +78,6 @@
     "path": "images/chhath-puja/social.jpg",
     "width": 1200,
     "height": 630,
-    "derivedFrom": "images/chhath-puja/sunset-ghat.webp (same original artwork; separate JPEG crop)"
+    "derivedFrom": "Owner-supplied Sandhya Arghya image used for sunset-ghat.webp, separately cropped from the original PNG"
   }
 }
