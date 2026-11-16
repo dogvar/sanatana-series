@@ -41,6 +41,13 @@ The following English and Hindi pages are included in this repository:
 | Sharad Navratri | [sharad-navratri.html](sharad-navratri.html) | [sharad-navratri-hi.html](sharad-navratri-hi.html) |
 | Shravan Month | [shravan-month.html](shravan-month.html) | [shravan-month-hi.html](shravan-month-hi.html) |
 
+### Bharat Chronicles · भारत की ऐतिहासिक गाथाएँ
+
+Researched historical biographies and accounts of kingdoms, communities and movements, published within Sanatana Series.
+
+- Birsa Munda · Dharti Aba — [English](birsa-munda.html) · [हिन्दी](birsa-munda-hi.html)
+- [Historical research, artwork credits and briefs](docs/bharat-chronicles/birsa-munda-research.md)
+
 ### Interactive tools
 
 - [Hindu Calendar](calendar.html)
