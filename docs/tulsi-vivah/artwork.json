@@ -1,0 +1,76 @@
+{
+  "created": "2026-11-17",
+  "assets": [
+    {
+      "path": "images/tulsi-vivah/courtyard.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 245226,
+      "sha256": "68c9c8c721d4e9732ff86b78ef45716d67428be4847053d5db38dff331745231",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Cinematic editorial photograph of a Tulsi Vivah at golden dusk from a slightly low three-quarter viewpoint. Central square terracotta Tulsi vrindavan with a true green holy basil shrub, small red chunri draped around planter, modest canopy on four natural sugarcane stalks, woven marigold strings, small powder rangoli and clay diyas on flagstones. On low brass saucer clearly visible but proportionate small smooth dark rounded Shaligram pebble, unpainted, no glyphs. No people. Emerald foliage, saffron and muted gold in light and shadows. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/story.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 214972,
+      "sha256": "3dd84b55caef0d17eccfd44e560794c4e706c28536f2ed53396a1aaee0a86693",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Refined Indian devotional miniature painting on warmly toned handmade paper, well composed quiet diptych without divider: adult Vrinda in a simple rose and ochre sari in devotional repose, on the opposite side recognizable Lord Vishnu with exactly four anatomically natural arms, holding conch, discus, mace and lotus, subdued deep blue skin, gold crown and yellow garment, beneath forest foliage. Sacred timeless composition with fine mineral-pigment linework, gold sparingly used, no wedding or romantic gesture, no sacred plant shaped like a person, no violence, no historical assertions. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/shaligram.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 96240,
+      "sha256": "c7da8af95d336027e9d54639af75685e61757770e0af6ab7b8f3eb174c80c870",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Detailed museum-quality color editorial macrophotograph for Tulsi Vivah: a single small naturally rounded smooth black Shaligram with a subtle natural spiral fossil impression on a brass saucer, slightly right of center, and a few ordinary veined leaves of holy basil and red textile; a decorated earthen Tulsi planter and basil stems softly blurred behind. Stone only a few centimeters across, no painted markings, no face, readable shape. Natural sidelighting and gentle warm ivory shadows. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/preparation.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 138510,
+      "sha256": "19b01fc055bb0daec9678349d07659881f159520438619cb56b8ddd71ebd7561",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Intimate candid cinematic editorial photo in a lived-in traditional Hindu home, family prepares Tulsi Vivah. A woman seated arranging loose marigolds in a low brass plate and a second adult beside her checks a simple red cloth; already erected natural green sugarcane poles stand at the edges of the Tulsi vrindavan, no hands obscured by clutter, natural anatomy. Soft afternoon window light, cream plaster and ochre stone, authentic small preparations, no wedding couple. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/wedding.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 143022,
+      "sha256": "4c3f8f7edec86df089e18101126d1b937fe162ed48409565f1ed82f73a1e00f3",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Wide cinematic editorial documentary-style photo of Tulsi Vivah in a small household courtyard. View from shoulder height across a family with palms joined in prayer, unambiguous central holy basil shrub in decorated earthen vrindavan, small dark Shaligram on a separate low brass dish next to the plant, small oil lamp and flowers at base; yellow-orange marigold garlands along simple sugarcane mandap. Women and men in understated clothing seated respectfully to either side, no human bride or groom, no priest gesturing, natural anatomies and no invented ceremony details. Evening light warm and quiet. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/offerings.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 111972,
+      "sha256": "7b44976c8eb4f7bedcfa8362a3b494c72d6b28035fd189ae7d633796bfde9895",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Overhead editorial still-life photograph as on a museum table, isolated clearly identifiable items spaced neatly on rose-red cotton: traditional brass puja thali, a terracotta diya and cotton wick, marigold flowers, a folded small red chunri with a gold edge, a compact coil of red and yellow ceremonial thread, a short piece of sugarcane, a banana and guava, two round laddus on a separate small brass dish. Warm clean indirect light, restrained colors, no hands, objects full and separated, no text or written labels. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    },
+    {
+      "path": "images/tulsi-vivah/twilight.webp",
+      "width": 1080,
+      "height": 720,
+      "bytes": 74734,
+      "sha256": "ee08ca2a493e0059ee5b6300b4ecf77b0d1d5d6aaf65144e01c9da4520a713fa",
+      "method": "OpenAI ImageGen; optimized WebP",
+      "prompt": "Poetic editorial still-life photograph of a naturally sized holy basil plant in a square earthen vrindavan alone at twilight in an Indian home's inner courtyard, three small clay diyas softly glowing beside the altar, shadows on simple limewashed wall, leaves sharp against blue evening light. No fabric canopy, people or nearby stone, quiet after the ceremony, understated deep emerald and warm ivory tones. Wide landscape 3:2. No writing, logos, watermark, modern lighting, Indo-Persian arches, domes, or hanging lanterns. Modest lived-in Hindu household courtyard, simple limewashed walls and timber, Indian material culture, careful natural proportions."
+    }
+  ],
+  "social": {
+    "path": "images/tulsi-vivah/social.jpg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 210478,
+    "sha256": "4c907240e3862e02f306df0bd846313e4080e9a5b03eb60c5ebcc9e7e80f2bb3",
+    "derivedFrom": "images/tulsi-vivah/courtyard.webp"
+  }
+}
