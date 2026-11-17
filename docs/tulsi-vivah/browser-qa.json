@@ -1,0 +1,79 @@
+{
+  "browser": "Chrome",
+  "mobileNoJs": "pass",
+  "homepageAndCalendar": "pass",
+  "views": [
+    {
+      "page": "tulsi-vivah.html",
+      "width": 320,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah-hi.html",
+      "width": 320,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah.html",
+      "width": 390,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah-hi.html",
+      "width": 390,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah.html",
+      "width": 768,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah-hi.html",
+      "width": 768,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah.html",
+      "width": 1440,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    },
+    {
+      "page": "tulsi-vivah-hi.html",
+      "width": 1440,
+      "images": 7,
+      "layout": "pass",
+      "keyboardAndContents": "pass",
+      "languageSwitch": "pass",
+      "localResources": "pass"
+    }
+  ]
+}

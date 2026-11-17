@@ -8,7 +8,7 @@ import sys
 import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-REFERENCE_DATES = {'dhanteras': '6', 'diwali': '8', 'chhath-puja': '13–16'}
+REFERENCE_DATES = {'dhanteras': '6', 'diwali': '8', 'chhath-puja': '13–16', 'tulsi-vivah': '21'}
 CHHATH_DAYS = {'nahay-khay': '13', 'kharna': '14', 'sandhya-arghya': '15', 'usha-arghya': '16'}
 errors = []
 
@@ -69,6 +69,15 @@ for slug, reference_day in REFERENCE_DATES.items():
             cards = dict(re.findall(r'<li class="chhath-day" id="([a-z-]+)">.*?<time datetime="2026-11-([0-9]{2})"', text, re.S))
             if list(cards.items()) != list(CHHATH_DAYS.items()):
                 errors.append(f'{name}: Chhath observance dates or order differ from the calendar')
+        elif slug == 'tulsi-vivah':
+            dates = re.findall(r'<li><time datetime="2026-11-(\d{2})">', text)
+            if dates != ['20', '21', '24']:
+                errors.append(f'{name}: Tulsi Vivah date sequence differs from the reference')
+            for source in ('1261481', 'nakshtratak.com/en/netherlands/amsterdam/', 'doc226164', 'doc365446', 'doc57337'):
+                if source not in text:
+                    errors.append(f'{name}: missing source {source}')
+            if len(p.images) != 7:
+                errors.append(f'{name}: expected seven guide illustrations')
         else:
             if any(term in text for term in ('Amsterdam', 'एम्स्टर्डम', 'Netherlands', 'नीदरलैंड', 'CET')):
                 errors.append(f'{name}: unexpected country-specific guide framing')
@@ -93,7 +102,9 @@ calendar = (ROOT / 'calendar.html').read_text()
 highlights = json.loads(re.search(r'const highlights=(\[.*?\]);', calendar, re.S)[1])
 expected = {'Dhanteras': '2026-11-06', 'Narak Chaturdashi (Amsterdam)': '2026-11-07',
             'Diwali / Lakshmi Puja': '2026-11-08', 'Govardhan Puja': '2026-11-09',
-            'Bhai Dooj (Amsterdam)': '2026-11-10', 'Chhath Puja': '2026-11-15'}
+            'Bhai Dooj (Amsterdam)': '2026-11-10', 'Chhath Puja': '2026-11-15',
+            'Devutthana Ekadashi': '2026-11-20', 'Tulasi Vivah': '2026-11-21',
+            'Kartik Purnima / Dev Diwali': '2026-11-24'}
 for title, date in expected.items():
     matches = [e for e in highlights if e['title'] == title]
     if len(matches) != 1 or matches[0]['date'] != date:
@@ -105,4 +116,4 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css):
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print('PASS: six guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')
+print('PASS: eight guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')

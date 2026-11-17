@@ -1,0 +1,164 @@
+.guide-tulsi {
+  --deep: #101d18;
+  --night: #14241e;
+  --surface: #214b3f;
+  --ivory: #fff3dd;
+  --text: #f6e8d3;
+  --muted: #decdb8;
+  --gold: #e5b965;
+  --gold-light: #f9d287;
+  --line: #ac834d;
+  --tulsi-rose: #edb9b6;
+  background: radial-gradient(ellipse at top right, #214b3f 0%, var(--night) 51rem);
+}
+
+.guide-tulsi .hero-grid {
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding-block: clamp(2rem, 5vw, 5rem);
+  border-bottom: 1px solid #ac834d7a;
+}
+
+.guide-tulsi .hero h1 {
+  margin: .15em 0;
+  font-size: clamp(3.25rem, 6.2vw, 6.7rem);
+  text-wrap: balance;
+}
+
+.guide-tulsi.hi .hero h1 {
+  font-size: clamp(2.9rem, 5.9vw, 6.2rem);
+  line-height: 1.28;
+}
+
+.guide-tulsi .hero .sub {
+  color: var(--gold-light);
+  max-width: 23ch;
+}
+
+.guide-tulsi .tulsi-lede { max-width: 32ch; }
+.guide-tulsi .tulsi-reference { color: var(--muted); font-size: .91rem; }
+.guide-tulsi .tulsi-hero-date,
+.guide-tulsi .tulsi-jump { color: var(--gold-light); font-weight: 650; }
+.guide-tulsi .tulsi-jump { display: inline-flex; align-items: center; gap: .4em; min-height: 44px; text-decoration: underline; }
+
+.guide-tulsi .hero-art {
+  margin: 0;
+  background: #1b3128;
+  border-color: #ac834dba;
+}
+.guide-tulsi .hero-art:before { border-color: #d8a14170; }
+.guide-tulsi .hero-art img { aspect-ratio: 3 / 2; }
+.guide-tulsi .hero-art figcaption,
+.guide-tulsi .chapter figcaption { color: var(--muted); line-height: 1.55; }
+
+.guide-tulsi .chapter h2 { margin-bottom: .55em; text-wrap: balance; }
+.guide-tulsi .chapter h3 { color: var(--gold-light); margin: 0 0 .6rem; font: 600 clamp(1.35rem, 2.6vw, 2rem)/1.3 var(--display); }
+.guide-tulsi.hi .chapter h3 { font-family: var(--hindi); line-height: 1.5; }
+.guide-tulsi .chapter p a,
+.guide-tulsi .chapter .sources a { text-decoration: underline; text-underline-offset: .18em; }
+.guide-tulsi .chapter a { overflow-wrap: anywhere; }
+.guide-tulsi .chapter p:last-child { margin-bottom: 0; }
+
+.guide-tulsi .tulsi-dates {
+  background: #fff3dd;
+  color: #243b32;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border-block-start: 4px solid #a13b37;
+}
+.guide-tulsi .tulsi-dates h2 { color: #214b3f; }
+.guide-tulsi .tulsi-dates a { color: #873331; }
+.guide-tulsi .tulsi-dates a:focus-visible { outline-color: #873331; }
+.guide-tulsi .tulsi-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+.guide-tulsi .tulsi-timeline li {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: .2rem;
+  padding: .9rem;
+  background: #f5e2c1;
+  border-top: 2px solid #ac834d;
+}
+.guide-tulsi .tulsi-timeline li:nth-child(2) { background: #ecd3bf; border-color: #a13b37; }
+.guide-tulsi .tulsi-timeline time { color: #873331; font-weight: 650; }
+.guide-tulsi .tulsi-timeline span { font-size: .9rem; }
+
+.guide-tulsi .tulsi-stories {
+  padding-top: 1.25rem;
+  border-top: 1px solid #ac834d7a;
+}
+.guide-tulsi .tulsi-story {
+  padding: clamp(1rem, 3vw, 1.75rem);
+  margin-top: 1rem;
+  background: #30382b;
+  border-inline-start: 3px solid #d8a141;
+}
+.guide-tulsi .tulsi-story + .tulsi-story { background: #392d2b; border-color: #c9898a; }
+.guide-tulsi .tulsi-note {
+  margin-top: 1.1rem;
+  color: var(--tulsi-rose);
+  font-size: .93rem;
+}
+
+.guide-tulsi .tulsi-green {
+  padding: clamp(1rem, 3vw, 2rem);
+  background: #214b3f;
+  border-block: 1px solid #ac834d7a;
+}
+.guide-tulsi .tulsi-split,
+.guide-tulsi .tulsi-pair,
+.guide-tulsi .tulsi-objects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 1.6rem);
+}
+.guide-tulsi .tulsi-split { align-items: start; }
+.guide-tulsi .tulsi-split p:first-child { margin-top: 0; }
+.guide-tulsi .tulsi-pair figure,
+.guide-tulsi .tulsi-split figure { margin: 0; }
+.guide-tulsi .chapter .tulsi-plate {
+  padding: .55rem;
+  background: #1b3128;
+  border: 1px solid #ac834d91;
+}
+.guide-tulsi .tulsi-plate img { width: 100%; height: auto; }
+.guide-tulsi .tulsi-objects { margin: 1.5rem 0; }
+.guide-tulsi .tulsi-objects div { border-top: 1px solid #ac834d91; padding-top: .7rem; }
+.guide-tulsi .tulsi-objects dt { color: var(--gold-light); font-weight: 700; }
+.guide-tulsi .tulsi-objects dd { margin: .25rem 0 0; }
+
+.guide-tulsi .tulsi-ritual {
+  display: grid;
+  gap: .6rem;
+  padding-inline-start: 1.75rem;
+  margin-top: 1.5rem;
+}
+.guide-tulsi .tulsi-ritual li { border-bottom: 1px solid #ac834d55; padding: .6rem .3rem; }
+.guide-tulsi .tulsi-ritual li::marker { color: var(--gold-light); font-weight: 700; }
+.guide-tulsi .tulsi-reflection p { max-width: 64ch; }
+
+@media (max-width: 760px) {
+  .guide-tulsi .hero-grid,
+  .guide-tulsi .tulsi-timeline,
+  .guide-tulsi .tulsi-split,
+  .guide-tulsi .tulsi-pair,
+  .guide-tulsi .tulsi-objects { grid-template-columns: 1fr; }
+  .guide-tulsi .navlinks a { min-height: 44px; }
+}
+
+@media print {
+  .guide-tulsi,
+  .guide-tulsi .tulsi-story,
+  .guide-tulsi .tulsi-story + .tulsi-story,
+  .guide-tulsi .tulsi-green,
+  .guide-tulsi .hero-art,
+  .guide-tulsi .chapter .tulsi-plate { background: white; color: #222; }
+  .guide-tulsi :is(.hero .sub, .chapter h3, .hero-art figcaption, .chapter figcaption, .tulsi-note, .tulsi-objects dt, .tulsi-hero-date, .tulsi-reference, a) { color: #222; }
+}
