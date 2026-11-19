@@ -1,0 +1,8 @@
+toolchain.local.json
+source-pack.zip
+assets/
+audio/
+renders/
+auditions/
+qa/*frame*.jpg
+__pycache__/

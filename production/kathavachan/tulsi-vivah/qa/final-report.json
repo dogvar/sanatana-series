@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-19",
+  "listeningReview": "not performed; human approval required",
+  "languages": {
+    "hi": {
+      "video": "renders/tulsi-pilot-hi.mp4",
+      "duration": 42.8,
+      "bytes": 19582475,
+      "videoCodec": "h264",
+      "resolution": "1920x1080",
+      "fps": 24,
+      "audioCodec": "aac",
+      "LUFS": "-16.08",
+      "truePeakDBTP": "-1.49",
+      "lockedNarrationPrefix": "pass",
+      "fileDecode": "pass",
+      "humanVoiceApproval": "pending"
+    },
+    "en": {
+      "video": "renders/tulsi-pilot-en.mp4",
+      "duration": 44.524,
+      "bytes": 17981334,
+      "videoCodec": "h264",
+      "resolution": "1920x1080",
+      "fps": 24,
+      "audioCodec": "aac",
+      "LUFS": "-16.06",
+      "truePeakDBTP": "-1.48",
+      "lockedNarrationPrefix": "pass",
+      "fileDecode": "pass",
+      "humanVoiceApproval": "pending"
+    }
+  }
+}

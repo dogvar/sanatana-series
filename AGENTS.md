@@ -52,3 +52,13 @@ Sanatana Series is a personal cultural blog for families, young readers, interna
 ### Final editorial review
 
 Before submitting a guide, read both editions as a first-time visitor would. Check that the opening engages, the context is sufficient, the events unfold clearly, the quotations or source notes support the prose, and the ending gives the story meaning. Cut background that interrupts the story, and move detailed comparisons to the research notes. Confirm that the Hindi reads naturally and preserves the same facts and qualifications. Rewrite any narrative that reads like a research report or encyclopedia summary. Follow all existing accuracy, accessibility, repository and publishing checks.
+
+## Sanatana Kathavachan production
+
+Offer bilingual illustrated, podcast-style narration for new guides when editorial approval and suitable audio tools are available. Use the approved English and Hindi scripts as controlled production inputs. Extract only marked spoken passages and retain original files and checksums. Flag source or pronunciation concerns for editorial review before changing a script.
+
+Start each new episode with a consistent storyteller reference and a 30–45 second sample in each language. Use gentle animation, culturally appropriate artwork and independently timed natural delivery. Reuse relevant existing artwork. Obtain approval of the voice, character and pilot before producing complete episodes. Check source fidelity, pronunciation, pace, captions, sound levels, rendered frames and the final listening experience. Clearly report which checks were performed and any unresolved quality issues.
+
+Organize scripts, artwork references, voice settings, timing data, subtitles, project sources, licenses and QA notes under a reusable episode directory. Prefer available local or free tools and require authorization for paid APIs. Voice cloning requires consent. Keep large source images, models and video renders outside the website repository, with an asset manifest that records file hashes and provenance.
+
+After episode approval, integrate a reusable Kathavachan component near the beginning of the English and Hindi guides. Preserve the written article. Provide clearly labelled bilingual audio and video, large accessible controls, speed adjustment, fullscreen video, optional subtitles and MP3 downloads, lazy loading and no autoplay. Review media size and hosting limits before adding files. Use a draft PR and publish only with the owner's approval.

@@ -1,0 +1,149 @@
+{
+  "created": "2026-11-19",
+  "prompts": {
+    "tool": "Built-in ImageGen",
+    "characterSheet": "Use case: illustration-story. Create a professional animation character turnaround sheet on warm plain ivory, 3:2 wide landscape. One consistent recurring adult Indian woman storyteller age about 40, natural medium brown skin, oval face, kind dark brown eyes, small maroon bindi, black hair with a few silver strands neatly gathered in low bun, simple muted terracotta sari with narrow emerald border over ivory blouse, small gold stud earrings. Relaxed approachable expression, subtle intelligent warmth suitable for children and older listeners. Hand-drawn Indian illustrated storybook animation, clean softly textured shapes, contemporary and refined, natural skin colors with no yellow tint. Three evenly spaced waist-up views of exactly the same character and outfit: front view smiling gently with closed lips; three-quarter view looking toward viewer with relaxed hands resting together near waist; side profile thoughtful closed lips. No exaggerated cartoon anatomy, no jewelry excess, no text or labels, no scenery, no watermark. Keep the face and clothing palette identical across views.",
+    "sceneAndHost": [
+      [
+        "host",
+        "Use case: identity-preserve. Reference is the approved-for-development host character sheet. Produce a SINGLE waist-up front three-quarter pose of exactly the same Indian woman, matching oval face, medium brown skin, kind eyes, black-and-silver low bun, small maroon bindi, terracotta sari with narrow emerald border and ivory blouse. Closed lips gentle smile. Both hands rest together naturally low at waist. Body fully contained with room above head and at sides. Identical refined Indian storybook painted style. Genuine TRANSPARENT BACKGROUND. No text, no backdrop, no multiple views.",
+        true
+      ],
+      [
+        "opening",
+        "Use case: illustration-story. Reference establishes the Indian storybook palette and linework only. Create a landscape 16:9 courtyard background for the host, WITHOUT any people. A quiet simple Hindu domestic courtyard, limewash, timber post, ordinary natural-size holy basil plant in modest terracotta planter on right, low open brass diya beside it on the ground; room on left for compositing the host later. Green leaves, terracotta and ivory, early morning light, warm gentle inviting storybook illustration consistent with reference. No wedding decoration yet. No arches, domes, Turkish lanterns, fancy palace, text, faces, watermarks.",
+        false
+      ]
+    ],
+    "blink": "Use case: precise-object-edit for animation. Edit only the woman's eyelids in the reference image. Close BOTH eyes softly for a natural blink, leaving thin naturally curved closed eyelash lines. Keep absolutely identical character, expression, eyebrow position, skin texture, head tilt, all pixel framing, hands, sari, hair and transparent background. Single exact same image with eyes closed. No other changes."
+  },
+  "assets": [
+    {
+      "path": "assets/character-sheet.png",
+      "bytes": 2514834,
+      "sha256": "0a768dd745202bf4b34c18ee3426b15b776450eeba498ea4b9b1e3ff64fa8ca3",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/cormorant-garamond-latin.woff2",
+      "bytes": 37776,
+      "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/host-blink.png",
+      "bytes": 1379606,
+      "sha256": "541c485525f1081817556644e4261c79f9c5af4820c75d4b9378e3d7a0b523f0",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/host-open.png",
+      "bytes": 1511128,
+      "sha256": "638abf2fde413e2bf40007f1d72422d41e740f609dbf0aa65cd47e6eb63eeac3",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/noto-serif-devanagari-devanagari.woff2",
+      "bytes": 127280,
+      "sha256": "7548aaa2bf4a5e8413e07dfe34372e137bec519b8f34a556af17820340aa209c",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/opening-courtyard.png",
+      "bytes": 2930750,
+      "sha256": "c47106cfb10aa3b28d0bc132044e7c35abdd630267612be1689eb2fe2f0396c6",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/title-en.png",
+      "bytes": 40439,
+      "sha256": "2a7b32d0ae5f739c87548619eb51df02be612e62e6e60962c15325d0d3e8f3b0",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/title-hi.png",
+      "bytes": 37283,
+      "sha256": "b123c138f06fc507cf50e2a243b908ac54eb839aacfd89942b801434cf549eaf",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/tulsi-courtyard.webp",
+      "bytes": 245226,
+      "sha256": "68c9c8c721d4e9732ff86b78ef45716d67428be4847053d5db38dff331745231",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-preparation.webp",
+      "bytes": 138510,
+      "sha256": "19b01fc055bb0daec9678349d07659881f159520438619cb56b8ddd71ebd7561",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-twilight.webp",
+      "bytes": 74734,
+      "sha256": "ee08ca2a493e0059ee5b6300b4ecf77b0d1d5d6aaf65144e01c9da4520a713fa",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-wedding.webp",
+      "bytes": 143022,
+      "sha256": "4c3f8f7edec86df089e18101126d1b937fe162ed48409565f1ed82f73a1e00f3",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    }
+  ],
+  "suppliedFiles": [
+    {
+      "path": "tulsi_pilot/01_Hindi_Script.md",
+      "bytes": 5762,
+      "sha256": "35aa56bd2869c40d288bc491e58c1d3610ea94000008455365d037be122fdbf5",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/02_English_Script.md",
+      "bytes": 2713,
+      "sha256": "664e510fc6d877301ac725d12ee16b556d600b7d7263620b751c0f12fb43ba73",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/03_Visual_Storyboard.md",
+      "bytes": 2350,
+      "sha256": "1f54996a0249e79d82669b12dc66b53f228d2b01366257b601af40b7e8041d39",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/04_Character_Design.md",
+      "bytes": 1361,
+      "sha256": "1d53a5c13d2cf8104456a97dd5af4f94a120994d8a355c869e0d97bd1ca2c3df",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/05_Production_Instructions.md",
+      "bytes": 2700,
+      "sha256": "2d29cf8ba51ae5ac9c291629359448259a4c295bbea9d7220c0474137a505594",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/06_Editorial_Rules.md",
+      "bytes": 1271,
+      "sha256": "9efdcdb2108845935ced5b34483e739529fa35805c2a2c38814410e97f2a33e3",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/README.md",
+      "bytes": 868,
+      "sha256": "243a350b6069d8892019ddb272b6f2ac6c1f421315f17d976ca391fc1baab663",
+      "provenance": "Owner-supplied locked production pack"
+    }
+  ],
+  "voices": {
+    "hi": "hi-IN-SwaraNeural",
+    "en": "en-IN-NeerjaNeural"
+  },
+  "status": "pilot awaiting owner approval"
+}
