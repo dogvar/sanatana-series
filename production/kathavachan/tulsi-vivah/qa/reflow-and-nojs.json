@@ -1,0 +1,56 @@
+[
+  {
+    "page": "tulsi-vivah",
+    "width": 320,
+    "javascript": true,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": true
+  },
+  {
+    "page": "tulsi-vivah-hi",
+    "width": 320,
+    "javascript": true,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": true
+  },
+  {
+    "page": "tulsi-vivah",
+    "width": 768,
+    "javascript": true,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": true
+  },
+  {
+    "page": "tulsi-vivah-hi",
+    "width": 768,
+    "javascript": true,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": true
+  },
+  {
+    "page": "tulsi-vivah",
+    "width": 390,
+    "javascript": false,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": "not applicable"
+  },
+  {
+    "page": "tulsi-vivah-hi",
+    "width": 390,
+    "javascript": false,
+    "noOverflow": true,
+    "writtenGuideReadable": true,
+    "no404": true,
+    "keyboardFocusAndTouchTargets": "not applicable"
+  }
+]

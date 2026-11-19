@@ -1,0 +1,540 @@
+{
+  "hi": [
+    {
+      "start": 0.8,
+      "end": 6.4879999999999995,
+      "text": "भारत के अनेक घरों में एक छोटा-सा तुलसी का पौधा होता है।",
+      "paragraph": 1
+    },
+    {
+      "start": 6.9879999999999995,
+      "end": 12.510823529411764,
+      "text": "सुबह उसके पास दीप जलाया जाता है। कभी जल चढ़ाया जाता है,",
+      "paragraph": 2
+    },
+    {
+      "start": 12.510823529411764,
+      "end": 18.724,
+      "text": "तो कभी परिवार के लोग उसके सामने हाथ जोड़कर प्रार्थना करते हैं।",
+      "paragraph": 2
+    },
+    {
+      "start": 19.224,
+      "end": 25.096235294117648,
+      "text": "लेकिन कार्तिक के महीने में यही तुलसी एक दुल्हन की तरह सजाई",
+      "paragraph": 3
+    },
+    {
+      "start": 25.096235294117648,
+      "end": 25.992,
+      "text": "जाती है।",
+      "paragraph": 3
+    },
+    {
+      "start": 26.492,
+      "end": 33.230705882352936,
+      "text": "चारों ओर फूलों की मालाएँ, गन्ने का मंडप, मंगलगीत और दीपों की",
+      "paragraph": 4
+    },
+    {
+      "start": 33.230705882352936,
+      "end": 34.004,
+      "text": "रोशनी।",
+      "paragraph": 4
+    },
+    {
+      "start": 34.504000000000005,
+      "end": 39.64861538461539,
+      "text": "क्या आपने कभी सोचा है कि एक पौधे का विवाह भगवान विष्णु",
+      "paragraph": 5
+    },
+    {
+      "start": 39.64861538461539,
+      "end": 41.800000000000004,
+      "text": "से क्यों किया जाता है?",
+      "paragraph": 5
+    },
+    {
+      "start": 42.300000000000004,
+      "end": 46.596000000000004,
+      "text": "इस परंपरा के पीछे एक प्राचीन कथा है।",
+      "paragraph": 6
+    },
+    {
+      "start": 47.096000000000004,
+      "end": 50.504000000000005,
+      "text": "तुलसी और शंखचूड़ की कथा।",
+      "paragraph": 7
+    },
+    {
+      "start": 51.004000000000005,
+      "end": 57.24727272727274,
+      "text": "बहुत समय पहले, पुराणों की कथा के अनुसार, शंखचूड़ नाम का एक",
+      "paragraph": 8
+    },
+    {
+      "start": 57.24727272727274,
+      "end": 64.54872727272729,
+      "text": "पराक्रमी दैत्यराज था। उसकी पत्नी थीं तुलसी, जिनकी निष्ठा और भक्ति का",
+      "paragraph": 8
+    },
+    {
+      "start": 64.54872727272729,
+      "end": 67.30000000000001,
+      "text": "विशेष महत्व बताया गया है।",
+      "paragraph": 8
+    },
+    {
+      "start": 67.80000000000001,
+      "end": 73.82918918918921,
+      "text": "शंखचूड़ के पास एक दिव्य कवच था। उसकी रक्षा से जुड़ी एक",
+      "paragraph": 9
+    },
+    {
+      "start": 73.82918918918921,
+      "end": 79.96800000000002,
+      "text": "और शर्त थी — तुलसी के साथ उसके वैवाहिक संबंध की अखंडता।",
+      "paragraph": 9
+    },
+    {
+      "start": 80.46800000000002,
+      "end": 86.3491881188119,
+      "text": "एक समय ऐसा आया जब शंखचूड़ का देवताओं के साथ युद्ध छिड़",
+      "paragraph": 10
+    },
+    {
+      "start": 86.3491881188119,
+      "end": 91.26800000000001,
+      "text": "गया। भगवान शिव भी इस संघर्ष में सम्मिलित हुए।",
+      "paragraph": 10
+    },
+    {
+      "start": 91.76800000000001,
+      "end": 98.10531506849317,
+      "text": "युद्ध चलता रहा, लेकिन शंखचूड़ की रक्षा का रहस्य एक बड़ी बाधा",
+      "paragraph": 11
+    },
+    {
+      "start": 98.10531506849317,
+      "end": 99.35200000000002,
+      "text": "बना हुआ था।",
+      "paragraph": 11
+    },
+    {
+      "start": 99.85200000000002,
+      "end": 105.43529203539825,
+      "text": "तब भगवान विष्णु एक वृद्ध ब्राह्मण का रूप धारण करके शंखचूड़ के",
+      "paragraph": 12
+    },
+    {
+      "start": 105.43529203539825,
+      "end": 110.02800000000002,
+      "text": "पास पहुँचे और उससे उसका दिव्य कवच प्राप्त कर लिया।",
+      "paragraph": 12
+    },
+    {
+      "start": 110.52800000000002,
+      "end": 115.97971830985918,
+      "text": "इसके बाद विष्णु ने शंखचूड़ का ही रूप धारण किया और तुलसी",
+      "paragraph": 13
+    },
+    {
+      "start": 115.97971830985918,
+      "end": 117.44000000000003,
+      "text": "के पास पहुँचे।",
+      "paragraph": 13
+    },
+    {
+      "start": 117.94000000000003,
+      "end": 121.56400000000002,
+      "text": "तुलसी ने उन्हें अपना पति समझा।",
+      "paragraph": 14
+    },
+    {
+      "start": 122.06400000000002,
+      "end": 127.49725714285715,
+      "text": "लेकिन जब उन्हें सच्चाई का पता चला, तो उनका मन दुख और",
+      "paragraph": 15
+    },
+    {
+      "start": 127.49725714285715,
+      "end": 129.24,
+      "text": "क्रोध से भर उठा।",
+      "paragraph": 15
+    },
+    {
+      "start": 129.74,
+      "end": 135.28400000000002,
+      "text": "जिसे वे अपना पति समझ रही थीं, वह कोई और था।",
+      "paragraph": 16
+    },
+    {
+      "start": 135.78400000000002,
+      "end": 140.806,
+      "text": "तुलसी ने भगवान विष्णु को उनके छल के लिए कठोर शब्द कहे",
+      "paragraph": 17
+    },
+    {
+      "start": 140.806,
+      "end": 143.96800000000002,
+      "text": "और उन्हें पत्थर बनने का शाप दिया।",
+      "paragraph": 17
+    },
+    {
+      "start": 144.46800000000002,
+      "end": 150.39600000000002,
+      "text": "कथा के अनुसार, भगवान विष्णु ने उस शाप को स्वीकार किया।",
+      "paragraph": 18
+    },
+    {
+      "start": 150.89600000000002,
+      "end": 157.80168421052633,
+      "text": "आगे चलकर उनका शालिग्राम शिला से संबंध स्थापित हुआ। तुलसी का संबंध",
+      "paragraph": 19
+    },
+    {
+      "start": 157.80168421052633,
+      "end": 162.824,
+      "text": "गंडकी नदी और पवित्र तुलसी के पौधे से बताया गया।",
+      "paragraph": 19
+    },
+    {
+      "start": 163.324,
+      "end": 170.29694736842106,
+      "text": "इस प्रकार तुलसी और शालिग्राम का संबंध भक्तिपरंपरा में विशेष महत्व रखने",
+      "paragraph": 20
+    },
+    {
+      "start": 170.29694736842106,
+      "end": 170.788,
+      "text": "लगा।",
+      "paragraph": 20
+    },
+    {
+      "start": 171.288,
+      "end": 176.64474418604652,
+      "text": "और आज भी, तुलसी विवाह के अवसर पर भक्त इसी पवित्र संबंध",
+      "paragraph": 21
+    },
+    {
+      "start": 176.64474418604652,
+      "end": 179.66400000000002,
+      "text": "को विवाह के रूप में मनाते हैं।",
+      "paragraph": 21
+    },
+    {
+      "start": 180.16400000000002,
+      "end": 186.2201290322581,
+      "text": "तुलसी का पौधा फूलों और वस्त्रों से सजाया जाता है। भगवान विष्णु",
+      "paragraph": 22
+    },
+    {
+      "start": 186.2201290322581,
+      "end": 192.18012903225807,
+      "text": "या शालिग्राम को वर के रूप में प्रतिष्ठित किया जाता है। परिवार",
+      "paragraph": 22
+    },
+    {
+      "start": 192.18012903225807,
+      "end": 198.044,
+      "text": "के लोग पूजा करते हैं, मंगलगीत गाते हैं और प्रसाद बाँटते हैं।",
+      "paragraph": 22
+    },
+    {
+      "start": 198.544,
+      "end": 204.584,
+      "text": "यह केवल एक उत्सव नहीं, बल्कि एक ऐसी परंपरा है जिसमें भक्ति,",
+      "paragraph": 23
+    },
+    {
+      "start": 204.584,
+      "end": 209.416,
+      "text": "प्रकृति और परिवार की भावनाएँ एक साथ जुड़ती हैं।",
+      "paragraph": 23
+    },
+    {
+      "start": 209.916,
+      "end": 214.98,
+      "text": "तुलसी विवाह की आप सभी को हार्दिक शुभकामनाएँ।",
+      "paragraph": 24
+    },
+    {
+      "start": 215.48,
+      "end": 221.31044604316546,
+      "text": "यह देवी भागवत पुराण की कथा पर आधारित एक सरल साहित्यिक पुनर्कथन",
+      "paragraph": 25
+    },
+    {
+      "start": 221.31044604316546,
+      "end": 227.88126618705036,
+      "text": "है। अन्य पुराणों और क्षेत्रीय परंपराओं में कथाएँ भिन्न रूपों में मिलती",
+      "paragraph": 25
+    },
+    {
+      "start": 227.88126618705036,
+      "end": 228.344,
+      "text": "हैं।",
+      "paragraph": 25
+    }
+  ],
+  "en": [
+    {
+      "start": 0.8,
+      "end": 5.696,
+      "text": "In many Indian homes, there is a small Tulsi plant.",
+      "paragraph": 1
+    },
+    {
+      "start": 6.196,
+      "end": 11.716,
+      "text": "Every morning, someone may offer water, light a lamp or pause beside",
+      "paragraph": 2
+    },
+    {
+      "start": 11.716,
+      "end": 13.876,
+      "text": "it for a moment of prayer.",
+      "paragraph": 2
+    },
+    {
+      "start": 14.376,
+      "end": 20.544,
+      "text": "But during the sacred month of Kartik, something extraordinary happens.",
+      "paragraph": 3
+    },
+    {
+      "start": 21.044,
+      "end": 24.932000000000002,
+      "text": "The Tulsi plant is adorned like a bride.",
+      "paragraph": 4
+    },
+    {
+      "start": 25.432000000000002,
+      "end": 32.42616666666667,
+      "text": "Fresh flowers surround it. Sugarcane stalks form a wedding canopy. Lamps are",
+      "paragraph": 5
+    },
+    {
+      "start": 32.42616666666667,
+      "end": 38.512,
+      "text": "lit, families gather, and traditional wedding songs fill the home.",
+      "paragraph": 5
+    },
+    {
+      "start": 39.012,
+      "end": 43.524,
+      "text": "But why is a sacred plant married to Lord Vishnu?",
+      "paragraph": 6
+    },
+    {
+      "start": 44.024,
+      "end": 50.08679069767442,
+      "text": "To understand this beautiful tradition, we must travel into an ancient Puranic",
+      "paragraph": 7
+    },
+    {
+      "start": 50.08679069767442,
+      "end": 50.624,
+      "text": "story.",
+      "paragraph": 7
+    },
+    {
+      "start": 51.124,
+      "end": 54.868,
+      "text": "The story of Tulasi and Shankhachuda.",
+      "paragraph": 8
+    },
+    {
+      "start": 55.368,
+      "end": 61.2628085106383,
+      "text": "Long ago, according to the sacred narrative, there lived a powerful ruler",
+      "paragraph": 9
+    },
+    {
+      "start": 61.2628085106383,
+      "end": 62.856,
+      "text": "named Shankhachuda.",
+      "paragraph": 9
+    },
+    {
+      "start": 63.356,
+      "end": 69.428,
+      "text": "His wife, Tulasi, was renowned for her devotion and steadfastness.",
+      "paragraph": 10
+    },
+    {
+      "start": 69.928,
+      "end": 76.37489655172413,
+      "text": "Shankhachuda possessed divine armour that protected him in battle. His protection",
+      "paragraph": 11
+    },
+    {
+      "start": 76.37489655172413,
+      "end": 81.328,
+      "text": "was also connected to the integrity of his marriage to Tulasi.",
+      "paragraph": 11
+    },
+    {
+      "start": 81.828,
+      "end": 87.156,
+      "text": "Then came a great conflict between Shankhachuda and the gods.",
+      "paragraph": 12
+    },
+    {
+      "start": 87.656,
+      "end": 90.992,
+      "text": "Even Lord Shiva entered the battle.",
+      "paragraph": 13
+    },
+    {
+      "start": 91.492,
+      "end": 96.676,
+      "text": "Yet Shankhachuda remained protected, and the struggle continued.",
+      "paragraph": 14
+    },
+    {
+      "start": 97.176,
+      "end": 102.9228679245283,
+      "text": "Lord Vishnu eventually approached him disguised as an elderly Brahmin and",
+      "paragraph": 15
+    },
+    {
+      "start": 102.9228679245283,
+      "end": 105.408,
+      "text": "obtained his protective armour.",
+      "paragraph": 15
+    },
+    {
+      "start": 105.908,
+      "end": 111.668,
+      "text": "Then Vishnu assumed Shankhachuda's appearance and came before Tulasi.",
+      "paragraph": 16
+    },
+    {
+      "start": 112.168,
+      "end": 116.896,
+      "text": "Believing her husband had returned, Tulasi received him.",
+      "paragraph": 17
+    },
+    {
+      "start": 117.396,
+      "end": 120.996,
+      "text": "But the deception did not remain hidden.",
+      "paragraph": 18
+    },
+    {
+      "start": 121.496,
+      "end": 127.472,
+      "text": "When Tulasi discovered the truth, she was overcome with grief and anger.",
+      "paragraph": 19
+    },
+    {
+      "start": 127.972,
+      "end": 133.0087640449438,
+      "text": "She condemned Vishnu for what he had done and pronounced a curse:",
+      "paragraph": 20
+    },
+    {
+      "start": 133.0087640449438,
+      "end": 134.76399999999998,
+      "text": "he would become stone.",
+      "paragraph": 20
+    },
+    {
+      "start": 135.26399999999998,
+      "end": 140.47199999999998,
+      "text": "According to this Puranic account, Vishnu accepted the curse.",
+      "paragraph": 21
+    },
+    {
+      "start": 140.97199999999998,
+      "end": 146.86567088607592,
+      "text": "The story then describes his association with the sacred Shaligram stone, while",
+      "paragraph": 22
+    },
+    {
+      "start": 146.86567088607592,
+      "end": 152.61199999999997,
+      "text": "Tulasi becomes associated with the Gandaki River and the revered Tulsi plant.",
+      "paragraph": 22
+    },
+    {
+      "start": 153.11199999999997,
+      "end": 159.03208247422677,
+      "text": "And so, in this devotional tradition, Tulsi and Shaligram came to hold",
+      "paragraph": 23
+    },
+    {
+      "start": 159.03208247422677,
+      "end": 161.19999999999996,
+      "text": "a special place together.",
+      "paragraph": 23
+    },
+    {
+      "start": 161.69999999999996,
+      "end": 167.53199999999995,
+      "text": "That ancient association is remembered every year through Tulsi Vivah.",
+      "paragraph": 24
+    },
+    {
+      "start": 168.03199999999995,
+      "end": 173.98890909090903,
+      "text": "The Tulsi plant is dressed and decorated as a bride. Shaligram, or",
+      "paragraph": 25
+    },
+    {
+      "start": 173.98890909090903,
+      "end": 179.76799999999994,
+      "text": "another representation of Lord Vishnu, is honoured as the groom.",
+      "paragraph": 25
+    },
+    {
+      "start": 180.26799999999994,
+      "end": 186.47309090909084,
+      "text": "Families gather around the decorated plant, perform customary wedding rituals,",
+      "paragraph": 26
+    },
+    {
+      "start": 186.47309090909084,
+      "end": 190.63599999999994,
+      "text": "light lamps, sing auspicious songs and share prasad.",
+      "paragraph": 26
+    },
+    {
+      "start": 191.13599999999994,
+      "end": 197.55599999999993,
+      "text": "The customs may differ between regions and households, but the celebration continues",
+      "paragraph": 27
+    },
+    {
+      "start": 197.55599999999993,
+      "end": 201.40799999999993,
+      "text": "to connect devotion, nature and family traditions.",
+      "paragraph": 27
+    },
+    {
+      "start": 201.90799999999993,
+      "end": 206.27599999999993,
+      "text": "Wishing you and your family a blessed Tulsi Vivah.",
+      "paragraph": 28
+    },
+    {
+      "start": 206.77599999999993,
+      "end": 212.68299999999994,
+      "text": "This is an accessible literary retelling based on the Devi Bhagavata Purana.",
+      "paragraph": 29
+    },
+    {
+      "start": 212.68299999999994,
+      "end": 218.58999999999992,
+      "text": "Other Puranic and regional traditions preserve different versions of Tulsi's",
+      "paragraph": 29
+    },
+    {
+      "start": 218.58999999999992,
+      "end": 219.66399999999993,
+      "text": "sacred story.",
+      "paragraph": 29
+    }
+  ]
+}

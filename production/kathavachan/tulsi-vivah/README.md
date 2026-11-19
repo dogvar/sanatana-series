@@ -1,9 +1,14 @@
-# Sanatana Kathavachan · Tulsi Vivah production pilot
+# Sanatana Kathavachan · Tulsi Vivah
 
-This directory contains the controlled source pack, rendering code and proposed production workflow. The owner reviews a bilingual 30–45 second pilot before full-episode production and website integration.
+Both bilingual pilots were approved by the owner. The complete episodes now use every supplied spoken paragraph, the approved narrator and voices, and independently timed story illustrations. This draft integrates the reusable player into the beginning of both guide pages. Written articles and SEO metadata are unchanged. Nothing has been published.
 
-The complete local production workspace is delivered separately. Restore its assets, audio and source-pack.zip beside these files to rebuild. Copy toolchain.example.json to toolchain.local.json and point it to installed tools. Generated media and model files are excluded from Git.
+- Hindi: 230.844 seconds (3:51), 25 paragraphs, 46 subtitle cues.
+- English: 222.164 seconds (3:42), 29 paragraphs, 43 subtitle cues.
+- Website delivery: 720p H.264/AAC, MP3, optional default-on WebVTT and poster in `media/kathavachan/tulsi-vivah/`.
+- Separate delivery workspace: `Sanatana-Kathavachan/tulsi-full`, containing 1080p videos with readable burned subtitles, source artwork, approved host layers, per-paragraph speech, audio masters and the review page. These large masters are excluded from Git.
 
-[Production instructions and hosting plan](PRODUCTION.md) · [Asset and script checksums](asset-manifest.json)
+[Production and hosting](PRODUCTION.md) · [Approved configuration](production.json) · [Asset checksums](asset-manifest.json) · [QA](qa/COMPLETE-REVIEW.md)
 
-This draft adds production foundations and permanent AGENTS.md guidance. Website integration follows approval of the full episode media.
+The seven files in `tulsi_pilot/` remain the unchanged editorial source pack. `references/` preserves compact approved narrator layers and selected corrected story artwork. Full-resolution assets and local tool paths are in the separate workspace. `timing/` records measured narration and exact-word caption cues; `subtitles/` holds SRT, WebVTT and shaped ASS masters.
+
+The final full-episode listening and publishing approval remains with the owner. Do not merge or deploy this draft without it.

@@ -6,3 +6,8 @@ renders/
 auditions/
 qa/*frame*.jpg
 __pycache__/
+
+qa/player-*.png
+qa/video-player-*.png
+
+music/
