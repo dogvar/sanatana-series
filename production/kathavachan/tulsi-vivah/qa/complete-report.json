@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-19",
+  "pilotApproval": "Both voices, narrator and storytelling approved by owner",
+  "fullEpisodeListening": "Owner final review pending; assistant audio listening unavailable",
+  "languages": {
+    "hi": {
+      "exactCompleteScript": "pass",
+      "paragraphs": 25,
+      "subtitleCues": 46,
+      "subtitleWordCoverage": "pass",
+      "sceneCount": 20,
+      "exports": [
+        {
+          "file": "tulsi-vivah-hi-1080p.mp4",
+          "seconds": 230.844,
+          "bytes": 89851417,
+          "resolution": [
+            1920,
+            1080
+          ],
+          "integratedLUFS": "-16.01",
+          "truePeakDBTP": "-3.58",
+          "decode": "pass",
+          "sha256": "ead305a116f3539a4c862eca3ee2044e5a9d5e461f811f9d14ce5bb31b0f4231"
+        },
+        {
+          "file": "tulsi-vivah-hi.mp4",
+          "seconds": 230.844,
+          "bytes": 21132434,
+          "resolution": [
+            1280,
+            720
+          ],
+          "integratedLUFS": "-16.03",
+          "truePeakDBTP": "-3.65",
+          "decode": "pass",
+          "sha256": "53a3edb1b766ce4bb9ad8e6fed7994014008c4141e28a9f64de66368d4a473ca"
+        },
+        {
+          "file": "tulsi-vivah-hi.mp3",
+          "seconds": 230.844,
+          "bytes": 3695112,
+          "resolution": null,
+          "integratedLUFS": "-16.44",
+          "truePeakDBTP": "-4.00",
+          "decode": "pass",
+          "sha256": "dfb792cfd9b79f43f57d773617232fce8fd6906a3595c304139d0285828a1329"
+        }
+      ]
+    },
+    "en": {
+      "exactCompleteScript": "pass",
+      "paragraphs": 29,
+      "subtitleCues": 43,
+      "subtitleWordCoverage": "pass",
+      "sceneCount": 21,
+      "exports": [
+        {
+          "file": "tulsi-vivah-en-1080p.mp4",
+          "seconds": 222.164,
+          "bytes": 88699056,
+          "resolution": [
+            1920,
+            1080
+          ],
+          "integratedLUFS": "-16.01",
+          "truePeakDBTP": "-3.64",
+          "decode": "pass",
+          "sha256": "21353b4ec3147a4f93dd8da6c942ea582878f07c010ee290417bda35529fdac5"
+        },
+        {
+          "file": "tulsi-vivah-en.mp4",
+          "seconds": 222.164,
+          "bytes": 20221613,
+          "resolution": [
+            1280,
+            720
+          ],
+          "integratedLUFS": "-16.03",
+          "truePeakDBTP": "-3.56",
+          "decode": "pass",
+          "sha256": "4e9f1926f3c9715349d1f7b3ffc6bfee6b8b80c62ab806f1b8e1ade62457a27f"
+        },
+        {
+          "file": "tulsi-vivah-en.mp3",
+          "seconds": 222.164,
+          "bytes": 3556106,
+          "resolution": null,
+          "integratedLUFS": "-16.44",
+          "truePeakDBTP": "-4.10",
+          "decode": "pass",
+          "sha256": "03bf9c4c49eb79673ac196974feea6f888e8d756494dfe542eff52575b585729"
+        }
+      ]
+    }
+  }
+}

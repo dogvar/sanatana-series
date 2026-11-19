@@ -1,0 +1,54 @@
+[
+  {
+    "page": "tulsi-vivah",
+    "width": 390,
+    "bothVideoLanguages": true,
+    "captionsLoaded": true,
+    "seek": true,
+    "speed": true,
+    "fullscreen": true,
+    "audioSwitchPausesVideo": true,
+    "downloadLanguage": true,
+    "jsErrors": [],
+    "browserAudioMutedForDeviceIsolation": true
+  },
+  {
+    "page": "tulsi-vivah-hi",
+    "width": 390,
+    "bothVideoLanguages": true,
+    "captionsLoaded": true,
+    "seek": true,
+    "speed": true,
+    "fullscreen": true,
+    "audioSwitchPausesVideo": true,
+    "downloadLanguage": true,
+    "jsErrors": [],
+    "browserAudioMutedForDeviceIsolation": true
+  },
+  {
+    "page": "tulsi-vivah",
+    "width": 1440,
+    "bothVideoLanguages": true,
+    "captionsLoaded": true,
+    "seek": true,
+    "speed": true,
+    "fullscreen": true,
+    "audioSwitchPausesVideo": true,
+    "downloadLanguage": true,
+    "jsErrors": [],
+    "browserAudioMutedForDeviceIsolation": true
+  },
+  {
+    "page": "tulsi-vivah-hi",
+    "width": 1440,
+    "bothVideoLanguages": true,
+    "captionsLoaded": true,
+    "seek": true,
+    "speed": true,
+    "fullscreen": true,
+    "audioSwitchPausesVideo": true,
+    "downloadLanguage": true,
+    "jsErrors": [],
+    "browserAudioMutedForDeviceIsolation": true
+  }
+]

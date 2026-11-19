@@ -1,0 +1,50 @@
+.kathavachan {
+  margin: 0 0 4rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  background: #1c3e33;
+  border: 1px solid #ac834d;
+  border-radius: .6rem;
+  color: #fff3dd;
+  scroll-margin-top: 2rem;
+}
+.katha-series { color: #f9d287; font-size: 1rem; margin: 0 0 .5rem; }
+.katha-heading h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.4; margin: 0; }
+.katha-options { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin: 1rem 0; }
+.kathavachan button,
+.kathavachan select,
+.kathavachan [data-download] {
+  min-height: 52px;
+  padding: .65rem .85rem;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #b59c70;
+  border-radius: .3rem;
+  background: #132b23;
+  color: #fff3dd;
+}
+.kathavachan button { cursor: pointer; }
+.katha-options button span { display: block; font-size: .88rem; font-weight: 400; }
+.katha-options [aria-pressed="true"] { background: #f9d287; color: #18352b; }
+.kathavachan audio { display: block; width: 100%; min-height: 58px; margin: 1rem 0; }
+.kathavachan video { display: block; width: 100%; max-height: 70vh; background: #132b23; margin: 1rem 0; }
+.kathavachan [hidden] { display: none !important; }
+.katha-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; }
+.katha-controls label { display: inline-flex; align-items: center; gap: .5rem; }
+.kathavachan [data-play] { background: #f9d287; color: #18352b; min-width: 110px; }
+.kathavachan [data-download] { display: inline-flex; align-items: center; text-decoration: underline; }
+.katha-status { margin-bottom: 0; font-size: .95rem; }
+.kathavachan :is(button, select, a):focus-visible { outline: 3px solid #fff3dd; outline-offset: 4px; }
+@media (max-width: 420px) {
+  .katha-options { grid-template-columns: 1fr; }
+  .katha-controls > button { flex: 1 1 40%; }
+}
+@media print { .kathavachan { display: none; } }
+.kathavachan video::cue {
+  font-family: 'Noto Serif Devanagari', Arial, sans-serif;
+  font-size: clamp(14px, 1.8vw, 26px);
+  color: #fff;
+  background: rgba(15, 22, 19, .9);
+}
+.kathavachan video:fullscreen::cue { font-size: 4vh; }

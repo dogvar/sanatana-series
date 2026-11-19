@@ -1,0 +1,485 @@
+{
+  "created": "2026-11-19",
+  "prompts": {
+    "tool": "Built-in ImageGen",
+    "characterSheet": "Use case: illustration-story. Create a professional animation character turnaround sheet on warm plain ivory, 3:2 wide landscape. One consistent recurring adult Indian woman storyteller age about 40, natural medium brown skin, oval face, kind dark brown eyes, small maroon bindi, black hair with a few silver strands neatly gathered in low bun, simple muted terracotta sari with narrow emerald border over ivory blouse, small gold stud earrings. Relaxed approachable expression, subtle intelligent warmth suitable for children and older listeners. Hand-drawn Indian illustrated storybook animation, clean softly textured shapes, contemporary and refined, natural skin colors with no yellow tint. Three evenly spaced waist-up views of exactly the same character and outfit: front view smiling gently with closed lips; three-quarter view looking toward viewer with relaxed hands resting together near waist; side profile thoughtful closed lips. No exaggerated cartoon anatomy, no jewelry excess, no text or labels, no scenery, no watermark. Keep the face and clothing palette identical across views.",
+    "sceneAndHost": [
+      [
+        "host",
+        "Use case: identity-preserve. Reference is the approved-for-development host character sheet. Produce a SINGLE waist-up front three-quarter pose of exactly the same Indian woman, matching oval face, medium brown skin, kind eyes, black-and-silver low bun, small maroon bindi, terracotta sari with narrow emerald border and ivory blouse. Closed lips gentle smile. Both hands rest together naturally low at waist. Body fully contained with room above head and at sides. Identical refined Indian storybook painted style. Genuine TRANSPARENT BACKGROUND. No text, no backdrop, no multiple views.",
+        true
+      ],
+      [
+        "opening",
+        "Use case: illustration-story. Reference establishes the Indian storybook palette and linework only. Create a landscape 16:9 courtyard background for the host, WITHOUT any people. A quiet simple Hindu domestic courtyard, limewash, timber post, ordinary natural-size holy basil plant in modest terracotta planter on right, low open brass diya beside it on the ground; room on left for compositing the host later. Green leaves, terracotta and ivory, early morning light, warm gentle inviting storybook illustration consistent with reference. No wedding decoration yet. No arches, domes, Turkish lanterns, fancy palace, text, faces, watermarks.",
+        false
+      ]
+    ],
+    "blink": "Use case: precise-object-edit for animation. Edit only the woman's eyelids in the reference image. Close BOTH eyes softly for a natural blink, leaving thin naturally curved closed eyelash lines. Keep absolutely identical character, expression, eyebrow position, skin texture, head tilt, all pixel framing, hands, sari, hair and transparent background. Single exact same image with eyes closed. No other changes."
+  },
+  "assets": [
+    {
+      "path": "assets/character-sheet.png",
+      "bytes": 2514834,
+      "sha256": "0a768dd745202bf4b34c18ee3426b15b776450eeba498ea4b9b1e3ff64fa8ca3",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/cormorant-garamond-latin.woff2",
+      "bytes": 37776,
+      "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/host-blink.png",
+      "bytes": 1379606,
+      "sha256": "541c485525f1081817556644e4261c79f9c5af4820c75d4b9378e3d7a0b523f0",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/host-open.png",
+      "bytes": 1511128,
+      "sha256": "638abf2fde413e2bf40007f1d72422d41e740f609dbf0aa65cd47e6eb63eeac3",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/noto-serif-devanagari-devanagari.woff2",
+      "bytes": 127280,
+      "sha256": "7548aaa2bf4a5e8413e07dfe34372e137bec519b8f34a556af17820340aa209c",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/opening-courtyard.png",
+      "bytes": 2930750,
+      "sha256": "c47106cfb10aa3b28d0bc132044e7c35abdd630267612be1689eb2fe2f0396c6",
+      "provenance": "Built-in ImageGen artwork"
+    },
+    {
+      "path": "assets/title-en.png",
+      "bytes": 40439,
+      "sha256": "2a7b32d0ae5f739c87548619eb51df02be612e62e6e60962c15325d0d3e8f3b0",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/title-hi.png",
+      "bytes": 37283,
+      "sha256": "b123c138f06fc507cf50e2a243b908ac54eb839aacfd89942b801434cf549eaf",
+      "provenance": "Locally rendered title or existing OFL-licensed project font"
+    },
+    {
+      "path": "assets/tulsi-courtyard.webp",
+      "bytes": 245226,
+      "sha256": "68c9c8c721d4e9732ff86b78ef45716d67428be4847053d5db38dff331745231",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-preparation.webp",
+      "bytes": 138510,
+      "sha256": "19b01fc055bb0daec9678349d07659881f159520438619cb56b8ddd71ebd7561",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-twilight.webp",
+      "bytes": 74734,
+      "sha256": "ee08ca2a493e0059ee5b6300b4ecf77b0d1d5d6aaf65144e01c9da4520a713fa",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    },
+    {
+      "path": "assets/tulsi-wedding.webp",
+      "bytes": 143022,
+      "sha256": "4c3f8f7edec86df089e18101126d1b937fe162ed48409565f1ed82f73a1e00f3",
+      "provenance": "Existing Sanatana Series Tulsi Vivah artwork"
+    }
+  ],
+  "suppliedFiles": [
+    {
+      "path": "tulsi_pilot/01_Hindi_Script.md",
+      "bytes": 5762,
+      "sha256": "35aa56bd2869c40d288bc491e58c1d3610ea94000008455365d037be122fdbf5",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/02_English_Script.md",
+      "bytes": 2713,
+      "sha256": "664e510fc6d877301ac725d12ee16b556d600b7d7263620b751c0f12fb43ba73",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/03_Visual_Storyboard.md",
+      "bytes": 2350,
+      "sha256": "1f54996a0249e79d82669b12dc66b53f228d2b01366257b601af40b7e8041d39",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/04_Character_Design.md",
+      "bytes": 1361,
+      "sha256": "1d53a5c13d2cf8104456a97dd5af4f94a120994d8a355c869e0d97bd1ca2c3df",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/05_Production_Instructions.md",
+      "bytes": 2700,
+      "sha256": "2d29cf8ba51ae5ac9c291629359448259a4c295bbea9d7220c0474137a505594",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/06_Editorial_Rules.md",
+      "bytes": 1271,
+      "sha256": "9efdcdb2108845935ced5b34483e739529fa35805c2a2c38814410e97f2a33e3",
+      "provenance": "Owner-supplied locked production pack"
+    },
+    {
+      "path": "tulsi_pilot/README.md",
+      "bytes": 868,
+      "sha256": "243a350b6069d8892019ddb272b6f2ac6c1f421315f17d976ca391fc1baab663",
+      "provenance": "Owner-supplied locked production pack"
+    }
+  ],
+  "voices": {
+    "hi": "hi-IN-SwaraNeural",
+    "en": "en-IN-NeerjaNeural"
+  },
+  "status": "pilot awaiting owner approval",
+  "fullEpisodeStatus": "Owner approved both pilots; complete episodes await final publishing approval",
+  "completeAudio": {
+    "date": "2026-11-19",
+    "pilotApproval": "Both voices, narrator and storytelling approved by owner",
+    "fullEpisodeListening": "Owner final review pending; assistant audio listening unavailable",
+    "languages": {
+      "hi": {
+        "exactCompleteScript": "pass",
+        "paragraphs": 25,
+        "subtitleCues": 46,
+        "subtitleWordCoverage": "pass",
+        "sceneCount": 20,
+        "exports": [
+          {
+            "file": "tulsi-vivah-hi-1080p.mp4",
+            "seconds": 230.844,
+            "bytes": 89851417,
+            "resolution": [
+              1920,
+              1080
+            ],
+            "integratedLUFS": "-16.01",
+            "truePeakDBTP": "-3.58",
+            "decode": "pass",
+            "sha256": "ead305a116f3539a4c862eca3ee2044e5a9d5e461f811f9d14ce5bb31b0f4231"
+          },
+          {
+            "file": "tulsi-vivah-hi.mp4",
+            "seconds": 230.844,
+            "bytes": 21132434,
+            "resolution": [
+              1280,
+              720
+            ],
+            "integratedLUFS": "-16.03",
+            "truePeakDBTP": "-3.65",
+            "decode": "pass",
+            "sha256": "53a3edb1b766ce4bb9ad8e6fed7994014008c4141e28a9f64de66368d4a473ca"
+          },
+          {
+            "file": "tulsi-vivah-hi.mp3",
+            "seconds": 230.844,
+            "bytes": 3695112,
+            "resolution": null,
+            "integratedLUFS": "-16.44",
+            "truePeakDBTP": "-4.00",
+            "decode": "pass",
+            "sha256": "dfb792cfd9b79f43f57d773617232fce8fd6906a3595c304139d0285828a1329"
+          }
+        ]
+      },
+      "en": {
+        "exactCompleteScript": "pass",
+        "paragraphs": 29,
+        "subtitleCues": 43,
+        "subtitleWordCoverage": "pass",
+        "sceneCount": 21,
+        "exports": [
+          {
+            "file": "tulsi-vivah-en-1080p.mp4",
+            "seconds": 222.164,
+            "bytes": 88699056,
+            "resolution": [
+              1920,
+              1080
+            ],
+            "integratedLUFS": "-16.01",
+            "truePeakDBTP": "-3.64",
+            "decode": "pass",
+            "sha256": "21353b4ec3147a4f93dd8da6c942ea582878f07c010ee290417bda35529fdac5"
+          },
+          {
+            "file": "tulsi-vivah-en.mp4",
+            "seconds": 222.164,
+            "bytes": 20221613,
+            "resolution": [
+              1280,
+              720
+            ],
+            "integratedLUFS": "-16.03",
+            "truePeakDBTP": "-3.56",
+            "decode": "pass",
+            "sha256": "4e9f1926f3c9715349d1f7b3ffc6bfee6b8b80c62ab806f1b8e1ade62457a27f"
+          },
+          {
+            "file": "tulsi-vivah-en.mp3",
+            "seconds": 222.164,
+            "bytes": 3556106,
+            "resolution": null,
+            "integratedLUFS": "-16.44",
+            "truePeakDBTP": "-4.10",
+            "decode": "pass",
+            "sha256": "03bf9c4c49eb79673ac196974feea6f888e8d756494dfe542eff52575b585729"
+          }
+        ]
+      }
+    }
+  },
+  "fullProductionWorkspace": "Separate delivery: Sanatana-Kathavachan/tulsi-full; raw art, per-paragraph speech, masters and local tool paths excluded from website Git",
+  "fullAssets": [
+    {
+      "path": "assets/character-sheet.png",
+      "bytes": 2514834,
+      "sha256": "0a768dd745202bf4b34c18ee3426b15b776450eeba498ea4b9b1e3ff64fa8ca3"
+    },
+    {
+      "path": "assets/cormorant-garamond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "path": "assets/cormorant-garamond-latin.woff2",
+      "bytes": 37776,
+      "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621"
+    },
+    {
+      "path": "assets/dm-sans-OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    },
+    {
+      "path": "assets/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+    },
+    {
+      "path": "assets/fonts/NotoSerifDevanagari-Regular.ttf",
+      "bytes": 262176,
+      "sha256": "7d4e2b1a7712840218a2726d598490647959ed1104934f3d30a72e77b7c51dad"
+    },
+    {
+      "path": "assets/host-blink.png",
+      "bytes": 1379606,
+      "sha256": "541c485525f1081817556644e4261c79f9c5af4820c75d4b9378e3d7a0b523f0"
+    },
+    {
+      "path": "assets/host-open.png",
+      "bytes": 1511128,
+      "sha256": "638abf2fde413e2bf40007f1d72422d41e740f609dbf0aa65cd47e6eb63eeac3"
+    },
+    {
+      "path": "assets/noto-serif-devanagari-OFL.txt",
+      "bytes": 4386,
+      "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331"
+    },
+    {
+      "path": "assets/noto-serif-devanagari-devanagari.woff2",
+      "bytes": 127280,
+      "sha256": "7548aaa2bf4a5e8413e07dfe34372e137bec519b8f34a556af17820340aa209c"
+    },
+    {
+      "path": "assets/opening-courtyard.png",
+      "bytes": 2930750,
+      "sha256": "c47106cfb10aa3b28d0bc132044e7c35abdd630267612be1689eb2fe2f0396c6"
+    },
+    {
+      "path": "assets/shaligram.webp",
+      "bytes": 96240,
+      "sha256": "c7da8af95d336027e9d54639af75685e61757770e0af6ab7b8f3eb174c80c870"
+    },
+    {
+      "path": "assets/story-amulet-final.png",
+      "bytes": 3111054,
+      "sha256": "f811da39da0648fe924a7938b56cd96c646b6535154497d3f6278c03497fd608"
+    },
+    {
+      "path": "assets/story-arrival-final.png",
+      "bytes": 2824474,
+      "sha256": "1a8b176490b7bb8c701c42eda0fb77b41b86c3ed1f082e9c769ed383959cacc6"
+    },
+    {
+      "path": "assets/story-battle-dynamic.png",
+      "bytes": 3068421,
+      "sha256": "22caaba3bd7d0baca6f4dea0380a78eb4050cec64f47d66eae528e0234987283"
+    },
+    {
+      "path": "assets/story-cast.png",
+      "bytes": 2901929,
+      "sha256": "89683f15de8bcd2edf66adf755623f98650e125c96825b75ba96b8f7a477a2f0"
+    },
+    {
+      "path": "assets/story-couple.png",
+      "bytes": 3867594,
+      "sha256": "b8b1979e5c403dc6398643a8a1c5478783f2d6e7d774a740b1c546065453f658"
+    },
+    {
+      "path": "assets/story-gandaki-v2.png",
+      "bytes": 3683244,
+      "sha256": "84a27253e7a8df0dc5c9dd025df086afe4c194254d55111272f2d862b7f912c8"
+    },
+    {
+      "path": "assets/story-protest-v2.png",
+      "bytes": 3371738,
+      "sha256": "9e692d359e888e4614b694b2a5791e14eee378b87885546e001f4f01225b5b43"
+    },
+    {
+      "path": "assets/title-en.png",
+      "bytes": 40439,
+      "sha256": "2a7b32d0ae5f739c87548619eb51df02be612e62e6e60962c15325d0d3e8f3b0"
+    },
+    {
+      "path": "assets/title-hi.png",
+      "bytes": 37283,
+      "sha256": "b123c138f06fc507cf50e2a243b908ac54eb839aacfd89942b801434cf549eaf"
+    },
+    {
+      "path": "assets/tulsi-courtyard.webp",
+      "bytes": 245226,
+      "sha256": "68c9c8c721d4e9732ff86b78ef45716d67428be4847053d5db38dff331745231"
+    },
+    {
+      "path": "assets/tulsi-preparation.webp",
+      "bytes": 138510,
+      "sha256": "19b01fc055bb0daec9678349d07659881f159520438619cb56b8ddd71ebd7561"
+    },
+    {
+      "path": "assets/tulsi-twilight.webp",
+      "bytes": 74734,
+      "sha256": "ee08ca2a493e0059ee5b6300b4ecf77b0d1d5d6aaf65144e01c9da4520a713fa"
+    },
+    {
+      "path": "assets/tulsi-wedding.webp",
+      "bytes": 143022,
+      "sha256": "4c3f8f7edec86df089e18101126d1b937fe162ed48409565f1ed82f73a1e00f3"
+    }
+  ],
+  "webDelivery": [
+    {
+      "path": "media/kathavachan/tulsi-vivah/poster.jpg",
+      "bytes": 201326,
+      "sha256": "48b62bbd3fa9492d7733f0cfbe5c96ffc930d9ea2676b1a50750096c2a0c1dd6"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-en.mp3",
+      "bytes": 3556106,
+      "sha256": "03bf9c4c49eb79673ac196974feea6f888e8d756494dfe542eff52575b585729"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-en.mp4",
+      "bytes": 20221613,
+      "sha256": "4e9f1926f3c9715349d1f7b3ffc6bfee6b8b80c62ab806f1b8e1ade62457a27f"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-en.vtt",
+      "bytes": 3831,
+      "sha256": "f1b908f86667708e01f44d5927972088263b9e7fc78328f1702bada52fd50762"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-hi.mp3",
+      "bytes": 3695112,
+      "sha256": "dfb792cfd9b79f43f57d773617232fce8fd6906a3595c304139d0285828a1329"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-hi.mp4",
+      "bytes": 21132434,
+      "sha256": "53a3edb1b766ce4bb9ad8e6fed7994014008c4141e28a9f64de66368d4a473ca"
+    },
+    {
+      "path": "media/kathavachan/tulsi-vivah/tulsi-vivah-hi.vtt",
+      "bytes": 6897,
+      "sha256": "b55bc039a49405f303b79f8db97f2b7a27c900ba13c7ed73c7231491327289eb"
+    }
+  ],
+  "committedReferences": [
+    {
+      "path": "references/character-sheet.webp",
+      "bytes": 1624998,
+      "sha256": "e53e52415e35ac3a68cee9b822d591783959d731fa326c043e5ad10bdaf99ed2"
+    },
+    {
+      "path": "references/host-blink.webp",
+      "bytes": 850032,
+      "sha256": "9d06129bc6f0568a6c1c348e3f4d2b0a6374b10780318929dddcff1caacb29f5"
+    },
+    {
+      "path": "references/host-open.webp",
+      "bytes": 956980,
+      "sha256": "20af573df03f0883a1bc126d879f227ba28698ee5483b2818ffea4e499956831"
+    },
+    {
+      "path": "references/story-amulet-final.webp",
+      "bytes": 242936,
+      "sha256": "2b075dcfc08eb9bf9d71a3fd916e90b317f609232ca8e265106e5ed560c5ebf1"
+    },
+    {
+      "path": "references/story-arrival-final.webp",
+      "bytes": 212964,
+      "sha256": "8236ada4c2e286f001489a96610e386968b7b8428d6ce77eeeb364f6b8bb0d96"
+    },
+    {
+      "path": "references/story-battle-final.webp",
+      "bytes": 228674,
+      "sha256": "bb1645108a45c11f4e26be20ea3865d32f901f4f0bbba5acfc8d1bd9e4728f1d"
+    },
+    {
+      "path": "references/story-couple.webp",
+      "bytes": 339320,
+      "sha256": "eaa3662df71cf6e76532594bb1204a82039a83f299b40658d20a0047fb561893"
+    },
+    {
+      "path": "references/story-gandaki-v2.webp",
+      "bytes": 340388,
+      "sha256": "6977c5320f9d0aef01a196cda7791080d7c6b1f999d423dba5e46ca17c4e5a0b"
+    },
+    {
+      "path": "references/story-protest-v2.webp",
+      "bytes": 286546,
+      "sha256": "df82349bee2e1ba0a06da80278e4e1fc2fb2bb82c3cbb231d9b8ba5ca9b85607"
+    }
+  ],
+  "music": {
+    "title": "Bansuri, Sitar & Tabla – Divine Raga for Mindfulness",
+    "artist": "boopul",
+    "source": "https://pixabay.com/music/meditationspiritual-bansuri-sitar-amp-tabla-divine-raga-for-mindfulness-538679/",
+    "license": "https://pixabay.com/service/license-summary/",
+    "sourceSHA256": "a84f64e3f5b2561884d9b80a662a7af53456709944ceb692e6ee93014e6e5a11",
+    "publisherLabelsAIGenerated": true,
+    "sourceSeconds": 224.424,
+    "musicBaseLUFS": -32,
+    "speechDuckingDB": -4,
+    "seamOverlapSeconds": 4,
+    "fadeInSeconds": 1.5,
+    "fadeOutSeconds": 3
+  },
+  "selectedStoryArtwork": {
+    "couple": "story-couple.png",
+    "battle": "story-battle-dynamic.png",
+    "amulet": "story-amulet-final.png",
+    "arrival": "story-arrival-final.png",
+    "protest": "story-protest-v2.png",
+    "gandaki": "story-gandaki-v2.png",
+    "ceremony": "tulsi-wedding.webp",
+    "twilight": "tulsi-twilight.webp",
+    "shaligram": "shaligram.webp"
+  },
+  "rejectedAssets": "Discarded artwork is archived in rejected-art/ outside Git and is not an approved reference. Rejected drone mixes remain in renders/rejected-drone-mix/. Use only selectedStoryArtwork."
+}

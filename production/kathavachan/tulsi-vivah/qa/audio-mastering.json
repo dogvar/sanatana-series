@@ -1,0 +1,44 @@
+{
+  "music": {
+    "title": "Bansuri, Sitar & Tabla – Divine Raga for Mindfulness",
+    "artist": "boopul",
+    "source": "https://pixabay.com/music/meditationspiritual-bansuri-sitar-amp-tabla-divine-raga-for-mindfulness-538679/",
+    "license": "https://pixabay.com/service/license-summary/",
+    "sourceSHA256": "a84f64e3f5b2561884d9b80a662a7af53456709944ceb692e6ee93014e6e5a11",
+    "publisherLabelsAIGenerated": true,
+    "sourceSeconds": 224.424,
+    "musicBaseLUFS": -32,
+    "speechDuckingDB": -4,
+    "seamOverlapSeconds": 4,
+    "fadeInSeconds": 1.5,
+    "fadeOutSeconds": 3
+  },
+  "narration": "Exact approved raw speech, one centred signal in stereo; no delay, echo, reverb or time stretching. Per-paragraph source files unchanged.",
+  "rejectedScore": "Original synthetic three-tone bed removed completely.",
+  "mix": {
+    "hi": {
+      "input_i": "-13.87",
+      "input_tp": "-1.46",
+      "input_lra": "4.30",
+      "input_thresh": "-25.04",
+      "output_i": "-15.99",
+      "output_tp": "-3.36",
+      "output_lra": "4.40",
+      "output_thresh": "-27.11",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.01"
+    },
+    "en": {
+      "input_i": "-13.84",
+      "input_tp": "-1.49",
+      "input_lra": "4.20",
+      "input_thresh": "-25.07",
+      "output_i": "-16.02",
+      "output_tp": "-2.92",
+      "output_lra": "4.30",
+      "output_thresh": "-27.19",
+      "normalization_type": "dynamic",
+      "target_offset": "0.02"
+    }
+  }
+}

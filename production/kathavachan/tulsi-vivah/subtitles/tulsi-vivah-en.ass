@@ -1,0 +1,56 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,46,&H00FFFFFF,&H00FFFFFF,&H00191512,&H50191512,0,0,0,0,100,100,0,0,3,10,0,2,100,100,52,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.80,0:00:05.70,Default,,0,0,0,,In many Indian homes, there is a small\NTulsi plant.
+Dialogue: 0,0:00:06.20,0:00:11.72,Default,,0,0,0,,Every morning, someone may offer water,\Nlight a lamp or pause beside
+Dialogue: 0,0:00:11.72,0:00:13.88,Default,,0,0,0,,it for a moment of prayer.
+Dialogue: 0,0:00:14.38,0:00:20.54,Default,,0,0,0,,But during the sacred month of Kartik,\Nsomething extraordinary happens.
+Dialogue: 0,0:00:21.04,0:00:24.93,Default,,0,0,0,,The Tulsi plant is adorned like a bride.
+Dialogue: 0,0:00:25.43,0:00:32.43,Default,,0,0,0,,Fresh flowers surround it. Sugarcane\Nstalks form a wedding canopy. Lamps are
+Dialogue: 0,0:00:32.43,0:00:38.51,Default,,0,0,0,,lit, families gather, and traditional\Nwedding songs fill the home.
+Dialogue: 0,0:00:39.01,0:00:43.52,Default,,0,0,0,,But why is a sacred plant married to Lord\NVishnu?
+Dialogue: 0,0:00:44.02,0:00:50.09,Default,,0,0,0,,To understand this beautiful tradition, we\Nmust travel into an ancient Puranic
+Dialogue: 0,0:00:50.09,0:00:50.62,Default,,0,0,0,,story.
+Dialogue: 0,0:00:51.12,0:00:54.87,Default,,0,0,0,,The story of Tulasi and Shankhachuda.
+Dialogue: 0,0:00:55.37,0:01:01.26,Default,,0,0,0,,Long ago, according to the sacred\Nnarrative, there lived a powerful ruler
+Dialogue: 0,0:01:01.26,0:01:02.86,Default,,0,0,0,,named Shankhachuda.
+Dialogue: 0,0:01:03.36,0:01:09.43,Default,,0,0,0,,His wife, Tulasi, was renowned for her\Ndevotion and steadfastness.
+Dialogue: 0,0:01:09.93,0:01:16.37,Default,,0,0,0,,Shankhachuda possessed divine armour that\Nprotected him in battle. His protection
+Dialogue: 0,0:01:16.37,0:01:21.33,Default,,0,0,0,,was also connected to the integrity of his\Nmarriage to Tulasi.
+Dialogue: 0,0:01:21.83,0:01:27.16,Default,,0,0,0,,Then came a great conflict between\NShankhachuda and the gods.
+Dialogue: 0,0:01:27.66,0:01:30.99,Default,,0,0,0,,Even Lord Shiva entered the battle.
+Dialogue: 0,0:01:31.49,0:01:36.68,Default,,0,0,0,,Yet Shankhachuda remained protected, and\Nthe struggle continued.
+Dialogue: 0,0:01:37.18,0:01:42.92,Default,,0,0,0,,Lord Vishnu eventually approached him\Ndisguised as an elderly Brahmin and
+Dialogue: 0,0:01:42.92,0:01:45.41,Default,,0,0,0,,obtained his protective armour.
+Dialogue: 0,0:01:45.91,0:01:51.67,Default,,0,0,0,,Then Vishnu assumed Shankhachuda's\Nappearance and came before Tulasi.
+Dialogue: 0,0:01:52.17,0:01:56.90,Default,,0,0,0,,Believing her husband had returned, Tulasi\Nreceived him.
+Dialogue: 0,0:01:57.40,0:02:01.00,Default,,0,0,0,,But the deception did not remain hidden.
+Dialogue: 0,0:02:01.50,0:02:07.47,Default,,0,0,0,,When Tulasi discovered the truth, she was\Novercome with grief and anger.
+Dialogue: 0,0:02:07.97,0:02:13.01,Default,,0,0,0,,She condemned Vishnu for what he had done\Nand pronounced a curse:
+Dialogue: 0,0:02:13.01,0:02:14.76,Default,,0,0,0,,he would become stone.
+Dialogue: 0,0:02:15.26,0:02:20.47,Default,,0,0,0,,According to this Puranic account, Vishnu\Naccepted the curse.
+Dialogue: 0,0:02:20.97,0:02:26.87,Default,,0,0,0,,The story then describes his association\Nwith the sacred Shaligram stone, while
+Dialogue: 0,0:02:26.87,0:02:32.61,Default,,0,0,0,,Tulasi becomes associated with the Gandaki\NRiver and the revered Tulsi plant.
+Dialogue: 0,0:02:33.11,0:02:39.03,Default,,0,0,0,,And so, in this devotional tradition,\NTulsi and Shaligram came to hold
+Dialogue: 0,0:02:39.03,0:02:41.20,Default,,0,0,0,,a special place together.
+Dialogue: 0,0:02:41.70,0:02:47.53,Default,,0,0,0,,That ancient association is remembered\Nevery year through Tulsi Vivah.
+Dialogue: 0,0:02:48.03,0:02:53.99,Default,,0,0,0,,The Tulsi plant is dressed and decorated\Nas a bride. Shaligram, or
+Dialogue: 0,0:02:53.99,0:02:59.77,Default,,0,0,0,,another representation of Lord Vishnu, is\Nhonoured as the groom.
+Dialogue: 0,0:03:00.27,0:03:06.47,Default,,0,0,0,,Families gather around the decorated\Nplant, perform customary wedding rituals,
+Dialogue: 0,0:03:06.47,0:03:10.64,Default,,0,0,0,,light lamps, sing auspicious songs and\Nshare prasad.
+Dialogue: 0,0:03:11.14,0:03:17.56,Default,,0,0,0,,The customs may differ between regions and\Nhouseholds, but the celebration continues
+Dialogue: 0,0:03:17.56,0:03:21.41,Default,,0,0,0,,to connect devotion, nature and family\Ntraditions.
+Dialogue: 0,0:03:21.91,0:03:26.28,Default,,0,0,0,,Wishing you and your family a blessed\NTulsi Vivah.
+Dialogue: 0,0:03:26.78,0:03:32.68,Default,,0,0,0,,This is an accessible literary retelling\Nbased on the Devi Bhagavata Purana.
+Dialogue: 0,0:03:32.68,0:03:38.59,Default,,0,0,0,,Other Puranic and regional traditions\Npreserve different versions of Tulsi's
+Dialogue: 0,0:03:38.59,0:03:39.66,Default,,0,0,0,,sacred story.
