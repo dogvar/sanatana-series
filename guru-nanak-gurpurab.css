@@ -160,15 +160,83 @@
 .guide-nanak.hi .nanak-pending strong { font-family: var(--hindi); line-height: 1.55; }
 .guide-nanak .nanak-pending span { max-width: 62ch; color: var(--muted); font-size: .95rem; }
 
-.guide-nanak .nanak-timeline { display: grid; gap: 0; margin: 1.3rem 0; padding: 0; list-style: none; }
-.guide-nanak .nanak-timeline li {
-  display: grid;
-  grid-template-columns: 7.5rem minmax(0, 1fr);
-  gap: 1rem;
-  padding: .7rem 0;
-  border-bottom: 1px solid var(--line);
+/* Visual timeline: a vertical path on small screens, a horizontal journey on wide ones. */
+.guide-nanak .nanak-glance {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: linear-gradient(180deg, #222c62 0%, #182049 100%);
+  border-block-start: 3px solid var(--gold);
 }
-.guide-nanak .nanak-timeline b { color: var(--gold-light); }
+.guide-nanak .nanak-eras { display: grid; gap: 1.5rem; margin-top: 1.4rem; }
+.guide-nanak .chapter .nanak-era h3 {
+  margin: 0 0 .8rem;
+  color: var(--saffron);
+  font: 700 .95rem/1.4 var(--ui, inherit);
+}
+.guide-nanak .nanak-stops { position: relative; display: grid; margin: 0; padding: 0; list-style: none; }
+.guide-nanak .nanak-stops::before {
+  content: "";
+  position: absolute;
+  inset: .7rem auto .7rem .55rem;
+  border-inline-start: 2px solid var(--gold);
+}
+.guide-nanak .is-after .nanak-stops::before { border-inline-start-style: dashed; }
+.guide-nanak .nanak-stop { position: relative; margin: 0; padding: 0; }
+.guide-nanak .nanak-stop::marker { content: ""; }
+.guide-nanak .nanak-stop a {
+  display: grid;
+  gap: .08rem;
+  min-height: 44px;
+  padding: .55rem .6rem .7rem 2.2rem;
+  color: var(--text);
+  text-decoration: none;
+  overflow-wrap: normal;
+}
+.guide-nanak .chapter .nanak-stop a { text-decoration: none; }
+.guide-nanak .nanak-stop a:hover { background: #ffffff12; }
+.guide-nanak .chapter .nanak-stop a:hover strong { text-decoration: underline; text-underline-offset: .18em; }
+.guide-nanak .nanak-stop a::before {
+  content: "";
+  position: absolute;
+  top: .78rem;
+  left: .15rem;
+  width: .95rem;
+  height: .95rem;
+  background: var(--gold-light);
+  border: 2px solid var(--gold-light);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #1d2658;
+}
+.guide-nanak .nanak-stop.is-approx a::before { background: #1d2658; }
+.guide-nanak .nanak-stop b { color: var(--gold-light); font-size: 1.02rem; line-height: 1.4; }
+.guide-nanak .nanak-stop strong { color: var(--ivory); font-size: 1.05rem; line-height: 1.35; }
+.guide-nanak .nanak-stop span { color: var(--muted); font-size: .92rem; line-height: 1.45; }
+.guide-nanak .nanak-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin: 1.2rem 0 0; color: var(--muted); font-size: .9rem; }
+.guide-nanak .nanak-legend span { display: inline-flex; align-items: center; gap: .45rem; }
+.guide-nanak .nanak-legend span::before {
+  content: "";
+  width: .75rem;
+  height: .75rem;
+  border: 2px solid var(--gold-light);
+  border-radius: 50%;
+}
+.guide-nanak .nanak-legend .is-firm::before { background: var(--gold-light); }
+
+@media (min-width: 1180px) {
+  .guide-nanak .nanak-eras { grid-template-columns: minmax(0, 5fr) minmax(0, 2fr); gap: .9rem; }
+  .guide-nanak .nanak-era .nanak-stops { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .guide-nanak .nanak-era.is-after .nanak-stops { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .guide-nanak .nanak-stops::before {
+    inset: .55rem 0 auto 0;
+    border-inline-start: 0;
+    border-block-start: 2px solid var(--gold);
+  }
+  .guide-nanak .is-after .nanak-stops::before { border-inline-start: 0; border-block-start-style: dashed; }
+  .guide-nanak .nanak-stop a { height: 100%; align-content: start; padding: 1.8rem .55rem .7rem .15rem; }
+  .guide-nanak .nanak-stop a::before { top: .12rem; left: .15rem; }
+  .guide-nanak .nanak-stop b { font-size: .95rem; }
+  .guide-nanak .nanak-stop strong { font-size: 1rem; }
+  .guide-nanak .nanak-stop span { font-size: .86rem; }
+}
 
 .guide-nanak .nanak-glossary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1.6rem; }
 .guide-nanak .nanak-glossary div { padding: .6rem 0; border-bottom: 1px solid var(--line); }
@@ -180,7 +248,6 @@
   .guide-nanak .nanak-keys,
   .guide-nanak .nanak-glossary { grid-template-columns: 1fr; }
   .guide-nanak .nanak-emblem { max-width: 190px; font-size: 5.6rem; order: -1; }
-  .guide-nanak .nanak-timeline li { grid-template-columns: 1fr; gap: .1rem; }
   .guide-nanak .navlinks a { min-height: 44px; }
 }
 
