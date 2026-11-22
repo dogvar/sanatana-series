@@ -143,6 +143,8 @@
 
 /* Marked replacement slots. These are deliberately visible until approved art exists. */
 .guide-nanak .nanak-plate { margin: 1.5rem 0; }
+.guide-nanak .nanak-plate img { display: block; width: 100%; height: auto; border: 1px solid #dcb76e80; }
+.guide-nanak .chapter .nanak-plate figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; line-height: 1.55; }
 .guide-nanak .nanak-pending {
   display: flex;
   flex-direction: column;

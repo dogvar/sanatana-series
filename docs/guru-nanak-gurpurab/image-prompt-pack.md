@@ -14,6 +14,46 @@ Thirteen ready-to-paste prompts: 12 guide illustrations and 1 social preview ima
 
 ---
 
+## Round 2: use these first
+
+Images 2, 3, 4, 5, 6 and 10 are approved and placed. **Regenerate Images 1, 7, 8 and 9 with the prompts below**, then generate Images 11, 12 and 13 from the original prompts further down this pack.
+
+### Image 9 (revised): Sri Guru Granth Sahib Ji
+
+Why: the first version looked like a large draped tomb or bed.
+
+```text
+A reverent painting inside a simple, serene gurdwara, viewed from the front at a respectful distance. At the centre is a low, elegant carved wooden manji sahib (a small raised throne-like stand) on a modest platform, beneath a small embroidered square canopy. Resting on the manji sahib is one single large closed book, clearly compact, rectangular and book-sized, about the width of a person's shoulders, supported by small cushions and completely covered by a neatly draped indigo and ivory rumala cloth, so its book shape is obvious but no page or writing shows. A few fresh flowers sit modestly on the floor in front. No people. Quiet, luminous and sacred. Refined heritage painting with fine brushwork in gouache and natural pigments on ivory wasli paper, soft warm light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. It must NOT resemble a tomb, grave, cenotaph, dargah, coffin, bed, mattress or large mound. No oversized canopy, no railings, no grand palace. No open book, pages, text, letters, numerals, script, signature, watermark, logo or border. No idols, deities, portraits, halos, light rays, Om, lotus, crescent or added symbols. No shoes. No comic-book, anime, cartoon, 3D or photographic look.
+```
+
+### Image 1 (revised): Guru Nanak Dev Ji
+
+Why: part of the Guru's face was visible in profile.
+
+```text
+A reverent heritage painting of a solitary elderly teacher seen from directly behind in the middle distance, standing still on a path at the edge of a quiet Punjabi wheat field at first light. His head faces straight ahead toward the horizon and is turned completely away from the viewer, so only the back of a plain cream cloth head-wrap, the back of his white hair, and his shoulders can be seen. Absolutely no nose, cheek, eye, ear, forehead or beard profile is visible. He wears a long undyed cotton robe and a plain muted saffron shawl. The figure occupies about one quarter of the image height, with a wide glowing horizon and generous empty sky. Calm, humble and contemplative. Refined painting in the spirit of early Punjab manuscript and miniature art, gouache and natural pigments on handmade ivory wasli paper, fine brushwork, soft atmospheric light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. No side view, no three-quarter view, no visible face, no halo or glowing aura. No text, letters, numerals, script, signature, watermark, logo or border. No deities, temples, Om, lotus, crescent, Khanda or other religious symbols. No comic-book, anime, cartoon, 3D or photographic look.
+```
+
+### Image 7 (revised): The Kartarpur Community
+
+Why: a central white-bearded teacher could be mistaken for the Guru with his face showing.
+
+```text
+A modest farming settlement on the bank of the Ravi River in Punjab in the 1530s, seen from a high, gentle distance at the end of the day: simple mud-brick and thatch dwellings around a shared open courtyard, irrigated green fields, a wooden Persian wheel at a brick well, and bullocks returning home. Many very small ordinary men, women and children are walking in from the fields and carrying baskets and water pots, all busy and equal, with no individual standing out. Peaceful, cooperative and humble. Refined heritage painting in the spirit of early Punjab manuscript and miniature art, gouache and natural pigments on handmade ivory wasli paper, fine brushwork, golden evening light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. No seated circle, no gathering around anyone, no teacher, elder, preacher or central holy figure, and no prominent white-bearded man. No domes, grand buildings, modern gurdwara or temples. No text, letters, numerals, script, signature, watermark, logo or border. No deities, halos, Om, lotus, crescent, Khanda, flags or other religious symbols. No comic-book, anime, cartoon, 3D or photographic look.
+```
+
+### Image 8 (revised): Honest Work and Shared Meals
+
+Why: the ladle was pouring dal onto a seated man's shoulder.
+
+```text
+A sixteenth-century Punjabi farming community sharing a simple meal at the edge of a harvested wheat field. Men and women of different ages and social backgrounds, in plain long-sleeved cotton clothes of humble traditional styles, sit together in one straight row on the ground at the same level, eating roti and dal from leaf plates and small clay bowls placed in front of them. One woman walks behind the row carrying a basket of roti, and one man bends low to set a full clay bowl carefully on the ground in front of a diner. Nothing is being poured. Sickles and bundles of wheat rest nearby, with workers in the distant field. Dignified, warm and egalitarian, with no one placed above another. Refined heritage painting in the spirit of early Punjab manuscript and miniature art, gouache and natural pigments on handmade ivory wasli paper, fine brushwork, soft late-day light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. No ladles, no spilled food, no sleeveless vests or undershirts, no meat or alcohol, no central holy figure. No text, letters, numerals, script, signature, watermark, logo or border. No deities, halos, tilak, Om, lotus, crescent, Khanda or other religious symbols. No comic-book, anime, cartoon, 3D or photographic look.
+```
+
+---
+
+## Original prompts
+
 ## Image 1: Guru Nanak Dev Ji
 
 `portrait` · Chapter 1

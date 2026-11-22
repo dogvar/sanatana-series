@@ -1,6 +1,6 @@
 # Guru Nanak Dev Ji Gurpurab: image briefs
 
-**Status: 0 of 12 images created.** No image-generation tool or API key was available in the build session. The pages show twelve clearly labelled "Illustration pending" panels. No stock, generic or low-quality substitutes were used.
+**Status: 6 of 12 images placed** (Plates 2, 3, 4, 5, 6 and 10). Plates 1, 7, 8 and 9 need regeneration, and Plates 11 and 12 plus the social image are still to be supplied. See `artwork.json` and `image-prompt-pack.md`. Remaining slots show labelled "Illustration pending" panels.
 
 ## Decide before generating
 
