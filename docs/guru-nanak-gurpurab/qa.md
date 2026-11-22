@@ -14,7 +14,7 @@ Reviewed 21 November 2026. Automated checks prove structure and exact text match
 
 ## Not complete
 
-- **Illustrations:** 8 of 12 are placed after full-size review. Plates 1, 7, 8 and 9 were held for cultural or visual errors. See `artwork.json`.
+- **Illustrations:** all 12 are placed after full-size agent review, but no Sikh reviewer has checked them. Plate 9 (Sri Guru Granth Sahib Ji) needs explicit sign-off. Small artistic liberties are recorded in `artwork.json`.
 - **Sikh reviewer:** no knowledgeable Sikh reader has reviewed the guide.
 - **Hindi:** written and proofread by the agent, not by a native-speaking editor.
 - **Sources:** several preferred sources were inaccessible. See `research.md`.
@@ -23,7 +23,7 @@ Reviewed 21 November 2026. Automated checks prove structure and exact text match
 ## Questions for editorial approval
 
 1. May the Guru be depicted at all, and if so how? The recommendation is no visible face.
-2. Should the guide publish with placeholders, or wait for artwork?
+2. Should the guide publish on 24 November, or wait until a Sikh reviewer has read it?
 3. Is the English BaniDB wording ("God", "he") acceptable, or is a gender-neutral translation preferred?
 4. Should the guide name the Kartik and Vaisakh date debate more fully, or keep the current brief note?
 5. Who will carry out the Sikh community review before publication?

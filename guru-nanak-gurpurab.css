@@ -141,26 +141,9 @@
 .guide-nanak .gurbani a:focus-visible { outline-color: #7a3a0c; }
 .guide-nanak .sources { font-size: .94rem; line-height: 1.7; }
 
-/* Marked replacement slots. These are deliberately visible until approved art exists. */
 .guide-nanak .nanak-plate { margin: 1.5rem 0; }
 .guide-nanak .nanak-plate img { display: block; width: 100%; height: auto; border: 1px solid #dcb76e80; }
 .guide-nanak .chapter .nanak-plate figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; line-height: 1.55; }
-.guide-nanak .nanak-pending {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: .4rem;
-  min-height: clamp(200px, 30vw, 300px);
-  padding: clamp(1.1rem, 3vw, 2rem);
-  background:
-    linear-gradient(135deg, #dcb76e12 25%, transparent 25% 50%, #dcb76e12 50% 75%, transparent 75%) 0 0 / 28px 28px,
-    #182049;
-  border: 1px dashed #dcb76eb0;
-}
-.guide-nanak .nanak-pending b { color: var(--saffron); font-size: .86rem; letter-spacing: .04em; }
-.guide-nanak .nanak-pending strong { color: var(--gold-light); font: 600 clamp(1.2rem, 2.3vw, 1.6rem)/1.35 var(--display); }
-.guide-nanak.hi .nanak-pending strong { font-family: var(--hindi); line-height: 1.55; }
-.guide-nanak .nanak-pending span { max-width: 62ch; color: var(--muted); font-size: .95rem; }
 
 /* Visual timeline: a vertical path on small screens, a horizontal journey on wide ones. */
 .guide-nanak .nanak-glance {
@@ -257,8 +240,6 @@
   .guide-nanak,
   .guide-nanak .nanak-story,
   .guide-nanak .nanak-keys > div,
-  .guide-nanak .nanak-pending,
   .guide-nanak .nanak-emblem { background: white; color: #222; }
-  .guide-nanak .nanak-pending { display: none; }
-  .guide-nanak :is(.hero .sub, .chapter h3, .nanak-keys dt, .nanak-date, .nanak-heading, a) { color: #222; }
+    .guide-nanak :is(.hero .sub, .chapter h3, .nanak-keys dt, .nanak-date, .nanak-heading, a) { color: #222; }
 }
