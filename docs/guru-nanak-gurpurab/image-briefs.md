@@ -1,6 +1,6 @@
 # Guru Nanak Dev Ji Gurpurab: image briefs
 
-**Status: 6 of 12 images placed** (Plates 2, 3, 4, 5, 6 and 10). Plates 1, 7, 8, 9 and 11 need regeneration, and Plate 12 plus the social image are still to be supplied. See `artwork.json` and `image-prompt-pack.md`. Remaining slots show labelled "Illustration pending" panels.
+**Status: 8 of 12 images placed** (Plates 2, 3, 4, 5, 6, 10, 11 and 12), plus the social image. Plates 1, 7, 8 and 9 need regeneration. See `artwork.json` and `image-prompt-pack.md`. Remaining slots show labelled "Illustration pending" panels.
 
 ## Decide before generating
 

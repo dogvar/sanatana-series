@@ -14,8 +14,7 @@ Reviewed 21 November 2026. Automated checks prove structure and exact text match
 
 ## Not complete
 
-- **Illustrations:** 6 of 12 are placed after full-size review. Plates 1, 7, 8, 9 and 11 were held for cultural or visual errors, and Plate 12 is not yet supplied. See `artwork.json`.
-- **Social image:** no page-specific image yet, so the pages use a summary card.
+- **Illustrations:** 8 of 12 are placed after full-size review. Plates 1, 7, 8 and 9 were held for cultural or visual errors. See `artwork.json`.
 - **Sikh reviewer:** no knowledgeable Sikh reader has reviewed the guide.
 - **Hindi:** written and proofread by the agent, not by a native-speaking editor.
 - **Sources:** several preferred sources were inaccessible. See `research.md`.

@@ -14,9 +14,9 @@ Thirteen ready-to-paste prompts: 12 guide illustrations and 1 social preview ima
 
 ---
 
-## Round 3: the 7 images still needed
+## Round 3: the 4 images still needed
 
-Images 2, 3, 4, 5, 6 and 10 are approved and placed.
+Images 2, 3, 4, 5, 6, 10, 11, 12 and 13 are approved and placed.
 
 **Use one prompt per generation, ideally in a new image chat each time.** Sending several prompts together is what produces a grid of small panels, which cannot be used.
 
@@ -50,30 +50,6 @@ Check: Nothing should be poured.
 
 ```text
 Create ONE single full-frame illustration only, not a grid, collage, storyboard, contact sheet or series of panels. A sixteenth-century Punjabi farming community sharing a simple meal at the edge of a harvested wheat field. Men and women of different ages and social backgrounds, in plain long-sleeved cotton clothes of humble traditional styles, sit together in one straight row on the ground at the same level, eating roti and dal from leaf plates and small clay bowls placed in front of them. One woman walks behind the row carrying a basket of roti, and one man bends low to set a full clay bowl carefully on the ground in front of a diner. Nothing is being poured. Sickles and bundles of wheat rest nearby, with workers in the distant field. Dignified, warm and egalitarian, with no one placed above another. Refined heritage painting in the spirit of early Punjab manuscript and miniature art, gouache and natural pigments on handmade ivory wasli paper, fine brushwork, soft late-day light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. No ladles, no spilled food, no sleeveless vests or undershirts, no meat or alcohol, no central holy figure. No text, letters, numerals, script, signature, watermark, logo or border. No deities, halos, tilak, Om, lotus, crescent, Khanda or other religious symbols. No comic-book, anime, cartoon, 3D or photographic look.
-```
-
-### Image 11: Nagar Kirtan
-
-Check: Count the saffron figures. There must be exactly five.
-
-```text
-Create ONE single full-frame illustration only, not a grid, collage, storyboard, contact sheet or series of panels. A Nagar Kirtan procession on a street in a Punjabi town in soft morning light, viewed from the side. In the foreground walk only five men in single file with wide, clear gaps between them, so that each of the five can be counted easily: one, two, three, four, five. They are the Panj Pyare, in matching saffron cholas with blue sashes and matching saffron turbans, each with a short sheathed kirpan at the waist, hands gently joined, walking barefoot with solemn dignity. There is no sixth person in saffron. Far behind them, small in the distance, is a flower-decorated float with a closed canopy whose curtains are drawn, so nothing inside can be seen. Two volunteers sweep the road well ahead of the five, wearing white. Families with covered heads line the street, joyful and respectful. Refined heritage painting with fine brushwork in gouache and natural pigments on ivory wasli paper, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. Exactly five Panj Pyare, never four or six. No other figures in saffron robes. No long swords, drawn swords or raised weapons. No mound or draped shape on the float. No flags, banners, signs or emblems. No text, letters, numerals, script, signature, watermark, logo or border. No idols, deities, halos, Om, lotus, crescent or added symbols. No comic-book, anime, cartoon, 3D or photographic look.
-```
-
-### Image 12: Langar and Seva
-
-Check: Check that every head is covered and the food is vegetarian.
-
-```text
-Create ONE single full-frame illustration only, not a grid, collage, storyboard, contact sheet or series of panels. Langar in a large gurdwara dining hall: people of every age, background and walk of life sit side by side in long straight rows on floor mats, all at the same level, every head covered with a turban, patka, scarf or chunni. Volunteers walk along the rows serving dal and roti from steel buckets onto steel thalis, with natural hands and warm, humble expressions. Large cooking pots and people rolling rotis are visible in the background. Busy, joyful and deeply egalitarian. Refined heritage painting with fine brushwork in gouache and natural pigments on ivory wasli paper, warm light, restrained palette of ivory, deep indigo, muted saffron and warm gold. Landscape 3:2. Vegetarian food only, no meat, eggs or alcohol. No shoes in the dining rows. No text, letters, numerals, script, signature, watermark, logo, banner or border. No idols, deities, halos, Om, lotus, crescent or added symbols. No comic-book, anime, cartoon, 3D or photographic look.
-```
-
-### Image 13: Social preview
-
-Check: Use a wide format, about 1.91:1.
-
-```text
-Create ONE single full-frame illustration only, not a grid, collage, storyboard, contact sheet or series of panels. A wide, serene landscape of the Punjab plains at sunrise for a website banner: golden wheat fields in the foreground, a slow river curving through the middle distance, a single line of trees, and a vast deep-indigo sky warming to saffron and gold at the horizon. No people. Strong, simple composition with calm open space in the left half. Refined heritage painting in the spirit of early Punjab manuscript and miniature art, gouache and natural pigments on handmade ivory wasli paper, fine brushwork, restrained palette of ivory, deep indigo, muted saffron and warm gold. Wide format, 1.91:1. No buildings. No text, letters, numerals, script, signature, watermark, logo or border. No deities, halos, Om, lotus, crescent, Khanda or other religious symbols. No comic-book, anime, cartoon, 3D or photographic look.
 ```
 
 ---
