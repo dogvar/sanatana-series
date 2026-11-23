@@ -236,6 +236,16 @@
   .guide-nanak .navlinks a { min-height: 44px; }
 }
 
+.guide-nanak .nanak-hero-art { width: 100%; max-width: 560px; margin: 0 auto; }
+.guide-nanak .nanak-hero-art img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 18px 50px #05081d88; }
+.guide-nanak .nanak-hero-art figcaption { margin-top: .55rem; color: var(--muted); font-size: .82rem; line-height: 1.4; text-align: center; }
+.guide-nanak .nanak-download { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; margin-top: .6rem; padding: .55rem 1.2rem; border-radius: 4px; background: var(--gold); color: #0e1330; font-weight: 700; text-decoration: none; }
+.guide-nanak .nanak-download:hover, .guide-nanak .nanak-download:focus-visible { background: var(--gold-light); }
+
+@media (max-width: 760px) {
+  .guide-nanak .nanak-hero-art { order: -1; max-width: 100%; }
+}
+
 @media print {
   .guide-nanak,
   .guide-nanak .nanak-story,
