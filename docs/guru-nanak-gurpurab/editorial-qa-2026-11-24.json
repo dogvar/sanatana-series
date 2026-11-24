@@ -1,0 +1,223 @@
+{
+  "checked": "2026-11-24",
+  "browser": {
+    "pages": [
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "index",
+        "width": 360
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "index",
+        "width": 390
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "index",
+        "width": 768
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "index",
+        "width": 1440
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab",
+        "width": 360,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab",
+        "width": 390,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab",
+        "width": 768,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab",
+        "width": 1440,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab-hi",
+        "width": 360,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab-hi",
+        "width": 390,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab-hi",
+        "width": 768,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      },
+      {
+        "overflow": false,
+        "broken": [],
+        "imageDimensions": [],
+        "page": "guru-nanak-gurpurab-hi",
+        "width": 1440,
+        "fontFaces": [
+          {
+            "family": "Noto Serif Gurmukhi",
+            "status": "loaded"
+          }
+        ],
+        "titleBeforeImage": true
+      }
+    ],
+    "page_errors": [],
+    "failed_requests": []
+  },
+  "scripture": [
+    {
+      "file": "guru-nanak-gurpurab.html",
+      "all_original_scripture_paragraphs_retained": true,
+      "paragraph_count": 12
+    },
+    {
+      "file": "guru-nanak-gurpurab-hi.html",
+      "all_original_scripture_paragraphs_retained": true,
+      "paragraph_count": 15
+    }
+  ],
+  "video_decode": [
+    {
+      "lang": "en",
+      "decode_exit": 0,
+      "errors": ""
+    },
+    {
+      "lang": "hi",
+      "decode_exit": 0,
+      "errors": ""
+    }
+  ],
+  "limits": [
+    "Owner approved all three pronunciation auditions; final in-context mix awaits listening review",
+    "No physical Android/iPhone test",
+    "No independent historical proof of traditional miraculous episodes",
+    "Sikh and native-Hindi human review pending"
+  ],
+  "final_checks": {
+    "guide_validator": "pass: ten pages",
+    "diff_whitespace": "pass",
+    "existing_layout_regression": "pass: 24 page/viewport combinations",
+    "existing_design_regression": "pass: 320px, no JavaScript, reduced motion and local fonts",
+    "festival_preservation": "pass against origin/main",
+    "final_homepage_and_guide_screenshots": "pass: six screenshots including 560px homepage",
+    "approved_ik_oankar_patch": {
+      "source_sha256": "3c33655d0a7d67e71879db095438e81ac18f0bfd286c48d9f20fd362c95dd090",
+      "source_unchanged": true,
+      "replacement_seconds": [
+        [
+          133.82,
+          139.91
+        ],
+        [
+          15.64,
+          21.05
+        ],
+        [
+          199.28,
+          204.04
+        ]
+      ],
+      "approved_reading": "Option B, owner approved 24 November 2026",
+      "voice": "en-IN-NeerjaNeural",
+      "rate": "-6%",
+      "narration_text_unchanged": true,
+      "pronunciation_hints": [
+        "इक ओंकार",
+        "livz",
+        "Raa-vee"
+      ],
+      "video_stream_copy": true,
+      "pcm_before_encoding_unchanged_outside_replacement": true,
+      "music_note": "Same licensed recording, quiet bed rebuilt only within the replacement; exact original stems were not supplied. 80 ms boundary crossfades.",
+      "other_pronunciations": "Owner approved verb lives and Raa-vee auditions; both applied",
+      "output_bytes": 361995037,
+      "video_bitstream_identical": true,
+      "video_bitstream_sha256": "f1b8ba563ec2d0d4db18a9d2dd7f020767b750abcdf9f83a0d890400bfd6b5ba",
+      "full_decode": "pass"
+    },
+    "homepage_revision": "Sanatana ghats hero restored; compact latest-guide thumbnail and bilingual links; desktop, 390px and 560px screenshots reviewed; no-JS fallback passes"
+  }
+}

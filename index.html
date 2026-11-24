@@ -258,6 +258,19 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
 #bharat-chronicles .chronicles-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:auto;padding-top:18px}
 #bharat-chronicles .chronicles-links a,.chronicles-jump{color:var(--gold);font-weight:500;text-decoration:underline;text-underline-offset:.2em}
 #bharat-chronicles .chronicles-links a{display:inline-flex;align-items:center;min-height:44px}
+
+/* Latest guide stays subordinate to the Sanatana Series hero. */
+.latest-guide{display:grid;grid-template-columns:152px minmax(0,1fr);gap:20px;align-items:center;max-width:610px;padding:18px;border:1px solid rgba(201,162,39,.5);background:rgba(14,11,10,.92)}
+.latest-guide-art{display:block}.latest-guide-art img{display:block;width:100%;height:auto;border:1px solid var(--hair)}
+.latest-guide-label{color:var(--gold-2);font:11px/1.5 Marcellus,serif;letter-spacing:.13em;text-transform:uppercase}
+.hero .latest-guide h2{font:400 clamp(21px,2.2vw,28px)/1.2 Fraunces,Georgia,serif;margin:6px 0}
+.latest-guide-date{color:var(--sand-2);font-size:13px;line-height:1.5}
+.latest-guide-links{display:flex;flex-wrap:wrap;gap:0 18px;margin-top:5px}
+.latest-guide-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold-2);font-size:15px;text-decoration:underline;text-underline-offset:.2em}
+.latest-guide-links a[lang=hi]{font-family:'Noto Serif Devanagari',serif}
+.latest-guide-art:focus-visible{outline-offset:5px}
+@media(max-width:600px){.latest-guide{grid-template-columns:92px minmax(0,1fr);gap:14px;padding:14px}.hero .latest-guide h2{font-size:22px}.latest-guide-date{font-size:12px}.latest-guide-links{gap:0 14px}.latest-guide-links a{font-size:14px}}
+@media(max-width:360px){.latest-guide{grid-template-columns:76px minmax(0,1fr);gap:12px}.hero .latest-guide h2{font-size:20px}}
 </style>
 </head>
 <body>
@@ -286,7 +299,14 @@ footer a{color:var(--sand-2)}footer a:hover{color:var(--gold)}
       <a class="hero-cta" href="#guides">Explore the guides <span aria-hidden="true">→</span></a>
       <a class="chronicles-jump" href="#bharat-chronicles">Bharat Chronicles <span aria-hidden="true">↓</span></a>
     </div>
-    <div id="plaque"></div>
+    <aside class="latest-guide" aria-labelledby="home-feature-title">
+      <a class="latest-guide-art" href="guru-nanak-gurpurab.html" aria-label="Read the latest Guru Nanak Dev Ji guide"><img id="home-feature-image" src="images/guru-nanak-gurpurab/homepage-cover.webp" alt="Guru Nanak Dev Ji and Bhai Mardana in an illustrated Punjab landscape" width="1672" height="941" decoding="async"></a>
+      <div><p id="home-feature-label" class="latest-guide-label">Latest guide</p>
+        <h2 id="home-feature-title">Guru Nanak Dev Ji &amp; Gurpurab</h2>
+        <p id="home-feature-date" class="latest-guide-date">Parkash Gurpurab · 24 November 2026</p>
+        <div class="latest-guide-links"><a id="home-feature-en" href="guru-nanak-gurpurab.html" hreflang="en">Read in English →</a><a id="home-feature-hi" href="guru-nanak-gurpurab-hi.html" lang="hi" hreflang="hi">हिन्दी में पढ़ें →</a></div>
+      </div>
+    </aside>
     </div>
   </div>
 </section>
@@ -459,9 +479,13 @@ var G=[
   img:'images/tulsi-vivah/courtyard.webp',
   d:'The wedding of Tulsi and Vishnu, the distinct stories of Vrinda and Tulasi, and the customs of Kartik. Local dates explained.'},
 
- {c:'festivals',h:'guru-nanak-gurpurab.html',hi:'guru-nanak-gurpurab-hi.html',s:'2026-11-24',heroFeature:true,
+ {c:'festivals',h:'guru-nanak-gurpurab.html',hi:'guru-nanak-gurpurab-hi.html',s:'2026-11-24',
   k:'Parkash Gurparb',t:'Guru Nanak Dev Ji',dv:'गुरु नानक देव जी',motif:'moon',hue:232,
-  img:'images/guru-nanak-gurpurab/hero-card.webp',
+  img:'images/guru-nanak-gurpurab/mardana.webp',
+  cover:'images/guru-nanak-gurpurab/homepage-cover.webp',coverWidth:1672,coverHeight:941,
+  featureTitle:'Guru Nanak Dev Ji & Gurpurab',featureLabel:'Featured guide · Sikh tradition',
+  featureDescription:'The life, journeys and teachings of Guru Nanak Dev Ji, the first Sikh Guru, and the spirit of Gurpurab.',
+  coverAlt:'Guru Nanak Dev Ji and Bhai Mardana on a Punjab path with a gurdwara in an interpretive heritage landscape; Guru Nanak Dev Ji and Guruparb cover title.',
   d:'The life, journeys and teachings of the first Sikh Guru, Sri Guru Granth Sahib Ji, and how Gurparb is celebrated.'},
 
  {c:'epics',h:'gita.html',hi:'gita-hi.html',ever:1,k:'Scripture',t:'Bhagavad Gita',dv:'भगवद्गीता',
@@ -679,14 +703,13 @@ function plate(g,ar){
 
 /* ════════ PLAQUE ════════ */
 function renderPlaque(){
+  var mount=document.getElementById('plaque'); if(!mount)return;
   var asc=function(a,b){return P(a.s)-P(b.s)};
   var now=G.filter(function(g){return st(g)==='now'}).sort(asc);
   var soon=G.filter(function(g){return st(g)==='soon'}).sort(asc);
-  // Editorial features can stay visible after their observance ends.
-  var featured=G.find(function(g){return g.heroFeature});
-  var g=featured||now[0]||soon[0]; if(!g)return;
+  var g=now[0]||soon[0]; if(!g)return;
   var live=st(g)==='now';
-  var label=live?'Happening now':featured?'Featured guide':word(g);
+  var label=live?'Happening now':word(g);
   var art=g.img?'<img src="'+g.img+'" alt="" decoding="async">':plate(g);
   document.getElementById('plaque').innerHTML=
     '<a class="plaque" href="'+g.h+'">'+
@@ -761,7 +784,19 @@ function render(){
   for(var i=0;i<b.length;i++) b[i].onclick=function(){cur=this.getAttribute('data-c');render()};
 }
 
-renderPlaque();render();
+// An editor selects the compact latest-guide card independently of festival status.
+var HOME_FEATURE={href:'guru-nanak-gurpurab.html'};
+function renderHomeFeature(){
+  var g=G.find(function(item){return item.h===HOME_FEATURE.href}); if(!g)return;
+  var image=document.getElementById('home-feature-image');
+  if(image&&g.cover){image.src=g.cover;image.alt=g.coverAlt||g.t;image.width=g.coverWidth;image.height=g.coverHeight;}
+  document.getElementById('home-feature-title').textContent=g.featureTitle||g.t;
+  document.getElementById('home-feature-label').textContent='Latest guide';
+  document.getElementById('home-feature-date').textContent=g.k+' · '+span(g);
+  document.getElementById('home-feature-en').href=g.h;
+  document.getElementById('home-feature-hi').href=g.hi;
+}
+renderHomeFeature();renderPlaque();render();
 </script>
 </body>
 </html>
