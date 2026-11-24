@@ -87,6 +87,36 @@ for slug, reference_day in REFERENCE_DATES.items():
             errors.append(f'{name}: placeholder or inherited unverified timing')
     if set(pair[0].ids) != set(pair[1].ids): errors.append(f'{slug}: bilingual section mismatch')
 
+# Sikh guide: a gurdwara programme is not a Hindu puja-muhurat lookup.
+nanak_pair = []
+for lang in ('en', 'hi'):
+    name = 'guru-nanak-gurpurab' + ('-hi' if lang == 'hi' else '') + '.html'
+    page = parse(ROOT / name); nanak_pair.append(page)
+    if page.lang != lang: errors.append(f'{name}: incorrect language')
+    if len(page.ids) != len(set(page.ids)): errors.append(f'{name}: duplicate IDs')
+    if page.alternates != {'en': 'guru-nanak-gurpurab.html', 'hi': 'guru-nanak-gurpurab-hi.html'}:
+        errors.append(f'{name}: incomplete language alternates')
+    text = page.path.read_text(encoding='utf-8')
+    if 'datetime="2026-11-24"' not in text or '#source-official-date' not in text:
+        errors.append(f'{name}: missing reference date or official source')
+    for image in page.images:
+        if not image.get('alt') or not image.get('width') or not image.get('height'):
+            errors.append(f'{name}: missing image description/dimensions')
+    for ref in page.refs:
+        url = urllib.parse.urlsplit(ref)
+        if url.scheme or url.netloc: continue
+        target = (page.path.parent / urllib.parse.unquote(url.path)).resolve() if url.path else page.path
+        if not target.is_relative_to(ROOT) or not target.exists():
+            errors.append(f'{name}: missing local reference {ref}'); continue
+        if url.fragment and target.suffix == '.html' and urllib.parse.unquote(url.fragment) not in parse(target).ids:
+            errors.append(f'{name}: missing anchor {ref}')
+if set(nanak_pair[0].ids) != set(nanak_pair[1].ids):
+    errors.append('guru-nanak-gurpurab: bilingual section mismatch')
+nanak_css = (ROOT / 'guru-nanak-gurpurab.css').read_text()
+for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', nanak_css):
+    if not urllib.parse.urlsplit(ref).scheme and not (ROOT / ref).is_file():
+        errors.append(f'guru-nanak-gurpurab.css: missing {ref}')
+
 # Validate homepage data paths as well as HTML attributes (cards are generated in JS).
 for filename in ('index.html', 'calendar.html'):
     text = (ROOT / filename).read_text()
@@ -116,4 +146,4 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css):
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print('PASS: eight guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates and local lookup and homepage/calendar data references')
+print('PASS: ten guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates, local lookup, Guru Nanak font and homepage/calendar data references')

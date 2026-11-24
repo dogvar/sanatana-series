@@ -1,255 +1,780 @@
-/* Guru Nanak Dev Ji Gurpurab: ivory, deep indigo, muted saffron and warm gold. */
-.guide-nanak {
-  --deep: #0e1330;
-  --night: #141a3f;
-  --surface: #1f2858;
-  --ivory: #fbf4e4;
-  --text: #f3ecdd;
-  --muted: #d4cdc0;
-  --gold: #dcb76e;
-  --gold-light: #f2d595;
-  --saffron: #e0a064;
-  --line: #dcb76e55;
-  --gurmukhi: "Noto Serif Gurmukhi", "Noto Sans Gurmukhi", "Gurmukhi MN", "Raavi", serif;
-  background: radial-gradient(ellipse at top right, #27316b 0%, var(--night) 50rem);
+/* Guru Nanak editorial edition. All layout changes are scoped to this guide. */
+@font-face {
+  font-family:'Noto Serif Gurmukhi';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('fonts/gurmukhi/noto-serif-gurmukhi.ttf') format('truetype')
 }
-
-.guide-nanak .gurmukhi { font-family: var(--gurmukhi); }
-
+.guide-nanak {
+  --deep:#0c111b;
+  --night:#111927;
+  --surface:#192231;
+  --ivory:#faf0dd;
+  --text:#eee5d5;
+  --muted:#c6bba9;
+  --gold:#d0ac69;
+  --gold-light:#edcf94;
+  --saffron:#dfac75;
+  --line:#d0ac6940;
+  --gurmukhi:'Noto Serif Gurmukhi',serif;
+  background:radial-gradient(ellipse at 88% 0%,#3b342c55,transparent 45rem),var(--night);
+  font-size:19px
+}
+.guide-nanak :is(.gurmukhi,[lang=pa]) {
+  font-family:var(--gurmukhi)
+}
+.guide-nanak .nav,.guide-nanak .hero {
+  max-width:1480px
+}
 .guide-nanak .hero-grid {
-  grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
-  align-items: center;
-  gap: clamp(1.5rem, 4vw, 4rem);
-  padding-block: clamp(2.25rem, 6vw, 5.5rem);
-  border-bottom: 1px solid var(--line);
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  align-items:center;
+  gap:clamp(28px,4vw,64px);
+  padding:64px 0 45px;
+  border-bottom:1px solid var(--line)
+}
+.guide-nanak .hero-content {
+  order:0;
+  padding:0
 }
 .guide-nanak .hero h1 {
-  margin: .15em 0 .2em;
-  font-size: clamp(2.7rem, 5.4vw, 5.4rem);
-  line-height: 1.06;
-  text-wrap: balance;
+  font:500 clamp(46px,5vw,78px)/1.06 var(--display);
+  letter-spacing:-.035em;
+  margin:18px 0 20px;
+  max-width:11ch;
+  text-wrap:balance
 }
-.guide-nanak.hi .hero h1 { font-size: clamp(2.4rem, 4.8vw, 4.7rem); line-height: 1.3; }
+.guide-nanak.hi .hero h1 {
+  font-family:var(--hindi);
+  font-size:clamp(35px,4vw,59px);
+  line-height:1.32;
+  letter-spacing:0;
+  max-width:15ch
+}
 .guide-nanak .nanak-heading {
-  margin: 0;
-  color: var(--gold-light);
-  font-family: var(--gurmukhi);
-  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
-  line-height: 1.6;
+  margin:0;
+  color:var(--gold-light);
+  font:400 clamp(17px,1.6vw,23px)/1.75 var(--gurmukhi)
 }
-.guide-nanak .hero .sub { color: var(--gold-light); max-width: 34ch; }
-.guide-nanak .nanak-lede { max-width: 48ch; }
-.guide-nanak .nanak-date { color: var(--saffron); font-weight: 650; }
+.guide-nanak .hero .sub {
+  color:var(--gold-light);
+  font-size:clamp(22px,2.2vw,31px);
+  line-height:1.4;
+  margin:0 0 22px;
+  max-width:31ch
+}
+.guide-nanak .nanak-lede {
+  max-width:46ch;
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.8;
+  margin:0 0 24px
+}
 .guide-nanak .nanak-jump {
-  display: inline-flex;
-  align-items: center;
-  gap: .4em;
-  min-height: 44px;
-  color: var(--gold-light);
-  font-weight: 650;
-  text-decoration: underline;
-  text-underline-offset: .2em;
+  display:inline-flex;
+  align-items:center;
+  gap:15px;
+  min-height:48px;
+  color:var(--gold-light);
+  font:500 14px var(--ui);
+  text-decoration:underline;
+  text-underline-offset:.3em
 }
-.guide-nanak .nanak-emblem {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1;
-  max-width: 340px;
-  width: 100%;
-  margin-inline: auto;
-  color: var(--gold-light);
-  background: radial-gradient(circle, #2b3574 0%, #171d47 72%);
-  border: 1px solid #dcb76e99;
-  outline: 1px solid #dcb76e44;
-  outline-offset: 7px;
-  border-radius: 50%;
-  font-family: var(--gurmukhi);
-  font-size: clamp(6rem, 13vw, 10rem);
-  line-height: 1;
+.guide-nanak .nanak-hero-art {
+  order:1;
+  margin:0;
+  width:100%;
+  position:relative
 }
-
-.guide-nanak .chapter h2 { margin-bottom: .55em; text-wrap: balance; }
+.guide-nanak .nanak-hero-art:before {
+  content:'';
+  position:absolute;
+  inset:-9px -9px 34px;
+  border:1px solid var(--line);
+  pointer-events:none
+}
+.guide-nanak .nanak-hero-art img {
+  width:100%;
+  height:auto;
+  box-shadow:0 16px 45px #0005
+}
+.guide-nanak .nanak-hero-art figcaption {
+  color:var(--muted);
+  font:12px/1.6 var(--ui);
+  margin-top:12px
+}
+.guide-nanak .layout {
+  max-width:1300px;
+  grid-template-columns:175px minmax(0,1fr);
+  gap:52px;
+  margin-top:48px
+}
+.guide-nanak .toc {
+  top:24px
+}
+.guide-nanak .toc-links a {
+  font-size:12px
+}
+.guide-nanak .chapter {
+  padding-bottom:54px;
+  margin-bottom:56px
+}
+.guide-nanak .chapter h2 {
+  max-width:22ch;
+  margin:0 0 28px;
+  font-size:clamp(36px,4vw,57px);
+  text-wrap:balance
+}
+.guide-nanak.hi .chapter h2 {
+  font-family:var(--hindi);
+  font-size:clamp(29px,3.3vw,45px);
+  line-height:1.45;
+  letter-spacing:0
+}
 .guide-nanak .chapter h3 {
-  margin: 1.7rem 0 .55rem;
-  color: var(--gold-light);
-  font: 600 clamp(1.35rem, 2.5vw, 1.85rem)/1.3 var(--display);
+  font:500 clamp(27px,2.8vw,38px)/1.2 var(--display);
+  color:var(--ivory);
+  margin:34px 0 18px;
+  text-wrap:balance
 }
-.guide-nanak.hi .chapter h3 { font-family: var(--hindi); line-height: 1.5; }
+.guide-nanak.hi .chapter h3 {
+  font-family:var(--hindi);
+  font-size:clamp(24px,2.5vw,32px);
+  line-height:1.5
+}
+.guide-nanak .chapter p {
+  max-width:73ch;
+  margin:0 0 22px
+}
 .guide-nanak .chapter-number {
-  display: block;
-  margin-bottom: .3rem;
-  color: var(--saffron);
-  font-family: var(--body, inherit);
-  font-size: .85rem;
-  font-weight: 650;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  display:block;
+  font:600 11px/1.6 var(--ui);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--saffron);
+  margin-bottom:12px
 }
-.guide-nanak.hi .chapter-number { letter-spacing: 0; font-size: .95rem; }
-.guide-nanak .chapter p a,
-.guide-nanak .chapter li a { text-decoration: underline; text-underline-offset: .18em; overflow-wrap: anywhere; }
-
-.guide-nanak .nanak-tag {
-  display: inline-block;
-  margin: 0 0 .7rem;
-  padding: .22rem .65rem;
-  color: #201a10;
-  background: var(--gold-light);
-  font-size: .84rem;
-  font-weight: 700;
+.guide-nanak.hi .chapter-number {
+  font-family:var(--hindi);
+  letter-spacing:0;
+  font-size:13px
 }
-.guide-nanak .nanak-tag.is-history { background: #cfd6f6; }
-.guide-nanak .nanak-tag.is-gurbani { background: #f6c99d; }
-
-.guide-nanak .nanak-story {
-  margin-top: 1.2rem;
-  padding: clamp(1.1rem, 3vw, 1.8rem);
-  background: #1f2858;
-  border-inline-start: 3px solid var(--gold);
+.guide-nanak .chapter :is(p,li) a {
+  text-decoration:underline;
+  text-underline-offset:.2em;
+  overflow-wrap:anywhere
 }
-.guide-nanak .nanak-story > :last-child { margin-bottom: 0; }
-
-.guide-nanak .nanak-keys { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.4rem 0; }
-.guide-nanak .nanak-keys > div { padding: 1rem 1.1rem; background: #1a2250; border-top: 2px solid var(--gold); }
-.guide-nanak .nanak-keys dt { color: var(--gold-light); font-weight: 700; font-size: 1.08rem; }
-.guide-nanak .nanak-keys dt span { display: block; font-family: var(--gurmukhi); font-weight: 500; color: var(--saffron); }
-.guide-nanak .nanak-keys dd { margin: .35rem 0 0; }
-
-/* Scripture is presented on ivory, set apart from the surrounding narrative. */
-.guide-nanak .gurbani {
-  margin: 1.5rem 0;
-  padding: clamp(1.25rem, 4vw, 2.25rem);
-  color: #1d2147;
-  background: var(--ivory);
-  border-block: 3px solid #b98a3c;
+.guide-nanak .nanak-kicker {
+  font:600 11px/1.6 var(--ui);
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  color:var(--saffron);
+  margin:0 0 8px
 }
-.guide-nanak .gurbani blockquote { margin: 0; padding: 0; border: 0; background: none; color: inherit; }
-.guide-nanak .gurbani .pangti {
-  margin: 0 0 .5rem;
-  color: #171c52;
-  font-family: var(--gurmukhi);
-  font-size: clamp(1.4rem, 3vw, 1.95rem);
-  font-weight: 600;
-  line-height: 1.7;
+.guide-nanak .nanak-when {
+  padding:26px 30px;
+  background:#e8dcc7;
+  color:#322b24;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:12px 32px;
+  margin-bottom:30px;
+  border-top:3px solid var(--gold)
 }
-.guide-nanak .gurbani .translit { margin: 0 0 .25rem; color: #4a4560; font-style: italic; overflow-wrap: anywhere; }
-.guide-nanak .gurbani .devanagari { margin: 0 0 1rem; color: #4a4560; font-family: var(--hindi); }
-.guide-nanak .gurbani .meaning { margin: .45rem 0 0; color: #1d2147; }
-.guide-nanak .gurbani .meaning b { color: #7b4a12; }
-.guide-nanak .gurbani figcaption { margin-top: 1rem; color: #5b4720; font-size: .92rem; font-weight: 650; }
-.guide-nanak .gurbani figcaption a { color: #7a3a0c; text-decoration: underline; text-underline-offset: .18em; }
-.guide-nanak .gurbani a:focus-visible { outline-color: #7a3a0c; }
-.guide-nanak .sources { font-size: .94rem; line-height: 1.7; }
-
-.guide-nanak .nanak-plate { margin: 1.5rem 0; }
-.guide-nanak .nanak-plate img { display: block; width: 100%; height: auto; border: 1px solid #dcb76e80; }
-.guide-nanak .chapter .nanak-plate figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; line-height: 1.55; }
-
-/* Visual timeline: a vertical path on small screens, a horizontal journey on wide ones. */
+.guide-nanak .nanak-when h2 {
+  font:500 34px/1.2 var(--display);
+  margin:5px 0 12px;
+  color:#30271f
+}
+.guide-nanak.hi .nanak-when h2 {
+  font-family:var(--hindi);
+  font-size:27px;
+  line-height:1.5
+}
+.guide-nanak .nanak-when p {
+  font-size:15px;
+  line-height:1.75;
+  margin:0;
+  max-width:65ch
+}
+.guide-nanak .nanak-when .nanak-kicker {
+  color:#765020
+}
+.guide-nanak .nanak-when a {
+  color:#714712;
+  text-decoration:underline;
+  text-underline-offset:.18em
+}
+.guide-nanak .nanak-when nav {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  font:500 13px/1.6 var(--ui);
+  gap:10px
+}
+.guide-nanak .nanak-when nav a {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px
+}
+.guide-nanak .nanak-when>.nanak-source-note {
+  grid-column:1/-1;
+  border-top:1px solid #74501e33;
+  margin:4px 0 0;
+  padding-top:12px
+}
+.guide-nanak .nanak-when .nanak-source-note {
+  color:#624515
+}
+.guide-nanak .nanak-source-note {
+  margin:22px 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.8
+}
+.guide-nanak .nanak-source-note summary {
+  cursor:pointer;
+  min-height:44px;
+  display:list-item;
+  padding:8px 0;
+  text-decoration:underline;
+  text-underline-offset:.2em
+}
+.guide-nanak .nanak-source-note p {
+  margin:12px 0 0;
+  font-size:15px
+}
 .guide-nanak .nanak-glance {
-  padding: clamp(1.2rem, 3vw, 2rem);
-  background: linear-gradient(180deg, #222c62 0%, #182049 100%);
-  border-block-start: 3px solid var(--gold);
+  background:none;
+  padding:0 0 28px;
+  margin-bottom:48px
 }
-.guide-nanak .nanak-eras { display: grid; gap: 1.5rem; margin-top: 1.4rem; }
+.guide-nanak .nanak-timeline-disclosure>summary {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  cursor:pointer;
+  min-height:56px;
+  font:500 27px/1.35 var(--display);
+  color:var(--gold-light);
+  list-style:none
+}
+.guide-nanak.hi .nanak-timeline-disclosure>summary {
+  font-family:var(--hindi);
+  font-size:22px
+}
+.guide-nanak .nanak-timeline-disclosure>summary::-webkit-details-marker {
+  display:none
+}
+.guide-nanak .nanak-timeline-disclosure[open]>summary {
+  margin-bottom:20px
+}
+.guide-nanak .nanak-timeline-disclosure>p {
+  font-size:16px
+}
+.guide-nanak .nanak-eras {
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);
+  gap:28px;
+  margin-top:24px
+}
 .guide-nanak .chapter .nanak-era h3 {
-  margin: 0 0 .8rem;
-  color: var(--saffron);
-  font: 700 .95rem/1.4 var(--ui, inherit);
+  color:var(--saffron);
+  font:600 13px/1.6 var(--ui);
+  margin:0 0 12px
 }
-.guide-nanak .nanak-stops { position: relative; display: grid; margin: 0; padding: 0; list-style: none; }
-.guide-nanak .nanak-stops::before {
-  content: "";
-  position: absolute;
-  inset: .7rem auto .7rem .55rem;
-  border-inline-start: 2px solid var(--gold);
+.guide-nanak .nanak-stops {
+  list-style:none;
+  position:relative;
+  margin:0;
+  padding:0;
+  border-inline-start:1px solid var(--line)
 }
-.guide-nanak .is-after .nanak-stops::before { border-inline-start-style: dashed; }
-.guide-nanak .nanak-stop { position: relative; margin: 0; padding: 0; }
-.guide-nanak .nanak-stop::marker { content: ""; }
+.guide-nanak .nanak-stops li {
+  margin:0;
+  padding:0
+}
 .guide-nanak .nanak-stop a {
-  display: grid;
-  gap: .08rem;
-  min-height: 44px;
-  padding: .55rem .6rem .7rem 2.2rem;
-  color: var(--text);
-  text-decoration: none;
-  overflow-wrap: normal;
+  display:grid;
+  gap:3px;
+  position:relative;
+  padding:10px 12px 15px 24px;
+  min-height:44px;
+  text-decoration:none
 }
-.guide-nanak .chapter .nanak-stop a { text-decoration: none; }
-.guide-nanak .nanak-stop a:hover { background: #ffffff12; }
-.guide-nanak .chapter .nanak-stop a:hover strong { text-decoration: underline; text-underline-offset: .18em; }
-.guide-nanak .nanak-stop a::before {
-  content: "";
-  position: absolute;
-  top: .78rem;
-  left: .15rem;
-  width: .95rem;
-  height: .95rem;
-  background: var(--gold-light);
-  border: 2px solid var(--gold-light);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #1d2658;
+.guide-nanak .nanak-stop a:before {
+  content:'';
+  position:absolute;
+  left:-5px;
+  top:17px;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--gold-light);
+  border:1px solid var(--gold-light)
 }
-.guide-nanak .nanak-stop.is-approx a::before { background: #1d2658; }
-.guide-nanak .nanak-stop b { color: var(--gold-light); font-size: 1.02rem; line-height: 1.4; }
-.guide-nanak .nanak-stop strong { color: var(--ivory); font-size: 1.05rem; line-height: 1.35; }
-.guide-nanak .nanak-stop span { color: var(--muted); font-size: .92rem; line-height: 1.45; }
-.guide-nanak .nanak-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin: 1.2rem 0 0; color: var(--muted); font-size: .9rem; }
-.guide-nanak .nanak-legend span { display: inline-flex; align-items: center; gap: .45rem; }
-.guide-nanak .nanak-legend span::before {
-  content: "";
-  width: .75rem;
-  height: .75rem;
-  border: 2px solid var(--gold-light);
-  border-radius: 50%;
+.guide-nanak .nanak-stop.is-approx a:before {
+  background:var(--night)
 }
-.guide-nanak .nanak-legend .is-firm::before { background: var(--gold-light); }
-
-@media (min-width: 1180px) {
-  .guide-nanak .nanak-eras { grid-template-columns: minmax(0, 5fr) minmax(0, 2fr); gap: .9rem; }
-  .guide-nanak .nanak-era .nanak-stops { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .guide-nanak .nanak-era.is-after .nanak-stops { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .guide-nanak .nanak-stops::before {
-    inset: .55rem 0 auto 0;
-    border-inline-start: 0;
-    border-block-start: 2px solid var(--gold);
+.guide-nanak .nanak-stop b {
+  color:var(--gold-light);
+  font:500 13px/1.5 var(--ui)
+}
+.guide-nanak .nanak-stop strong {
+  font-size:18px;
+  line-height:1.5;
+  color:var(--ivory)
+}
+.guide-nanak .nanak-stop span {
+  font-size:14px;
+  line-height:1.6;
+  color:var(--muted)
+}
+.guide-nanak .nanak-stop a:hover {
+  background:#ffffff08
+}
+.guide-nanak .nanak-legend {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 25px;
+  font-size:12px!important;
+  margin-top:20px!important
+}
+.guide-nanak .nanak-legend span {
+  display:inline-flex;
+  gap:7px;
+  align-items:center
+}
+.guide-nanak .nanak-legend span:before {
+  content:'';
+  width:8px;
+  height:8px;
+  border:1px solid var(--gold-light);
+  border-radius:50%
+}
+.guide-nanak .nanak-legend .is-firm:before {
+  background:var(--gold-light)
+}
+.guide-nanak .nanak-plate {
+  margin:30px 0 34px
+}
+.guide-nanak .nanak-plate img {
+  width:100%;
+  height:auto
+}
+.guide-nanak .chapter .nanak-plate figcaption {
+  font:12px/1.7 var(--ui);
+  color:var(--muted);
+  margin-top:12px;
+  max-width:74ch
+}
+.guide-nanak .nanak-story {
+  margin-top:42px;
+  padding:20px 0 10px;
+  background:none;
+  border:0;
+  border-top:1px solid var(--line)
+}
+.guide-nanak .nanak-story h3 {
+  margin-top:8px
+}
+.guide-nanak .nanak-tag {
+  display:block;
+  padding:0;
+  background:none;
+  color:var(--saffron);
+  font:600 10px/1.7 var(--ui);
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  margin:0 0 10px!important
+}
+.guide-nanak.hi .nanak-tag {
+  font-family:var(--hindi);
+  font-size:12px;
+  letter-spacing:0
+}
+.guide-nanak .nanak-story-source {
+  font:500 12px/1.75 var(--ui);
+  color:var(--muted)
+}
+.guide-nanak .nanak-reflection {
+  border-inline-start:2px solid var(--gold);
+  padding-inline-start:22px;
+  color:var(--gold-light)
+}
+.guide-nanak .nanak-context {
+  font-size:15px;
+  line-height:1.8;
+  color:var(--muted);
+  padding:16px 20px;
+  background:#ffffff06;
+  margin:22px 0
+}
+.guide-nanak .nanak-context strong {
+  color:var(--text)
+}
+.guide-nanak .nanak-keys {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  margin:28px 0
+}
+.guide-nanak .nanak-keys>div {
+  padding:22px 0;
+  border-top:1px solid var(--line);
+  background:none
+}
+.guide-nanak .nanak-keys dt {
+  color:var(--gold-light);
+  font-weight:600;
+  font-size:20px;
+  line-height:1.5
+}
+.guide-nanak .nanak-keys dt span {
+  display:block;
+  color:var(--saffron);
+  font:400 23px/1.9 var(--gurmukhi);
+  margin-bottom:6px
+}
+.guide-nanak .nanak-keys dd {
+  margin:10px 0 0;
+  font-size:17px;
+  line-height:1.8;
+  color:var(--muted)
+}
+.guide-nanak .nanak-oneness {
+  grid-template-columns:1fr;
+  margin:30px 0 12px
+}
+.guide-nanak .nanak-oneness>div {
+  padding:24px 28px;
+  background:#e8dcc7;
+  border:0
+}
+.guide-nanak .nanak-oneness :is(dt,dd) {
+  color:#322b24
+}
+.guide-nanak .nanak-oneness dt span {
+  font-size:37px;
+  color:#795321
+}
+.guide-nanak .nanak-daily {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:26px
+}
+.guide-nanak .nanak-daily>div {
+  border-top:2px solid var(--gold)
+}
+.guide-nanak .gurbani {
+  margin:30px 0;
+  padding:clamp(22px,3.5vw,42px);
+  background:var(--ivory);
+  color:#292c3e;
+  border:0;
+  border-top:3px solid var(--gold)
+}
+.guide-nanak .gurbani blockquote {
+  margin:0;
+  padding:0;
+  background:none;
+  border:0;
+  color:inherit
+}
+.guide-nanak .gurbani .pangti {
+  font:500 clamp(25px,2.6vw,34px)/1.85 var(--gurmukhi);
+  color:#28294b;
+  margin:0 0 20px;
+  max-width:none
+}
+.guide-nanak .gurbani .meaning {
+  font-size:17px;
+  line-height:1.85;
+  color:#302d37;
+  margin:14px 0
+}
+.guide-nanak .gurbani .meaning b {
+  color:#795321
+}
+.guide-nanak .gurbani .translit {
+  font-size:15px;
+  font-style:italic;
+  color:#544c5a;
+  overflow-wrap:anywhere
+}
+.guide-nanak .gurbani .devanagari {
+  font-family:var(--hindi);
+  font-size:16px;
+  color:#544c5a
+}
+.guide-nanak .gurbani figcaption {
+  font:500 12px/1.8 var(--ui);
+  color:#77542c;
+  margin-top:20px
+}
+.guide-nanak .gurbani a {
+  color:#714712;
+  text-decoration:underline
+}
+.guide-nanak .nanak-translation {
+  border-top:1px solid #84602e44;
+  margin-top:18px;
+  padding-top:8px;
+  font-size:15px
+}
+.guide-nanak .nanak-translation summary {
+  cursor:pointer;
+  min-height:44px;
+  padding:8px 0;
+  color:#624515
+}
+.guide-nanak .nanak-glossary {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px 30px
+}
+.guide-nanak .nanak-glossary>div {
+  padding:15px 0;
+  border-bottom:1px solid var(--line)
+}
+.guide-nanak .nanak-glossary dt {
+  color:var(--gold-light);
+  font-weight:600
+}
+.guide-nanak .nanak-glossary dd {
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:16px
+}
+.guide-nanak .sources {
+  font-size:15px;
+  line-height:1.85;
+  padding-left:20px
+}
+.guide-nanak .sources li {
+  margin-bottom:13px
+}
+.guide-nanak .nanak-download {
+  display:inline-flex;
+  align-items:center;
+  gap:15px;
+  min-height:48px;
+  padding:11px 22px;
+  background:var(--gold-light);
+  color:#211c14;
+  font:500 14px/1.5 var(--ui);
+  text-decoration:none
+}
+.guide-nanak .nanak-download:hover {
+  background:var(--ivory)
+}
+.guide-nanak .nanak-art-note {
+  font-size:14px;
+  color:var(--muted)
+}
+.guide-nanak details>summary:focus-visible {
+  outline:2px solid currentColor;
+  outline-offset:5px
+}
+.guide-nanak .nanak-wishes .nanak-plate {
+  max-width:420px;
+  margin-inline:auto
+}
+/* Restrained textile geometry appears only at chapter boundaries. */
+.guide-nanak .chapter:after {
+  content:'';
+  display:block;
+  position:absolute;
+  bottom:-5px;
+  left:calc(50% - 5px);
+  width:9px;
+  height:9px;
+  transform:rotate(45deg);
+  border:1px solid var(--gold);
+  background:var(--night)
+}
+@media(max-width:1100px) {
+  .guide-nanak .layout {
+    grid-template-columns:150px minmax(0,1fr);
+    gap:32px
   }
-  .guide-nanak .is-after .nanak-stops::before { border-inline-start: 0; border-block-start-style: dashed; }
-  .guide-nanak .nanak-stop a { height: 100%; align-content: start; padding: 1.8rem .55rem .7rem .15rem; }
-  .guide-nanak .nanak-stop a::before { top: .12rem; left: .15rem; }
-  .guide-nanak .nanak-stop b { font-size: .95rem; }
-  .guide-nanak .nanak-stop strong { font-size: 1rem; }
-  .guide-nanak .nanak-stop span { font-size: .86rem; }
+  .guide-nanak .hero-grid {
+    gap:30px
+  }
+  .guide-nanak .nanak-daily {
+    gap:18px
+  }
+  .guide-nanak .nanak-keys dt {
+    font-size:18px
+  }
 }
-
-.guide-nanak .nanak-glossary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1.6rem; }
-.guide-nanak .nanak-glossary div { padding: .6rem 0; border-bottom: 1px solid var(--line); }
-.guide-nanak .nanak-glossary dt { color: var(--gold-light); font-weight: 700; }
-.guide-nanak .nanak-glossary dd { margin: .12rem 0 0; font-size: .96rem; }
-
-@media (max-width: 760px) {
-  .guide-nanak .hero-grid,
-  .guide-nanak .nanak-keys,
-  .guide-nanak .nanak-glossary { grid-template-columns: 1fr; }
-  .guide-nanak .nanak-emblem { max-width: 190px; font-size: 5.6rem; order: -1; }
-  .guide-nanak .navlinks a { min-height: 44px; }
+@media(max-width:1049px) {
+  .guide-nanak .layout {
+    display:block;
+    margin-top:30px
+  }
+  .guide-nanak .toc {
+    position:static;
+    max-height:none;
+    padding:0 0 25px
+  }
+  .guide-nanak .toc-links {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .guide-nanak .toc-links a {
+    font-size:12px;
+    min-height:44px
+  }
 }
-
-.guide-nanak .nanak-hero-art { width: 100%; max-width: 560px; margin: 0 auto; }
-.guide-nanak .nanak-hero-art img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 18px 50px #05081d88; }
-.guide-nanak .nanak-hero-art figcaption { margin-top: .55rem; color: var(--muted); font-size: .82rem; line-height: 1.4; text-align: center; }
-.guide-nanak .nanak-download { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; margin-top: .6rem; padding: .55rem 1.2rem; border-radius: 4px; background: var(--gold); color: #0e1330; font-weight: 700; text-decoration: none; }
-.guide-nanak .nanak-download:hover, .guide-nanak .nanak-download:focus-visible { background: var(--gold-light); }
-
-@media (max-width: 760px) {
-  .guide-nanak .nanak-hero-art { order: -1; max-width: 100%; }
+@media(max-width:760px) {
+  .guide-nanak {
+    font-size:18px
+  }
+  .guide-nanak .nav {
+    gap:12px;
+    align-items:flex-start;
+    padding-block:18px
+  }
+  .guide-nanak .brand {
+    gap:9px;
+    font-size:15px
+  }
+  .guide-nanak .brand b {
+    font-size:25px
+  }
+  .guide-nanak .navlinks {
+    gap:14px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    font-size:11px
+  }
+  .guide-nanak .hero-grid {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:28px;
+    padding:32px 0
+  }
+  .guide-nanak .hero-content {
+    order:0
+  }
+  .guide-nanak .hero h1 {
+    font-size:clamp(44px,10vw,67px);
+    line-height:1.08;
+    max-width:15ch;
+    margin:13px 0 18px
+  }
+  .guide-nanak.hi .hero h1 {
+    font-size:clamp(33px,8.5vw,49px);
+    max-width:none
+  }
+  .guide-nanak .nanak-heading {
+    font-size:18px
+  }
+  .guide-nanak .hero .sub {
+    font-size:24px;
+    max-width:28ch
+  }
+  .guide-nanak .nanak-lede {
+    font-size:17px
+  }
+  .guide-nanak .nanak-hero-art {
+    order:1
+  }
+  .guide-nanak .nanak-hero-art:before {
+    inset:-5px -5px 32px
+  }
+  .guide-nanak .nanak-when {
+    display:block;
+    padding:22px
+  }
+  .guide-nanak .nanak-when nav {
+    margin:18px 0 8px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:4px 22px
+  }
+  .guide-nanak .nanak-when h2 {
+    font-size:30px
+  }
+  .guide-nanak .chapter {
+    padding-bottom:36px;
+    margin-bottom:40px
+  }
+  .guide-nanak .chapter h2 {
+    font-size:38px;
+    margin-bottom:24px
+  }
+  .guide-nanak .nanak-eras {
+    grid-template-columns:1fr
+  }
+  .guide-nanak .nanak-keys,.guide-nanak .nanak-daily,.guide-nanak .nanak-glossary {
+    grid-template-columns:1fr;
+    gap:4px
+  }
+  .guide-nanak .nanak-daily {
+    gap:10px
+  }
+  .guide-nanak .nanak-keys>div {
+    padding:20px 0
+  }
+  .guide-nanak .nanak-oneness>div {
+    padding:22px
+  }
+  .guide-nanak .nanak-keys dt {
+    font-size:21px
+  }
+  .guide-nanak .nanak-keys dd {
+    font-size:17px
+  }
+  .guide-nanak .nanak-plate {
+    margin:24px 0 28px
+  }
+  .guide-nanak .gurbani {
+    padding:22px 18px
+  }
+  .guide-nanak .gurbani .pangti {
+    font-size:25px
+  }
+  .guide-nanak .toc-links {
+    grid-template-columns:1fr
+  }
 }
-
+@media(max-width:430px) {
+  .guide-nanak .nav {
+    flex-direction:column;
+    align-items:stretch;
+    gap:6px
+  }
+  .guide-nanak .navlinks {
+    justify-content:flex-start;
+    gap:22px
+  }
+  .guide-nanak .navlinks a {
+    min-height:44px
+  }
+  .guide-nanak .brand {
+    font-size:16px
+  }
+}
 @media print {
-  .guide-nanak,
-  .guide-nanak .nanak-story,
-  .guide-nanak .nanak-keys > div,
-  .guide-nanak .nanak-emblem { background: white; color: #222; }
-    .guide-nanak :is(.hero .sub, .chapter h3, .nanak-keys dt, .nanak-date, .nanak-heading, a) { color: #222; }
+  .guide-nanak {
+    background:white;
+    color:#222
+  }
+  .guide-nanak :is(.hero h1,.hero .sub,.nanak-heading,.chapter h2,.chapter h3,a,dt,dd) {
+    color:#222
+  }
+  .guide-nanak .nanak-when,.guide-nanak .gurbani {
+    background:#f6f3ed;
+    color:#222
+  }
+  .guide-nanak details:not([open])>*:not(summary) {
+    display:block!important
+  }
+  .guide-nanak .chapter:after {
+    display:none
+  }
 }

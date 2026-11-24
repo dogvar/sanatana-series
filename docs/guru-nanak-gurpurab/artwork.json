@@ -163,5 +163,48 @@
   "source_sha256": "65021c7baada98acaa21871652fb18376e1dc8f0b30eb8855a341a5a2dc364ec",
   "provenance": "AI-generated greeting supplied by the project owner; generator not recorded",
   "status": "pending owner decision and Sikh review: halo, partial side view of the Guru, and Guruparb spelling"
+ },
+ "editorial_refresh_2026_11_24": {
+  "assets": [
+   {
+    "file": "images/guru-nanak-gurpurab/homepage-cover.webp",
+    "source_sha256": "d3781ac87270508cf6d8a68f9bc73cb10616bb90551938ba764eba3961e26904",
+    "output_sha256": "edb873e0a885b62125ce082d7cf429ec7028f3c093e728ad15e762e80dce4ff4",
+    "bytes": 399608,
+    "provenance": "Owner supplied; complete cover displayed without cropping or text changes.",
+    "status": "Draft; owner and cultural review pending",
+    "prompt_record": null
+   },
+   {
+    "file": "images/guru-nanak-gurpurab/gurpurab-greeting-2026.jpg",
+    "source_sha256": "0e80dce090ce7fafb7ad75a76ba16ef6fce5bd821157c1f751d88a3e718d7df0",
+    "output_sha256": "0275df22df14281733eca313ec57aa684edea464f497b45fdb8726891b2b4776",
+    "bytes": 469939,
+    "provenance": "Owner supplied; printed guru-nanak-gurpurab.html address checked visually.",
+    "status": "Draft; owner and cultural review pending",
+    "prompt_record": null
+   },
+   {
+    "file": "images/guru-nanak-gurpurab/lalo-hospitality.webp",
+    "source_sha256": "af7f6b22b8577199133a66b80d47b4e2f43bb4a61a0f513a8072e475d561d392",
+    "output_sha256": "1323b338acadb2e012c32385e845cf0619f6b6feb918817d6477316eda3773db",
+    "bytes": 384562,
+    "provenance": "Original built-in ImageGen output. Relaxed hands/platter and rear-view figures inspected full size.",
+    "status": "Draft; owner and cultural review pending",
+    "prompt_record": "additional-image-prompts-2026-11-24.md"
+   },
+   {
+    "file": "images/guru-nanak-gurpurab/haridwar-water.webp",
+    "source_sha256": "fc245f6da65691c93b6f74a52ddbfb56597bddf02bb39c3af961be10cbefb9d0",
+    "output_sha256": "44a2e522001260d2262e1b0f1d7dfe3dc64ce9728c61d1dd2e1dbf97f3a2dcab",
+    "bytes": 384886,
+    "provenance": "Original built-in ImageGen output. Cupped hands, water and opposite directions checked full size; Guru face not visible.",
+    "status": "Draft; owner and cultural review pending",
+    "prompt_record": "additional-image-prompts-2026-11-24.md"
+   }
+  ],
+  "existing_hero_usage": "hero.webp and hero-card.webp are retained as archived greeting assets; article hero now reuses mardana.webp",
+  "reused_frontispiece": "images/guru-nanak-gurpurab/mardana.webp",
+  "limitations": "Illustrative clothing, rabab forms and architecture are interpretive; no historical likeness or Sikh expert sign-off claimed."
  }
 }

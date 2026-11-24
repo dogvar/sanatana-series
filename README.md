@@ -99,6 +99,12 @@ The calendar retains its separately labeled Amsterdam editorial highlights; sele
 
 The visual refresh preserves the published English/Hindi text, links, metadata and date guidance while improving frontispieces, chapter compositions, typography and mobile reading. See [design notes, artwork review, validation and screenshots](docs/redesign/README.md). Deepavali has its own rangoli-inspired margin pattern and diya separators; Dhanteras retains its approved design.
 
+### Guru Nanak Dev Ji and Gurpurab
+
+The bilingual guide uses a story frontispiece, a compact 24 November 2026 reference-date card, optional timeline and transliteration, and a locally hosted OFL-licensed Gurmukhi font. The homepage retains the Sanatana Series hero and features the latest Guru Nanak guide in a compact cover-thumbnail card with English/Hindi reading links; the end-of-guide greeting has the correct printed guide address. Existing guide pages and archived artwork remain in place.
+
+Traditional sakhis are identified as such. The sacred-thread and Haridwar episodes include brief Hindu context, with detailed source distinctions in [editorial research notes](docs/guru-nanak-gurpurab/editorial-refresh-2026-11-24.md). Gurbani passages and translations are retained. The supplied English/Hindi video masters remain outside Git pending pronunciation review and an approved hosting destination.
+
 ## Updates and community
 
 A WhatsApp group or channel may be added later for new guides and festival reminders. No WhatsApp invitation link is configured here yet. A newsletter link may also be offered separately; the static website does not itself provide an email-subscription backend.
