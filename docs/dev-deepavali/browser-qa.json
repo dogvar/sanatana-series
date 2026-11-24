@@ -86,5 +86,10 @@
     "homepage_hero": "unchanged byte-for-byte",
     "whitespace": "pass",
     "python_compile": "pass"
+  },
+  "revision_checks": {
+    "expanded_bilingual_story": "pass: section/source-anchor parity",
+    "tripurantaka_art": "pass: image decoded before screenshots; both hands and bow tips fit desktop/mobile composition",
+    "existing_suites": "Previously passed 24 combinations; shared layouts/home/calendar unchanged by story revision"
   }
 }

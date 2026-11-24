@@ -85,8 +85,26 @@
         1050,
         1175
       ]
+    },
+    {
+      "path": "images/dev-deepavali/shiva-tripurantaka.webp",
+      "bytes": 212198,
+      "sha256": "4d4527a5bc318facfe45614fb06d2a7900434c90dce6e02a9a9b2fa91fef1ffc",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-8ba21eed-73ba-4a77-b290-ad90b89d992f.png",
+      "purpose": "Text-free Tripurantaka story illustration, displayed in both article editions",
+      "review": "Full-frame visual inspection; see tripurantaka-prompt.md for prompt and limits"
+    },
+    {
+      "path": "images/dev-deepavali/shiva-tripurantaka-800.webp",
+      "bytes": 73220,
+      "sha256": "e36e71a74e849f271725bd9e6cc798776360e573efc44e500d1cfd03c72996c3",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-8ba21eed-73ba-4a77-b290-ad90b89d992f.png",
+      "purpose": "Text-free Tripurantaka story illustration, displayed in both article editions",
+      "review": "Full-frame visual inspection; see tripurantaka-prompt.md for prompt and limits"
     }
   ],
   "masters": "Original ZIP and extracted PNGs preserved outside Git; no originals overwritten",
-  "review": "Six-poster contact sheet inspected; both text-free crops and generated hero inspected. Interpretive art, not documentary records. Shiva poster remains symbolic, with qualification in both languages."
+  "review": "Six-poster contact sheet inspected; both text-free crops and generated hero inspected. Interpretive art, not documentary records. Shiva poster remains symbolic, with qualification in both languages. New Tripurantaka image inspected for the connected arms, drawing grip and bowstring; no trident intersects the body."
 }
