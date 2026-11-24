@@ -1,0 +1,110 @@
+{
+  "assets": [
+    {
+      "path": "images/dev-deepavali/01_cover.webp",
+      "bytes": 266880,
+      "sha256": "0f42046b09ee80bd2d77959966ff777d0e8e59cf335d9f750b150a81e63a7590",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "61d832d00af7791afa189c5cc9564525a17640518a67cc5b1c1b89ebafd601c4",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/02_what_is_it.webp",
+      "bytes": 230960,
+      "sha256": "81492e89342896c8d54e76c3ebb3902d5645761b72d12ad8fc270ab90472321d",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "37ff69c453a3fdaf53eecf4cfd25b8d85b09044f10d9deb6ccd0da7c56299329",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/03_tripurari.webp",
+      "bytes": 260964,
+      "sha256": "6fa7305d49d7146d3f1cfc636a14d2d900b403a090bb143e3d6059f8d9264743",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "f866fc008cbe28ff8a393a72e9d0a8bd7012b7d84923c2c168bb7d4bfffe4369",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/04_rituals.webp",
+      "bytes": 248918,
+      "sha256": "096ec1462e67d7bc0a4e5e392142edd68e9aec1a93282ca6b9bf5b0ab0965075",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "3b6791ec927ef9191c19a115fa76392243ca3b4ac0eae95eccbe0f033aec7330",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/05_varanasi.webp",
+      "bytes": 263162,
+      "sha256": "cd747d2581951c27a35dcde0a98a10357c286bd1383edcf52582aaccb80e2ba5",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "85ae88041e6d7c38f4332ebdf85d3d51509566fb698c0e156377588725b30e5c",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/06_meaning.webp",
+      "bytes": 234642,
+      "sha256": "b1e7f8cac40a2327f584aebd1feff21c023c6dbb178290ebb2d3ca8d7bdd0e8d",
+      "source": "Owner-supplied carousel poster",
+      "original_sha256": "3a34b2b2d17af63622a847440cde22e06930b7c87b438cb634fcbffd999dbca2",
+      "transform": "900 × 1125 WebP; full composition, embedded English retained"
+    },
+    {
+      "path": "images/dev-deepavali/deepdaan.webp",
+      "bytes": 55552,
+      "sha256": "3fb746f7b120fecd7b490df38086724ea093b580192408a561af586cbd5aa2db",
+      "source": "04_rituals.png",
+      "crop": [
+        65,
+        900,
+        620,
+        1175
+      ]
+    },
+    {
+      "path": "images/dev-deepavali/hero-800.webp",
+      "bytes": 118968,
+      "sha256": "588da02f8601732d78df027401ddf252aaa1bbbba2703999fc88b3e4b878b4a2",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-81027e0e-36ae-4a05-ae01-ac2f69a23cd1.png"
+    },
+    {
+      "path": "images/dev-deepavali/hero.webp",
+      "bytes": 415796,
+      "sha256": "b1d3f5ced0e9e5ef0f7f49d95ae9ee429df86351b7751a28208f93574ff4ca72",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-81027e0e-36ae-4a05-ae01-ac2f69a23cd1.png"
+    },
+    {
+      "path": "images/dev-deepavali/lamplit-ghats.webp",
+      "bytes": 246990,
+      "sha256": "e9452dfc85ba1569c6013c71a22c6abe3611de649bce9a446338d59ddde6206a",
+      "source": "01_cover.png",
+      "crop": [
+        65,
+        475,
+        1050,
+        1175
+      ]
+    },
+    {
+      "path": "images/dev-deepavali/shiva-tripurantaka.webp",
+      "bytes": 212198,
+      "sha256": "4d4527a5bc318facfe45614fb06d2a7900434c90dce6e02a9a9b2fa91fef1ffc",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-8ba21eed-73ba-4a77-b290-ad90b89d992f.png",
+      "purpose": "Text-free Tripurantaka story illustration, displayed in both article editions",
+      "review": "Full-frame visual inspection; see tripurantaka-prompt.md for prompt and limits"
+    },
+    {
+      "path": "images/dev-deepavali/shiva-tripurantaka-800.webp",
+      "bytes": 73220,
+      "sha256": "e36e71a74e849f271725bd9e6cc798776360e573efc44e500d1cfd03c72996c3",
+      "source": "Built-in ImageGen, 24 November 2026",
+      "master": "exec-8ba21eed-73ba-4a77-b290-ad90b89d992f.png",
+      "purpose": "Text-free Tripurantaka story illustration, displayed in both article editions",
+      "review": "Full-frame visual inspection; see tripurantaka-prompt.md for prompt and limits"
+    }
+  ],
+  "masters": "Original ZIP and extracted PNGs preserved outside Git; no originals overwritten",
+  "review": "Six-poster contact sheet inspected; both text-free crops and generated hero inspected. Interpretive art, not documentary records. Shiva poster remains symbolic, with qualification in both languages. New Tripurantaka image inspected for the connected arms, drawing grip and bowstring; no trident intersects the body."
+}
