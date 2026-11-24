@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "page": "dev-deepavali",
+      "width": 320,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali-hi",
+      "width": 320,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali",
+      "width": 390,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali-hi",
+      "width": 390,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali",
+      "width": 768,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali-hi",
+      "width": 768,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali",
+      "width": 1440,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    },
+    {
+      "page": "dev-deepavali-hi",
+      "width": 1440,
+      "overflow": false,
+      "images": "pass",
+      "bilingual_switch": "pass",
+      "local_times": "pass",
+      "hindi_font_faces_loaded": 2
+    }
+  ],
+  "page_errors": [],
+  "no_javascript": "pass",
+  "limits": [
+    "Browser checks do not certify religious accuracy or native-Hindi editorial approval",
+    "Physical mobile devices not tested"
+  ],
+  "repository_checks": {
+    "guide_structure": "pass: 12 pages",
+    "existing_browser_regression": "pass: 24 page/viewport combinations",
+    "dhanteras_and_diwali_preservation": "pass against origin/main",
+    "homepage_hero": "unchanged byte-for-byte",
+    "whitespace": "pass",
+    "python_compile": "pass"
+  }
+}

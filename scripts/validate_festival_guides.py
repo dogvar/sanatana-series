@@ -117,6 +117,35 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', nanak_css):
     if not urllib.parse.urlsplit(ref).scheme and not (ROOT / ref).is_file():
         errors.append(f'guru-nanak-gurpurab.css: missing {ref}')
 
+# Dev Deepavali: short bilingual guide, with a Varanasi-local reference.
+dev_pair = []
+for lang in ('en', 'hi'):
+    name = 'dev-deepavali' + ('-hi' if lang == 'hi' else '') + '.html'
+    page = parse(ROOT / name); dev_pair.append(page)
+    if page.lang != lang: errors.append(f'{name}: incorrect language')
+    if len(page.ids) != len(set(page.ids)): errors.append(f'{name}: duplicate IDs')
+    if page.alternates != {'en': 'dev-deepavali.html', 'hi': 'dev-deepavali-hi.html'}:
+        errors.append(f'{name}: incomplete language alternates')
+    text = page.path.read_text(encoding='utf-8')
+    for required in ('datetime="2026-11-24"', 'geoname-id=1253405', 'year=2026', 'UTC+05:30', 'source-tripura', 'source-burning'):
+        if required not in text: errors.append(f'{name}: missing date/location/source {required}')
+    for image in page.images:
+        if not image.get('alt') or not image.get('width') or not image.get('height'):
+            errors.append(f'{name}: missing image description/dimensions')
+        for item in image.get('srcset', '').split(','):
+            if item.strip() and not (ROOT / item.strip().split()[0]).is_file():
+                errors.append(f'{name}: missing responsive image {item}')
+    for ref in page.refs:
+        url = urllib.parse.urlsplit(ref)
+        if url.scheme or url.netloc: continue
+        target = (page.path.parent / urllib.parse.unquote(url.path)).resolve() if url.path else page.path
+        if not target.is_relative_to(ROOT) or not target.exists():
+            errors.append(f'{name}: missing local reference {ref}'); continue
+        if url.fragment and target.suffix == '.html' and urllib.parse.unquote(url.fragment) not in parse(target).ids:
+            errors.append(f'{name}: missing anchor {ref}')
+if set(dev_pair[0].ids) != set(dev_pair[1].ids):
+    errors.append('dev-deepavali: bilingual section mismatch')
+
 # Validate homepage data paths as well as HTML attributes (cards are generated in JS).
 for filename in ('index.html', 'calendar.html'):
     text = (ROOT / filename).read_text()
@@ -146,4 +175,4 @@ for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css):
 
 if errors:
     print('\n'.join(errors)); sys.exit(1)
-print('PASS: ten guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates, local lookup, Guru Nanak font and homepage/calendar data references')
+print('PASS: twelve guide pages, bilingual sections, anchors, local images, metadata alternates, sourced reference dates, local lookup, Guru Nanak font and homepage/calendar data references')

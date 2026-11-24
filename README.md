@@ -17,6 +17,7 @@ The following English and Hindi pages are included in this repository:
 | Adhik Maas | [adhik-maas.html](adhik-maas.html) | [adhik-maas-hi.html](adhik-maas-hi.html) |
 | Akshaya Tritiya | [akshaya-tritiya.html](akshaya-tritiya.html) | [akshaya-tritiya-hi.html](akshaya-tritiya-hi.html) |
 | Dhanteras 2026 | [dhanteras.html](dhanteras.html) | [dhanteras-hi.html](dhanteras-hi.html) |
+| Dev Deepavali 2026 | [dev-deepavali.html](dev-deepavali.html) | [dev-deepavali-hi.html](dev-deepavali-hi.html) |
 | Diwali 2026 (extended) | [diwali.html](diwali.html) | [diwali-hi.html](diwali-hi.html) |
 | Chhath Puja 2026 | [chhath-puja.html](chhath-puja.html) | [chhath-puja-hi.html](chhath-puja-hi.html) |
 | Tulsi Vivah 2026 | [tulsi-vivah.html](tulsi-vivah.html) | [tulsi-vivah-hi.html](tulsi-vivah-hi.html) |
@@ -116,3 +117,7 @@ The site is an educational resource. Festival dates and local observances can va
 ---
 
 Created and maintained by the Sanatana Series project.
+
+### Dev Deepavali — guide first
+
+A concise English/Hindi guide to Kartik Purnima in Kashi, the Puranic Tripura story and present-day lamp offerings. Includes a verified 24 November 2026 Varanasi reference, optional Varanasi-local timings, text-free responsive artwork and the six supplied posters in an optional gallery. The homepage hero remains unchanged; the guide appears in the catalogue and existing calendar highlight. Sources, artwork provenance, future video requirements and review screenshots are recorded in [Dev Deepavali production notes](docs/dev-deepavali/research-and-qa.md). Video production is deferred until separate approval.
