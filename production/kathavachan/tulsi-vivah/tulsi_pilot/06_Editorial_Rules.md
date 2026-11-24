@@ -1,0 +1,6 @@
+# Editorial guardrails
+Research deeply, write simply, tell stories beautifully. This is a personal non-commercial cultural blog, not a thesis. Keep detailed evidence in production notes; listeners need only context to follow the story. Do not narrate chapter-by-chapter scholarship.
+
+The supplied scripts reproduce the earlier short pilot drafts, not a complete 6–8 minute episode. They focus on Tulasi–Shankhachuda in the Devi Bhagavata Purana Book 9, chapters 23–24. The distinct Vrinda–Jalandhara account is acknowledged only generally in the closing qualification; do not merge the accounts or imply both have been fully narrated. Primary text has not been independently rechecked for this package; verify against the existing guide and source before recording. Do not introduce new facts, private thoughts, dialogue, theological claims or incidents without editorial approval.
+
+Hindi should sound like natural katha, English like warm storytelling. Do not sacrifice clarity for theatrical suspense. Treat difficult events respectfully; do not obscure Tulasi's protest. Distinguish sacred narratives from historical evidence. Do not use voice cloning without consent. Keep citations and image provenance in notes and credits. No publication without approval.

@@ -1,0 +1,62 @@
+{
+  "episode": "tulsi-vivah",
+  "series": "Sanatana Kathavachan",
+  "approvedPilot": true,
+  "voices": {
+    "hi": {
+      "name": "hi-IN-SwaraNeural",
+      "rate": "-8%"
+    },
+    "en": {
+      "name": "en-IN-NeerjaNeural",
+      "rate": "-8%"
+    }
+  },
+  "voiceEngine": "edge-tts 7.3.1 (free online endpoint)",
+  "narratorReference": "assets/character-sheet.png",
+  "narratorLayers": [
+    "assets/host-open.png",
+    "assets/host-blink.png"
+  ],
+  "render": {
+    "master": [
+      1920,
+      1080
+    ],
+    "web": [
+      1280,
+      720
+    ],
+    "fps": 24,
+    "drawFPS": 12,
+    "codec": "H.264/AAC",
+    "webCRF": 28,
+    "webMaxKbps": 1200,
+    "fastStart": true
+  },
+  "audio": {
+    "LUFS": -16,
+    "truePeakTarget": -2,
+    "mp3Kbps": 128,
+    "music": "Bansuri, Sitar & Tabla – Divine Raga for Mindfulness by boopul (Pixabay); -32 LUFS base, 4 dB speech ducking, no added speech reverb/delay",
+    "musicSource": "https://pixabay.com/music/meditationspiritual-bansuri-sitar-amp-tabla-divine-raga-for-mindfulness-538679/",
+    "musicPublisherAIGeneratedLabel": true
+  },
+  "subtitles": {
+    "master": "Burned ASS with shaped Noto Serif Devanagari/Arial, white on dark box",
+    "web": "Matching-language WebVTT default on, user can disable",
+    "timing": "Measured paragraph boundaries, proportionally segmented exact words; manual fine-timing review remains"
+  },
+  "publication": "Draft PR only; final owner approval required",
+  "artwork": {
+    "couple": "story-couple.png",
+    "battle": "story-battle-dynamic.png",
+    "amulet": "story-amulet-final.png",
+    "arrival": "story-arrival-final.png",
+    "protest": "story-protest-v2.png",
+    "gandaki": "story-gandaki-v2.png",
+    "ceremony": "tulsi-wedding.webp",
+    "twilight": "tulsi-twilight.webp",
+    "shaligram": "shaligram.webp"
+  }
+}

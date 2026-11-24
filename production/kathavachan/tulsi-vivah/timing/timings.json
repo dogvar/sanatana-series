@@ -1,0 +1,352 @@
+{
+  "hi": {
+    "voice": "hi-IN-SwaraNeural",
+    "locale": "hi-IN",
+    "rate": "-8%",
+    "sampleRate": 24000,
+    "duration": 230.844,
+    "cues": [
+      {
+        "paragraph": 1,
+        "start": 0.8,
+        "end": 6.4879999999999995,
+        "text": "भारत के अनेक घरों में एक छोटा-सा तुलसी का पौधा होता है।"
+      },
+      {
+        "paragraph": 2,
+        "start": 6.9879999999999995,
+        "end": 18.724,
+        "text": "सुबह उसके पास दीप जलाया जाता है। कभी जल चढ़ाया जाता है, तो कभी परिवार के लोग उसके सामने हाथ जोड़कर प्रार्थना करते हैं।"
+      },
+      {
+        "paragraph": 3,
+        "start": 19.224,
+        "end": 25.992,
+        "text": "लेकिन कार्तिक के महीने में यही तुलसी एक दुल्हन की तरह सजाई जाती है।"
+      },
+      {
+        "paragraph": 4,
+        "start": 26.492,
+        "end": 34.004,
+        "text": "चारों ओर फूलों की मालाएँ, गन्ने का मंडप, मंगलगीत और दीपों की रोशनी।"
+      },
+      {
+        "paragraph": 5,
+        "start": 34.504000000000005,
+        "end": 41.800000000000004,
+        "text": "क्या आपने कभी सोचा है कि एक पौधे का विवाह भगवान विष्णु से क्यों किया जाता है?"
+      },
+      {
+        "paragraph": 6,
+        "start": 42.300000000000004,
+        "end": 46.596000000000004,
+        "text": "इस परंपरा के पीछे एक प्राचीन कथा है।"
+      },
+      {
+        "paragraph": 7,
+        "start": 47.096000000000004,
+        "end": 50.504000000000005,
+        "text": "तुलसी और शंखचूड़ की कथा।"
+      },
+      {
+        "paragraph": 8,
+        "start": 51.004000000000005,
+        "end": 67.30000000000001,
+        "text": "बहुत समय पहले, पुराणों की कथा के अनुसार, शंखचूड़ नाम का एक पराक्रमी दैत्यराज था। उसकी पत्नी थीं तुलसी, जिनकी निष्ठा और भक्ति का विशेष महत्व बताया गया है।"
+      },
+      {
+        "paragraph": 9,
+        "start": 67.80000000000001,
+        "end": 79.96800000000002,
+        "text": "शंखचूड़ के पास एक दिव्य कवच था। उसकी रक्षा से जुड़ी एक और शर्त थी — तुलसी के साथ उसके वैवाहिक संबंध की अखंडता।"
+      },
+      {
+        "paragraph": 10,
+        "start": 80.46800000000002,
+        "end": 91.26800000000001,
+        "text": "एक समय ऐसा आया जब शंखचूड़ का देवताओं के साथ युद्ध छिड़ गया। भगवान शिव भी इस संघर्ष में सम्मिलित हुए।"
+      },
+      {
+        "paragraph": 11,
+        "start": 91.76800000000001,
+        "end": 99.35200000000002,
+        "text": "युद्ध चलता रहा, लेकिन शंखचूड़ की रक्षा का रहस्य एक बड़ी बाधा बना हुआ था।"
+      },
+      {
+        "paragraph": 12,
+        "start": 99.85200000000002,
+        "end": 110.02800000000002,
+        "text": "तब भगवान विष्णु एक वृद्ध ब्राह्मण का रूप धारण करके शंखचूड़ के पास पहुँचे और उससे उसका दिव्य कवच प्राप्त कर लिया।"
+      },
+      {
+        "paragraph": 13,
+        "start": 110.52800000000002,
+        "end": 117.44000000000003,
+        "text": "इसके बाद विष्णु ने शंखचूड़ का ही रूप धारण किया और तुलसी के पास पहुँचे।"
+      },
+      {
+        "paragraph": 14,
+        "start": 117.94000000000003,
+        "end": 121.56400000000002,
+        "text": "तुलसी ने उन्हें अपना पति समझा।"
+      },
+      {
+        "paragraph": 15,
+        "start": 122.06400000000002,
+        "end": 129.24,
+        "text": "लेकिन जब उन्हें सच्चाई का पता चला, तो उनका मन दुख और क्रोध से भर उठा।"
+      },
+      {
+        "paragraph": 16,
+        "start": 129.74,
+        "end": 135.28400000000002,
+        "text": "जिसे वे अपना पति समझ रही थीं, वह कोई और था।"
+      },
+      {
+        "paragraph": 17,
+        "start": 135.78400000000002,
+        "end": 143.96800000000002,
+        "text": "तुलसी ने भगवान विष्णु को उनके छल के लिए कठोर शब्द कहे और उन्हें पत्थर बनने का शाप दिया।"
+      },
+      {
+        "paragraph": 18,
+        "start": 144.46800000000002,
+        "end": 150.39600000000002,
+        "text": "कथा के अनुसार, भगवान विष्णु ने उस शाप को स्वीकार किया।"
+      },
+      {
+        "paragraph": 19,
+        "start": 150.89600000000002,
+        "end": 162.824,
+        "text": "आगे चलकर उनका शालिग्राम शिला से संबंध स्थापित हुआ। तुलसी का संबंध गंडकी नदी और पवित्र तुलसी के पौधे से बताया गया।"
+      },
+      {
+        "paragraph": 20,
+        "start": 163.324,
+        "end": 170.788,
+        "text": "इस प्रकार तुलसी और शालिग्राम का संबंध भक्तिपरंपरा में विशेष महत्व रखने लगा।"
+      },
+      {
+        "paragraph": 21,
+        "start": 171.288,
+        "end": 179.66400000000002,
+        "text": "और आज भी, तुलसी विवाह के अवसर पर भक्त इसी पवित्र संबंध को विवाह के रूप में मनाते हैं।"
+      },
+      {
+        "paragraph": 22,
+        "start": 180.16400000000002,
+        "end": 198.044,
+        "text": "तुलसी का पौधा फूलों और वस्त्रों से सजाया जाता है। भगवान विष्णु या शालिग्राम को वर के रूप में प्रतिष्ठित किया जाता है। परिवार के लोग पूजा करते हैं, मंगलगीत गाते हैं और प्रसाद बाँटते हैं।"
+      },
+      {
+        "paragraph": 23,
+        "start": 198.544,
+        "end": 209.416,
+        "text": "यह केवल एक उत्सव नहीं, बल्कि एक ऐसी परंपरा है जिसमें भक्ति, प्रकृति और परिवार की भावनाएँ एक साथ जुड़ती हैं।"
+      },
+      {
+        "paragraph": 24,
+        "start": 209.916,
+        "end": 214.98,
+        "text": "तुलसी विवाह की आप सभी को हार्दिक शुभकामनाएँ।"
+      },
+      {
+        "paragraph": 25,
+        "start": 215.48,
+        "end": 228.344,
+        "text": "यह देवी भागवत पुराण की कथा पर आधारित एक सरल साहित्यिक पुनर्कथन है। अन्य पुराणों और क्षेत्रीय परंपराओं में कथाएँ भिन्न रूपों में मिलती हैं।"
+      }
+    ],
+    "source": "tulsi_pilot/01_Hindi_Script.md",
+    "sourceSHA256": "35aa56bd2869c40d288bc491e58c1d3610ea94000008455365d037be122fdbf5",
+    "fullText": "भारत के अनेक घरों में एक छोटा-सा तुलसी का पौधा होता है।\n\nसुबह उसके पास दीप जलाया जाता है। कभी जल चढ़ाया जाता है, तो कभी परिवार के लोग उसके सामने हाथ जोड़कर प्रार्थना करते हैं।\n\nलेकिन कार्तिक के महीने में यही तुलसी एक दुल्हन की तरह सजाई जाती है।\n\nचारों ओर फूलों की मालाएँ, गन्ने का मंडप, मंगलगीत और दीपों की रोशनी।\n\nक्या आपने कभी सोचा है कि एक पौधे का विवाह भगवान विष्णु से क्यों किया जाता है?\n\nइस परंपरा के पीछे एक प्राचीन कथा है।\n\nतुलसी और शंखचूड़ की कथा।\n\nबहुत समय पहले, पुराणों की कथा के अनुसार, शंखचूड़ नाम का एक पराक्रमी दैत्यराज था। उसकी पत्नी थीं तुलसी, जिनकी निष्ठा और भक्ति का विशेष महत्व बताया गया है।\n\nशंखचूड़ के पास एक दिव्य कवच था। उसकी रक्षा से जुड़ी एक और शर्त थी — तुलसी के साथ उसके वैवाहिक संबंध की अखंडता।\n\nएक समय ऐसा आया जब शंखचूड़ का देवताओं के साथ युद्ध छिड़ गया। भगवान शिव भी इस संघर्ष में सम्मिलित हुए।\n\nयुद्ध चलता रहा, लेकिन शंखचूड़ की रक्षा का रहस्य एक बड़ी बाधा बना हुआ था।\n\nतब भगवान विष्णु एक वृद्ध ब्राह्मण का रूप धारण करके शंखचूड़ के पास पहुँचे और उससे उसका दिव्य कवच प्राप्त कर लिया।\n\nइसके बाद विष्णु ने शंखचूड़ का ही रूप धारण किया और तुलसी के पास पहुँचे।\n\nतुलसी ने उन्हें अपना पति समझा।\n\nलेकिन जब उन्हें सच्चाई का पता चला, तो उनका मन दुख और क्रोध से भर उठा।\n\nजिसे वे अपना पति समझ रही थीं, वह कोई और था।\n\nतुलसी ने भगवान विष्णु को उनके छल के लिए कठोर शब्द कहे और उन्हें पत्थर बनने का शाप दिया।\n\nकथा के अनुसार, भगवान विष्णु ने उस शाप को स्वीकार किया।\n\nआगे चलकर उनका शालिग्राम शिला से संबंध स्थापित हुआ। तुलसी का संबंध गंडकी नदी और पवित्र तुलसी के पौधे से बताया गया।\n\nइस प्रकार तुलसी और शालिग्राम का संबंध भक्तिपरंपरा में विशेष महत्व रखने लगा।\n\nऔर आज भी, तुलसी विवाह के अवसर पर भक्त इसी पवित्र संबंध को विवाह के रूप में मनाते हैं।\n\nतुलसी का पौधा फूलों और वस्त्रों से सजाया जाता है। भगवान विष्णु या शालिग्राम को वर के रूप में प्रतिष्ठित किया जाता है। परिवार के लोग पूजा करते हैं, मंगलगीत गाते हैं और प्रसाद बाँटते हैं।\n\nयह केवल एक उत्सव नहीं, बल्कि एक ऐसी परंपरा है जिसमें भक्ति, प्रकृति और परिवार की भावनाएँ एक साथ जुड़ती हैं।\n\nतुलसी विवाह की आप सभी को हार्दिक शुभकामनाएँ।\n\nयह देवी भागवत पुराण की कथा पर आधारित एक सरल साहित्यिक पुनर्कथन है। अन्य पुराणों और क्षेत्रीय परंपराओं में कथाएँ भिन्न रूपों में मिलती हैं।",
+    "engine": "edge-tts"
+  },
+  "en": {
+    "voice": "en-IN-NeerjaNeural",
+    "locale": "en-IN",
+    "rate": "-8%",
+    "sampleRate": 24000,
+    "duration": 222.164,
+    "cues": [
+      {
+        "paragraph": 1,
+        "start": 0.8,
+        "end": 5.696,
+        "text": "In many Indian homes, there is a small Tulsi plant."
+      },
+      {
+        "paragraph": 2,
+        "start": 6.196,
+        "end": 13.876,
+        "text": "Every morning, someone may offer water, light a lamp or pause beside it for a moment of prayer."
+      },
+      {
+        "paragraph": 3,
+        "start": 14.376,
+        "end": 20.544,
+        "text": "But during the sacred month of Kartik, something extraordinary happens."
+      },
+      {
+        "paragraph": 4,
+        "start": 21.044,
+        "end": 24.932000000000002,
+        "text": "The Tulsi plant is adorned like a bride."
+      },
+      {
+        "paragraph": 5,
+        "start": 25.432000000000002,
+        "end": 38.512,
+        "text": "Fresh flowers surround it. Sugarcane stalks form a wedding canopy. Lamps are lit, families gather, and traditional wedding songs fill the home."
+      },
+      {
+        "paragraph": 6,
+        "start": 39.012,
+        "end": 43.524,
+        "text": "But why is a sacred plant married to Lord Vishnu?"
+      },
+      {
+        "paragraph": 7,
+        "start": 44.024,
+        "end": 50.624,
+        "text": "To understand this beautiful tradition, we must travel into an ancient Puranic story."
+      },
+      {
+        "paragraph": 8,
+        "start": 51.124,
+        "end": 54.868,
+        "text": "The story of Tulasi and Shankhachuda."
+      },
+      {
+        "paragraph": 9,
+        "start": 55.368,
+        "end": 62.856,
+        "text": "Long ago, according to the sacred narrative, there lived a powerful ruler named Shankhachuda."
+      },
+      {
+        "paragraph": 10,
+        "start": 63.356,
+        "end": 69.428,
+        "text": "His wife, Tulasi, was renowned for her devotion and steadfastness."
+      },
+      {
+        "paragraph": 11,
+        "start": 69.928,
+        "end": 81.328,
+        "text": "Shankhachuda possessed divine armour that protected him in battle. His protection was also connected to the integrity of his marriage to Tulasi."
+      },
+      {
+        "paragraph": 12,
+        "start": 81.828,
+        "end": 87.156,
+        "text": "Then came a great conflict between Shankhachuda and the gods."
+      },
+      {
+        "paragraph": 13,
+        "start": 87.656,
+        "end": 90.992,
+        "text": "Even Lord Shiva entered the battle."
+      },
+      {
+        "paragraph": 14,
+        "start": 91.492,
+        "end": 96.676,
+        "text": "Yet Shankhachuda remained protected, and the struggle continued."
+      },
+      {
+        "paragraph": 15,
+        "start": 97.176,
+        "end": 105.408,
+        "text": "Lord Vishnu eventually approached him disguised as an elderly Brahmin and obtained his protective armour."
+      },
+      {
+        "paragraph": 16,
+        "start": 105.908,
+        "end": 111.668,
+        "text": "Then Vishnu assumed Shankhachuda's appearance and came before Tulasi."
+      },
+      {
+        "paragraph": 17,
+        "start": 112.168,
+        "end": 116.896,
+        "text": "Believing her husband had returned, Tulasi received him."
+      },
+      {
+        "paragraph": 18,
+        "start": 117.396,
+        "end": 120.996,
+        "text": "But the deception did not remain hidden."
+      },
+      {
+        "paragraph": 19,
+        "start": 121.496,
+        "end": 127.472,
+        "text": "When Tulasi discovered the truth, she was overcome with grief and anger."
+      },
+      {
+        "paragraph": 20,
+        "start": 127.972,
+        "end": 134.76399999999998,
+        "text": "She condemned Vishnu for what he had done and pronounced a curse: he would become stone."
+      },
+      {
+        "paragraph": 21,
+        "start": 135.26399999999998,
+        "end": 140.47199999999998,
+        "text": "According to this Puranic account, Vishnu accepted the curse."
+      },
+      {
+        "paragraph": 22,
+        "start": 140.97199999999998,
+        "end": 152.61199999999997,
+        "text": "The story then describes his association with the sacred Shaligram stone, while Tulasi becomes associated with the Gandaki River and the revered Tulsi plant."
+      },
+      {
+        "paragraph": 23,
+        "start": 153.11199999999997,
+        "end": 161.19999999999996,
+        "text": "And so, in this devotional tradition, Tulsi and Shaligram came to hold a special place together."
+      },
+      {
+        "paragraph": 24,
+        "start": 161.69999999999996,
+        "end": 167.53199999999995,
+        "text": "That ancient association is remembered every year through Tulsi Vivah."
+      },
+      {
+        "paragraph": 25,
+        "start": 168.03199999999995,
+        "end": 179.76799999999994,
+        "text": "The Tulsi plant is dressed and decorated as a bride. Shaligram, or another representation of Lord Vishnu, is honoured as the groom."
+      },
+      {
+        "paragraph": 26,
+        "start": 180.26799999999994,
+        "end": 190.63599999999994,
+        "text": "Families gather around the decorated plant, perform customary wedding rituals, light lamps, sing auspicious songs and share prasad."
+      },
+      {
+        "paragraph": 27,
+        "start": 191.13599999999994,
+        "end": 201.40799999999993,
+        "text": "The customs may differ between regions and households, but the celebration continues to connect devotion, nature and family traditions."
+      },
+      {
+        "paragraph": 28,
+        "start": 201.90799999999993,
+        "end": 206.27599999999993,
+        "text": "Wishing you and your family a blessed Tulsi Vivah."
+      },
+      {
+        "paragraph": 29,
+        "start": 206.77599999999993,
+        "end": 219.66399999999993,
+        "text": "This is an accessible literary retelling based on the Devi Bhagavata Purana. Other Puranic and regional traditions preserve different versions of Tulsi's sacred story."
+      }
+    ],
+    "source": "tulsi_pilot/02_English_Script.md",
+    "sourceSHA256": "664e510fc6d877301ac725d12ee16b556d600b7d7263620b751c0f12fb43ba73",
+    "fullText": "In many Indian homes, there is a small Tulsi plant.\n\nEvery morning, someone may offer water, light a lamp or pause beside it for a moment of prayer.\n\nBut during the sacred month of Kartik, something extraordinary happens.\n\nThe Tulsi plant is adorned like a bride.\n\nFresh flowers surround it. Sugarcane stalks form a wedding canopy. Lamps are lit, families gather, and traditional wedding songs fill the home.\n\nBut why is a sacred plant married to Lord Vishnu?\n\nTo understand this beautiful tradition, we must travel into an ancient Puranic story.\n\nThe story of Tulasi and Shankhachuda.\n\nLong ago, according to the sacred narrative, there lived a powerful ruler named Shankhachuda.\n\nHis wife, Tulasi, was renowned for her devotion and steadfastness.\n\nShankhachuda possessed divine armour that protected him in battle. His protection was also connected to the integrity of his marriage to Tulasi.\n\nThen came a great conflict between Shankhachuda and the gods.\n\nEven Lord Shiva entered the battle.\n\nYet Shankhachuda remained protected, and the struggle continued.\n\nLord Vishnu eventually approached him disguised as an elderly Brahmin and obtained his protective armour.\n\nThen Vishnu assumed Shankhachuda's appearance and came before Tulasi.\n\nBelieving her husband had returned, Tulasi received him.\n\nBut the deception did not remain hidden.\n\nWhen Tulasi discovered the truth, she was overcome with grief and anger.\n\nShe condemned Vishnu for what he had done and pronounced a curse: he would become stone.\n\nAccording to this Puranic account, Vishnu accepted the curse.\n\nThe story then describes his association with the sacred Shaligram stone, while Tulasi becomes associated with the Gandaki River and the revered Tulsi plant.\n\nAnd so, in this devotional tradition, Tulsi and Shaligram came to hold a special place together.\n\nThat ancient association is remembered every year through Tulsi Vivah.\n\nThe Tulsi plant is dressed and decorated as a bride. Shaligram, or another representation of Lord Vishnu, is honoured as the groom.\n\nFamilies gather around the decorated plant, perform customary wedding rituals, light lamps, sing auspicious songs and share prasad.\n\nThe customs may differ between regions and households, but the celebration continues to connect devotion, nature and family traditions.\n\nWishing you and your family a blessed Tulsi Vivah.\n\nThis is an accessible literary retelling based on the Devi Bhagavata Purana. Other Puranic and regional traditions preserve different versions of Tulsi's sacred story.",
+    "engine": "edge-tts"
+  }
+}

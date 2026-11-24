@@ -1,0 +1,8 @@
+{
+  "python": "Set the existing local python path",
+  "model_dir": "Set the existing local model dir path",
+  "ffmpeg": "Set the existing local ffmpeg path",
+  "ffprobe": "Set the existing local ffprobe path",
+  "chrome": "Set the existing local chrome path",
+  "whisper_model": "Set the existing local whisper model path"
+}
